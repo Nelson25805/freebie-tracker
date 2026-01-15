@@ -5,6 +5,7 @@
  *   - Epic Games Store
  *   - GOG
  *   - PlayStation Plus (via PlayStation Blog RSS, parsed directly)
+ *    - Prime Gaming (Amazon)
  *
  * Writes the combined, normalized result to ../data/games.json
  * This script is run by GitHub Actions on a schedule.
