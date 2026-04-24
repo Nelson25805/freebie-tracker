@@ -1,0 +1,12 @@
+[
+    {
+        "platform": "Epic Games Store",
+        "title": "Loading...",
+        "type": "permanent",
+        "startsAt": null,
+        "endsAt": null,
+        "claimUrl": "https://store.epicgames.com/en-US/free-games",
+        "sourceUrl": "https://store.epicgames.com/en-US/free-games",
+        "status": "initial"
+    }
+]
