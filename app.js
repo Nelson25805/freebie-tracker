@@ -7,6 +7,7 @@ async function loadData() {
     render(allItems);
 }
 
+// Render items to the page
 function render(items) {
     const list = document.getElementById("list");
 
