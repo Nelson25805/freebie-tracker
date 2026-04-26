@@ -1,5 +1,6 @@
 let allItems = [];
 
+// Load data from JSON file
 async function loadData() {
     const res = await fetch("data/freebies.json");
     allItems = await res.json();
