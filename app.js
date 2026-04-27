@@ -29,6 +29,7 @@ function render(items) {
     }).join("");
 }
 
+// Filter items based on type
 function filterItems(type) {
     if (type === "all") {
         render(allItems);
