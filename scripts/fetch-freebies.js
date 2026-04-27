@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 
+// This script fetches free games from Epic Games Store and GOG, and saves them to data/freebies.json.
 const SOURCES = [
     {
         platform: "Epic Games Store",
