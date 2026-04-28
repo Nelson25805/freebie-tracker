@@ -14,6 +14,7 @@ const SOURCES = [
     }
 ];
 
+// Fetch HTML content from a URL
 async function fetchHTML(url) {
     const res = await fetch(url, {
         headers: { "User-Agent": "FreebieTrackerBot/1.0" }
