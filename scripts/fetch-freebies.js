@@ -22,6 +22,7 @@ async function fetchHTML(url) {
     return await res.text();
 }
 
+// Extract game titles from Epic Games Store HTML
 function extractEpic(html) {
     const matches = [...html.matchAll(/"title":"(.*?)"/g)];
     return matches.slice(0, 5).map(m => m[1]);
