@@ -28,6 +28,7 @@ function extractEpic(html) {
     return matches.slice(0, 5).map(m => m[1]);
 }
 
+// Extract game titles from GOG HTML
 function extractGOG(html) {
     const matches = [...html.matchAll(/product-title__name[^>]*>(.*?)</g)];
     return matches.slice(0, 5).map(m => m[1]);
