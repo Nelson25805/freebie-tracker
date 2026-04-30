@@ -19,7 +19,8 @@ jobs:
               with:
                   node-version: "22"
 
-            - run: node scripts/fetch-freebies.js
+            - name: Run scraper
+              run: node scripts/fetch-freebies.js
 
             - name: Commit changes
               run: |
