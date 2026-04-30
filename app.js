@@ -12,7 +12,7 @@ function render(items) {
     const list = document.getElementById("list");
 
     if (!items.length) {
-        list.innerHTML = "<p>No freebies found.</p>";
+        list.innerHTML = "<p>No current freebies detected right now.</p>";
         return;
     }
 
