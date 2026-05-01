@@ -19,6 +19,12 @@ jobs:
               with:
                   node-version: "22"
 
+            - name: Install dependencies
+              run: npm install
+
+            - name: Install Playwright browsers
+              run: npx playwright install --with-deps chromium
+
             - name: Run scraper
               run: node scripts/fetch-freebies.js
 
@@ -28,7 +34,6 @@ jobs:
                     echo "No changes"
                     exit 0
                   fi
-
                   git config user.name "github-actions[bot]"
                   git config user.email "actions@github.com"
                   git add data/freebies.json

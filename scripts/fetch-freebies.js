@@ -1,63 +1,8 @@
 import fs from "fs/promises";
+import { chromium } from "playwright";
 
 const OUTPUT = "data/freebies.json";
-
-const SOURCES = [
-    {
-        platform: "Epic Games Store",
-        type: "permanent",
-        url: "https://store.epicgames.com/en-US/free-games",
-        claimUrl: "https://store.epicgames.com/en-US/free-games",
-        extract: extractEpic,
-    },
-    {
-        platform: "GOG",
-        type: "permanent",
-        url: "https://www.gog.com/en/partner/free_games",
-        claimUrl: "https://www.gog.com/en/partner/free_games",
-        extract: extractGOG,
-    },
-];
-
-async function fetchHTML(url) {
-    const res = await fetch(url, {
-        headers: {
-            "User-Agent": "Mozilla/5.0 FreebieTrackerBot/1.0",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9",
-        },
-    });
-
-    if (!res.ok) {
-        throw new Error(`Fetch failed for ${url}: ${res.status} ${res.statusText}`);
-    }
-
-    return await res.text();
-}
-
-function extractEpic(html) {
-    // Epic often blocks bots or serves markup that is hard to scrape reliably.
-    // Keep this conservative and only return obvious matches.
-    const titles = [...html.matchAll(/"title":"([^"]+)"/g)].map(m => m[1]);
-    return [...new Set(titles)].slice(0, 10);
-}
-
-function extractGOG(html) {
-    // This is intentionally broad. If it stops matching, the script keeps old data.
-    const candidates = [];
-
-    for (const match of html.matchAll(/product-title__name[^>]*>(.*?)</g)) {
-        const title = match[1]
-            .replace(/&amp;/g, "&")
-            .replace(/&#39;/g, "'")
-            .replace(/&quot;/g, '"')
-            .trim();
-
-        if (title) candidates.push(title);
-    }
-
-    return [...new Set(candidates)].slice(0, 10);
-}
+const EPIC_URL = "https://store.epicgames.com/en-US/free-games";
 
 async function loadExisting() {
     try {
@@ -69,60 +14,87 @@ async function loadExisting() {
     }
 }
 
-function makeItems(platform, claimUrl, titles) {
-    return titles.map(title => ({
-        platform,
-        title,
-        type: "permanent",
-        startsAt: null,
-        endsAt: null,
-        claimUrl,
-        sourceUrl: claimUrl,
-        status: "active",
-    }));
+async function save(data) {
+    await fs.mkdir("data", { recursive: true });
+    await fs.writeFile(OUTPUT, JSON.stringify(data, null, 2));
 }
 
-function mergePlatform(existing, platform, newItems) {
-    const kept = existing.filter(item => item.platform !== platform);
-    return [...kept, ...newItems];
+async function scrapeEpic() {
+    const browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage({
+        locale: "en-US",
+        viewport: { width: 1440, height: 1600 },
+    });
+
+    try {
+        await page.goto(EPIC_URL, { waitUntil: "networkidle", timeout: 120000 });
+        await page.waitForSelector('[data-component="FreeOfferCard"]', { timeout: 30000 });
+
+        const items = await page.$$eval('[data-component="FreeOfferCard"]', cards => {
+            return cards.map(card => {
+                const link = card.querySelector("a[href]");
+                const titleEl = card.querySelector("h6");
+                const imgEl = card.querySelector('img[alt]');
+                const timeEls = [...card.querySelectorAll('time[datetime]')];
+
+                const title = titleEl?.textContent?.trim() || imgEl?.getAttribute("alt") || "Untitled";
+                const href = link?.getAttribute("href") || "";
+                const claimUrl = href.startsWith("http") ? href : `https://store.epicgames.com${href}`;
+                const imageUrl = imgEl?.getAttribute("src") || imgEl?.getAttribute("data-image") || null;
+                const startsAt = timeEls[0]?.getAttribute("datetime") || null;
+                const endsAt = timeEls[1]?.getAttribute("datetime") || null;
+
+                return {
+                    platform: "Epic Games Store",
+                    title,
+                    type: "permanent",
+                    startsAt,
+                    endsAt,
+                    claimUrl,
+                    sourceUrl: "https://store.epicgames.com/en-US/free-games",
+                    imageUrl,
+                    status: "active",
+                };
+            });
+        });
+
+        return items.filter(item => item.title && item.claimUrl);
+    } finally {
+        await browser.close();
+    }
 }
 
 async function main() {
     const existing = await loadExisting();
     let updated = [...existing];
-    let anySuccess = false;
 
-    for (const source of SOURCES) {
-        try {
-            const html = await fetchHTML(source.url);
-            const titles = source.extract(html);
+    try {
+        const epicItems = await scrapeEpic();
 
-            if (titles.length > 0) {
-                updated = mergePlatform(updated, source.platform, makeItems(source.platform, source.claimUrl, titles));
-                anySuccess = true;
-                console.log(`${source.platform}: ${titles.length} item(s)`);
-            } else {
-                console.log(`${source.platform}: no items parsed, keeping previous data`);
-            }
-        } catch (err) {
-            console.log(`${source.platform}: ${err.message} — keeping previous data`);
+        if (epicItems.length > 0) {
+            // replace previous Epic entries with the newly scraped ones
+            updated = [
+                ...existing.filter(item => item.platform !== "Epic Games Store"),
+                ...epicItems,
+            ];
+            console.log(`Epic Games Store: ${epicItems.length} item(s)`);
+        } else {
+            console.log("Epic Games Store: no items parsed, keeping previous data");
         }
+    } catch (err) {
+        console.log(`Epic Games Store: ${err.message} — keeping previous data`);
     }
 
-    await fs.mkdir("data", { recursive: true });
-
-    if (!anySuccess) {
+    if (updated.length === 0) {
         if (existing.length > 0) {
-            console.log("No source succeeded; leaving existing data untouched.");
+            console.log("No new data found; leaving existing file untouched.");
             return;
         }
 
-        // If this is the very first run, write a starter placeholder
-        // so the site does not look broken while you improve scrapers.
-        const starter = [
+        updated = [
             {
                 platform: "Manual seed",
-                title: "Seed this file once, then the scraper will preserve it",
+                title: "Waiting for scraper results",
                 type: "permanent",
                 startsAt: null,
                 endsAt: null,
@@ -131,13 +103,9 @@ async function main() {
                 status: "seed",
             },
         ];
-
-        await fs.writeFile(OUTPUT, JSON.stringify(starter, null, 2));
-        console.log("No source succeeded and no previous data existed, so wrote a starter seed file.");
-        return;
     }
 
-    await fs.writeFile(OUTPUT, JSON.stringify(updated, null, 2));
+    await save(updated);
     console.log(`Wrote ${updated.length} total item(s) to ${OUTPUT}`);
 }
 
