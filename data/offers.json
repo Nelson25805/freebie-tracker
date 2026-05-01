@@ -1,10 +1,47 @@
 [
-    {
-        "source": "gog",
-        "type": "permanent",
-        "title": "Sample Free Game",
-        "url": "https://www.gog.com",
-        "price": "Free",
-        "lastCheckedAt": "2026-01-01T00:00:00Z"
-    }
+  {
+    "source": "gog",
+    "type": "limited-time",
+    "title": "GOG Giveaway",
+    "url": "https://www.gog.com/en/news",
+    "price": "Free",
+    "endsAt": "Check site",
+    "lastCheckedAt": "2026-05-01T03:36:36.063Z"
+  },
+  {
+    "source": "gog",
+    "type": "limited-time",
+    "title": "GOG Giveaway",
+    "url": "https://www.gog.com/en/news",
+    "price": "Free",
+    "endsAt": "Check site",
+    "lastCheckedAt": "2026-05-01T03:36:36.063Z"
+  },
+  {
+    "source": "gog",
+    "type": "limited-time",
+    "title": "GOG Giveaway",
+    "url": "https://www.gog.com/en/news",
+    "price": "Free",
+    "endsAt": "Check site",
+    "lastCheckedAt": "2026-05-01T03:36:36.063Z"
+  },
+  {
+    "source": "gog",
+    "type": "limited-time",
+    "title": "GOG Giveaway",
+    "url": "https://www.gog.com/en/news",
+    "price": "Free",
+    "endsAt": "Check site",
+    "lastCheckedAt": "2026-05-01T03:36:36.063Z"
+  },
+  {
+    "source": "gog",
+    "type": "limited-time",
+    "title": "GOG Giveaway",
+    "url": "https://www.gog.com/en/news",
+    "price": "Free",
+    "endsAt": "Check site",
+    "lastCheckedAt": "2026-05-01T03:36:36.063Z"
+  }
 ]
