@@ -1,0 +1,10 @@
+[
+    {
+        "source": "gog",
+        "type": "permanent",
+        "title": "Sample Free Game",
+        "url": "https://www.gog.com",
+        "price": "Free",
+        "lastCheckedAt": "2026-01-01T00:00:00Z"
+    }
+]

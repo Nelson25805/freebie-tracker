@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background: #020617;
+}
+
+.filters button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.filters .active {
+    background: #38bdf8;
+    color: black;
+}
+
+#offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.badge.permanent {
+    background: #22c55e;
+}
+
+.badge.limited-time {
+    background: #f97316;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    opacity: 0.6;
+}
