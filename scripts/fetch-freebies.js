@@ -28,9 +28,14 @@ async function scrapeEpic() {
 
     try {
         await page.goto(EPIC_URL, { waitUntil: "domcontentloaded", timeout: 120000 });
-        await page.waitForSelector('[data-component="FreeOfferCard"]', { timeout: 60000 });
 
-        const items = await page.$$eval('[data-component="FreeOfferCard"]', cards =>
+        const cards = page.locator('[data-component="FreeOfferCard"]');
+        await cards.first().waitFor({ state: "attached", timeout: 60000 });
+
+        const count = await cards.count();
+        console.log(`Epic cards found: ${count}`);
+
+        const items = await cards.evaluateAll(cards =>
             cards.map(card => {
                 const link = card.querySelector('a[href]');
                 const img = card.querySelector('img[alt]');
@@ -60,7 +65,6 @@ async function scrapeEpic() {
                 };
             })
         );
-        console.log("SCRAPER_VERSION=playwright-epic-dom-v3");
 
         return items.filter(item => item.title && item.claimUrl);
     } finally {
