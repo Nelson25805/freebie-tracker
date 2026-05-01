@@ -27,36 +27,40 @@ async function scrapeEpic() {
     });
 
     try {
-        await page.goto(EPIC_URL, { waitUntil: "networkidle", timeout: 120000 });
-        await page.waitForSelector('[data-component="FreeOfferCard"]', { timeout: 30000 });
+        await page.goto(EPIC_URL, { waitUntil: "domcontentloaded", timeout: 120000 });
+        await page.waitForSelector('[data-component="FreeOfferCard"]', { timeout: 60000 });
 
-        const items = await page.$$eval('[data-component="FreeOfferCard"]', cards => {
-            return cards.map(card => {
-                const link = card.querySelector("a[href]");
-                const titleEl = card.querySelector("h6");
-                const imgEl = card.querySelector('img[alt]');
+        const items = await page.$$eval('[data-component="FreeOfferCard"]', cards =>
+            cards.map(card => {
+                const link = card.querySelector('a[href]');
+                const img = card.querySelector('img[alt]');
+                const titleEl = card.querySelector('h6');
                 const timeEls = [...card.querySelectorAll('time[datetime]')];
+                const aria = link?.getAttribute('aria-label') || '';
 
-                const title = titleEl?.textContent?.trim() || imgEl?.getAttribute("alt") || "Untitled";
-                const href = link?.getAttribute("href") || "";
-                const claimUrl = href.startsWith("http") ? href : `https://store.epicgames.com${href}`;
-                const imageUrl = imgEl?.getAttribute("src") || imgEl?.getAttribute("data-image") || null;
-                const startsAt = timeEls[0]?.getAttribute("datetime") || null;
-                const endsAt = timeEls[1]?.getAttribute("datetime") || null;
+                const title =
+                    titleEl?.textContent?.trim() ||
+                    img?.getAttribute('alt') ||
+                    (aria.split(',').at(-2) || '').trim() ||
+                    'Untitled';
+
+                const href = link?.getAttribute('href') || '';
+                const claimUrl = href.startsWith('http') ? href : `https://store.epicgames.com${href}`;
 
                 return {
                     platform: "Epic Games Store",
                     title,
                     type: "permanent",
-                    startsAt,
-                    endsAt,
+                    startsAt: timeEls[0]?.getAttribute('datetime') || null,
+                    endsAt: timeEls[1]?.getAttribute('datetime') || null,
                     claimUrl,
                     sourceUrl: "https://store.epicgames.com/en-US/free-games",
-                    imageUrl,
+                    imageUrl: img?.getAttribute('src') || img?.getAttribute('data-image') || null,
                     status: "active",
                 };
-            });
-        });
+            })
+        );
+        console.log("SCRAPER_VERSION=playwright-epic-dom-v3");
 
         return items.filter(item => item.title && item.claimUrl);
     } finally {
