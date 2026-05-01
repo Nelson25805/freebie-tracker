@@ -1,12 +1,12 @@
 [
-    {
-        "platform": "Manual seed",
-        "title": "Waiting for scraper results",
-        "type": "permanent",
-        "startsAt": null,
-        "endsAt": null,
-        "claimUrl": "https://example.com",
-        "sourceUrl": "https://example.com",
-        "status": "seed"
-    }
+  {
+    "platform": "Manual seed",
+    "title": "Waiting for scraper results",
+    "type": "permanent",
+    "startsAt": null,
+    "endsAt": null,
+    "claimUrl": "https://example.com",
+    "sourceUrl": "https://example.com",
+    "status": "seed"
+  }
 ]
