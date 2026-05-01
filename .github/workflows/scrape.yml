@@ -1,41 +1,41 @@
 name: Update Freebies
 
 on:
-    schedule:
-        - cron: "0 */6 * * *"
-    workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 permissions:
-    contents: write
+  contents: write
 
 jobs:
-    scrape:
-        runs-on: ubuntu-latest
+  scrape:
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-            - uses: actions/setup-node@v4
-              with:
-                  node-version: "22"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
 
-            - name: Install dependencies
-              run: npm install
+      - name: Install dependencies
+        run: npm ci
 
-            - name: Install Playwright browsers
-              run: npx playwright install --with-deps chromium
+      - name: Install Playwright browsers
+        run: npm exec -- playwright install --with-deps chromium
 
-            - name: Run scraper
-              run: node scripts/fetch-freebies.js
+      - name: Run scraper
+        run: node scripts/fetch-freebies.js
 
-            - name: Commit changes
-              run: |
-                  if git diff --quiet; then
-                    echo "No changes"
-                    exit 0
-                  fi
-                  git config user.name "github-actions[bot]"
-                  git config user.email "actions@github.com"
-                  git add data/freebies.json
-                  git commit -m "Auto-update freebies"
-                  git push
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add data/freebies.json
+          git commit -m "Auto-update freebies"
+          git push
