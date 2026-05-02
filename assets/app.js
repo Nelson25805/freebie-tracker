@@ -1,44 +1,57 @@
-const container = document.getElementById("offers");
-const buttons = document.querySelectorAll(".filters button");
+const state = {
+    offers: [],
+    query: "",
+    source: "all",
+    type: "all",
+};
 
-let offers = [];
-let currentFilter = "all";
+const els = {
+    offers: document.getElementById("offers"),
+    template: document.getElementById("offer-template"),
+    search: document.getElementById("search"),
+    sourceFilter: document.getElementById("sourceFilter"),
+    typeFilter: document.getElementById("typeFilter"),
+    updatedAt: document.getElementById("updatedAt"),
+    statTotal: document.getElementById("stat-total"),
+    statLimited: document.getElementById("stat-limited"),
+    statPermanent: document.getElementById("stat-permanent"),
+};
 
-async function loadOffers() {
-    const res = await fetch("data/offers.json");
-    offers = await res.json();
-    render();
-}
+const sourceNames = {
+    gog: "GOG",
+    epic: "Epic",
+    steam: "Steam",
+};
 
-function render() {
-    container.innerHTML = "";
-
-    const filtered = offers.filter(o =>
-        currentFilter === "all" ? true : o.type === currentFilter
-    );
-
-    filtered.forEach(o => {
-        const el = document.createElement("div");
-        el.className = "card";
-
-        el.innerHTML = `
-      <span class="badge ${o.type}">${o.type}</span>
-      <h3>${o.title}</h3>
-      <p>${o.endsAt ? `Ends: ${o.endsAt}` : "No expiry"}</p>
-      <a href="${o.url}" target="_blank">View</a>
-    `;
-
-        container.appendChild(el);
-    });
-}
-
-buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        currentFilter = btn.dataset.filter;
-        render();
-    });
+const fmt = new Intl.DateTimeFormat(undefined, {
+    dateStyle: "medium",
+    timeStyle: "short",
 });
 
-loadOffers();
+function normalize(text = "") {
+    return text.replace(/\s+/g, " ").trim();
+}
+
+function parseDate(value) {
+    if (!value) return null;
+    const d = new Date(value);
+    return Number.isNaN(d.getTime()) ? null : d;
+}
+
+function daysLeft(date) {
+    if (!date) return null;
+    const diff = date.getTime() - Date.now();
+    return Math.ceil(diff / 86400000);
+}
+
+function formatWindow(offer) {
+    if (offer.endsAt) {
+        const d = parseDate(offer.endsAt);
+        if (d) {
+            const left = daysLeft(d);
+            return `${fmt.format(d)}${left === 0 ? " (today)" : left === 1 ? " (1 day left)" : left > 1 ? ` (${left} days left)` : " (ended)"}`;
+        }
+        return offer.endsAtLabel || offer.endsAt;
+    }
+    return offer.startsAt ? `Starts ${offer.startsAt}` : "No expiry listed";
+};

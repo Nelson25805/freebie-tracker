@@ -1,8 +1,12 @@
 {
     "name": "free-game-tracker",
+    "private": true,
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-        "scrape": "node scripts/scrape-gog.js"
+        "scrape": "node scripts/scrape.mjs"
+    },
+    "dependencies": {
+        "cheerio": "^1.1.2"
     }
 }

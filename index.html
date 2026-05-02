@@ -1,30 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<span id="stat-limited">0</span>
+<label>Limited-time</label>
+</div>
+<div class="stat">
+    <span id="stat-permanent">0</span>
+    <label>Permanent</label>
+</div>
+</section>
+</header>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Game Tracker</title>
-    <link rel="stylesheet" href="assets/styles.css" />
-</head>
+<main class="shell main">
+    <section class="controls" aria-label="Filters">
+        <input id="search" type="search" placeholder="Search offers" />
 
-<body>
-    <header>
-        <h1>🎮 Free Game Tracker</h1>
-        <div class="filters">
-            <button data-filter="all" class="active">All</button>
-            <button data-filter="permanent">Always Free</button>
-            <button data-filter="limited-time">Limited-Time</button>
+        <select id="sourceFilter" aria-label="Filter by store">
+            <option value="all">All stores</option>
+            <option value="gog">GOG</option>
+            <option value="epic">Epic</option>
+            <option value="steam">Steam</option>
+        </select>
+
+        <select id="typeFilter" aria-label="Filter by type">
+            <option value="all">All types</option>
+            <option value="limited-time">Limited-time</option>
+            <option value="permanent">Permanent</option>
+        </select>
+    </section>
+
+    <section class="meta-row">
+        <p id="updatedAt">Loading…</p>
+        <p>Source data is refreshed by GitHub Actions.</p>
+    </section>
+
+    <section id="offers" class="grid" aria-live="polite"></section>
+</main>
+
+<template id="offer-template">
+    <article class="card">
+        <div class="card-top">
+            <span class="badge"></span>
+            <span class="source"></span>
         </div>
-    </header>
+        <h2 class="title"></h2>
+        <p class="description"></p>
+        <dl class="details">
+            <div>
+                <dt>Price</dt>
+                <dd class="price"></dd>
+            </div>
+            <div>
+                <dt>Window</dt>
+                <dd class="window"></dd>
+            </div>
+        </dl>
+        <a class="link" target="_blank" rel="noreferrer">Open store page</a>
+    </article>
+</template>
 
-    <main id="offers"></main>
-
-    <footer>
-        <p>Data auto-updated via GitHub Actions</p>
-    </footer>
-
-    <script src="assets/app.js"></script>
+<script type="module" src="assets/app.js"></script>
 </body>
 
 </html>
