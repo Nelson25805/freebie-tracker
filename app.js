@@ -299,6 +299,7 @@ document.addEventListener("click", (e) => {
 
 [els.searchInput, els.storeFilter, els.statusFilter, els.sortFilter, els.hideClaimed].forEach(
   (el) => {
+    if (!el) return;
     el.addEventListener("input", render);
     el.addEventListener("change", render);
   }

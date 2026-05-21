@@ -16,14 +16,14 @@
         <div class="eyebrow">🎮 Free Game Tracker</div>
         <h1>Track current freebies, then mark the ones you already claimed.</h1>
         <p class="subtext">
-          Built for GitHub Pages, this page checks Epic Games Store giveaway data, shows the live free offers,
-          and remembers which games you have already collected in your browser.
+          Automatically updated several times a day via GitHub Actions. Shows current free offers from
+          Epic Games Store and GOG, and remembers which games you've already collected in your browser.
         </p>
         <div class="hero-actions">
-          <button class="btn btn-primary" id="refreshBtn">Refresh Epic offers</button>
+          <button class="btn btn-primary" id="refreshBtn">Reload data</button>
           <button class="btn btn-secondary" id="resetBtn">Clear collected marks</button>
-          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank" rel="noreferrer">Open
-            Epic free games page</a>
+          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank" rel="noreferrer">Epic free games</a>
+          <a class="btn btn-ghost" href="https://www.gog.com/en/games#discounted" target="_blank" rel="noreferrer">GOG free games</a>
         </div>
         <div class="status-line" aria-live="polite">
           <span class="dot" id="statusDot"></span>
@@ -35,17 +35,17 @@
         <div class="stat">
           <div class="stat-label">Current free offers</div>
           <div class="stat-value" id="currentCount">0</div>
-          <small>Live Epic Games promotions that are currently free to claim.</small>
+          <small>Live promotions currently free to claim across all stores.</small>
         </div>
         <div class="stat">
           <div class="stat-label">Upcoming freebies</div>
           <div class="stat-value" id="upcomingCount">0</div>
-          <small>Games that have been announced but are not claimable yet.</small>
+          <small>Games announced but not yet claimable.</small>
         </div>
         <div class="stat">
           <div class="stat-label">Already collected</div>
           <div class="stat-value" id="claimedCount">0</div>
-          <small>Saved locally in this browser so your next search remembers them.</small>
+          <small>Saved locally in this browser so your next visit remembers them.</small>
         </div>
       </aside>
     </section>
@@ -53,6 +53,12 @@
     <section class="card section">
       <div class="toolbar">
         <input class="search" id="searchInput" type="search" placeholder="Search by game title or store name..." />
+
+        <select class="select" id="storeFilter" aria-label="Filter by store">
+          <option value="all">All stores</option>
+          <option value="epic">Epic Games Store</option>
+          <option value="gog">GOG</option>
+        </select>
 
         <select class="select" id="statusFilter" aria-label="Filter by status">
           <option value="all">All statuses</option>
@@ -77,7 +83,7 @@
 
       <div class="section-head">
         <div>
-          <h2 class="section-title">Epic Games Store</h2>
+          <h2 class="section-title">All Stores</h2>
           <p class="section-note">
             Claim windows are limited. Anything marked collected stays saved in your browser until you clear it.
           </p>
@@ -90,8 +96,8 @@
     </section>
 
     <p class="footer">
-      This page uses Epic’s public store promotions data and browser storage only. It does not sign in to Epic or claim
-      games for you.
+      Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load this page.
+      This tracker does not sign in to any store or claim games for you.
     </p>
   </main>
 </body>
