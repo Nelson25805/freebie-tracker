@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import cheerio from "cheerio";
+import { load } from "cheerio";
 
 const EPIC_API_URL =
     "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=US&allowCountries=US";
@@ -84,7 +84,7 @@ function normalizeEpicGames(data) {
 }
 
 function parsePrimeGamesFromHtml(html) {
-    const $ = cheerio.load(html);
+    const $ = load(html);
     const games = [];
 
     $("h3").each((_, el) => {
