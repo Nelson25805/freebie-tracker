@@ -395,43 +395,45 @@ async function loadAllGames() {
     setStatus("Loading game offers…", "busy");
     els.refreshBtn.disabled = true;
 
-    const results = await Promise.allSettled([loadEpicGames(), loadPrimeGames()]);
-    const nextGames = [];
+    try {
+        const res = await fetch("./data/offers.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    for (const result of results) {
-        if (result.status === "fulfilled") {
-            nextGames.push(...result.value);
+        const data = await res.json();
+        allGames = Array.isArray(data.games) ? data.games : [];
+        cachedGames = allGames;
+        saveCachedGames(allGames);
+
+        els.currentCount.textContent = String(allGames.filter((g) => g.source === "epic" && g.status === "free").length);
+        els.upcomingCount.textContent = String(allGames.filter((g) => g.source === "epic" && g.status === "upcoming").length);
+        els.primeCount.textContent = String(allGames.filter((g) => g.source === "prime").length);
+        els.claimedCount.textContent = String(collected.size);
+
+        els.lastUpdated.textContent = `Last updated: ${new Intl.DateTimeFormat(undefined, {
+            dateStyle: "full",
+            timeStyle: "short",
+        }).format(new Date())}`;
+
+        setStatus(`Loaded ${allGames.length} offers.`, "ok");
+        render();
+    } catch (err) {
+        console.error(err);
+
+        if (cachedGames.length) {
+            allGames = cachedGames;
+            setStatus("Live data failed, showing cached results.", "err");
+            render();
         } else {
-            console.error(result.reason);
+            setStatus("No local offers file found yet.", "err");
+            els.grid.innerHTML = `<div class="empty">No offers could be loaded yet.</div>`;
         }
+    } finally {
+        els.refreshBtn.disabled = false;
     }
-
-    allGames = nextGames;
-    saveCachedGames(allGames);
-
-    els.currentCount.textContent = String(allGames.filter((g) => g.source === "epic" && g.status === "free").length);
-    els.upcomingCount.textContent = String(allGames.filter((g) => g.source === "epic" && g.status === "upcoming").length);
-    els.primeCount.textContent = String(allGames.filter((g) => g.source === "prime").length);
-    els.claimedCount.textContent = String(collected.size);
-    els.lastUpdated.textContent = `Last updated: ${new Intl.DateTimeFormat(undefined, {
-        dateStyle: "full",
-        timeStyle: "short",
-    }).format(new Date())}`;
-
-    if (nextGames.length) {
-        setStatus(`Loaded ${nextGames.length} offers across Epic and Prime.`, "ok");
-        render();
-    } else if (cachedGames.length) {
-        allGames = cachedGames;
-        setStatus("Live fetch failed, showing cached results.", "err");
-        render();
-    } else {
-        setStatus("Could not load offers right now.", "err");
-        els.grid.innerHTML = `<div class="empty">No offers could be loaded right now.</div>`;
-    }
-
-    els.refreshBtn.disabled = false;
 }
+
+saveCollected();
+loadAllGames();
 
 function toggleCollected(key) {
     if (collected.has(key)) collected.delete(key);
