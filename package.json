@@ -1,5 +1,15 @@
 {
-  "dependencies": {
-    "cheerio": "^1.2.0"
+  "name": "freebie-tracker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:epic": "node scripts/update-epic.mjs",
+    "capture:prime": "node scripts/capture-prime-state.mjs",
+    "update:prime": "node scripts/update-prime.mjs",
+    "build": "node scripts/build-offers.mjs"
+  },
+  "devDependencies": {
+    "cheerio": "^1.1.2",
+    "playwright": "^1.55.0"
   }
 }

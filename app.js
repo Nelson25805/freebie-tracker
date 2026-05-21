@@ -1,14 +1,3 @@
-const EPIC_API_URL =
-    "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=US&allowCountries=US";
-const EPIC_API_PROXY = `https://api.allorigins.win/raw?url=${encodeURIComponent(EPIC_API_URL)}`;
-
-const PRIME_PAGE_URL =
-    "https://clouddosage.com/gamelists/free-games-on-amazon-luna-with-amazon-prime/";
-const PRIME_PAGE_PROXY = `https://api.allorigins.win/raw?url=${encodeURIComponent(PRIME_PAGE_URL)}`;
-
-const STORAGE_KEY = "epic_free_games_collected_v1";
-const CACHE_KEY = "free_games_multi_service_cache_v1";
-
 const els = {
     grid: document.getElementById("gamesGrid"),
     emptyState: document.getElementById("emptyState"),
@@ -29,9 +18,10 @@ const els = {
     statusDot: document.getElementById("statusDot"),
 };
 
+const STORAGE_KEY = "freebie_tracker_collected_v1";
+
 let allGames = [];
 let collected = loadCollected();
-let cachedGames = loadCachedGames();
 
 function setStatus(text, mode = "idle") {
     els.statusText.textContent = text;
@@ -51,31 +41,6 @@ function loadCollected() {
 function saveCollected() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...collected]));
     els.claimedCount.textContent = String(collected.size);
-}
-
-function loadCachedGames() {
-    try {
-        return JSON.parse(localStorage.getItem(CACHE_KEY) || "[]");
-    } catch {
-        return [];
-    }
-}
-
-function saveCachedGames(games) {
-    try {
-        localStorage.setItem(CACHE_KEY, JSON.stringify(games));
-    } catch {
-        // Ignore storage failures.
-    }
-}
-
-function slugify(text) {
-    return String(text)
-        .toLowerCase()
-        .trim()
-        .replace(/['"]/g, "")
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "");
 }
 
 function gameKey(game) {
@@ -99,132 +64,6 @@ function hoursLeft(value) {
     return Math.max(0, Math.round((end - Date.now()) / 36e5));
 }
 
-function pickImage(game) {
-    const images = game.keyImages || [];
-    const preferred =
-        images.find((img) => /offerimagewide|featuredmedia|thumbnail/i.test(img.type)) ||
-        images[0];
-    return preferred?.url || "";
-}
-
-function hasCurrentPromotion(game) {
-    const promos = game.promotions?.promotionalOffers || [];
-    return Array.isArray(promos) && promos.some((block) => Array.isArray(block.promotionalOffers) && block.promotionalOffers.length > 0);
-}
-
-function getCurrentOffer(game) {
-    const promos = game.promotions?.promotionalOffers || [];
-    for (const block of promos) {
-        for (const offer of block.promotionalOffers || []) {
-            if (offer.startDate && offer.endDate) return offer;
-        }
-    }
-    return null;
-}
-
-function getUpcomingOffer(game) {
-    const promos = game.promotions?.upcomingPromotionalOffers || [];
-    for (const block of promos) {
-        for (const offer of block.promotionalOffers || []) {
-            if (offer.startDate && offer.endDate) return offer;
-        }
-    }
-    return null;
-}
-
-function normalizeEpicGames(data) {
-    const elements = data?.data?.Catalog?.searchStore?.elements || [];
-
-    return elements
-        .map((item) => {
-            const currentOffer = getCurrentOffer(item);
-            const upcomingOffer = getUpcomingOffer(item);
-            const discountPrice = item.price?.totalPrice?.discountPrice;
-            const originalPrice = item.price?.totalPrice?.originalPrice;
-            const nowFree = typeof discountPrice === "number" && discountPrice === 0 && hasCurrentPromotion(item);
-            const upcomingFree = !nowFree && !!upcomingOffer;
-            const status = nowFree ? "free" : upcomingFree ? "upcoming" : "other";
-
-            return {
-                source: "epic",
-                id: item.id,
-                title: item.title || "Untitled",
-                slug:
-                    item.productSlug ||
-                    item.urlSlug ||
-                    item.catalogNs?.mappings?.[0]?.pageSlug ||
-                    "",
-                seller: item.seller?.name || "Epic Games Store",
-                description: item.description || "",
-                image: pickImage(item),
-                currentOffer,
-                upcomingOffer,
-                originalPrice,
-                discountPrice,
-                status,
-                openUrl: item.productSlug
-                    ? `https://store.epicgames.com/p/${encodeURIComponent(item.productSlug)}`
-                    : "https://store.epicgames.com/free-games",
-                raw: item,
-            };
-        })
-        .filter((game) => game.status !== "other");
-}
-
-function parsePrimeGamesFromHtml(html) {
-    const doc = new DOMParser().parseFromString(html, "text/html");
-    const headings = [...doc.querySelectorAll("h3")];
-    const games = [];
-
-    for (const heading of headings) {
-        const title = heading.textContent.trim();
-        if (!title) continue;
-        if (/showing\s+\d+/i.test(title)) continue;
-        if (/our favorite gaming deals/i.test(title)) continue;
-        if (/list of free games/i.test(title)) continue;
-
-        const container = heading.closest("article, section, div") || heading.parentElement;
-        const text = container?.innerText || heading.parentElement?.innerText || "";
-        if (!/Release Date:/i.test(text) && !/Developer:/i.test(text)) continue;
-
-        const getField = (label) => {
-            const re = new RegExp(`${label}:\\s*([^\\n\\r]+)`, "i");
-            const match = text.match(re);
-            return match ? match[1].trim() : "";
-        };
-
-        const releaseDate = getField("Release Date");
-        const developer = getField("Developer");
-        const publisher = getField("Publisher");
-        const genre = getField("Genre");
-        const metascore = getField("Metascore");
-
-        const image = container?.querySelector("img")?.src || "";
-
-        games.push({
-            source: "prime",
-            id: `prime-${slugify(title)}`,
-            title,
-            seller: "Amazon Prime / Luna",
-            description: [genre, developer ? `Developer: ${developer}` : "", publisher ? `Publisher: ${publisher}` : ""]
-                .filter(Boolean)
-                .join(" • "),
-            image,
-            currentOffer: null,
-            upcomingOffer: null,
-            originalPrice: null,
-            discountPrice: 0,
-            status: "prime",
-            openUrl: PRIME_PAGE_URL,
-            releaseDate,
-            metascore,
-            raw: { releaseDate, developer, publisher, genre, metascore },
-        });
-    }
-
-    return games;
-}
-
 function formatMoney(cents) {
     const n = Number(cents);
     if (!Number.isFinite(n)) return "Unknown price";
@@ -243,9 +82,24 @@ function escapeHtml(str) {
         .replaceAll("'", "&#39;");
 }
 
+function loadCachedGames() {
+    try {
+        return JSON.parse(localStorage.getItem("freebie_tracker_cache_v1") || "[]");
+    } catch {
+        return [];
+    }
+}
+
+function saveCachedGames(games) {
+    try {
+        localStorage.setItem("freebie_tracker_cache_v1", JSON.stringify(games));
+    } catch {
+        // ignore
+    }
+}
+
 function cardStatusText(game) {
     const key = gameKey(game);
-
     if (collected.has(key)) return { label: "Already collected", cls: "claimed" };
     if (game.source === "prime") return { label: "Included with Prime", cls: "prime" };
     if (game.status === "free") return { label: "Free now", cls: "free" };
@@ -285,13 +139,11 @@ function getVisibleGames() {
 
     items.sort((a, b) => {
         if (sort === "title") return a.title.localeCompare(b.title);
-
         if (sort === "newest") {
-            const ad = new Date(a.raw.effectiveDate || a.releaseDate || 0).getTime();
-            const bd = new Date(b.raw.effectiveDate || b.releaseDate || 0).getTime();
+            const ad = new Date(a.raw?.effectiveDate || a.raw?.updatedAt || 0).getTime();
+            const bd = new Date(b.raw?.effectiveDate || b.raw?.updatedAt || 0).getTime();
             return bd - ad;
         }
-
         const ae = new Date(a.currentOffer?.endDate || a.upcomingOffer?.startDate || 0).getTime();
         const be = new Date(b.currentOffer?.endDate || b.upcomingOffer?.startDate || 0).getTime();
         return ae - be;
@@ -325,8 +177,8 @@ function render() {
         const extraPills =
             game.source === "prime"
                 ? `
-          ${game.releaseDate ? `<span class="pill">Release ${fmtDate(game.releaseDate)}</span>` : ""}
-          ${game.metascore ? `<span class="pill">Metascore <strong>${escapeHtml(game.metascore)}</strong></span>` : ""}
+          ${game.raw?.releaseDate ? `<span class="pill">Release ${escapeHtml(game.raw.releaseDate)}</span>` : ""}
+          ${game.raw?.metascore ? `<span class="pill">Metascore <strong>${escapeHtml(game.raw.metascore)}</strong></span>` : ""}
         `
                 : `
           ${Number(game.originalPrice) > 0 ? `<span class="pill strike">Regular ${formatMoney(game.originalPrice)}</span>` : ""}
@@ -369,30 +221,8 @@ function render() {
     }
 }
 
-async function fetchJsonThroughProxy(url) {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.json();
-}
-
-async function fetchTextThroughProxy(url) {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.text();
-}
-
-async function loadEpicGames() {
-    const data = await fetchJsonThroughProxy(EPIC_API_PROXY);
-    return normalizeEpicGames(data);
-}
-
-async function loadPrimeGames() {
-    const html = await fetchTextThroughProxy(PRIME_PAGE_PROXY);
-    return parsePrimeGamesFromHtml(html);
-}
-
 async function loadAllGames() {
-    setStatus("Loading game offers…", "busy");
+    setStatus("Loading offers…", "busy");
     els.refreshBtn.disabled = true;
 
     try {
@@ -401,7 +231,6 @@ async function loadAllGames() {
 
         const data = await res.json();
         allGames = Array.isArray(data.games) ? data.games : [];
-        cachedGames = allGames;
         saveCachedGames(allGames);
 
         els.currentCount.textContent = String(allGames.filter((g) => g.source === "epic" && g.status === "free").length);
@@ -419,9 +248,10 @@ async function loadAllGames() {
     } catch (err) {
         console.error(err);
 
-        if (cachedGames.length) {
-            allGames = cachedGames;
-            setStatus("Live data failed, showing cached results.", "err");
+        const cached = loadCachedGames();
+        if (cached.length) {
+            allGames = cached;
+            setStatus("Live load failed, showing cached results.", "err");
             render();
         } else {
             setStatus("No local offers file found yet.", "err");
@@ -432,13 +262,9 @@ async function loadAllGames() {
     }
 }
 
-saveCollected();
-loadAllGames();
-
 function toggleCollected(key) {
     if (collected.has(key)) collected.delete(key);
     else collected.add(key);
-
     saveCollected();
     render();
 }
@@ -447,7 +273,6 @@ function markVisibleAsCollected() {
     for (const game of getVisibleGames()) {
         collected.add(gameKey(game));
     }
-
     saveCollected();
     render();
 }
