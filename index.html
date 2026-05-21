@@ -47,6 +47,12 @@
           <div class="stat-value" id="claimedCount">0</div>
           <small>Saved locally in this browser so your next search remembers them.</small>
         </div>
+        <!-- Add this stat card inside .hero-side -->
+        <div class="stat">
+          <div class="stat-label">Prime offers</div>
+          <div class="stat-value" id="primeCount">0</div>
+          <small>Games currently listed as included with Amazon Prime.</small>
+        </div>
       </aside>
     </section>
 
@@ -59,6 +65,12 @@
           <option value="free">Current free</option>
           <option value="upcoming">Upcoming</option>
           <option value="claimed">Already collected</option>
+        </select>
+
+        <select class="select" id="serviceFilter" aria-label="Filter by service">
+          <option value="all">All services</option>
+          <option value="epic">Epic Games</option>
+          <option value="prime">Amazon Prime / Luna</option>
         </select>
 
         <select class="select" id="sortFilter" aria-label="Sort results">

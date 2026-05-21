@@ -305,6 +305,10 @@ input {
     color: #ffe8a3;
 }
 
+.badge.prime {
+    color: #ffe8a3;
+}
+
 .content {
     padding: 14px;
     display: grid;
