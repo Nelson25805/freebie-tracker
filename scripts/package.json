@@ -1,0 +1,12 @@
+{
+  "name": "free-game-tracker-scripts",
+  "version": "1.0.0",
+  "description": "Server-side scripts for fetching free game data from storefronts.",
+  "type": "module",
+  "scripts": {
+    "fetch": "node fetch-games.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

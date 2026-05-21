@@ -1,0 +1,47 @@
+name: Fetch Free Games Data
+
+on:
+  schedule:
+    # Runs at 08:00, 14:00, and 20:00 UTC daily
+    # This covers morning, afternoon, and evening refreshes
+    - cron: "0 8 * * *"
+    - cron: "0 14 * * *"
+    - cron: "0 20 * * *"
+  workflow_dispatch: # Allow manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-games:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: scripts
+
+      - name: Fetch free games data
+        run: node fetch-games.js
+        working-directory: scripts
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/games.json
+          # Only commit if the file actually changed
+          if git diff --staged --quiet; then
+            echo "No changes to games data, skipping commit."
+          else
+            git commit -m "chore: refresh free games data [skip ci]"
+            git push
+          fi
