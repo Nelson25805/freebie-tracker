@@ -75,7 +75,25 @@ async function main() {
     await page.waitForTimeout(3000);
 
     if (/sign in|login|verify/i.test((await page.title()) + " " + (await page.textContent("body").catch(() => "")))) {
-        throw new Error("Prime page looks unauthenticated. Recreate playwright/.auth/prime.json.");
+        console.warn("Prime session invalid or expired. Skipping Prime update.");
+        await fs.mkdir("data", { recursive: true });
+
+        await fs.writeFile(
+            "data/prime.json",
+            JSON.stringify(
+                {
+                    updatedAt: new Date().toISOString(),
+                    games: [],
+                    error: "Prime authentication failed"
+                },
+                null,
+                2
+            ),
+            "utf8"
+        );
+
+        await browser.close();
+        return;
     }
 
     const html = await page.content();
