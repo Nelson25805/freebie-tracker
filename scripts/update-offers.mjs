@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import cheerio from "cheerio";
 
 const EPIC_API_URL =
     "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=US&allowCountries=US";
@@ -83,17 +84,17 @@ function normalizeEpicGames(data) {
 }
 
 function parsePrimeGamesFromHtml(html) {
-    const doc = new DOMParser().parseFromString(html, "text/html");
-    const headings = [...doc.querySelectorAll("h3")];
+    const $ = cheerio.load(html);
     const games = [];
 
-    for (const heading of headings) {
-        const title = heading.textContent.trim();
-        if (!title) continue;
+    $("h3").each((_, el) => {
+        const title = $(el).text().trim();
+        if (!title) return;
 
-        const container = heading.closest("article, section, div") || heading.parentElement;
-        const text = container?.innerText || heading.parentElement?.innerText || "";
-        if (!/Release Date:/i.test(text) && !/Developer:/i.test(text)) continue;
+        const container = $(el).closest("article, section, div");
+        const text = container.text();
+
+        if (!/Release Date:/i.test(text) || !/Developer:/i.test(text)) return;
 
         const getField = (label) => {
             const re = new RegExp(`${label}:\\s*([^\\n\\r]+)`, "i");
@@ -106,7 +107,7 @@ function parsePrimeGamesFromHtml(html) {
         const publisher = getField("Publisher");
         const genre = getField("Genre");
         const metascore = getField("Metascore");
-        const image = container?.querySelector("img")?.src || "";
+        const image = container.find("img").first().attr("src") || "";
 
         games.push({
             source: "prime",
@@ -126,7 +127,7 @@ function parsePrimeGamesFromHtml(html) {
             metascore,
             openUrl: PRIME_PAGE_URL,
         });
-    }
+    });
 
     return games;
 }
@@ -141,6 +142,14 @@ async function main() {
     if (!primeRes.ok) throw new Error(`Prime HTTP ${primeRes.status}`);
     const primeHtml = await primeRes.text();
     const primeGames = parsePrimeGamesFromHtml(primeHtml);
+
+    console.log(`Epic parsed: ${epicGames.length}`);
+    console.log(`Prime parsed: ${primeGames.length}`);
+
+    const total = epicGames.length + primeGames.length;
+    if (total === 0) {
+        throw new Error("Refusing to overwrite offers.json with 0 games.");
+    }
 
     const payload = {
         updatedAt: new Date().toISOString(),
