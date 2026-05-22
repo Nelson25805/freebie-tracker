@@ -248,30 +248,28 @@ async function fetchGOG() {
 // We fetch the RSS, find the current month's PS Plus announcement post,
 // then use Claude to extract structured game data from the post body.
 
-const PS_BLOG_RSS = "https://blog.playstation.com/feed/";
+// Use the PS Plus category feed — far fewer irrelevant posts than the main feed.
+// Sony posts next month's games in the last week of the prior month,
+// so we match by month NAME in the title, not the publish date.
+const PS_BLOG_RSS = "https://blog.playstation.com/category/ps-plus/feed/";
 const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
 
-// Strip HTML tags from a string
 function stripHtml(html) {
   return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-// Pull text between two XML/RSS tags (simple, no full XML parser needed)
+// Handles both plain tags and CDATA-wrapped content (WordPress style).
 function extractTag(xml, tag) {
-  const open = `<${tag}>`;
-  const close = `</${tag}>`;
   const cdataOpen = `<${tag}><![CDATA[`;
   const cdataClose = `]]></${tag}>`;
-
-  // Try CDATA first
   let start = xml.indexOf(cdataOpen);
   if (start !== -1) {
     start += cdataOpen.length;
     const end = xml.indexOf(cdataClose, start);
     if (end !== -1) return xml.slice(start, end).trim();
   }
-
-  // Plain tag
+  const open = `<${tag}>`;
+  const close = `</${tag}>`;
   start = xml.indexOf(open);
   if (start === -1) return "";
   start += open.length;
@@ -280,7 +278,6 @@ function extractTag(xml, tag) {
   return xml.slice(start, end).trim();
 }
 
-// Split RSS XML into individual <item> blocks
 function splitItems(xml) {
   const items = [];
   let pos = 0;
@@ -306,36 +303,48 @@ async function fetchPSBlogRSS() {
 function findPsPlusPost(rssXml) {
   const items = splitItems(rssXml);
   const now = new Date();
-  const monthName = now.toLocaleString("en-US", { month: "long" });
-  const year = now.getFullYear();
 
-  // Look for a post whose title matches "PlayStation Plus Monthly Games for <Month> <Year>"
-  // or similar patterns Sony uses
-  const patterns = [
-    new RegExp(`playstation plus.*monthly.*games.*${monthName}.*${year}`, "i"),
-    new RegExp(`ps plus.*monthly.*games.*${monthName}.*${year}`, "i"),
-    new RegExp(`monthly.*games.*${monthName}.*${year}`, "i"),
-    new RegExp(`playstation plus.*${monthName}.*${year}`, "i"),
-    // Fallback: just the current month announcement
-    new RegExp(`playstation plus.*monthly.*${monthName}`, "i"),
-    new RegExp(`ps plus.*${monthName}.*${year}`, "i"),
-  ];
+  // Sony posts the NEXT month's games in the last week of the prior month.
+  // Check both current month and next month in the title.
+  const monthsToCheck = [0, 1].map((offset) => {
+    const d = new Date(now.getFullYear(), now.getMonth() + offset, 1);
+    return d.toLocaleString("en-US", { month: "long" });
+  });
+
+  console.log(`  Looking for PS Plus post mentioning: ${monthsToCheck.join(" or ")}`);
+
+  let bestItem = null;
+  let bestScore = 0;
 
   for (const item of items) {
     const title = stripHtml(extractTag(item, "title"));
-    for (const pattern of patterns) {
-      if (pattern.test(title)) {
-        return {
-          title,
-          link: stripHtml(extractTag(item, "link")),
-          description: extractTag(item, "description"),
-          content: extractTag(item, "content:encoded") || extractTag(item, "description"),
-          pubDate: stripHtml(extractTag(item, "pubDate")),
-        };
+    const titleLower = title.toLowerCase();
+
+    // Must be a monthly games post
+    if (!/(monthly\s+games|monthly\s+free)/i.test(titleLower)) continue;
+    if (!/playstation\s*plus|ps\s*plus/i.test(titleLower)) continue;
+
+    let score = 0;
+    for (let i = 0; i < monthsToCheck.length; i++) {
+      if (titleLower.includes(monthsToCheck[i].toLowerCase())) {
+        score = Math.max(score, 2 - i); // current month scores higher
       }
     }
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestItem = item;
+    }
   }
-  return null;
+
+  if (!bestItem) return null;
+
+  return {
+    title: stripHtml(extractTag(bestItem, "title")),
+    link: stripHtml(extractTag(bestItem, "link")),
+    content: extractTag(bestItem, "content:encoded") || extractTag(bestItem, "description"),
+    pubDate: stripHtml(extractTag(bestItem, "pubDate")),
+  };
 }
 
 async function parseGamesWithClaude(postTitle, postText, postLink) {
