@@ -32,8 +32,6 @@ jobs:
       - name: Fetch free games data
         run: node fetch-games.js
         working-directory: scripts
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Commit updated data
         run: |

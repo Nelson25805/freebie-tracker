@@ -4,13 +4,11 @@
  * Fetches current and upcoming free game promotions from:
  *   - Epic Games Store
  *   - GOG
- *   - PlayStation Plus (via PlayStation Blog RSS + Claude parsing)
+ *   - PlayStation Plus (via PlayStation Blog RSS, parsed directly)
  *
  * Writes the combined, normalized result to ../data/games.json
  * This script is run by GitHub Actions on a schedule.
- *
- * Required env var for PS Plus:
- *   ANTHROPIC_API_KEY — used to parse the PS Blog post into structured game data
+ * No API keys or credentials required.
  */
 
 import fetch from "node-fetch";
@@ -252,7 +250,6 @@ async function fetchGOG() {
 // Sony posts next month's games in the last week of the prior month,
 // so we match by month NAME in the title, not the publish date.
 const PS_BLOG_RSS = "https://blog.playstation.com/category/ps-plus/feed/";
-const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
 
 function stripHtml(html) {
   return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -347,56 +344,76 @@ function findPsPlusPost(rssXml) {
   };
 }
 
-async function parseGamesWithClaude(postTitle, postText, postLink) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.warn("  ANTHROPIC_API_KEY not set — skipping Claude parsing");
-    return [];
+/**
+ * Parse PS Plus games directly from the blog post — no external API needed.
+ *
+ * Two complementary strategies, used together:
+ *
+ * 1. TITLE PARSE: The post title always follows the pattern:
+ *    "PlayStation Plus Monthly Games for May: Game One, Game Two, Game Three"
+ *    so we split on the colon and then on commas/ampersands.
+ *
+ * 2. HEADING PARSE: The post body uses H2/H3 headings like:
+ *    "## EA Sports FC 26 | PS5, PS4"   or   "<h2>Nine Sols | PS5, PS4</h2>"
+ *    which give us title + platforms together. We use this to enrich/confirm
+ *    the title list and to extract per-game platform info.
+ *
+ * The two lists are merged — heading results take priority (richer data),
+ * with title-parse results filling any gaps.
+ */
+function parseGamesFromPost(postTitle, postHtml) {
+  const games = [];
+
+  // ── Strategy 1: parse titles out of the post title string ──────────────────
+  // e.g. "...for May: EA Sports FC 26, Wuchang: Fallen Feathers, Nine Sols"
+  // We split on the first colon that follows "for <Month>", then on ", " or " & ".
+  const titleMatch = postTitle.match(/for\s+\w+:\s*(.+)$/i);
+  const titlesFromTitle = titleMatch
+    ? titleMatch[1]
+        .split(/,\s*(?=[A-Z])| &amp; | & /)
+        .map((t) => t.trim())
+        .filter(Boolean)
+    : [];
+
+  // ── Strategy 2: parse ## Heading | Platforms patterns from post body ────────
+  // Matches both Markdown headings and HTML <h2>/<h3> tags.
+  // Pattern: "Game Title | PS5, PS4"  or  "Game Title | PS5"
+  const headingPattern = /(?:#{1,3}|<h[23][^>]*>)\s*([^|\n<]+?)\s*\|\s*((?:PS[345]|PSVita)(?:[,/]\s*(?:PS[345]|PSVita))*)(?:\s*<\/h[23]>)?/gi;
+  const fromHeadings = [];
+  let m;
+  while ((m = headingPattern.exec(postHtml)) !== null) {
+    const title = m[1].trim();
+    const platformStr = m[2].trim();
+    const platforms = platformStr.split(/[,/]\s*/).map((p) => p.trim()).filter(Boolean);
+
+    // Skip headings that are obviously navigation or section headers, not game titles
+    if (title.length < 3 || /^(last chance|about|note|\*)/i.test(title)) continue;
+
+    fromHeadings.push({ title, platforms });
   }
 
-  const truncated = postText.slice(0, 8000); // stay well within context
+  // ── Merge: headings take priority; title-list fills gaps ───────────────────
+  const seen = new Set();
 
-  const prompt = `You are a data extraction assistant. Extract the PlayStation Plus monthly free games from the following PlayStation Blog post.
-
-Post title: ${postTitle}
-Post URL: ${postLink}
-
-Post content (may contain HTML):
-${truncated}
-
-Return ONLY a JSON array (no markdown, no preamble) where each element has these exact fields:
-- "title": the game title as a string
-- "platforms": array of platform strings, e.g. ["PS5", "PS4"] — include all platforms mentioned for each game
-- "description": a 1-2 sentence description of the game if available in the post, otherwise ""
-- "storeUrl": the PlayStation Store URL for the game if linked in the post, otherwise "https://store.playstation.com"
-
-Only include games that are part of the monthly PS Plus Essential free games (not Extra/Premium catalogue additions). If no games are found, return an empty array [].`;
-
-  const res = await fetch(ANTHROPIC_API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: 1000,
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Anthropic API HTTP ${res.status}: ${err.slice(0, 200)}`);
+  for (const { title, platforms } of fromHeadings) {
+    if (seen.has(title.toLowerCase())) continue;
+    seen.add(title.toLowerCase());
+    games.push({ title, platforms });
   }
 
-  const data = await res.json();
-  const text = data.content?.map((b) => b.text || "").join("") || "";
+  // Add any titles from the post title that weren't caught by headings
+  for (const title of titlesFromTitle) {
+    if (seen.has(title.toLowerCase())) continue;
+    // Check if a heading title is a close substring match (handles minor differences)
+    const alreadyCovered = [...seen].some(
+      (s) => s.includes(title.toLowerCase()) || title.toLowerCase().includes(s)
+    );
+    if (alreadyCovered) continue;
+    seen.add(title.toLowerCase());
+    games.push({ title, platforms: [] });
+  }
 
-  // Strip markdown fences if present
-  const clean = text.replace(/^```json\s*/i, "").replace(/```\s*$/, "").trim();
-  return JSON.parse(clean);
+  return games;
 }
 
 async function fetchPSPlus() {
@@ -413,30 +430,40 @@ async function fetchPSPlus() {
 
     console.log(`  Found post: "${post.title}"`);
 
-    const postText = stripHtml(post.content || post.description);
-    const parsed = await parseGamesWithClaude(post.title, postText, post.link);
+    const postHtml = post.content || "";
+    const parsed = parseGamesFromPost(post.title, postHtml);
 
-    if (!Array.isArray(parsed) || parsed.length === 0) {
-      console.warn("  Claude returned no games from the post.");
+    if (parsed.length === 0) {
+      console.warn("  Could not parse any games from the post.");
       return [];
     }
 
-    const games = parsed.map((item, i) => ({
+    // Extract "available until" date from the post body if present.
+    // Sony writes e.g. "available...from Tuesday May 5...until Monday June 2"
+    const untilMatch = postHtml.match(/until\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+(\w+\s+\d+)/i);
+    let offerEnd = null;
+    if (untilMatch) {
+      const year = new Date().getFullYear();
+      const parsed_date = new Date(`${untilMatch[1]} ${year}`);
+      if (!isNaN(parsed_date)) offerEnd = parsed_date.toISOString();
+    }
+
+    const games = parsed.map((item) => ({
       id: `psplus-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
       store: "psplus",
       storeName: "PlayStation Plus",
-      title: item.title || "Untitled",
+      title: item.title,
       slug: "",
-      storeUrl: item.storeUrl || "https://store.playstation.com",
-      seller: item.platforms?.join(" / ") || "PS4 / PS5",
-      description: item.description || "",
-      image: "", // PS Blog doesn't expose per-game images in the RSS
+      storeUrl: "https://store.playstation.com",
+      seller: item.platforms.length ? item.platforms.join(" / ") : "PS5 / PS4",
+      description: "",
+      image: "",
       originalPrice: null,
       discountPrice: 0,
       status: "free",
       offerStart: post.pubDate ? new Date(post.pubDate).toISOString() : null,
-      offerEnd: null, // PS Plus games rotate monthly; exact end date isn't in the RSS
-      platforms: item.platforms || [],
+      offerEnd,
+      platforms: item.platforms,
       sourcePost: post.link,
     }));
 
