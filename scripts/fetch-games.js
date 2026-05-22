@@ -347,70 +347,95 @@ function findPsPlusPost(rssXml) {
 /**
  * Parse PS Plus games directly from the blog post — no external API needed.
  *
- * Two complementary strategies, used together:
+ * For each game the PS Blog post body follows this consistent structure:
  *
- * 1. TITLE PARSE: The post title always follows the pattern:
- *    "PlayStation Plus Monthly Games for May: Game One, Game Two, Game Three"
- *    so we split on the colon and then on commas/ampersands.
+ *   <img src="https://blog.playstation.com/tachyon/...">   ← cover art
+ *   ... (Sony image download overlay, safe to ignore) ...
+ *   <h2><strong>Game Title | PS5, PS4</strong></h2>        ← title + platforms
+ *   <p>Description paragraph...</p>                        ← description
  *
- * 2. HEADING PARSE: The post body uses H2/H3 headings like:
- *    "## EA Sports FC 26 | PS5, PS4"   or   "<h2>Nine Sols | PS5, PS4</h2>"
- *    which give us title + platforms together. We use this to enrich/confirm
- *    the title list and to extract per-game platform info.
- *
- * The two lists are merged — heading results take priority (richer data),
- * with title-parse results filling any gaps.
+ * We find every H2 that matches the "Title | Platforms" pattern, then
+ * look backward for the nearest tachyon image and forward for the first <p>.
+ * A fallback title-from-post-title pass catches anything the heading scan misses.
  */
 function parseGamesFromPost(postTitle, postHtml) {
-  const games = [];
+  // ── Find all game heading positions ────────────────────────────────────────
+  // Matches:  <h2><strong>Title | PS5, PS4</strong></h2>
+  //       or  <h2>**Title | PS5**</h2>   (Markdown bold in HTML)
+  //       or  plain <h2>Title | PS5</h2>
+  const headingRe = /<h[23][^>]*>(?:<strong>|<b>)?\s*([^|<]+?)\s*\|\s*((?:PS[2345]|PSVita)(?:[,/\s]+(?:PS[2345]|PSVita))*)\s*(?:<\/strong>|<\/b>)?\s*<\/h[23]>/gi;
 
-  // ── Strategy 1: parse titles out of the post title string ──────────────────
-  // e.g. "...for May: EA Sports FC 26, Wuchang: Fallen Feathers, Nine Sols"
-  // We split on the first colon that follows "for <Month>", then on ", " or " & ".
-  const titleMatch = postTitle.match(/for\s+\w+:\s*(.+)$/i);
-  const titlesFromTitle = titleMatch
-    ? titleMatch[1]
-        .split(/,\s*(?=[A-Z])| &amp; | & /)
-        .map((t) => t.trim())
-        .filter(Boolean)
-    : [];
-
-  // ── Strategy 2: parse ## Heading | Platforms patterns from post body ────────
-  // Matches both Markdown headings and HTML <h2>/<h3> tags.
-  // Pattern: "Game Title | PS5, PS4"  or  "Game Title | PS5"
-  const headingPattern = /(?:#{1,3}|<h[23][^>]*>)\s*([^|\n<]+?)\s*\|\s*((?:PS[345]|PSVita)(?:[,/]\s*(?:PS[345]|PSVita))*)(?:\s*<\/h[23]>)?/gi;
-  const fromHeadings = [];
+  const entries = [];
   let m;
-  while ((m = headingPattern.exec(postHtml)) !== null) {
-    const title = m[1].trim();
+  while ((m = headingRe.exec(postHtml)) !== null) {
+    const rawTitle = m[1].replace(/<[^>]+>/g, "").replace(/\*+/g, "").trim();
     const platformStr = m[2].trim();
-    const platforms = platformStr.split(/[,/]\s*/).map((p) => p.trim()).filter(Boolean);
+    const platforms = platformStr.split(/[,/\s]+/).map((p) => p.trim()).filter((p) => /^PS/.test(p));
 
-    // Skip headings that are obviously navigation or section headers, not game titles
-    if (title.length < 3 || /^(last chance|about|note|\*)/i.test(title)) continue;
+    if (rawTitle.length < 3) continue;
+    if (/^(last chance|about|note|download|\*)/i.test(rawTitle)) continue;
 
-    fromHeadings.push({ title, platforms });
+    entries.push({ title: rawTitle, platforms, headingIndex: m.index, headingEnd: m.index + m[0].length });
   }
 
-  // ── Merge: headings take priority; title-list fills gaps ───────────────────
+  // ── For each heading: find cover image (before) and description (after) ────
+  // tachyon images are Sony's CDN — they're always the game artwork in this context
+  const imgRe = /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"[^>]*>/gi;
+
+  // Collect all tachyon image positions
+  const images = [];
+  let im;
+  while ((im = imgRe.exec(postHtml)) !== null) {
+    // Skip tiny logos (pslogo, author avatars etc — they have fit=40 or fit=512 and are small)
+    if (/pslogo|fit=40|fit=512|fit=400|fit=640/.test(im[1])) continue;
+    images.push({ url: im[1].split("?")[0], index: im.index }); // strip query params
+  }
+
+  // Collect all <p> positions and their text content
+  const paraRe = /<p[^>]*>([\s\S]+?)<\/p>/gi;
+  const paras = [];
+  let pm;
+  while ((pm = paraRe.exec(postHtml)) !== null) {
+    const text = pm[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    if (text.length > 40) { // skip tiny/empty paragraphs
+      paras.push({ text, index: pm.index });
+    }
+  }
+
+  const games = [];
   const seen = new Set();
 
-  for (const { title, platforms } of fromHeadings) {
-    if (seen.has(title.toLowerCase())) continue;
-    seen.add(title.toLowerCase());
-    games.push({ title, platforms });
+  for (const entry of entries) {
+    if (seen.has(entry.title.toLowerCase())) continue;
+    seen.add(entry.title.toLowerCase());
+
+    // Nearest tachyon image that appears BEFORE this heading
+    const imagesBefore = images.filter((img) => img.index < entry.headingIndex);
+    const coverImage = imagesBefore.length ? imagesBefore[imagesBefore.length - 1].url : "";
+
+    // First paragraph that appears AFTER this heading
+    const parasAfter = paras.filter((p) => p.index > entry.headingEnd);
+    const description = parasAfter.length ? parasAfter[0].text : "";
+
+    games.push({ title: entry.title, platforms: entry.platforms, image: coverImage, description });
   }
 
-  // Add any titles from the post title that weren't caught by headings
-  for (const title of titlesFromTitle) {
-    if (seen.has(title.toLowerCase())) continue;
-    // Check if a heading title is a close substring match (handles minor differences)
-    const alreadyCovered = [...seen].some(
-      (s) => s.includes(title.toLowerCase()) || title.toLowerCase().includes(s)
-    );
-    if (alreadyCovered) continue;
-    seen.add(title.toLowerCase());
-    games.push({ title, platforms: [] });
+  // ── Fallback: titles from the post title string, in case heading scan missed any ──
+  const titleMatch = postTitle.match(/for\s+\w+[:–—]\s*(.+)$/i);
+  if (titleMatch) {
+    const fallbackTitles = titleMatch[1]
+      .split(/,\s*(?=[A-Z\u00C0-\u024F])| &amp; | & /)
+      .map((t) => t.trim())
+      .filter(Boolean);
+
+    for (const title of fallbackTitles) {
+      const key = title.toLowerCase();
+      if (seen.has(key)) continue;
+      const alreadyCovered = [...seen].some((s) => s.includes(key) || key.includes(s));
+      if (alreadyCovered) continue;
+      seen.add(key);
+      games.push({ title, platforms: [], image: "", description: "" });
+    }
   }
 
   return games;
@@ -456,8 +481,8 @@ async function fetchPSPlus() {
       slug: "",
       storeUrl: "https://store.playstation.com",
       seller: item.platforms.length ? item.platforms.join(" / ") : "PS5 / PS4",
-      description: "",
-      image: "",
+      description: item.description || "",
+      image: item.image || "",
       originalPrice: null,
       discountPrice: 0,
       status: "free",
