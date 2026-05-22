@@ -90,6 +90,7 @@ function escapeHtml(str) {
 function storeLabel(store) {
   if (store === "epic") return { label: "Epic", cls: "store-epic" };
   if (store === "gog") return { label: "GOG", cls: "store-gog" };
+  if (store === "psplus") return { label: "PS Plus", cls: "store-psplus" };
   return { label: store, cls: "" };
 }
 
@@ -189,6 +190,7 @@ function render() {
           ${hours !== null ? `<span class="pill">Ends in about <strong>${hours}h</strong></span>` : ""}
           ${game.offerEnd && game.status === "free" && hours === null ? `<span class="pill">Ends ${fmtDate(game.offerEnd)}</span>` : ""}
           ${game.status === "upcoming" && game.offerStart ? `<span class="pill">Starts ${fmtDate(game.offerStart)}</span>` : ""}
+          ${game.platforms?.length ? `<span class="pill">${escapeHtml(game.platforms.join(" · "))}</span>` : ""}
         </div>
         <div class="meta">${game.description
             ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
@@ -200,6 +202,10 @@ function render() {
           </button>
           ${game.storeUrl
             ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>`
+            : ""
+          }
+          ${game.sourcePost
+            ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(game.sourcePost)}">PS Blog post</a>`
             : ""
           }
         </div>

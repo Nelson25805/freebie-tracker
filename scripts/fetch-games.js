@@ -4,9 +4,13 @@
  * Fetches current and upcoming free game promotions from:
  *   - Epic Games Store
  *   - GOG
+ *   - PlayStation Plus (via PlayStation Blog RSS + Claude parsing)
  *
  * Writes the combined, normalized result to ../data/games.json
  * This script is run by GitHub Actions on a schedule.
+ *
+ * Required env var for PS Plus:
+ *   ANTHROPIC_API_KEY — used to parse the PS Blog post into structured game data
  */
 
 import fetch from "node-fetch";
@@ -237,10 +241,208 @@ async function fetchGOG() {
   return games;
 }
 
+// ─── PlayStation Plus ─────────────────────────────────────────────────────────
+//
+// Sony has no public unauthenticated API for PS Plus monthly games.
+// The most reliable no-auth source is the PlayStation Blog RSS feed.
+// We fetch the RSS, find the current month's PS Plus announcement post,
+// then use Claude to extract structured game data from the post body.
+
+const PS_BLOG_RSS = "https://blog.playstation.com/feed/";
+const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
+
+// Strip HTML tags from a string
+function stripHtml(html) {
+  return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+// Pull text between two XML/RSS tags (simple, no full XML parser needed)
+function extractTag(xml, tag) {
+  const open = `<${tag}>`;
+  const close = `</${tag}>`;
+  const cdataOpen = `<${tag}><![CDATA[`;
+  const cdataClose = `]]></${tag}>`;
+
+  // Try CDATA first
+  let start = xml.indexOf(cdataOpen);
+  if (start !== -1) {
+    start += cdataOpen.length;
+    const end = xml.indexOf(cdataClose, start);
+    if (end !== -1) return xml.slice(start, end).trim();
+  }
+
+  // Plain tag
+  start = xml.indexOf(open);
+  if (start === -1) return "";
+  start += open.length;
+  const end = xml.indexOf(close, start);
+  if (end === -1) return "";
+  return xml.slice(start, end).trim();
+}
+
+// Split RSS XML into individual <item> blocks
+function splitItems(xml) {
+  const items = [];
+  let pos = 0;
+  while (true) {
+    const start = xml.indexOf("<item>", pos);
+    if (start === -1) break;
+    const end = xml.indexOf("</item>", start);
+    if (end === -1) break;
+    items.push(xml.slice(start, end + "</item>".length));
+    pos = end + 1;
+  }
+  return items;
+}
+
+async function fetchPSBlogRSS() {
+  const res = await fetch(PS_BLOG_RSS, {
+    headers: { "User-Agent": "free-game-tracker/1.0 (github-actions)" },
+  });
+  if (!res.ok) throw new Error(`PS Blog RSS HTTP ${res.status}`);
+  return await res.text();
+}
+
+function findPsPlusPost(rssXml) {
+  const items = splitItems(rssXml);
+  const now = new Date();
+  const monthName = now.toLocaleString("en-US", { month: "long" });
+  const year = now.getFullYear();
+
+  // Look for a post whose title matches "PlayStation Plus Monthly Games for <Month> <Year>"
+  // or similar patterns Sony uses
+  const patterns = [
+    new RegExp(`playstation plus.*monthly.*games.*${monthName}.*${year}`, "i"),
+    new RegExp(`ps plus.*monthly.*games.*${monthName}.*${year}`, "i"),
+    new RegExp(`monthly.*games.*${monthName}.*${year}`, "i"),
+    new RegExp(`playstation plus.*${monthName}.*${year}`, "i"),
+    // Fallback: just the current month announcement
+    new RegExp(`playstation plus.*monthly.*${monthName}`, "i"),
+    new RegExp(`ps plus.*${monthName}.*${year}`, "i"),
+  ];
+
+  for (const item of items) {
+    const title = stripHtml(extractTag(item, "title"));
+    for (const pattern of patterns) {
+      if (pattern.test(title)) {
+        return {
+          title,
+          link: stripHtml(extractTag(item, "link")),
+          description: extractTag(item, "description"),
+          content: extractTag(item, "content:encoded") || extractTag(item, "description"),
+          pubDate: stripHtml(extractTag(item, "pubDate")),
+        };
+      }
+    }
+  }
+  return null;
+}
+
+async function parseGamesWithClaude(postTitle, postText, postLink) {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) {
+    console.warn("  ANTHROPIC_API_KEY not set — skipping Claude parsing");
+    return [];
+  }
+
+  const truncated = postText.slice(0, 8000); // stay well within context
+
+  const prompt = `You are a data extraction assistant. Extract the PlayStation Plus monthly free games from the following PlayStation Blog post.
+
+Post title: ${postTitle}
+Post URL: ${postLink}
+
+Post content (may contain HTML):
+${truncated}
+
+Return ONLY a JSON array (no markdown, no preamble) where each element has these exact fields:
+- "title": the game title as a string
+- "platforms": array of platform strings, e.g. ["PS5", "PS4"] — include all platforms mentioned for each game
+- "description": a 1-2 sentence description of the game if available in the post, otherwise ""
+- "storeUrl": the PlayStation Store URL for the game if linked in the post, otherwise "https://store.playstation.com"
+
+Only include games that are part of the monthly PS Plus Essential free games (not Extra/Premium catalogue additions). If no games are found, return an empty array [].`;
+
+  const res = await fetch(ANTHROPIC_API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+    },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: 1000,
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Anthropic API HTTP ${res.status}: ${err.slice(0, 200)}`);
+  }
+
+  const data = await res.json();
+  const text = data.content?.map((b) => b.text || "").join("") || "";
+
+  // Strip markdown fences if present
+  const clean = text.replace(/^```json\s*/i, "").replace(/```\s*$/, "").trim();
+  return JSON.parse(clean);
+}
+
+async function fetchPSPlus() {
+  console.log("Fetching PlayStation Plus data via PS Blog RSS…");
+
+  try {
+    const rssXml = await fetchPSBlogRSS();
+    const post = findPsPlusPost(rssXml);
+
+    if (!post) {
+      console.warn("  Could not find this month's PS Plus post in the RSS feed.");
+      return [];
+    }
+
+    console.log(`  Found post: "${post.title}"`);
+
+    const postText = stripHtml(post.content || post.description);
+    const parsed = await parseGamesWithClaude(post.title, postText, post.link);
+
+    if (!Array.isArray(parsed) || parsed.length === 0) {
+      console.warn("  Claude returned no games from the post.");
+      return [];
+    }
+
+    const games = parsed.map((item, i) => ({
+      id: `psplus-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      store: "psplus",
+      storeName: "PlayStation Plus",
+      title: item.title || "Untitled",
+      slug: "",
+      storeUrl: item.storeUrl || "https://store.playstation.com",
+      seller: item.platforms?.join(" / ") || "PS4 / PS5",
+      description: item.description || "",
+      image: "", // PS Blog doesn't expose per-game images in the RSS
+      originalPrice: null,
+      discountPrice: 0,
+      status: "free",
+      offerStart: post.pubDate ? new Date(post.pubDate).toISOString() : null,
+      offerEnd: null, // PS Plus games rotate monthly; exact end date isn't in the RSS
+      platforms: item.platforms || [],
+      sourcePost: post.link,
+    }));
+
+    console.log(`  → ${games.length} PS Plus game(s) found`);
+    return games;
+  } catch (err) {
+    console.warn("  PS Plus fetch failed:", err.message);
+    return [];
+  }
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const results = await Promise.allSettled([fetchEpic(), fetchGOG()]);
+  const results = await Promise.allSettled([fetchEpic(), fetchGOG(), fetchPSPlus()]);
 
   let allGames = [];
   for (const result of results) {
