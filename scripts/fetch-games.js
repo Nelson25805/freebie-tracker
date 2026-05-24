@@ -404,26 +404,40 @@ function parseGamesFromPost(postTitle, postHtml) {
     const sectionStart = i > 0 ? entries[i - 1].headingEnd : 0;
     const section = postHtml.slice(sectionStart, entry.headingIndex);
 
-    // Find the LAST tachyon image in this section (closest to the heading)
-    // Skip pslogo and known small/unrelated images
-    const imgRe = /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/(?!.*pslogo)[^"]+)"[^>]*>/gi;
+    // Find the LAST tachyon image in this section (closest to the heading).
+    // The game cover art uses ?fit=1024%2C1024 (encoded comma).
+    // Skip:
+    //   - pslogo.png (PS logo)
+    //   - ?fit=40 / ?fit=40%2C40 (tiny author avatars/icons)
+    //   - ?fit=512 / ?fit=640 (small sidebar images)
+    //   - ?resize= (hero/banner images at the very top of posts — wide crops)
+    const imgRe = /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"[^>]*>/gi;
     let coverImage = "";
     let im;
     while ((im = imgRe.exec(section)) !== null) {
       const url = im[1];
-      // Skip author avatars and tiny logos (they use fit=40, fit=400, fit=512, fit=640)
-      if (/[?&]fit=(?:40|400|512|640)[,%&]/.test(url)) continue;
-      coverImage = url.split("?")[0]; // strip query params — take clean base URL
+      if (/pslogo/i.test(url)) continue;
+      if (/[?&]resize=/.test(url)) continue;                        // skip hero/banner crops
+      if (/[?&]fit=(?:40|400|512|640)(?:[,%]|$)/i.test(url)) continue; // skip small icons
+      // This is a game art image — keep it (strip query string for a clean URL)
+      coverImage = url.split("?")[0];
     }
 
-    // First non-trivial <p> after the heading
-    const afterHeading = postHtml.slice(entry.headingEnd);
-    const paraRe = /<p[^>]*>([\s\S]+?)<\/p>/i;
-    const pm = paraRe.exec(afterHeading);
+    // Description: grab the first substantial paragraph after this heading.
+    // In the RSS feed the description is wrapped in <p>...</p>.
+    // We look at the slice between this heading's end and the next heading (or 3000 chars).
+    const nextHeadingStart = i + 1 < entries.length ? entries[i + 1].headingIndex : entry.headingEnd + 3000;
+    const descSection = postHtml.slice(entry.headingEnd, nextHeadingStart);
     let description = "";
-    if (pm) {
-      const text = pm[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-      if (text.length > 40) description = text;
+    // Try <p> tags first
+    const paraRe = /<p[^>]*>([\s\S]+?)<\/p>/gi;
+    let pm2;
+    while ((pm2 = paraRe.exec(descSection)) !== null) {
+      const text = pm2[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+      if (text.length > 60) { // skip short nav/footnote paragraphs
+        description = text;
+        break;
+      }
     }
 
     games.push({ title: entry.title, platforms: entry.platforms, image: coverImage, description });

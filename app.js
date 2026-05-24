@@ -62,11 +62,17 @@ function fmtDate(value) {
   }).format(d);
 }
 
-function hoursLeft(value) {
+function fmtEndDate(value) {
   if (!value) return null;
-  const end = new Date(value).getTime();
-  if (Number.isNaN(end)) return null;
-  return Math.max(0, Math.round((end - Date.now()) / 36e5));
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return null;
+  return new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(d);
 }
 
 function formatMoney(cents) {
@@ -166,7 +172,7 @@ function render() {
   for (const game of visible) {
     const key = gameKey(game);
     const badge = cardStatusBadge(game);
-    const hours = game.status === "free" ? hoursLeft(game.offerEnd) : null;
+    const endDateStr = game.offerEnd ? fmtEndDate(game.offerEnd) : null;
     const store = storeLabel(game.store);
     const originalFmt = game.originalPrice ? formatMoney(game.originalPrice) : null;
 
@@ -187,8 +193,7 @@ function render() {
         <div class="prices">
           ${game.status === "free" ? `<span class="pill zero"><strong>$0.00</strong> to claim</span>` : ""}
           ${originalFmt ? `<span class="pill strike">Regular ${escapeHtml(originalFmt)}</span>` : ""}
-          ${hours !== null && hours > 0 ? `<span class="pill">Ends in about <strong>${hours}h</strong></span>` : ""}
-          ${game.offerEnd && game.status === "free" && (hours === null || hours === 0) ? `<span class="pill">Ends ${fmtDate(game.offerEnd)}</span>` : ""}
+          ${game.status === "free" && endDateStr ? `<span class="pill">Closes <strong>${endDateStr}</strong></span>` : ""}
           ${game.status === "upcoming" && game.offerStart ? `<span class="pill">Starts ${fmtDate(game.offerStart)}</span>` : ""}
           ${game.platforms?.length ? `<span class="pill">${escapeHtml(game.platforms.join(" · "))}</span>` : ""}
         </div>
