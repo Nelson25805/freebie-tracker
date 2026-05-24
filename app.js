@@ -187,15 +187,21 @@ function render() {
         <div class="prices">
           ${game.status === "free" ? `<span class="pill zero"><strong>$0.00</strong> to claim</span>` : ""}
           ${originalFmt ? `<span class="pill strike">Regular ${escapeHtml(originalFmt)}</span>` : ""}
-          ${hours !== null ? `<span class="pill">Ends in about <strong>${hours}h</strong></span>` : ""}
-          ${game.offerEnd && game.status === "free" && hours === null ? `<span class="pill">Ends ${fmtDate(game.offerEnd)}</span>` : ""}
+          ${hours !== null && hours > 0 ? `<span class="pill">Ends in about <strong>${hours}h</strong></span>` : ""}
+          ${game.offerEnd && game.status === "free" && (hours === null || hours === 0) ? `<span class="pill">Ends ${fmtDate(game.offerEnd)}</span>` : ""}
           ${game.status === "upcoming" && game.offerStart ? `<span class="pill">Starts ${fmtDate(game.offerStart)}</span>` : ""}
           ${game.platforms?.length ? `<span class="pill">${escapeHtml(game.platforms.join(" · "))}</span>` : ""}
         </div>
-        <div class="meta">${game.description
-            ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
-            : "No description available."
-          }</div>
+        <div class="desc-wrap">
+          <p class="meta desc-text" data-full="${escapeHtml(game.description || "")}">${
+            game.description
+              ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
+              : "No description available."
+          }</p>${game.description && game.description.length > 160
+            ? `<button class="btn-expand" data-action="expand-desc" aria-expanded="false">Read more</button>`
+            : ""
+          }
+        </div>
         <div class="actions">
           <button class="btn ${collected.has(key) ? "btn-danger" : "btn-ok"}" data-action="toggle-claimed" data-key="${escapeHtml(key)}">
             ${collected.has(key) ? "Unmark collected" : "Mark collected"}
@@ -298,9 +304,28 @@ function clearCollected() {
 // ─── Event wiring ─────────────────────────────────────────────────────────────
 
 document.addEventListener("click", (e) => {
-  const btn = e.target.closest('[data-action="toggle-claimed"]');
-  if (!btn) return;
-  toggleCollected(btn.dataset.key);
+  const claimBtn = e.target.closest('[data-action="toggle-claimed"]');
+  if (claimBtn) {
+    toggleCollected(claimBtn.dataset.key);
+    return;
+  }
+
+  const expandBtn = e.target.closest('[data-action="expand-desc"]');
+  if (expandBtn) {
+    const wrap = expandBtn.closest('.desc-wrap');
+    const p = wrap.querySelector('.desc-text');
+    const expanded = expandBtn.getAttribute('aria-expanded') === 'true';
+    if (expanded) {
+      const full = p.dataset.full;
+      p.textContent = full.slice(0, 160) + (full.length > 160 ? '…' : '');
+      expandBtn.textContent = 'Read more';
+      expandBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      p.textContent = p.dataset.full;
+      expandBtn.textContent = 'Show less';
+      expandBtn.setAttribute('aria-expanded', 'true');
+    }
+  }
 });
 
 [els.searchInput, els.storeFilter, els.statusFilter, els.sortFilter, els.hideClaimed].forEach(

@@ -518,3 +518,35 @@ a {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ─── Expandable description ─────────────────────────────────────────────── */
+
+.desc-wrap {
+  display: grid;
+  gap: 4px;
+}
+
+.desc-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn-expand {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  text-align: left;
+  opacity: 0.9;
+  transition: opacity 0.15s;
+}
+
+.btn-expand:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

@@ -378,44 +378,53 @@ function parseGamesFromPost(postTitle, postHtml) {
     entries.push({ title: rawTitle, platforms, headingIndex: m.index, headingEnd: m.index + m[0].length });
   }
 
-  // ── For each heading: find cover image (before) and description (after) ────
-  // tachyon images are Sony's CDN — they're always the game artwork in this context
-  const imgRe = /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"[^>]*>/gi;
-
-  // Collect all tachyon image positions
-  const images = [];
-  let im;
-  while ((im = imgRe.exec(postHtml)) !== null) {
-    // Skip tiny logos (pslogo, author avatars etc — they have fit=40 or fit=512 and are small)
-    if (/pslogo|fit=40|fit=512|fit=400|fit=640/.test(im[1])) continue;
-    images.push({ url: im[1].split("?")[0], index: im.index }); // strip query params
-  }
-
-  // Collect all <p> positions and their text content
-  const paraRe = /<p[^>]*>([\s\S]+?)<\/p>/gi;
-  const paras = [];
-  let pm;
-  while ((pm = paraRe.exec(postHtml)) !== null) {
-    const text = pm[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-    if (text.length > 40) { // skip tiny/empty paragraphs
-      paras.push({ text, index: pm.index });
-    }
-  }
+  // ── For each heading: extract cover image and description from its own section ──
+  //
+  // The post structure per game is:
+  //   <img src="tachyon/...">          ← game cover art
+  //   <h2>Download the image</h2>      ← Sony download overlay (NOT a game heading)
+  //   <p>...</p>                       ← overlay junk
+  //   <h2><strong>Title | PS5</strong></h2>  ← actual game heading (already in entries[])
+  //   <p>Description...</p>            ← game description
+  //
+  // Strategy: for each game heading, its "section" runs from the previous game
+  // heading's end (or start of HTML) to just before this heading. We look for
+  // a tachyon image within that section. Then description is the first real <p>
+  // after the heading.
 
   const games = [];
   const seen = new Set();
 
-  for (const entry of entries) {
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i];
     if (seen.has(entry.title.toLowerCase())) continue;
     seen.add(entry.title.toLowerCase());
 
-    // Nearest tachyon image that appears BEFORE this heading
-    const imagesBefore = images.filter((img) => img.index < entry.headingIndex);
-    const coverImage = imagesBefore.length ? imagesBefore[imagesBefore.length - 1].url : "";
+    // The section before this heading starts after the previous heading ends
+    const sectionStart = i > 0 ? entries[i - 1].headingEnd : 0;
+    const section = postHtml.slice(sectionStart, entry.headingIndex);
 
-    // First paragraph that appears AFTER this heading
-    const parasAfter = paras.filter((p) => p.index > entry.headingEnd);
-    const description = parasAfter.length ? parasAfter[0].text : "";
+    // Find the LAST tachyon image in this section (closest to the heading)
+    // Skip pslogo and known small/unrelated images
+    const imgRe = /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/(?!.*pslogo)[^"]+)"[^>]*>/gi;
+    let coverImage = "";
+    let im;
+    while ((im = imgRe.exec(section)) !== null) {
+      const url = im[1];
+      // Skip author avatars and tiny logos (they use fit=40, fit=400, fit=512, fit=640)
+      if (/[?&]fit=(?:40|400|512|640)[,%&]/.test(url)) continue;
+      coverImage = url.split("?")[0]; // strip query params — take clean base URL
+    }
+
+    // First non-trivial <p> after the heading
+    const afterHeading = postHtml.slice(entry.headingEnd);
+    const paraRe = /<p[^>]*>([\s\S]+?)<\/p>/i;
+    const pm = paraRe.exec(afterHeading);
+    let description = "";
+    if (pm) {
+      const text = pm[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+      if (text.length > 40) description = text;
+    }
 
     games.push({ title: entry.title, platforms: entry.platforms, image: coverImage, description });
   }
@@ -463,14 +472,32 @@ async function fetchPSPlus() {
       return [];
     }
 
-    // Extract "available until" date from the post body if present.
-    // Sony writes e.g. "available...from Tuesday May 5...until Monday June 2"
-    const untilMatch = postHtml.match(/until\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+(\w+\s+\d+)/i);
+    // Extract the end date for the CURRENT month's games.
+    // Sony's posts mention dates in two contexts:
+    //   "members have until Monday May 4 to add [LAST MONTH's] games"  ← old, ignore
+    //   "available from Tuesday May 5 until Monday June 2"             ← current, want this
+    // We collect ALL "until <weekday> <Month> <Day>" occurrences and pick the latest one.
     let offerEnd = null;
-    if (untilMatch) {
-      const year = new Date().getFullYear();
-      const parsed_date = new Date(`${untilMatch[1]} ${year}`);
-      if (!isNaN(parsed_date)) offerEnd = parsed_date.toISOString();
+    const untilRe = /until\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2})/gi;
+    const now = new Date();
+    let latestMs = 0;
+    let um;
+    while ((um = untilRe.exec(postHtml)) !== null) {
+      // Try current year first, then next year (handles Dec→Jan rollover)
+      for (const yr of [now.getFullYear(), now.getFullYear() + 1]) {
+        const d = new Date(`${um[1]} ${yr}`);
+        if (!isNaN(d) && d.getTime() > latestMs) {
+          latestMs = d.getTime();
+          offerEnd = d.toISOString();
+        }
+      }
+    }
+    // Fallback: if no "until" date found, default to the first Tuesday of next month
+    // (PS Plus games always expire on the first Tuesday of the following month)
+    if (!offerEnd) {
+      const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+      while (nextMonth.getDay() !== 2) nextMonth.setDate(nextMonth.getDate() + 1); // 2 = Tuesday
+      offerEnd = nextMonth.toISOString();
     }
 
     const games = parsed.map((item) => ({
