@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-23T20:23:37.562Z",
+  "fetchedAt": "2026-05-24T03:28:13.720Z",
   "totalFree": 5,
   "totalUpcoming": 3,
   "games": [
@@ -91,13 +91,13 @@
       "slug": "",
       "storeUrl": "https://store.playstation.com",
       "seller": "PS5",
-      "description": "Close Download this image Nine Sols| PS5, PS4 Nine Sols is a lore-rich, hand-drawn 2D action-platformer with Sekiro-inspired, deflection-based combat. Face off against ancient deities, explore a land once ruled by an ancient alien race, and follow a vengeful hero on a quest to slay the 9 Sols—the powerful rulers of this forsaken realm.",
+      "description": "In this Soulslike action RPG, female pirate warrior Wuchang awakens in the tumultuous final years of China’s Ming Dynasty with no memories of her past. The land of Shu is plagued by warring factions and a mysterious phenomenon known as Feathering that is causing people to mutate into hideous monsters. Now herself afflicted with Feathering, Wuchang must explore this vast, interconnected world while battling cruel and twisted enemies. Master various fighting styles, discover hidden weapons and ancient firearms, harvest new skills from defeated foes and even embrace the power of Feathering to discover the truth at the heart of the chaos.",
       "image": "https://blog.playstation.com/tachyon/2026/04/c77c39fdda438bace780694ca54800282fd94669.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2026-05-04T00:00:00.000Z",
+      "offerEnd": "2027-05-04T00:00:00.000Z",
       "platforms": [
         "PS5"
       ],
@@ -111,13 +111,13 @@
       "slug": "",
       "storeUrl": "https://store.playstation.com",
       "seller": "PS5 / PS4",
-      "description": "Close Download this image Last chance to add April’s PlayStation Plus Monthly Games to your library&nbsp; PlayStation Plus members have until Monday May 4 to add Lords of the Fallen, Tomb Raider I-III Remastered, Sword Art Online Fractured Daydream to their game library.&nbsp;",
+      "description": "Nine Sols is a lore-rich, hand-drawn 2D action-platformer with Sekiro-inspired, deflection-based combat. Face off against ancient deities, explore a land once ruled by an ancient alien race, and follow a vengeful hero on a quest to slay the 9 Sols—the powerful rulers of this forsaken realm.",
       "image": "https://blog.playstation.com/tachyon/2026/04/49e9747b7b267542b1eed80db7410c202b504147.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2026-05-04T00:00:00.000Z",
+      "offerEnd": "2027-05-04T00:00:00.000Z",
       "platforms": [
         "PS5",
         "PS4"
@@ -138,7 +138,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2026-05-04T00:00:00.000Z",
+      "offerEnd": "2027-05-04T00:00:00.000Z",
       "platforms": [],
       "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
     }
