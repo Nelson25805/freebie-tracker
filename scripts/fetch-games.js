@@ -363,14 +363,22 @@ function parseGamesFromPost(postTitle, postHtml) {
   // Matches:  <h2><strong>Title | PS5, PS4</strong></h2>
   //       or  <h2>**Title | PS5**</h2>   (Markdown bold in HTML)
   //       or  plain <h2>Title | PS5</h2>
-  const headingRe = /<h[23][^>]*>(?:<strong>|<b>)?\s*([^|<]+?)\s*\|\s*((?:PS[2345]|PSVita)(?:[,/\s]+(?:PS[2345]|PSVita))*)\s*(?:<\/strong>|<\/b>)?\s*<\/h[23]>/gi;
+
+  const headingRe = /<h[23][^>]*>(?:<strong>|<b>)?\s*([^|<]+?)\s*\|\s*([^<]+?)\s*(?:<\/strong>|<\/b>)?\s*<\/h[23]>/gi;
 
   const entries = [];
   let m;
   while ((m = headingRe.exec(postHtml)) !== null) {
     const rawTitle = m[1].replace(/<[^>]+>/g, "").replace(/\*+/g, "").trim();
-    const platformStr = m[2].trim();
-    const platforms = platformStr.split(/[,/\s]+/).map((p) => p.trim()).filter((p) => /^PS/.test(p));
+    const platformStr = m[2]
+      .replace(/&amp;/gi, ",")
+      .replace(/&/g, ",")
+      .trim();
+
+    const platforms = platformStr
+      .split(/[,/]+/)
+      .map((p) => p.trim())
+      .filter((p) => /^PS/i.test(p));
 
     if (rawTitle.length < 3) continue;
     if (/^(last chance|about|note|download|\*)/i.test(rawTitle)) continue;
@@ -440,7 +448,36 @@ function parseGamesFromPost(postTitle, postHtml) {
       }
     }
 
-    games.push({ title: entry.title, platforms: entry.platforms, image: coverImage, description });
+    // Fallback image lookup if none found before heading
+    if (!coverImage) {
+      const afterHeading = postHtml.slice(
+        entry.headingEnd,
+        entry.headingEnd + 4000
+      );
+
+      const fallbackImgMatch = afterHeading.match(
+        /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"/i
+      );
+
+      if (fallbackImgMatch) {
+        const candidate = fallbackImgMatch[1];
+
+        if (
+          !/pslogo/i.test(candidate) &&
+          !/[?&]resize=/.test(candidate) &&
+          !/[?&]fit=(?:40|400|512|640)(?:[,%]|$)/i.test(candidate)
+        ) {
+          coverImage = candidate.split("?")[0];
+        }
+      }
+    }
+
+    games.push({
+      title: entry.title,
+      platforms: entry.platforms,
+      image: coverImage,
+      description
+    });
   }
 
   // ── Fallback: titles from the post title string, in case heading scan missed any ──
@@ -486,33 +523,25 @@ async function fetchPSPlus() {
       return [];
     }
 
-    // Extract the end date for the CURRENT month's games.
-    // Sony's posts mention dates in two contexts:
-    //   "members have until Monday May 4 to add [LAST MONTH's] games"  ← old, ignore
-    //   "available from Tuesday May 5 until Monday June 2"             ← current, want this
-    // We collect ALL "until <weekday> <Month> <Day>" occurrences and pick the latest one.
-    let offerEnd = null;
-    const untilRe = /until\s+(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2})/gi;
+    // PS Plus monthly games always expire on the first Tuesday of next month.
+    // This is more reliable than parsing ambiguous blog wording.
+
     const now = new Date();
-    let latestMs = 0;
-    let um;
-    while ((um = untilRe.exec(postHtml)) !== null) {
-      // Try current year first, then next year (handles Dec→Jan rollover)
-      for (const yr of [now.getFullYear(), now.getFullYear() + 1]) {
-        const d = new Date(`${um[1]} ${yr}`);
-        if (!isNaN(d) && d.getTime() > latestMs) {
-          latestMs = d.getTime();
-          offerEnd = d.toISOString();
-        }
-      }
+
+    const nextMonth = new Date(
+      now.getFullYear(),
+      now.getMonth() + 1,
+      1
+    );
+
+    // Find first Tuesday
+    while (nextMonth.getDay() !== 2) {
+      nextMonth.setDate(nextMonth.getDate() + 1);
     }
-    // Fallback: if no "until" date found, default to the first Tuesday of next month
-    // (PS Plus games always expire on the first Tuesday of the following month)
-    if (!offerEnd) {
-      const nextMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
-      while (nextMonth.getDay() !== 2) nextMonth.setDate(nextMonth.getDate() + 1); // 2 = Tuesday
-      offerEnd = nextMonth.toISOString();
-    }
+
+    nextMonth.setHours(0, 0, 0, 0);
+
+    const offerEnd = nextMonth.toISOString();
 
     const games = parsed.map((item) => ({
       id: `psplus-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
