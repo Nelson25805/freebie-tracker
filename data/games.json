@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-25T09:20:03.905Z",
+  "fetchedAt": "2026-05-25T13:57:51.076Z",
   "totalFree": 5,
   "totalUpcoming": 3,
   "games": [
@@ -84,6 +84,27 @@
       "offerEnd": "2026-06-04T15:00:00.000Z"
     },
     {
+      "id": "psplus-ea-sports-fc-26",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "EA Sports FC 26",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "The club is yours in EA Sports FC 26. Play your way with an overhauled gameplay experience powered by feedback from the FC Community, and choose between Authentic Gameplay and Competitive Gameplay presets. Put your dream squad to the test in Football Ultimate Team, with Tournaments and Live Events, as well as a refreshed Rivals and Champs experience. Enjoy unrivalled authenticity in EA Sports FC 26, featuring 20,000+ players across 750+ clubs and national teams, in over 120+ stadiums and 35+ leagues.&nbsp;",
+      "image": "https://blog.playstation.com/tachyon/2026/04/84b82e46825a9bfc7b33648a04856071ce6ff431.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-04-29T15:30:05.000Z",
+      "offerEnd": "2026-06-02T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
+    },
+    {
       "id": "psplus-wuchang-fallen-feathers",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -97,7 +118,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2027-05-04T00:00:00.000Z",
+      "offerEnd": "2026-06-02T00:00:00.000Z",
       "platforms": [
         "PS5"
       ],
@@ -117,29 +138,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2027-05-04T00:00:00.000Z",
+      "offerEnd": "2026-06-02T00:00:00.000Z",
       "platforms": [
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
-    },
-    {
-      "id": "psplus-ea-sports-fc-26",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "EA Sports FC 26",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5 / PS4",
-      "description": "",
-      "image": "",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2027-05-04T00:00:00.000Z",
-      "platforms": [],
       "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
     }
   ]
