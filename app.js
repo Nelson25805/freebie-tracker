@@ -189,7 +189,7 @@ function render() {
         <div class="title-row">
           <h3 class="title">${escapeHtml(game.title)}</h3>
         </div>
-        <div class="meta">${escapeHtml(game.seller || game.storeName)}</div>
+        <div class="meta">${escapeHtml(game.storeName)}</div>
         <div class="prices">
           ${game.status === "free" ? `<span class="pill zero"><strong>$0.00</strong> to claim</span>` : ""}
           ${originalFmt ? `<span class="pill strike">Regular ${escapeHtml(originalFmt)}</span>` : ""}
@@ -198,27 +198,26 @@ function render() {
           ${game.platforms?.length ? `<span class="pill">${escapeHtml(game.platforms.join(" · "))}</span>` : ""}
         </div>
         <div class="desc-wrap">
-          <p class="meta desc-text" data-full="${escapeHtml(game.description || "")}">${
-            game.description
-              ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
-              : "No description available."
-          }</p>${game.description && game.description.length > 160
-            ? `<button class="btn-expand" data-action="expand-desc" aria-expanded="false">Read more</button>`
-            : ""
-          }
+          <p class="meta desc-text" data-full="${escapeHtml(game.description || "")}">${game.description
+        ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
+        : "No description available."
+      }</p>${game.description && game.description.length > 160
+        ? `<button class="btn-expand" data-action="expand-desc" aria-expanded="false">Read more</button>`
+        : ""
+      }
         </div>
         <div class="actions">
           <button class="btn ${collected.has(key) ? "btn-danger" : "btn-ok"}" data-action="toggle-claimed" data-key="${escapeHtml(key)}">
             ${collected.has(key) ? "Unmark collected" : "Mark collected"}
           </button>
           ${game.storeUrl
-            ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>`
-            : ""
-          }
+        ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>`
+        : ""
+      }
           ${game.sourcePost
-            ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(game.sourcePost)}">PS Blog post</a>`
-            : ""
-          }
+        ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(game.sourcePost)}">PS Blog post</a>`
+        : ""
+      }
         </div>
       </div>
     `;
