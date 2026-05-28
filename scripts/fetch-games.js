@@ -571,10 +571,228 @@ async function fetchPSPlus() {
   }
 }
 
+// ─── Prime Gaming / Amazon Prime ─────────────────────────────────────────────
+
+const PRIME_GAMING_URL = "https://gaming.amazon.com/home";
+
+function cleanPrimeText(str) {
+  return String(str || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function detectPrimePlatform(item = {}) {
+  const text = [
+    item.offerTitle,
+    item.description,
+    item.externalPlatform,
+    item.redemptionMethod,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  if (text.includes("epic")) return "Epic Games";
+  if (text.includes("gog")) return "GOG";
+  if (text.includes("legacy")) return "Legacy Games";
+  if (text.includes("xbox")) return "Xbox";
+  if (text.includes("microsoft")) return "Microsoft Store";
+  if (text.includes("ea app")) return "EA App";
+
+  return "Amazon Games App";
+}
+
+async function fetchPrimeGaming() {
+  console.log("Fetching Prime Gaming data…");
+
+  try {
+    const res = await fetch(PRIME_GAMING_URL, {
+      headers: {
+        "User-Agent": "free-game-tracker/1.0 (github-actions)",
+      },
+    });
+
+    if (!res.ok) {
+      throw new Error(`Prime Gaming HTTP ${res.status}`);
+    }
+
+    const html = await res.text();
+
+    // Prime Gaming embeds hydration JSON in the page.
+    // Find the largest embedded JSON blob containing offers.
+    const jsonMatches = [
+      ...html.matchAll(
+        /<script type="application\/json"[^>]*>([\s\S]*?)<\/script>/gi
+      ),
+    ];
+
+    let offers = [];
+
+    for (const match of jsonMatches) {
+      try {
+        const json = JSON.parse(match[1]);
+
+        const serialized = JSON.stringify(json);
+
+        // Skip blobs that clearly don't contain offers
+        if (
+          !serialized.includes("offerTitle") &&
+          !serialized.includes("gameTitle")
+        ) {
+          continue;
+        }
+
+        // Deep scan for objects that resemble offers
+        const stack = [json];
+
+        while (stack.length) {
+          const current = stack.pop();
+
+          if (!current) continue;
+
+          if (Array.isArray(current)) {
+            stack.push(...current);
+            continue;
+          }
+
+          if (typeof current === "object") {
+            const title =
+              current.offerTitle ||
+              current.gameTitle ||
+              current.title;
+
+            const image =
+              current.imageUrl ||
+              current.boxArt ||
+              current.thumbnail;
+
+            if (
+              title &&
+              typeof title === "string" &&
+              image
+            ) {
+              offers.push(current);
+            }
+
+            for (const value of Object.values(current)) {
+              if (typeof value === "object") {
+                stack.push(value);
+              }
+            }
+          }
+        }
+      } catch {
+        // ignore malformed blobs
+      }
+    }
+
+    // Deduplicate by title
+    const seen = new Set();
+
+    const games = offers
+      .filter((item) => {
+        const title =
+          item.offerTitle ||
+          item.gameTitle ||
+          item.title;
+
+        if (!title) return false;
+
+        const key = title.toLowerCase();
+
+        if (seen.has(key)) return false;
+        seen.add(key);
+
+        return true;
+      })
+      .map((item) => {
+        const title =
+          item.offerTitle ||
+          item.gameTitle ||
+          item.title;
+
+        const image =
+          item.imageUrl ||
+          item.boxArt ||
+          item.thumbnail ||
+          "";
+
+        const description =
+          item.description ||
+          item.offerDescription ||
+          "";
+
+        const offerEnd =
+          item.endTime ||
+          item.offerEndTime ||
+          item.expirationDate ||
+          null;
+
+        const offerStart =
+          item.startTime ||
+          item.offerStartTime ||
+          null;
+
+        const platform = detectPrimePlatform(item);
+
+        return {
+          id: `prime-${title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")}`,
+
+          store: "prime",
+          storeName: "Prime Gaming",
+
+          title: cleanPrimeText(title),
+
+          slug: "",
+
+          storeUrl:
+            item.claimLink ||
+            item.url ||
+            PRIME_GAMING_URL,
+
+          seller: "Prime Gaming",
+
+          description: cleanPrimeText(description),
+
+          image,
+
+          originalPrice: null,
+
+          discountPrice: 0,
+
+          status: "free",
+
+          offerStart,
+
+          offerEnd,
+
+          platforms: [platform],
+        };
+      });
+
+    console.log(`  → ${games.length} Prime Gaming offer(s) found`);
+
+    return games;
+  } catch (err) {
+    console.warn("  Prime Gaming fetch failed:", err.message);
+    return [];
+  }
+}
+
+
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const results = await Promise.allSettled([fetchEpic(), fetchGOG(), fetchPSPlus()]);
+  const results = await Promise.allSettled([
+    fetchEpic(),
+    fetchGOG(),
+    fetchPSPlus(),
+    fetchPrimeGaming(),
+  ]);
 
   let allGames = [];
   for (const result of results) {

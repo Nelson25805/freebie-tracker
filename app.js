@@ -94,9 +94,22 @@ function escapeHtml(str) {
 }
 
 function storeLabel(store) {
-  if (store === "epic") return { label: "Epic", cls: "store-epic" };
-  if (store === "gog") return { label: "GOG", cls: "store-gog" };
-  if (store === "psplus") return { label: "PS Plus", cls: "store-psplus" };
+  if (store === "epic") {
+    return { label: "Epic", cls: "store-epic" };
+  }
+
+  if (store === "gog") {
+    return { label: "GOG", cls: "store-gog" };
+  }
+
+  if (store === "psplus") {
+    return { label: "PS Plus", cls: "store-psplus" };
+  }
+
+  if (store === "prime") {
+    return { label: "Prime", cls: "store-prime" };
+  }
+
   return { label: store, cls: "" };
 }
 

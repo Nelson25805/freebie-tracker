@@ -22,9 +22,12 @@
         <div class="hero-actions">
           <button class="btn btn-primary" id="refreshBtn">Reload data</button>
           <button class="btn btn-secondary" id="resetBtn">Clear collected marks</button>
-          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank" rel="noreferrer">Epic free games</a>
-          <a class="btn btn-ghost" href="https://www.gog.com/en/games#discounted" target="_blank" rel="noreferrer">GOG free games</a>
-          <a class="btn btn-ghost" href="https://store.playstation.com/en-us/pages/latest" target="_blank" rel="noreferrer">PS Plus games</a>
+          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank" rel="noreferrer">Epic
+            free games</a>
+          <a class="btn btn-ghost" href="https://www.gog.com/en/games#discounted" target="_blank" rel="noreferrer">GOG
+            free games</a>
+          <a class="btn btn-ghost" href="https://store.playstation.com/en-us/pages/latest" target="_blank"
+            rel="noreferrer">PS Plus games</a>
         </div>
         <div class="status-line" aria-live="polite">
           <span class="dot" id="statusDot"></span>
@@ -60,6 +63,7 @@
           <option value="epic">Epic Games Store</option>
           <option value="gog">GOG</option>
           <option value="psplus">PlayStation Plus</option>
+          <option value="prime">Prime Gaming</option>
         </select>
 
         <select class="select" id="statusFilter" aria-label="Filter by status">
@@ -98,7 +102,8 @@
     </section>
 
     <p class="footer">
-      Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load this page.
+      Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load
+      this page.
       This tracker does not sign in to any store or claim games for you.
     </p>
   </main>
