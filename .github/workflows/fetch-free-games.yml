@@ -32,7 +32,7 @@ jobs:
 
       # NEW: Install Playwright Chromium browser
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
+        run: npx --yes playwright install --with-deps chromium
         working-directory: scripts
 
       - name: Fetch free games data
