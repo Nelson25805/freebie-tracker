@@ -15,6 +15,7 @@ import fetch from "node-fetch";
 import { writeFileSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { chromium } from "playwright";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
@@ -606,137 +607,94 @@ function detectPrimePlatform(item = {}) {
 async function fetchPrimeGaming() {
   console.log("Fetching Prime Gaming data…");
 
+  let browser;
+
   try {
-    const res = await fetch(PRIME_GAMING_URL, {
-      headers: {
-        "User-Agent": "free-game-tracker/1.0 (github-actions)",
-      },
+    browser = await chromium.launch({
+      headless: true,
     });
 
-    if (!res.ok) {
-      throw new Error(`Prime Gaming HTTP ${res.status}`);
-    }
+    const page = await browser.newPage({
+      userAgent: "free-game-tracker/1.0 (github-actions)",
+    });
 
-    const html = await res.text();
+    await page.goto("https://gaming.amazon.com/home", {
+      waitUntil: "networkidle",
+      timeout: 120000,
+    });
 
-    // Prime Gaming embeds hydration JSON in the page.
-    // Find the largest embedded JSON blob containing offers.
-    const jsonMatches = [
-      ...html.matchAll(
-        /<script type="application\/json"[^>]*>([\s\S]*?)<\/script>/gi
-      ),
-    ];
+    // Wait for offer cards to appear
+    await page.waitForSelector('img[src*="media-amazon.com"]', {
+      timeout: 30000,
+    });
 
-    let offers = [];
+    const games = await page.evaluate(() => {
+      const cards = [...document.querySelectorAll("a")];
 
-    for (const match of jsonMatches) {
-      try {
-        const json = JSON.parse(match[1]);
+      const results = [];
+      const seen = new Set();
 
-        const serialized = JSON.stringify(json);
+      for (const card of cards) {
+        const text = card.innerText || "";
 
-        // Skip blobs that clearly don't contain offers
-        if (
-          !serialized.includes("offerTitle") &&
-          !serialized.includes("gameTitle")
-        ) {
-          continue;
-        }
+        // Ignore tiny/empty links
+        if (text.trim().length < 3) continue;
 
-        // Deep scan for objects that resemble offers
-        const stack = [json];
+        const img = card.querySelector("img");
 
-        while (stack.length) {
-          const current = stack.pop();
+        if (!img?.src) continue;
 
-          if (!current) continue;
+        // Try to extract a title
+        let title =
+          img.alt ||
+          text.split("\n")[0] ||
+          "";
 
-          if (Array.isArray(current)) {
-            stack.push(...current);
-            continue;
-          }
+        title = title.trim();
 
-          if (typeof current === "object") {
-            const title =
-              current.offerTitle ||
-              current.gameTitle ||
-              current.title;
+        if (!title || title.length < 2) continue;
 
-            const image =
-              current.imageUrl ||
-              current.boxArt ||
-              current.thumbnail;
-
-            if (
-              title &&
-              typeof title === "string" &&
-              image
-            ) {
-              offers.push(current);
-            }
-
-            for (const value of Object.values(current)) {
-              if (typeof value === "object") {
-                stack.push(value);
-              }
-            }
-          }
-        }
-      } catch {
-        // ignore malformed blobs
-      }
-    }
-
-    // Deduplicate by title
-    const seen = new Set();
-
-    const games = offers
-      .filter((item) => {
-        const title =
-          item.offerTitle ||
-          item.gameTitle ||
-          item.title;
-
-        if (!title) return false;
-
+        // Deduplicate
         const key = title.toLowerCase();
 
-        if (seen.has(key)) return false;
+        if (seen.has(key)) continue;
         seen.add(key);
 
-        return true;
-      })
-      .map((item) => {
-        const title =
-          item.offerTitle ||
-          item.gameTitle ||
-          item.title;
+        // Try to infer provider/platform
+        const lower = text.toLowerCase();
 
-        const image =
-          item.imageUrl ||
-          item.boxArt ||
-          item.thumbnail ||
-          "";
+        let platform = "Amazon Games App";
 
-        const description =
-          item.description ||
-          item.offerDescription ||
-          "";
+        if (lower.includes("epic")) {
+          platform = "Epic Games";
+        } else if (lower.includes("gog")) {
+          platform = "GOG";
+        } else if (lower.includes("legacy")) {
+          platform = "Legacy Games";
+        } else if (lower.includes("xbox")) {
+          platform = "Xbox";
+        } else if (lower.includes("ea app")) {
+          platform = "EA App";
+        }
 
-        const offerEnd =
-          item.endTime ||
-          item.offerEndTime ||
-          item.expirationDate ||
-          null;
+        // Try to detect expiration text
+        let offerEnd = null;
 
-        const offerStart =
-          item.startTime ||
-          item.offerStartTime ||
-          null;
+        const endMatch = text.match(
+          /(ends?|claim by)\s+([A-Z][a-z]+\s+\d{1,2})/i
+        );
 
-        const platform = detectPrimePlatform(item);
+        if (endMatch) {
+          const d = new Date(
+            `${endMatch[2]} ${new Date().getFullYear()}`
+          );
 
-        return {
+          if (!isNaN(d)) {
+            offerEnd = d.toISOString();
+          }
+        }
+
+        results.push({
           id: `prime-${title
             .toLowerCase()
             .replace(/[^a-z0-9]+/g, "-")}`,
@@ -744,20 +702,17 @@ async function fetchPrimeGaming() {
           store: "prime",
           storeName: "Prime Gaming",
 
-          title: cleanPrimeText(title),
+          title,
 
           slug: "",
 
-          storeUrl:
-            item.claimLink ||
-            item.url ||
-            PRIME_GAMING_URL,
+          storeUrl: card.href || "https://gaming.amazon.com/home",
 
           seller: "Prime Gaming",
 
-          description: cleanPrimeText(description),
+          description: text.trim(),
 
-          image,
+          image: img.src,
 
           originalPrice: null,
 
@@ -765,13 +720,16 @@ async function fetchPrimeGaming() {
 
           status: "free",
 
-          offerStart,
+          offerStart: null,
 
           offerEnd,
 
           platforms: [platform],
-        };
-      });
+        });
+      }
+
+      return results;
+    });
 
     console.log(`  → ${games.length} Prime Gaming offer(s) found`);
 
@@ -779,9 +737,12 @@ async function fetchPrimeGaming() {
   } catch (err) {
     console.warn("  Prime Gaming fetch failed:", err.message);
     return [];
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
   }
 }
-
 
 
 // ─── Main ─────────────────────────────────────────────────────────────────────

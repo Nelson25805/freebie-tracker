@@ -7,7 +7,8 @@ on:
     - cron: "0 8 * * *"
     - cron: "0 14 * * *"
     - cron: "0 20 * * *"
-  workflow_dispatch: # Allow manual trigger from GitHub Actions tab
+
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -29,6 +30,11 @@ jobs:
         run: npm install
         working-directory: scripts
 
+      # NEW: Install Playwright Chromium browser
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+        working-directory: scripts
+
       - name: Fetch free games data
         run: node fetch-games.js
         working-directory: scripts
@@ -37,7 +43,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add data/games.json
+
           # Only commit if the file actually changed
           if git diff --staged --quiet; then
             echo "No changes to games data, skipping commit."
