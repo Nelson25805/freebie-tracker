@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-28T18:18:29.622Z",
-  "totalFree": 5,
+  "fetchedAt": "2026-05-28T20:54:35.653Z",
+  "totalFree": 6,
   "totalUpcoming": 4,
   "games": [
     {
@@ -178,6 +178,25 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
+    },
+    {
+      "id": "prime-your-next-game-is-ready",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Your next game is ready",
+      "slug": "",
+      "storeUrl": "https://luna.amazon.com/game/ea-sports-fc-26/B0CW18YWZF?ref=pghq_eafc26",
+      "seller": "Prime Gaming",
+      "description": "Your next game is ready\n\nEA SPORTS FC—play instantly, no download required\n\nPlay now",
+      "image": "https://m.media-amazon.com/images/G/01/sm/EA_FC_2026/ClaimHQ_CrossPromo_EASportsFC26_Banner_Desktop.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
     }
   ]
 }
