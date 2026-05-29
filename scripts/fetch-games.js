@@ -629,69 +629,60 @@ async function fetchPrimeGaming() {
     });
 
     const games = await page.evaluate(() => {
-      const cards = [...document.querySelectorAll("a")];
+      const cards = [
+        ...document.querySelectorAll('[data-a-target="item-card"]'),
+      ];
 
       const results = [];
       const seen = new Set();
 
       for (const card of cards) {
-        const text = card.innerText || "";
+        const link = card.closest("a");
 
-        // Ignore tiny/empty links
-        if (text.trim().length < 3) continue;
+        if (!link) continue;
 
-        const img = card.querySelector("img");
+        const titleEl = card.querySelector("h3");
+        const imgEl = card.querySelector("img");
 
-        if (!img?.src) continue;
+        const title =
+          titleEl?.textContent?.trim() ||
+          imgEl?.alt?.trim();
 
-        // Try to extract a title
-        let title =
-          img.alt ||
-          text.split("\n")[0] ||
-          "";
+        if (!title) continue;
 
-        title = title.trim();
-
-        if (!title || title.length < 2) continue;
-
-        // Deduplicate
         const key = title.toLowerCase();
 
         if (seen.has(key)) continue;
         seen.add(key);
 
-        // Try to infer provider/platform
-        const lower = text.toLowerCase();
+        const image =
+          imgEl?.src ||
+          imgEl?.getAttribute("srcset")?.split(" ")[0] ||
+          null;
+
+        let href = link.href || "";
+
+        // Prime sometimes returns relative URLs
+        if (href.startsWith("/")) {
+          href = `https://gaming.amazon.com${href}`;
+        }
+
+        // Determine provider/platform from URL slug
+        const lowerHref = href.toLowerCase();
 
         let platform = "Amazon Games App";
 
-        if (lower.includes("epic")) {
-          platform = "Epic Games";
-        } else if (lower.includes("gog")) {
+        if (lowerHref.includes("-gog")) {
           platform = "GOG";
-        } else if (lower.includes("legacy")) {
+        } else if (lowerHref.includes("-epic")) {
+          platform = "Epic Games";
+        } else if (lowerHref.includes("-legacy")) {
           platform = "Legacy Games";
-        } else if (lower.includes("xbox")) {
-          platform = "Xbox";
-        } else if (lower.includes("ea app")) {
-          platform = "EA App";
-        }
-
-        // Try to detect expiration text
-        let offerEnd = null;
-
-        const endMatch = text.match(
-          /(ends?|claim by)\s+([A-Z][a-z]+\s+\d{1,2})/i
-        );
-
-        if (endMatch) {
-          const d = new Date(
-            `${endMatch[2]} ${new Date().getFullYear()}`
-          );
-
-          if (!isNaN(d)) {
-            offerEnd = d.toISOString();
-          }
+        } else if (
+          lowerHref.includes("-aga") ||
+          lowerHref.includes("amazon")
+        ) {
+          platform = "Amazon Games App";
         }
 
         results.push({
@@ -704,15 +695,17 @@ async function fetchPrimeGaming() {
 
           title,
 
-          slug: "",
+          slug: title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-"),
 
-          storeUrl: card.href || "https://gaming.amazon.com/home",
+          storeUrl: href,
 
           seller: "Prime Gaming",
 
-          description: text.trim(),
+          description: `Free with Prime Gaming via ${platform}.`,
 
-          image: img.src,
+          image,
 
           originalPrice: null,
 
@@ -722,7 +715,7 @@ async function fetchPrimeGaming() {
 
           offerStart: null,
 
-          offerEnd,
+          offerEnd: null,
 
           platforms: [platform],
         });
