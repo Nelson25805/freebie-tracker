@@ -628,153 +628,152 @@ async function fetchPrimeGaming() {
       timeout: 30000,
     });
 
-    const games = await page.evaluate(() => {
-      // First collect basic card data from homepage
-      const cards = await page.evaluate(() => {
-        const cardEls = [
-          ...document.querySelectorAll('[data-a-target="item-card"]'),
-        ];
+    // First collect basic card data from homepage
+    const cards = await page.evaluate(() => {
+      const cardEls = [
+        ...document.querySelectorAll('[data-a-target="item-card"]'),
+      ];
 
-        const results = [];
-        const seen = new Set();
+      const results = [];
+      const seen = new Set();
 
-        for (const card of cardEls) {
-          const link = card.closest("a");
-          if (!link) continue;
+      for (const card of cardEls) {
+        const link = card.closest("a");
+        if (!link) continue;
 
-          const titleEl = card.querySelector("h3");
-          const imgEl = card.querySelector("img");
+        const titleEl = card.querySelector("h3");
+        const imgEl = card.querySelector("img");
 
-          const title =
-            titleEl?.textContent?.trim() ||
-            imgEl?.alt?.trim();
+        const title =
+          titleEl?.textContent?.trim() ||
+          imgEl?.alt?.trim();
 
-          if (!title) continue;
+        if (!title) continue;
 
-          const key = title.toLowerCase();
-          if (seen.has(key)) continue;
-          seen.add(key);
+        const key = title.toLowerCase();
+        if (seen.has(key)) continue;
+        seen.add(key);
 
-          let href = link.href || "";
+        let href = link.href || "";
 
-          if (href.startsWith("/")) {
-            href = `https://gaming.amazon.com${href}`;
-          }
-
-          results.push({
-            title,
-            href,
-          });
+        if (href.startsWith("/")) {
+          href = `https://gaming.amazon.com${href}`;
         }
 
-        return results;
-      });
-
-      const games = [];
-
-      for (const card of cards) {
-        try {
-          const gamePage = await browser.newPage();
-
-          await gamePage.goto(card.href, {
-            waitUntil: "domcontentloaded",
-            timeout: 60000,
-          });
-
-          await gamePage.waitForTimeout(2000);
-
-          const details = await gamePage.evaluate(() => {
-            const title =
-              document.querySelector("h1")?.textContent?.trim() ||
-              document.title;
-
-            // DESCRIPTION
-            let description = "";
-
-            const descEl =
-              document.querySelector('[data-a-target="BodyText"]') ||
-              document.querySelector(".about-the-game__content p");
-
-            if (descEl) {
-              description = descEl.textContent.trim();
-            }
-
-            // COVER IMAGE
-            let image = "";
-
-            const imgEl =
-              document.querySelector('[data-a-target="responsive-media-image"]') ||
-              document.querySelector('img[src*="media-amazon.com"]');
-
-            if (imgEl) {
-              image =
-                imgEl.src ||
-                imgEl.getAttribute("src");
-            }
-
-            return {
-              title,
-              description,
-              image,
-            };
-          });
-
-          const lowerHref = card.href.toLowerCase();
-
-          let platform = "Amazon Games App";
-
-          if (lowerHref.includes("-gog")) {
-            platform = "GOG";
-          } else if (lowerHref.includes("-epic")) {
-            platform = "Epic Games";
-          } else if (lowerHref.includes("-legacy")) {
-            platform = "Legacy Games";
-          }
-
-          games.push({
-            id: `prime-${details.title
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, "-")}`,
-
-            store: "prime",
-            storeName: "Prime Gaming",
-
-            title: details.title,
-
-            slug: details.title
-              .toLowerCase()
-              .replace(/[^a-z0-9]+/g, "-"),
-
-            storeUrl: card.href,
-
-            seller: "Prime Gaming",
-
-            description:
-              details.description ||
-              `Free with Prime Gaming via ${platform}.`,
-
-            image: details.image || "",
-
-            originalPrice: null,
-
-            discountPrice: 0,
-
-            status: "free",
-
-            offerStart: null,
-
-            offerEnd: null,
-
-            platforms: [platform],
-          });
-
-          await gamePage.close();
-
-        } catch (err) {
-          console.warn(`Failed to scrape Prime game page: ${card.title}`);
-        }
+        results.push({
+          title,
+          href,
+        });
       }
+
+      return results;
     });
+
+    const games = [];
+
+    for (const card of cards) {
+      try {
+        const gamePage = await browser.newPage();
+
+        await gamePage.goto(card.href, {
+          waitUntil: "domcontentloaded",
+          timeout: 60000,
+        });
+
+        await gamePage.waitForTimeout(2000);
+
+        const details = await gamePage.evaluate(() => {
+          const title =
+            document.querySelector("h1")?.textContent?.trim() ||
+            document.title;
+
+          // DESCRIPTION
+          let description = "";
+
+          const descEl =
+            document.querySelector('[data-a-target="BodyText"]') ||
+            document.querySelector(".about-the-game__content p");
+
+          if (descEl) {
+            description = descEl.textContent.trim();
+          }
+
+          // COVER IMAGE
+          let image = "";
+
+          const imgEl =
+            document.querySelector('[data-a-target="responsive-media-image"]') ||
+            document.querySelector('img[src*="media-amazon.com"]');
+
+          if (imgEl) {
+            image =
+              imgEl.src ||
+              imgEl.getAttribute("src");
+          }
+
+          return {
+            title,
+            description,
+            image,
+          };
+        });
+
+        const lowerHref = card.href.toLowerCase();
+
+        let platform = "Amazon Games App";
+
+        if (lowerHref.includes("-gog")) {
+          platform = "GOG";
+        } else if (lowerHref.includes("-epic")) {
+          platform = "Epic Games";
+        } else if (lowerHref.includes("-legacy")) {
+          platform = "Legacy Games";
+        }
+
+        games.push({
+          id: `prime-${details.title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")}`,
+
+          store: "prime",
+          storeName: "Prime Gaming",
+
+          title: details.title,
+
+          slug: details.title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-"),
+
+          storeUrl: card.href,
+
+          seller: "Prime Gaming",
+
+          description:
+            details.description ||
+            `Free with Prime Gaming via ${platform}.`,
+
+          image: details.image || "",
+
+          originalPrice: null,
+
+          discountPrice: 0,
+
+          status: "free",
+
+          offerStart: null,
+
+          offerEnd: null,
+
+          platforms: [platform],
+        });
+
+        await gamePage.close();
+
+      } catch (err) {
+        console.warn(`Failed to scrape Prime game page: ${card.title}`);
+      }
+    }
+
 
     console.log(`  → ${games.length} Prime Gaming offer(s) found`);
 
