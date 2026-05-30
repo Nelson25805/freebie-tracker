@@ -760,8 +760,6 @@ async function fetchPrimeGaming() {
 
         let platform = "Amazon Games App";
 
-        let platform = "Amazon Games App";
-
         if (
           lowerHref.includes("luna.amazon") ||
           lowerHref.includes("/game/")
