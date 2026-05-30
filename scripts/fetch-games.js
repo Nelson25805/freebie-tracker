@@ -680,35 +680,73 @@ async function fetchPrimeGaming() {
           timeout: 60000,
         });
 
-        await gamePage.waitForTimeout(2000);
+        try {
+          await gamePage.waitForSelector(
+            '[data-test-id="item_game_description_body"], #background_media_image',
+            { timeout: 10000 }
+          );
+        } catch {
+          await gamePage.waitForTimeout(3000);
+        }
 
         const details = await gamePage.evaluate(() => {
           const title =
             document.querySelector("h1")?.textContent?.trim() ||
             document.title;
 
-          // DESCRIPTION
           let description = "";
+          let image = "";
 
-          const descEl =
+          // --------------------------------------------------
+          // STANDARD PRIME GAMING PAGE
+          // --------------------------------------------------
+
+          const standardDesc =
             document.querySelector('[data-a-target="BodyText"]') ||
             document.querySelector(".about-the-game__content p");
 
-          if (descEl) {
-            description = descEl.textContent.trim();
+          if (standardDesc) {
+            description = standardDesc.textContent.trim();
           }
 
-          // COVER IMAGE
-          let image = "";
-
-          const imgEl =
+          const standardImg =
             document.querySelector('[data-a-target="responsive-media-image"]') ||
             document.querySelector('img[src*="media-amazon.com"]');
 
-          if (imgEl) {
+          if (standardImg) {
             image =
-              imgEl.src ||
-              imgEl.getAttribute("src");
+              standardImg.src ||
+              standardImg.getAttribute("src") ||
+              "";
+          }
+
+          // --------------------------------------------------
+          // AMAZON LUNA PAGE FALLBACK
+          // --------------------------------------------------
+
+          if (!description) {
+            const lunaDesc =
+              document.querySelector(
+                '[data-test-id="item_game_description_body"]'
+              );
+
+            if (lunaDesc) {
+              description = lunaDesc.textContent
+                .replace(/\s+/g, " ")
+                .trim();
+            }
+          }
+
+          if (!image) {
+            const lunaImg =
+              document.querySelector("#background_media_image");
+
+            if (lunaImg) {
+              image =
+                lunaImg.src ||
+                lunaImg.getAttribute("src") ||
+                "";
+            }
           }
 
           return {
@@ -722,7 +760,14 @@ async function fetchPrimeGaming() {
 
         let platform = "Amazon Games App";
 
-        if (lowerHref.includes("-gog")) {
+        let platform = "Amazon Games App";
+
+        if (
+          lowerHref.includes("luna.amazon") ||
+          lowerHref.includes("/game/")
+        ) {
+          platform = "Amazon Luna";
+        } else if (lowerHref.includes("-gog")) {
           platform = "GOG";
         } else if (lowerHref.includes("-epic")) {
           platform = "Epic Games";
