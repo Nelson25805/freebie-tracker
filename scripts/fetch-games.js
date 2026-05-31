@@ -709,12 +709,17 @@ async function fetchPrimeGaming() {
             description = standardDesc.textContent.trim();
           }
 
+          // Prefer actual game artwork
           const standardImg =
+            document.querySelector("#background_media_image") ||
             document.querySelector('[data-a-target="responsive-media-image"]') ||
+            document.querySelector('meta[property="og:image"]') ||
+            document.querySelector('meta[name="twitter:image"]') ||
             document.querySelector('img[src*="media-amazon.com"]');
 
           if (standardImg) {
             image =
+              standardImg.content ||
               standardImg.src ||
               standardImg.getAttribute("src") ||
               "";
