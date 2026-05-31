@@ -738,14 +738,26 @@ async function fetchPrimeGaming() {
           }
 
           if (!image) {
-            const lunaImg =
-              document.querySelector("#background_media_image");
+            const candidates = [
+              document.querySelector('meta[property="og:image"]'),
+              document.querySelector('meta[name="twitter:image"]'),
+              document.querySelector("#background_media_image"),
+              document.querySelector('img[src*="media-amazon.com"]')
+            ];
 
-            if (lunaImg) {
-              image =
-                lunaImg.src ||
-                lunaImg.getAttribute("src") ||
+            for (const el of candidates) {
+              if (!el) continue;
+
+              const src =
+                el.content ||
+                el.src ||
+                el.getAttribute("src") ||
                 "";
+
+              if (src) {
+                image = src;
+                break;
+              }
             }
           }
 
