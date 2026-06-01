@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-05-31T20:35:57.837Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-06-01T09:54:26.363Z",
+  "totalFree": 37,
   "totalUpcoming": 4,
   "games": [
     {
@@ -118,6 +118,68 @@
       "offerEnd": "2026-06-11T15:00:00.000Z"
     },
     {
+      "id": "psplus-grounded-fully-yoked-edition",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Grounded Fully Yoked Edition",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Shrink down and survive in a perilous, creature-filled backyard. Mysteriously shrunken down to the size of an ant, your intrepid young adventurer must fight for survival as they experience the backyard from an entirely new perspective. Explore a vast garden environment alone, or with the aid of up to three friends in online multiplayer, and gather the resources you need to build shelter and craft armour and weapons to protect yourself from the creatures that populate the backyard. As you progress, you’ll uncover the truth behind your tiny transformation and find out what it takes to return to your original size.",
+      "image": "https://blog.playstation.com/tachyon/2026/06/92b284be1a1033bbaaaaa296c0633c86cff7673a.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
+    },
+    {
+      "id": "psplus-nickelodeon-all-star-brawl-2",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Nickelodeon All-Star Brawl 2",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Nickelodeon All-Star Brawl 2 lets you duke it out with the biggest and best fighting character roster yet, including all new characters like SpongeBob SquarePants, Teenage Mutant Ninja Turtles, Squidward Tentacles, Jimmy Neutron, and more. Play solo or fight online and choose your favorite brawlers, master their unique move sets, and use all-new powerful Supers to land the finishing blow with friends or across a unique, roguelike player campaign!",
+      "image": "https://blog.playstation.com/tachyon/2026/06/0a79afe562ca8cabd22b606b86be9883441102b1.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
+    },
+    {
+      "id": "psplus-warhammer-40-000-darktide",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Warhammer 40,000: Darktide",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5",
+      "description": "Take back the city of Tertium from hordes of bloodthirsty foes in this intense and brutal action shooter. Warhammer 40,000: Darktide is the new four player co-op focused experience from the award-winning team behind the Vermintide series. Built on the legacy of Vermintide 2’s best-in-class melee combat, Warhammer 40,000: Darktide introduces intense WH40K gunplay to the mix. Master the balance between ranged and melee combat as you fight through a slew of enemies. Feel the impact of each swipe, swing, and slice of a chainsword, or fry some flesh with a lasgun.",
+      "image": "https://blog.playstation.com/tachyon/2026/06/04cb06c024f5b60c1f3a2b874df6dd5ed3989f2d.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
+    },
+    {
       "id": "psplus-ea-sports-fc-26",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -125,59 +187,18 @@
       "slug": "",
       "storeUrl": "https://store.playstation.com",
       "seller": "PS5 / PS4",
-      "description": "The club is yours in EA Sports FC 26. Play your way with an overhauled gameplay experience powered by feedback from the FC Community, and choose between Authentic Gameplay and Competitive Gameplay presets. Put your dream squad to the test in Football Ultimate Team, with Tournaments and Live Events, as well as a refreshed Rivals and Champs experience. Enjoy unrivalled authenticity in EA Sports FC 26, featuring 20,000+ players across 750+ clubs and national teams, in over 120+ stadiums and 35+ leagues.&nbsp;",
-      "image": "https://blog.playstation.com/tachyon/2026/04/84b82e46825a9bfc7b33648a04856071ce6ff431.jpg",
+      "description": "EA Sports FC 26, originally announced as part of the PS Plus May Monthly Games lineup, will remain available as a PlayStation Plus Monthly Game through June 16.&nbsp;",
+      "image": "https://blog.playstation.com/tachyon/2026/06/ea1dba3ac84049116613b1f111a6f4223f80d659.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2026-06-02T00:00:00.000Z",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
       "platforms": [
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
-    },
-    {
-      "id": "psplus-wuchang-fallen-feathers",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Wuchang: Fallen Feathers",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5",
-      "description": "In this Soulslike action RPG, female pirate warrior Wuchang awakens in the tumultuous final years of China’s Ming Dynasty with no memories of her past. The land of Shu is plagued by warring factions and a mysterious phenomenon known as Feathering that is causing people to mutate into hideous monsters. Now herself afflicted with Feathering, Wuchang must explore this vast, interconnected world while battling cruel and twisted enemies. Master various fighting styles, discover hidden weapons and ancient firearms, harvest new skills from defeated foes and even embrace the power of Feathering to discover the truth at the heart of the chaos.",
-      "image": "https://blog.playstation.com/tachyon/2026/04/c77c39fdda438bace780694ca54800282fd94669.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2026-06-02T00:00:00.000Z",
-      "platforms": [
-        "PS5"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
-    },
-    {
-      "id": "psplus-nine-sols",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Nine Sols",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5 / PS4",
-      "description": "Nine Sols is a lore-rich, hand-drawn 2D action-platformer with Sekiro-inspired, deflection-based combat. Face off against ancient deities, explore a land once ruled by an ancient alien race, and follow a vengeful hero on a quest to slay the 9 Sols—the powerful rulers of this forsaken realm.",
-      "image": "https://blog.playstation.com/tachyon/2026/04/49e9747b7b267542b1eed80db7410c202b504147.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-04-29T15:30:05.000Z",
-      "offerEnd": "2026-06-02T00:00:00.000Z",
-      "platforms": [
-        "PS5",
-        "PS4"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/04/29/playstation-plus-monthly-games-for-may-ea-sports-fc-26-wuchang-fallen-feathers-nine-sols/"
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
     },
     {
       "id": "prime-space-grunts",
@@ -415,7 +436,7 @@
       "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
       "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -434,7 +455,7 @@
       "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "The Club is Yours in EA SPORTS FC™ 26.Play your way with an overhauled gameplay experience powered by community feedback. The new Authentic Gameplay option delivers the most true-to-football experience ever in Career, while the Competitive Gameplay option—driven by refined fundamentals, added consistency, and enhanced responsiveness—is tailor-made for play in Football Ultimate Team™ and Clubs.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience Manager Career like never before with all-new Manager Live Challenges. Earn rewards throughout the new season by taking on a variety of real-world scenarios and alternative storylines – ranging from a few minutes of play to multiple seasons.Archetypes inspired by the greats of the game introduce new classes to Clubs and Player Career, bringing more individuality to your player. Develop your abilities by upgrading attributes and unlocking Archetype Perks to give your player a distinct feel on the pitch.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
       "image": "https://m.media-amazon.com/images/I/D13Hqb54B4L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -453,7 +474,7 @@
       "slug": "play-alien-isolation-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B09HFKWMTQ?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "HOW WILL YOU SURVIVE?Discover the true meaning of fear in Alien: Isolation, a survival horror set in an atmosphere of constant dread and mortal danger. Fifteen years after the events of Alien™, Ellen Ripley’s daughter, Amanda enters a desperate battle for survival, on a mission to unravel the truth behind her mother's disappearance.Overcome an ever-present deadly threat – Experience persistent fear as a truly dynamic and reactive Alien uses its senses to hunt you down and respond to your every move.Improvise to survive – Hack systems, scavenge for vital resources and craft items to deal with each situation. Will you evade your enemies, distract them or face them head on?Explore a world of mystery and betrayal – Immerse yourself in the detailed setting of Sevastopol, a decommissioned trading station on the fringes of space. Encounter a rich cast of inhabitants in a world scarred by fear and mistrust.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1ifBVQ4mNS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -491,7 +512,7 @@
       "slug": "play-resident-evil-2-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0B3BR5CH6?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The genre-defining masterpiece Resident Evil 2 returns, completely rebuilt from the ground up for a deeper narrative experience. Using Capcom’s proprietary RE Engine, Resident Evil 2 offers a fresh take on the classic survival horror saga with breathtakingly realistic visuals, heart-pounding immersive audio, a new over-the-shoulder camera, and modernized controls on top of gameplay modes from the original game.In Resident Evil 2, the classic action, tense exploration, and puzzle solving gameplay that defined the Resident Evil series returns. Players join rookie police officer Leon Kennedy and college student Claire Redfield, who are thrust together by a disastrous outbreak in Raccoon City that transformed its population into deadly zombies. Both Leon and Claire have their own playable campaigns, allowing players to see the story from both characters’ perspectives. Their fate is in players hands as they work together to survive and investigate the terrifying attack on the city!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1M3VOFDiSL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -510,7 +531,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09SNHS9TG?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The sequel to the party game phenomenon The Jackbox Party Pack, featuring FIVE fresh, rib-tickling party games! Your phones or tablets are your controllers – no big mess of controllers needed. For up to 8 players plus an Audience of up to 10,000! It’s a game-night riot in a box… without the box!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1uuQy3A+qL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
