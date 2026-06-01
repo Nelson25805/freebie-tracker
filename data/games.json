@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-01T16:11:05.424Z",
+  "fetchedAt": "2026-06-01T21:20:37.832Z",
   "totalFree": 37,
   "totalUpcoming": 4,
   "games": [
@@ -334,25 +334,6 @@
       ]
     },
     {
-      "id": "prime-kinnikuneko-super-muscle-cat",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "KinnikuNeko: SUPER MUSCLE CAT",
-      "slug": "kinnikuneko-super-muscle-cat",
-      "storeUrl": "https://luna.amazon.com/claims/kinnikuneko-super-muscle-cat-epic/dp/amzn1.pg.item.1ddb7652-affd-420e-a2af-9b0a2ba70ac1?g=s&ingress=amzn&ref_=SM_KinnikuNekoSUPERMUSCLECAT_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Wait... A muscular cat that fights aliens!?Get ready to enjoy this crazy 2D platformer adventure starring KinnikuNeko! A cat with the body of a bodybuilder who will fight against a big alien army that has invaded planet Earth and captured all its inhabitants. He will be accompanied by his friends Lemon and Keita, who haven't yet been captured by the evil beings from outer space.Go through different levels using just your muscles to fight or climbing like a kitty until you find the way to save humanity.Watch out! The sleek and ferocious General Pitaya, together with her two minions, will not make it easy for you!Discover the intentions of this evil civilization in a story full of humor, friendship, drama, and action. All under a visual aesthetic typical of 90s Japanese anime and traditional animation!Why did the aliens decide to invade Earth? Why did they capture all the humans? What brought them here? But the biggest question... A muscular cat?!",
-      "image": "https://m.media-amazon.com/images/I/91YsTuZPn+L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-pinball-spire",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -429,6 +410,25 @@
       ]
     },
     {
+      "id": "prime-rebel-galaxy",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Rebel Galaxy",
+      "slug": "rebel-galaxy",
+      "storeUrl": "https://luna.amazon.com/claims/rebel-galaxy-gog/dp/amzn1.pg.item.e1e1ec5b-0df4-4091-9c63-ede5a86cb9ed?g=s&ingress=amzn&ref_=SM_RebelGalaxy_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Rebel Galaxy is a swashbuckling space adventure with action-packed combat, exploration, discovery, trade, and \"negotiation\" with the outlandish denizens at the edge of the known universe.As the commander of an immensely powerful star destroyer, you'll battle pirates, explore anomalies, befriend aliens, scavenge battle wreckage, mine asteroids, and discover artifacts. Choose your path as a roguish do-gooder, crafty space-trader, or power-hungry privateer – or maybe a little of each! Buy larger and more powerful craft with your hard-earned credits, and outfit them with a variety of wicked weapons and defenses. Set in a galaxy of fantastic sights and secrets to be found, Rebel Galaxy is above all a space epic of adventure, exploration, and combat.The edge of the universe is a pretty dangerous place, so watch your back.Captain a massive spaceship engaging in epic scale space battles.Trade, negotiate, mine asteroids, hunt bounties, be a pirate, and explore a randomized open-world galactic map.Make your own path through a dialogue tree-driven storyline making friends and enemies of a variety of alien factions.",
+      "image": "https://m.media-amazon.com/images/I/A1c6iY9PAVL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -436,7 +436,7 @@
       "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -550,7 +550,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0FLWXDWVM?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Test your general knowledge and reasoning skills in “Who Wants to Be a Millionaire?”, the official video game of the show!Experience the suspense of the famous TV show in the official video game Who Wants to Be a Millionaire?Climb the prize ladder by answering 15 increasingly difficult questions. Is that your final answer?",
       "image": "https://m.media-amazon.com/images/I/C1o-UcWC+4L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -569,7 +569,7 @@
       "slug": "play-smurfs-kart-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CWPYQDJ5?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Who will be the fastest Smurf in town?That is the question you will need to answer in this dynamic kart racing game in the world of Smurfs!The whole family can choose one Smurf, its kart and special power, then you’re ready to go on wild races! Make the best start, find shortcuts, and use the right items at the right time to pass your opponents!Play solo or with friends and family, should you be a beginner or the most trained driver… you can get 1st place and show others who the fastest Smurf of all time is!- 12 tracks taken from the Smurfs’ universe: the village, the forest, the dam, the swamps… even Gargamel’s house!- 12 playable Smurfs: choose the Smurf you want to drive with.- Each Smurf has its own kart and a very handy special item to help you breeze past your opponents.- Reach 1st place by using the environment around you: bonus items, boosts, ramps, destructible boxes, shortcuts and more!- Play solo or with family and friends, up to 4 players in split-screen local multiplayer game mode. - Try to beat every Smurf at their own racetrack in the “Time Challenge” mode and reach the top of the online rankings with your best time!- Unlock original bonuses race after race, win after win, and try to Smurf them all in your personal album!",
       "image": "https://m.media-amazon.com/images/I/A116QJpV27L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -588,7 +588,7 @@
       "slug": "play-bee-simulator-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B097FBB891?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Live the life of a bee! Explore a world brimming with life in which you collect pollen, defy dangerous wasps and save your hive. Play with others in three game modes, including co-op and PvP on split screen. See the world through the eyes of a bee! Explore a world inspired by Central Park where you can take part in bee races, collect pollen from rare flowers and defy dangerous wasps.Play with friends or family in three game modes, including co-op and PvP on split screen.The hive awakens as the sun's first rays warm the horizon. It's time to test your wings, receive orders from the Queen and begin your first mission. And that's just the start of your adventures. Humans want to cut down the tree that holds your hive, so your fate – and that of the whole swarm – rests on your tiny shoulders!",
       "image": "https://m.media-amazon.com/images/I/D15+u5V6BzL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -626,7 +626,7 @@
       "slug": "play-wrc-generations-fully-loaded-edition-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0BQSB3RM1?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt. In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in. As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted. For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category. WRC Generations includes more content than ever before in a rally game.• 750 km of unique special stages in 22 countries • 49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)• 37 legendary cars plus additional bonuses• 165 timed special stages In order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:• The new hybrid vehicles• New, even more realistic vehicle physics• A LEAGUES mode in which you can challenge other players• A new Rally Sweden environment with 6 brand-new special stages• Share livery and stickers with the community• In-game team creation and managementThe Fully Loaded Edition includes:- Sébastien Loeb's Citroën C4 WRC (2010) - The \"Career Starter Pack\" with 6 extra crew members- 2 Porsche 911 GT3 RS RGT liveries- A pack of 36 stickers for the Livery Editor",
       "image": "https://m.media-amazon.com/images/I/D1iuYhsxE5L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -683,7 +683,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
       "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
