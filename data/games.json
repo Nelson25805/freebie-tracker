@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-02T15:36:35.231Z",
+  "fetchedAt": "2026-06-02T21:17:49.689Z",
   "totalFree": 37,
   "totalUpcoming": 4,
   "games": [
@@ -201,6 +201,63 @@
       "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
     },
     {
+      "id": "prime-nordic-storm-solitaire",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Nordic Storm Solitaire",
+      "slug": "nordic-storm-solitaire",
+      "storeUrl": "https://luna.amazon.com/claims/nordic-storm-solitaire-legacy/dp/amzn1.pg.item.468f5c94-de63-4c8b-86c3-e22b5fc1510e?g=s&ingress=amzn&ref_=SM_NordicStormSolitaire_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Play through 130 challenging solitaire levels and chase away the Jotun Idyl! With Nordic themes and visuals, your solitaire gameplay will be extremely enjoyable. Exercise your brain and fight boredom... as you fight ancient gods! Play through challenging levels as the story unveils through the cards you've been dealt, with 130+ levels, level boosters, combo and speed rewards, and more!",
+      "image": "https://m.media-amazon.com/images/I/A1XIY+8igXL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-moon-mystery",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Moon Mystery",
+      "slug": "moon-mystery",
+      "storeUrl": "https://luna.amazon.com/claims/moon-mystery-epic/dp/amzn1.pg.item.fa6ec78f-327e-4dcb-8afe-8eae11afea3b?g=s&ingress=amzn&ref_=SM_MoonMystery_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The Moon's haunted - and when an astronaut loses contact with Earth, the adventure begins in full. Fill up your oxygen, load up the guns, and set out on an interstellar FPS adventure across the stars, filled with puzzles, fights, exploration, and strange secrets of the universe.Moon Mystery is a first-person shooter adventure full of puzzles and action, set on strange new worlds. Pilot multiple vehicles such as spaceships, lunar rovers, and even a submarine to traverse alien worlds and solve the many puzzles that await. Just keep that gun loaded - you'll need it.",
+      "image": "https://m.media-amazon.com/images/I/81TES84j7PL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-palindrome-syndrome-escape-room",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Palindrome Syndrome: Escape Room",
+      "slug": "palindrome-syndrome-escape-room",
+      "storeUrl": "https://luna.amazon.com/claims/palindrome-syndrome-escape-room-gog/dp/amzn1.pg.item.2636d5ae-477e-4010-82f4-a3440c877f67?g=s&ingress=amzn&ref_=SM_PalindromeSyndromeEscapeRoom_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You wake up in a spaceship with no memories. Will you be able to discover how you got there and who you are?Palindrome Syndrome is an escape room in a sci-fi setting that will test your skills. Solve puzzles, decode secret codes, find hidden objects, and investigate the different rooms of the spaceship while you discover the events that led you there.Will you be able to escape?Characteristics:Solve puzzles based on logic.Explore different rooms. Find clues and hidden objects.Discover how the plot progresses and different aspects of your past.Enjoy the mysterious and atmospheric setting.",
+      "image": "https://m.media-amazon.com/images/I/B1NiA9PtkbL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-space-grunts",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -372,63 +429,6 @@
       ]
     },
     {
-      "id": "prime-a-rat-s-quest-the-way-back-home",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "A Rat's Quest - The Way Back Home",
-      "slug": "a-rat-s-quest-the-way-back-home",
-      "storeUrl": "https://luna.amazon.com/claims/a-rats-quest-the-way-back-home-epic/dp/amzn1.pg.item.34210f82-0bf5-4aa6-860e-87640c1caf50?g=s&ingress=amzn&ref_=SM_ARatsQuestTheWayBackHome_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Mat is a young male rat that lives among a rat commune in an abandoned wine cellar, together with his best friend Toby and other rodents. He has fallen in love with Nat, a female house mouse kept as a pet on the upper floors. To get closer to her, Mat decides to become a Scavenger, allowing him to sneak up to see her more officially. Since they come from different worlds, they devise a plan to escape to the \"outside\" together. But Mat's overconfidence puts them in danger, and not everything in the commune is as it appears.In a series of unlucky events, Mat finds himself alone, far away from the house. He must make his way back home, overcoming a journey across woodlands, caves, and swamps, defying overwhelming danger of a winged, poisonous, and scaled variety. With a rivet for a sword and nails as throwing daggers, Mat will brave a world to which he is unwelcome.Help the Scavenger get back to his friends and save the rat commune from a threat that is bigger than every cheese in the world!",
-      "image": "https://m.media-amazon.com/images/I/A18sC2Qu27L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-xcom-enemy-unknown-complete-pack",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "XCOM: Enemy Unknown Complete Pack",
-      "slug": "xcom-enemy-unknown-complete-pack",
-      "storeUrl": "https://luna.amazon.com/claims/xcom-enemy-unknown-complete-pack-gog/dp/amzn1.pg.item.3674d591-5127-4b22-9cf4-16b42e63bc40?g=s&ingress=amzn&ref_=SM_XCOMEnemyUnknownCompletePack_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "From the makers of Sid Meier's Civilization comes a game about civilization's last stand. As the commander of an elite paramilitary organization known as XCOM, you control Earth's defenses against a terrifying alien invasion. This package includes the award-winning XCOM: Enemy Unknown base game and XCOM: Enemy Within expansion, plus all of the released add-on content.XCOM: Enemy Unknown FeaturesStrategic Base: Detect and intercept the alien threat as you build and expand your XCOM headquarters. Recruit, customize, and develop unique operatives. Manage your personnel and negotiate with governments around the world.Tactical Combat: Direct your squad in fierce turn-based ground battles, engage in cover operation, and rescue civilians in crowded cities and desolate outlands around the world.Research Alien Technology: Recruit scientists and engineers to unlock more advanced weapons, armor, and abilities.XCOM: Enemy Within FeaturesAdditional Soldier Abilities: Research a new alien technology to advance the capabilities of your operatives at a genetic level using Gene Mods or engineer MEC suits for heavy support in the field.Additional Weapons and Equipment: Give your operatives an extra tactical edge with new projects from your engineering team and the Foundry.Additional Enemy Threats: Adopt new tactics to counter the threats from a new human enemy known as EXALT and two new aliens, the Seeker and Mechtoid.New Strategic Resource: A valuable new alien resource, known as MELD, has been released onto the landscape providing access to new research and upgrades.",
-      "image": "https://m.media-amazon.com/images/I/A18pnm7qlTL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-rebel-galaxy",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Rebel Galaxy",
-      "slug": "rebel-galaxy",
-      "storeUrl": "https://luna.amazon.com/claims/rebel-galaxy-gog/dp/amzn1.pg.item.e1e1ec5b-0df4-4091-9c63-ede5a86cb9ed?g=s&ingress=amzn&ref_=SM_RebelGalaxy_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Rebel Galaxy is a swashbuckling space adventure with action-packed combat, exploration, discovery, trade, and \"negotiation\" with the outlandish denizens at the edge of the known universe.As the commander of an immensely powerful star destroyer, you'll battle pirates, explore anomalies, befriend aliens, scavenge battle wreckage, mine asteroids, and discover artifacts. Choose your path as a roguish do-gooder, crafty space-trader, or power-hungry privateer – or maybe a little of each! Buy larger and more powerful craft with your hard-earned credits, and outfit them with a variety of wicked weapons and defenses. Set in a galaxy of fantastic sights and secrets to be found, Rebel Galaxy is above all a space epic of adventure, exploration, and combat.The edge of the universe is a pretty dangerous place, so watch your back.Captain a massive spaceship engaging in epic scale space battles.Trade, negotiate, mine asteroids, hunt bounties, be a pirate, and explore a randomized open-world galactic map.Make your own path through a dialogue tree-driven storyline making friends and enemies of a variety of alien factions.",
-      "image": "https://m.media-amazon.com/images/I/A1c6iY9PAVL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -436,7 +436,7 @@
       "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
       "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -455,7 +455,7 @@
       "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The Club is Yours in EA SPORTS FC™ 26.Play your way with an overhauled gameplay experience powered by community feedback. The new Authentic Gameplay option delivers the most true-to-football experience ever in Career, while the Competitive Gameplay option—driven by refined fundamentals, added consistency, and enhanced responsiveness—is tailor-made for play in Football Ultimate Team™ and Clubs.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience Manager Career like never before with all-new Manager Live Challenges. Earn rewards throughout the new season by taking on a variety of real-world scenarios and alternative storylines – ranging from a few minutes of play to multiple seasons.Archetypes inspired by the greats of the game introduce new classes to Clubs and Player Career, bringing more individuality to your player. Develop your abilities by upgrading attributes and unlocking Archetype Perks to give your player a distinct feel on the pitch.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D13Hqb54B4L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -474,7 +474,7 @@
       "slug": "play-alien-isolation-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B09HFKWMTQ?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "HOW WILL YOU SURVIVE?Discover the true meaning of fear in Alien: Isolation, a survival horror set in an atmosphere of constant dread and mortal danger. Fifteen years after the events of Alien™, Ellen Ripley’s daughter, Amanda enters a desperate battle for survival, on a mission to unravel the truth behind her mother's disappearance.Overcome an ever-present deadly threat – Experience persistent fear as a truly dynamic and reactive Alien uses its senses to hunt you down and respond to your every move.Improvise to survive – Hack systems, scavenge for vital resources and craft items to deal with each situation. Will you evade your enemies, distract them or face them head on?Explore a world of mystery and betrayal – Immerse yourself in the detailed setting of Sevastopol, a decommissioned trading station on the fringes of space. Encounter a rich cast of inhabitants in a world scarred by fear and mistrust.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1ifBVQ4mNS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -493,7 +493,7 @@
       "slug": "play-middle-earth-shadow-of-war-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CTHPKLF7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Go behind enemy lines to forge your army, conquer Fortresses and dominate Mordor from within. Experience how the award winning Nemesis System creates unique personal stories with every enemy and follower, and confront the full power of the Dark Lord Sauron and his Ringwraiths in this epic new story of Middle-earth. In Middle-earth™: Shadow of War™, nothing will be forgotten.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1m2iDRBt1L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -512,7 +512,7 @@
       "slug": "play-resident-evil-2-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0B3BR5CH6?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The genre-defining masterpiece Resident Evil 2 returns, completely rebuilt from the ground up for a deeper narrative experience. Using Capcom’s proprietary RE Engine, Resident Evil 2 offers a fresh take on the classic survival horror saga with breathtakingly realistic visuals, heart-pounding immersive audio, a new over-the-shoulder camera, and modernized controls on top of gameplay modes from the original game.In Resident Evil 2, the classic action, tense exploration, and puzzle solving gameplay that defined the Resident Evil series returns. Players join rookie police officer Leon Kennedy and college student Claire Redfield, who are thrust together by a disastrous outbreak in Raccoon City that transformed its population into deadly zombies. Both Leon and Claire have their own playable campaigns, allowing players to see the story from both characters’ perspectives. Their fate is in players hands as they work together to survive and investigate the terrifying attack on the city!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1M3VOFDiSL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -531,7 +531,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09SNHS9TG?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The sequel to the party game phenomenon The Jackbox Party Pack, featuring FIVE fresh, rib-tickling party games! Your phones or tablets are your controllers – no big mess of controllers needed. For up to 8 players plus an Audience of up to 10,000! It’s a game-night riot in a box… without the box!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1uuQy3A+qL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -626,7 +626,7 @@
       "slug": "play-wrc-generations-fully-loaded-edition-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0BQSB3RM1?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt. In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in. As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted. For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category. WRC Generations includes more content than ever before in a rally game.• 750 km of unique special stages in 22 countries • 49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)• 37 legendary cars plus additional bonuses• 165 timed special stages In order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:• The new hybrid vehicles• New, even more realistic vehicle physics• A LEAGUES mode in which you can challenge other players• A new Rally Sweden environment with 6 brand-new special stages• Share livery and stickers with the community• In-game team creation and managementThe Fully Loaded Edition includes:- Sébastien Loeb's Citroën C4 WRC (2010) - The \"Career Starter Pack\" with 6 extra crew members- 2 Porsche 911 GT3 RS RGT liveries- A pack of 36 stickers for the Livery Editor",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1iuYhsxE5L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -645,7 +645,7 @@
       "slug": "play-lego-star-wars-the-complete-saga-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0D127TRNW?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Kick Some Brick in I through VIPlay through all six Star Wars movies in one videogame! Adding new characters, new levels, new features and for the first time ever, the chance to build and battle your way through a fun Star Wars galaxy on your PC!• New Gameplay Features with enhanced Force Powers, new power-ups and new Challenge Modes.• Solve Puzzles through the use of creative thinking, teamwork and unique building situations.• Over 120 playable characters, and new characters like Watto, Zam Wessell, Boss Nass and more!• Upgraded Character Customizer allowing millions of possibilities. With character parts from all 6 movies, create cross-Trilogy mash-up characters like Han Windu and Lando Amidala.• Redesigned levels like the \"Mos Espa Podrace\" and \"Gunship Cavalry\" to take advantage of the the open vehicle gameplay of LEGO Star Wars II.• Bonus levels and missions allow you to take 10 additional Bounty Hunter missions from Jabba the Hutt in the prequel trilogy.• Two Player Local Co-Op lets friends and families play together.Terms of Use: http://disneytermsofuse.com/",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1U3JQpQdXL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -702,8 +702,65 @@
       "slug": "play-wobbly-life-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Grandma has kicked you out into the big wide Wobbly world demanding you go and GET A JOB! She would be so proud if you could earn some money and get your own house one day! It's time to start earning and living your best Wobbly Life! 1-4 players Online and Local split-screen co-op Open-world sandbox filled with mini-games, toys, secrets+100 unique missions & jobs with exclusive rewards to unlock, alone or with friends +90 vehicles to ride around (and crash)+500 clothes items to show-off in your wobbly look FUN, FRIENDS & PHYSICS!Let's start exploring! Almost everything is interactive – grab, play, and experiment in a world filled with props, mini-games, and surprises. Experience the joy solo or share your adventures with up to 4 players in online or local co-op, all in one big Wobbly world. MYSTERIES AND MISSIONSEmbark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves... The Wobbly Museum has lost all its artifacts! Maybe you can help? Buy treasure maps and solve clues to find all the Museums' lost treasures and unlock exciting rewards. GO GET A JOB!Make grandma happy and go get that job! Earn money by choosing from +40 exciting jobs, each bringing their new unique challenges. From pizza delivery to firefighting, taxi driver to disco dancer… your Wobbly dream job is waiting for you. GO TO SPACE! The Wobbly Space Programme is looking for new recruits. Space is a whole new open world, with new jobs, missions, and secrets to uncover. You'll even get to fly your own spaceships too, so what are you waiting for!LIVE THE HIGH WOBBLY LIFE! Once you’ve fattened up your bank account why not go on a shopping spree? Visit the Pet Shop to buy a faithful companion, buy and unlock +500 clothes items and choose from +90 different vehicles. When you’ve really made the big bucks, you can even buy a house: from a wooden cabin to a huge fancy mansion, Wobbly Island has a home for everyone! PLAY YOUR OWN WAY WITH ARCADE MODEWant to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide & Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-xcom-chimera-squad",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "XCOM: Chimera Squad",
+      "slug": "xcom-chimera-squad",
+      "storeUrl": "https://luna.amazon.com/claims/xcom-chimera-squad-gog/dp/amzn1.pg.item.aa22d9f6-a898-4be7-a6df-50c3561b41b9?g=s&ingress=amzn&ref_=SM_XCOMChimeraSquad_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "XCOM: Chimera Squad delivers an all-new story and turn-based tactical combat experience in the XCOM universe.After years of alien rule, humanity won the war for Earth. But when the Overlords fled the planet, they left their former soldiers behind. Now, five years after the events of XCOM 2, humans and aliens are working together to forge a civilization of cooperation and coexistence.Welcome to City 31, a model of peace in a post-invasion world. However, not all of Earth's inhabitants support interspecies alliance. Chimera Squad, an elite force of human and alien agents, must work together to destroy the underground threats driving the city toward chaos.Your agents are unique: each is equipped with special tactical abilities and driven by a different motivation for joining Chimera Squad. Deploy targeted team members to investigate and combat the dangers that pervade the districts of City 31. Lead Chimera Squad through a new experience that innovates on XCOM's turn-based legacy, utilizing strategy, teamwork, and new breach-and-clear gameplay to complete your mission objectives.The future of City 31 depends on you.",
+      "image": "https://m.media-amazon.com/images/I/91vvv3hcUmL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-mafia-iii-definitive-edition",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Mafia III: Definitive Edition",
+      "slug": "mafia-iii-definitive-edition",
+      "storeUrl": "https://luna.amazon.com/claims/mafia-iii-definitive-edition-gog/dp/amzn1.pg.item.2d0579a0-585e-4cc9-be76-a5bdb057c440?g=s&ingress=amzn&ref_=SM_MafiaIIIDefinitiveEdition_S02_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "After years of combat in Vietnam, Lincoln Clay's surrogate family, the black mob, is betrayed and killed out by the Italian Mafia. Lincoln builds a new family on the ashes of the old and blazes a path of military-grade revenge through the Mafiosos responsible.",
+      "image": "https://m.media-amazon.com/images/I/A17G6eDn3IL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-tomb-raider-iv-vi-remastered",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Tomb Raider IV-VI Remastered",
+      "slug": "tomb-raider-iv-vi-remastered",
+      "storeUrl": "https://luna.amazon.com/claims/tomb-raider-iv-vi-remastered-epic/dp/amzn1.pg.item.cba06ec0-64d2-445b-a17b-c3dba13414fe?g=s&ingress=amzn&ref_=SM_TombRaiderIVVIRemastered_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Her legacy lives on!Play the next series of Tomb Raider adventures in this remastered collection of Lara Croft's darkest adventures.Included Game Titles:Tomb Raider: The Last Revelation – Lara Croft discovers the lost tomb of the Egyptian God Set, unwittingly unleashing him and fulfilling an ancient prophecy – one that plunges mankind into darkness.Tomb Raider: Chronicles – Following the events of The Last Revelation, Lara Croft is buried in an Egyptian tomb and is presumed dead. At her memorial, those closest to her reminisce about secrets from her past.Tomb Raider: The Angel of Darkness – Accused of murder, Lara becomes a fugitive on the run, while uncovering a sinister conspiracy involving alchemical experiments and the search for ancient artifacts.Key Features:See the Classic and Remastered Visuals: Play with the original polygonal models or swap to the remastered graphics at any time.Travel the Globe: Follow Lara Croft around iconic locales including Cairo, Rome, Paris, and many more.Experience Lara's Darkest Adventures: Uncover the secrets of Lara Croft's past and shed light on the mystery of her disappearance.",
+      "image": "https://m.media-amazon.com/images/I/B1g+o0KDb-L._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -723,63 +780,6 @@
       "seller": "Prime Gaming",
       "description": "The complete management experienceWhether you dream of coaching a powerhouse in Europe, rebuilding a struggling franchise, or taking your national team to continental glory, PBM 2026 gives you full control:2,000+ teams across 90 domestic competitions (including 17 women's leagues).Manage both clubs and national teams throughout full competitive seasons.Take charge of lineups, tactics, staff, budgets, training, youth academies, facilities, and transfers.Guide your team from the locker room to the boardroom - every decision matters.New for 2026PBM 2026 is more than an update - it's a rebuild in key areas:Overhauled 3D match engine with new animations, improved AI, and deeper tactical choices.Richer team chemistry and morale systems: influential leaders, locker-room dynamics, and evolving on-court synergy.Expanded pre-season planning: schedule friendlies to generate revenue, test strategies, or build morale.Deeper negotiations and interactions: transfers, contract exits, and dismissals now require explanation - and carry consequences.Youth development and draft integration: nurture tomorrow's stars, and earn when they make the leap.Upgraded UI performance: faster tables, cleaner displays, smoother navigation.Build your dynasty. Make history.From the sidelines to the spotlight, every choice is yours. Do you reward loyalty and chemistry, or chase the superstar transfer that could destabilize your locker room? Will you invest in long-term youth development, or push for instant silverware?Pro Basketball Manager 2026 is more than a game. It's the definitive test of strategy, leadership, and basketball knowledge.",
       "image": "https://m.media-amazon.com/images/I/A1M809pn1mL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-nordic-storm-solitaire",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Nordic Storm Solitaire",
-      "slug": "nordic-storm-solitaire",
-      "storeUrl": "https://luna.amazon.com/claims/nordic-storm-solitaire-legacy/dp/amzn1.pg.item.468f5c94-de63-4c8b-86c3-e22b5fc1510e?g=s&ingress=amzn&ref_=SM_NordicStormSolitaire_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Play through 130 challenging solitaire levels and chase away the Jotun Idyl! With Nordic themes and visuals, your solitaire gameplay will be extremely enjoyable. Exercise your brain and fight boredom... as you fight ancient gods! Play through challenging levels as the story unveils through the cards you've been dealt, with 130+ levels, level boosters, combo and speed rewards, and more!",
-      "image": "https://m.media-amazon.com/images/I/A1XIY+8igXL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-moon-mystery",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Moon Mystery",
-      "slug": "moon-mystery",
-      "storeUrl": "https://luna.amazon.com/claims/moon-mystery-epic/dp/amzn1.pg.item.fa6ec78f-327e-4dcb-8afe-8eae11afea3b?g=s&ingress=amzn&ref_=SM_MoonMystery_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The Moon's haunted - and when an astronaut loses contact with Earth, the adventure begins in full. Fill up your oxygen, load up the guns, and set out on an interstellar FPS adventure across the stars, filled with puzzles, fights, exploration, and strange secrets of the universe.Moon Mystery is a first-person shooter adventure full of puzzles and action, set on strange new worlds. Pilot multiple vehicles such as spaceships, lunar rovers, and even a submarine to traverse alien worlds and solve the many puzzles that await. Just keep that gun loaded - you'll need it.",
-      "image": "https://m.media-amazon.com/images/I/81TES84j7PL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-palindrome-syndrome-escape-room",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Palindrome Syndrome: Escape Room",
-      "slug": "palindrome-syndrome-escape-room",
-      "storeUrl": "https://luna.amazon.com/claims/palindrome-syndrome-escape-room-gog/dp/amzn1.pg.item.2636d5ae-477e-4010-82f4-a3440c877f67?g=s&ingress=amzn&ref_=SM_PalindromeSyndromeEscapeRoom_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You wake up in a spaceship with no memories. Will you be able to discover how you got there and who you are?Palindrome Syndrome is an escape room in a sci-fi setting that will test your skills. Solve puzzles, decode secret codes, find hidden objects, and investigate the different rooms of the spaceship while you discover the events that led you there.Will you be able to escape?Characteristics:Solve puzzles based on logic.Explore different rooms. Find clues and hidden objects.Discover how the plot progresses and different aspects of your past.Enjoy the mysterious and atmospheric setting.",
-      "image": "https://m.media-amazon.com/images/I/B1NiA9PtkbL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
