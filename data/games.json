@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-03T15:46:40.224Z",
+  "fetchedAt": "2026-06-03T21:17:37.039Z",
   "totalFree": 37,
   "totalUpcoming": 4,
   "games": [
@@ -391,25 +391,6 @@
       ]
     },
     {
-      "id": "prime-pinball-spire",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Pinball Spire",
-      "slug": "pinball-spire",
-      "storeUrl": "https://luna.amazon.com/claims/pinball-spire-gog/dp/amzn1.pg.item.76919ab0-9718-4c3d-9433-9484478f32b0?g=s&ingress=amzn&ref_=SM_PinballSpire_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Action adventure meets pinball in this one-of-a-kind pinballvania adventure. When a mysterious spire appears from thin air, it's up to an intrepid pinball to bump, spin, shoot, and flip its way to the top and solve the tower's mysteries!Pinball Spire is a game unlike any other, a pinballvania blending together classic genres - and pinball. Conquer the titular spire as a brave, plucky little pinball called Pip, destined to step into the plunger and explore the inner chambers of a mysterious spire that appeared in their world overnight.Enter the spire. Inside is a strange pinball maze full of secrets to unlock, enemies to bump off, and contraptions for the intrepid little ball to interact with. It's not just flippers and physics either - brave little Pip has special abilities that will play a crucial role in the journey through the spire towards the challenge lurking at its peak.",
-      "image": "https://m.media-amazon.com/images/I/91V1v3Sj8-L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-snake-core",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -429,6 +410,25 @@
       ]
     },
     {
+      "id": "prime-a-rat-s-quest-the-way-back-home",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "A Rat's Quest - The Way Back Home",
+      "slug": "a-rat-s-quest-the-way-back-home",
+      "storeUrl": "https://luna.amazon.com/claims/a-rats-quest-the-way-back-home-epic/dp/amzn1.pg.item.34210f82-0bf5-4aa6-860e-87640c1caf50?g=s&ingress=amzn&ref_=SM_ARatsQuestTheWayBackHome_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Mat is a young male rat that lives among a rat commune in an abandoned wine cellar, together with his best friend Toby and other rodents. He has fallen in love with Nat, a female house mouse kept as a pet on the upper floors. To get closer to her, Mat decides to become a Scavenger, allowing him to sneak up to see her more officially. Since they come from different worlds, they devise a plan to escape to the \"outside\" together. But Mat's overconfidence puts them in danger, and not everything in the commune is as it appears.In a series of unlucky events, Mat finds himself alone, far away from the house. He must make his way back home, overcoming a journey across woodlands, caves, and swamps, defying overwhelming danger of a winged, poisonous, and scaled variety. With a rivet for a sword and nails as throwing daggers, Mat will brave a world to which he is unwelcome.Help the Scavenger get back to his friends and save the rat commune from a threat that is bigger than every cheese in the world!",
+      "image": "https://m.media-amazon.com/images/I/A18sC2Qu27L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -436,7 +436,7 @@
       "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -664,7 +664,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0GTRYV4BD?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Hop on board the Letter Trek bus for fun and frolicking word games for 1-4 players. Whether flying solo or playing with your pals, Letter Trek is an accessible, playful, brain-teasing trip for the whole family. Head to the beach to play Sandy Stacks! Your task is to build a tower of words that climbs into the sky - the higher you go, the higher your score! Dig up letters, golden shells and wildcards from the sand, and challenge your companions - or yourself - to form the highest scoring words in a crossword-style grid. Stop by the canyon for Lightning Letters! Connect jumbled letters to create as many words as you can before the timer runs out. Watch for the new lightning letter appearing midway through the match. Use it quickly before it changes!Grab your phones and take a ride with the Letter Trek gang today!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/B1KiElhCkML._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -683,7 +683,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
       "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
