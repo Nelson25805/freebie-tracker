@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-06-04T15:13:36.425Z",
+  "fetchedAt": "2026-06-04T20:54:16.690Z",
   "totalFree": 37,
-  "totalUpcoming": 3,
+  "totalUpcoming": 4,
   "games": [
     {
       "id": "be5600439b434624802764f704755cde",
@@ -78,6 +78,25 @@
       "status": "free",
       "offerStart": "2026-06-04T15:00:00.000Z",
       "offerEnd": "2026-06-11T15:00:00.000Z"
+    },
+    {
+      "id": "7f0ab2828f9743d0abc6612a11222fdf",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "The Ouroboros King",
+      "slug": "the-ouroboros-king",
+      "storeUrl": "https://store.epicgames.com/p/the-ouroboros-king",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "The Ouroboros King combines the strategic depth of chess with the build variety and replayability of roguelikes. Assemble a formidable army, discover powerful relics, and buy surprising gadgets to defeat the Coven.",
+      "image": "https://cdn1.epicgames.com/spt-assets/33630d7105014582a478094e89953f49/the-ouroboros-king-jwabx.jpg",
+      "originalPrice": 999,
+      "discountPrice": 999,
+      "status": "upcoming",
+      "offerStart": "2026-06-11T15:00:00.000Z",
+      "offerEnd": "2026-06-18T15:00:00.000Z"
     },
     {
       "id": "eb6ae87e73d94d2c96bab3c4da4dd3de",
@@ -436,8 +455,8 @@
       "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The Club is Yours in EA SPORTS FC™ 26. Play your way with an overhauled gameplay experience powered by community feedback, Manager Live Challenges that bring fresh storylines to the new season, and Archetypes inspired by greats of the game.Experience The World’s Game like never before in EA SPORTS FC™ 26, featuring the best players from the biggest clubs and competitions around the globe, with match data from the world’s top leagues powering more than 20,000 authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.FC Points purchase is not available in Belgium and South Korea.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.‡Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
-      "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1050_QL90_FMwebp_.png",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/D19Ww2bpu7L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -474,7 +493,7 @@
       "slug": "play-middle-earth-shadow-of-war-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CTHPKLF7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Go behind enemy lines to forge your army, conquer Fortresses and dominate Mordor from within. Experience how the award winning Nemesis System creates unique personal stories with every enemy and follower, and confront the full power of the Dark Lord Sauron and his Ringwraiths in this epic new story of Middle-earth. In Middle-earth™: Shadow of War™, nothing will be forgotten.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1m2iDRBt1L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -569,7 +588,7 @@
       "slug": "play-bee-simulator-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B097FBB891?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Live the life of a bee! Explore a world brimming with life in which you collect pollen, defy dangerous wasps and save your hive. Play with others in three game modes, including co-op and PvP on split screen. See the world through the eyes of a bee! Explore a world inspired by Central Park where you can take part in bee races, collect pollen from rare flowers and defy dangerous wasps.Play with friends or family in three game modes, including co-op and PvP on split screen.The hive awakens as the sun's first rays warm the horizon. It's time to test your wings, receive orders from the Queen and begin your first mission. And that's just the start of your adventures. Humans want to cut down the tree that holds your hive, so your fate – and that of the whole swarm – rests on your tiny shoulders!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D15+u5V6BzL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -588,7 +607,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0GFVWKZT8?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Prepare to live a thousand lives in The Game of Life 2, the award-winning official sequel to the classic board game played by millions around the world. Gather your friends and family and dive into a bright, fun 3D world bursting with adventure!The Game of Life 2 on Luna comes with all content unlocked from the start! Click play and get: 11 worlds, with unique visuals on each board66 x outfits unlocked66 x avatars unlocked44 x vehicles unlocked 3 x peg coloursSpin the iconic spinner and set off on your life journey. You’ll be presented with decisions at every turn, altering your life path. Will you go to college immediately or drive straight into a career? Will you get married or stay single? Have kids or adopt a pet? Buy a house? Make a career change? It’s up to you! Earn points for choices that bring you Knowledge, Wealth and Happiness. Win rich, maximise your Knowledge or Happiness, or go for a healthy mix of all three and come out on top!HOW TO PLAY THE GAME OF LIFE 2:When it’s your turn, spin the spinner to travel along your life path.Depending on the space you land on, you’ll experience different life events and choices, such as buying a house, collecting your salary, or drawing an Action card! At crossroads, you’ll have to make big life decisions, so choose wisely!Your turn ends; it’s the next player’s chance to spin the spinner!FEATURESCUSTOMISE YOUR CHARACTER – Choose between the pink, blue or the purple peg. Select an outfit and make your peg your own. Browse a selection of cars, bikes and scooters and find a ride to suit your style. NEW WORLDS – Live life in enchanted worlds! Every world features thematic outfits, vehicles, jobs, properties and more! LOCAL LEADERBOARDS – Keep score with your family and friends and see who is the ultimate Game of Life 2 player in the house! IN-GAME REACTIONS – Exclusive to the Luna version, use reaction buttons to let everyone know how you’re feeling during the game!Live every life you’ve ever dreamed of in The Game of Life 2 – play today!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/B1ZqIrQF0pL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -607,7 +626,7 @@
       "slug": "play-wrc-generations-fully-loaded-edition-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0BQSB3RM1?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt. In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in. As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted. For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category. WRC Generations includes more content than ever before in a rally game.• 750 km of unique special stages in 22 countries • 49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)• 37 legendary cars plus additional bonuses• 165 timed special stages In order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:• The new hybrid vehicles• New, even more realistic vehicle physics• A LEAGUES mode in which you can challenge other players• A new Rally Sweden environment with 6 brand-new special stages• Share livery and stickers with the community• In-game team creation and managementThe Fully Loaded Edition includes:- Sébastien Loeb's Citroën C4 WRC (2010) - The \"Career Starter Pack\" with 6 extra crew members- 2 Porsche 911 GT3 RS RGT liveries- A pack of 36 stickers for the Livery Editor",
       "image": "https://m.media-amazon.com/images/I/D1iuYhsxE5L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
