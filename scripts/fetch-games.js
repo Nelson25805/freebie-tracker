@@ -421,16 +421,26 @@ function parseGamesFromPost(postTitle, postHtml) {
     //   - ?fit=40 / ?fit=40%2C40 (tiny author avatars/icons)
     //   - ?fit=512 / ?fit=640 (small sidebar images)
     //   - ?resize= (hero/banner images at the very top of posts — wide crops)
-    const imgRe = /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"[^>]*>/gi;
     let coverImage = "";
-    let im;
-    while ((im = imgRe.exec(section)) !== null) {
-      const url = im[1];
+
+    const nearbyHtml = postHtml.slice(
+      Math.max(0, entry.headingIndex - 8000),
+      entry.headingIndex
+    );
+
+    const images = [
+      ...nearbyHtml.matchAll(
+        /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"/gi
+      )
+    ];
+
+    for (let j = images.length - 1; j >= 0; j--) {
+      const url = images[j][1];
+
       if (/pslogo/i.test(url)) continue;
-      if (/[?&]resize=/.test(url)) continue;                        // skip hero/banner crops
-      if (/[?&]fit=(?:40|400|512|640)(?:[,%]|$)/i.test(url)) continue; // skip small icons
-      // This is a game art image — keep it (strip query string for a clean URL)
+
       coverImage = url.split("?")[0];
+      break;
     }
 
     // Description: grab the first substantial paragraph after this heading.
