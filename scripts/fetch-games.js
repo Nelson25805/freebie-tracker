@@ -293,7 +293,13 @@ function splitItems(xml) {
 
 async function fetchPSBlogRSS() {
   const res = await fetch(PS_BLOG_RSS, {
-    headers: { "User-Agent": "free-game-tracker/1.0 (github-actions)" },
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+      "Accept":
+        "application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.8",
+      "Referer": "https://blog.playstation.com/"
+    },
   });
   if (!res.ok) throw new Error(`PS Blog RSS HTTP ${res.status}`);
   return await res.text();
@@ -439,7 +445,7 @@ function parseGamesFromPost(postTitle, postHtml) {
 
       if (/pslogo/i.test(url)) continue;
 
-      coverImage = url.split("?")[0];
+      coverImage = url;
       break;
     }
 
@@ -479,7 +485,7 @@ function parseGamesFromPost(postTitle, postHtml) {
           !/[?&]resize=/.test(candidate) &&
           !/[?&]fit=(?:40|400|512|640)(?:[,%]|$)/i.test(candidate)
         ) {
-          coverImage = candidate.split("?")[0];
+          coverImage = candidate;
         }
       }
     }
