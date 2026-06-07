@@ -14,7 +14,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Nelson25805/recipeSuggester">
+  <a href="https://github.com/Nelson25805/freebie-tracker">
     <img src="GithubImages/logo.png" alt="Logo" width="200" height="200">
   </a>
 
