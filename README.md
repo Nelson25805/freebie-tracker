@@ -18,7 +18,7 @@
     <img src="GithubImages/logo.png" alt="Logo" width="200" height="200">
   </a>
 
-<h3 align="center">Recipe Suggester</h3>
+<h3 align="center">Freebie Tracker</h3>
 
   <p align="center">
     A simple java application to receive recipe's for a multitude of recipes depending on the ingredients available.
