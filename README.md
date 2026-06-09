@@ -151,7 +151,7 @@ Open a Pull Request
 
 ## Top contributors:
 
-<a href="https://github.com/Nelson25805/passwordManager/graphs/contributors">
+<a href="https://github.com/Nelson25805/freebie-tracker/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Nelson25805/passwordManager" alt="contrib.rocks image" />
 </a>
 
