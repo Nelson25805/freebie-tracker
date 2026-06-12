@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-06-11T21:01:15.772Z",
+  "fetchedAt": "2026-06-12T09:28:11.566Z",
   "totalFree": 37,
-  "totalUpcoming": 4,
+  "totalUpcoming": 5,
   "games": [
     {
       "id": "ea365d314ecf4224a5f58d2d7430e7aa",
@@ -78,6 +78,25 @@
       "status": "upcoming",
       "offerStart": "2026-09-16T15:00:00.000Z",
       "offerEnd": "2026-10-01T05:59:00.000Z"
+    },
+    {
+      "id": "8f80897c0b6e4e678fed08da169d44be",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Castlevania Anniversary Collection",
+      "slug": "32b3e0adbe0c4399be1874958194f97f",
+      "storeUrl": "https://store.epicgames.com/p/32b3e0adbe0c4399be1874958194f97f",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
+      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
+      "originalPrice": 1999,
+      "discountPrice": 1999,
+      "status": "upcoming",
+      "offerStart": "2026-07-16T15:00:00.000Z",
+      "offerEnd": "2026-07-30T15:00:00.000Z"
     },
     {
       "id": "7f0ab2828f9743d0abc6612a11222fdf",
@@ -436,7 +455,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0GSSC24F7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Unleash the power of Grayskull in Masters of the Universe™: Legends Unite where both heroes and villains come together in this cooperative deck builder. With sworn enemies forced into alliances, up to 4 friends will unite legends including the mighty He-Man, the mystic Teela, the devious Skeletor, the fierce Evil-Lyn, and the ever-resourceful Man-At-Arms for over-the-top, chaotic card play. Unique playstyles bring each legend to life in the fight against Hordak’s unstoppable horde. Throughout Adventure Mode you’ll work together to deliver even bigger hits, gather increasingly powerful cards, and further strengthen your characters. Battle your way through a variety of diverse biomes and obstacles with every playthrough; but the enemy is not the only challenge you’ll face. Along your journey engage in Trials of Eternia, arcade mini games where friendly competition amongst legends for precious bonuses. Snatch treasure from the faceless one, dodge crushing boulders, and avoid falling into the depths of darkness to claim heroic advantages. Time to build your strategy to defend Castle Grayskull from the evil forces of Hordak! KEY FEATURES • Over-the-top, chaotic card play – Team up with up to 4 players or go solo, as you strategically play your cards to damage, protect, or heal yourself or your party on your way to defeat Hordak’s unstoppable horde in epic card battles and challenges. • 8 Legends of Eternia – Select your favorite Masters of the Universe legend, either hero or villain, and wield their powers as you band together to stop Hordak. • More than 400 Unique Cards – From Skeletor’s Cackle of Chaos card unleashing damage to all enemies to Teela’s Warrior Goddess card converting shields equipped to dealing damage, the strategic choice is yours. But make sure to coordinate with your fellow legends to maximize the Ultimate Power card where everyone contributes to the battle. • Multiple Gameplay Modes – With a variety of modes and settings there’s something for every Eternian: - Adventure mode: Equipped with a starter deck of cards, multitude of encounters, enemies and even arcade minigame challenges providing cooperative and competitive play. - Rampage mode: Jump into the action and increase difficulty faster to really test your skills and strategic teamwork with a randomized deck of cards. - Solo mode: When you are ready to take on saving Eternia alone. - Interested in deck building and battling Anti-Eternians only? All gameplay modes have the option to play card battles only. For even more heart-pounding action and exhilarating fun, check out the epic action and visual effects on the big screen with the Masters of the Universe movie, in theatres. ADDITIONAL DETAILS This game is available in the following languages: English, German, Spanish (LATAM), Italian, and French.By clicking the “Play Now” button above, you receive a license to play the game and agree to the **Amazon Games Terms of Use** and our **Code of Conduct**. Please read our **Privacy Notice**. • Terms of Use: www.amazon.com/help/ags/terms • Privacy: www.amazon.com/help/ags/privacy • Legal Notices - https://www.amazon.com/gp/help/customer/display.html?nodeId=Tr4gmX7Y5QNrFsMA7R&pop-up=1• Support Page - https://help.legendsunite.amazongamestudios.com©/™ 2026, Amazon.com, Inc., its affiliates, and/or licensors. Developed by Bandit Island Games and published by Amazon Games. All rights reserved. MASTERS OF THE UNIVERSE™ and associated trademarks and trade dress are owned by, and used under license from, Mattel. ©2026 Mattel.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1L7sO4iF2L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
