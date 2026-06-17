@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-17T15:15:37.749Z",
+  "fetchedAt": "2026-06-17T20:54:35.955Z",
   "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
@@ -410,25 +410,6 @@
       ]
     },
     {
-      "id": "prime-60-minutes-to-extinction-escape-room",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "60 Minutes to Extinction: Escape Room",
-      "slug": "60-minutes-to-extinction-escape-room",
-      "storeUrl": "https://luna.amazon.com/claims/60-minutes-to-extinction-escape-room-gog/dp/amzn1.pg.item.15f8ec7c-efc1-4422-846a-627acfd66b46?g=s&ingress=amzn&ref_=SM_60MinutestoExtinctionEscapeRoom_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You have exactly 60 minutes to save humanity from nuclear extinction.Once you enter the bunker, the door seals behind you and the clock starts ticking. There are no second attempts. No manual saves. Just one uninterrupted shot at stopping the end of the world.60 Minutes to Extinction is a first-person escape room experience set in a retrofuturistic Cold War-era bunker. Navigate a decaying, analog facility filled with broken machinery, mechanical puzzles, and flickering emergency lights. Every decision matters.You'll explore the depths of the bunker, reactivate critical systems, and work your way toward shutting down the nuclear core before it's too late.Key Features:Real-time countdown: Once the timer starts, it never stops. You have exactly 60 real-time minutes to complete your mission. No pausing, no rewinding. The pressure is constant.Immersive first-person puzzles: Interact with analog machinery, reroute circuits, align systems, and decode clues across multiple interconnected rooms in the bunker.Atmospheric world-building: Navigate a collapsing Cold War-era facility filled with decaying concrete, blinking terminals, and the constant hum of failing systems.",
-      "image": "https://m.media-amazon.com/images/I/A1Zi2W0rCRL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-survival-fountain-of-youth",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -457,6 +438,25 @@
       "seller": "Prime Gaming",
       "description": "This brutal, obscure, and punishing action-adventure roguelite is set in a shady and beset post-apocalyptic world. Play relentless isometric close-quarter battles with an art style reminiscent of the 1980s dark age of adult superhero graphic novels.Lethal Honor - Order of the Apocalypse is a challenging hack 'n' slash game, featuring eldritch creatures, fast-paced melee combat, and powerful abilities. Become part of a secret organization that investigates the paranormal and fights for the survival of humanity.Prepare to discover the truth!Hand-drawn comic panels are seamlessly integrated into the gameplay to fully immerse you in a dark story full of mystery and intrigue. With every run and every death, you uncover more of the dangers of Wolf Island and the secrets that lie within.Intense, fast-paced combat will test your skills!Attacking relentlessly will only lead to your early demise. Find your own style by combining unique abilities, artifacts, and enchantments into powerful combinations. Fight difficult bosses and show your superiority.Experience the mysteries!Discover the disturbing secrets of Lethal Honor. Alternate between Lost Agents and Key Agents, who follow their own story as you discover what is happening on the island.Brutal and punishing hack 'n' slash roguelite gameplayGritty, hand-drawn, dark age graphic novel art style combined with 3D scenariosSeveral different biomes and playable key characters with their own storylines, abilities, and playstylesUnveil a mature, dark, and complex story seamlessly integrated into procedurally generated runs",
       "image": "https://m.media-amazon.com/images/I/B1jmbBIZMCL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-snake-core",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Snake Core",
+      "slug": "snake-core",
+      "storeUrl": "https://luna.amazon.com/claims/snake-core-gog/dp/amzn1.pg.item.8dae30db-2cb3-4de1-99c4-9a1ce8700286?g=s&ingress=amzn&ref_=SM_SnakeCore_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "This arcade game combines the gameplay mechanics of Snake with a twist, setting it in an intergalactic war against an alien threat. It features a variety of mission types and army units.Command your diverse team of soldiers as they attack aliens, destroy bombs, rescue comrades, defend key locations, and hunt down large Snake-like creatures. The game features different modes and a multi-route map that lets players choose the best path to the Alien Overlord.Grab power-ups to boost your soldier's skills, eliminate aliens, and raise your score - because in true arcade style, getting your name at the top of the high-score list might be the most important thing!",
+      "image": "https://m.media-amazon.com/images/I/91nk5QGifeL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
