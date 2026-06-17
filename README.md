@@ -177,7 +177,7 @@ Project Link: https://github.com/Nelson25805/recipeSuggester
 [forks-url]: https://github.com/Nelson25805/freebie-tracker/network/members
 [stars-shield]: https://img.shields.io/github/stars/Nelson25805/freebie-tracker.svg?style=for-the-badge
 [stars-url]: https://github.com/Nelson25805/freebie-tracker/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Nelson25805/passwordManager.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Nelson25805/freebie-tracker.svg?style=for-the-badge
 [issues-url]: https://github.com/Nelson25805/passwordManager/issues
 [license-shield]: https://img.shields.io/github/license/Nelson25805/passwordManager.svg?style=for-the-badge
 [license-url]: https://github.com/Nelson25805/passwordManager/blob/master/LICENSE.txt
