@@ -491,6 +491,9 @@ function parseGamesFromPost(postTitle, postHtml) {
         }
       }
     }
+    console.log(
+      `${entry.title}: ${coverImage}`
+    );
 
     games.push({
       title: entry.title,
