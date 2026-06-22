@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Recipe Suggester Screenshot][project-screenshot]
+![Freebie Tracker Screenshot][project-screenshot]
 
 Recipe Suggester is a Java-based console application that lets users search for recipes by ingredient using [TheMealDB](https://www.themealdb.com/) API.
 
