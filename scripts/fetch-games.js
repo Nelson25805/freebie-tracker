@@ -431,18 +431,8 @@ function parseGamesFromPost(postTitle, postHtml) {
     //   - ?resize= (hero/banner images at the very top of posts — wide crops)
     let coverImage = "";
 
-    const nextHeadingStart =
-      i + 1 < entries.length
-        ? entries[i + 1].headingIndex
-        : postHtml.length;
-
-    const gameSection = postHtml.slice(
-      entry.headingEnd,
-      nextHeadingStart
-    );
-
     const images = [
-      ...gameSection.matchAll(
+      ...section.matchAll(
         /<img[^>]+src="([^"]+)"/gi
       )
     ];
