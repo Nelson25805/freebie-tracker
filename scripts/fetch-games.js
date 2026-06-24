@@ -431,16 +431,29 @@ function parseGamesFromPost(postTitle, postHtml) {
     //   - ?resize= (hero/banner images at the very top of posts — wide crops)
     let coverImage = "";
 
-    const nearbyHtml = postHtml.slice(
-      Math.max(0, entry.headingIndex - 8000),
-      entry.headingIndex
+    const nextHeadingStart =
+      i + 1 < entries.length
+        ? entries[i + 1].headingIndex
+        : postHtml.length;
+
+    const gameSection = postHtml.slice(
+      entry.headingEnd,
+      nextHeadingStart
     );
 
     const images = [
-      ...nearbyHtml.matchAll(
-        /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"/gi
+      ...gameSection.matchAll(
+        /<img[^>]+src="([^"]+)"/gi
       )
     ];
+
+    console.log(
+      `----- ${entry.title} -----`
+    );
+
+    for (const img of images) {
+      console.log(img[1]);
+    }
 
     for (let j = images.length - 1; j >= 0; j--) {
       const url = images[j][1];
