@@ -455,18 +455,34 @@ function parseGamesFromPost(postTitle, postHtml) {
       console.log(img[1]);
     }
 
-    for (let j = images.length - 1; j >= 0; j--) {
-      const url = images[j][1];
+    // Prefer scaled images if present
+    for (const img of images) {
+      const url = img[1];
 
       if (/pslogo/i.test(url)) continue;
 
-      coverImage = url;
-      break;
+      if (/-scaled\.(jpg|jpeg|png|webp)$/i.test(url)) {
+        coverImage = url;
+        break;
+      }
+    }
+
+    // Fallback to first non-logo image
+    if (!coverImage) {
+      for (const img of images) {
+        const url = img[1];
+
+        if (/pslogo/i.test(url)) continue;
+
+        coverImage = url;
+        break;
+      }
     }
 
     // Description: grab the first substantial paragraph after this heading.
     // In the RSS feed the description is wrapped in <p>...</p>.
     // We look at the slice between this heading's end and the next heading (or 3000 chars).
+    const nextHeadingStart = i + 1 < entries.length ? entries[i + 1].headingIndex : entry.headingEnd + 3000;
     const descSection = postHtml.slice(entry.headingEnd, nextHeadingStart);
     let description = "";
     // Try <p> tags first
