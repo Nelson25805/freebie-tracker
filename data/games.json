@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-25T09:10:03.190Z",
+  "fetchedAt": "2026-06-25T15:09:55.200Z",
   "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
@@ -17,29 +17,10 @@
       "description": "Build the park of a lifetime and rediscover the critically acclaimed rollercoaster simulation bestseller. Feel the thrill of a genre-defining classic, complete with two huge expansion packs.",
       "image": "https://cdn1.epicgames.com/f01b3e0178d448f0b93911e292d8e614/offer/EGS_RollerCoasterTycoon3CompleteEdition_FrontierDevelopments_S5-1920x1080-689d96ca4d5a4e8de183b7a928960c87.jpg",
       "originalPrice": 1999,
-      "discountPrice": 499,
-      "status": "upcoming",
-      "offerStart": "2026-06-18T15:00:00.000Z",
-      "offerEnd": "2026-07-02T15:00:00.000Z"
-    },
-    {
-      "id": "ea365d314ecf4224a5f58d2d7430e7aa",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Citizen Sleeper",
-      "slug": "da528841e0eb43d8b93fd243c6767b0c",
-      "storeUrl": "https://store.epicgames.com/p/da528841e0eb43d8b93fd243c6767b0c",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Roleplaying in the ruins of interplanetary capitalism. Live the life of an escaped worker, washed-up on a lawless station at the edge of an interstellar society. Inspired by the flexibility and freedom of TTRPGs, choose your friends, escape your past and change your future.",
-      "image": "https://cdn1.epicgames.com/spt-assets/919d5976f3804d4cabb8ca90ea43a956/citizen-sleeper-xudwg.jpg",
-      "originalPrice": 1999,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-06-18T15:00:00.000Z",
-      "offerEnd": "2026-06-25T15:00:00.000Z"
+      "offerStart": "2026-06-25T15:00:00.000Z",
+      "offerEnd": "2026-07-02T15:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -80,25 +61,6 @@
       "offerEnd": "2026-07-30T15:00:00.000Z"
     },
     {
-      "id": "aee7ec395d054078a48d867849e2a550",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "ROBOBEAT",
-      "slug": "4ee365fd76704f37ae3dc13676f1ac61",
-      "storeUrl": "https://store.epicgames.com/p/4ee365fd76704f37ae3dc13676f1ac61",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Keep your trigger finger on the pulse! In rhythm shooter ROBOBEAT, you'll play as Ace - a bounty hunter on a mission to capture robot-gone-rogue Frazzer. Wall run, slide, and shoot to your own beat using the in-game custom music editor, blasting through Frazzer's armies!",
-      "image": "https://cdn1.epicgames.com/spt-assets/91105717b53044ed8e384e5fada71db8/robobeat-1ojda.png",
-      "originalPrice": 1999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-06-18T15:00:00.000Z",
-      "offerEnd": "2026-06-25T15:00:00.000Z"
-    },
-    {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -131,8 +93,8 @@
       "description": "Voidwrought is a 2D action-platformer set in a hand-drawn world of cosmic horrors. Explore the thawing ruins of the First Civilisation and strike down the gods that dwell there. Grow your powers, uncover ancient Artifacts, and expand your shrine amid the wreckage.",
       "image": "https://cdn1.epicgames.com/spt-assets/ae3f962fab4d42eba2dbefa4a1e76ff6/voidwrought-bio8j.jpg",
       "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-06-25T15:00:00.000Z",
       "offerEnd": "2026-07-02T15:00:00.000Z"
     },
@@ -154,6 +116,44 @@
       "status": "upcoming",
       "offerStart": "2026-07-16T15:00:00.000Z",
       "offerEnd": "2026-07-30T15:00:00.000Z"
+    },
+    {
+      "id": "9bf3d3188d1e498095bc23c0955538d9",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "River City Girls 2",
+      "slug": "f6229ed5b32d4e098b930103b6470b49",
+      "storeUrl": "https://store.epicgames.com/p/f6229ed5b32d4e098b930103b6470b49",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "A pixel-art sci-fi adventure set in the midst of a rebellion against a totalitarian regime, LUNARK is a modern take on the 2D cinematic platformer genre of the '90s. Run, jump, hang, climb, roll, and shoot your way through gorgeous and mysterious locations!",
+      "image": "https://cdn1.epicgames.com/spt-assets/dfdcd48c05c6483284cb40b333dc71e4/river-city-girls-2-1hqkv.png",
+      "originalPrice": 3999,
+      "discountPrice": 3999,
+      "status": "upcoming",
+      "offerStart": "2026-07-02T15:00:00.000Z",
+      "offerEnd": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "id": "4ef54d5829b04656902dfa1f29b3b732",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "I Have No Mouth, and I Must Scream",
+      "slug": "0937dc8ff7874fb8897a678d8a27c9ac",
+      "storeUrl": "https://store.epicgames.com/p/0937dc8ff7874fb8897a678d8a27c9ac",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "The Allied Mastercomputer has destroyed all of humanity except for five people, whom it has been keeping them alive and torturing them for the past one hundred and nine years by designing virtual adventures based on their fears and weaknesses.",
+      "image": "https://cdn1.epicgames.com/spt-assets/b153ccd09d834353a8f27ffa9b41f5a2/i-have-no-mouth-and-i-must-scream-163j8.png",
+      "originalPrice": 999,
+      "discountPrice": 999,
+      "status": "upcoming",
+      "offerStart": "2026-07-02T15:00:00.000Z",
+      "offerEnd": "2026-07-09T15:00:00.000Z"
     },
     {
       "id": "psplus-grounded-fully-yoked-edition",
@@ -645,7 +645,7 @@
       "slug": "play-bee-simulator-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B097FBB891?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Live the life of a bee! Explore a world brimming with life in which you collect pollen, defy dangerous wasps and save your hive. Play with others in three game modes, including co-op and PvP on split screen. See the world through the eyes of a bee! Explore a world inspired by Central Park where you can take part in bee races, collect pollen from rare flowers and defy dangerous wasps.Play with friends or family in three game modes, including co-op and PvP on split screen.The hive awakens as the sun's first rays warm the horizon. It's time to test your wings, receive orders from the Queen and begin your first mission. And that's just the start of your adventures. Humans want to cut down the tree that holds your hive, so your fate – and that of the whole swarm – rests on your tiny shoulders!",
       "image": "https://m.media-amazon.com/images/I/D15+u5V6BzL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
