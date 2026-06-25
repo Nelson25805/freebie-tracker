@@ -469,8 +469,12 @@ function parseGamesFromPost(postTitle, postHtml) {
       }
     }
 
-    // Description: grab the first substantial paragraph after this heading.
-    // In the RSS feed the description is wrapped in <p>...</p>.
+    const nextHeadingStart =
+      i + 1 < entries.length
+        ? entries[i + 1].headingIndex
+        : postHtml.length;
+
+
     const descSection = postHtml.slice(entry.headingEnd, nextHeadingStart);
     let description = "";
     // Try <p> tags first
