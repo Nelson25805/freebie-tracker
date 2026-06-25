@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-06-24T22:28:51.130Z",
-  "totalFree": 33,
+  "fetchedAt": "2026-06-25T01:51:03.502Z",
+  "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
     {
@@ -154,6 +154,89 @@
       "status": "upcoming",
       "offerStart": "2026-07-16T15:00:00.000Z",
       "offerEnd": "2026-07-30T15:00:00.000Z"
+    },
+    {
+      "id": "psplus-grounded-fully-yoked-edition",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Grounded Fully Yoked Edition",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Shrink down and survive in a perilous, creature-filled backyard. Mysteriously shrunken down to the size of an ant, your intrepid young adventurer must fight for survival as they experience the backyard from an entirely new perspective. Explore a vast garden environment alone, or with the aid of up to three friends in online multiplayer, and gather the resources you need to build shelter and craft armour and weapons to protect yourself from the creatures that populate the backyard. As you progress, you’ll uncover the truth behind your tiny transformation and find out what it takes to return to your original size.",
+      "image": "https://blog.playstation.com/tachyon/2026/05/92b284be1a1033bbaaaaa296c0633c86cff7673a-scaled.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
+    },
+    {
+      "id": "psplus-nickelodeon-all-star-brawl-2",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Nickelodeon All-Star Brawl 2",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Nickelodeon All-Star Brawl 2 lets you duke it out with the biggest and best fighting character roster yet, including all new characters like SpongeBob SquarePants, Teenage Mutant Ninja Turtles, Squidward Tentacles, Jimmy Neutron, and more. Play solo or fight online and choose your favorite brawlers, master their unique move sets, and use all-new powerful Supers to land the finishing blow with friends or across a unique, roguelike player campaign!",
+      "image": "https://blog.playstation.com/tachyon/2026/05/0a79afe562ca8cabd22b606b86be9883441102b1-scaled.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
+    },
+    {
+      "id": "psplus-warhammer-40-000-darktide",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Warhammer 40,000: Darktide",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5",
+      "description": "Take back the city of Tertium from hordes of bloodthirsty foes in this intense and brutal action shooter. Warhammer 40,000: Darktide is the new four player co-op focused experience from the award-winning team behind the Vermintide series. Built on the legacy of Vermintide 2’s best-in-class melee combat, Warhammer 40,000: Darktide introduces intense WH40K gunplay to the mix. Master the balance between ranged and melee combat as you fight through a slew of enemies. Feel the impact of each swipe, swing, and slice of a chainsword, or fry some flesh with a lasgun.",
+      "image": "https://blog.playstation.com/tachyon/2026/05/04cb06c024f5b60c1f3a2b874df6dd5ed3989f2d-scaled.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
+    },
+    {
+      "id": "psplus-ea-sports-fc-26",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "EA Sports FC 26",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "EA Sports FC 26, originally announced as part of the PS Plus May Monthly Games lineup, will remain available as a PlayStation Plus Monthly Game through June 16.&nbsp;",
+      "image": "https://blog.playstation.com/tachyon/2026/05/ea1dba3ac84049116613b1f111a6f4223f80d659-scaled.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-05-26T12:02:10.000Z",
+      "offerEnd": "2026-07-07T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/05/26/playstation-plus-monthly-games-for-june-grounded-fully-yoked-edition-nickelodeon-all-star-brawl-2-warhammer-40000-darktide/"
     },
     {
       "id": "prime-g-i-joe-wrath-of-cobra",
@@ -505,7 +588,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09SNHS9TG?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The sequel to the party game phenomenon The Jackbox Party Pack, featuring FIVE fresh, rib-tickling party games! Your phones or tablets are your controllers – no big mess of controllers needed. For up to 8 players plus an Audience of up to 10,000! It’s a game-night riot in a box… without the box!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1uuQy3A+qL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -543,7 +626,7 @@
       "slug": "play-smurfs-kart-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CWPYQDJ5?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Who will be the fastest Smurf in town?That is the question you will need to answer in this dynamic kart racing game in the world of Smurfs!The whole family can choose one Smurf, its kart and special power, then you’re ready to go on wild races! Make the best start, find shortcuts, and use the right items at the right time to pass your opponents!Play solo or with friends and family, should you be a beginner or the most trained driver… you can get 1st place and show others who the fastest Smurf of all time is!- 12 tracks taken from the Smurfs’ universe: the village, the forest, the dam, the swamps… even Gargamel’s house!- 12 playable Smurfs: choose the Smurf you want to drive with.- Each Smurf has its own kart and a very handy special item to help you breeze past your opponents.- Reach 1st place by using the environment around you: bonus items, boosts, ramps, destructible boxes, shortcuts and more!- Play solo or with family and friends, up to 4 players in split-screen local multiplayer game mode. - Try to beat every Smurf at their own racetrack in the “Time Challenge” mode and reach the top of the online rankings with your best time!- Unlock original bonuses race after race, win after win, and try to Smurf them all in your personal album!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/A116QJpV27L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
