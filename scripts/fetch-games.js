@@ -6,6 +6,7 @@
  *   - GOG
  *   - PlayStation Plus (via PlayStation Blog RSS, parsed directly)
  *   - Prime Gaming (Amazon)
+ *    - Steam (via SteamDB) - still in testing, may be unreliable
  *   - (more stores may be added in the future)
  *
  * Writes the combined, normalized result to ../data/games.json
