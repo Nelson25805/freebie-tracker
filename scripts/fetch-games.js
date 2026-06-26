@@ -906,6 +906,15 @@ async function fetchSteam() {
     waitUntil: "networkidle"
   });
 
+  await page.waitForSelector(".panel-sale.app-history-row.app", {
+    timeout: 15000
+  });
+
+  await page.screenshot({
+    path: "steamdb.png",
+    fullPage: true
+  });
+
   const promos = await page.$$eval(
     "div.panel-sale.app-history-row.app",
 
