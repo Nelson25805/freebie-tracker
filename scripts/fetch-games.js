@@ -906,9 +906,15 @@ async function fetchSteam() {
     waitUntil: "networkidle"
   });
 
-  await page.waitForSelector(".panel-sale.app-history-row.app", {
-    timeout: 15000
-  });
+  console.log("Title:", await page.title());
+
+  const html = await page.content();
+
+  console.log("Contains panel-sale:", html.includes("panel-sale"));
+  console.log("Contains data-appid:", html.includes("data-appid"));
+  console.log("Contains Tell Me Why:", html.includes("Tell Me Why"));
+  console.log("First 500 chars:");
+  console.log(html.substring(0, 500));
 
   await page.screenshot({
     path: "steamdb.png",
