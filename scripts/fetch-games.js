@@ -908,6 +908,7 @@ async function fetchSteam() {
 
   const promos = await page.$$eval(
     "div.panel-sale.app-history-row.app",
+
     cards =>
       cards.map(card => ({
         appid: card.dataset.appid,
@@ -935,6 +936,9 @@ async function fetchSteam() {
             ?.getAttribute("datetime")
       }))
   );
+
+  console.log(`  Found ${promos.length} SteamDB card(s)`);
+  console.log(promos);
 
 
 
