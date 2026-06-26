@@ -889,6 +889,122 @@ async function fetchPrimeGaming() {
   }
 }
 
+// ─── Steam ─────────────────────────────────────────────────────────────────────
+const STEAMDB_FREE_URL = "https://steamdb.info/upcoming/free/";
+const STEAM_API = "https://store.steampowered.com/api/appdetails?appids=";
+
+async function fetchSteam() {
+  console.log("Fetching Steam promotions...");
+
+  const browser = await chromium.launch({
+    headless: true
+  });
+
+  const page = await browser.newPage();
+
+  await page.goto(STEAMDB_FREE_URL, {
+    waitUntil: "networkidle"
+  });
+
+  const promos = await page.$$eval(
+    "div.panel-sale.app-history-row.app",
+    cards =>
+      cards.map(card => ({
+        appid: card.dataset.appid,
+
+        title:
+          card.querySelector(".panel-sale-name b")
+            ?.textContent
+            ?.trim(),
+
+        image:
+          card.querySelector("img.sale-image")
+            ?.src,
+
+        storeUrl:
+          card.querySelector(
+            'a[href*="store.steampowered.com/app/"]'
+          )?.href,
+
+        start:
+          card.querySelectorAll("relative-time")[0]
+            ?.getAttribute("datetime"),
+
+        end:
+          card.querySelectorAll("relative-time")[1]
+            ?.getAttribute("datetime")
+      }))
+  );
+
+
+
+  const games = [];
+
+  for (const promo of promos) {
+    if (!promo.appid) continue;
+
+    try {
+      const res = await fetch(`${STEAM_API}${promo.appid}`, {
+        headers: {
+          "User-Agent": "freebie-tracker/1.0 (github-actions)"
+        }
+      });
+
+      if (!res.ok) {
+        console.warn(`  Steam API HTTP ${res.status} for ${promo.title}`);
+        continue;
+      }
+
+      const json = await res.json();
+      const app = json[promo.appid];
+
+      if (!app?.success || !app.data) {
+        console.warn(`  Steam API returned no data for ${promo.title}`);
+        continue;
+      }
+
+      const data = app.data;
+
+      games.push({
+        id: `steam-${promo.appid}`,
+        store: "steam",
+        storeName: "Steam",
+        title: data.name || promo.title,
+        slug: promo.appid,
+        storeUrl:
+          promo.storeUrl ||
+          `https://store.steampowered.com/app/${promo.appid}/`,
+        seller:
+          data.developers?.join(", ") ||
+          data.publishers?.join(", ") ||
+          "Steam",
+        description: data.short_description || "",
+        image: data.header_image || promo.image || "",
+        originalPrice:
+          data.price_overview?.initial ?? null,
+        discountPrice: 0,
+        status: "free",
+        offerStart: promo.start || null,
+        offerEnd: promo.end || null,
+        platforms: [
+          ...(data.platforms?.windows ? ["Windows"] : []),
+          ...(data.platforms?.mac ? ["macOS"] : []),
+          ...(data.platforms?.linux ? ["Linux"] : [])
+        ]
+      });
+    } catch (err) {
+      console.warn(`  Steam fetch failed for ${promo.title}:`, err.message);
+    }
+  }
+
+  await browser.close();
+
+  console.log(`  → ${games.length} Steam promotion(s) found`);
+
+  return games;
+}
+
+
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
@@ -898,6 +1014,7 @@ async function main() {
     fetchGOG(),
     fetchPSPlus(),
     fetchPrimeGaming(),
+    fetchSteam(),
   ]);
 
   let allGames = [];
