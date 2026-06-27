@@ -23,7 +23,7 @@
   <p align="center">
     A simple java application to receive recipe's for a multitude of recipes depending on the ingredients available.
     <br />
-    <a href="https://github.com/Nelson25805/recipeSuggester"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Nelson25805/freebie-tracker"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Nelson25805/recipeSuggester">View Demo</a>
