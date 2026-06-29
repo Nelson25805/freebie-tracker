@@ -28,7 +28,7 @@
     <br />
     <a href="https://github.com/Nelson25805/freebie-tracker">View Demo</a>
     &middot;
-    <a href="https://github.com/Nelson25805/recipeSuggester/issues/new?labels=bug">Report Bug</a>
+    <a href="https://github.com/Nelson25805/freebie-tracker/issues/new?labels=bug">Report Bug</a>
     &middot;
     <a href="https://github.com/Nelson25805/recipeSuggester/issues/new?labels=enhancement">Request Feature</a>
   </p>
