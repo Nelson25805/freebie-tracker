@@ -107,7 +107,7 @@ Follow these steps to run the project locally.
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/Nelson25805/recipeSuggester.git
+   git clone https://github.com/Nelson25805/freebie-tracker.git
 Open the project folder
 
 Compile the program
