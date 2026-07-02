@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-07-02T09:07:54.318Z",
+  "fetchedAt": "2026-07-02T14:55:02.847Z",
   "totalFree": 36,
-  "totalUpcoming": 7,
+  "totalUpcoming": 8,
   "games": [
     {
       "id": "4ec50a302f1449b3bf706a199c333ab8",
@@ -38,8 +38,8 @@
       "originalPrice": 1999,
       "discountPrice": 1999,
       "status": "upcoming",
-      "offerStart": "2026-07-16T15:00:00.000Z",
-      "offerEnd": "2026-07-30T15:00:00.000Z"
+      "offerStart": "2026-07-09T15:00:00.000Z",
+      "offerEnd": "2026-07-16T15:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -154,6 +154,25 @@
       "status": "upcoming",
       "offerStart": "2026-07-02T15:00:00.000Z",
       "offerEnd": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "id": "f247e0af293645bda266fa9957d82d62",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Tattoo Tycoon",
+      "slug": "tattoo-tycoon",
+      "storeUrl": "https://store.epicgames.com/p/tattoo-tycoon",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Become a tattoo artist and manage your very own tattoo parlor. Find the best designs for your clients, turning their vague ideas into stunning works of body art. Expand from a cozy personal studio into a thriving multi-parlor business across the diverse districts of Tattuga Bay.",
+      "image": "https://cdn1.epicgames.com/spt-assets/0b68dfc82a014fe2ac9971f13e0e3ce5/tattoo-tycoon-11qwx.jpg",
+      "originalPrice": 2999,
+      "discountPrice": 2999,
+      "status": "upcoming",
+      "offerStart": "2026-09-24T15:00:00.000Z",
+      "offerEnd": "2026-10-08T15:00:00.000Z"
     },
     {
       "id": "4ef54d5829b04656902dfa1f29b3b732",
@@ -473,7 +492,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0GWC1XP24?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "All rise for Judge Arnold Schwarzenegger—Courtroom Chaos is now in session!Courtroom Chaos is the uproarious AI-powered party game that turns you and your friends into the stars of the most absurd courtroom in history. With the legendary AI Judge Arnold Schwarzenegger presiding over the bench, you'll improvise wild testimony, craft ridiculous characters, and argue the unwinnable. All while the Judge fires back with questions, reactions, and his final, unforgettable verdict. But don't let the laughs fool you, this Judge doesn't pull punches. One wrong answer and you might find yourself on the receiving end of an action hero-sized verbal takedown. Arnold's not here to coddle you, he's here to terminate weak arguments.The cases? Completely made up. The laughter? Absolutely genuine. The Judge’s strength? Very, very real.No game console. No scripts. No mercy. Just your voice, your creativity, and whatever madness you bring to the bench, assuming you can survive Arnold's cross-examination.• The Formidable Judge Arnold Schwarzenegger Presiding: - Arnold lends his voice, looks, and personality to the generative AI bench to hear your testimony, ask questions, try the case, and render the verdict.• Voice-Driven Improv Gameplay: - Use your voice and your creativity to invent characters, concoct your story, and try to manipulate the case in your favor.• Choose your Play Style: - With 4 ways to play, there’s something for everyone. - Standard Court: Judge Arnold takes his court seriously, delivering verdicts on multiplayer cases​. - Action Court: The perennial action hero brings explosive scenarios​ and interactions to this mode. Buckle up! - Settle a Bet: Bring your heated, head-to-head debates to the bench and solve them once and for all. - Solo Judgment: In this single-player mode argue your case one-on-one with Judge Arnold.• Unscripted, Replayable Fun: - No two cases are the same. The game reacts to what you say; AI-generated responses and outcomes make each session unique.• Built for GameNight: - Cloud-based gameplay designed for local solo and multiplayer (1–6 players). No download required means it’s fast to set up and easy for anyone to jump into and play. • No Controllers Needed: - All you need is your TV, your phone, and your friends. Use your voice and your phone to speak your piece, deliver your lines, and let the Generative AI take it from there. ADDITIONAL DETAILS:• As a Luna Standard or Luna Premium subscriber, you will receive 10 non-stacking cases to play every day. Each case is an individual game session or unique subject you bring before Judge Arnold. If you consume your daily allotment of 10 cases in a given day and don’t want to wait for them to refill the next day, you can purchase additional cases through the in-game prompt.• Purchased cases are consumed before cases included with Luna Prime or Luna Premium and carry over if unused.• Daily cases included with Luna Standard or Luna Premium do not stack or carry over if unused. Maximum of 10 cases included each day. • The number of daily cases included with Luna Standard and Luna Premium is subject to change. Daily cases refill at 12:00 AM UTC.• Judge Arnold only understands and responds in English. Learn more about AI in this game: https://www.amazongamestudios.com/about-ai©/™ 2026, Amazon.com, Inc., its affiliates, and/or licensors. Developed by Amber Studio and published by Amazon Game Studios. All rights reserved. This game includes AI-generated content for your personal entertainment purposes only. Cases are fictitious and created through player input. The name, likeness, and other attributes of Arnold Schwarzenegger reproduced in this game are trademarks or intellectual property of Oak Productions and/or Arnold Schwarzenegger, and used under license.• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Code of Conduct; www.amazon.com/help/ags/coc• Legal Notices - http://www.amazon.com/help/ags/notices/courtroomchaos• Report Problem - https://www.amazongamestudios.com/courtroom-chaos-problem• Support Page - https://help.courtroomchaos.com/",
       "image": "https://m.media-amazon.com/images/I/D17Dpap4+SL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -568,7 +587,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09SNHS9TG?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "The sequel to the party game phenomenon The Jackbox Party Pack, featuring FIVE fresh, rib-tickling party games! Your phones or tablets are your controllers – no big mess of controllers needed. For up to 8 players plus an Audience of up to 10,000! It’s a game-night riot in a box… without the box!",
       "image": "https://m.media-amazon.com/images/I/C1uuQy3A+qL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
