@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-03T10:33:52.474Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-07-03T16:21:03.711Z",
+  "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
     {
@@ -19,8 +19,8 @@
       "originalPrice": 1999,
       "discountPrice": 1999,
       "status": "upcoming",
-      "offerStart": "2026-07-16T15:00:00.000Z",
-      "offerEnd": "2026-07-30T15:00:00.000Z"
+      "offerStart": "2026-07-09T15:00:00.000Z",
+      "offerEnd": "2026-07-16T15:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -154,6 +154,25 @@
       "status": "free",
       "offerStart": "2026-07-02T15:00:00.000Z",
       "offerEnd": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "id": "gog-nexus-the-jupiter-incident",
+      "store": "gog",
+      "storeName": "GOG",
+      "title": "Nexus: The Jupiter Incident",
+      "slug": "nexus_the_jupiter_incident",
+      "storeUrl": "https://www.gog.com/en/game/nexus_the_jupiter_incident",
+      "seller": "GOG",
+      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get Nexus: The Jupiter Incident. See our Privacy policy.",
+      "image": "https://images.gog-statics.com/4b6319ff49eebd71f908ff622a83f3c68f28bf80999a53e0224f0678865439f3_giveaway_465w.webp",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": "2026-07-06T13:01:00.415Z",
+      "platforms": [
+        "PC"
+      ]
     },
     {
       "id": "psplus-call-of-duty-modern-warfare-iii-8211-cross-gen-bundle",
@@ -447,15 +466,34 @@
       ]
     },
     {
-      "id": "prime-play-youtubers-life-omg-edition-amazon-luna-no-download-required",
+      "id": "prime-play-dispatch-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play Youtubers Life OMG Edition | Amazon Luna - No Download Required",
-      "slug": "play-youtubers-life-omg-edition-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0BFW79S86?ref=pghq&r=web&autoplay=1",
+      "title": "Play Dispatch | Amazon Luna - No Download Required",
+      "slug": "play-dispatch-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0H6GQJMBN?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Become the most successful youtuber on the planet! Create videos, get subscribers, attend events, interact with your fans… and grow your channel. Live a youtuber’s life!Create your own videos from your parents’ house and start getting your first subscribers, views, and likes. Meet well-known YouTubers, go to the wildest parties, share your life through social media, and deal with your haters. Monetize your content, sign with exclusive networks, and customize your place with the coolest stuff. Grow until you can afford a mansion in outer space!Being a famous creator is everyone's dream! In Youtubers Life you will know how it feels to be a star and go viral! Learn the day-to-day life of famous Youtubers in this simulation game! What will be the theme of your YouTube channel?GAMING CHANNELRecord gameplays, reviews, speed runs, walkthroughs… Collect all the consoles across all generations, play your favorite titles, and develop your own video games!MUSIC CHANNELPlay 30 different instruments and more than 10 music genres. Publish covers, lessons, duets, compose the catchiest songs and give exciting live concerts!COOKING CHANNELCreate new, exotic dishes from different gastronomies. Upload tips, tutorials, and collaborative dishes, become an experienced chef, and work in your own restaurant!FASHION CHANNELDesign your own clothes. Tailor every aspect of your life. Attend fashion events while interviewing celebrities, and hit the runway to experience a top model lifestyle!In this Youtubers Life idle simulator you will be able to:- Go shopping and customize your avatar so it looks like whoever you want to be!- Become a vlogger and show your followers what video games are your favorite ones in your channel. Be the most popular gamer.- Manage your channel and edit videos from your studio.- Put yourself in the lifestyle of a billionaire, be present in social media! Copy from other blogs- Go to exclusive parties with your subscribers!",
-      "image": "https://m.media-amazon.com/images/I/C1DPA3FnlpL._SX1050_QL90_FMwebp_.png",
+      "description": "Dispatch is an award-winning superhero workplace comedy set in modern day Los Angeles from the writers and directors of Tales from the Borderlands and The Wolf Among Us, and features an all-star cast including Aaron Paul, Laura Bailey, and Jeffrey Wright.You play as Robert Robertson, AKA Mecha Man, whose mech-suit is destroyed in a battle against his nemesis, forcing him to take a job at a superhero dispatch center: not as a hero, but a dispatcher.As their dispatcher, you take charge of a team of ex-supervillains given a shot at redemption. Manage and level up your roster, all while navigating office relationships and romances, and rebuilding your suit for a shot at revenge!SHAPE YOUR STORYIn Dispatch, every decision you make influences the unfolding narrative. From banter in the breakroom to life-or-death situations in the field, your choices affect your relationships with the heroes, their allegiances, and the path your own story takes.DEPLOY YOUR HEROESUse the strategy map to review ongoing emergencies and deploy the right (or wrong) heroes to deal with them. Balance the risks and rewards as you make tactical decisions, knowing that each choice can have lasting consequences for your team and the city.MANAGE YOUR ROSTERManaging heroes sometimes goes beyond their powers. Each hero comes with quirks, flaws, and baggage you’ll need to navigate to keep the team together. Upgrade their skills and unlock abilities to boost their effectiveness in the field.Blending narrative, strategy, and humor, Dispatch explores what it means to be a hero, whether you're wearing a cape or behind a desk.MEET THE MISFITSFeaturing an all-star cast from every corner of entertainment• Aaron Paul (Breaking Bad, Westworld, Black Mirror)• Laura Bailey (The Legend of Vox Machina, The Last of Us II, Marvel's Spider-Man)• Erin Yvette (Hades II, The Wolf Among Us, Armored Core VI: Fires of Rubicon)• MoistCr1TiKaL (Charles White)• Jacksepticeye (Sonic Prime, River City Girls 1 & 2, Bendy and the Ink Machine)• Travis Willingham (The Legend of Vox Machina, Critical Role, Lego Avengers)• Alanah Pearce (V/H/S Beyond, Cyberpunk 2077, Gears 5)• Lance Cantstopolis (Karate, Dancing, Actor)• Joel Haver (Filmmaker, Actor, YouTuber)• THOT SQUAD (Musician: Pound Cake, Hoes Depressed)• Yung Gravy (Musician: Betty (Get Money), oops!)• Matthew Mercer (Critical Role, Overwatch, Resident Evil 6)• and Jeffrey Wright (American Fiction, The Batman, Casino Royale)",
+      "image": "https://m.media-amazon.com/images/I/C1kt2ZkbZZL._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-play-ea-sports-fc-26-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play EA SPORTS FC™ 26 | Amazon Luna - No Download Required",
+      "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
+      "image": "https://m.media-amazon.com/images/I/D19Ww2bpu7L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -504,15 +542,15 @@
       ]
     },
     {
-      "id": "prime-play-ea-sports-fc-26-amazon-luna-no-download-required",
+      "id": "prime-play-wobbly-life-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play EA SPORTS FC™ 26 | Amazon Luna - No Download Required",
-      "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
+      "title": "Play Wobbly Life | Amazon Luna - No Download Required",
+      "slug": "play-wobbly-life-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
-      "image": "https://m.media-amazon.com/images/I/D19Ww2bpu7L._SX1050_QL90_FMwebp_.png",
+      "description": "Grandma has kicked you out into the big wide Wobbly world demanding you go and GET A JOB! She would be so proud if you could earn some money and get your own house one day! It's time to start earning and living your best Wobbly Life! 1-4 players Online and Local split-screen co-op Open-world sandbox filled with mini-games, toys, secrets+100 unique missions & jobs with exclusive rewards to unlock, alone or with friends +90 vehicles to ride around (and crash)+500 clothes items to show-off in your wobbly look FUN, FRIENDS & PHYSICS!Let's start exploring! Almost everything is interactive – grab, play, and experiment in a world filled with props, mini-games, and surprises. Experience the joy solo or share your adventures with up to 4 players in online or local co-op, all in one big Wobbly world. MYSTERIES AND MISSIONSEmbark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves... The Wobbly Museum has lost all its artifacts! Maybe you can help? Buy treasure maps and solve clues to find all the Museums' lost treasures and unlock exciting rewards. GO GET A JOB!Make grandma happy and go get that job! Earn money by choosing from +40 exciting jobs, each bringing their new unique challenges. From pizza delivery to firefighting, taxi driver to disco dancer… your Wobbly dream job is waiting for you. GO TO SPACE! The Wobbly Space Programme is looking for new recruits. Space is a whole new open world, with new jobs, missions, and secrets to uncover. You'll even get to fly your own spaceships too, so what are you waiting for!LIVE THE HIGH WOBBLY LIFE! Once you’ve fattened up your bank account why not go on a shopping spree? Visit the Pet Shop to buy a faithful companion, buy and unlock +500 clothes items and choose from +90 different vehicles. When you’ve really made the big bucks, you can even buy a house: from a wooden cabin to a huge fancy mansion, Wobbly Island has a home for everyone! PLAY YOUR OWN WAY WITH ARCADE MODEWant to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide & Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
+      "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -523,34 +561,15 @@
       ]
     },
     {
-      "id": "prime-play-arcade-paradise-amazon-luna-no-download-required",
+      "id": "prime-use-phonesas-controllers",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play Arcade Paradise | Amazon Luna - No Download Required",
-      "slug": "play-arcade-paradise-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0BHTXNH92?ref=pghq&r=web&autoplay=1",
+      "title": "Use PhonesAs Controllers",
+      "slug": "use-phonesas-controllers",
+      "storeUrl": "https://luna.amazon.com/detail/B0FP79K7WS?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Welcome to Arcade Paradise, the 90’s retro arcade game and light-management sim combo! From cleaning toilets and picking up gum, to doing the laundry; the road to Arcade Paradise isn’t easy, but the reward will be worth the grind!Take on the role of Ashley and manage the day-to-day tasks of running the family laundromat. Rebel against your father’s wishes and create a games arcade to give the sleepy town of Grindstone something to really get excited about as you wash rags, invest the profits and build your very own Arcade Paradise!The more arcade cabinets you install, the more players will spend, with over 35 fully playable games to unlock! But remember, you don’t have time to just stand around setting the highest scores… the toilet won’t clean itself and there’s trash to take out! Relive 90’s gaming nostalgia on your journey from rags to arcade riches!",
-      "image": "https://m.media-amazon.com/images/I/D1hn4vDm41L._SX1050_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-alien-isolation-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play Alien: Isolation | Amazon Luna - No Download Required",
-      "slug": "play-alien-isolation-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B09HFKWMTQ?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/C1ifBVQ4mNS._SX1050_QL90_FMwebp_.png",
+      "description": "BEWARE THE SWARM! A four-player neon-drenched, bullet-hell roguelike where the swarm never stops! Centipede: Swarm fuses the arcade purity of Centipede with chaotic, power-scaling mayhem — evolving Atari’s classic for Amazon Luna Family Game Night! KEY FEATURESFast-Paced Action Couch Co-Op – Up to 4 Players move freely in an ever-changing battlefield, blasting through evolving waves of pastel-glowing insect hordes.Adaptive Swarm AI – The Centipede doesn’t just move in a line—it splits, mutates, and adapts from all directions, forcing you to stay on your toes.Roguelike Power Progression – Collect wild power-ups and swarm-stomping mutations, turning your puny wand into a screen-clearing nightmare.Bullet Hell Evolution – The longer you survive, the more chaotic the battlefield becomes, with enemy projectiles, hazards, and dynamic terrain shifts challenging you every step of the way.Endless Replayability – Ever evolving stages, endless waves of enemies, and multiple characters each with unique abilities keep every run fresh.",
+      "image": "https://m.media-amazon.com/images/I/B1El-BlxSEL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -585,10 +604,48 @@
       "storeName": "Prime Gaming",
       "title": "Use PhonesAs Controllers",
       "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B09SNHS9TG?ref=pghq&r=web&autoplay=1",
+      "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The sequel to the party game phenomenon The Jackbox Party Pack, featuring FIVE fresh, rib-tickling party games! Your phones or tablets are your controllers – no big mess of controllers needed. For up to 8 players plus an Audience of up to 10,000! It’s a game-night riot in a box… without the box!",
-      "image": "https://m.media-amazon.com/images/I/C1uuQy3A+qL._SX1050_QL90_FMwebp_.png",
+      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
+      "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-play-hogwarts-legacy-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Hogwarts Legacy | Amazon Luna - No Download Required",
+      "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Discover the feeling of living at Hogwarts as you make allies, battle Dark Wizards and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.",
+      "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-use-phonesas-controllers",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Use PhonesAs Controllers",
+      "slug": "use-phonesas-controllers",
+      "storeUrl": "https://luna.amazon.com/detail/B0GFVWKZT8?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Prepare to live a thousand lives in The Game of Life 2, the award-winning official sequel to the classic board game played by millions around the world. Gather your friends and family and dive into a bright, fun 3D world bursting with adventure!The Game of Life 2 on Luna comes with all content unlocked from the start! Click play and get: 11 worlds, with unique visuals on each board66 x outfits unlocked66 x avatars unlocked44 x vehicles unlocked 3 x peg coloursSpin the iconic spinner and set off on your life journey. You’ll be presented with decisions at every turn, altering your life path. Will you go to college immediately or drive straight into a career? Will you get married or stay single? Have kids or adopt a pet? Buy a house? Make a career change? It’s up to you! Earn points for choices that bring you Knowledge, Wealth and Happiness. Win rich, maximise your Knowledge or Happiness, or go for a healthy mix of all three and come out on top!HOW TO PLAY THE GAME OF LIFE 2:When it’s your turn, spin the spinner to travel along your life path.Depending on the space you land on, you’ll experience different life events and choices, such as buying a house, collecting your salary, or drawing an Action card! At crossroads, you’ll have to make big life decisions, so choose wisely!Your turn ends; it’s the next player’s chance to spin the spinner!FEATURESCUSTOMISE YOUR CHARACTER – Choose between the pink, blue or the purple peg. Select an outfit and make your peg your own. Browse a selection of cars, bikes and scooters and find a ride to suit your style. NEW WORLDS – Live life in enchanted worlds! Every world features thematic outfits, vehicles, jobs, properties and more! LOCAL LEADERBOARDS – Keep score with your family and friends and see who is the ultimate Game of Life 2 player in the house! IN-GAME REACTIONS – Exclusive to the Luna version, use reaction buttons to let everyone know how you’re feeling during the game!Live every life you’ve ever dreamed of in The Game of Life 2 – play today!",
+      "image": "https://m.media-amazon.com/images/I/B1ZqIrQF0pL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -608,6 +665,25 @@
       "seller": "Prime Gaming",
       "description": "Test your general knowledge and reasoning skills in “Who Wants to Be a Millionaire?”, the official video game of the show!Experience the suspense of the famous TV show in the official video game Who Wants to Be a Millionaire?Climb the prize ladder by answering 15 increasingly difficult questions. Is that your final answer?",
       "image": "https://m.media-amazon.com/images/I/C1o-UcWC+4L._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-play-sonic-mania-plus-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Sonic Mania Plus | Amazon Luna - No Download Required",
+      "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Experience the award-winning ultimate celebration of past and future. Sonic Mania Plus is an all-new 2D Sonic adventure with blistering 60 fps and stunning HD retro-style graphics. Run explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. Race through all-new original Zones and updated Classics, all with unique twists to keep you on your toes as you battle the evil Dr. Eggman. Go head to-head with up to four players in Competition Mode, or play with a friend in Co-Op Mode. Now with new playable characters Mighty and Ray, all new Encore mode, and more, Sonic Mania Plus is the definitive Sonic experience!By using this product, you hereby agree to the End User License Agreement found here: https://games.sega.com/eula",
+      "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -656,72 +732,15 @@
       ]
     },
     {
-      "id": "prime-play-bee-simulator-amazon-luna-no-download-required",
+      "id": "prime-play-alien-isolation-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play Bee Simulator | Amazon Luna - No Download Required",
-      "slug": "play-bee-simulator-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B097FBB891?ref=pghq&r=web&autoplay=1",
+      "title": "Play Alien: Isolation | Amazon Luna - No Download Required",
+      "slug": "play-alien-isolation-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B09HFKWMTQ?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Live the life of a bee! Explore a world brimming with life in which you collect pollen, defy dangerous wasps and save your hive. Play with others in three game modes, including co-op and PvP on split screen. See the world through the eyes of a bee! Explore a world inspired by Central Park where you can take part in bee races, collect pollen from rare flowers and defy dangerous wasps.Play with friends or family in three game modes, including co-op and PvP on split screen.The hive awakens as the sun's first rays warm the horizon. It's time to test your wings, receive orders from the Queen and begin your first mission. And that's just the start of your adventures. Humans want to cut down the tree that holds your hive, so your fate – and that of the whole swarm – rests on your tiny shoulders!",
-      "image": "https://m.media-amazon.com/images/I/D15+u5V6BzL._SX1050_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-use-phonesas-controllers",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B0GFVWKZT8?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Prepare to live a thousand lives in The Game of Life 2, the award-winning official sequel to the classic board game played by millions around the world. Gather your friends and family and dive into a bright, fun 3D world bursting with adventure!The Game of Life 2 on Luna comes with all content unlocked from the start! Click play and get: 11 worlds, with unique visuals on each board66 x outfits unlocked66 x avatars unlocked44 x vehicles unlocked 3 x peg coloursSpin the iconic spinner and set off on your life journey. You’ll be presented with decisions at every turn, altering your life path. Will you go to college immediately or drive straight into a career? Will you get married or stay single? Have kids or adopt a pet? Buy a house? Make a career change? It’s up to you! Earn points for choices that bring you Knowledge, Wealth and Happiness. Win rich, maximise your Knowledge or Happiness, or go for a healthy mix of all three and come out on top!HOW TO PLAY THE GAME OF LIFE 2:When it’s your turn, spin the spinner to travel along your life path.Depending on the space you land on, you’ll experience different life events and choices, such as buying a house, collecting your salary, or drawing an Action card! At crossroads, you’ll have to make big life decisions, so choose wisely!Your turn ends; it’s the next player’s chance to spin the spinner!FEATURESCUSTOMISE YOUR CHARACTER – Choose between the pink, blue or the purple peg. Select an outfit and make your peg your own. Browse a selection of cars, bikes and scooters and find a ride to suit your style. NEW WORLDS – Live life in enchanted worlds! Every world features thematic outfits, vehicles, jobs, properties and more! LOCAL LEADERBOARDS – Keep score with your family and friends and see who is the ultimate Game of Life 2 player in the house! IN-GAME REACTIONS – Exclusive to the Luna version, use reaction buttons to let everyone know how you’re feeling during the game!Live every life you’ve ever dreamed of in The Game of Life 2 – play today!",
-      "image": "https://m.media-amazon.com/images/I/B1ZqIrQF0pL._SX1050_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-wrc-generations-fully-loaded-edition-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play WRC Generations Fully Loaded Edition | Amazon Luna - No Download Required",
-      "slug": "play-wrc-generations-fully-loaded-edition-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0BQSB3RM1?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt. In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in. As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted. For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category. WRC Generations includes more content than ever before in a rally game.• 750 km of unique special stages in 22 countries • 49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)• 37 legendary cars plus additional bonuses• 165 timed special stages In order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:• The new hybrid vehicles• New, even more realistic vehicle physics• A LEAGUES mode in which you can challenge other players• A new Rally Sweden environment with 6 brand-new special stages• Share livery and stickers with the community• In-game team creation and managementThe Fully Loaded Edition includes:- Sébastien Loeb's Citroën C4 WRC (2010) - The \"Career Starter Pack\" with 6 extra crew members- 2 Porsche 911 GT3 RS RGT liveries- A pack of 36 stickers for the Livery Editor",
-      "image": "https://m.media-amazon.com/images/I/D1iuYhsxE5L._SX1050_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-lego-star-wars-the-complete-saga-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play LEGO® Star Wars™ - The Complete Saga | Amazon Luna - No Download Required",
-      "slug": "play-lego-star-wars-the-complete-saga-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0D127TRNW?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Kick Some Brick in I through VIPlay through all six Star Wars movies in one videogame! Adding new characters, new levels, new features and for the first time ever, the chance to build and battle your way through a fun Star Wars galaxy on your PC!• New Gameplay Features with enhanced Force Powers, new power-ups and new Challenge Modes.• Solve Puzzles through the use of creative thinking, teamwork and unique building situations.• Over 120 playable characters, and new characters like Watto, Zam Wessell, Boss Nass and more!• Upgraded Character Customizer allowing millions of possibilities. With character parts from all 6 movies, create cross-Trilogy mash-up characters like Han Windu and Lando Amidala.• Redesigned levels like the \"Mos Espa Podrace\" and \"Gunship Cavalry\" to take advantage of the the open vehicle gameplay of LEGO Star Wars II.• Bonus levels and missions allow you to take 10 additional Bounty Hunter missions from Jabba the Hutt in the prequel trilogy.• Two Player Local Co-Op lets friends and families play together.Terms of Use: http://disneytermsofuse.com/",
-      "image": "https://m.media-amazon.com/images/I/D1U3JQpQdXL._SX1050_QL90_FMwebp_.png",
+      "description": "HOW WILL YOU SURVIVE?Discover the true meaning of fear in Alien: Isolation, a survival horror set in an atmosphere of constant dread and mortal danger. Fifteen years after the events of Alien™, Ellen Ripley’s daughter, Amanda enters a desperate battle for survival, on a mission to unravel the truth behind her mother's disappearance.Overcome an ever-present deadly threat – Experience persistent fear as a truly dynamic and reactive Alien uses its senses to hunt you down and respond to your every move.Improvise to survive – Hack systems, scavenge for vital resources and craft items to deal with each situation. Will you evade your enemies, distract them or face them head on?Explore a world of mystery and betrayal – Immerse yourself in the detailed setting of Sevastopol, a decommissioned trading station on the fringes of space. Encounter a rich cast of inhabitants in a world scarred by fear and mistrust.",
+      "image": "https://m.media-amazon.com/images/I/C1ifBVQ4mNS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
