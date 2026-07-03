@@ -118,130 +118,146 @@ async function fetchEpic() {
 
 // ─── GOG ─────────────────────────────────────────────────────────────────────
 
-// GOG exposes a public promotional endpoint. The giveaway section is under
-// the "giveaway" section of their catalog API.
-const GOG_GIVEAWAY_URL = "https://www.gog.com/games/ajax/filtered?mediaType=game&sort=popularity&price=free";
-
-// GOG also has a dedicated giveaway page we can scrape a known JSON endpoint for
-const GOG_PROMO_URL = "https://www.gog.com/en/games?priceRange=0,0&discounted=true";
-
-// The most reliable GOG endpoint for their free giveaway (the "free game" banner)
-const GOG_CATALOG_API = "https://catalog.gog.com/v1/catalog?limit=48&order=desc%3Atrending&price=between%3A0%2C0&discounted=true&productType=in%3Agame%2Cpack%2Cdlc%2Cextras&page=1&countryCode=US&locale=en-US&currencyCode=USD";
-
 async function fetchGOG() {
-  console.log("Fetching GOG data…");
+  console.log("Fetching GOG giveaway...");
 
-  let games = [];
+  let browser;
 
-  // Try the GOG catalog API (discounted to free)
   try {
-    const res = await fetch(GOG_CATALOG_API, {
-      headers: {
-        "User-Agent": "free-game-tracker/1.0 (github-actions)",
-        "Accept": "application/json",
-      },
+    browser = await chromium.launch({
+      headless: true,
     });
-    if (!res.ok) throw new Error(`GOG catalog HTTP ${res.status}`);
-    const data = await res.json();
 
-    const products = data?.products || [];
+    const page = await browser.newPage({
+      userAgent:
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/137 Safari/537.36",
+    });
 
-    for (const item of products) {
-      // Only keep items where the final price is actually 0 (free)
-      const finalPrice = item.price?.finalMoney?.amount;
-      const basePrice = item.price?.baseMoney?.amount;
-      if (finalPrice === undefined) continue;
+    await page.goto("https://www.gog.com/en/", {
+      waitUntil: "networkidle",
+      timeout: 120000,
+    });
 
-      const isFree = parseFloat(finalPrice) === 0;
-      if (!isFree) continue;
+    const giveawayExists = await page.locator("#giveaway").count();
 
-      // Skip items that are always free (no discount, base price also 0)
-      // We only want temporarily-free promotional giveaways
-      const isPromo = parseFloat(basePrice || "0") > 0;
-      if (!isPromo) continue;
-
-      const slug = item.slug || "";
-      const image =
-        item.coverHorizontal ||
-        item.coverVertical ||
-        (item.thumbnail ? `https://images.gog-statics.com/${item.thumbnail}_product_tile_304x172.webp` : "");
-
-      games.push({
-        id: `gog-${item.id || slug}`,
-        store: "gog",
-        storeName: "GOG",
-        title: item.title || "Untitled",
-        slug,
-        storeUrl: slug ? `https://www.gog.com/en/game/${slug}` : "https://www.gog.com/en/games#discounted",
-        seller: item.developers?.join(", ") || item.publisher || "GOG",
-        description: item.description || item.summary || "",
-        image: image ? (image.startsWith("http") ? image : `https:${image}`) : "",
-        originalPrice: basePrice ? Math.round(parseFloat(basePrice) * 100) : null,
-        discountPrice: 0,
-        status: "free",
-        offerStart: null, // GOG catalog API doesn't expose promo dates directly
-        offerEnd: item.price?.discount?.endDate || null,
-      });
+    if (!giveawayExists) {
+      console.log("  → No GOG giveaway active");
+      return [];
     }
-  } catch (err) {
-    console.warn("  GOG catalog fetch failed:", err.message);
-  }
 
-  // Also check the GOG giveaway endpoint (their dedicated "free game" promotions)
-  try {
-    const res = await fetch("https://www.gog.com/en/games/ajax/filtered?mediaType=game&price=free&sort=popularity", {
-      headers: {
-        "User-Agent": "free-game-tracker/1.0 (github-actions)",
-        "Accept": "application/json",
-        "X-Requested-With": "XMLHttpRequest",
-      },
-    });
-    if (res.ok) {
-      const data = await res.json();
-      const products = data?.products || [];
+    const data = await page.evaluate(() => {
+      const giveaway = document.querySelector("#giveaway");
+      if (!giveaway) return null;
 
-      for (const item of products) {
-        // Avoid duplicates
-        const slug = item.slug || item.url?.split("/").pop() || "";
-        const alreadyAdded = games.some((g) => g.slug === slug && g.store === "gog");
-        if (alreadyAdded) continue;
+      const overlay =
+        giveaway.querySelector(".giveaway__overlay-link");
 
-        const originalPrice = item.price?.baseAmount
-          ? Math.round(parseFloat(item.price.baseAmount) * 100)
-          : null;
+      const header =
+        giveaway.querySelector(".giveaway__content-header");
 
-        // Only include if it actually has a non-zero base price (promo giveaway, not F2P)
-        if (!originalPrice || originalPrice === 0) continue;
+      const description =
+        giveaway.querySelector(".giveaway__content-description");
 
-        const imageBase = item.image || "";
-        const image = imageBase
-          ? `https:${imageBase}_product_tile_304x172.webp`
-          : "";
+      const countdown =
+        giveaway.querySelector(".giveaway__countdown");
 
-        games.push({
-          id: `gog-${item.id || slug}`,
-          store: "gog",
-          storeName: "GOG",
-          title: item.title || "Untitled",
-          slug,
-          storeUrl: `https://www.gog.com${item.url || `/en/game/${slug}`}`,
-          seller: item.developer || item.publisher || "GOG",
-          description: item.category || "",
-          image,
-          originalPrice,
-          discountPrice: 0,
-          status: "free",
-          offerStart: null,
-          offerEnd: null,
-        });
+      const picture =
+        giveaway.querySelector("picture");
+
+      let image = "";
+
+      if (picture) {
+        const source =
+          picture.querySelector('source[type="image/webp"]');
+
+        if (source) {
+          const srcset = source.getAttribute("srcset") || "";
+
+          image = srcset.split(",")[0].trim();
+        }
       }
-    }
-  } catch (err) {
-    console.warn("  GOG ajax fetch failed:", err.message);
-  }
 
-  console.log(`  → ${games.length} GOG free game(s) found`);
-  return games;
+      return {
+        url: overlay?.href || "",
+        header: header?.textContent?.trim() || "",
+        description:
+          description?.textContent?.trim() || "",
+        countdown:
+          countdown?.textContent?.trim() || "",
+        image,
+      };
+    });
+
+    if (!data) {
+      return [];
+    }
+
+    let title = data.header;
+
+    title = title
+      .replace(/^Giveaway:\s*/i, "")
+      .replace(/^Claim\s*/i, "")
+      .replace(/\sand don't miss.*$/i, "")
+      .trim();
+
+    let offerEnd = null;
+
+    const numbers = data.countdown.match(/\d+/g);
+
+    if (numbers && numbers.length >= 3) {
+      const [hours, minutes, seconds] = numbers.map(Number);
+
+      offerEnd = new Date(
+        Date.now() +
+        hours * 3600000 +
+        minutes * 60000 +
+        seconds * 1000
+      ).toISOString();
+    }
+
+    return [
+      {
+        id: `gog-${title
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")}`,
+
+        store: "gog",
+
+        storeName: "GOG",
+
+        title,
+
+        slug: data.url.split("/").pop(),
+
+        storeUrl: data.url,
+
+        seller: "GOG",
+
+        description: data.description,
+
+        image: data.image,
+
+        originalPrice: null,
+
+        discountPrice: 0,
+
+        status: "free",
+
+        offerStart: null,
+
+        offerEnd,
+
+        platforms: ["PC"],
+      },
+    ];
+  } catch (err) {
+    console.warn("  GOG fetch failed:", err.message);
+    return [];
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
 }
 
 // ─── PlayStation Plus ─────────────────────────────────────────────────────────
