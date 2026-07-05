@@ -164,7 +164,7 @@ Distributed under the project_license. See LICENSE.txt for more information.
 
 Nelson McFadyen - Nelson25805@hotmail.com
 
-Project Link: https://github.com/Nelson25805/recipeSuggester
+Project Link: https://github.com/Nelson25805/freebie-tracker
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- MARKDOWN LINKS -->
 
