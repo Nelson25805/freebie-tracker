@@ -61,22 +61,40 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Freebie Tracker Screenshot][project-screenshot]
+![Free Game Tracker Screenshot][project-screenshot]
 
-Recipe Suggester is a Java-based console application that lets users search for recipes by ingredient using [TheMealDB](https://www.themealdb.com/) API.
+Free Game Tracker is a lightweight web application that automatically tracks free game promotions across multiple digital storefronts in one convenient location.
 
-The app allows you to:
-- search for recipes by entering a main ingredient
-- view recipe details, ingredients, and instructions
-- save recipes locally as text files
-- browse recipes through a simple menu-driven interface
+Instead of checking several websites every day, the tracker collects current and upcoming giveaways and presents them in a clean, searchable interface.
 
-This project is a good example of working with:
-- HTTP requests
-- JSON response parsing
-- file saving
-- interactive console input
-- basic Java application structure
+Current supported stores include:
+
+- Epic Games Store
+- GOG
+- PlayStation Plus
+- Prime Gaming
+
+Features include:
+
+- View all current free games in one place
+- Browse upcoming giveaways before they become available
+- Search by game title or store
+- Filter by platform or promotion status
+- Sort by ending soon, newest, or title
+- Mark games as collected
+- Hide games you've already claimed
+- Automatically updated several times each day using GitHub Actions
+
+Claimed games are stored locally in your browser, so your collection persists between visits without requiring an account.
+
+This project demonstrates working with:
+
+- Public APIs
+- Web scraping
+- GitHub Actions automation
+- JSON data generation
+- Modern JavaScript
+- Responsive web design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
