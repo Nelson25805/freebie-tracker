@@ -118,25 +118,43 @@ Follow these steps to run the project locally.
 
 ### Prerequisites
 
-- Java JDK installed
-- Internet connection
-- A terminal or command prompt
+- Node.js (recommended v18 or newer)
+- Git
 
 ### Installation
 
 1. Clone the repository
-   ```sh
-   git clone https://github.com/Nelson25805/freebie-tracker.git
-Open the project folder
 
-Compile the program
+git clone https://github.com/Nelson25805/freebie-tracker.git
+Navigate into the project
+cd freebie-tracker
+Install dependencies
+npm install
+Generate the latest game data
+npm run update
+Open index.html
 
-javac RecipeSuggester.java
+or host the project using your preferred local web server.
 
-Run the application
+## Usage
 
-java RecipeSuggester
-<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- USAGE -->
+When the site loads, the latest game promotions are displayed automatically.
+
+You can:
+
+- Search games by title
+- Filter by storefront
+- Filter current or upcoming promotions
+- Sort by ending soon, newest, or title
+- Mark games as collected
+- Hide collected games
+- Open each game's store page with a single click
+
+The tracker automatically refreshes its data several times a day using GitHub Actions. Since all game information is pre-generated into a static JSON file, visitors don't need API keys and no live API requests occur when loading the website.
+
+Collected games are saved using your browser's local storage.
+
+<!-- USAGE -->
 
 ## Usage
 
