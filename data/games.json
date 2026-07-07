@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-07-07T10:54:02.415Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-07-07T16:38:08.588Z",
+  "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
     {
@@ -19,8 +19,8 @@
       "originalPrice": 1999,
       "discountPrice": 1999,
       "status": "upcoming",
-      "offerStart": "2026-07-09T15:00:00.000Z",
-      "offerEnd": "2026-07-16T15:00:00.000Z"
+      "offerStart": "2026-07-16T15:00:00.000Z",
+      "offerEnd": "2026-07-30T15:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -133,8 +133,8 @@
       "originalPrice": 2999,
       "discountPrice": 2999,
       "status": "upcoming",
-      "offerStart": "2026-07-09T15:00:00.000Z",
-      "offerEnd": "2026-07-16T15:00:00.000Z"
+      "offerStart": "2026-09-24T15:00:00.000Z",
+      "offerEnd": "2026-10-08T15:00:00.000Z"
     },
     {
       "id": "4ef54d5829b04656902dfa1f29b3b732",
@@ -154,6 +154,25 @@
       "status": "free",
       "offerStart": "2026-07-02T15:00:00.000Z",
       "offerEnd": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "id": "gog-silence",
+      "store": "gog",
+      "storeName": "GOG",
+      "title": "Silence",
+      "slug": "silence",
+      "storeUrl": "https://www.gog.com/en/game/silence",
+      "seller": "GOG",
+      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get Silence. See our Privacy policy.",
+      "image": "https://images.gog-statics.com/d52232cd694349166ac529cd8527d95b1e245d440bfcb47e222d46668b7a3338_giveaway_465w.webp",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": "2026-07-10T13:01:00.131Z",
+      "platforms": [
+        "PC"
+      ]
     },
     {
       "id": "psplus-call-of-duty-modern-warfare-iii-8211-cross-gen-bundle",
