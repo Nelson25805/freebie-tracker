@@ -155,24 +155,6 @@ The tracker automatically refreshes its data several times a day using GitHub Ac
 Collected games are saved using your browser's local storage.
 
 <!-- USAGE -->
-
-## Usage
-
-When the application starts, you will see a main menu with these options:
-
-Search for recipes by ingredient
-Exit
-
-To search for a recipe:
-
-choose option 1
-enter an ingredient such as chicken, rice, or pasta
-browse the matching recipes returned by TheMealDB
-select a recipe to view ingredients and instructions
-choose whether to save the recipe to a local text file
-
-Saved recipes are stored in a Recipes folder in the project directory.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- FEATURES -->
 
 ## Contributing
