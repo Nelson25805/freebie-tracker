@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-07-09T10:57:59.143Z",
+  "fetchedAt": "2026-07-09T16:33:48.827Z",
   "totalFree": 37,
-  "totalUpcoming": 8,
+  "totalUpcoming": 7,
   "games": [
     {
       "id": "e5da2c017d4d4afab9f4c56525b66100",
@@ -17,8 +17,8 @@
       "description": "Nova Lands is a factory building, exploration, and island management game. Explore, engage in combat, and automate your industry. The planet you’re on is full of mysteries, creatures, people, and things to do. Welcome to your new home amongst the stars!",
       "image": "https://cdn1.epicgames.com/spt-assets/9a2764693c414ecda63d8f785452a4bb/nova-lands-offer-16wzy.png",
       "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-07-09T15:00:00.000Z",
       "offerEnd": "2026-07-16T15:00:00.000Z"
     },
@@ -118,23 +118,23 @@
       "offerEnd": "2026-07-30T15:00:00.000Z"
     },
     {
-      "id": "9bf3d3188d1e498095bc23c0955538d9",
+      "id": "c27f2bb0dd9b4c4ca4973e653ab8a5be",
       "store": "epic",
       "storeName": "Epic Games Store",
-      "title": "River City Girls 2",
-      "slug": "f6229ed5b32d4e098b930103b6470b49",
-      "storeUrl": "https://store.epicgames.com/p/f6229ed5b32d4e098b930103b6470b49",
+      "title": "Luto",
+      "slug": "67459b70a96e40ca96d5676d8a4fd8c5",
+      "storeUrl": "https://store.epicgames.com/p/67459b70a96e40ca96d5676d8a4fd8c5",
       "seller": "PC",
       "platforms": [
         "PC"
       ],
-      "description": "A pixel-art sci-fi adventure set in the midst of a rebellion against a totalitarian regime, LUNARK is a modern take on the 2D cinematic platformer genre of the '90s. Run, jump, hang, climb, roll, and shoot your way through gorgeous and mysterious locations!",
-      "image": "https://cdn1.epicgames.com/spt-assets/dfdcd48c05c6483284cb40b333dc71e4/river-city-girls-2-1hqkv.png",
-      "originalPrice": 3999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-07-02T15:00:00.000Z",
-      "offerEnd": "2026-07-09T15:00:00.000Z"
+      "description": "Luto is a psychological horror experience where you take on the role of someone unable to leave their home. Every attempt to escape will lead you deeper into the unknown, where nothing is as it seems and everything will test your senses.",
+      "image": "https://cdn1.epicgames.com/spt-assets/eda0432529164b29b8a659d627d660e4/luto-14zrp.png",
+      "originalPrice": 1999,
+      "discountPrice": 1999,
+      "status": "upcoming",
+      "offerStart": "2026-07-16T15:00:00.000Z",
+      "offerEnd": "2026-07-23T15:00:00.000Z"
     },
     {
       "id": "f247e0af293645bda266fa9957d82d62",
@@ -150,29 +150,10 @@
       "description": "Become a tattoo artist and manage your very own tattoo parlor. Find the best designs for your clients, turning their vague ideas into stunning works of body art. Expand from a cozy personal studio into a thriving multi-parlor business across the diverse districts of Tattuga Bay.",
       "image": "https://cdn1.epicgames.com/spt-assets/0b68dfc82a014fe2ac9971f13e0e3ce5/tattoo-tycoon-11qwx.jpg",
       "originalPrice": 2999,
-      "discountPrice": 2999,
-      "status": "upcoming",
-      "offerStart": "2026-07-09T15:00:00.000Z",
-      "offerEnd": "2026-07-16T15:00:00.000Z"
-    },
-    {
-      "id": "4ef54d5829b04656902dfa1f29b3b732",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "I Have No Mouth, and I Must Scream",
-      "slug": "0937dc8ff7874fb8897a678d8a27c9ac",
-      "storeUrl": "https://store.epicgames.com/p/0937dc8ff7874fb8897a678d8a27c9ac",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "The Allied Mastercomputer has destroyed all of humanity except for five people, whom it has been keeping them alive and torturing them for the past one hundred and nine years by designing virtual adventures based on their fears and weaknesses.",
-      "image": "https://cdn1.epicgames.com/spt-assets/b153ccd09d834353a8f27ffa9b41f5a2/i-have-no-mouth-and-i-must-scream-163j8.png",
-      "originalPrice": 999,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-07-02T15:00:00.000Z",
-      "offerEnd": "2026-07-09T15:00:00.000Z"
+      "offerStart": "2026-07-09T15:00:00.000Z",
+      "offerEnd": "2026-07-16T15:00:00.000Z"
     },
     {
       "id": "371545146a944478ad5a87f9b581ac29",
@@ -207,7 +188,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
-      "offerEnd": "2026-07-10T13:01:00.802Z",
+      "offerEnd": "2026-07-10T13:01:01.495Z",
       "platforms": [
         "PC"
       ]
@@ -587,7 +568,7 @@
       "slug": "play-wobbly-life-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Grandma has kicked you out into the big wide Wobbly world demanding you go and GET A JOB! She would be so proud if you could earn some money and get your own house one day! It's time to start earning and living your best Wobbly Life! 1-4 players Online and Local split-screen co-op Open-world sandbox filled with mini-games, toys, secrets+100 unique missions & jobs with exclusive rewards to unlock, alone or with friends +90 vehicles to ride around (and crash)+500 clothes items to show-off in your wobbly look FUN, FRIENDS & PHYSICS!Let's start exploring! Almost everything is interactive – grab, play, and experiment in a world filled with props, mini-games, and surprises. Experience the joy solo or share your adventures with up to 4 players in online or local co-op, all in one big Wobbly world. MYSTERIES AND MISSIONSEmbark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves... The Wobbly Museum has lost all its artifacts! Maybe you can help? Buy treasure maps and solve clues to find all the Museums' lost treasures and unlock exciting rewards. GO GET A JOB!Make grandma happy and go get that job! Earn money by choosing from +40 exciting jobs, each bringing their new unique challenges. From pizza delivery to firefighting, taxi driver to disco dancer… your Wobbly dream job is waiting for you. GO TO SPACE! The Wobbly Space Programme is looking for new recruits. Space is a whole new open world, with new jobs, missions, and secrets to uncover. You'll even get to fly your own spaceships too, so what are you waiting for!LIVE THE HIGH WOBBLY LIFE! Once you’ve fattened up your bank account why not go on a shopping spree? Visit the Pet Shop to buy a faithful companion, buy and unlock +500 clothes items and choose from +90 different vehicles. When you’ve really made the big bucks, you can even buy a house: from a wooden cabin to a huge fancy mansion, Wobbly Island has a home for everyone! PLAY YOUR OWN WAY WITH ARCADE MODEWant to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide & Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -644,7 +625,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -663,7 +644,7 @@
       "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Discover the feeling of living at Hogwarts as you make allies, battle Dark Wizards and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -720,7 +701,7 @@
       "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Experience the award-winning ultimate celebration of past and future. Sonic Mania Plus is an all-new 2D Sonic adventure with blistering 60 fps and stunning HD retro-style graphics. Run explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. Race through all-new original Zones and updated Classics, all with unique twists to keep you on your toes as you battle the evil Dr. Eggman. Go head to-head with up to four players in Competition Mode, or play with a friend in Co-Op Mode. Now with new playable characters Mighty and Ray, all new Encore mode, and more, Sonic Mania Plus is the definitive Sonic experience!By using this product, you hereby agree to the End User License Agreement found here: https://games.sega.com/eula",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
