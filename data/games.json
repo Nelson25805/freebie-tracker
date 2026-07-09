@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-09T16:33:48.827Z",
+  "fetchedAt": "2026-07-09T21:31:04.844Z",
   "totalFree": 37,
   "totalUpcoming": 7,
   "games": [
@@ -188,7 +188,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
-      "offerEnd": "2026-07-10T13:01:01.495Z",
+      "offerEnd": "2026-07-10T13:01:00.192Z",
       "platforms": [
         "PC"
       ]
@@ -255,6 +255,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/07/01/playstation-plus-monthly-games-for-july-call-of-duty-modern-warfare-iii-for-the-king-ii-crosscode/"
+    },
+    {
+      "id": "prime-symphony-of-war-the-nephilim-saga",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Symphony of War: The Nephilim Saga",
+      "slug": "symphony-of-war-the-nephilim-saga",
+      "storeUrl": "https://luna.amazon.com/claims/symphony-of-war-the-nephilim-saga-epic/dp/amzn1.pg.item.db94348f-9423-423e-a707-aed5ebf07c0c?g=s&ingress=amzn&ref_=SM_SymphonyofWarTheNephilimSaga_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "At the turn of the millennium, the world of Tahnra is headed for a reckoning. A long and bloody conflict left the Empire of Veridia scarred. Now a rogue general has abducted the Empress and raised the flag of rebellion. You, a young academy graduate, will command an expedition that sets off a chain of events to shake the very foundations of the world.Symphony of War is a 2D turn-based strategy RPG with a story-rich 30-40 hour campaign, 50+ character classes, and massive tactical depth. Maneuver squads of up to 9 soldiers across battlefields, grab high ground, hold chokepoints, ambush from the woods, and break the enemy's morale. Outfit your troops with equipment and artifacts, research upgrades through the tech tree, and forge unbreakable bonds with heroes from across the world. Tactics win engagements. Logistics win wars.",
+      "image": "https://m.media-amazon.com/images/I/A1qCYlrlxML._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-space-grunts-chrono-shard",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Space Grunts: Chrono Shard",
+      "slug": "space-grunts-chrono-shard",
+      "storeUrl": "https://luna.amazon.com/claims/space-grunts-chrono-shard-epic/dp/amzn1.pg.item.dbfe54c6-6298-46ec-808d-49d3915b9734?g=s&ingress=amzn&ref_=SM_SpaceGruntsChronoShard_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Master time. Stop the Ooze. Outsmart a galactic infection in this high-speed, turn-based roguelike. Use your Chrono Shard to loop the timeline, leaving gear and upgrades for your future self. Craft your arsenal, evolve your skills into elite sub-classes, and turn every death into an advantage.Space Grunts: Chrono Shard is a high-octane blend of tactical depth and arcade energy. With the power of the Chrono Shard, you don’t just survive the void, you master it.The Chrono LoopUse your Shard to rewind the clock. Any items you’ve placed or changes you’ve made to the environment stay exactly where they are for your next attempt.Rapid-Fire StrategyFast-paced, turn-based combat rewards quick thinking and even quicker trigger fingers.Engaging Crafting SystemFind crafting stations to disassemble loot, scavenge resources, and upgrade your weapons into unstoppable tools of destruction.Evolutionary Skill TreesInvest in three core skill types to unlock specialized sub-classes. Whether you become a Sniper, Assassin, Hitman, Hardened, Elite, Engineer, Gadget, Gearhead, or Veteran, your build defines your edge.Deep Space HazardsDeploy into procedurally generated space stations and moon bases. Every mission is a new layout of mysterious sectors and deadly surprises.Secure the GatesA sentient Ooze is devouring the galaxy, jumping through a hijacked network of HyperGates. As part of the Space Grunts’ elite tactical unit, you are dropped into “time bubbles” to shut down the gates and contain the spread. Loop the timeline, evolve your grunt, and stop the Ooze - at any cost.Key features:Persistent Time-Loops: Carry over items and environmental changes between runs.Elite Sub-Classes: Level up your skills to unlock unique benefits.Advanced Crafting: Create, upgrade, and scrap gear at specialized stations.Signature Fast-Paced Gameplay: The classic Space Grunts arcade feel in a turn-based format.",
+      "image": "https://m.media-amazon.com/images/I/B1gmGe+iDGL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
     },
     {
       "id": "prime-lost-eidolons-veil-of-the-witch",
@@ -447,44 +485,6 @@
       ]
     },
     {
-      "id": "prime-paradise-killer",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Paradise Killer",
-      "slug": "paradise-killer",
-      "storeUrl": "https://luna.amazon.com/claims/paradise-killer-gog/dp/amzn1.pg.item.e97c8537-f08d-4c4f-a5f9-ed4f45c718cb?g=s&ingress=amzn&ref_=SM_ParadiseKiller_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Paradise Island. A synthetic rock floating on an ocean in another reality filled with lunatics, psychopaths, and a thousand secrets. Each island fails and a new one is born. On a dark night during the 24th Island Sequence, Paradise is killed.The surreal Paradise Island is home to the Syndicate, immortal worshipers of dead alien gods. The player assumes the role of Lady Love Dies, an exiled investigator brought back to solve the mass murder of the Syndicate's Council. Using Starlight, her investigation assistant computer, Lady Love Dies will scour Paradise Island for clues in her quest for justice. Will she find a single culprit or unravel a conspiracy centuries in the making?Paradise Killer is a free-form, open world, first-person exploration investigation game. The player investigates the mass murder of the island's ruling council as they wish, piecing together clues and forming their own arguments to present in the end trial. By choosing how to interrogate suspects and finding evidence in any order, the player will discover not a singular truth but a truth they shape and craft. Find your truth and breathe life back into Paradise.",
-      "image": "https://m.media-amazon.com/images/I/A1Hua5ysvAL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-xcom-chimera-squad",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "XCOM: Chimera Squad",
-      "slug": "xcom-chimera-squad",
-      "storeUrl": "https://luna.amazon.com/claims/xcom-chimera-squad-gog/dp/amzn1.pg.item.aa22d9f6-a898-4be7-a6df-50c3561b41b9?g=s&ingress=amzn&ref_=SM_XCOMChimeraSquad_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "XCOM: Chimera Squad delivers an all-new story and turn-based tactical combat experience in the XCOM universe.After years of alien rule, humanity won the war for Earth. But when the Overlords fled the planet, they left their former soldiers behind. Now, five years after the events of XCOM 2, humans and aliens are working together to forge a civilization of cooperation and coexistence.Welcome to City 31, a model of peace in a post-invasion world. However, not all of Earth's inhabitants support interspecies alliance. Chimera Squad, an elite force of human and alien agents, must work together to destroy the underground threats driving the city toward chaos.Your agents are unique: each is equipped with special tactical abilities and driven by a different motivation for joining Chimera Squad. Deploy targeted team members to investigate and combat the dangers that pervade the districts of City 31. Lead Chimera Squad through a new experience that innovates on XCOM's turn-based legacy, utilizing strategy, teamwork, and new breach-and-clear gameplay to complete your mission objectives.The future of City 31 depends on you.",
-      "image": "https://m.media-amazon.com/images/I/91vvv3hcUmL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-play-dispatch-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -492,7 +492,7 @@
       "slug": "play-dispatch-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0H6GQJMBN?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Dispatch is an award-winning superhero workplace comedy set in modern day Los Angeles from the writers and directors of Tales from the Borderlands and The Wolf Among Us, and features an all-star cast including Aaron Paul, Laura Bailey, and Jeffrey Wright.You play as Robert Robertson, AKA Mecha Man, whose mech-suit is destroyed in a battle against his nemesis, forcing him to take a job at a superhero dispatch center: not as a hero, but a dispatcher.As their dispatcher, you take charge of a team of ex-supervillains given a shot at redemption. Manage and level up your roster, all while navigating office relationships and romances, and rebuilding your suit for a shot at revenge!SHAPE YOUR STORYIn Dispatch, every decision you make influences the unfolding narrative. From banter in the breakroom to life-or-death situations in the field, your choices affect your relationships with the heroes, their allegiances, and the path your own story takes.DEPLOY YOUR HEROESUse the strategy map to review ongoing emergencies and deploy the right (or wrong) heroes to deal with them. Balance the risks and rewards as you make tactical decisions, knowing that each choice can have lasting consequences for your team and the city.MANAGE YOUR ROSTERManaging heroes sometimes goes beyond their powers. Each hero comes with quirks, flaws, and baggage you’ll need to navigate to keep the team together. Upgrade their skills and unlock abilities to boost their effectiveness in the field.Blending narrative, strategy, and humor, Dispatch explores what it means to be a hero, whether you're wearing a cape or behind a desk.MEET THE MISFITSFeaturing an all-star cast from every corner of entertainment• Aaron Paul (Breaking Bad, Westworld, Black Mirror)• Laura Bailey (The Legend of Vox Machina, The Last of Us II, Marvel's Spider-Man)• Erin Yvette (Hades II, The Wolf Among Us, Armored Core VI: Fires of Rubicon)• MoistCr1TiKaL (Charles White)• Jacksepticeye (Sonic Prime, River City Girls 1 & 2, Bendy and the Ink Machine)• Travis Willingham (The Legend of Vox Machina, Critical Role, Lego Avengers)• Alanah Pearce (V/H/S Beyond, Cyberpunk 2077, Gears 5)• Lance Cantstopolis (Karate, Dancing, Actor)• Joel Haver (Filmmaker, Actor, YouTuber)• THOT SQUAD (Musician: Pound Cake, Hoes Depressed)• Yung Gravy (Musician: Betty (Get Money), oops!)• Matthew Mercer (Critical Role, Overwatch, Resident Evil 6)• and Jeffrey Wright (American Fiction, The Batman, Casino Royale)",
       "image": "https://m.media-amazon.com/images/I/C1kt2ZkbZZL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -511,7 +511,7 @@
       "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
       "image": "https://m.media-amazon.com/images/I/D19Ww2bpu7L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -568,7 +568,7 @@
       "slug": "play-wobbly-life-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Grandma has kicked you out into the big wide Wobbly world demanding you go and GET A JOB! She would be so proud if you could earn some money and get your own house one day! It's time to start earning and living your best Wobbly Life! 1-4 players Online and Local split-screen co-op Open-world sandbox filled with mini-games, toys, secrets+100 unique missions & jobs with exclusive rewards to unlock, alone or with friends +90 vehicles to ride around (and crash)+500 clothes items to show-off in your wobbly look FUN, FRIENDS & PHYSICS!Let's start exploring! Almost everything is interactive – grab, play, and experiment in a world filled with props, mini-games, and surprises. Experience the joy solo or share your adventures with up to 4 players in online or local co-op, all in one big Wobbly world. MYSTERIES AND MISSIONSEmbark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves... The Wobbly Museum has lost all its artifacts! Maybe you can help? Buy treasure maps and solve clues to find all the Museums' lost treasures and unlock exciting rewards. GO GET A JOB!Make grandma happy and go get that job! Earn money by choosing from +40 exciting jobs, each bringing their new unique challenges. From pizza delivery to firefighting, taxi driver to disco dancer… your Wobbly dream job is waiting for you. GO TO SPACE! The Wobbly Space Programme is looking for new recruits. Space is a whole new open world, with new jobs, missions, and secrets to uncover. You'll even get to fly your own spaceships too, so what are you waiting for!LIVE THE HIGH WOBBLY LIFE! Once you’ve fattened up your bank account why not go on a shopping spree? Visit the Pet Shop to buy a faithful companion, buy and unlock +500 clothes items and choose from +90 different vehicles. When you’ve really made the big bucks, you can even buy a house: from a wooden cabin to a huge fancy mansion, Wobbly Island has a home for everyone! PLAY YOUR OWN WAY WITH ARCADE MODEWant to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide & Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
       "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -625,7 +625,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
       "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -644,7 +644,7 @@
       "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Discover the feeling of living at Hogwarts as you make allies, battle Dark Wizards and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.",
       "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -701,7 +701,7 @@
       "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Experience the award-winning ultimate celebration of past and future. Sonic Mania Plus is an all-new 2D Sonic adventure with blistering 60 fps and stunning HD retro-style graphics. Run explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. Race through all-new original Zones and updated Classics, all with unique twists to keep you on your toes as you battle the evil Dr. Eggman. Go head to-head with up to four players in Competition Mode, or play with a friend in Co-Op Mode. Now with new playable characters Mighty and Ray, all new Encore mode, and more, Sonic Mania Plus is the definitive Sonic experience!By using this product, you hereby agree to the End User License Agreement found here: https://games.sega.com/eula",
       "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -758,8 +758,46 @@
       "slug": "play-alien-isolation-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B09HFKWMTQ?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "HOW WILL YOU SURVIVE?Discover the true meaning of fear in Alien: Isolation, a survival horror set in an atmosphere of constant dread and mortal danger. Fifteen years after the events of Alien™, Ellen Ripley’s daughter, Amanda enters a desperate battle for survival, on a mission to unravel the truth behind her mother's disappearance.Overcome an ever-present deadly threat – Experience persistent fear as a truly dynamic and reactive Alien uses its senses to hunt you down and respond to your every move.Improvise to survive – Hack systems, scavenge for vital resources and craft items to deal with each situation. Will you evade your enemies, distract them or face them head on?Explore a world of mystery and betrayal – Immerse yourself in the detailed setting of Sevastopol, a decommissioned trading station on the fringes of space. Encounter a rich cast of inhabitants in a world scarred by fear and mistrust.",
       "image": "https://m.media-amazon.com/images/I/C1ifBVQ4mNS._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-regular-factory-escape-room",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Regular Factory: Escape Room",
+      "slug": "regular-factory-escape-room",
+      "storeUrl": "https://luna.amazon.com/claims/regular-factory-escape-room-gog/dp/amzn1.pg.item.1b071387-e61c-48a3-bcdf-f3086b8d18ba?g=s&ingress=amzn&ref_=SM_RegularFactoryEscapeRoom_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You don't work in a regular assembly line. Will you unravel the truth?Regular Factory is an escape room that will test your skills. Solve puzzles, decode secret codes, find hidden objects, and investigate the different rooms of the secret factory where you work while you discover the dark truth.Characteristics:Solve puzzles based on logic.Explore different rooms. Find clues and hidden objects.Discover more about the true purpose of the factory where you work.Enjoy the mysterious and atmospheric setting.",
+      "image": "https://m.media-amazon.com/images/I/A1nIOOCWEiL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-still-there",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Still There",
+      "slug": "still-there",
+      "storeUrl": "https://luna.amazon.com/claims/still-there-gog/dp/amzn1.pg.item.67c6d7c2-3050-431b-ae6d-91f34ad7d313?g=s&ingress=amzn&ref_=SM_StillThere_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Every day is the same on the faraway Bento space-lighthouse - until a mysterious radio message breaks through. Evade the past, welcome oblivion, make the perfect Italian coffee. Still There is a psychological adventure game about grief, technical puzzles, wacky AIs, and dark humor. How far is far enough?",
+      "image": "https://m.media-amazon.com/images/I/A1WiXifJVNL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -798,44 +836,6 @@
       "seller": "Prime Gaming",
       "description": "LONESTAR is a strategic roguelike spaceship deckbuilder. As a bounty hunter, you will capture criminals scattered across the universe. Win the shockwave battle to gain rewards and vacations. Find treasures, customize spaceships, unlock talents, defeat felons, and be a legend!Unique Shockwave BattleBoth sides accumulate Power for their own spaceship and compete in a fair shockwave battle to determine who the winner is. This is the recognized way of battle in the LONESTAR universe, without any surprise attacks.Free SpaceshipsAll hunters who join the Association will receive a free spaceship! Currently, the Association has two different spaceships to choose from - the third spaceship is under urgent development and will be deployed soon. Each spaceship has its own expertise and possesses nearly a hundred exclusive units.Numerous PilotsAs the largest bounty hunter organization in the LONESTAR universe, the Association has dozens of spaceship pilots. Each pilot has unique exclusive skills and a vast array of random talents, ensuring that each hunting experience is unique.Generous Vacation TimeThe Association strictly adheres to the LONESTAR Universe Labor Protection Act and provides generous vacations for all Bounty Hunters. Every time you complete a Bounty Mission, the Association offers a period of paid leave. During your vacation, you will encounter various unique events, make choices, and obtain resources.Know the Enemy and Know YourselfThe Association's Intelligence Center has gathered information on nearly a hundred wanted criminals in the LONESTAR universe, including 15 extremely dangerous boss-level felons! You can access the criminal information before each mission and adjust your combat strategies accordingly.",
       "image": "https://m.media-amazon.com/images/I/C18MYnPDNGL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-symphony-of-war-the-nephilim-saga",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Symphony of War: The Nephilim Saga",
-      "slug": "symphony-of-war-the-nephilim-saga",
-      "storeUrl": "https://luna.amazon.com/claims/symphony-of-war-the-nephilim-saga-epic/dp/amzn1.pg.item.db94348f-9423-423e-a707-aed5ebf07c0c?g=s&ingress=amzn&ref_=SM_SymphonyofWarTheNephilimSaga_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "At the turn of the millennium, the world of Tahnra is headed for a reckoning. A long and bloody conflict left the Empire of Veridia scarred. Now a rogue general has abducted the Empress and raised the flag of rebellion. You, a young academy graduate, will command an expedition that sets off a chain of events to shake the very foundations of the world.Symphony of War is a 2D turn-based strategy RPG with a story-rich 30-40 hour campaign, 50+ character classes, and massive tactical depth. Maneuver squads of up to 9 soldiers across battlefields, grab high ground, hold chokepoints, ambush from the woods, and break the enemy's morale. Outfit your troops with equipment and artifacts, research upgrades through the tech tree, and forge unbreakable bonds with heroes from across the world. Tactics win engagements. Logistics win wars.",
-      "image": "https://m.media-amazon.com/images/I/A1qCYlrlxML._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-space-grunts-chrono-shard",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Space Grunts: Chrono Shard",
-      "slug": "space-grunts-chrono-shard",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-chrono-shard-epic/dp/amzn1.pg.item.dbfe54c6-6298-46ec-808d-49d3915b9734?g=s&ingress=amzn&ref_=SM_SpaceGruntsChronoShard_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Master time. Stop the Ooze. Outsmart a galactic infection in this high-speed, turn-based roguelike. Use your Chrono Shard to loop the timeline, leaving gear and upgrades for your future self. Craft your arsenal, evolve your skills into elite sub-classes, and turn every death into an advantage.Space Grunts: Chrono Shard is a high-octane blend of tactical depth and arcade energy. With the power of the Chrono Shard, you don’t just survive the void, you master it.The Chrono LoopUse your Shard to rewind the clock. Any items you’ve placed or changes you’ve made to the environment stay exactly where they are for your next attempt.Rapid-Fire StrategyFast-paced, turn-based combat rewards quick thinking and even quicker trigger fingers.Engaging Crafting SystemFind crafting stations to disassemble loot, scavenge resources, and upgrade your weapons into unstoppable tools of destruction.Evolutionary Skill TreesInvest in three core skill types to unlock specialized sub-classes. Whether you become a Sniper, Assassin, Hitman, Hardened, Elite, Engineer, Gadget, Gearhead, or Veteran, your build defines your edge.Deep Space HazardsDeploy into procedurally generated space stations and moon bases. Every mission is a new layout of mysterious sectors and deadly surprises.Secure the GatesA sentient Ooze is devouring the galaxy, jumping through a hijacked network of HyperGates. As part of the Space Grunts’ elite tactical unit, you are dropped into “time bubbles” to shut down the gates and contain the spread. Loop the timeline, evolve your grunt, and stop the Ooze - at any cost.Key features:Persistent Time-Loops: Carry over items and environmental changes between runs.Elite Sub-Classes: Level up your skills to unlock unique benefits.Advanced Crafting: Create, upgrade, and scrap gear at specialized stations.Signature Fast-Paced Gameplay: The classic Space Grunts arcade feel in a turn-based format.",
-      "image": "https://m.media-amazon.com/images/I/B1gmGe+iDGL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
