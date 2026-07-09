@@ -114,6 +114,8 @@ This project demonstrates working with:
 <!-- GETTING STARTED -->
 ## Getting Started
 
+## Getting Started
+
 Follow these steps to run the project locally.
 
 ### Prerequisites
@@ -125,13 +127,21 @@ Follow these steps to run the project locally.
 
 1. Clone the repository
 
+```sh
 git clone https://github.com/Nelson25805/freebie-tracker.git
+```
 Navigate into the project
+```sh
 cd freebie-tracker
+```
 Install dependencies
+```sh
 npm install
+```
 Generate the latest game data
+```sh
 npm run update
+```
 Open index.html
 
 or host the project using your preferred local web server.
