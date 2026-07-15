@@ -21,7 +21,7 @@
 <h3 align="center">Freebie Tracker</h3>
 
   <p align="center">
-    A simple java application to receive recipe's for a multitude of recipes depending on the ingredients available.
+    An HTML website to keep track of current, and upcoming free games on multiple platforms.
     <br />
     <a href="https://github.com/Nelson25805/freebie-tracker"><strong>Explore the docs »</strong></a>
     <br />
