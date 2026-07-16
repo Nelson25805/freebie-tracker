@@ -73,6 +73,7 @@ Current supported stores include:
 - GOG
 - PlayStation Plus
 - Prime Gaming
+- Steam
 
 Features include:
 
