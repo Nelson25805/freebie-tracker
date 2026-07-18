@@ -147,6 +147,8 @@ Open index.html
 
 or host the project using your preferred local web server.
 
+Or visit https://nelson25805.github.io/freebie-tracker/ for a live website version.
+
 ## Usage
 
 When the site loads, the latest game promotions are displayed automatically.
