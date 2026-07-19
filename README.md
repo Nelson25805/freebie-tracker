@@ -74,6 +74,7 @@ Current supported stores include:
 - PlayStation Plus
 - Prime Gaming
 - Steam
+- (More To Come)
 
 Features include:
 
