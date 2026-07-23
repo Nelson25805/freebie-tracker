@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-23T16:01:00.393Z",
+  "fetchedAt": "2026-07-23T21:14:39.032Z",
   "totalFree": 35,
   "totalUpcoming": 5,
   "games": [
@@ -19,7 +19,7 @@
       "originalPrice": 1999,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-07-16T15:00:00.000Z",
+      "offerStart": "2026-07-23T15:00:00.000Z",
       "offerEnd": "2026-07-30T15:00:00.000Z"
     },
     {
@@ -179,6 +179,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/07/01/playstation-plus-monthly-games-for-july-call-of-duty-modern-warfare-iii-for-the-king-ii-crosscode/"
+    },
+    {
+      "id": "prime-framed-collection",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "FRAMED Collection",
+      "slug": "framed-collection",
+      "storeUrl": "https://luna.amazon.com/claims/framed-collection-gog/dp/amzn1.pg.item.a06a5d0e-0f33-4a10-82e2-8ed97d4a8f03?g=s&ingress=amzn&ref_=SM_FRAMEDCollection_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "FRAMED Collection is a new compilation of the critically-acclaimed, multi-award winning noir puzzle games FRAMED and FRAMED 2.Change the order, change the outcome.Rearrange the panels of an animated comic book to craft the story of a noir-styled spy adventure. Presented in an extensive series of visual puzzles, requiring logic and imagination, each panel move changes the current narrative, leading to all kinds of comedic blunders, untimely deaths - and when solved correctly - stylish heists, fast getaways and nail-biting escapades.With multi-award winning, genre-bending puzzle design, stylish hand crafted art and animation, a satisfying difficulty curve, and an original live jazz soundtrack - fusing modern themes and funky beats - the FRAMED Collection is a unique experience no other puzzle game can match.The Complete FRAMED experienceFRAMED Collection is a new compilation of the award-winning, noir puzzle games FRAMED and FRAMED 2. Escape effortlessly into the stylish, pulp-noir spy world of FRAMED, before delving deeper with the more challenging prequel FRAMED 2.Simple, but uniquely clever puzzle designSelect animated comic panels and move them around using your logic skills and your imagination to craft the best outcome. Getting the story ‘wrong’ is as much part of the experience as getting it ‘right’, with every rearrangement telling a different, satisfying - and sometimes very comedic - story.Hand-crafted noir art and animationFrom the first frame to the last, FRAMED collection oozes with stylish, noir, award-winning art and animation. Unique, hand-drawn silhouetted characters, incredibly fluid animations, and beautiful, mysterious settings all bring the FRAMED world to life with a wink of mischievous personality.",
+      "image": "https://m.media-amazon.com/images/I/91X6IYEf0qL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-regular-factory-escape-room",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Regular Factory: Escape Room",
+      "slug": "regular-factory-escape-room",
+      "storeUrl": "https://luna.amazon.com/claims/regular-factory-escape-room-gog/dp/amzn1.pg.item.1b071387-e61c-48a3-bcdf-f3086b8d18ba?g=s&ingress=amzn&ref_=SM_RegularFactoryEscapeRoom_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You don't work in a regular assembly line. Will you unravel the truth?Regular Factory is an escape room that will test your skills. Solve puzzles, decode secret codes, find hidden objects, and investigate the different rooms of the secret factory where you work while you discover the dark truth.Characteristics:Solve puzzles based on logic.Explore different rooms. Find clues and hidden objects.Discover more about the true purpose of the factory where you work.Enjoy the mysterious and atmospheric setting.",
+      "image": "https://m.media-amazon.com/images/I/A1nIOOCWEiL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
     },
     {
       "id": "prime-still-there",
@@ -371,44 +409,6 @@
       ]
     },
     {
-      "id": "prime-space-grunts",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Space Grunts",
-      "slug": "space-grunts",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-gog/dp/amzn1.pg.item.d6b4b6c3-ad9d-4e5d-9914-48c500b7be97?g=s&ingress=amzn&ref_=SM_SpaceGrunts_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "In the year 2476, an intergalactic distress signal leads your squad of Space Grunts to a remote moon base. As an elite \"problem\" solver, your mission is to investigate and neutralize the threat.Choose your Grunt type - Leader, Enforcer, or Tech Junky - each impacting your gear and strategy. You'll have to fight your way through an ever-changing labyrinth of aliens, robots, and drones. Your objective: descend to the lowest levels to find the core of the problem.Along the way, find a vast array of consumables to help you survive, from weapon enhancers and armor to explosives and system hacks. Discover new weapons, upgrade your arsenal, and uncover secrets and hidden routes that change every playthrough.",
-      "image": "https://m.media-amazon.com/images/I/91+g1A+EvwL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-lethal-honor-order-of-the-apocalypse",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Lethal Honor - Order of the Apocalypse",
-      "slug": "lethal-honor-order-of-the-apocalypse",
-      "storeUrl": "https://luna.amazon.com/claims/lethal-honor-order-of-the-apocalypse-epic/dp/amzn1.pg.item.f610100a-1240-41f8-84dd-767c2df675b4?g=s&ingress=amzn&ref_=SM_LethalHonorOrderoftheApocalypse_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "This brutal, obscure, and punishing action-adventure roguelite is set in a shady and beset post-apocalyptic world. Play relentless isometric close-quarter battles with an art style reminiscent of the 1980s dark age of adult superhero graphic novels.Lethal Honor - Order of the Apocalypse is a challenging hack 'n' slash game, featuring eldritch creatures, fast-paced melee combat, and powerful abilities. Become part of a secret organization that investigates the paranormal and fights for the survival of humanity.Prepare to discover the truth!Hand-drawn comic panels are seamlessly integrated into the gameplay to fully immerse you in a dark story full of mystery and intrigue. With every run and every death, you uncover more of the dangers of Wolf Island and the secrets that lie within.Intense, fast-paced combat will test your skills!Attacking relentlessly will only lead to your early demise. Find your own style by combining unique abilities, artifacts, and enchantments into powerful combinations. Fight difficult bosses and show your superiority.Experience the mysteries!Discover the disturbing secrets of Lethal Honor. Alternate between Lost Agents and Key Agents, who follow their own story as you discover what is happening on the island.Brutal and punishing hack 'n' slash roguelite gameplayGritty, hand-drawn, dark age graphic novel art style combined with 3D scenariosSeveral different biomes and playable key characters with their own storylines, abilities, and playstylesUnveil a mature, dark, and complex story seamlessly integrated into procedurally generated runs",
-      "image": "https://m.media-amazon.com/images/I/B1jmbBIZMCL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-play-dispatch-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -416,7 +416,7 @@
       "slug": "play-dispatch-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0H6GQJMBN?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Dispatch is an award-winning superhero workplace comedy set in modern day Los Angeles from the writers and directors of Tales from the Borderlands and The Wolf Among Us, and features an all-star cast including Aaron Paul, Laura Bailey, and Jeffrey Wright.You play as Robert Robertson, AKA Mecha Man, whose mech-suit is destroyed in a battle against his nemesis, forcing him to take a job at a superhero dispatch center: not as a hero, but a dispatcher.As their dispatcher, you take charge of a team of ex-supervillains given a shot at redemption. Manage and level up your roster, all while navigating office relationships and romances, and rebuilding your suit for a shot at revenge!SHAPE YOUR STORYIn Dispatch, every decision you make influences the unfolding narrative. From banter in the breakroom to life-or-death situations in the field, your choices affect your relationships with the heroes, their allegiances, and the path your own story takes.DEPLOY YOUR HEROESUse the strategy map to review ongoing emergencies and deploy the right (or wrong) heroes to deal with them. Balance the risks and rewards as you make tactical decisions, knowing that each choice can have lasting consequences for your team and the city.MANAGE YOUR ROSTERManaging heroes sometimes goes beyond their powers. Each hero comes with quirks, flaws, and baggage you’ll need to navigate to keep the team together. Upgrade their skills and unlock abilities to boost their effectiveness in the field.Blending narrative, strategy, and humor, Dispatch explores what it means to be a hero, whether you're wearing a cape or behind a desk.MEET THE MISFITSFeaturing an all-star cast from every corner of entertainment• Aaron Paul (Breaking Bad, Westworld, Black Mirror)• Laura Bailey (The Legend of Vox Machina, The Last of Us II, Marvel's Spider-Man)• Erin Yvette (Hades II, The Wolf Among Us, Armored Core VI: Fires of Rubicon)• MoistCr1TiKaL (Charles White)• Jacksepticeye (Sonic Prime, River City Girls 1 & 2, Bendy and the Ink Machine)• Travis Willingham (The Legend of Vox Machina, Critical Role, Lego Avengers)• Alanah Pearce (V/H/S Beyond, Cyberpunk 2077, Gears 5)• Lance Cantstopolis (Karate, Dancing, Actor)• Joel Haver (Filmmaker, Actor, YouTuber)• THOT SQUAD (Musician: Pound Cake, Hoes Depressed)• Yung Gravy (Musician: Betty (Get Money), oops!)• Matthew Mercer (Critical Role, Overwatch, Resident Evil 6)• and Jeffrey Wright (American Fiction, The Batman, Casino Royale)",
       "image": "https://m.media-amazon.com/images/I/C1kt2ZkbZZL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -511,7 +511,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0FP79K7WS?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "BEWARE THE SWARM! A four-player neon-drenched, bullet-hell roguelike where the swarm never stops! Centipede: Swarm fuses the arcade purity of Centipede with chaotic, power-scaling mayhem — evolving Atari’s classic for Amazon Luna Family Game Night! KEY FEATURESFast-Paced Action Couch Co-Op – Up to 4 Players move freely in an ever-changing battlefield, blasting through evolving waves of pastel-glowing insect hordes.Adaptive Swarm AI – The Centipede doesn’t just move in a line—it splits, mutates, and adapts from all directions, forcing you to stay on your toes.Roguelike Power Progression – Collect wild power-ups and swarm-stomping mutations, turning your puny wand into a screen-clearing nightmare.Bullet Hell Evolution – The longer you survive, the more chaotic the battlefield becomes, with enemy projectiles, hazards, and dynamic terrain shifts challenging you every step of the way.Endless Replayability – Ever evolving stages, endless waves of enemies, and multiple characters each with unique abilities keep every run fresh.",
       "image": "https://m.media-amazon.com/images/I/B1El-BlxSEL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -549,7 +549,7 @@
       "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
       "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -568,7 +568,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
       "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -625,7 +625,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0FLWXDWVM?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Test your general knowledge and reasoning skills in “Who Wants to Be a Millionaire?”, the official video game of the show!Experience the suspense of the famous TV show in the official video game Who Wants to Be a Millionaire?Climb the prize ladder by answering 15 increasingly difficult questions. Is that your final answer?",
       "image": "https://m.media-amazon.com/images/I/C1o-UcWC+4L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -663,7 +663,7 @@
       "slug": "play-lego-indiana-jones-the-original-adventures-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B09325PD7W?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Build, Battle and Brawl your way out of trouble!Play through all three classic Indiana Jones™ movies and relive your favorite Indy adventures in the tongue-in-cheek worlds of LEGO®.• Explore and Discover - Battle enemies, solve puzzles, and seek out the world's greatest treasures.• More Than 60 Playable Characters - Take control of Indy, his friends, and even his enemies. Team up with a friend and together search for fortune and glory.• Whip Into Action! - Attack and disarm enemies, swing over perilous pits, and interact with LEGO® objects and puzzles!Terms of Use: http://disneytermsofuse.com/",
       "image": "https://m.media-amazon.com/images/I/D1eRxyyHedL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -682,8 +682,46 @@
       "slug": "play-smurfs-kart-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CWPYQDJ5?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Who will be the fastest Smurf in town?That is the question you will need to answer in this dynamic kart racing game in the world of Smurfs!The whole family can choose one Smurf, its kart and special power, then you’re ready to go on wild races! Make the best start, find shortcuts, and use the right items at the right time to pass your opponents!Play solo or with friends and family, should you be a beginner or the most trained driver… you can get 1st place and show others who the fastest Smurf of all time is!- 12 tracks taken from the Smurfs’ universe: the village, the forest, the dam, the swamps… even Gargamel’s house!- 12 playable Smurfs: choose the Smurf you want to drive with.- Each Smurf has its own kart and a very handy special item to help you breeze past your opponents.- Reach 1st place by using the environment around you: bonus items, boosts, ramps, destructible boxes, shortcuts and more!- Play solo or with family and friends, up to 4 players in split-screen local multiplayer game mode. - Try to beat every Smurf at their own racetrack in the “Time Challenge” mode and reach the top of the online rankings with your best time!- Unlock original bonuses race after race, win after win, and try to Smurf them all in your personal album!",
       "image": "https://m.media-amazon.com/images/I/A116QJpV27L._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-in-sound-mind",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "In Sound Mind",
+      "slug": "in-sound-mind",
+      "storeUrl": "https://luna.amazon.com/claims/in-sound-mind-aga/dp/amzn1.pg.item.1a5c5cac-5445-48ba-89f6-91c4e0068399?g=s&ingress=amzn&ref_=SM_InSoundMind_S02_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "From the creators of the cult classic Nightmare House 2 comes In Sound Mind, an imaginative first-person psychological horror with frenetic puzzles and unique boss fights. Traverse a series of unsettling memories as you journey within the inner workings of the one place you can’t seem to escape - your own mind.",
+      "image": "https://m.media-amazon.com/images/I/C1iLPAEP64L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-mystic-academy-escape-room",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Mystic Academy: Escape Room",
+      "slug": "mystic-academy-escape-room",
+      "storeUrl": "https://luna.amazon.com/claims/mystic-academy-escape-room-gog/dp/amzn1.pg.item.61f57a96-121c-443f-8432-652773456072?g=s&ingress=amzn&ref_=SM_MysticAcademyEscapeRoom_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Today marks your final exam to become a wizard. Will you pass the test?Immerse yourself in Mystic Academy, an exhilarating escape room that will challenge your magical prowess. Solve puzzles, decipher mystical artifacts, learn spells, find hidden objects, and explore your wizardry school.Overcome daunting trials to prove your wizardry skills and succeed in the exam!Features:All puzzles require logic (and a touch of your wizard skills).Explore diverse rooms in your wizardry school.Uncover more about your magical abilities, learn new spells, and put them to the ultimate test!",
+      "image": "https://m.media-amazon.com/images/I/B15vNoOaCxL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -722,44 +760,6 @@
       "seller": "Prime Gaming",
       "description": "Welcome to Escape Academy. Train to become the ultimate Escapist. Solve puzzles. Hack servers. Meet the faculty. Brew the perfect cup of tea. Escape rooms in single player or co-op with a friend - local or online!Handcrafted PuzzlesPlay over a dozen masterfully handcrafted rooms, designed by experienced experts in the field of real-life escape rooms.Local/Online Co-OpExperience the entirety of Escape Academy alone in single player or through two-player co-operative play. Available in local or online split-screen.Escape Academy's Respected CurriculumAttend a Tea 'N Tea Party - Can you defuse the bomb before your tranquil cup of tea gets cold?Hack the Professor - Solve a quantifiably feverish series of challenges to prove to the Academy’s super A.I. that you’ve got the skills to become an Escapist.Go for the Gold - Represent your class in everyone's favorite sporting event, The Rival Room. Go toe-to-toe against your nemesis in a puzzle-race to prove who's top of the class.Don't Drown! - Being at the bottom of a puzzle-tower that's rapidly filling with water is not ideal. Scramble to the top for that sweet, sweet oxygen.Spray Paint the Monument - Art class is no Easy-A at the Academy. Leave your mark on the historic Monument of Escape, but hurry! The Headmaster didn't exactly approve the lesson plan.Tournament of PuzzlesHit the road with Coach Yoach in Escape Academy: The Tournament of Puzzles! This major content update features three massive arenas, three new game modes, puzzle power-ups, additional achievements, and lots of puzzles.",
       "image": "https://m.media-amazon.com/images/I/91r1-7o1yGL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-framed-collection",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "FRAMED Collection",
-      "slug": "framed-collection",
-      "storeUrl": "https://luna.amazon.com/claims/framed-collection-gog/dp/amzn1.pg.item.a06a5d0e-0f33-4a10-82e2-8ed97d4a8f03?g=s&ingress=amzn&ref_=SM_FRAMEDCollection_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "FRAMED Collection is a new compilation of the critically-acclaimed, multi-award winning noir puzzle games FRAMED and FRAMED 2.Change the order, change the outcome.Rearrange the panels of an animated comic book to craft the story of a noir-styled spy adventure. Presented in an extensive series of visual puzzles, requiring logic and imagination, each panel move changes the current narrative, leading to all kinds of comedic blunders, untimely deaths - and when solved correctly - stylish heists, fast getaways and nail-biting escapades.With multi-award winning, genre-bending puzzle design, stylish hand crafted art and animation, a satisfying difficulty curve, and an original live jazz soundtrack - fusing modern themes and funky beats - the FRAMED Collection is a unique experience no other puzzle game can match.The Complete FRAMED experienceFRAMED Collection is a new compilation of the award-winning, noir puzzle games FRAMED and FRAMED 2. Escape effortlessly into the stylish, pulp-noir spy world of FRAMED, before delving deeper with the more challenging prequel FRAMED 2.Simple, but uniquely clever puzzle designSelect animated comic panels and move them around using your logic skills and your imagination to craft the best outcome. Getting the story ‘wrong’ is as much part of the experience as getting it ‘right’, with every rearrangement telling a different, satisfying - and sometimes very comedic - story.Hand-crafted noir art and animationFrom the first frame to the last, FRAMED collection oozes with stylish, noir, award-winning art and animation. Unique, hand-drawn silhouetted characters, incredibly fluid animations, and beautiful, mysterious settings all bring the FRAMED world to life with a wink of mischievous personality.",
-      "image": "https://m.media-amazon.com/images/I/91X6IYEf0qL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-regular-factory-escape-room",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Regular Factory: Escape Room",
-      "slug": "regular-factory-escape-room",
-      "storeUrl": "https://luna.amazon.com/claims/regular-factory-escape-room-gog/dp/amzn1.pg.item.1b071387-e61c-48a3-bcdf-f3086b8d18ba?g=s&ingress=amzn&ref_=SM_RegularFactoryEscapeRoom_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You don't work in a regular assembly line. Will you unravel the truth?Regular Factory is an escape room that will test your skills. Solve puzzles, decode secret codes, find hidden objects, and investigate the different rooms of the secret factory where you work while you discover the dark truth.Characteristics:Solve puzzles based on logic.Explore different rooms. Find clues and hidden objects.Discover more about the true purpose of the factory where you work.Enjoy the mysterious and atmospheric setting.",
-      "image": "https://m.media-amazon.com/images/I/A1nIOOCWEiL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
