@@ -112,7 +112,6 @@ This project demonstrates working with:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -223,20 +222,5 @@ Project Link: https://github.com/Nelson25805/freebie-tracker
 [project-screenshot]: GithubImages/mainScreen.png
 [project-screenshot2]: GithubImages/filteredGameSearch.gif
 [project-screenshot3]: GithubImages/randomGameSearch.gif
-
 [project-screenshot4]: GithubImages/excelExample.png
 [project-screenshot5]: GithubImages/envExample.png
-
-
-[Java-url]: https://www.java.com/en/download/manual.jsp
-[GTK3-url]: https://www.gtk.org/
-[SQLite3-url]: https://www.sqlite.org/download.html
-[OpenSSL-url]: https://openssl-library.org/source/
-[Bcrypt-url]: https://rubygems.org/gems/bcrypt/versions/3.1.12?locale=en
-
-
-[Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
-[Tkinter]: https://img.shields.io/badge/Tkinter-8.6-green
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-
-
