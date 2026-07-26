@@ -88,9 +88,9 @@ async function fetchEpic() {
     if (!status) continue;
 
     const slug =
-      item.productSlug ||
-      item.urlSlug ||
       item.catalogNs?.mappings?.[0]?.pageSlug ||
+      item.urlSlug ||
+      item.productSlug ||
       "";
 
     games.push({
