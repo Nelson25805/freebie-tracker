@@ -19,6 +19,7 @@ import { writeFileSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { chromium } from "playwright";
+import { decode } from "html-entities";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
@@ -276,6 +277,30 @@ function stripHtml(html) {
   return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function decodeHtmlEntities(text) {
+  if (!text) return "";
+
+  return text
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) =>
+      String.fromCharCode(parseInt(code, 16))
+    )
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">");
+}
+
+function normalizeTitle(title) {
+  return decode(title)
+    .replace(/[–—]/g, "-")
+    .replace(/\s*-\s*/g, " - ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 // Handles both plain tags and CDATA-wrapped content (WordPress style).
 function extractTag(xml, tag) {
   const cdataOpen = `<${tag}><![CDATA[`;
@@ -396,7 +421,12 @@ function parseGamesFromPost(postTitle, postHtml) {
   const entries = [];
   let m;
   while ((m = headingRe.exec(postHtml)) !== null) {
-    const rawTitle = m[1].replace(/<[^>]+>/g, "").replace(/\*+/g, "").trim();
+    const rawTitle = normalizeTitle(
+      m[1]
+        .replace(/<[^>]+>/g, "")
+        .replace(/\*+/g, "")
+        .trim()
+    );
     const platformStr = m[2]
       .replace(/&amp;/gi, ",")
       .replace(/&/g, ",")
@@ -545,7 +575,7 @@ function parseGamesFromPost(postTitle, postHtml) {
   if (titleMatch) {
     const fallbackTitles = titleMatch[1]
       .split(/,\s*(?=[A-Z\u00C0-\u024F])| &amp; | & /)
-      .map((t) => t.trim())
+      .map((t) => normalizeTitle(t))
       .filter(Boolean);
 
     for (const title of fallbackTitles) {
@@ -607,7 +637,7 @@ async function fetchPSPlus() {
       id: `psplus-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
       store: "psplus",
       storeName: "PlayStation Plus",
-      title: item.title,
+      title: normalizeTitle(item.title),
       slug: "",
       storeUrl: "https://store.playstation.com",
       seller: item.platforms.length ? item.platforms.join(" / ") : "PS5 / PS4",

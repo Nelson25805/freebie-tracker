@@ -93,6 +93,15 @@ function escapeHtml(str) {
     .replaceAll("'", "&#39;");
 }
 
+function decodeHtmlEntities(text) {
+  if (!text) return "";
+
+  const textarea = document.createElement("textarea");
+  textarea.innerHTML = text;
+
+  return textarea.value;
+}
+
 function storeLabel(store) {
   if (store === "epic") {
     return { label: "Epic", cls: "store-epic" };
@@ -251,7 +260,11 @@ async function loadGames() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
 
-    allGames = payload.games || [];
+    allGames = (payload.games || []).map(game => ({
+      ...game,
+      title: decodeHtmlEntities(game.title),
+      description: decodeHtmlEntities(game.description)
+    }));
 
     const freeCount = allGames.filter((g) => g.status === "free").length;
     const upcomingCount = allGames.filter((g) => g.status === "upcoming").length;
