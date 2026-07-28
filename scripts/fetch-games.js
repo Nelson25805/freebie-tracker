@@ -19,7 +19,6 @@ import { writeFileSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { chromium } from "playwright";
-import { decode } from "html-entities";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
@@ -293,13 +292,6 @@ function decodeHtmlEntities(text) {
     .replace(/&gt;/gi, ">");
 }
 
-function normalizeTitle(title) {
-  return decode(title)
-    .replace(/[–—]/g, "-")
-    .replace(/\s*-\s*/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
 
 // Handles both plain tags and CDATA-wrapped content (WordPress style).
 function extractTag(xml, tag) {
