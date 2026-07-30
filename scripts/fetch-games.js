@@ -292,6 +292,14 @@ function decodeHtmlEntities(text) {
     .replace(/&gt;/gi, ">");
 }
 
+function normalizeTitle(title) {
+  return decodeHtmlEntities(title)
+    .replace(/[–—]/g, "-")
+    .replace(/\s*-\s*/g, " - ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 
 // Handles both plain tags and CDATA-wrapped content (WordPress style).
 function extractTag(xml, tag) {
