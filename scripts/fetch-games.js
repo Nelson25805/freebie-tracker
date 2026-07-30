@@ -655,7 +655,9 @@ async function fetchPSPlus() {
     console.log(`  → ${games.length} PS Plus game(s) found`);
     return games;
   } catch (err) {
-    console.warn("  PS Plus fetch failed:", err.message);
+    console.error("PS Plus fetch failed:");
+    console.error(err);
+    console.error(err.stack);
     return [];
   }
 }
