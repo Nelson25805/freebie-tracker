@@ -71,17 +71,19 @@
     </section>
 
     <section class="card section">
+      <div class="store-chip-row">
+        <span class="chip-row-label">Stores</span>
+        <div class="chip-group" id="storeFilter" role="group" aria-label="Filter by store">
+          <button type="button" class="chip active" data-store="epic">Epic</button>
+          <button type="button" class="chip active" data-store="gog">GOG</button>
+          <button type="button" class="chip active" data-store="psplus">PS Plus</button>
+          <button type="button" class="chip active" data-store="prime">Prime</button>
+          <button type="button" class="chip active" data-store="steam">Steam</button>
+        </div>
+      </div>
+
       <div class="toolbar">
         <input class="search" id="searchInput" type="search" placeholder="Search games..." />
-
-        <select class="select" id="storeFilter" aria-label="Filter by store">
-          <option value="all">All stores</option>
-          <option value="epic">Epic Games Store</option>
-          <option value="gog">GOG</option>
-          <option value="psplus">PlayStation Plus</option>
-          <option value="prime">Prime Gaming</option>
-          <option value="steam">Steam</option>
-        </select>
 
         <select class="select" id="statusFilter" aria-label="Filter by status">
           <option value="all">All statuses</option>

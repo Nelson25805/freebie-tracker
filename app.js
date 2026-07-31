@@ -9,6 +9,7 @@ const els = {
   emptyState: document.getElementById("emptyState"),
   searchInput: document.getElementById("searchInput"),
   storeFilter: document.getElementById("storeFilter"),
+  storeChips: Array.from(document.getElementById("storeFilter").querySelectorAll(".chip")),
   statusFilter: document.getElementById("statusFilter"),
   sortFilter: document.getElementById("sortFilter"),
   hideClaimed: document.getElementById("hideClaimed"),
@@ -25,6 +26,7 @@ const els = {
 
 let allGames = [];
 let collected = loadCollected();
+let selectedStores = new Set(els.storeChips.map((chip) => chip.dataset.store));
 
 // ─── Persistence ─────────────────────────────────────────────────────────────
 
@@ -130,7 +132,6 @@ function gameKey(game) {
 
 function getVisibleGames() {
   const q = els.searchInput.value.trim().toLowerCase();
-  const store = els.storeFilter.value;
   const status = els.statusFilter.value;
   const hideClaimed = els.hideClaimed.checked;
   const sort = els.sortFilter.value;
@@ -143,9 +144,7 @@ function getVisibleGames() {
     );
   }
 
-  if (store !== "all") {
-    items = items.filter((g) => g.store === store);
-  }
+  items = items.filter((g) => selectedStores.has(g.store));
 
   if (status !== "all") {
     if (status === "claimed") {
@@ -309,6 +308,19 @@ async function loadGames() {
 
 // ─── Actions ──────────────────────────────────────────────────────────────────
 
+function toggleStoreChip(chip) {
+  const store = chip.dataset.store;
+  if (selectedStores.has(store)) {
+    selectedStores.delete(store);
+    chip.classList.remove("active");
+  } else {
+    selectedStores.add(store);
+    chip.classList.add("active");
+  }
+  chip.setAttribute("aria-pressed", selectedStores.has(store) ? "true" : "false");
+  render();
+}
+
 function toggleCollected(key) {
   if (collected.has(key)) collected.delete(key);
   else collected.add(key);
@@ -358,13 +370,18 @@ document.addEventListener("click", (e) => {
   }
 });
 
-[els.searchInput, els.storeFilter, els.statusFilter, els.sortFilter, els.hideClaimed].forEach(
+[els.searchInput, els.statusFilter, els.sortFilter, els.hideClaimed].forEach(
   (el) => {
     if (!el) return;
     el.addEventListener("input", render);
     el.addEventListener("change", render);
   }
 );
+
+els.storeChips.forEach((chip) => {
+  chip.setAttribute("aria-pressed", "true");
+  chip.addEventListener("click", () => toggleStoreChip(chip));
+});
 
 els.refreshBtn.addEventListener("click", loadGames);
 els.resetBtn.addEventListener("click", clearCollected);
