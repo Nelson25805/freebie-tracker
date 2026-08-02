@@ -231,6 +231,7 @@ input {
 .chip-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
     align-items: center;
 }
@@ -260,6 +261,63 @@ input {
 .chip.active {
     background: linear-gradient(135deg, rgba(139, 92, 246, 0.85), rgba(91, 33, 182, 0.85));
     border-color: rgba(139, 92, 246, 0.6);
+    color: white;
+}
+
+/* ─── Store-themed chip colors ────────────────────────────────────────────── */
+
+.chip[data-store="epic"] {
+    color: #e8e8ea;
+    border-color: rgba(255, 255, 255, 0.28);
+}
+
+.chip[data-store="epic"].active {
+    background: #050505;
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+}
+
+.chip[data-store="gog"] {
+    color: #c9a6ff;
+    border-color: rgba(133, 67, 226, 0.35);
+}
+
+.chip[data-store="gog"].active {
+    background: #8543e2;
+    border-color: rgba(133, 67, 226, 0.85);
+    color: #14081f;
+}
+
+.chip[data-store="psplus"] {
+    color: #a8d8ff;
+    border-color: rgba(0, 120, 215, 0.32);
+}
+
+.chip[data-store="psplus"].active {
+    background: linear-gradient(135deg, #2596f0, #003b73);
+    border-color: rgba(37, 150, 240, 0.7);
+    color: white;
+}
+
+.chip[data-store="prime"] {
+    color: #ffd27a;
+    border-color: rgba(255, 180, 0, 0.32);
+}
+
+.chip[data-store="prime"].active {
+    background: linear-gradient(135deg, #ff9900, #a05f00);
+    border-color: rgba(255, 153, 0, 0.7);
+    color: #1a1000;
+}
+
+.chip[data-store="steam"] {
+    color: #8fd0ff;
+    border-color: rgba(102, 192, 244, 0.32);
+}
+
+.chip[data-store="steam"].active {
+    background: linear-gradient(135deg, #66c0f4, #1b2838);
+    border-color: rgba(102, 192, 244, 0.7);
     color: white;
 }
 
@@ -565,14 +623,15 @@ a {
 
 .store-chip-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     margin: 18px 0 0;
-    padding: 14px 16px;
+    padding: 16px;
     background: rgba(255, 255, 255, .04);
     border: 1px solid var(--line);
     border-radius: 20px;
+    text-align: center;
 }
 
 .chip-row-label {
