@@ -614,7 +614,6 @@ async function fetchPSPlus() {
     }
 
     // PS Plus monthly games always expire on the first Tuesday of next month.
-    // This is more reliable than parsing ambiguous blog wording.
 
     const now = new Date();
 
