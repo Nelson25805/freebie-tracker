@@ -223,4 +223,3 @@ Project Link: https://github.com/Nelson25805/freebie-tracker
 [project-screenshot2]: GithubImages/filteredGameSearch.gif
 [project-screenshot3]: GithubImages/randomGameSearch.gif
 [project-screenshot4]: GithubImages/excelExample.png
-[project-screenshot5]: GithubImages/envExample.png
