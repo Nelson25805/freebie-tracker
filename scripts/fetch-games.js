@@ -416,18 +416,31 @@ function parseGamesFromPost(postTitle, postHtml) {
   //       or  <h2>**Title | PS5**</h2>   (Markdown bold in HTML)
   //       or  plain <h2>Title | PS5</h2>
 
-  const headingRe = /<h[23][^>]*>(?:<strong>|<b>)?\s*([^|<]+?)\s*\|\s*([^<]+?)\s*(?:<\/strong>|<\/b>)?\s*<\/h[23]>/gi;
+  // NOTE: we deliberately do NOT require a specific inner-tag shape (e.g. just
+  // <strong>/<b>) around the "Title | Platforms" text. Sony sometimes wraps the
+  // title itself in an <a> (or other) tag, and a regex that expects no nested
+  // tags will silently fail to match that heading — dropping the game entirely
+  // AND corrupting section-boundary detection for the games around it (their
+  // images/descriptions leak across the "missing" boundary). Instead: grab the
+  // whole heading block first, strip ALL inner tags, then parse the plain text.
+  const headingBlockRe = /<h[23][^>]*>([\s\S]*?)<\/h[23]>/gi;
 
   const entries = [];
   let m;
-  while ((m = headingRe.exec(postHtml)) !== null) {
-    const rawTitle = normalizeTitle(
-      m[1]
-        .replace(/<[^>]+>/g, "")
-        .replace(/\*+/g, "")
-        .trim()
-    );
-    const platformStr = m[2]
+  while ((m = headingBlockRe.exec(postHtml)) !== null) {
+    const plainText = m[1]
+      .replace(/<[^>]+>/g, "")
+      .replace(/\*+/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    if (!plainText.includes("|")) continue; // not a "Title | Platforms" heading
+
+    // Split on the LAST pipe, in case a title ever legitimately contains one.
+    const pipeIndex = plainText.lastIndexOf("|");
+    const rawTitle = normalizeTitle(plainText.slice(0, pipeIndex).trim());
+    const platformStr = plainText
+      .slice(pipeIndex + 1)
       .replace(/&amp;/gi, ",")
       .replace(/&/g, ",")
       .trim();
@@ -607,6 +620,7 @@ async function fetchPSPlus() {
 
     const postHtml = post.content || "";
     const parsed = parseGamesFromPost(post.title, postHtml);
+    console.log(`  Parsed ${parsed.length} game heading(s) from post body: ${parsed.map((g) => g.title).join(", ")}`);
 
     if (parsed.length === 0) {
       console.warn("  Could not parse any games from the post.");
