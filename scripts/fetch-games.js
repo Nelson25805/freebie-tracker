@@ -686,25 +686,25 @@ function cleanPrimeText(str) {
     .trim();
 }
 
-function detectPrimePlatform(item = {}) {
-  const text = [
-    item.offerTitle,
-    item.description,
-    item.externalPlatform,
-    item.redemptionMethod,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
+function detectPrimePlatformFromUrl(href) {
+  const lower = (href || "").toLowerCase();
 
-  if (text.includes("epic")) return "Epic Games";
-  if (text.includes("gog")) return "GOG";
-  if (text.includes("legacy")) return "Legacy Games";
-  if (text.includes("xbox")) return "Xbox";
-  if (text.includes("microsoft")) return "Microsoft Store";
-  if (text.includes("ea app")) return "EA App";
+  // Native Luna streaming titles: luna.amazon.com/detail/{asin}
+  if (/luna\.amazon\.com\/detail\//.test(lower)) {
+    return "Amazon Luna";
+  }
 
-  return "Amazon Games App";
+  // Claim-and-redeem titles: luna.amazon.com/claims/{slug}-{platformCode}/dp/...
+  const claimMatch = lower.match(/\/claims\/([a-z0-9-]+)\/dp\//);
+  if (claimMatch) {
+    const slugWithCode = claimMatch[1];
+    if (/-epic$/.test(slugWithCode)) return "Epic Games";
+    if (/-gog$/.test(slugWithCode)) return "GOG";
+    if (/-legacy$/.test(slugWithCode)) return "Legacy Games";
+    if (/-aga$/.test(slugWithCode)) return "Amazon Games App"; // seen on Terraforming Mars, In Sound Mind
+  }
+
+  return "Amazon Luna"; // genuine fallback, e.g. unrecognized suffix
 }
 
 async function fetchPrimeGaming() {
@@ -876,22 +876,7 @@ async function fetchPrimeGaming() {
           };
         });
 
-        const lowerHref = card.href.toLowerCase();
-
-        let platform = "Amazon Games App";
-
-        if (
-          lowerHref.includes("luna.amazon") ||
-          lowerHref.includes("/game/")
-        ) {
-          platform = "Amazon Luna";
-        } else if (lowerHref.includes("-gog")) {
-          platform = "GOG";
-        } else if (lowerHref.includes("-epic")) {
-          platform = "Epic Games";
-        } else if (lowerHref.includes("-legacy")) {
-          platform = "Legacy Games";
-        }
+        const platform = detectPrimePlatformFromUrl(card.href);
 
         games.push({
           id: `prime-${details.title
