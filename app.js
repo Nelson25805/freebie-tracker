@@ -10,6 +10,8 @@ const els = {
   searchInput: document.getElementById("searchInput"),
   storeFilter: document.getElementById("storeFilter"),
   storeChips: Array.from(document.getElementById("storeFilter").querySelectorAll(".chip")),
+  redeemChipRow: document.getElementById("redeemChipRow"),
+  redeemFilter: document.getElementById("redeemFilter"),
   statusFilter: document.getElementById("statusFilter"),
   sortFilter: document.getElementById("sortFilter"),
   hideClaimed: document.getElementById("hideClaimed"),
@@ -27,6 +29,10 @@ const els = {
 let allGames = [];
 let collected = loadCollected();
 let selectedStores = new Set(els.storeChips.map((chip) => chip.dataset.store));
+// Which redemption platforms (Epic, GOG, Legacy Games, Amazon Luna, etc.) are
+// currently shown for Prime Gaming offers. Rebuilt from the data each load,
+// since which platforms appear varies month to month.
+let selectedRedeemPlatforms = new Set();
 
 // ─── Persistence ─────────────────────────────────────────────────────────────
 
@@ -145,6 +151,16 @@ function getVisibleGames() {
   }
 
   items = items.filter((g) => selectedStores.has(g.store));
+
+  // Redemption-platform filter only applies to Prime Gaming offers, since
+  // that's the only store where the claim platform varies (Epic, GOG,
+  // Legacy Games, Amazon Games App, native Amazon Luna, etc.). Games with
+  // no recorded platform are left visible rather than hidden by default.
+  items = items.filter((g) => {
+    if (g.store !== "prime") return true;
+    if (!g.platforms?.length) return true;
+    return g.platforms.some((p) => selectedRedeemPlatforms.has(p));
+  });
 
   if (status !== "all") {
     if (status === "claimed") {
@@ -287,6 +303,7 @@ async function loadGames() {
       setStatus(`${freeCount} free now, ${upcomingCount} upcoming.`, "ok");
     }
 
+    buildRedeemChips();
     render();
   } catch (err) {
     console.error(err);
@@ -308,6 +325,52 @@ async function loadGames() {
 
 // ─── Actions ──────────────────────────────────────────────────────────────────
 
+// ─── Redeemed-via (Prime Gaming) chips ────────────────────────────────────────
+
+function updateRedeemChipVisibility() {
+  const hasMultiplePlatforms = els.redeemFilter.children.length > 1;
+  els.redeemChipRow.hidden = !hasMultiplePlatforms || !selectedStores.has("prime");
+}
+
+function buildRedeemChips() {
+  const platforms = new Set();
+  for (const g of allGames) {
+    if (g.store === "prime") {
+      for (const p of g.platforms || []) platforms.add(p);
+    }
+  }
+
+  const sorted = [...platforms].sort();
+  els.redeemFilter.innerHTML = "";
+  selectedRedeemPlatforms = new Set(sorted);
+
+  for (const platform of sorted) {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "chip active";
+    chip.dataset.platform = platform;
+    chip.textContent = platform;
+    chip.setAttribute("aria-pressed", "true");
+    chip.addEventListener("click", () => toggleRedeemChip(chip));
+    els.redeemFilter.appendChild(chip);
+  }
+
+  updateRedeemChipVisibility();
+}
+
+function toggleRedeemChip(chip) {
+  const platform = chip.dataset.platform;
+  if (selectedRedeemPlatforms.has(platform)) {
+    selectedRedeemPlatforms.delete(platform);
+    chip.classList.remove("active");
+  } else {
+    selectedRedeemPlatforms.add(platform);
+    chip.classList.add("active");
+  }
+  chip.setAttribute("aria-pressed", selectedRedeemPlatforms.has(platform) ? "true" : "false");
+  render();
+}
+
 function toggleStoreChip(chip) {
   const store = chip.dataset.store;
   if (selectedStores.has(store)) {
@@ -318,6 +381,7 @@ function toggleStoreChip(chip) {
     chip.classList.add("active");
   }
   chip.setAttribute("aria-pressed", selectedStores.has(store) ? "true" : "false");
+  updateRedeemChipVisibility();
   render();
 }
 
