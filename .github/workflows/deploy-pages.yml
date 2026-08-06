@@ -36,3 +36,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          # The default timeout can cancel a deployment moments before
+          # GitHub's backend confirms it succeeded, marking it "Failed to
+          # deploy (completed)" even though the artifact is already live.
+          # Give it more headroom.
+          timeout: 1200000 # 20 minutes, in ms
