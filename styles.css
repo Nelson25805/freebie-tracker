@@ -321,6 +321,63 @@ input {
     color: white;
 }
 
+/* ─── Redeem-platform chip colors (Prime Gaming "redeemed via" row) ──────── */
+
+.chip[data-platform="Epic Games"] {
+    color: #e8e8ea;
+    border-color: rgba(255, 255, 255, 0.28);
+}
+
+.chip[data-platform="Epic Games"].active {
+    background: #050505;
+    border-color: rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+}
+
+.chip[data-platform="GOG"] {
+    color: #c9a6ff;
+    border-color: rgba(133, 67, 226, 0.35);
+}
+
+.chip[data-platform="GOG"].active {
+    background: #8543e2;
+    border-color: rgba(133, 67, 226, 0.85);
+    color: #14081f;
+}
+
+.chip[data-platform="Legacy Games"] {
+    color: #9be89b;
+    border-color: rgba(46, 160, 67, 0.32);
+}
+
+.chip[data-platform="Legacy Games"].active {
+    background: linear-gradient(135deg, #3fae4d, #1f5c2a);
+    border-color: rgba(63, 174, 77, 0.7);
+    color: #eafff0;
+}
+
+.chip[data-platform="Amazon Games App"] {
+    color: #ffb84d;
+    border-color: rgba(255, 153, 0, 0.32);
+}
+
+.chip[data-platform="Amazon Games App"].active {
+    background: linear-gradient(135deg, #f7a325, #232f3e);
+    border-color: rgba(247, 163, 37, 0.7);
+    color: #1a1000;
+}
+
+.chip[data-platform="Amazon Luna"] {
+    color: #7fe9ff;
+    border-color: rgba(0, 206, 255, 0.32);
+}
+
+.chip[data-platform="Amazon Luna"].active {
+    background: linear-gradient(135deg, #00ceff, #075169);
+    border-color: rgba(0, 206, 255, 0.7);
+    color: #04262b;
+}
+
 .check-wrap {
     gap: 8px;
     user-select: none;
