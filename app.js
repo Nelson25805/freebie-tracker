@@ -127,7 +127,18 @@ function storeLabel(store) {
     return { label: "Prime", cls: "store-prime" };
   }
 
+  if (store === "steam") {
+    return { label: "Steam", cls: "store-steam" };
+  }
+
   return { label: store, cls: "" };
+}
+
+// Base (count-free) label for each store filter chip, keyed by chip's
+// data-store value. Falls back to storeLabel()'s label for anything not
+// listed here, so new stores don't need to be added in two places.
+function storeChipBaseLabel(store) {
+  return storeLabel(store).label;
 }
 
 // ─── Filtering & sorting ──────────────────────────────────────────────────────
@@ -136,11 +147,15 @@ function gameKey(game) {
   return game.id || game.slug || game.title;
 }
 
-function getVisibleGames() {
+// Applies every filter (search, status, hide-collected, redeem platform) and
+// optionally the store chip filter. Pulled out from getVisibleGames() so the
+// store chip counts can reuse the exact same logic while skipping only the
+// store filter itself — that way each chip's count reflects "how many games
+// would show up if I picked this store," given the other filters in place.
+function getFilteredGames({ skipStoreFilter = false } = {}) {
   const q = els.searchInput.value.trim().toLowerCase();
   const status = els.statusFilter.value;
   const hideClaimed = els.hideClaimed.checked;
-  const sort = els.sortFilter.value;
 
   let items = [...allGames];
 
@@ -150,7 +165,9 @@ function getVisibleGames() {
     );
   }
 
-  items = items.filter((g) => selectedStores.has(g.store));
+  if (!skipStoreFilter) {
+    items = items.filter((g) => selectedStores.has(g.store));
+  }
 
   // Redemption-platform filter only applies to Prime Gaming offers, since
   // that's the only store where the claim platform varies (Epic, GOG,
@@ -174,6 +191,13 @@ function getVisibleGames() {
     items = items.filter((g) => !collected.has(gameKey(g)));
   }
 
+  return items;
+}
+
+function getVisibleGames() {
+  const sort = els.sortFilter.value;
+  const items = getFilteredGames();
+
   items.sort((a, b) => {
     if (sort === "title") return a.title.localeCompare(b.title);
 
@@ -192,6 +216,27 @@ function getVisibleGames() {
   return items;
 }
 
+// Counts, per store, how many games would be visible if that store's chip
+// were the only thing added back into the current filter set (search,
+// status, hide-collected, redeem platform all still apply). Used to label
+// chips like "Epic (3)".
+function getStoreCounts() {
+  const counts = Object.create(null);
+  for (const g of getFilteredGames({ skipStoreFilter: true })) {
+    counts[g.store] = (counts[g.store] || 0) + 1;
+  }
+  return counts;
+}
+
+function updateStoreChipCounts() {
+  const counts = getStoreCounts();
+  for (const chip of els.storeChips) {
+    const store = chip.dataset.store;
+    const count = counts[store] || 0;
+    chip.textContent = `${storeChipBaseLabel(store)} (${count})`;
+  }
+}
+
 // ─── Rendering ────────────────────────────────────────────────────────────────
 
 function cardStatusBadge(game) {
@@ -205,6 +250,7 @@ function render() {
   const visible = getVisibleGames();
   els.grid.innerHTML = "";
   els.emptyState.hidden = visible.length !== 0;
+  updateStoreChipCounts();
 
   for (const game of visible) {
     const key = gameKey(game);
