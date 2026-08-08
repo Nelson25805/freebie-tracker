@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-08T14:38:44.096Z",
+  "fetchedAt": "2026-08-08T20:40:09.472Z",
   "totalFree": 36,
   "totalUpcoming": 5,
   "games": [
@@ -293,25 +293,6 @@
       ]
     },
     {
-      "id": "prime-regular-factory-escape-room",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Regular Factory: Escape Room",
-      "slug": "regular-factory-escape-room",
-      "storeUrl": "https://luna.amazon.com/claims/regular-factory-escape-room-gog/dp/amzn1.pg.item.1b071387-e61c-48a3-bcdf-f3086b8d18ba?g=s&ingress=amzn&ref_=SM_RegularFactoryEscapeRoom_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You don't work in a regular assembly line. Will you unravel the truth?Regular Factory is an escape room that will test your skills. Solve puzzles, decode secret codes, find hidden objects, and investigate the different rooms of the secret factory where you work while you discover the dark truth.Characteristics:Solve puzzles based on logic.Explore different rooms. Find clues and hidden objects.Discover more about the true purpose of the factory where you work.Enjoy the mysterious and atmospheric setting.",
-      "image": "https://m.media-amazon.com/images/I/A1nIOOCWEiL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
       "id": "prime-still-there",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -426,6 +407,25 @@
       ]
     },
     {
+      "id": "prime-lethal-honor-order-of-the-apocalypse",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Lethal Honor - Order of the Apocalypse",
+      "slug": "lethal-honor-order-of-the-apocalypse",
+      "storeUrl": "https://luna.amazon.com/claims/lethal-honor-order-of-the-apocalypse-epic/dp/amzn1.pg.item.f610100a-1240-41f8-84dd-767c2df675b4?g=s&ingress=amzn&ref_=SM_LethalHonorOrderoftheApocalypse_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "This brutal, obscure, and punishing action-adventure roguelite is set in a shady and beset post-apocalyptic world. Play relentless isometric close-quarter battles with an art style reminiscent of the 1980s dark age of adult superhero graphic novels.Lethal Honor - Order of the Apocalypse is a challenging hack 'n' slash game, featuring eldritch creatures, fast-paced melee combat, and powerful abilities. Become part of a secret organization that investigates the paranormal and fights for the survival of humanity.Prepare to discover the truth!Hand-drawn comic panels are seamlessly integrated into the gameplay to fully immerse you in a dark story full of mystery and intrigue. With every run and every death, you uncover more of the dangers of Wolf Island and the secrets that lie within.Intense, fast-paced combat will test your skills!Attacking relentlessly will only lead to your early demise. Find your own style by combining unique abilities, artifacts, and enchantments into powerful combinations. Fight difficult bosses and show your superiority.Experience the mysteries!Discover the disturbing secrets of Lethal Honor. Alternate between Lost Agents and Key Agents, who follow their own story as you discover what is happening on the island.Brutal and punishing hack 'n' slash roguelite gameplayGritty, hand-drawn, dark age graphic novel art style combined with 3D scenariosSeveral different biomes and playable key characters with their own storylines, abilities, and playstylesUnveil a mature, dark, and complex story seamlessly integrated into procedurally generated runs",
+      "image": "https://m.media-amazon.com/images/I/B1jmbBIZMCL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
       "id": "prime-use-phonesas-controllers",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -490,7 +490,7 @@
       "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Discover the feeling of living at Hogwarts as you make allies, battle Dark Wizards and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -528,7 +528,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09RYKCKQ8?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The eighth installment of the beloved Jackbox Party Pack franchise is here! Five hilarious new games will energize your next game night, holiday party, happy hour, or video call.No extra controllers needed – players use their phones or tablets to play along! Got a bigger group? Play with up to 10 players and up to 10,000 audience members.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1Pwa6Ij--L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -642,7 +642,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0GFVWKZT8?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Prepare to live a thousand lives in The Game of Life 2, the award-winning official sequel to the classic board game played by millions around the world. Gather your friends and family and dive into a bright, fun 3D world bursting with adventure!The Game of Life 2 on Luna comes with all content unlocked from the start! Click play and get: 11 worlds, with unique visuals on each board66 x outfits unlocked66 x avatars unlocked44 x vehicles unlocked 3 x peg coloursSpin the iconic spinner and set off on your life journey. You’ll be presented with decisions at every turn, altering your life path. Will you go to college immediately or drive straight into a career? Will you get married or stay single? Have kids or adopt a pet? Buy a house? Make a career change? It’s up to you! Earn points for choices that bring you Knowledge, Wealth and Happiness. Win rich, maximise your Knowledge or Happiness, or go for a healthy mix of all three and come out on top!HOW TO PLAY THE GAME OF LIFE 2:When it’s your turn, spin the spinner to travel along your life path.Depending on the space you land on, you’ll experience different life events and choices, such as buying a house, collecting your salary, or drawing an Action card! At crossroads, you’ll have to make big life decisions, so choose wisely!Your turn ends; it’s the next player’s chance to spin the spinner!FEATURESCUSTOMISE YOUR CHARACTER – Choose between the pink, blue or the purple peg. Select an outfit and make your peg your own. Browse a selection of cars, bikes and scooters and find a ride to suit your style. NEW WORLDS – Live life in enchanted worlds! Every world features thematic outfits, vehicles, jobs, properties and more! LOCAL LEADERBOARDS – Keep score with your family and friends and see who is the ultimate Game of Life 2 player in the house! IN-GAME REACTIONS – Exclusive to the Luna version, use reaction buttons to let everyone know how you’re feeling during the game!Live every life you’ve ever dreamed of in The Game of Life 2 – play today!",
       "image": "https://m.media-amazon.com/images/I/B1ZqIrQF0pL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
