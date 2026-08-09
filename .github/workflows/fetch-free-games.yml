@@ -50,6 +50,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to games data, skipping commit."
           else
-            git commit -m "chore: refresh free games data [skip ci]"
+            git commit -m "chore: refresh free games data"
             git push
           fi
