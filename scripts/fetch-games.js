@@ -937,190 +937,111 @@ async function fetchPrimeGaming() {
 }
 
 // ─── Steam ─────────────────────────────────────────────────────────────────────
-const STEAMDB_FREE_URL = "https://steamdb.info/upcoming/free/";
+//
+// SteamDB sits behind Cloudflare bot-management specifically to stop
+// scraping like this (confirmed by the "Just a moment..." challenge page
+// showing up in the Actions log even after UA/webdriver spoofing). Rather
+// than chase an arms race against that, we use Valve's own unauthenticated
+// storefront API, which needs no browser at all and isn't gated.
+//
+// featuredcategories' "specials" list is Steam's current discounted-items
+// feed. A discount_percent of 100 means the game is fully free to add to
+// your library right now — the direct equivalent of what we were trying to
+// scrape off SteamDB. (This does NOT catch temporary "Free Weekend" access
+// promos, which don't change the listed price — only genuine free-to-keep
+// giveaways.)
+
+const STEAM_FEATURED_URL =
+  "https://store.steampowered.com/api/featuredcategories?cc=us&l=english";
 const STEAM_API = "https://store.steampowered.com/api/appdetails?appids=";
 
 async function fetchSteam() {
-  console.log("Fetching Steam promotions...");
+  console.log("Fetching Steam promotions via the official Steam Store API…");
 
-  let browser;
   try {
-    browser = await chromium.launch({
-      headless: true,
-      // SteamDB sits behind Cloudflare bot-management, which flags the
-      // "AutomationControlled" blink feature that headless Chromium exposes
-      // by default. Disabling it, along with the UA/webdriver spoofing below,
-      // is what actually gets us the real page instead of an empty shell.
-      args: ["--disable-blink-features=AutomationControlled"],
+    const res = await fetch(STEAM_FEATURED_URL, {
+      headers: { "User-Agent": "freebie-tracker/1.0 (github-actions)" },
     });
 
-    const page = await browser.newPage({
-      // A generic Playwright UA self-identifies as "HeadlessChrome", which
-      // is one of the simplest bot signals a site can check for. Match the
-      // real Chrome UA we already use for GOG/Prime instead.
-      userAgent:
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-      viewport: { width: 1280, height: 900 },
-      extraHTTPHeaders: {
-        "Accept-Language": "en-US,en;q=0.9",
-      },
-    });
+    if (!res.ok) throw new Error(`Steam featuredcategories HTTP ${res.status}`);
 
-    // navigator.webdriver === true is the other classic automation tell.
-    // Cloudflare's bot checks look for this before deciding whether to
-    // serve the real page or a stripped-down one.
-    await page.addInitScript(() => {
-      Object.defineProperty(navigator, "webdriver", { get: () => undefined });
-    });
+    const data = await res.json();
+    const specialItems = data?.specials?.items || [];
 
-    await page.goto(STEAMDB_FREE_URL, {
-      waitUntil: "domcontentloaded",
-      timeout: 60000,
-    });
-
-    console.log("Title:", await page.title());
-
-    // Wait for the actual promo cards rather than trusting "networkidle" —
-    // if the page is gated behind a bot check or slow client-side render,
-    // networkidle can settle before any real content ever shows up, which
-    // is exactly what was happening (0 cards, no error, HeadlessChrome UA).
-    let selectorFound = true;
-    try {
-      await page.waitForSelector("div.panel-sale.app-history-row.app", {
-        timeout: 20000,
-      });
-    } catch {
-      selectorFound = false;
-      console.warn(
-        "  No SteamDB promo cards appeared within timeout — likely still blocked, or the page structure changed."
-      );
-    }
-
-    const html = await page.content();
-
-    console.log("Contains panel-sale:", html.includes("panel-sale"));
-    console.log("Contains data-appid:", html.includes("data-appid"));
-    console.log("Contains Tell Me Why:", html.includes("Tell Me Why"));
-    console.log("First 500 chars:");
-    console.log(html.substring(0, 500));
-
-    // Always take a screenshot on failure so a future run's Actions log has
-    // something to inspect (e.g. a Cloudflare challenge page vs. a
-    // genuinely empty promo list). Upload it as a workflow artifact
-    // (actions/upload-artifact) if this keeps happening so it's viewable
-    // without SSH-ing into the runner.
-    if (!selectorFound) {
-      await page.screenshot({
-        path: "steamdb-debug.png",
-        fullPage: true,
-      });
-      console.log("  → 0 Steam promotion(s) found");
-      return [];
-    }
-
-    const promos = await page.$$eval(
-      "div.panel-sale.app-history-row.app",
-
-      cards =>
-        cards.map(card => ({
-          appid: card.dataset.appid,
-
-          title:
-            card.querySelector(".panel-sale-name b")
-              ?.textContent
-              ?.trim(),
-
-          image:
-            card.querySelector("img.sale-image")
-              ?.src,
-
-          storeUrl:
-            card.querySelector(
-              'a[href*="store.steampowered.com/app/"]'
-            )?.href,
-
-          start:
-            card.querySelectorAll("relative-time")[0]
-              ?.getAttribute("datetime"),
-
-          end:
-            card.querySelectorAll("relative-time")[1]
-              ?.getAttribute("datetime")
-        }))
+    const freeItems = specialItems.filter(
+      (item) => item.discount_percent === 100 && item.final_price === 0
     );
 
-    console.log(`  Found ${promos.length} SteamDB card(s)`);
-    console.log(promos);
+    console.log(
+      `  Found ${specialItems.length} item(s) in Specials, ${freeItems.length} fully free`
+    );
 
     const games = [];
 
-    for (const promo of promos) {
-      if (!promo.appid) continue;
-
+    for (const item of freeItems) {
       try {
-        const res = await fetch(`${STEAM_API}${promo.appid}`, {
-          headers: {
-            "User-Agent": "freebie-tracker/1.0 (github-actions)"
-          }
+        const detailRes = await fetch(`${STEAM_API}${item.id}`, {
+          headers: { "User-Agent": "freebie-tracker/1.0 (github-actions)" },
         });
 
-        if (!res.ok) {
-          console.warn(`  Steam API HTTP ${res.status} for ${promo.title}`);
+        if (!detailRes.ok) {
+          console.warn(`  Steam API HTTP ${detailRes.status} for ${item.name}`);
           continue;
         }
 
-        const json = await res.json();
-        const app = json[promo.appid];
+        const json = await detailRes.json();
+        const app = json[item.id];
 
         if (!app?.success || !app.data) {
-          console.warn(`  Steam API returned no data for ${promo.title}`);
+          console.warn(`  Steam API returned no data for ${item.name}`);
           continue;
         }
 
-        const data = app.data;
+        const detail = app.data;
 
         games.push({
-          id: `steam-${promo.appid}`,
+          id: `steam-${item.id}`,
           store: "steam",
           storeName: "Steam",
-          title: data.name || promo.title,
-          slug: promo.appid,
-          storeUrl:
-            promo.storeUrl ||
-            `https://store.steampowered.com/app/${promo.appid}/`,
+          title: detail.name || item.name,
+          slug: String(item.id),
+          storeUrl: `https://store.steampowered.com/app/${item.id}/`,
           seller:
-            data.developers?.join(", ") ||
-            data.publishers?.join(", ") ||
+            detail.developers?.join(", ") ||
+            detail.publishers?.join(", ") ||
             "Steam",
-          description: data.short_description || "",
-          image: data.header_image || promo.image || "",
-          originalPrice:
-            data.price_overview?.initial ?? null,
+          description: detail.short_description || "",
+          image:
+            detail.header_image ||
+            item.large_capsule_image ||
+            item.small_capsule_image ||
+            "",
+          originalPrice: item.original_price ?? detail.price_overview?.initial ?? null,
           discountPrice: 0,
           status: "free",
-          offerStart: promo.start || null,
-          offerEnd: promo.end || null,
+          offerStart: null,
+          // Steam includes a discount_expiration unix timestamp (seconds)
+          // on time-limited specials when one applies; not every free item
+          // has one (e.g. permanently free-to-keep re-releases).
+          offerEnd: item.discount_expiration
+            ? new Date(item.discount_expiration * 1000).toISOString()
+            : null,
           platforms: [
-            ...(data.platforms?.windows ? ["Windows"] : []),
-            ...(data.platforms?.mac ? ["macOS"] : []),
-            ...(data.platforms?.linux ? ["Linux"] : [])
-          ]
+            ...(detail.platforms?.windows ? ["Windows"] : []),
+            ...(detail.platforms?.mac ? ["macOS"] : []),
+            ...(detail.platforms?.linux ? ["Linux"] : []),
+          ],
         });
       } catch (err) {
-        console.warn(`  Steam fetch failed for ${promo.title}:`, err.message);
+        console.warn(`  Steam detail fetch failed for ${item.name}:`, err.message);
       }
     }
 
     console.log(`  → ${games.length} Steam promotion(s) found`);
-
     return games;
   } catch (err) {
     console.warn("  Steam fetch failed:", err.message);
     return [];
-  } finally {
-    if (browser) {
-      await browser.close();
-    }
   }
 }
 
