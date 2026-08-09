@@ -152,7 +152,7 @@ function gameKey(game) {
 // store chip counts can reuse the exact same logic while skipping only the
 // store filter itself — that way each chip's count reflects "how many games
 // would show up if I picked this store," given the other filters in place.
-function getFilteredGames({ skipStoreFilter = false } = {}) {
+function getFilteredGames({ skipStoreFilter = false, skipRedeemFilter = false } = {}) {
   const q = els.searchInput.value.trim().toLowerCase();
   const status = els.statusFilter.value;
   const hideClaimed = els.hideClaimed.checked;
@@ -173,11 +173,13 @@ function getFilteredGames({ skipStoreFilter = false } = {}) {
   // that's the only store where the claim platform varies (Epic, GOG,
   // Legacy Games, Amazon Games App, native Amazon Luna, etc.). Games with
   // no recorded platform are left visible rather than hidden by default.
-  items = items.filter((g) => {
-    if (g.store !== "prime") return true;
-    if (!g.platforms?.length) return true;
-    return g.platforms.some((p) => selectedRedeemPlatforms.has(p));
-  });
+  if (!skipRedeemFilter) {
+    items = items.filter((g) => {
+      if (g.store !== "prime") return true;
+      if (!g.platforms?.length) return true;
+      return g.platforms.some((p) => selectedRedeemPlatforms.has(p));
+    });
+  }
 
   if (status !== "all") {
     if (status === "claimed") {
@@ -237,6 +239,31 @@ function updateStoreChipCounts() {
   }
 }
 
+// Counts, per redemption platform, how many Prime Gaming games would be
+// visible if that platform's chip were the only thing added back into the
+// current filter set (search, status, hide-collected, and the store chips
+// all still apply — only the redeem-platform filter itself is skipped).
+// Used to label chips like "GOG (2)".
+function getRedeemPlatformCounts() {
+  const counts = Object.create(null);
+  for (const g of getFilteredGames({ skipRedeemFilter: true })) {
+    if (g.store !== "prime") continue;
+    for (const p of g.platforms || []) {
+      counts[p] = (counts[p] || 0) + 1;
+    }
+  }
+  return counts;
+}
+
+function updateRedeemChipCounts() {
+  const counts = getRedeemPlatformCounts();
+  for (const chip of els.redeemFilter.querySelectorAll(".chip")) {
+    const platform = chip.dataset.platform;
+    const count = counts[platform] || 0;
+    chip.textContent = `${platform} (${count})`;
+  }
+}
+
 // ─── Rendering ────────────────────────────────────────────────────────────────
 
 function cardStatusBadge(game) {
@@ -251,6 +278,7 @@ function render() {
   els.grid.innerHTML = "";
   els.emptyState.hidden = visible.length !== 0;
   updateStoreChipCounts();
+  updateRedeemChipCounts();
 
   for (const game of visible) {
     const key = gameKey(game);
