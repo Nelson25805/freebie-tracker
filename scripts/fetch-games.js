@@ -940,102 +940,83 @@ async function fetchPrimeGaming() {
 //
 // SteamDB sits behind Cloudflare bot-management specifically to stop
 // scraping like this (confirmed by the "Just a moment..." challenge page
-// showing up in the Actions log even after UA/webdriver spoofing). Rather
-// than chase an arms race against that, we use Valve's own unauthenticated
-// storefront API, which needs no browser at all and isn't gated.
+// showing up in a prior Actions run even after UA/webdriver spoofing).
 //
-// featuredcategories' "specials" list is Steam's current discounted-items
-// feed. A discount_percent of 100 means the game is fully free to add to
-// your library right now — the direct equivalent of what we were trying to
-// scrape off SteamDB. (This does NOT catch temporary "Free Weekend" access
-// promos, which don't change the listed price — only genuine free-to-keep
-// giveaways.)
+// Valve's own featuredcategories endpoint was tried next, but its "specials"
+// list is a curated "top deals" feed, not a complete list of every
+// discounted app — small free-to-keep promos (e.g. Breathedge, Moonlighter)
+// never make that curated cut even though the store page itself is priced
+// at $0. That endpoint returned 0 matches while real free-to-keep games
+// were live, confirming the gap.
+//
+// GamerPower (gamerpower.com) is a small, free, purpose-built API that
+// tracks exactly this — live giveaways across Steam/Epic/GOG/etc — without
+// scraping or a browser. Using it here instead of trying to reverse-engineer
+// Steam's internal (undocumented, frequently-changed) search HTML.
+const GAMERPOWER_URL =
+  "https://www.gamerpower.com/api/giveaways?platform=steam&type=game";
 
-const STEAM_FEATURED_URL =
-  "https://store.steampowered.com/api/featuredcategories?cc=us&l=english";
-const STEAM_API = "https://store.steampowered.com/api/appdetails?appids=";
+function parseWorthToCents(worth) {
+  if (!worth) return null;
+  const match = String(worth).match(/[\d.]+/);
+  if (!match) return null;
+  return Math.round(parseFloat(match[0]) * 100);
+}
 
 async function fetchSteam() {
-  console.log("Fetching Steam promotions via the official Steam Store API…");
+  console.log("Fetching Steam free-to-keep promotions via GamerPower…");
 
   try {
-    const res = await fetch(STEAM_FEATURED_URL, {
+    const res = await fetch(GAMERPOWER_URL, {
       headers: { "User-Agent": "freebie-tracker/1.0 (github-actions)" },
     });
 
-    if (!res.ok) throw new Error(`Steam featuredcategories HTTP ${res.status}`);
+    if (!res.ok) throw new Error(`GamerPower HTTP ${res.status}`);
 
-    const data = await res.json();
-    const specialItems = data?.specials?.items || [];
+    const body = await res.json();
 
-    const freeItems = specialItems.filter(
-      (item) => item.discount_percent === 100 && item.final_price === 0
-    );
+    // Docs and third-party mirrors disagree on whether this is a bare array
+    // or wrapped as { giveaways: [...] } — accept either so a format change
+    // doesn't silently zero us out.
+    const items = Array.isArray(body) ? body : Array.isArray(body?.giveaways) ? body.giveaways : null;
 
-    console.log(
-      `  Found ${specialItems.length} item(s) in Specials, ${freeItems.length} fully free`
-    );
-
-    const games = [];
-
-    for (const item of freeItems) {
-      try {
-        const detailRes = await fetch(`${STEAM_API}${item.id}`, {
-          headers: { "User-Agent": "freebie-tracker/1.0 (github-actions)" },
-        });
-
-        if (!detailRes.ok) {
-          console.warn(`  Steam API HTTP ${detailRes.status} for ${item.name}`);
-          continue;
-        }
-
-        const json = await detailRes.json();
-        const app = json[item.id];
-
-        if (!app?.success || !app.data) {
-          console.warn(`  Steam API returned no data for ${item.name}`);
-          continue;
-        }
-
-        const detail = app.data;
-
-        games.push({
-          id: `steam-${item.id}`,
-          store: "steam",
-          storeName: "Steam",
-          title: detail.name || item.name,
-          slug: String(item.id),
-          storeUrl: `https://store.steampowered.com/app/${item.id}/`,
-          seller:
-            detail.developers?.join(", ") ||
-            detail.publishers?.join(", ") ||
-            "Steam",
-          description: detail.short_description || "",
-          image:
-            detail.header_image ||
-            item.large_capsule_image ||
-            item.small_capsule_image ||
-            "",
-          originalPrice: item.original_price ?? detail.price_overview?.initial ?? null,
-          discountPrice: 0,
-          status: "free",
-          offerStart: null,
-          // Steam includes a discount_expiration unix timestamp (seconds)
-          // on time-limited specials when one applies; not every free item
-          // has one (e.g. permanently free-to-keep re-releases).
-          offerEnd: item.discount_expiration
-            ? new Date(item.discount_expiration * 1000).toISOString()
-            : null,
-          platforms: [
-            ...(detail.platforms?.windows ? ["Windows"] : []),
-            ...(detail.platforms?.mac ? ["macOS"] : []),
-            ...(detail.platforms?.linux ? ["Linux"] : []),
-          ],
-        });
-      } catch (err) {
-        console.warn(`  Steam detail fetch failed for ${item.name}:`, err.message);
-      }
+    if (!items) {
+      console.warn(
+        "  GamerPower response wasn't an array (or {giveaways:[...]}) — response shape may have changed."
+      );
+      console.log("  Raw response sample:", JSON.stringify(body).slice(0, 500));
+      return [];
     }
+
+    console.log(`  Found ${items.length} Steam giveaway(s) from GamerPower`);
+    if (items[0]) {
+      // Sample one item so a field-name mismatch is obvious in the log
+      // rather than silently producing blank titles/images/links.
+      console.log("  Sample item:", JSON.stringify(items[0]).slice(0, 800));
+    }
+
+    const games = items.map((item) => ({
+      id: `steam-${item.id}`,
+      store: "steam",
+      storeName: "Steam",
+      title: item.title || "Untitled",
+      slug: String(item.id),
+      storeUrl: item.open_giveaway_url || item.gamerpower_url || "https://store.steampowered.com",
+      seller: "Steam",
+      description: item.description || "",
+      image: item.image || item.thumbnail || "",
+      originalPrice: parseWorthToCents(item.worth),
+      discountPrice: 0,
+      status: "free",
+      offerStart: item.published_date
+        ? new Date(item.published_date).toISOString()
+        : null,
+      offerEnd:
+        item.end_date && item.end_date !== "N/A"
+          ? new Date(item.end_date).toISOString()
+          : null,
+      platforms: ["PC"],
+    }));
 
     console.log(`  → ${games.length} Steam promotion(s) found`);
     return games;
