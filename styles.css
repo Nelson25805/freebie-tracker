@@ -418,6 +418,49 @@ input {
     gap: 14px;
 }
 
+/* ─── Free Now / Upcoming sections ───────────────────────────────────────── */
+
+.games-section {
+    margin-top: 22px;
+}
+
+.games-section:first-of-type {
+    margin-top: 8px;
+}
+
+.games-section-head {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+}
+
+.games-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 1.08rem;
+    letter-spacing: 0.01em;
+}
+
+.games-section-dot {
+    margin: 0;
+}
+
+.count-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
 .game {
     display: flex;
     flex-direction: column;

@@ -5,8 +5,12 @@ const DATA_URL = "./data/games.json";
 const STORAGE_KEY = "fgt_collected_v2";
 
 const els = {
-  grid: document.getElementById("gamesGrid"),
-  emptyState: document.getElementById("emptyState"),
+  freeGrid: document.getElementById("freeGrid"),
+  freeEmptyState: document.getElementById("freeEmptyState"),
+  freeSectionCount: document.getElementById("freeSectionCount"),
+  upcomingGrid: document.getElementById("upcomingGrid"),
+  upcomingEmptyState: document.getElementById("upcomingEmptyState"),
+  upcomingSectionCount: document.getElementById("upcomingSectionCount"),
   searchInput: document.getElementById("searchInput"),
   storeFilter: document.getElementById("storeFilter"),
   storeChips: Array.from(document.getElementById("storeFilter").querySelectorAll(".chip")),
@@ -273,24 +277,17 @@ function cardStatusBadge(game) {
   return { label: "Upcoming", cls: "upcoming" };
 }
 
-function render() {
-  const visible = getVisibleGames();
-  els.grid.innerHTML = "";
-  els.emptyState.hidden = visible.length !== 0;
-  updateStoreChipCounts();
-  updateRedeemChipCounts();
+function buildGameCard(game) {
+  const key = gameKey(game);
+  const badge = cardStatusBadge(game);
+  const endDateStr = game.offerEnd ? fmtEndDate(game.offerEnd) : null;
+  const store = storeLabel(game.store);
+  const originalFmt = game.originalPrice ? formatMoney(game.originalPrice) : null;
 
-  for (const game of visible) {
-    const key = gameKey(game);
-    const badge = cardStatusBadge(game);
-    const endDateStr = game.offerEnd ? fmtEndDate(game.offerEnd) : null;
-    const store = storeLabel(game.store);
-    const originalFmt = game.originalPrice ? formatMoney(game.originalPrice) : null;
+  const card = document.createElement("article");
+  card.className = "card game";
 
-    const card = document.createElement("article");
-    card.className = "card game";
-
-    card.innerHTML = `
+  card.innerHTML = `
       <div class="cover">
         ${game.image ? `<img src="${escapeHtml(game.image)}" alt="${escapeHtml(game.title)} cover" loading="lazy">` : ""}
         <div class="badge ${badge.cls}">${badge.label}</div>
@@ -310,31 +307,55 @@ function render() {
         </div>
         <div class="desc-wrap">
           <p class="meta desc-text" data-full="${escapeHtml(game.description || "")}">${game.description
-        ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
-        : "No description available."
-      }</p>${game.description && game.description.length > 160
-        ? `<button class="btn-expand" data-action="expand-desc" aria-expanded="false">Read more</button>`
-        : ""
-      }
+      ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
+      : "No description available."
+    }</p>${game.description && game.description.length > 160
+      ? `<button class="btn-expand" data-action="expand-desc" aria-expanded="false">Read more</button>`
+      : ""
+    }
         </div>
         <div class="actions">
           <button class="btn ${collected.has(key) ? "btn-danger" : "btn-ok"}" data-action="toggle-claimed" data-key="${escapeHtml(key)}">
             ${collected.has(key) ? "Unmark collected" : "Mark collected"}
           </button>
           ${game.storeUrl
-        ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>`
-        : ""
-      }
+      ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>`
+      : ""
+    }
           ${game.sourcePost
-        ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(game.sourcePost)}">PS Blog post</a>`
-        : ""
-      }
+      ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(game.sourcePost)}">PS Blog post</a>`
+      : ""
+    }
         </div>
       </div>
     `;
 
-    els.grid.appendChild(card);
+  return card;
+}
+
+// Renders one section's grid (Free Now or Upcoming) given its already
+// status-filtered list of games, toggling that section's empty state.
+function renderSection(grid, emptyState, games) {
+  grid.innerHTML = "";
+  emptyState.hidden = games.length !== 0;
+  for (const game of games) {
+    grid.appendChild(buildGameCard(game));
   }
+}
+
+function render() {
+  const visible = getVisibleGames();
+  const freeGames = visible.filter((g) => g.status === "free");
+  const upcomingGames = visible.filter((g) => g.status === "upcoming");
+
+  renderSection(els.freeGrid, els.freeEmptyState, freeGames);
+  renderSection(els.upcomingGrid, els.upcomingEmptyState, upcomingGames);
+
+  els.freeSectionCount.textContent = String(freeGames.length);
+  els.upcomingSectionCount.textContent = String(upcomingGames.length);
+
+  updateStoreChipCounts();
+  updateRedeemChipCounts();
 }
 
 // ─── Data loading ─────────────────────────────────────────────────────────────
@@ -385,13 +406,17 @@ async function loadGames() {
       "Could not load game data. Make sure data/games.json exists in the repo.",
       "err"
     );
-    els.grid.innerHTML = `
+    const errorHtml = `
       <div class="empty">
         Game data could not be loaded.<br>
         If you just set up the repo, go to <strong>Actions</strong> on GitHub and run
         <em>Fetch Free Games Data</em> manually to generate <code>data/games.json</code>.
       </div>
     `;
+    els.freeGrid.innerHTML = errorHtml;
+    els.freeEmptyState.hidden = true;
+    els.upcomingGrid.innerHTML = "";
+    els.upcomingEmptyState.hidden = true;
   } finally {
     els.refreshBtn.disabled = false;
   }

@@ -93,8 +93,6 @@
 
         <select class="select" id="statusFilter" aria-label="Filter by status">
           <option value="all">All statuses</option>
-          <option value="free">Current free</option>
-          <option value="upcoming">Upcoming</option>
           <option value="claimed">Already collected</option>
         </select>
 
@@ -122,8 +120,29 @@
         <div class="section-note" id="lastUpdated">Last updated: not loaded yet</div>
       </div>
 
-      <div class="grid" id="gamesGrid" aria-live="polite"></div>
-      <div class="empty" id="emptyState" hidden>No games match your filters right now.</div>
+      <div class="games-section">
+        <div class="games-section-head">
+          <h3 class="games-section-title">
+            <span class="dot ok games-section-dot"></span>
+            Free Now
+            <span class="count-pill" id="freeSectionCount">0</span>
+          </h3>
+        </div>
+        <div class="grid" id="freeGrid" aria-live="polite"></div>
+        <div class="empty" id="freeEmptyState" hidden>No free games match your filters right now.</div>
+      </div>
+
+      <div class="games-section">
+        <div class="games-section-head">
+          <h3 class="games-section-title">
+            <span class="dot busy games-section-dot"></span>
+            Upcoming
+            <span class="count-pill" id="upcomingSectionCount">0</span>
+          </h3>
+        </div>
+        <div class="grid" id="upcomingGrid" aria-live="polite"></div>
+        <div class="empty" id="upcomingEmptyState" hidden>No upcoming games match your filters right now.</div>
+      </div>
     </section>
 
     <p class="footer">
