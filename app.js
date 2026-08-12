@@ -5,6 +5,10 @@ const DATA_URL = "./data/games.json";
 const STORAGE_KEY = "fgt_collected_v2";
 
 const els = {
+  freeTab: document.getElementById("freeTab"),
+  upcomingTab: document.getElementById("upcomingTab"),
+  freePanel: document.getElementById("freePanel"),
+  upcomingPanel: document.getElementById("upcomingPanel"),
   freeGrid: document.getElementById("freeGrid"),
   freeEmptyState: document.getElementById("freeEmptyState"),
   freeSectionCount: document.getElementById("freeSectionCount"),
@@ -32,6 +36,7 @@ const els = {
 
 let allGames = [];
 let collected = loadCollected();
+let activeGamesTab = "free"; // "free" | "upcoming"
 let selectedStores = new Set(els.storeChips.map((chip) => chip.dataset.store));
 // Which redemption platforms (Epic, GOG, Legacy Games, Amazon Luna, etc.) are
 // currently shown for Prime Gaming offers. Rebuilt from the data each load,
@@ -343,6 +348,21 @@ function renderSection(grid, emptyState, games) {
   }
 }
 
+// Shows the panel/grid for the selected tab and hides the other one.
+// Only toggles visibility — both grids stay populated by render() so
+// switching tabs is instant and doesn't require re-filtering.
+function setActiveGamesTab(tab) {
+  activeGamesTab = tab;
+
+  els.freeTab.classList.toggle("active", tab === "free");
+  els.freeTab.setAttribute("aria-selected", tab === "free" ? "true" : "false");
+  els.freePanel.hidden = tab !== "free";
+
+  els.upcomingTab.classList.toggle("active", tab === "upcoming");
+  els.upcomingTab.setAttribute("aria-selected", tab === "upcoming" ? "true" : "false");
+  els.upcomingPanel.hidden = tab !== "upcoming";
+}
+
 function render() {
   const visible = getVisibleGames();
   const freeGames = visible.filter((g) => g.status === "free");
@@ -492,7 +512,8 @@ function toggleCollected(key) {
 }
 
 function markVisibleAsCollected() {
-  for (const game of getVisibleGames()) {
+  const visible = getVisibleGames().filter((g) => g.status === activeGamesTab);
+  for (const game of visible) {
     collected.add(gameKey(game));
   }
   saveCollected();
@@ -545,6 +566,9 @@ els.storeChips.forEach((chip) => {
   chip.setAttribute("aria-pressed", "true");
   chip.addEventListener("click", () => toggleStoreChip(chip));
 });
+
+els.freeTab.addEventListener("click", () => setActiveGamesTab("free"));
+els.upcomingTab.addEventListener("click", () => setActiveGamesTab("upcoming"));
 
 els.refreshBtn.addEventListener("click", loadGames);
 els.resetBtn.addEventListener("click", clearCollected);

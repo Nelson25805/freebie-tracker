@@ -418,33 +418,47 @@ input {
     gap: 14px;
 }
 
-/* ─── Free Now / Upcoming sections ───────────────────────────────────────── */
+/* ─── Free Now / Upcoming tabs ───────────────────────────────────────────── */
 
-.games-section {
-    margin-top: 22px;
-}
-
-.games-section:first-of-type {
-    margin-top: 8px;
-}
-
-.games-section-head {
-    margin-bottom: 12px;
-    padding-bottom: 10px;
+.games-tabs {
+    display: flex;
+    gap: 4px;
+    margin: 8px 0 18px;
     border-bottom: 1px solid var(--line);
 }
 
-.games-section-title {
-    display: flex;
+.games-tab {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    padding: 12px 6px;
+    margin: 0 14px -1px 0;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
-    margin: 0;
-    font-size: 1.08rem;
-    letter-spacing: 0.01em;
+    gap: 8px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
 }
 
-.games-section-dot {
+.games-tab:hover {
+    color: var(--text);
+}
+
+.games-tab.active {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+}
+
+.games-tab .games-section-dot {
     margin: 0;
+}
+
+.games-section {
+    margin-top: 0;
 }
 
 .count-pill {
@@ -459,6 +473,12 @@ input {
     color: var(--muted);
     font-size: 0.82rem;
     font-weight: 700;
+}
+
+.games-tab.active .count-pill {
+    background: rgba(139, 92, 246, 0.16);
+    border-color: rgba(139, 92, 246, 0.35);
+    color: var(--text);
 }
 
 .game {
