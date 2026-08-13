@@ -338,6 +338,46 @@ function buildGameCard(game) {
   return card;
 }
 
+// ─── Skeleton loading cards ───────────────────────────────────────────────────
+
+function buildSkeletonCard() {
+  const card = document.createElement("article");
+  card.className = "card game skeleton-card";
+  card.setAttribute("aria-hidden", "true");
+
+  card.innerHTML = `
+      <div class="cover skeleton-block"></div>
+      <div class="content">
+        <div class="title-row">
+          <div class="skeleton-line skeleton-title"></div>
+        </div>
+        <div class="skeleton-line skeleton-meta"></div>
+        <div class="prices">
+          <span class="skeleton-pill"></span>
+          <span class="skeleton-pill"></span>
+        </div>
+        <div class="desc-wrap">
+          <div class="skeleton-line skeleton-desc"></div>
+          <div class="skeleton-line skeleton-desc short"></div>
+        </div>
+        <div class="actions">
+          <span class="skeleton-btn"></span>
+          <span class="skeleton-btn"></span>
+        </div>
+      </div>
+    `;
+
+  return card;
+}
+
+function renderSkeletons(grid, emptyState, count = 6) {
+  grid.innerHTML = "";
+  if (emptyState) emptyState.hidden = true;
+  for (let i = 0; i < count; i++) {
+    grid.appendChild(buildSkeletonCard());
+  }
+}
+
 // Renders one section's grid (Free Now or Upcoming) given its already
 // status-filtered list of games, toggling that section's empty state.
 function renderSection(grid, emptyState, games) {
@@ -383,6 +423,11 @@ function render() {
 async function loadGames() {
   setStatus("Loading game data…", "busy");
   els.refreshBtn.disabled = true;
+
+  // Show placeholder cards immediately so the layout feels populated
+  // while the fetch is in flight, instead of a blank grid + status text.
+  renderSkeletons(els.freeGrid, els.freeEmptyState, 6);
+  renderSkeletons(els.upcomingGrid, els.upcomingEmptyState, 3);
 
   try {
     // Cache-bust so GitHub Pages serves the latest committed file

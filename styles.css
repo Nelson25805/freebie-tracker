@@ -826,3 +826,82 @@ a {
     opacity: 1;
     text-decoration: underline;
 }
+
+/* ─── Skeleton loading cards ─────────────────────────────────────────────── */
+
+.skeleton-card {
+    pointer-events: none;
+}
+
+.skeleton-block,
+.skeleton-line,
+.skeleton-pill,
+.skeleton-btn {
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.06) 25%,
+            rgba(255, 255, 255, 0.15) 37%,
+            rgba(255, 255, 255, 0.06) 63%);
+    background-size: 400% 100%;
+    animation: skeleton-shimmer 1.4s ease infinite;
+    border-radius: 8px;
+}
+
+@keyframes skeleton-shimmer {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.skeleton-card .cover.skeleton-block {
+    border-radius: 0;
+}
+
+.skeleton-line {
+    height: 14px;
+    margin: 6px 0;
+}
+
+.skeleton-title {
+    height: 18px;
+    width: 70%;
+}
+
+.skeleton-meta {
+    width: 45%;
+}
+
+.skeleton-desc {
+    width: 100%;
+}
+
+.skeleton-desc.short {
+    width: 55%;
+}
+
+.skeleton-pill {
+    display: inline-block;
+    height: 28px;
+    width: 90px;
+    border-radius: 999px;
+}
+
+.skeleton-btn {
+    display: inline-block;
+    height: 40px;
+    width: 112px;
+    border-radius: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .skeleton-block,
+    .skeleton-line,
+    .skeleton-pill,
+    .skeleton-btn {
+        animation: none;
+    }
+}
