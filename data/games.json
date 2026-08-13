@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-08-13T15:04:39.259Z",
-  "totalFree": 34,
+  "fetchedAt": "2026-08-13T20:53:34.251Z",
+  "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
     {
@@ -72,7 +72,7 @@
         "PC"
       ],
       "description": "Explore Olathe and unmask its twisted secrets with LISA: The Definitive Edition, including the original narrative-driven RPG LISA: The Painful and its sequel LISA: The Joyful.",
-      "image": "https://cdn1.epicgames.com/offer/ca3a9d16d131478c97fd56c138a6511a/EGS_LISATheDefinitiveEdition_DingalingProductions_Bundles_S1_2560x1440-55b66eb2046507e58eac435c21331bd5",
+      "image": "https://cdn1.epicgames.com/offer/ca3a9d16d131478c97fd56c138a6511a/EGS_LISATheDefinitiveEdition_DingalingProductions_Bundles_S2_1200x1600-4a9b4fc6e06e8aff136c1a3cf18292ae",
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
@@ -196,6 +196,63 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+    },
+    {
+      "id": "prime-hiveswap-friendsim",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Hiveswap Friendsim",
+      "slug": "hiveswap-friendsim",
+      "storeUrl": "https://luna.amazon.com/claims/hiveswap-friendsim-gog/dp/amzn1.pg.item.8e0d3ee4-446f-435e-bfb4-33fe97d25af8?g=s&ingress=amzn&ref_=SM_HiveswapFriendsim_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You just crash-landed on Alternia, and you’re DESPERATE for friendship! Anyone will do...wait, who are those two trolls approaching you?The Hiveswap Friendsim is a quick, loosely-canonical visual novel adventure following the efforts of the unnamed protagonist (that’s you!) to survive and maybe even thrive on the harsh surface of ALTERNIA. Set in the time of Hiveswap: Act 1, this episodic visual novel, written by Homestuck creator Andrew Hussie, is sure to satisfy Homestuck and Hiveswap fans who are eager for a darker stroll across the Alternian landscape.",
+      "image": "https://m.media-amazon.com/images/I/B1aQAxxqDsL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-weakless",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Weakless",
+      "slug": "weakless",
+      "storeUrl": "https://luna.amazon.com/claims/weakless-gog/dp/amzn1.pg.item.35aae84a-f566-4890-8fd3-492318a39036?g=s&ingress=amzn&ref_=SM_Weakless_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The beauty of a true friendship.In Weakless you can control only one character at a time, which means you can’t use the senses of both of them simultaneously. Because of this, you get a unique perspective on how differently they perceive the world around them and at the same time how the two support and complement each other. Deaf being his usual “whizz in a pinny” brings joy to the slightly defensive and introverted Blind. While Blind on the other hand, with the power of his calmness, takes care of the ubiquitous Deaf.Find strengths in your weaknesses.In our world, people with no vision or hearing often have other, sharper, senses. The same is true for Weavelings. Discover the extraordinary set of skills your heroes have, and prove to the world that what’s always been considered a weakness can, in fact, be a mighty advantage.Fairytale-like world.The game takes place in a world full of wonderful, distinctive landscapes. Your path will lead through caves full of glowing fungi, natural basins, forgotten ruins and more.In Weakless you will:Follow the story of an unlikely friendship that develops wordlessly between the stoic Blind One and the energetic Deaf One;Peek into the Deaf One’s sketchbook and gain a unique insight to what he thinks about this whole ordealEnter the beautiful, organic, bioluminescent world of Weavelings, filled with the curious life forms and mysteries of a bygone civilization waiting to be uncoveredGet a glimpse of the artistic vision of how visually impaired and hearing-impaired people perceive the worldBecome a part of non-trivial narratives and satisfying exploration enriched with arcade puzzle elementsExperience stunning music composed on instruments from all around the world, such as the marimba, rav vast or udu.",
+      "image": "https://m.media-amazon.com/images/I/913GIWHzr2L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-zoria-age-of-shattering",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Zoria: Age of Shattering",
+      "slug": "zoria-age-of-shattering",
+      "storeUrl": "https://luna.amazon.com/claims/zoria-age-of-shattering-gog/dp/amzn1.pg.item.ec074069-a977-4885-b5b0-6f972d17abb7?g=s&ingress=amzn&ref_=SM_ZoriaAgeofShattering_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Zoria: Age of Shattering is a classic tactical RPG with fluid turn-based combat, outpost, and followers management.You will lead a diverse team through the various lands of a Uram continent and against challenges countless groups of monsters and bosses.Zoria has now fallen prey to the sheer brutality of the hellspawn that roams its land. Its lush forests, mysterious caves, and majestic buildings have transformed into haunting and dreadful locations. Take your time and explore unknown areas, as each holds a mystery.Combat is bread and butter, and you will engage in it easily. Use the unique skills of all of your party members:Attack from close range or distance with different attack patterns and directions,Heal or shield allies with various spells and commands,Inflict status aliments like damage over time, stun, immobilize, and other elemental effects,Use your surroundings to use to your advantage or create new ones to separate you from the enemiesKeep a keen eye on your equipment and vitality as they both deteriorate over time. A bonfire in Zoria's provides a safe spot to restock your resources and prepare for the next battle.Take care of each of your warriors' skill development, and it will repay you on the battlefield. Remember that having an individual with the right skills can get you into previously inaccessible places and quests. It may turn out that interacting with a specific character with various objects in the world of Zoria may lead you to discover hidden treasures or make your travel easier.In your outpost, you can plan and assign tasks to your companions. Send selected party members on an autonomic mission, in which you won't participate but will receive what they find along the way. You will also get some of the experience they gain. Never forget that their lives are in your hands!",
+      "image": "https://m.media-amazon.com/images/I/B1afPCHqskL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
     },
     {
       "id": "prime-in-sound-mind",
@@ -369,25 +426,6 @@
       ]
     },
     {
-      "id": "prime-space-grunts",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Space Grunts",
-      "slug": "space-grunts",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-gog/dp/amzn1.pg.item.d6b4b6c3-ad9d-4e5d-9914-48c500b7be97?g=s&ingress=amzn&ref_=SM_SpaceGrunts_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "In the year 2476, an intergalactic distress signal leads your squad of Space Grunts to a remote moon base. As an elite \"problem\" solver, your mission is to investigate and neutralize the threat.Choose your Grunt type - Leader, Enforcer, or Tech Junky - each impacting your gear and strategy. You'll have to fight your way through an ever-changing labyrinth of aliens, robots, and drones. Your objective: descend to the lowest levels to find the core of the problem.Along the way, find a vast array of consumables to help you survive, from weapon enhancers and armor to explosives and system hacks. Discover new weapons, upgrade your arsenal, and uncover secrets and hidden routes that change every playthrough.",
-      "image": "https://m.media-amazon.com/images/I/91+g1A+EvwL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
       "id": "prime-use-phonesas-controllers",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -395,7 +433,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0H4Y4MWQ9?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Gotham's darkest crimes won't solve themselves. Go solo or gather your crew and dive into the noir-drenched 1940s Gotham City of the Batman: Caped Crusader animated series, where every alley hides a secret, and every case leads deeper into the shadowy depths of Gotham’s criminal minds.In this cooperative party game for 1 to 4 players, you'll join forces with Renee Montoya as part of Batman’s inner circle, uncovering evidence, chasing leads, and confronting iconic villains across 11 gripping episodes. Test your detective skills to surface clues in 11 detective minigames. Investigate, interrogate, deduce and decode your way through the crime webs woven by 10 of Gotham’s most devious criminals including Scarecrow, Babyface, Tweedledee and Tweedledum, Dollmaker, Lynx, Music Meister and of course, the Joker. Batman and the citizens of Gotham are counting on you!Crack the cases, Save the City.Play the Game, Watch the Series!• “PLAY” THE SERIES – Dive into the world of the Batman: Caped Crusader animated series. Play your part as a detective, taking directions from Renee Montoya and Batman himself. • VOICEOVER FROM SERIES ACTORS – Hamish Linklater as Batman, Michelle C. Bonilla as Montoya, Matthew Needham as The Joker and more...• CRACK THE CASES – Go solo or team up with friends as part of a GCPD task force to help Batman battle crime and solve mysteries to keep Gotham and its civilians safe.• 11 MYSTERIOUS EPISODES AWAIT – Experience original episodes inspired by the series that pull you into the art, story, characters and vibe of Gotham and its notorious criminal minds.• 11 CHALLENGING MINIGAMES – You’ll need your detective instinct and a keen eye to spot clues, complete objectives and solve puzzles in 3-5 minigames to complete each episode successfully.• HOURS OF GOTHAM SLEUTHING – Complete all 11 episodes to get the full story or play just your favorites. Completing episodes unlocks the minigames to play anytime you want. All of this, plus goal, objective, and clue variations in the minigames as you play, combine for 10+ hours of gameplay and repayable fun.• LUNA GAMENIGHT FUN – Your phone is your controller. No extra hardware. No downloads. No skill gap. Whether it's family or friends game night, everyone can jump in and play; from first-time players to seasoned detectives.ADDITIONAL DETAILS This game is available in the following languages; English, German, Spanish (LATAM), Italian, French, and Portuguese.Software © 2026 Amazon.com, Inc. or its affiliates. Amazon, Amazon Game Studios, and related marks are trademarks of Amazon.com, Inc. or its affiliates. Developed by Blazing Griffin and published by Amazon Game Studios. All rights reserved. BATMAN CAPED CRUSADER and all related characters and elements © & ™ DC and Warner Bros. Entertainment Inc. ™ & © 2026. All rights reserved. Used under license.• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Legal Notices - https://www.amazon.com/gp/help/customer/display.html?&nodeId=TNMI65bNBgTBPAzK9w• Support Page - https://help.chronicles.amazongamestudios.com",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1eNP1lFLyL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -433,7 +471,7 @@
       "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
       "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -490,7 +528,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09RYKCKQ8?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "The eighth installment of the beloved Jackbox Party Pack franchise is here! Five hilarious new games will energize your next game night, holiday party, happy hour, or video call.No extra controllers needed – players use their phones or tablets to play along! Got a bigger group? Play with up to 10 players and up to 10,000 audience members.",
       "image": "https://m.media-amazon.com/images/I/C1Pwa6Ij--L._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -585,7 +623,7 @@
       "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Experience the award-winning ultimate celebration of past and future. Sonic Mania Plus is an all-new 2D Sonic adventure with blistering 60 fps and stunning HD retro-style graphics. Run explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. Race through all-new original Zones and updated Classics, all with unique twists to keep you on your toes as you battle the evil Dr. Eggman. Go head to-head with up to four players in Competition Mode, or play with a friend in Co-Op Mode. Now with new playable characters Mighty and Ray, all new Encore mode, and more, Sonic Mania Plus is the definitive Sonic experience!By using this product, you hereby agree to the End User License Agreement found here: https://games.sega.com/eula",
       "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1050_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -616,6 +654,44 @@
       ]
     },
     {
+      "id": "prime-play-disney-pixar-wall-e-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Disney/Pixar WALL-E | Amazon Luna - No Download Required",
+      "slug": "play-disney-pixar-wall-e-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B093NC7GX3?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "WALL-E follows the story of a small, sentient robot whose sole purpose is to clean up Earth's voluminous garbage. In the year 2700, mankind has left behind millions of tiny trash collectors to make the planet habitable again. Yet only WALL-E remains functional, dutifully performing his task while collecting an odd assortment of souvenirs. His uneventful life takes on new meaning when he encounters a sleek, shiny robot named EVE, sent by humans to monitor the clean-up progress. Based on the 2008 computer animated film from Pixar Animation Studios, the video game version of WALL-E involves playing as the lonely robot as he navigates a trash-tainted world and begins an unlikely trek across the cosmos. Gameplay consists of using WALL-E's distinct abilities to create \"\"cubes\"\" used to build platforms or to create distractions.Terms of Use: http://disneytermsofuse.com/",
+      "image": "https://m.media-amazon.com/images/I/D1ZppklfgBS._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-play-disney-pixar-brave-the-video-game-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Disney/Pixar Brave: The Video Game | Amazon Luna - No Download Required",
+      "slug": "play-disney-pixar-brave-the-video-game-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B092LJJJSK?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Brave: The Video Game is a Third-Person Action-Adventure game that is a companion release to the Disney/Pixar 2012 major animated release of the same name. Brave is Pixar's first fairy tale release and features the adventures of Merida, the studio's first female lead character in a movie. The game features: a family-friendly storyline, bow and arrow as well as a sword combat, agile in-game movement, puzzle play, characters from the movie as well as others unique to the game, and compatibility with both Windows and Mac operating systems.Inspired by \"Brave\", the Disney/Pixar animated fantasy adventure movie, Brave: The Video Game invites players to run, jump and battle their way through the rugged landscape of mythical and mysterious Scotland. By using their wits and bravery, gamers will also be able to wield a sword and bow and arrow to defeat fierce enemies, break a magical curse and save a kingdom.",
+      "image": "https://m.media-amazon.com/images/I/D17htINUd7S._SX1050_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-use-phonesas-controllers",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -635,41 +711,60 @@
       ]
     },
     {
-      "id": "prime-play-lego-indiana-jones-the-original-adventures-amazon-luna-no-download-required",
+      "id": "prime-pyramids-and-aliens-escape-room",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play LEGO® Indiana Jones™: The Original Adventures | Amazon Luna - No Download Required",
-      "slug": "play-lego-indiana-jones-the-original-adventures-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B09325PD7W?ref=pghq&r=web&autoplay=1",
+      "title": "Pyramids and Aliens: Escape Room",
+      "slug": "pyramids-and-aliens-escape-room",
+      "storeUrl": "https://luna.amazon.com/claims/pyramids-and-aliens-escape-room-gog/dp/amzn1.pg.item.ea4a762d-4616-4f5d-af80-61c76ea1abd3?g=s&ingress=amzn&ref_=SM_PyramidsandAliensEscapeRoom_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Build, Battle and Brawl your way out of trouble!Play through all three classic Indiana Jones™ movies and relive your favorite Indy adventures in the tongue-in-cheek worlds of LEGO®.• Explore and Discover - Battle enemies, solve puzzles, and seek out the world's greatest treasures.• More Than 60 Playable Characters - Take control of Indy, his friends, and even his enemies. Team up with a friend and together search for fortune and glory.• Whip Into Action! - Attack and disarm enemies, swing over perilous pits, and interact with LEGO® objects and puzzles!Terms of Use: http://disneytermsofuse.com/",
-      "image": "https://m.media-amazon.com/images/I/D1eRxyyHedL._SX1050_QL90_FMwebp_.png",
+      "description": "Your former mentor has disappeared inside an ancient Egyptian pyramid. Will you be able to find him?Pyramids and Aliens is an escape room game that will test your skills as an archaeologist. Solve puzzles, find clues, and reveal the secrets of the pyramid. Spoiler: it was not built by humans!Will you be able to find your mentor and come back alive?FeaturesThe game's puzzles have been designed by expert escape room game creators.Explore both an ancient Egyptian pyramid and a strange alien temple!Find out what really happened with your mentor. It seems that he was able to reach an alien world somehow...",
+      "image": "https://m.media-amazon.com/images/I/A1K2npqoDrL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "GOG"
       ]
     },
     {
-      "id": "prime-play-smurfs-kart-amazon-luna-no-download-required",
+      "id": "prime-airship-kingdoms-adrift",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play Smurfs Kart | Amazon Luna - No Download Required",
-      "slug": "play-smurfs-kart-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0CWPYQDJ5?ref=pghq&r=web&autoplay=1",
+      "title": "Airship: Kingdoms Adrift",
+      "slug": "airship-kingdoms-adrift",
+      "storeUrl": "https://luna.amazon.com/claims/airship-kingdoms-adrift-epic/dp/amzn1.pg.item.aa62d067-6b98-4929-bc49-3ccdd11d888a?g=s&ingress=amzn&ref_=SM_AirshipKingdomsAdrift_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Who will be the fastest Smurf in town?That is the question you will need to answer in this dynamic kart racing game in the world of Smurfs!The whole family can choose one Smurf, its kart and special power, then you’re ready to go on wild races! Make the best start, find shortcuts, and use the right items at the right time to pass your opponents!Play solo or with friends and family, should you be a beginner or the most trained driver… you can get 1st place and show others who the fastest Smurf of all time is!- 12 tracks taken from the Smurfs’ universe: the village, the forest, the dam, the swamps… even Gargamel’s house!- 12 playable Smurfs: choose the Smurf you want to drive with.- Each Smurf has its own kart and a very handy special item to help you breeze past your opponents.- Reach 1st place by using the environment around you: bonus items, boosts, ramps, destructible boxes, shortcuts and more!- Play solo or with family and friends, up to 4 players in split-screen local multiplayer game mode. - Try to beat every Smurf at their own racetrack in the “Time Challenge” mode and reach the top of the online rankings with your best time!- Unlock original bonuses race after race, win after win, and try to Smurf them all in your personal album!",
-      "image": "https://m.media-amazon.com/images/I/A116QJpV27L._SX1050_QL90_FMwebp_.png",
+      "description": "Airship: Kingdoms Adrift  is an airship trading and combat simulator, set in the wake of a Great Sky War that ripped through the steampunk world of Spheara. An uneasy cease-fire holds between the Aecerlian Kingdom, the New Viridian Republic, and the Teutonic Confederation. As they lick their wounds, their suddenly jobless soldiers and sky-farers look for new opportunities among the desolation.Enter the Suthseg Archipelago. A far-flung frontier ruled by an aging king, it was spared from devastation of war and is a land full of riches and opportunity. It is here that fortunes will be made, loyalties tested, and sky faring captains will get the rare chance to carve out a future of their own.You are one of these captains, commissioned to establish a trading company in the Archipelago, and soon pulled into a game of grand politic... and grave danger.Airship Commander's DutiesExperience a story of politics and intrigue, as Suthseg becomes the flashpoint for another Sky War.Customize, upgrade, and pilot 25 various airships, from graceful sailing vessels to ironclad dreadnoughts.Assemble a crew of officers among 25 distinct personalities, each with their own abilities and personal stories to tell.Explore and trade across a vast archipelago with 70 locations and over 300 types of trade goodsSet up camps, mines, and factories, to create a mighty industrial empire producing goods and equipment and dominate the economy.Become the greatest of the sky-faring captains, controlling an entire fleet of airships and deciding the fate of the Kingdom.",
+      "image": "https://m.media-amazon.com/images/I/A1JlVg31YrL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-steelrising",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Steelrising",
+      "slug": "steelrising",
+      "storeUrl": "https://luna.amazon.com/claims/steelrising-epic/dp/amzn1.pg.item.2e34e997-a137-48b3-9b5c-ad2eb51c45f7?g=s&ingress=amzn&ref_=SM_Steelrising_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The city burns and bleeds as it suffers the madness of King Louis XVI and his violent legions of automatons. Aegis, a mechanical masterpiece created by the engineer Vaucanson to be the queen's bodyguard, must save the French Revolution in this challenging action-RPG.CHALLENGING COMBAT BETWEEN AUTOMATONSUp against the king's mechanical soldiers, deadly accuracy will be needed. String together dodges, parries, jumps and devastating attacks to fight your way through Paris. Every fight will test your nerve and requires excellent discipline, while the huge relentless machine bosses demand patience and skill.AEGIS: A CHARACTER WITH EXTRAORDINARY SKILLSDefine your own style and upgrade your abilities as you progress through the game. You can play as a ruthless warrior, a hard-hitting bodyguard, a deadly dancer or a virtuoso of the elemental arts. Take advantage of a wide variety of weapons and skills to approach each fight in your own unique way.REVOLUTIONARY PARIS IS YOUR PLAYGROUNDUsing carriages, grapples, secret passages, a detailed map, and other methods and tools you find along the way, explore a city experiencing its darkest days. Your grappling hook adds a new dimension to exploration and Paris's verticality. Combined with your dash ability, it will provide access to all the city's secrets across multiple levels you can explore over and over again.CHANGE THE COURSE OF HISTORYYou are one of the main characters of an alternative history where Paris is being choked by a tyrant king. Allies and enemies with unclear motives will cross your path, such as Marie-Antoinette, Lafayette and Robespierre. It's up to you to cut a path through all the plotting and put an end to one man's madness so that the French Revolution succeeds.",
+      "image": "https://m.media-amazon.com/images/I/B1t5+DfJb8L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
       ]
     },
     {
@@ -692,60 +787,22 @@
       ]
     },
     {
-      "id": "prime-hiveswap-friendsim",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Hiveswap Friendsim",
-      "slug": "hiveswap-friendsim",
-      "storeUrl": "https://luna.amazon.com/claims/hiveswap-friendsim-gog/dp/amzn1.pg.item.8e0d3ee4-446f-435e-bfb4-33fe97d25af8?g=s&ingress=amzn&ref_=SM_HiveswapFriendsim_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You just crash-landed on Alternia, and you’re DESPERATE for friendship! Anyone will do...wait, who are those two trolls approaching you?The Hiveswap Friendsim is a quick, loosely-canonical visual novel adventure following the efforts of the unnamed protagonist (that’s you!) to survive and maybe even thrive on the harsh surface of ALTERNIA. Set in the time of Hiveswap: Act 1, this episodic visual novel, written by Homestuck creator Andrew Hussie, is sure to satisfy Homestuck and Hiveswap fans who are eager for a darker stroll across the Alternian landscape.",
-      "image": "https://m.media-amazon.com/images/I/B1aQAxxqDsL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
+      "id": "steam-3524",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Deponia (Steam) Giveaway",
+      "slug": "3524",
+      "storeUrl": "https://www.gamerpower.com/open/deponia-steam-giveaway",
+      "seller": "Steam",
+      "description": "Deponia is free on Steam until August 20! Deponia is a point-and-click game with a unique comic style and challenging puzzles. Check it out!",
+      "image": "https://www.gamerpower.com/offers/1b/69af0087172d3.jpg",
+      "originalPrice": 2999,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
+      "offerStart": "2026-08-13T13:05:54.000Z",
+      "offerEnd": "2026-08-20T23:59:00.000Z",
       "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-weakless",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Weakless",
-      "slug": "weakless",
-      "storeUrl": "https://luna.amazon.com/claims/weakless-gog/dp/amzn1.pg.item.35aae84a-f566-4890-8fd3-492318a39036?g=s&ingress=amzn&ref_=SM_Weakless_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The beauty of a true friendship.In Weakless you can control only one character at a time, which means you can’t use the senses of both of them simultaneously. Because of this, you get a unique perspective on how differently they perceive the world around them and at the same time how the two support and complement each other. Deaf being his usual “whizz in a pinny” brings joy to the slightly defensive and introverted Blind. While Blind on the other hand, with the power of his calmness, takes care of the ubiquitous Deaf.Find strengths in your weaknesses.In our world, people with no vision or hearing often have other, sharper, senses. The same is true for Weavelings. Discover the extraordinary set of skills your heroes have, and prove to the world that what’s always been considered a weakness can, in fact, be a mighty advantage.Fairytale-like world.The game takes place in a world full of wonderful, distinctive landscapes. Your path will lead through caves full of glowing fungi, natural basins, forgotten ruins and more.In Weakless you will:Follow the story of an unlikely friendship that develops wordlessly between the stoic Blind One and the energetic Deaf One;Peek into the Deaf One’s sketchbook and gain a unique insight to what he thinks about this whole ordealEnter the beautiful, organic, bioluminescent world of Weavelings, filled with the curious life forms and mysteries of a bygone civilization waiting to be uncoveredGet a glimpse of the artistic vision of how visually impaired and hearing-impaired people perceive the worldBecome a part of non-trivial narratives and satisfying exploration enriched with arcade puzzle elementsExperience stunning music composed on instruments from all around the world, such as the marimba, rav vast or udu.",
-      "image": "https://m.media-amazon.com/images/I/913GIWHzr2L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-zoria-age-of-shattering",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Zoria: Age of Shattering",
-      "slug": "zoria-age-of-shattering",
-      "storeUrl": "https://luna.amazon.com/claims/zoria-age-of-shattering-gog/dp/amzn1.pg.item.ec074069-a977-4885-b5b0-6f972d17abb7?g=s&ingress=amzn&ref_=SM_ZoriaAgeofShattering_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Zoria: Age of Shattering is a classic tactical RPG with fluid turn-based combat, outpost, and followers management.You will lead a diverse team through the various lands of a Uram continent and against challenges countless groups of monsters and bosses.Zoria has now fallen prey to the sheer brutality of the hellspawn that roams its land. Its lush forests, mysterious caves, and majestic buildings have transformed into haunting and dreadful locations. Take your time and explore unknown areas, as each holds a mystery.Combat is bread and butter, and you will engage in it easily. Use the unique skills of all of your party members:Attack from close range or distance with different attack patterns and directions,Heal or shield allies with various spells and commands,Inflict status aliments like damage over time, stun, immobilize, and other elemental effects,Use your surroundings to use to your advantage or create new ones to separate you from the enemiesKeep a keen eye on your equipment and vitality as they both deteriorate over time. A bonfire in Zoria's provides a safe spot to restock your resources and prepare for the next battle.Take care of each of your warriors' skill development, and it will repay you on the battlefield. Remember that having an individual with the right skills can get you into previously inaccessible places and quests. It may turn out that interacting with a specific character with various objects in the world of Zoria may lead you to discover hidden treasures or make your travel easier.In your outpost, you can plan and assign tasks to your companions. Send selected party members on an autonomic mission, in which you won't participate but will receive what they find along the way. You will also get some of the experience they gain. Never forget that their lives are in your hands!",
-      "image": "https://m.media-amazon.com/images/I/B1afPCHqskL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
+        "PC"
       ]
     },
     {
