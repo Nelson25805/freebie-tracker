@@ -1,8 +1,27 @@
 {
-  "fetchedAt": "2026-08-11T20:56:31.255Z",
-  "totalFree": 37,
-  "totalUpcoming": 5,
+  "fetchedAt": "2026-08-12T20:55:17.270Z",
+  "totalFree": 35,
+  "totalUpcoming": 6,
   "games": [
+    {
+      "id": "b467b7d3570e44c0b84e59475f4a5636",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Cardpocalypse Standard Edition",
+      "slug": "cardpocalypse",
+      "storeUrl": "https://store.epicgames.com/p/cardpocalypse",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "10-year old Jess accidentally gets everybody's favorite collectible card game banned in Dudsdale Elementary - even worse, it’s her first day! But when troubles arise and mutants from the game start to come to life, and it’s up to Jess and her friends to stop them. Become a Meg...",
+      "image": "https://cdn1.epicgames.com/offer/2bfd5ca43ef443739ada168e017e1b78/s1_2560x1440-8d68e37943d666ad0f05093481c4d7df",
+      "originalPrice": 2499,
+      "discountPrice": 2499,
+      "status": "upcoming",
+      "offerStart": "2026-08-20T15:00:00.000Z",
+      "offerEnd": "2026-08-27T15:00:00.000Z"
+    },
     {
       "id": "871cc4ff18444059890a4d28653a62d5",
       "store": "epic",
@@ -293,25 +312,6 @@
       ]
     },
     {
-      "id": "prime-still-there",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Still There",
-      "slug": "still-there",
-      "storeUrl": "https://luna.amazon.com/claims/still-there-gog/dp/amzn1.pg.item.67c6d7c2-3050-431b-ae6d-91f34ad7d313?g=s&ingress=amzn&ref_=SM_StillThere_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Every day is the same on the faraway Bento space-lighthouse - until a mysterious radio message breaks through. Evade the past, welcome oblivion, make the perfect Italian coffee. Still There is a psychological adventure game about grief, technical puzzles, wacky AIs, and dark humor. How far is far enough?",
-      "image": "https://m.media-amazon.com/images/I/A1WiXifJVNL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
       "id": "prime-space-grunts-chrono-shard",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -404,25 +404,6 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
-    },
-    {
-      "id": "prime-lethal-honor-order-of-the-apocalypse",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Lethal Honor - Order of the Apocalypse",
-      "slug": "lethal-honor-order-of-the-apocalypse",
-      "storeUrl": "https://luna.amazon.com/claims/lethal-honor-order-of-the-apocalypse-epic/dp/amzn1.pg.item.f610100a-1240-41f8-84dd-767c2df675b4?g=s&ingress=amzn&ref_=SM_LethalHonorOrderoftheApocalypse_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "This brutal, obscure, and punishing action-adventure roguelite is set in a shady and beset post-apocalyptic world. Play relentless isometric close-quarter battles with an art style reminiscent of the 1980s dark age of adult superhero graphic novels.Lethal Honor - Order of the Apocalypse is a challenging hack 'n' slash game, featuring eldritch creatures, fast-paced melee combat, and powerful abilities. Become part of a secret organization that investigates the paranormal and fights for the survival of humanity.Prepare to discover the truth!Hand-drawn comic panels are seamlessly integrated into the gameplay to fully immerse you in a dark story full of mystery and intrigue. With every run and every death, you uncover more of the dangers of Wolf Island and the secrets that lie within.Intense, fast-paced combat will test your skills!Attacking relentlessly will only lead to your early demise. Find your own style by combining unique abilities, artifacts, and enchantments into powerful combinations. Fight difficult bosses and show your superiority.Experience the mysteries!Discover the disturbing secrets of Lethal Honor. Alternate between Lost Agents and Key Agents, who follow their own story as you discover what is happening on the island.Brutal and punishing hack 'n' slash roguelite gameplayGritty, hand-drawn, dark age graphic novel art style combined with 3D scenariosSeveral different biomes and playable key characters with their own storylines, abilities, and playstylesUnveil a mature, dark, and complex story seamlessly integrated into procedurally generated runs",
-      "image": "https://m.media-amazon.com/images/I/B1jmbBIZMCL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
       ]
     },
     {
