@@ -119,59 +119,41 @@ function decodeHtmlEntities(text) {
   return textarea.value;
 }
 
-// Small single-color badge icons (currentColor) for each store, rendered on
-// the cover image instead of a text pill. Kept as inline SVG strings (no
-// network requests, no build step) and colored via the existing .store-*
-// CSS classes so they match the chip theme colors already in styles.css.
-const STORE_ICONS = {
-  epic: `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <rect x="4" y="4" width="3" height="16"/>
-      <rect x="4" y="4" width="14" height="3"/>
-      <rect x="4" y="10.5" width="12" height="3"/>
-      <rect x="4" y="17" width="14" height="3"/>
-    </svg>`,
-  gog: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="8.5"/>
-      <path d="M16 9.2a5 5 0 1 0 0 6.6"/>
-      <path d="M13.2 12h3.6v4.4"/>
-    </svg>`,
-  psplus: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
-      <path d="M12 3.6 14.2 7.4H9.8z"/>
-      <circle cx="18.4" cy="12" r="2.1"/>
-      <path d="M12 15.6l2.4 2.4-2.4 2.4-2.4-2.4z"/>
-      <rect x="3.6" y="9.9" width="3.6" height="3.6"/>
-    </svg>`,
-  prime: `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M3 8.2 7.1 11 12 4.6 16.9 11l4.1-2.8-2.1 10.4H5.1z"/>
-      <rect x="5" y="19" width="14" height="2" rx="0.6"/>
-    </svg>`,
-  steam: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="8.5"/>
-      <circle cx="9.2" cy="15" r="2.1" fill="currentColor" stroke="none"/>
-      <circle cx="14.8" cy="8.6" r="2.4"/>
-      <path d="M9.6 14.3 13.3 10"/>
-    </svg>`,
+// Store badge on the cover image uses the real brand SVGs from ./assets
+// instead of hand-drawn placeholders. Paths are relative to index.html.
+const STORE_ICON_SRC = {
+  epic: "./assets/epicGamesLogo.svg",
+  gog: "./assets/gogLogo.svg",
+  psplus: "./assets/playstationPlusLogo.svg",
+  prime: "./assets/amazonPrimeLogo.svg",
+  steam: "./assets/steamLogo.svg",
 };
+
+function storeIconMarkup(store, storeName) {
+  const src = STORE_ICON_SRC[store];
+  if (!src) return "";
+  return `<img src="${escapeHtml(src)}" alt="${escapeHtml(storeName)} logo" loading="lazy">`;
+}
 
 function storeLabel(store) {
   if (store === "epic") {
-    return { label: "Epic", cls: "store-epic", icon: STORE_ICONS.epic };
+    return { label: "Epic", cls: "store-epic", icon: storeIconMarkup("epic", "Epic Games Store") };
   }
 
   if (store === "gog") {
-    return { label: "GOG", cls: "store-gog", icon: STORE_ICONS.gog };
+    return { label: "GOG", cls: "store-gog", icon: storeIconMarkup("gog", "GOG") };
   }
 
   if (store === "psplus") {
-    return { label: "PS Plus", cls: "store-psplus", icon: STORE_ICONS.psplus };
+    return { label: "PS Plus", cls: "store-psplus", icon: storeIconMarkup("psplus", "PlayStation Plus") };
   }
 
   if (store === "prime") {
-    return { label: "Prime", cls: "store-prime", icon: STORE_ICONS.prime };
+    return { label: "Prime", cls: "store-prime", icon: storeIconMarkup("prime", "Prime Gaming") };
   }
 
   if (store === "steam") {
-    return { label: "Steam", cls: "store-steam", icon: STORE_ICONS.steam };
+    return { label: "Steam", cls: "store-steam", icon: storeIconMarkup("steam", "Steam") };
   }
 
   return { label: store, cls: "", icon: "" };
