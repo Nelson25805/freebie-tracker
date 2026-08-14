@@ -565,11 +565,60 @@ function toggleStoreChip(chip) {
   render();
 }
 
-function toggleCollected(key) {
+// How long the claim micro-interaction plays before the grid fully
+// re-renders (filters, sorting, "hide collected" etc. all still apply
+// after this, so the animation is purely a bridge — not a replacement —
+// for the real render).
+const CLAIM_ANIM_MS = 480;
+
+function prefersReducedMotion() {
+  return window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+}
+
+// Plays a quick checkmark-and-fade over the card's cover art, and flips
+// the action button's label/color immediately so the click feels instant
+// even though the surrounding grid (counts, sort order, hide-collected
+// filtering) doesn't catch up until the delayed render() below.
+function playClaimAnimation(card, button, nowCollected) {
+  if (button) {
+    button.textContent = nowCollected ? "Unmark collected" : "Mark collected";
+    button.classList.toggle("btn-ok", !nowCollected);
+    button.classList.toggle("btn-danger", nowCollected);
+  }
+
+  if (!card || prefersReducedMotion()) return;
+
+  card.classList.add("is-collect-pulse");
+  card.addEventListener(
+    "animationend",
+    () => card.classList.remove("is-collect-pulse"),
+    { once: true }
+  );
+
+  if (!nowCollected) return; // only show the checkmark when *claiming*, not un-claiming
+
+  const cover = card.querySelector(".cover");
+  if (!cover) return;
+
+  const check = document.createElement("div");
+  check.className = "claim-check";
+  check.innerHTML =
+    '<svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
+  cover.appendChild(check);
+  check.addEventListener("animationend", () => check.remove(), { once: true });
+}
+
+function toggleCollected(key, button) {
   if (collected.has(key)) collected.delete(key);
   else collected.add(key);
   saveCollected();
-  render();
+
+  const nowCollected = collected.has(key);
+  const card = button?.closest(".card.game") || null;
+  playClaimAnimation(card, button, nowCollected);
+
+  const delay = prefersReducedMotion() ? 0 : CLAIM_ANIM_MS;
+  window.setTimeout(render, delay);
 }
 
 function markVisibleAsCollected() {
@@ -593,7 +642,7 @@ function clearCollected() {
 document.addEventListener("click", (e) => {
   const claimBtn = e.target.closest('[data-action="toggle-claimed"]');
   if (claimBtn) {
-    toggleCollected(claimBtn.dataset.key);
+    toggleCollected(claimBtn.dataset.key, claimBtn);
     return;
   }
 

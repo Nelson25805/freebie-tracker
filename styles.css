@@ -935,3 +935,83 @@ a {
         animation: none;
     }
 }
+
+/* ─── Claim micro-interaction ────────────────────────────────────────────── */
+
+/* Brief highlight pulse on the whole card when its collected state changes,
+   so the click reads as "something happened" even before the grid re-renders. */
+.game.is-collect-pulse {
+    animation: claim-card-pulse 0.48s ease;
+}
+
+@keyframes claim-card-pulse {
+    0% {
+        box-shadow: var(--shadow);
+    }
+
+    35% {
+        box-shadow: var(--shadow), 0 0 0 3px rgba(34, 197, 94, 0.45);
+        transform: scale(1.012);
+    }
+
+    100% {
+        box-shadow: var(--shadow);
+        transform: scale(1);
+    }
+}
+
+/* Checkmark overlay shown briefly over the cover art when a game is
+   marked collected. Fades/scales in, holds, then fades out on its own —
+   removed from the DOM once the animation ends. */
+.claim-check {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eafff2;
+    background: rgba(20, 83, 45, 0.42);
+    backdrop-filter: blur(1px);
+    animation: claim-check-pop 0.48s cubic-bezier(.2, .8, .2, 1) forwards;
+    pointer-events: none;
+}
+
+.claim-check svg {
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+@keyframes claim-check-pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.55);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.12);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .game.is-collect-pulse {
+        animation: none;
+    }
+
+    .claim-check {
+        animation: none;
+        display: none;
+    }
+}
