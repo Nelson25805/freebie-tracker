@@ -166,6 +166,43 @@ function storeChipBaseLabel(store) {
   return storeLabel(store).label;
 }
 
+// ─── Offer progress (time-limited claim windows) ─────────────────────────────
+
+function offerProgressPercent(game) {
+  if (!game.offerStart || !game.offerEnd) return null;
+  const start = new Date(game.offerStart).getTime();
+  const end = new Date(game.offerEnd).getTime();
+  if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return null;
+  const pct = ((Date.now() - start) / (end - start)) * 100;
+  return Math.min(100, Math.max(0, pct));
+}
+
+function offerProgressMarkup(game) {
+  const pct = offerProgressPercent(game);
+  if (pct === null) return "";
+  const urgent = pct >= 85;
+  return `
+    <div class="offer-progress ${urgent ? "urgent" : ""}"
+         data-start="${escapeHtml(game.offerStart)}"
+         data-end="${escapeHtml(game.offerEnd)}"
+         title="${Math.round(pct)}% of claim window elapsed">
+      <div class="offer-progress-fill" style="width:${pct.toFixed(1)}%"></div>
+    </div>`;
+}
+
+function updateOfferProgressBars() {
+  document.querySelectorAll(".offer-progress").forEach((bar) => {
+    const start = new Date(bar.dataset.start).getTime();
+    const end = new Date(bar.dataset.end).getTime();
+    if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return;
+    const pct = Math.min(100, Math.max(0, ((Date.now() - start) / (end - start)) * 100));
+    const fill = bar.querySelector(".offer-progress-fill");
+    if (fill) fill.style.width = `${pct.toFixed(1)}%`;
+    bar.classList.toggle("urgent", pct >= 85);
+    bar.title = `${Math.round(pct)}% of claim window elapsed`;
+  });
+}
+
 // ─── Filtering & sorting ──────────────────────────────────────────────────────
 
 function gameKey(game) {
@@ -326,6 +363,7 @@ function buildGameCard(game) {
           ${game.status === "upcoming" && game.offerStart ? `<span class="pill">Starts ${fmtDate(game.offerStart)}</span>` : ""}
           ${game.platforms?.length ? `<span class="pill">${escapeHtml(game.platforms.join(" · "))}</span>` : ""}
         </div>
+         ${game.status === "free" ? offerProgressMarkup(game) : ""}
         <div class="desc-wrap">
           <p class="meta desc-text" data-full="${escapeHtml(game.description || "")}">${game.description
       ? escapeHtml(game.description).slice(0, 160) + (game.description.length > 160 ? "…" : "")
@@ -688,3 +726,4 @@ els.markAllBtn.addEventListener("click", markVisibleAsCollected);
 
 saveCollected();
 loadGames();
+setInterval(updateOfferProgressBars, 30000); // keep bars fresh between full re-renders

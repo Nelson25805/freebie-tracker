@@ -19,6 +19,7 @@ import { writeFileSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { chromium } from "playwright";
+import { writeFileSync, mkdirSync, readFileSync } from "fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
@@ -192,9 +193,7 @@ async function fetchGOG() {
       return [];
     }
 
-    let title = data.header;
-
-    title = title
+    let title = data.header
       .replace(/^Giveaway:\s*/i, "")
       .replace(/^Claim\s*/i, "")
       .replace(/\sand don't miss.*$/i, "")
@@ -214,6 +213,12 @@ async function fetchGOG() {
         seconds * 1000
       ).toISOString();
     }
+
+    const previousGOG = previousGames.find((g) => g.store === "gog");
+    const offerStart =
+      previousGOG && previousGOG.title === title && previousGOG.offerStart
+        ? previousGOG.offerStart
+        : new Date().toISOString();
 
     return [
       {
@@ -243,7 +248,7 @@ async function fetchGOG() {
 
         status: "free",
 
-        offerStart: null,
+        offerStart,
 
         offerEnd,
 
@@ -1031,9 +1036,17 @@ async function fetchSteam() {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
+  let previousGames = [];
+  try {
+    const prevJson = JSON.parse(readFileSync(OUT_PATH, "utf-8"));
+    previousGames = prevJson.games || [];
+  } catch {
+    // no previous file yet (first run) — that's fine
+  }
+
   const results = await Promise.allSettled([
     fetchEpic(),
-    fetchGOG(),
+    fetchGOG(previousGames),
     fetchPSPlus(),
     fetchPrimeGaming(),
     fetchSteam(),
