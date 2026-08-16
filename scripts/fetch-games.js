@@ -15,11 +15,10 @@
  */
 
 import fetch from "node-fetch";
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, readFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { chromium } from "playwright";
-import { writeFileSync, mkdirSync, readFileSync } from "fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
@@ -119,7 +118,7 @@ async function fetchEpic() {
 
 // ─── GOG ─────────────────────────────────────────────────────────────────────
 
-async function fetchGOG() {
+async function fetchGOG(previousGames) {
   console.log("Fetching GOG giveaway...");
 
   let browser;
