@@ -152,6 +152,10 @@
   of your "All Stores" card and before the closing <p class="footer">.
   Also add <script src="./newsletter.js" defer></script> next to your
   existing <script src="./app.js" defer></script> tag in <head>.
+
+  Reuses the exact .store-chip-row / .chip-group / .chip classes your main
+  store filter already uses — no new CSS needed, it'll match automatically,
+  including the per-store colors (epic/gog/psplus/prime/steam).
 -->
     <section class="card section" id="newsletterSection">
       <div class="section-head">
@@ -163,7 +167,20 @@
         </div>
       </div>
 
-      <form id="newsletterForm" class="toolbar" style="grid-template-columns: 1.6fr 1fr auto !important;">
+      <div class="store-chip-row">
+        <span class="chip-row-label">Stores to include</span>
+        <div class="chip-group" id="newsletterStoreFilter" role="group" aria-label="Choose newsletter stores">
+          <button type="button" class="chip active" data-store="all">All stores</button>
+          <button type="button" class="chip" data-store="epic">Epic</button>
+          <button type="button" class="chip" data-store="gog">GOG</button>
+          <button type="button" class="chip" data-store="psplus">PS Plus</button>
+          <button type="button" class="chip" data-store="prime">Prime</button>
+          <button type="button" class="chip" data-store="steam">Steam</button>
+        </div>
+      </div>
+
+      <form id="newsletterForm" class="toolbar"
+        style="grid-template-columns: 1.6fr 1fr auto !important; margin-top: 14px;">
         <input class="field" id="newsletterEmail" type="email" placeholder="you@example.com" required />
 
         <select class="select" id="newsletterFrequency" aria-label="How often">
@@ -175,22 +192,8 @@
         <button class="btn btn-primary" type="submit">Subscribe</button>
       </form>
 
-      <label class="btn btn-secondary check-wrap" style="margin-top: 10px; width: fit-content;">
-        <input type="checkbox" id="newsletterAllStores" checked />
-        All stores
-      </label>
-
-      <div class="chip-group" id="newsletterStoreRow" hidden style="margin-top: 10px; justify-content: flex-start;">
-        <label class="chip"><input type="checkbox" value="epic" style="margin-right:6px;">Epic</label>
-        <label class="chip"><input type="checkbox" value="gog" style="margin-right:6px;">GOG</label>
-        <label class="chip"><input type="checkbox" value="psplus" style="margin-right:6px;">PS Plus</label>
-        <label class="chip"><input type="checkbox" value="prime" style="margin-right:6px;">Prime</label>
-        <label class="chip"><input type="checkbox" value="steam" style="margin-right:6px;">Steam</label>
-      </div>
-
       <p class="section-note" id="newsletterStatus" aria-live="polite" style="margin-top: 10px;"></p>
     </section>
-
 
     <p class="footer">
       Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load
