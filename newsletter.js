@@ -6,10 +6,14 @@ const NEWSLETTER_ENDPOINT = "https://script.google.com/macros/s/AKfycbyoMATQzhMA
 const nlForm = document.getElementById("newsletterForm");
 const nlEmail = document.getElementById("newsletterEmail");
 const nlFrequency = document.getElementById("newsletterFrequency");
-const nlAllStores = document.getElementById("newsletterAllStores");
-const nlStoreRow = document.getElementById("newsletterStoreRow");
-const nlStoreChips = nlStoreRow ? Array.from(nlStoreRow.querySelectorAll("input[type=checkbox]")) : [];
+const nlStoreFilter = document.getElementById("newsletterStoreFilter");
+const nlStoreChips = nlStoreFilter ? Array.from(nlStoreFilter.querySelectorAll(".chip")) : [];
+const nlAllChip = nlStoreChips.find((c) => c.dataset.store === "all");
+const nlSpecificChips = nlStoreChips.filter((c) => c.dataset.store !== "all");
 const nlStatus = document.getElementById("newsletterStatus");
+
+// Starts in "all stores" mode, same as the checked boxes used to default to.
+let nlSelectedStores = new Set(nlSpecificChips.map((c) => c.dataset.store));
 
 function setNlStatus(text, isError = false) {
   if (!nlStatus) return;
@@ -17,15 +21,38 @@ function setNlStatus(text, isError = false) {
   nlStatus.style.color = isError ? "#ffb4b4" : "#b8ffcf";
 }
 
-function toggleStoreRow() {
-  if (!nlStoreRow) return;
-  nlStoreRow.hidden = nlAllStores.checked;
+// Keeps the chip highlighting in sync with nlSelectedStores. "All stores"
+// reads as active whenever every specific store happens to be selected —
+// clicking it is just a shortcut back to that state.
+function syncNlChips() {
+  const allSelected = nlSelectedStores.size === nlSpecificChips.length;
+  if (nlAllChip) nlAllChip.classList.toggle("active", allSelected);
+  nlSpecificChips.forEach((chip) => {
+    chip.classList.toggle("active", nlSelectedStores.has(chip.dataset.store));
+  });
 }
 
-if (nlAllStores) {
-  nlAllStores.addEventListener("change", toggleStoreRow);
-  toggleStoreRow();
-}
+nlStoreChips.forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const store = chip.dataset.store;
+
+    if (store === "all") {
+      nlSelectedStores = new Set(nlSpecificChips.map((c) => c.dataset.store));
+    } else if (nlSelectedStores.size === nlSpecificChips.length) {
+      // Was in "all" mode — clicking one store narrows down to just that one.
+      nlSelectedStores = new Set([store]);
+    } else if (nlSelectedStores.has(store)) {
+      // Never allow zero stores selected — last one standing can't be removed.
+      if (nlSelectedStores.size > 1) nlSelectedStores.delete(store);
+    } else {
+      nlSelectedStores.add(store);
+    }
+
+    syncNlChips();
+  });
+});
+
+syncNlChips();
 
 if (nlForm) {
   nlForm.addEventListener("submit", async (e) => {
@@ -33,16 +60,11 @@ if (nlForm) {
 
     const email = nlEmail.value.trim();
     const frequency = nlFrequency.value;
-    const stores = nlAllStores.checked
-      ? []
-      : nlStoreChips.filter((c) => c.checked).map((c) => c.value);
+    const allSelected = nlSelectedStores.size === nlSpecificChips.length;
+    const stores = allSelected ? [] : [...nlSelectedStores];
 
     if (!email) {
       setNlStatus("Enter an email address.", true);
-      return;
-    }
-    if (!nlAllStores.checked && stores.length === 0) {
-      setNlStatus("Pick at least one store, or check \"All stores.\"", true);
       return;
     }
 
@@ -60,7 +82,8 @@ if (nlForm) {
       });
       setNlStatus("Subscribed! Check your inbox for a confirmation email.");
       nlForm.reset();
-      toggleStoreRow();
+      nlSelectedStores = new Set(nlSpecificChips.map((c) => c.dataset.store));
+      syncNlChips();
     } catch (err) {
       console.error(err);
       setNlStatus("Something went wrong. Please try again.", true);
