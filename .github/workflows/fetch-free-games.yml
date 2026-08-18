@@ -38,6 +38,9 @@ jobs:
       - name: Fetch free games data
         run: node fetch-games.js
         working-directory: scripts
+        env:
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          FETCH_SECRET: ${{ secrets.FETCH_SECRET }}
 
       - name: Commit updated data
         run: |

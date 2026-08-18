@@ -7,6 +7,7 @@
   <title>Free Game Tracker</title>
   <link rel="stylesheet" href="./styles.css" />
   <script src="./app.js" defer></script>
+  <script src="./newsletter.js" defer></script>
 </head>
 
 <body>
@@ -121,14 +122,14 @@
       </div>
 
       <div class="games-tabs" role="tablist" aria-label="Free games sections">
-        <button type="button" class="games-tab active" id="freeTab" data-tab="free" role="tab"
-          aria-selected="true" aria-controls="freePanel">
+        <button type="button" class="games-tab active" id="freeTab" data-tab="free" role="tab" aria-selected="true"
+          aria-controls="freePanel">
           <span class="dot ok games-section-dot"></span>
           Free Now
           <span class="count-pill" id="freeSectionCount">0</span>
         </button>
-        <button type="button" class="games-tab" id="upcomingTab" data-tab="upcoming" role="tab"
-          aria-selected="false" aria-controls="upcomingPanel">
+        <button type="button" class="games-tab" id="upcomingTab" data-tab="upcoming" role="tab" aria-selected="false"
+          aria-controls="upcomingPanel">
           <span class="dot busy games-section-dot"></span>
           Upcoming
           <span class="count-pill" id="upcomingSectionCount">0</span>
@@ -145,6 +146,51 @@
         <div class="empty" id="upcomingEmptyState" hidden>No upcoming games match your filters right now.</div>
       </div>
     </section>
+
+    <!--
+  Add this <section> to index.html, e.g. right after the closing </section>
+  of your "All Stores" card and before the closing <p class="footer">.
+  Also add <script src="./newsletter.js" defer></script> next to your
+  existing <script src="./app.js" defer></script> tag in <head>.
+-->
+    <section class="card section" id="newsletterSection">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Get notified about new freebies</h2>
+          <p class="section-note">
+            Free to sign up. Choose how often you'd like an email, and which stores you care about.
+          </p>
+        </div>
+      </div>
+
+      <form id="newsletterForm" class="toolbar" style="grid-template-columns: 1.6fr 1fr auto !important;">
+        <input class="field" id="newsletterEmail" type="email" placeholder="you@example.com" required />
+
+        <select class="select" id="newsletterFrequency" aria-label="How often">
+          <option value="instant">Whenever a new game appears</option>
+          <option value="weekly">Weekly digest</option>
+          <option value="monthly">Monthly digest</option>
+        </select>
+
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+
+      <label class="btn btn-secondary check-wrap" style="margin-top: 10px; width: fit-content;">
+        <input type="checkbox" id="newsletterAllStores" checked />
+        All stores
+      </label>
+
+      <div class="chip-group" id="newsletterStoreRow" hidden style="margin-top: 10px; justify-content: flex-start;">
+        <label class="chip"><input type="checkbox" value="epic" style="margin-right:6px;">Epic</label>
+        <label class="chip"><input type="checkbox" value="gog" style="margin-right:6px;">GOG</label>
+        <label class="chip"><input type="checkbox" value="psplus" style="margin-right:6px;">PS Plus</label>
+        <label class="chip"><input type="checkbox" value="prime" style="margin-right:6px;">Prime</label>
+        <label class="chip"><input type="checkbox" value="steam" style="margin-right:6px;">Steam</label>
+      </div>
+
+      <p class="section-note" id="newsletterStatus" aria-live="polite" style="margin-top: 10px;"></p>
+    </section>
+
 
     <p class="footer">
       Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load

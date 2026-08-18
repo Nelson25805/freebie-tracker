@@ -21,6 +21,8 @@ import { fetchPSPlus } from "./fetchers/psplus.js";
 import { fetchPrimeGaming } from "./fetchers/prime.js";
 import { fetchSteam } from "./fetchers/steam.js";
 
+import { notifyNewGames } from "./notify-newsletter.js";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
 
@@ -56,6 +58,8 @@ async function main() {
     totalUpcoming: allGames.filter((g) => g.status === "upcoming").length,
     games: allGames,
   };
+
+  await notifyNewGames(previousGames, allGames);
 
   mkdirSync(dirname(OUT_PATH), { recursive: true });
   writeFileSync(OUT_PATH, JSON.stringify(output, null, 2), "utf-8");
