@@ -804,25 +804,6 @@
       "platforms": [
         "PC"
       ]
-    },
-    {
-      "id": "steam-3716",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Dwarven Realms (Steam) Key Giveaway",
-      "slug": "3716",
-      "storeUrl": "https://www.gamerpower.com/open/dwarven-realms-steam-key-giveaway",
-      "seller": "Steam",
-      "description": "Claim free Steam keys for Dwarven Realms! Dwarven Realms is a 3D action-packed ARPG with epic powers and endless possibilities. Please note this Steam Key giveaway requires 10 ARP (Arena Reward Points) to claim a key. Fortunately, you can earn ARP daily for free.",
-      "image": "https://www.gamerpower.com/offers/1b/6a59119a8eb8d.jpg",
-      "originalPrice": 999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-07-16T13:15:06.000Z",
-      "offerEnd": null,
-      "platforms": [
-        "PC"
-      ]
     }
   ]
 }
