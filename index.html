@@ -193,8 +193,28 @@
         <button class="btn btn-primary" type="submit">Subscribe</button>
       </form>
 
+      <!-- Spam/junk-folder tip — since a personal Gmail sender has no built-up
+       reputation yet, the single biggest thing a new subscriber can do is
+       mark the confirmation email "Not spam" the first time it arrives. -->
+      <div style="
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    ">
+        📬 <strong style="color: var(--text);">Heads up:</strong> the confirmation email may land in
+        Spam/Junk the first time, since this is a new sender. Marking it <strong>"Not spam"</strong>
+        (or adding the sender to your contacts) tells your inbox to trust future emails from us —
+        weekly digests, monthly digests, and new-game alerts included.
+      </div>
+
       <p class="section-note" id="newsletterStatus" aria-live="polite" style="margin-top: 10px;"></p>
     </section>
+
 
     <p class="footer">
       Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load
