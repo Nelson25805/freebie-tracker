@@ -37,7 +37,13 @@ const els = {
 let allGames = [];
 let collected = loadCollected();
 let activeGamesTab = "free"; // "free" | "upcoming"
-let selectedStores = new Set(els.storeChips.map((chip) => chip.dataset.store));
+// "All stores" is a chip alongside the specific-store chips, not a separate
+// control — split it out so its active state can be derived (active
+// whenever every specific store happens to be selected) instead of tracked
+// independently.
+const storeAllChip = els.storeChips.find((chip) => chip.dataset.store === "all");
+const storeSpecificChips = els.storeChips.filter((chip) => chip.dataset.store !== "all");
+let selectedStores = new Set(storeSpecificChips.map((chip) => chip.dataset.store));
 // Which redemption platforms (Epic, GOG, Legacy Games, Amazon Luna, etc.) are
 // currently shown for Prime Gaming offers. Rebuilt from the data each load,
 // since which platforms appear varies month to month.
@@ -294,7 +300,7 @@ function getStoreCounts() {
 
 function updateStoreChipCounts() {
   const counts = getStoreCounts();
-  for (const chip of els.storeChips) {
+  for (const chip of storeSpecificChips) {
     const store = chip.dataset.store;
     const count = counts[store] || 0;
     chip.textContent = `${storeChipBaseLabel(store)} (${count})`;
@@ -589,16 +595,35 @@ function toggleRedeemChip(chip) {
   render();
 }
 
+function syncStoreChips() {
+  const allSelected = selectedStores.size === storeSpecificChips.length;
+  if (storeAllChip) {
+    storeAllChip.classList.toggle("active", allSelected);
+    storeAllChip.setAttribute("aria-pressed", allSelected ? "true" : "false");
+  }
+  for (const chip of storeSpecificChips) {
+    const active = selectedStores.has(chip.dataset.store);
+    chip.classList.toggle("active", active);
+    chip.setAttribute("aria-pressed", active ? "true" : "false");
+  }
+}
+
 function toggleStoreChip(chip) {
   const store = chip.dataset.store;
-  if (selectedStores.has(store)) {
-    selectedStores.delete(store);
-    chip.classList.remove("active");
+
+  if (store === "all") {
+    selectedStores = new Set(storeSpecificChips.map((c) => c.dataset.store));
+  } else if (selectedStores.size === storeSpecificChips.length) {
+    // Was in "all" mode — clicking one store narrows down to just that one.
+    selectedStores = new Set([store]);
+  } else if (selectedStores.has(store)) {
+    // Never allow zero stores selected — last one standing can't be removed.
+    if (selectedStores.size > 1) selectedStores.delete(store);
   } else {
     selectedStores.add(store);
-    chip.classList.add("active");
   }
-  chip.setAttribute("aria-pressed", selectedStores.has(store) ? "true" : "false");
+
+  syncStoreChips();
   updateRedeemChipVisibility();
   render();
 }
