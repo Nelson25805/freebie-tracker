@@ -149,14 +149,8 @@
     </section>
 
     <!--
-  Add this <section> to index.html, e.g. right after the closing </section>
-  of your "All Stores" card and before the closing <p class="footer">.
-  Also add <script src="./newsletter.js" defer></script> next to your
-  existing <script src="./app.js" defer></script> tag in <head>.
-
-  Reuses the exact .store-chip-row / .chip-group / .chip classes your main
-  store filter already uses — no new CSS needed, it'll match automatically,
-  including the per-store colors (epic/gog/psplus/prime/steam).
+  Newsletter Section — this is a simple form that posts to a Google Apps Script Web App endpoint. The script
+  then adds the email address to a Google Sheet, and optionally sends a confirmation email. The script
 -->
     <section class="card section" id="newsletterSection">
       <div class="section-head">
