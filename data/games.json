@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-08-20T14:42:58.451Z",
-  "totalFree": 34,
-  "totalUpcoming": 9,
+  "fetchedAt": "2026-08-20T20:38:21.554Z",
+  "totalFree": 36,
+  "totalUpcoming": 7,
   "games": [
     {
       "id": "b467b7d3570e44c0b84e59475f4a5636",
@@ -17,8 +17,8 @@
       "description": "10-year old Jess accidentally gets everybody's favorite collectible card game banned in Dudsdale Elementary - even worse, it’s her first day! But when troubles arise and mutants from the game start to come to life, and it’s up to Jess and her friends to stop them. Become a Meg...",
       "image": "https://cdn1.epicgames.com/offer/2bfd5ca43ef443739ada168e017e1b78/s1_2560x1440-8d68e37943d666ad0f05093481c4d7df",
       "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-08-20T15:00:00.000Z",
       "offerEnd": "2026-08-27T15:00:00.000Z"
     },
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
+      "offerStart": "2026-08-27T15:00:00.000Z",
+      "offerEnd": "2026-09-03T15:00:00.000Z"
     },
     {
       "id": "be5600439b434624802764f704755cde",
@@ -99,25 +99,6 @@
       "offerEnd": "2026-10-02T05:59:00.000Z"
     },
     {
-      "id": "0e44600a079e419abbb291ccf5af9ee7",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Caravan SandWitch",
-      "slug": "caravan-sandwitch-05ff58",
-      "storeUrl": "https://store.epicgames.com/p/caravan-sandwitch-05ff58",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Embark on a journey across vast landscapes in Caravan SandWitch, a captivating narrative-driven exploration adventure.",
-      "image": "https://cdn1.epicgames.com/spt-assets/95b9a9a220e8483c8c1a70ad692de4b3/caravan-sandwitch-1uz0l.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-08-13T15:00:00.000Z",
-      "offerEnd": "2026-08-20T15:00:00.000Z"
-    },
-    {
       "id": "8f80897c0b6e4e678fed08da169d44be",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -170,7 +151,7 @@
       "image": "https://cdn1.epicgames.com/spt-assets/92837229023341268267ff64cae425a5/albion-online-7k7df.png",
       "originalPrice": 0,
       "discountPrice": 0,
-      "status": "upcoming",
+      "status": "free",
       "offerStart": "2026-08-20T15:00:00.000Z",
       "offerEnd": "2026-08-27T15:00:00.000Z"
     },
@@ -253,6 +234,63 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+    },
+    {
+      "id": "prime-airship-kingdoms-adrift",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Airship: Kingdoms Adrift",
+      "slug": "airship-kingdoms-adrift",
+      "storeUrl": "https://luna.amazon.com/claims/airship-kingdoms-adrift-epic/dp/amzn1.pg.item.aa62d067-6b98-4929-bc49-3ccdd11d888a?g=s&ingress=amzn&ref_=SM_AirshipKingdomsAdrift_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Airship: Kingdoms Adrift  is an airship trading and combat simulator, set in the wake of a Great Sky War that ripped through the steampunk world of Spheara. An uneasy cease-fire holds between the Aecerlian Kingdom, the New Viridian Republic, and the Teutonic Confederation. As they lick their wounds, their suddenly jobless soldiers and sky-farers look for new opportunities among the desolation.Enter the Suthseg Archipelago. A far-flung frontier ruled by an aging king, it was spared from devastation of war and is a land full of riches and opportunity. It is here that fortunes will be made, loyalties tested, and sky faring captains will get the rare chance to carve out a future of their own.You are one of these captains, commissioned to establish a trading company in the Archipelago, and soon pulled into a game of grand politic... and grave danger.Airship Commander's DutiesExperience a story of politics and intrigue, as Suthseg becomes the flashpoint for another Sky War.Customize, upgrade, and pilot 25 various airships, from graceful sailing vessels to ironclad dreadnoughts.Assemble a crew of officers among 25 distinct personalities, each with their own abilities and personal stories to tell.Explore and trade across a vast archipelago with 70 locations and over 300 types of trade goodsSet up camps, mines, and factories, to create a mighty industrial empire producing goods and equipment and dominate the economy.Become the greatest of the sky-faring captains, controlling an entire fleet of airships and deciding the fate of the Kingdom.",
+      "image": "https://m.media-amazon.com/images/I/A1JlVg31YrL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-steelrising",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Steelrising",
+      "slug": "steelrising",
+      "storeUrl": "https://luna.amazon.com/claims/steelrising-epic/dp/amzn1.pg.item.2e34e997-a137-48b3-9b5c-ad2eb51c45f7?g=s&ingress=amzn&ref_=SM_Steelrising_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The city burns and bleeds as it suffers the madness of King Louis XVI and his violent legions of automatons. Aegis, a mechanical masterpiece created by the engineer Vaucanson to be the queen's bodyguard, must save the French Revolution in this challenging action-RPG.CHALLENGING COMBAT BETWEEN AUTOMATONSUp against the king's mechanical soldiers, deadly accuracy will be needed. String together dodges, parries, jumps and devastating attacks to fight your way through Paris. Every fight will test your nerve and requires excellent discipline, while the huge relentless machine bosses demand patience and skill.AEGIS: A CHARACTER WITH EXTRAORDINARY SKILLSDefine your own style and upgrade your abilities as you progress through the game. You can play as a ruthless warrior, a hard-hitting bodyguard, a deadly dancer or a virtuoso of the elemental arts. Take advantage of a wide variety of weapons and skills to approach each fight in your own unique way.REVOLUTIONARY PARIS IS YOUR PLAYGROUNDUsing carriages, grapples, secret passages, a detailed map, and other methods and tools you find along the way, explore a city experiencing its darkest days. Your grappling hook adds a new dimension to exploration and Paris's verticality. Combined with your dash ability, it will provide access to all the city's secrets across multiple levels you can explore over and over again.CHANGE THE COURSE OF HISTORYYou are one of the main characters of an alternative history where Paris is being choked by a tyrant king. Allies and enemies with unclear motives will cross your path, such as Marie-Antoinette, Lafayette and Robespierre. It's up to you to cut a path through all the plotting and put an end to one man's madness so that the French Revolution succeeds.",
+      "image": "https://m.media-amazon.com/images/I/B1t5+DfJb8L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-right-and-down",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Right and Down",
+      "slug": "right-and-down",
+      "storeUrl": "https://luna.amazon.com/claims/right-and-down-gog/dp/amzn1.pg.item.8fe59485-dd11-4558-9a36-8a9d367b10e9?g=s&ingress=amzn&ref_=SM_RightandDown_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A roguelike, dungeon crawler card game that is played using only two buttons: Right and Down! Choose your hero and explore randomly generated card dungeons, gather powerful artifacts to get new abilities, and fight against increasingly mighty enemies! Will you make it to level 50?Roguelike GameplayEach dungeon is randomly generated, so each game is unique! But randomness ends there, as all needed information is shown in-game. Your destiny is determined by your decisions!Each Decision MattersOn each turn, the only decision you can make is to go right or down. This decision, which at first seems trivial, hides a great tactical depth. Will you try to dodge that high-level monster or fight it to get the artifact it hides to its right? The new artifact you just got gives you 5 coins every turn, but only if you move down. Will you risk it?Unlockable Artifacts, Heroes and DungeonsUnlock 6 heroes with different starting artifacts and skills to create your custom run!More than 100 artifacts with a wide variety of effects that you can unlock with every game you play!9 different dungeons. Each one adds a new rule to the game and will increase its difficulty. will you be able to reach the final dungeon?",
+      "image": "https://m.media-amazon.com/images/I/A1e8j2eAevL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
     },
     {
       "id": "prime-hiveswap-friendsim",
@@ -426,6 +464,44 @@
       ]
     },
     {
+      "id": "prime-play-assassin-s-creed-mirage-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Assassin’s Creed® Mirage | Amazon Luna - No Download Required",
+      "slug": "play-assassin-s-creed-mirage-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0CK43NDNR?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/D1iYWIKGN1L._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-play-assassin-s-creed-valhalla-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Assassin's Creed Valhalla | Amazon Luna - No Download Required",
+      "slug": "play-assassin-s-creed-valhalla-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B08N3ZPQRB?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "BUILD YOUR OWN VIKING LEGENDBecome Eivor, a mighty Viking raider, and lead your clan. Advanced RPG mechanics allow you to influence the world around you. With every choice you make, from political alliances and combat strategy, to dialogue and gear progression, carve your path to glory!EXPLORE A DARK AGE WORLDSail from Norway’s icy coasts to England’s lush kingdoms. Roam a vast open world, hunt legendary beasts, and lay bare the secrets of a fractured land.EXPERIENCE VISCERAL COMBATUnleash the ruthless fighting style of a Viking warrior and dual wield axes, swords, or even shields against fierce, relentless foes. Choose your tactics and dismember opponents in close-quarters combat, riddle them with arrows, or assassinate them with your Hidden Blade.GROW YOUR SETTLEMENTConstruct and upgrade buildings that allow for deep customization, including a barracks, a smithy, a tattoo parlor, and more. Recruit new members to your clan and personalize your Viking experience.",
+      "image": "https://m.media-amazon.com/images/I/D1zNaxUezDL._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-use-phonesas-controllers",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -471,7 +547,7 @@
       "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
       "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -490,7 +566,7 @@
       "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Embark on a journey through familiar and new locations as you explore and discover magical beasts, customize your character and craft potions, master spell casting, upgrade talents and become the wizard you want to be.Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. Discover the feeling of living at Hogwarts as you make allies, battle Dark Wizards and ultimately decide the fate of the wizarding world. Your legacy is what you make of it. Live the Unwritten.",
       "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -547,7 +623,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0GSSC24F7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "NOW INCLUDES BONUS CONTENT! Expand your Eternian roster and face new threats! Tackle enemies with two additional Bonus Characters: Roboto with self-charged tech attacks and Spikor dealing powerful damage over time. Plus, battle against all-new enemies including Faker the Elite Battle Boss specific to the Anti-Eternia Realm along with Anti-Eternia Ram-Man and more.\" Unleash the power of Grayskull in Masters of the Universe™: Legends Unite where both heroes and villains come together in this cooperative deck builder. With sworn enemies forced into alliances, up to 6 friends will unite legends including the mighty He-Man, the mystic Teela, the devious Skeletor, the fierce Evil-Lyn, and the ever-resourceful Man-At-Arms for over-the-top, chaotic card play. Unique playstyles bring each legend to life in the fight against Hordak’s unstoppable horde. Throughout Adventure Mode you’ll work together to deliver even bigger hits, gather increasingly powerful cards, and further strengthen your characters. Battle your way through a variety of diverse biomes and obstacles with every playthrough; but the enemy is not the only challenge you’ll face. Along your journey engage in Trials of Eternia, arcade mini games where friendly competition amongst legends for precious bonuses. Snatch treasure from the Faceless One, dodge crushing boulders, and avoid falling into the depths of darkness to claim heroic advantages. Time to build your strategy to defend Castle Grayskull from the evil forces of Hordak! KEY FEATURES Over-the-top, chaotic card play – Team up with up to 6 players or go solo, as you strategically play your cards to damage, protect, or heal yourself or your party on your way to defeat Hordak’s unstoppable horde in epic card battles and challenges. 10 Legends of Eternia – Select your favorite Masters of the Universe legend, either hero or villain, and wield their powers as you band together to stop Hordak. More than 450 Unique Cards – From Skeletor’s Cackle of Chaos card unleashing damage to all enemies to Teela’s Warrior Goddess card converting shields equipped to dealing damage, the strategic choice is yours. But make sure to coordinate with your fellow legends to maximize the Ultimate Power card where everyone contributes to the battle. Multiple Gameplay Modes – With a variety of modes and settings there’s something for every Eternian: Solo mode: When you are ready to take on saving Eternia alone. Adventure mode: Equipped with a starter deck of cards, multitude of encounters, enemies and even arcade minigame challenges providing cooperative and competitive play. Rampage mode: Jump into the action and increase difficulty faster to really test your skills and strategic teamwork with a randomized deck of cards. For even more heart-pounding action and exhilarating fun, check out the epic action and visual effects on the big screen with the Masters of the Universe movie, streaming on Prime Video now. ADDITIONAL DETAILS This game is available in the following languages; English, German, Spanish (LATAM), Italian, French, and Portuguese. • Terms of Use: www.amazon.com/help/ags/terms • Privacy: www.amazon.com/help/ags/privacy • Legal Notices - https://www.amazon.com/gp/help/customer/display.html?nodeId=Tr4gmX7Y5QNrFsMA7R&pop-up=1 • Support Page - https://help.legendsunite.amazongamestudios.com ©/™ 2026, Amazon.com, Inc., its affiliates, and/or licensors. Developed by Bandit Island Games and published by Amazon Games. All rights reserved.",
       "image": "https://m.media-amazon.com/images/I/D1r29T1j+0L._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -585,7 +661,7 @@
       "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
       "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -673,41 +749,41 @@
       ]
     },
     {
-      "id": "prime-play-disney-pixar-brave-the-video-game-amazon-luna-no-download-required",
+      "id": "prime-royal-romances-forbidden-magic",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Play Disney/Pixar Brave: The Video Game | Amazon Luna - No Download Required",
-      "slug": "play-disney-pixar-brave-the-video-game-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B092LJJJSK?ref=pghq&r=web&autoplay=1",
+      "title": "Royal Romances: Forbidden Magic",
+      "slug": "royal-romances-forbidden-magic",
+      "storeUrl": "https://luna.amazon.com/claims/royal-romances-forbidden-magic-legacy/dp/amzn1.pg.item.727672b5-8661-4f8f-b4ed-a6c40a1248ee?g=s&ingress=amzn&ref_=SM_RoyalRomancesForbiddenMagic_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Brave: The Video Game is a Third-Person Action-Adventure game that is a companion release to the Disney/Pixar 2012 major animated release of the same name. Brave is Pixar's first fairy tale release and features the adventures of Merida, the studio's first female lead character in a movie. The game features: a family-friendly storyline, bow and arrow as well as a sword combat, agile in-game movement, puzzle play, characters from the movie as well as others unique to the game, and compatibility with both Windows and Mac operating systems.Inspired by \"Brave\", the Disney/Pixar animated fantasy adventure movie, Brave: The Video Game invites players to run, jump and battle their way through the rugged landscape of mythical and mysterious Scotland. By using their wits and bravery, gamers will also be able to wield a sword and bow and arrow to defeat fierce enemies, break a magical curse and save a kingdom.",
-      "image": "https://m.media-amazon.com/images/I/D17htINUd7S._SX1280_QL90_FMwebp_.png",
+      "description": "What can a human do in a desperate situation or for the chance for unfathomable power and love? The murky air becomes heavier and harder to breathe, monsters roam the forest, and dark magic taint smothers everything within its reach. Ida and Illeon are about to strike, fulfilling their devious plan.Face battles with your people, find love and endure loss as you get ready to defend the lands from mortal threat! Can a simple bard defeat a monstrous werewolf? Can a villain change its nature? Answers to these questions in this pulse-pounded new Hidden-Object Puzzle Adventure!",
+      "image": "https://m.media-amazon.com/images/I/B1Brs6jaz8L._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "Legacy Games"
       ]
     },
     {
-      "id": "prime-use-phonesas-controllers",
+      "id": "prime-spray-paint-simulator",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B0FLWXDWVM?ref=pghq&r=web&autoplay=1",
+      "title": "Spray Paint Simulator",
+      "slug": "spray-paint-simulator",
+      "storeUrl": "https://luna.amazon.com/claims/spray-paint-simulator-aga/dp/amzn1.pg.item.cc221e3b-25ab-4e12-b3bd-8eb10ea25824?g=s&ingress=amzn&ref_=SM_SprayPaintSimulator_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Test your general knowledge and reasoning skills in “Who Wants to Be a Millionaire?”, the official video game of the show!Experience the suspense of the famous TV show in the official video game Who Wants to Be a Millionaire?Climb the prize ladder by answering 15 increasingly difficult questions. Is that your final answer?",
-      "image": "https://m.media-amazon.com/images/I/C1o-UcWC+4L._SX1280_QL90_FMwebp_.png",
+      "description": "The town of Splatterville is in dire need of a makeover, and they need you to help them! Spray Paint Simulator is a relaxing and totally satisfying painting simulator that invites you to start your own painting business, starting from the ground up!Embark on a whimsical adventure in Career Mode as you meet with an eclectic group of clients, each in dire need of your painting expertise. Take on each job right from the start by prepping your space to ensure you deliver the best results, selecting the right colors for the task, and unleashing your creativity as you paint to perfection and keep your customers happy!Upgrade your tools, vehicles, and equipment, and take advantage of an assortment of ladders and scaffolding to help you get to those hard-to-reach spots. Fill the world with rainbow hues, painting everything from rooms and homes, to cars, to bridges, and even giant robots! Unlock Free Spray mode to make the entire town your canvas and unlock the unlimited potential of your creative freedom!",
+      "image": "https://m.media-amazon.com/images/I/B1CbTMtHNjL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "Amazon Games App"
       ]
     },
     {
@@ -727,82 +803,6 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
-    },
-    {
-      "id": "prime-airship-kingdoms-adrift",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Airship: Kingdoms Adrift",
-      "slug": "airship-kingdoms-adrift",
-      "storeUrl": "https://luna.amazon.com/claims/airship-kingdoms-adrift-epic/dp/amzn1.pg.item.aa62d067-6b98-4929-bc49-3ccdd11d888a?g=s&ingress=amzn&ref_=SM_AirshipKingdomsAdrift_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Airship: Kingdoms Adrift  is an airship trading and combat simulator, set in the wake of a Great Sky War that ripped through the steampunk world of Spheara. An uneasy cease-fire holds between the Aecerlian Kingdom, the New Viridian Republic, and the Teutonic Confederation. As they lick their wounds, their suddenly jobless soldiers and sky-farers look for new opportunities among the desolation.Enter the Suthseg Archipelago. A far-flung frontier ruled by an aging king, it was spared from devastation of war and is a land full of riches and opportunity. It is here that fortunes will be made, loyalties tested, and sky faring captains will get the rare chance to carve out a future of their own.You are one of these captains, commissioned to establish a trading company in the Archipelago, and soon pulled into a game of grand politic... and grave danger.Airship Commander's DutiesExperience a story of politics and intrigue, as Suthseg becomes the flashpoint for another Sky War.Customize, upgrade, and pilot 25 various airships, from graceful sailing vessels to ironclad dreadnoughts.Assemble a crew of officers among 25 distinct personalities, each with their own abilities and personal stories to tell.Explore and trade across a vast archipelago with 70 locations and over 300 types of trade goodsSet up camps, mines, and factories, to create a mighty industrial empire producing goods and equipment and dominate the economy.Become the greatest of the sky-faring captains, controlling an entire fleet of airships and deciding the fate of the Kingdom.",
-      "image": "https://m.media-amazon.com/images/I/A1JlVg31YrL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-steelrising",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Steelrising",
-      "slug": "steelrising",
-      "storeUrl": "https://luna.amazon.com/claims/steelrising-epic/dp/amzn1.pg.item.2e34e997-a137-48b3-9b5c-ad2eb51c45f7?g=s&ingress=amzn&ref_=SM_Steelrising_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The city burns and bleeds as it suffers the madness of King Louis XVI and his violent legions of automatons. Aegis, a mechanical masterpiece created by the engineer Vaucanson to be the queen's bodyguard, must save the French Revolution in this challenging action-RPG.CHALLENGING COMBAT BETWEEN AUTOMATONSUp against the king's mechanical soldiers, deadly accuracy will be needed. String together dodges, parries, jumps and devastating attacks to fight your way through Paris. Every fight will test your nerve and requires excellent discipline, while the huge relentless machine bosses demand patience and skill.AEGIS: A CHARACTER WITH EXTRAORDINARY SKILLSDefine your own style and upgrade your abilities as you progress through the game. You can play as a ruthless warrior, a hard-hitting bodyguard, a deadly dancer or a virtuoso of the elemental arts. Take advantage of a wide variety of weapons and skills to approach each fight in your own unique way.REVOLUTIONARY PARIS IS YOUR PLAYGROUNDUsing carriages, grapples, secret passages, a detailed map, and other methods and tools you find along the way, explore a city experiencing its darkest days. Your grappling hook adds a new dimension to exploration and Paris's verticality. Combined with your dash ability, it will provide access to all the city's secrets across multiple levels you can explore over and over again.CHANGE THE COURSE OF HISTORYYou are one of the main characters of an alternative history where Paris is being choked by a tyrant king. Allies and enemies with unclear motives will cross your path, such as Marie-Antoinette, Lafayette and Robespierre. It's up to you to cut a path through all the plotting and put an end to one man's madness so that the French Revolution succeeds.",
-      "image": "https://m.media-amazon.com/images/I/B1t5+DfJb8L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-right-and-down",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Right and Down",
-      "slug": "right-and-down",
-      "storeUrl": "https://luna.amazon.com/claims/right-and-down-gog/dp/amzn1.pg.item.8fe59485-dd11-4558-9a36-8a9d367b10e9?g=s&ingress=amzn&ref_=SM_RightandDown_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "A roguelike, dungeon crawler card game that is played using only two buttons: Right and Down! Choose your hero and explore randomly generated card dungeons, gather powerful artifacts to get new abilities, and fight against increasingly mighty enemies! Will you make it to level 50?Roguelike GameplayEach dungeon is randomly generated, so each game is unique! But randomness ends there, as all needed information is shown in-game. Your destiny is determined by your decisions!Each Decision MattersOn each turn, the only decision you can make is to go right or down. This decision, which at first seems trivial, hides a great tactical depth. Will you try to dodge that high-level monster or fight it to get the artifact it hides to its right? The new artifact you just got gives you 5 coins every turn, but only if you move down. Will you risk it?Unlockable Artifacts, Heroes and DungeonsUnlock 6 heroes with different starting artifacts and skills to create your custom run!More than 100 artifacts with a wide variety of effects that you can unlock with every game you play!9 different dungeons. Each one adds a new rule to the game and will increase its difficulty. will you be able to reach the final dungeon?",
-      "image": "https://m.media-amazon.com/images/I/A1e8j2eAevL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "steam-3524",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Deponia (Steam) Giveaway",
-      "slug": "3524",
-      "storeUrl": "https://www.gamerpower.com/open/deponia-steam-giveaway",
-      "seller": "Steam",
-      "description": "Deponia is free on Steam until August 20! Deponia is a point-and-click game with a unique comic style and challenging puzzles. Check it out!",
-      "image": "https://www.gamerpower.com/offers/1b/69af0087172d3.jpg",
-      "originalPrice": 2999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-08-13T13:05:54.000Z",
-      "offerEnd": "2026-08-20T23:59:00.000Z",
-      "platforms": [
-        "PC"
       ]
     },
     {
