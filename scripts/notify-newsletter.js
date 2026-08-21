@@ -44,6 +44,8 @@ export async function notifyNewGames(previousGames, currentGames) {
           title: g.title,
           storeUrl: g.storeUrl,
           offerEnd: g.offerEnd,
+          image: g.image,
+          platforms: g.platforms,
         })),
       }),
     });
