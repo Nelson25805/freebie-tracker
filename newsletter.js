@@ -47,7 +47,6 @@ nlStoreChips.forEach((chip) => {
     } else {
       nlSelectedStores.add(store);
     }
-
     syncNlChips();
   });
 });
