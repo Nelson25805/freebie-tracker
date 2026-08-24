@@ -13,6 +13,14 @@ on:
 permissions:
   contents: write
 
+# Two scheduled runs overlapping (or a manual run landing mid-schedule) can
+# each check out the same base commit and then race to push — whichever
+# loses gets the "fetch first" rejection. Queue runs instead of letting them
+# run concurrently, so each one always starts from the latest main.
+concurrency:
+  group: "fetch-free-games"
+  cancel-in-progress: false
+
 jobs:
   fetch-games:
     runs-on: ubuntu-latest
@@ -52,7 +60,23 @@ jobs:
           # Only commit if the file actually changed
           if git diff --staged --quiet; then
             echo "No changes to games data, skipping commit."
-          else
-            git commit -m "chore: refresh free games data"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore: refresh free games data"
+
+          # main can move between checkout and push (a manual push, or an
+          # overlapping run slipping past the concurrency guard). Rebase
+          # our one data commit onto the latest main and retry a few times
+          # rather than failing the whole run over a push race.
+          attempt=1
+          max_attempts=5
+          until git push; do
+            if [ "$attempt" -ge "$max_attempts" ]; then
+              echo "::error::Push still failing after $attempt attempts, giving up."
+              exit 1
+            fi
+            echo "Push rejected (attempt $attempt/$max_attempts) — pulling and rebasing, then retrying…"
+            git pull --rebase origin main
+            attempt=$((attempt + 1))
+          done
