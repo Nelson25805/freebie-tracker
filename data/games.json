@@ -787,25 +787,6 @@
       ]
     },
     {
-      "id": "steam-3756",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Dokimon Quest (Steam) Giveaway",
-      "slug": "3756",
-      "storeUrl": "https://www.gamerpower.com/open/dokimon-quest-steam-giveaway",
-      "seller": "Steam",
-      "description": "If you’re a Pokémon fan, you can’t miss this giveaway! Score Dokimon Quest for free via Steam until August 26 and keep it forever in your Steam library! Dokimon Quest is a monster-taming RPG with 140+ Dokimons to capture!\r\n\r\nNote: You must scroll down to the third green button, not the first one.",
-      "image": "https://www.gamerpower.com/offers/1b/6a8c7f81e1f39.jpg",
-      "originalPrice": 1499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-08-24T13:29:37.000Z",
-      "offerEnd": "2026-08-26T23:59:00.000Z",
-      "platforms": [
-        "PC"
-      ]
-    },
-    {
       "id": "steam-3716",
       "store": "steam",
       "storeName": "Steam",
