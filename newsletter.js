@@ -1,7 +1,7 @@
 // newsletter.js
 // Talks directly to your Google Apps Script Web App — no server of your own needed.
 // Paste the Web app URL from the Apps Script deployment step here:
-const NEWSLETTER_ENDPOINT = "https://script.google.com/macros/s/AKfycbwws9JFMlHUWaRWveCAqHQiIIsC0SQkaVkhpkAj0JPvHh1JO5i1QuG9FurPckokppXz/exec";
+const NEWSLETTER_ENDPOINT = "https://script.google.com/macros/s/AKfycbyoMATQzhMACIgRdVJy49SJMaiLYH-z6RkC3I9H31Rf-5V3RInWiEYLWgKngiyWBllw/exec";
 
 const nlForm = document.getElementById("newsletterForm");
 const nlEmail = document.getElementById("newsletterEmail");
