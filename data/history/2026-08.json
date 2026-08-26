@@ -1,9 +1,8 @@
 {
-  "fetchedAt": "2026-08-26T08:39:08.661Z",
-  "totalFree": 37,
-  "totalUpcoming": 7,
-  "games": [
-    {
+  "month": "2026-08",
+  "updatedAt": "2026-08-26T08:39:08.661Z",
+  "games": {
+    "b467b7d3570e44c0b84e59475f4a5636": {
       "id": "b467b7d3570e44c0b84e59475f4a5636",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -20,123 +19,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-08-20T15:00:00.000Z",
-      "offerEnd": "2026-08-27T15:00:00.000Z"
+      "offerEnd": "2026-08-27T15:00:00.000Z",
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
-      "id": "8401414902e84f2cb9afa9142f051d32",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Breathedge",
-      "slug": "breathedge",
-      "storeUrl": "https://store.epicgames.com/p/breathedge",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Survive in outer space! Together with your immortal chicken, discover the truth behind your sudden spaceship crash. Craft tools, pilot vehicles, and even control space stations to survive and explore the wreckage.",
-      "image": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/egs-breathedge-redruinssoftworks-s1-2560x1440-76fd08cd9c2d-2560x1440-783424f6d4a7f32a0e75fc074f2f928e.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
-      "id": "be5600439b434624802764f704755cde",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Ghostrunner 2",
-      "slug": "ghostrunner-2",
-      "storeUrl": "https://store.epicgames.com/p/ghostrunner-2",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Ghostrunner 2 is a hardcore FPP slasher set in a post-apocalyptic, cyberpunk world. Featuring everything fans loved about Ghostrunner plus incredible boss fights, new interactive story, thrilling motorbike levels, improved skills, and more cyber ninja action. ",
-      "image": "https://cdn1.epicgames.com/offer/708f57aaa04b42ef885be16c8288f0ac/EGS_Ghostrunner2_OneMoreLevel_S1_2560x1440-15845148fae1d0cfd7f3e98c9b3ba6ba",
-      "originalPrice": 3999,
-      "discountPrice": 3999,
-      "status": "upcoming",
-      "offerStart": "2026-09-10T17:00:00.000Z",
-      "offerEnd": "2026-09-24T17:00:00.000Z"
-    },
-    {
-      "id": "4a88d0dc64114b20b67339c74543f859",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Lost Castle: The Old Ones Awaken",
-      "slug": "lost-castle-abb2e2",
-      "storeUrl": "https://store.epicgames.com/p/lost-castle-abb2e2",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "The Old Ones Awaken adds new levels to explore, new enemies to defeat, and new bosses to face along with a host exciting new weapons and equipment to wield and wear.",
-      "image": "https://cdn1.epicgames.com/spt-assets/a6d76157ad884f2c9aa470b30da9e2ff/lost-castle-r390n.png",
-      "originalPrice": 399,
-      "discountPrice": 399,
-      "status": "upcoming",
-      "offerStart": "2026-08-30T01:00:00.000Z",
-      "offerEnd": "2026-09-13T23:59:00.000Z"
-    },
-    {
-      "id": "944b5b5d646d46bc92bc33edfe983d26",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "LISA: The Definitive Edition",
-      "slug": "lisa-the-definitive-edition",
-      "storeUrl": "https://store.epicgames.com/p/lisa-the-definitive-edition",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Explore Olathe and unmask its twisted secrets with LISA: The Definitive Edition, including the original narrative-driven RPG LISA: The Painful and its sequel LISA: The Joyful.",
-      "image": "https://cdn1.epicgames.com/offer/ca3a9d16d131478c97fd56c138a6511a/EGS_LISATheDefinitiveEdition_DingalingProductions_Bundles_S2_1200x1600-4a9b4fc6e06e8aff136c1a3cf18292ae",
-      "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
-      "offerStart": "2026-09-17T15:00:00.000Z",
-      "offerEnd": "2026-10-02T05:59:00.000Z"
-    },
-    {
-      "id": "8f80897c0b6e4e678fed08da169d44be",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Castlevania Anniversary Collection",
-      "slug": "castlevania-anniversary-collection-a61f94",
-      "storeUrl": "https://store.epicgames.com/p/castlevania-anniversary-collection-a61f94",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
-      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
-      "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
-      "id": "f967cff9761c4198b4e972cfd71e40d7",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Monument Valley",
-      "slug": "monument-valley-1d99d3",
-      "storeUrl": "https://store.epicgames.com/p/monument-valley-1d99d3",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Embark on a journey of forgiveness through impossible environments and illusionary puzzles. Experience this meditative and calming puzzle game by manipulating monuments and creating evolving paths to explore new, surreal, and mysterious worlds.",
-      "image": "https://cdn1.epicgames.com/spt-assets/e56a7411805046d3b5b7253a6e4e0faa/monument-valley-1gys5.jpg",
-      "originalPrice": 799,
-      "discountPrice": 799,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
+    "a802acab90af4a07952a07a9fa677f2f": {
       "id": "a802acab90af4a07952a07a9fa677f2f",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -153,28 +40,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-08-20T15:00:00.000Z",
-      "offerEnd": "2026-08-27T15:00:00.000Z"
+      "offerEnd": "2026-08-27T15:00:00.000Z",
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
-      "id": "8f1fcf01e32e4fd4b2ae0a9737992760",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Rival Stars Horse Racing : Desktop Edition",
-      "slug": "rival-stars-horse-racing-dd09de",
-      "storeUrl": "https://store.epicgames.com/p/rival-stars-horse-racing-dd09de",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "With stunning, realistic horses, an in-depth breeding system, and a range of exciting game modes, Rival Stars Horse Racing offers horse fans the ultimate racing and riding experience. Take the reins and become an equestrian legend!",
-      "image": "https://cdn1.epicgames.com/spt-assets/3355791f5b4740618adac242cf0dd46c/rival-stars-horse-racing-scu1x.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
-      "offerStart": "2026-08-27T15:00:00.000Z",
-      "offerEnd": "2026-09-03T15:00:00.000Z"
-    },
-    {
+    "gog-video-game-show-the-witcher-3-wild-hunt-concert-2016-": {
       "id": "gog-video-game-show-the-witcher-3-wild-hunt-concert-2016-",
       "store": "gog",
       "storeName": "GOG",
@@ -191,9 +61,11 @@
       "offerEnd": "2026-08-27T20:00:59.961Z",
       "platforms": [
         "PC"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "psplus-dying-light-2-stay-human-reloaded-edition": {
       "id": "psplus-dying-light-2-stay-human-reloaded-edition",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -212,9 +84,11 @@
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/",
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "psplus-big-walk": {
       "id": "psplus-big-walk",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -232,9 +106,11 @@
       "platforms": [
         "PS5"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/",
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "psplus-signalis": {
       "id": "psplus-signalis",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -252,9 +128,11 @@
       "platforms": [
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/",
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-airship-kingdoms-adrift": {
       "id": "prime-airship-kingdoms-adrift",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -271,9 +149,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-steelrising": {
       "id": "prime-steelrising",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -290,9 +170,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-right-and-down": {
       "id": "prime-right-and-down",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -309,9 +191,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-hiveswap-friendsim": {
       "id": "prime-hiveswap-friendsim",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -328,9 +212,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-weakless": {
       "id": "prime-weakless",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -347,9 +233,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-zoria-age-of-shattering": {
       "id": "prime-zoria-age-of-shattering",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -366,9 +254,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-in-sound-mind": {
       "id": "prime-in-sound-mind",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -385,9 +275,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-space-grunts-chrono-shard": {
       "id": "prime-space-grunts-chrono-shard",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -404,9 +296,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-terraforming-mars": {
       "id": "prime-terraforming-mars",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -423,9 +317,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-space-grunts-2": {
       "id": "prime-space-grunts-2",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -442,9 +338,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-xcom-chimera-squad": {
       "id": "prime-xcom-chimera-squad",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -461,9 +359,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-play-assassin-s-creed-mirage-amazon-luna-no-download-required": {
       "id": "prime-play-assassin-s-creed-mirage-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -480,9 +380,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-play-assassin-s-creed-valhalla-amazon-luna-no-download-required": {
       "id": "prime-play-assassin-s-creed-valhalla-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -499,218 +401,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
-      "id": "prime-use-phonesas-controllers",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B0H4Y4MWQ9?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/D1eNP1lFLyL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-dispatch-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play Dispatch | Amazon Luna - No Download Required",
-      "slug": "play-dispatch-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0H6GQJMBN?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/C1kt2ZkbZZL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-ea-sports-fc-26-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play EA SPORTS FC™ 26 | Amazon Luna - No Download Required",
-      "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-hogwarts-legacy-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play Hogwarts Legacy | Amazon Luna - No Download Required",
-      "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-wobbly-life-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play Wobbly Life | Amazon Luna - No Download Required",
-      "slug": "play-wobbly-life-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-use-phonesas-controllers",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B09RYKCKQ8?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/C1Pwa6Ij--L._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-use-phonesas-controllers",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B0GSSC24F7?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/D1r29T1j+0L._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-use-phonesas-controllers",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B0GWC1XP24?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/D17Dpap4+SL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play Marvel's Guardians of the Galaxy | Amazon Luna - No Download Required",
-      "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
-      "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-use-phonesas-controllers",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Use PhonesAs Controllers",
-      "slug": "use-phonesas-controllers",
-      "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-play-sonic-mania-plus-amazon-luna-no-download-required",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Play Sonic Mania Plus | Amazon Luna - No Download Required",
-      "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
-      "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Free with Prime Gaming via Amazon Luna.",
-      "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
+    "prime-use-phonesas-controllers": {
       "id": "prime-use-phonesas-controllers",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -727,9 +422,137 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-play-dispatch-amazon-luna-no-download-required": {
+      "id": "prime-play-dispatch-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Dispatch | Amazon Luna - No Download Required",
+      "slug": "play-dispatch-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0H6GQJMBN?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/C1kt2ZkbZZL._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
+    },
+    "prime-play-ea-sports-fc-26-amazon-luna-no-download-required": {
+      "id": "prime-play-ea-sports-fc-26-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play EA SPORTS FC™ 26 | Amazon Luna - No Download Required",
+      "slug": "play-ea-sports-fc-26-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
+    },
+    "prime-play-hogwarts-legacy-amazon-luna-no-download-required": {
+      "id": "prime-play-hogwarts-legacy-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Hogwarts Legacy | Amazon Luna - No Download Required",
+      "slug": "play-hogwarts-legacy-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0FVWBCF89?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/D1Qd8AgN8wL._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
+    },
+    "prime-play-wobbly-life-amazon-luna-no-download-required": {
+      "id": "prime-play-wobbly-life-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Wobbly Life | Amazon Luna - No Download Required",
+      "slug": "play-wobbly-life-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
+    },
+    "prime-play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required": {
+      "id": "prime-play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Marvel's Guardians of the Galaxy | Amazon Luna - No Download Required",
+      "slug": "play-marvel-s-guardians-of-the-galaxy-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B0GZJ4DT33?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.LEAD THE GUARDIANS OF THE GALAXYYou play as Star-Lord, so nothing’s off-limits with your bold combat style, from Element Blasters and jet boot-powered dropkicks to tag-team beat-downs. With the Guardians fighting at your side, call the shots and overwhelm your opponents with signature attacks. Meanwhile, the consequences of your decisions will range from light-hearted to downright unexpected as your journey unfolds. ALL-NEW STORYYour newly-formed band of legendary misfits is set to save the universe in this fresh but faithful take on the Guardians of the Galaxy. Somehow, you set off a chain of catastrophic events, leading to a wild ride through mind-blowing worlds inhabited by iconic and original Marvel characters. Turn up the all-star ‘80s mixtape and get ready to kick it. FROM MISFITS TO SUPER HEROESYou’re the only thing holding the unpredictable Guardians together, so you’ll have to get better at this leadership thing fast. With this offbeat approximation of a family at your side, there will be tears and laughter as you set about tearing into the cosmos together. Whatever’s waiting around the next corner, you know it’s going to be a blast.© 2026 MARVEL. Developed by Eidos Montréal. EIDOS and EIDOS MONTRÉAL logo are registered trademarks or trademarks of the Eidos Interactive Corporation group of companies.",
+      "image": "https://m.media-amazon.com/images/I/D1-L4AbF1nL._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
+    },
+    "prime-play-sonic-mania-plus-amazon-luna-no-download-required": {
+      "id": "prime-play-sonic-mania-plus-amazon-luna-no-download-required",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Play Sonic Mania Plus | Amazon Luna - No Download Required",
+      "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
+      "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
+    },
+    "prime-play-disney-pixar-wall-e-amazon-luna-no-download-required": {
       "id": "prime-play-disney-pixar-wall-e-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -746,9 +569,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-royal-romances-forbidden-magic": {
       "id": "prime-royal-romances-forbidden-magic",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -765,9 +590,11 @@
       "offerEnd": null,
       "platforms": [
         "Legacy Games"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-spray-paint-simulator": {
       "id": "prime-spray-paint-simulator",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -784,9 +611,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "prime-pyramids-and-aliens-escape-room": {
       "id": "prime-pyramids-and-aliens-escape-room",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -803,9 +632,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "steam-3756": {
       "id": "steam-3756",
       "store": "steam",
       "storeName": "Steam",
@@ -822,9 +653,11 @@
       "offerEnd": "2026-08-26T23:59:00.000Z",
       "platforms": [
         "PC"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     },
-    {
+    "steam-3716": {
       "id": "steam-3716",
       "store": "steam",
       "storeName": "Steam",
@@ -841,7 +674,9 @@
       "offerEnd": null,
       "platforms": [
         "PC"
-      ]
+      ],
+      "firstSeen": "2026-08-26T08:39:08.661Z",
+      "lastSeen": "2026-08-26T08:39:08.661Z"
     }
-  ]
+  }
 }
