@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freebie History · Free Game Tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./js/history-main.js"></script>
+</head>
+
+<body>
+    <main class="wrap">
+        <section class="hero">
+            <div class="card hero-main">
+                <div class="eyebrow">🗂️ Freebie Archive</div>
+                <h1>Browse what was free in past months.</h1>
+                <p class="subtext">
+                    Every free offer the tracker picks up gets archived here, even after its claim window closes
+                    and it drops off the live page. Good for "wait, was that free already?" or catching up on
+                    what you missed.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="./index.html">← Back to current freebies</a>
+                </div>
+                <div class="status-line" aria-live="polite">
+                    <span class="dot" id="statusDot"></span>
+                    <span id="statusText">Loading archive…</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card section">
+            <div class="store-chip-row">
+                <span class="chip-row-label">Month</span>
+                <div class="chip-group">
+                    <select class="select" id="monthSelect" aria-label="Choose month"></select>
+                </div>
+            </div>
+
+            <div class="store-chip-row">
+                <span class="chip-row-label">Stores</span>
+                <div class="chip-group" id="historyStoreFilter" role="group" aria-label="Filter by store">
+                    <button type="button" class="chip active" data-store="all">All stores</button>
+                    <button type="button" class="chip active" data-store="epic">Epic</button>
+                    <button type="button" class="chip active" data-store="gog">GOG</button>
+                    <button type="button" class="chip active" data-store="psplus">PS Plus</button>
+                    <button type="button" class="chip active" data-store="prime">Prime</button>
+                    <button type="button" class="chip active" data-store="steam">Steam</button>
+                </div>
+            </div>
+
+            <div class="toolbar" style="grid-template-columns: 1fr auto !important;">
+                <input class="search" id="historySearch" type="search" placeholder="Search this month's freebies..." />
+                <select class="select" id="historySort" aria-label="Sort results">
+                    <option value="first-seen">Sort: earliest first</option>
+                    <option value="title">Sort: title</option>
+                </select>
+            </div>
+
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title" id="historyMonthTitle">Archive</h2>
+                    <p class="section-note" id="historyMonthNote"></p>
+                </div>
+            </div>
+
+            <div class="grid" id="historyGrid" aria-live="polite"></div>
+            <div class="empty" id="historyEmptyState" hidden>No archived games match your filters for this month.</div>
+        </section>
+
+        <p class="footer">
+            Archive snapshots are written by the same GitHub Action that refreshes the live tracker —
+            see <code>data/history/</code> in the repo.
+        </p>
+    </main>
+</body>
+
+</html>

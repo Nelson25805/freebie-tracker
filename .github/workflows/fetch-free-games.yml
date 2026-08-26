@@ -55,7 +55,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data/games.json
+          git add data/games.json data/history
 
           # Only commit if the file actually changed
           if git diff --staged --quiet; then
