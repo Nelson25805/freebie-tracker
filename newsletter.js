@@ -6,6 +6,7 @@ const NEWSLETTER_ENDPOINT = "https://script.google.com/macros/s/AKfycbyoMATQzhMA
 const nlForm = document.getElementById("newsletterForm");
 const nlEmail = document.getElementById("newsletterEmail");
 const nlFrequency = document.getElementById("newsletterFrequency");
+const nlWebsite = document.getElementById("newsletterWebsite"); // honeypot — see index.html for why
 const nlStoreFilter = document.getElementById("newsletterStoreFilter");
 const nlStoreChips = nlStoreFilter ? Array.from(nlStoreFilter.querySelectorAll(".chip")) : [];
 const nlAllChip = nlStoreChips.find((c) => c.dataset.store === "all");
@@ -77,9 +78,21 @@ if (nlForm) {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "text/plain" }, // avoids a CORS preflight
-        body: JSON.stringify({ action: "subscribe", email, frequency, stores }),
+        body: JSON.stringify({
+          action: "subscribe",
+          email,
+          frequency,
+          stores,
+          // Honeypot field — real visitors never fill this in. If it's
+          // non-empty, Code.gs silently drops the request server-side.
+          website: nlWebsite ? nlWebsite.value : "",
+        }),
       });
-      setNlStatus("Subscribed! Check your inbox for a confirmation email.");
+
+      // We're on "no-cors" so we can't actually read whether this
+      // succeeded — but with double opt-in, "submitted" no longer means
+      // "subscribed," so say that plainly rather than implying it's done.
+      setNlStatus("Almost done! Check your inbox for a confirmation email and click the link inside it.");
       nlForm.reset();
       nlSelectedStores = new Set(nlSpecificChips.map((c) => c.dataset.store));
       syncNlChips();

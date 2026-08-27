@@ -31,24 +31,26 @@
           <input type="file" id="importFileInput" accept="application/json" hidden />
           <a class="btn btn-ghost" href="./history.html">🗂️ Browse past months</a>
 
-          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank" rel="noreferrer">
+          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank"
+            rel="noopener noreferrer">
             Epic free games
           </a>
 
-          <a class="btn btn-ghost" href="https://www.gog.com/en/games#discounted" target="_blank" rel="noreferrer">
+          <a class="btn btn-ghost" href="https://www.gog.com/en/games#discounted" target="_blank"
+            rel="noopener noreferrer">
             GOG free games
           </a>
 
-          <a class="btn btn-ghost" href="https://gaming.amazon.com/home" target="_blank" rel="noreferrer">
+          <a class="btn btn-ghost" href="https://gaming.amazon.com/home" target="_blank" rel="noopener noreferrer">
             Prime Gaming
           </a>
 
           <a class="btn btn-ghost" href="https://store.playstation.com/en-us/pages/latest" target="_blank"
-            rel="noreferrer">
+            rel="noopener noreferrer">
             PS Plus games
           </a>
 
-          <a class="btn btn-ghost" href="https://steamdb.info/upcoming/free/" target="_blank" rel="noreferrer">
+          <a class="btn btn-ghost" href="https://steamdb.info/upcoming/free/" target="_blank" rel="noopener noreferrer">
             Steam free games
           </a>
         </div>
@@ -157,7 +159,8 @@
 
     <!--
   Newsletter Section — this is a simple form that posts to a Google Apps Script Web App endpoint. The script
-  then adds the email address to a Google Sheet, and optionally sends a confirmation email. The script
+  then adds the email address to a Google Sheet (pending double opt-in confirmation), and sends a confirm-your-email
+  message. The script only starts sending digests once that confirm link has been clicked.
 -->
     <section class="card section" id="newsletterSection">
       <div class="section-head">
@@ -192,6 +195,17 @@
         </select>
 
         <button class="btn btn-primary" type="submit">Subscribe</button>
+
+        <!--
+          Honeypot field — invisible to real visitors (off-screen, not
+          type="hidden", so bots that only skip type="hidden" inputs still
+          fill it in) and never announced to assistive tech. If this comes
+          back non-empty, the backend silently drops the request instead
+          of creating a subscriber or sending mail. Leave it in the DOM;
+          don't remove or rename it without updating newsletter.js/Code.gs.
+        -->
+        <input type="text" id="newsletterWebsite" name="website" autocomplete="off" tabindex="-1" aria-hidden="true"
+          style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0; pointer-events:none;" />
       </form>
 
       <!-- Spam/junk-folder tip — since a personal Gmail sender has no built-up
@@ -207,10 +221,12 @@
       font-size: 0.88rem;
       line-height: 1.5;
     ">
-        📬 <strong style="color: var(--text);">Heads up:</strong> the confirmation email may land in
-        Spam/Junk the first time, since this is a new sender. Marking it <strong>"Not spam"</strong>
-        (or adding the sender to your contacts) tells your inbox to trust future emails from us —
-        weekly digests, monthly digests, and new-game alerts included.
+        📬 <strong style="color: var(--text);">Heads up:</strong> after you subscribe, we'll send a one-time
+        <strong>confirmation email</strong> — you'll need to click the link inside it before any digests start
+        (this is just to make sure it's really your inbox). That first email may land in Spam/Junk since
+        this is a new sender. Marking it <strong>"Not spam"</strong> (or adding the sender to your contacts)
+        tells your inbox to trust future emails from us — weekly digests, monthly digests, and new-game
+        alerts included.
       </div>
 
       <p class="section-note" id="newsletterStatus" aria-live="polite" style="margin-top: 10px;"></p>
