@@ -1060,3 +1060,14 @@ a {
 .offer-countdown.urgent {
     color: #f59e0b;
 }
+
+.backup-status {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted);
+}
+
+.backup-status.stale {
+    color: #f59e0b;
+}

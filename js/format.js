@@ -138,3 +138,37 @@ export function offerProgressMarkup(game) {
       ${timeLeft ? `<span class="offer-countdown ${urgent ? "urgent" : ""}" data-end="${escapeHtml(game.offerEnd)}">${escapeHtml(timeLeft)}</span>` : ""}
     </div>`;
 }
+
+// ─── Backup status ──────────────────────────────────────────────────────────
+
+export function fmtRelativeBackup(iso) {
+  if (!iso) return "Never backed up";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "Never backed up";
+
+  const diffDays = Math.floor((Date.now() - d.getTime()) / 86400000);
+
+  if (diffDays <= 0) return "Backed up today";
+  if (diffDays === 1) return "Backed up 1 day ago";
+  if (diffDays < 14) return `Backed up ${diffDays} days ago`;
+  if (diffDays < 60) {
+    const weeks = Math.floor(diffDays / 7);
+    return `Backed up ${weeks} week${weeks === 1 ? "" : "s"} ago`;
+  }
+  if (diffDays < 365) {
+    const months = Math.floor(diffDays / 30);
+    return `Backed up ${months} month${months === 1 ? "" : "s"} ago`;
+  }
+  const years = Math.floor(diffDays / 365);
+  return `Backed up ${years} year${years === 1 ? "" : "s"} ago`;
+}
+
+// A backup older than this (or missing) gets flagged in the UI.
+export const BACKUP_STALE_DAYS = 30;
+
+export function isBackupStale(iso) {
+  if (!iso) return true;
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return true;
+  return (Date.now() - d.getTime()) / 86400000 > BACKUP_STALE_DAYS;
+}

@@ -24,6 +24,11 @@
         <div class="hero-actions">
           <button class="btn btn-primary" id="refreshBtn">Reload data</button>
           <button class="btn btn-secondary" id="resetBtn">Clear collected marks</button>
+          <button class="btn btn-secondary" id="exportBtn">⬇️ Export collected</button>
+          <button class="btn btn-secondary" id="importBtn">⬆️ Import collected</button>
+          <button class="btn btn-ghost" id="copyCodeBtn">📋 Copy backup code</button>
+          <button class="btn btn-ghost" id="pasteCodeBtn">📥 Paste backup code</button>
+          <input type="file" id="importFileInput" accept="application/json" hidden />
           <a class="btn btn-ghost" href="./history.html">🗂️ Browse past months</a>
 
           <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank" rel="noreferrer">
@@ -68,6 +73,7 @@
           <div class="stat-label">Already collected</div>
           <div class="stat-value" id="claimedCount">0</div>
           <small>Saved locally in this browser so your next visit remembers them.</small>
+          <div class="backup-status" id="backupStatus">Never backed up</div>
         </div>
       </aside>
     </section>

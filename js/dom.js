@@ -31,4 +31,11 @@ export const els = {
   lastUpdated: document.getElementById("lastUpdated"),
   statusText: document.getElementById("statusText"),
   statusDot: document.getElementById("statusDot"),
+  exportBtn: document.getElementById("exportBtn"),
+  importBtn: document.getElementById("importBtn"),
+  importFileInput: document.getElementById("importFileInput"),
+  copyCodeBtn: document.getElementById("copyCodeBtn"),
+  pasteCodeBtn: document.getElementById("pasteCodeBtn"),
+  claimedCount: document.getElementById("claimedCount"),
+  backupStatus: document.getElementById("backupStatus"),
 };

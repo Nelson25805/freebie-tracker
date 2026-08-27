@@ -13,6 +13,10 @@ import {
   toggleCollected,
   markVisibleAsCollected,
   clearCollected,
+  downloadCollectedBackup,
+  uploadCollectedBackup,
+  copyCollectedBackupToClipboard,
+  importCollectedBackupFromText,
 } from "./actions.js";
 
 // ─── Event wiring ───────────────────────────────────────────────────────────
@@ -59,6 +63,53 @@ els.upcomingTab.addEventListener("click", () => setActiveGamesTabUI("upcoming"))
 els.refreshBtn.addEventListener("click", loadGames);
 els.resetBtn.addEventListener("click", clearCollected);
 els.markAllBtn.addEventListener("click", markVisibleAsCollected);
+
+els.refreshBtn.addEventListener("click", loadGames);
+els.resetBtn.addEventListener("click", clearCollected);
+els.markAllBtn.addEventListener("click", markVisibleAsCollected);
+
+els.exportBtn.addEventListener("click", downloadCollectedBackup);
+
+els.importBtn.addEventListener("click", () => els.importFileInput.click());
+
+els.importFileInput.addEventListener("change", async () => {
+  const file = els.importFileInput.files[0];
+  if (!file) return;
+
+  try {
+    const { count, imported } = await uploadCollectedBackup(file, "merge");
+    alert(`Imported ${imported} entr${imported === 1 ? "y" : "ies"} — you now have ${count} game(s) marked collected.`);
+  } catch (err) {
+    alert(err.message);
+  } finally {
+    els.importFileInput.value = ""; // lets the same file be re-selected later
+  }
+});
+
+// Optional text/clipboard fallback
+if (els.copyCodeBtn) {
+  els.copyCodeBtn.addEventListener("click", async () => {
+    try {
+      await copyCollectedBackupToClipboard();
+      alert("Backup code copied! Paste it anywhere to save it, or paste it into another device using 'Paste backup code'.");
+    } catch {
+      alert("Couldn't access the clipboard. Try Export instead.");
+    }
+  });
+}
+
+if (els.pasteCodeBtn) {
+  els.pasteCodeBtn.addEventListener("click", async () => {
+    const text = prompt("Paste your backup code here:");
+    if (!text) return;
+    try {
+      const { count, imported } = await importCollectedBackupFromText(text, "merge");
+      alert(`Imported ${imported} entr${imported === 1 ? "y" : "ies"} — you now have ${count} game(s) marked collected.`);
+    } catch (err) {
+      alert(err.message);
+    }
+  });
+}
 
 // ─── Boot ───────────────────────────────────────────────────────────────────
 
