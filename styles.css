@@ -1036,3 +1036,27 @@ a {
 .offer-progress.urgent .offer-progress-fill {
     background: linear-gradient(90deg, #f59e0b, var(--danger));
 }
+
+.offer-progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.offer-progress-wrap .offer-progress {
+    flex: 1;
+    margin-top: 0;
+}
+
+.offer-countdown {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.offer-countdown.urgent {
+    color: #f59e0b;
+}

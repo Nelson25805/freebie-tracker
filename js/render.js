@@ -15,6 +15,7 @@ import {
   storeLabel,
   storeChipBaseLabel,
   offerProgressMarkup,
+  formatTimeLeft,
 } from "./format.js";
 
 // ─── Card status badge ──────────────────────────────────────────────────────
@@ -192,14 +193,27 @@ export function render() {
 // ─── Offer progress bar ticking (independent of full re-render) ───────────
 
 export function updateOfferProgressBars() {
-  document.querySelectorAll(".offer-progress").forEach((bar) => {
+  document.querySelectorAll(".offer-progress-wrap").forEach((wrap) => {
+    const bar = wrap.querySelector(".offer-progress");
+    const countdown = wrap.querySelector(".offer-countdown");
+    if (!bar) return;
+
     const start = new Date(bar.dataset.start).getTime();
     const end = new Date(bar.dataset.end).getTime();
     if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return;
+
     const pct = Math.min(100, Math.max(0, ((Date.now() - start) / (end - start)) * 100));
     const fill = bar.querySelector(".offer-progress-fill");
     if (fill) fill.style.width = `${pct.toFixed(1)}%`;
-    bar.classList.toggle("urgent", pct >= 85);
+
+    const urgent = pct >= 85;
+    bar.classList.toggle("urgent", urgent);
     bar.title = `${Math.round(pct)}% of claim window elapsed`;
+
+    if (countdown) {
+      const timeLeft = formatTimeLeft(bar.dataset.end);
+      if (timeLeft) countdown.textContent = timeLeft;
+      countdown.classList.toggle("urgent", urgent);
+    }
   });
 }

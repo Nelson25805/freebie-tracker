@@ -103,15 +103,38 @@ export function offerProgressPercent(game) {
   return Math.min(100, Math.max(0, pct));
 }
 
+export function formatTimeLeft(endValue) {
+  if (!endValue) return null;
+  const end = new Date(endValue).getTime();
+  if (Number.isNaN(end)) return null;
+
+  const diff = end - Date.now();
+  if (diff <= 0) return "Offer ended";
+
+  const totalMinutes = Math.floor(diff / 60000);
+  const days = Math.floor(totalMinutes / 1440);
+  const hours = Math.floor((totalMinutes % 1440) / 60);
+  const minutes = totalMinutes % 60;
+
+  if (days > 0) return `${days}d ${hours}h left`;
+  if (hours > 0) return `${hours}h ${minutes}m left`;
+  if (minutes > 0) return `${minutes}m left`;
+  return "Ending soon";
+}
+
 export function offerProgressMarkup(game) {
   const pct = offerProgressPercent(game);
   if (pct === null) return "";
   const urgent = pct >= 85;
+  const timeLeft = formatTimeLeft(game.offerEnd);
   return `
-    <div class="offer-progress ${urgent ? "urgent" : ""}"
-         data-start="${escapeHtml(game.offerStart)}"
-         data-end="${escapeHtml(game.offerEnd)}"
-         title="${Math.round(pct)}% of claim window elapsed">
-      <div class="offer-progress-fill" style="width:${pct.toFixed(1)}%"></div>
+    <div class="offer-progress-wrap">
+      <div class="offer-progress ${urgent ? "urgent" : ""}"
+           data-start="${escapeHtml(game.offerStart)}"
+           data-end="${escapeHtml(game.offerEnd)}"
+           title="${Math.round(pct)}% of claim window elapsed">
+        <div class="offer-progress-fill" style="width:${pct.toFixed(1)}%"></div>
+      </div>
+      ${timeLeft ? `<span class="offer-countdown ${urgent ? "urgent" : ""}" data-end="${escapeHtml(game.offerEnd)}">${escapeHtml(timeLeft)}</span>` : ""}
     </div>`;
 }
