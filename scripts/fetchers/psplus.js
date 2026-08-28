@@ -190,47 +190,34 @@ async function findPsPlusPost(rssXml, offset) {
 /**
  * Parse PS Plus games directly from the blog post — no external API needed.
  *
- * For each game the PS Blog post body follows this consistent structure:
+ * Sony is inconsistent about whether the "Title | Platforms" line for each
+ * game is wrapped in a heading tag or just a bold paragraph:
  *
- *   <img src="https://blog.playstation.com/tachyon/...">   ← cover art
- *   ... (Sony image download overlay, safe to ignore) ...
- *   <h2><strong>Game Title | PS5, PS4</strong></h2>        ← title + platforms
- *   <p>Description paragraph...</p>                        ← description
+ *   <h2><strong>Game Title | PS5, PS4</strong></h2>   ← heading style
+ *   <p><strong>Game Title | PS5, PS4</strong></p>     ← bold-paragraph style (seen on live post pages)
  *
- * We find every H2 that matches the "Title | Platforms" pattern, then
- * look backward for the nearest tachyon image and forward for the first <p>.
- * A fallback title-from-post-title pass catches anything the heading scan missed.
+ * So we scan for heading tags first (cheap, and matches most RSS content
+ * bodies); if that finds nothing, we fall back to scanning bold tags
+ * (<strong>/<b>) directly — this is what live-fetched post pages (e.g.
+ * the homepage fallback path) tend to use instead of real headings.
  *
- * Works the same whether `postHtml` is just the RSS content:encoded body
- * or a full fetched page — the "Title | PS5, PS4" heading pattern is
- * specific enough that surrounding page chrome (nav, footer, etc.) won't
- * false-positive against it.
+ * Either way, once we have the candidate "Title | Platforms" blocks, the
+ * rest of the parsing (image lookup, description lookup) works the same:
+ * look backward for the nearest tachyon image and forward for the first
+ * real <p>.
  */
-function parseGamesFromPost(postTitle, postHtml) {
-  // ── Find all game heading positions ────────────────────────────────────────
-  // Matches:  <h2><strong>Title | PS5, PS4</strong></h2>
-  //       or  <h2>**Title | PS5**</h2>   (Markdown bold in HTML)
-  //       or  plain <h2>Title | PS5</h2>
-
-  // NOTE: we deliberately do NOT require a specific inner-tag shape (e.g. just
-  // <strong>/<b>) around the "Title | Platforms" text. Sony sometimes wraps the
-  // title itself in an <a> (or other) tag, and a regex that expects no nested
-  // tags will silently fail to match that heading — dropping the game entirely
-  // AND corrupting section-boundary detection for the games around it (their
-  // images/descriptions leak across the "missing" boundary). Instead: grab the
-  // whole heading block first, strip ALL inner tags, then parse the plain text.
-  const headingBlockRe = /<h[23][^>]*>([\s\S]*?)<\/h[23]>/gi;
-
+function findTitleBlocks(postHtml, blockRe) {
   const entries = [];
   let m;
-  while ((m = headingBlockRe.exec(postHtml)) !== null) {
-    const plainText = m[1]
+  while ((m = blockRe.exec(postHtml)) !== null) {
+    const rawInner = m[m.length - 1]; // last capture group holds the inner text
+    const plainText = rawInner
       .replace(/<[^>]+>/g, "")
       .replace(/\*+/g, "")
       .replace(/\s+/g, " ")
       .trim();
 
-    if (!plainText.includes("|")) continue; // not a "Title | Platforms" heading
+    if (!plainText.includes("|")) continue; // not a "Title | Platforms" block
 
     // Split on the LAST pipe, in case a title ever legitimately contains one.
     const pipeIndex = plainText.lastIndexOf("|");
@@ -251,20 +238,39 @@ function parseGamesFromPost(postTitle, postHtml) {
 
     entries.push({ title: rawTitle, platforms, headingIndex: m.index, headingEnd: m.index + m[0].length });
   }
+  return entries;
+}
 
-  // ── For each heading: extract cover image and description from its own section ──
+function parseGamesFromPost(postTitle, postHtml) {
+  // ── Find all game title block positions ────────────────────────────────
+  // Try real headings first...
+  let entries = findTitleBlocks(postHtml, /<h[23][^>]*>([\s\S]*?)<\/h[23]>/gi);
+
+  // ...and if that comes up empty, fall back to plain bold text
+  // (<strong>/<b>), which is what live post pages often use instead.
+  // NOTE: we deliberately only fall back when heading matching found
+  // NOTHING, rather than merging both — a post that uses real <h2>
+  // headings will also have those same headings' inner <strong> text
+  // match the bold-tag pattern, which would double-count every game and
+  // corrupt the section-boundary math the image/description lookup below
+  // relies on.
+  if (entries.length === 0) {
+    entries = findTitleBlocks(postHtml, /<(?:strong|b)[^>]*>([\s\S]*?)<\/(?:strong|b)>/gi);
+  }
+
+  // ── For each entry: extract cover image and description from its own section ──
   //
   // The post structure per game is:
   //   <img src="tachyon/...">          ← game cover art
   //   <h2>Download the image</h2>      ← Sony download overlay (NOT a game heading)
   //   <p>...</p>                       ← overlay junk
-  //   <h2><strong>Title | PS5</strong></h2>  ← actual game heading (already in entries[])
+  //   **Title | PS5**                  ← actual game title block (already in entries[])
   //   <p>Description...</p>            ← game description
   //
-  // Strategy: for each game heading, its "section" runs from the previous game
-  // heading's end (or start of HTML) to just before this heading. We look for
-  // a tachyon image within that section. Then description is the first real <p>
-  // after the heading.
+  // Strategy: for each entry, its "section" runs from the previous entry's
+  // end (or start of HTML) to just before this entry. We look for a
+  // tachyon image within that section. Then description is the first real
+  // <p> after the entry.
 
   const games = [];
   const seen = new Set();
@@ -274,11 +280,11 @@ function parseGamesFromPost(postTitle, postHtml) {
     if (seen.has(entry.title.toLowerCase())) continue;
     seen.add(entry.title.toLowerCase());
 
-    // The section before this heading starts after the previous heading ends
+    // The section before this entry starts after the previous entry's end
     const sectionStart = i > 0 ? entries[i - 1].headingEnd : 0;
     const section = postHtml.slice(sectionStart, entry.headingIndex);
 
-    // Find the LAST tachyon image in this section (closest to the heading).
+    // Find the LAST tachyon image in this section (closest to the entry).
     // The game cover art uses ?fit=1024%2C1024 (encoded comma).
     // Skip:
     //   - pslogo.png (PS logo)
@@ -317,13 +323,13 @@ function parseGamesFromPost(postTitle, postHtml) {
       }
     }
 
-    const nextHeadingStart =
+    const nextEntryStart =
       i + 1 < entries.length
         ? entries[i + 1].headingIndex
         : postHtml.length;
 
 
-    const descSection = postHtml.slice(entry.headingEnd, nextHeadingStart);
+    const descSection = postHtml.slice(entry.headingEnd, nextEntryStart);
     let description = "";
     // Try <p> tags first
     const paraRe = /<p[^>]*>([\s\S]+?)<\/p>/gi;
@@ -336,14 +342,14 @@ function parseGamesFromPost(postTitle, postHtml) {
       }
     }
 
-    // Fallback image lookup if none found before heading
+    // Fallback image lookup if none found before entry
     if (!coverImage) {
-      const afterHeading = postHtml.slice(
+      const afterEntry = postHtml.slice(
         entry.headingEnd,
         entry.headingEnd + 4000
       );
 
-      const fallbackImgMatch = afterHeading.match(
+      const fallbackImgMatch = afterEntry.match(
         /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"/i
       );
 
@@ -368,7 +374,7 @@ function parseGamesFromPost(postTitle, postHtml) {
     });
   }
 
-  // ── Fallback: titles from the post title string, in case heading scan missed any ──
+  // ── Fallback: titles from the post title string, in case the scan missed any ──
   const titleMatch = postTitle.match(/for\s+\w+[:–—]\s*(.+)$/i);
   if (titleMatch) {
     const fallbackTitles = titleMatch[1]
