@@ -4,6 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    Content-Security-Policy — defense-in-depth in case a scraped field ever
+    slips an unexpected value into the DOM. GitHub Pages can't set real HTTP
+    headers, so this is delivered as a meta tag instead (works for all the
+    directives used here). Adjust if you add new external hosts:
+      - img-src allows any https image host, since store cover art comes
+        from several different CDNs (Epic, PlayStation, Amazon, GamerPower)
+      - connect-src allows the Apps Script newsletter endpoint (no-cors POST)
+      - style-src allows 'unsafe-inline' because render.js/format.js build
+        cards with inline style="" attributes rather than CSS classes
+  -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https://script.google.com; base-uri 'self'; form-action 'self' https://script.google.com; frame-ancestors 'self';" />
   <title>Free Game Tracker</title>
   <link rel="stylesheet" href="./styles.css" />
   <script type="module" src="./js/main.js"></script>

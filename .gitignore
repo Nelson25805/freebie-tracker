@@ -1,3 +1,9 @@
 node_modules/
 data/node_modules/
 node_modules/
+
+# Local secrets (APPS_SCRIPT_URL, FETCH_SECRET, etc.) if you ever test
+# fetch-games.js locally instead of only via GitHub Actions secrets.
+.env
+.env.*
+!.env.example

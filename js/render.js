@@ -18,6 +18,15 @@ import {
   formatTimeLeft,
 } from "./format.js";
 
+// Only ever render http(s) URLs into href/src. These values come from
+// data/games.json, which is written by your own scrapers rather than
+// typed in by a site visitor, so the real-world risk is low — but if an
+// upstream API ever returned something unexpected (or a fetcher had a
+// bug), this stops a malformed value from landing in a live href/src.
+function isSafeUrl(url) {
+  return typeof url === "string" && /^https?:\/\//i.test(url.trim());
+}
+
 // ─── Card status badge ──────────────────────────────────────────────────────
 
 function cardStatusBadge(game) {
@@ -35,13 +44,16 @@ export function buildGameCard(game) {
   const endDateStr = game.offerEnd ? fmtEndDate(game.offerEnd) : null;
   const store = storeLabel(game.store);
   const originalFmt = game.originalPrice ? formatMoney(game.originalPrice) : null;
+  const safeImage = isSafeUrl(game.image) ? game.image : "";
+  const safeStoreUrl = isSafeUrl(game.storeUrl) ? game.storeUrl : "";
+  const safeSourcePost = isSafeUrl(game.sourcePost) ? game.sourcePost : "";
 
   const card = document.createElement("article");
   card.className = "card game";
 
   card.innerHTML = `
       <div class="cover">
-        ${game.image ? `<img src="${escapeHtml(game.image)}" alt="${escapeHtml(game.title)} cover" loading="lazy">` : ""}
+        ${safeImage ? `<img src="${escapeHtml(safeImage)}" alt="${escapeHtml(game.title)} cover" loading="lazy">` : ""}
         <div class="badge ${badge.cls}">${badge.label}</div>
         <div class="store-tag store-icon ${store.cls}" title="${escapeHtml(game.storeName)}" aria-label="${escapeHtml(game.storeName)}">${store.icon}</div>
       </div>
@@ -71,12 +83,12 @@ export function buildGameCard(game) {
           <button class="btn ${collected.has(key) ? "btn-danger" : "btn-ok"}" data-action="toggle-claimed" data-key="${escapeHtml(key)}">
             ${collected.has(key) ? "Unmark collected" : "Mark collected"}
           </button>
-          ${game.storeUrl
-      ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>`
+          ${safeStoreUrl
+      ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(safeStoreUrl)}">Open store page</a>`
       : ""
     }
-          ${game.sourcePost
-      ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(game.sourcePost)}">PS Blog post</a>`
+          ${safeSourcePost
+      ? `<a class="btn btn-ghost" target="_blank" rel="noreferrer" href="${escapeHtml(safeSourcePost)}">PS Blog post</a>`
       : ""
     }
         </div>

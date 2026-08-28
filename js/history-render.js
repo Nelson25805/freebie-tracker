@@ -2,6 +2,11 @@ import { els } from "./history-dom.js";
 import { monthGames, selectedStores } from "./history-state.js";
 import { escapeHtml, storeLabel, fmtDate, fmtEndDate } from "./format.js";
 
+// See render.js for rationale — only ever render http(s) URLs into href/src.
+function isSafeUrl(url) {
+  return typeof url === "string" && /^https?:\/\//i.test(url.trim());
+}
+
 function getFilteredGames() {
   const q = els.searchInput.value.trim().toLowerCase();
   let items = monthGames.filter((g) => selectedStores.has(g.store));
@@ -51,11 +56,14 @@ function buildHistoryCard(game) {
   const badgeLabel = expired === true ? "Was free" : expired === false ? "Still free" : "Free";
   const badgeCls = expired === false ? "upcoming" : "free"; // reuses existing badge color classes
 
+  const safeImage = isSafeUrl(game.image) ? game.image : "";
+  const safeStoreUrl = isSafeUrl(game.storeUrl) ? game.storeUrl : "";
+
   const card = document.createElement("article");
   card.className = "card game";
   card.innerHTML = `
     <div class="cover">
-      ${game.image ? `<img src="${escapeHtml(game.image)}" alt="${escapeHtml(game.title)} cover" loading="lazy">` : ""}
+      ${safeImage ? `<img src="${escapeHtml(safeImage)}" alt="${escapeHtml(game.title)} cover" loading="lazy">` : ""}
       <div class="badge ${badgeCls}">${badgeLabel}</div>
       <div class="store-tag store-icon ${store.cls}" title="${escapeHtml(game.storeName)}" aria-label="${escapeHtml(game.storeName)}">${store.icon}</div>
     </div>
@@ -74,7 +82,7 @@ function buildHistoryCard(game) {
     }</p>
       </div>
       <div class="actions">
-        ${game.storeUrl ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(game.storeUrl)}">Open store page</a>` : ""}
+        ${safeStoreUrl ? `<a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${escapeHtml(safeStoreUrl)}">Open store page</a>` : ""}
       </div>
     </div>
   `;
