@@ -2,39 +2,67 @@
  * fetchers/psplus.js
  *
  * Sony has no public unauthenticated API for PS Plus monthly games.
- * The most reliable no-auth source is the PlayStation Blog RSS feed.
- * We fetch the RSS, find BOTH this month's PS Plus post and (once Sony
- * has published it, usually in the last week of the prior month) next
- * month's post, then parse structured game data directly out of each
- * post body's HTML. This month's games become "free" entries; next
- * month's become "upcoming" entries — same as Epic's current/upcoming
- * split.
+ * The primary source is the PlayStation Blog RSS feed. The RSS feed can
+ * lag the live site by a day or more, though — Sony publishes next
+ * month's "Monthly Games" post to blog.playstation.com well before the
+ * category RSS feed picks it up. So when RSS doesn't have next month's
+ * post yet, we fall back to scraping the blog HOMEPAGE for the same post
+ * (it shows up there as a post-card almost immediately), grab its link,
+ * fetch that post page directly, and parse it the same way.
+ *
+ * Either way, once we have the raw post HTML, we parse structured game
+ * data directly out of it. This month's games become "free" entries;
+ * next month's become "upcoming" entries — same as Epic's current/
+ * upcoming split.
  *
  * This is the most "reverse-engineered markup structure" of all the
- * fetchers — if Sony changes their blog post template, this file (and
- * only this file) is what needs updating.
+ * fetchers — if Sony changes their blog post/homepage template, this
+ * file (and only this file) is what needs updating.
  */
 
 import fetch from "node-fetch";
 import { stripHtml, normalizeTitle, extractTag, splitItems, decodeHtmlEntities } from "../utils/html.js";
 
-
 // Use the PS Plus category feed — far fewer irrelevant posts than the main feed.
-// Sony posts next month's games in the last week of the prior month,
-// so we match by month NAME in the title, not the publish date.
 const PS_BLOG_RSS = "https://blog.playstation.com/category/ps-plus/feed/";
+const PS_BLOG_HOMEPAGE = "https://blog.playstation.com/";
+
+const BROWSER_HEADERS = {
+  "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+  "Referer": "https://blog.playstation.com/",
+};
 
 async function fetchPSBlogRSS() {
   const res = await fetch(PS_BLOG_RSS, {
     headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-      "Accept":
-        "application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.8",
-      "Referer": "https://blog.playstation.com/"
+      ...BROWSER_HEADERS,
+      "Accept": "application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.8",
     },
   });
   if (!res.ok) throw new Error(`PS Blog RSS HTTP ${res.status}`);
+  return await res.text();
+}
+
+async function fetchPSBlogHomepage() {
+  const res = await fetch(PS_BLOG_HOMEPAGE, {
+    headers: {
+      ...BROWSER_HEADERS,
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    },
+  });
+  if (!res.ok) throw new Error(`PS Blog homepage HTTP ${res.status}`);
+  return await res.text();
+}
+
+async function fetchPsPlusPostPage(link) {
+  const res = await fetch(link, {
+    headers: {
+      ...BROWSER_HEADERS,
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    },
+  });
+  if (!res.ok) throw new Error(`PS Blog post page HTTP ${res.status}`);
   return await res.text();
 }
 
@@ -50,31 +78,41 @@ function firstTuesdayOfMonth(year, monthIndex) {
   return d;
 }
 
+function targetMonthNameForOffset(offset) {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth() + offset, 1)
+    .toLocaleString("en-US", { month: "long" })
+    .toLowerCase();
+}
+
+function isPsPlusMonthlyTitle(title, targetMonthName) {
+  const titleLower = title.toLowerCase();
+  if (!/(monthly\s+games|monthly\s+free)/i.test(titleLower)) return false;
+  if (!/playstation\s*plus|ps\s*plus/i.test(titleLower)) return false;
+  if (!titleLower.includes(targetMonthName)) return false;
+  return true;
+}
+
 /**
  * Finds the best "PlayStation Plus Monthly Games" post in the RSS feed
  * whose title mentions the month at `offset` months from now (0 = this
- * month, 1 = next month). Returns null if Sony hasn't posted it yet —
- * which is expected/normal for the "next month" case most of the month.
+ * month, 1 = next month). Returns null if the RSS feed doesn't have it
+ * — either because Sony hasn't posted it yet, or (more often, for the
+ * "next month" case) because the RSS feed just hasn't caught up to the
+ * live site yet.
  */
-
-function findPsPlusPostForOffset(rssXml, offset) {
+function findPsPlusPostViaRSS(rssXml, offset) {
   const items = splitItems(rssXml);
-  const now = new Date();
-  const targetMonthName = new Date(now.getFullYear(), now.getMonth() + offset, 1)
-    .toLocaleString("en-US", { month: "long" })
-    .toLowerCase();
+  const targetMonthName = targetMonthNameForOffset(offset);
 
   const seenTitles = [];
 
   for (const item of items) {
     const rawTitle = stripHtml(extractTag(item, "title"));
     const title = decodeHtmlEntities(rawTitle).replace(/\s+/g, " ").trim();
-    const titleLower = title.toLowerCase();
     seenTitles.push(title);
 
-    if (!/(monthly\s+games|monthly\s+free)/i.test(titleLower)) continue;
-    if (!/playstation\s*plus|ps\s*plus/i.test(titleLower)) continue;
-    if (!titleLower.includes(targetMonthName)) continue;
+    if (!isPsPlusMonthlyTitle(title, targetMonthName)) continue;
 
     return {
       title,
@@ -84,10 +122,69 @@ function findPsPlusPostForOffset(rssXml, offset) {
     };
   }
 
-  console.warn(`  PS Plus: no post matched "${targetMonthName}" (offset ${offset}). Recent feed titles:`);
+  console.warn(`  PS Plus: no post matched "${targetMonthName}" in RSS (offset ${offset}). Recent feed titles:`);
   for (const t of seenTitles.slice(0, 8)) console.warn(`    - ${t}`);
 
   return null;
+}
+
+/**
+ * Scrapes the blog HOMEPAGE for a "Monthly Games" post-card matching the
+ * target month, as a fallback for when the RSS feed hasn't caught up yet.
+ * Homepage post-cards look like:
+ *
+ *   <h3 class="post-card__title">
+ *     <a href="https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-.../"
+ *        class="post-card__title-link">
+ *        PlayStation Plus Monthly Games for September – ... </a>
+ *   </h3>
+ */
+function findPsPlusLinkOnHomepage(homepageHtml, offset) {
+  const targetMonthName = targetMonthNameForOffset(offset);
+  const titleBlockRe =
+    /<h3 class="post-card__title">\s*<a\s+href="([^"]+)"\s+class="post-card__title-link">\s*([\s\S]*?)\s*<\/a>\s*<\/h3>/gi;
+
+  let m;
+  while ((m = titleBlockRe.exec(homepageHtml)) !== null) {
+    const link = m[1];
+    const title = decodeHtmlEntities(stripHtml(m[2])).replace(/\s+/g, " ").trim();
+
+    if (!isPsPlusMonthlyTitle(title, targetMonthName)) continue;
+
+    return { title, link };
+  }
+
+  return null;
+}
+
+/**
+ * Finds the PS Plus "Monthly Games" post for `offset` months from now.
+ * Tries the RSS feed first (cheap, and gives us pubDate + content in one
+ * request); if that comes up empty, falls back to scraping the blog
+ * homepage for the post link and fetching that page directly.
+ */
+async function findPsPlusPost(rssXml, offset) {
+  const viaRss = findPsPlusPostViaRSS(rssXml, offset);
+  if (viaRss) return viaRss;
+
+  try {
+    const homepageHtml = await fetchPSBlogHomepage();
+    const found = findPsPlusLinkOnHomepage(homepageHtml, offset);
+    if (!found) return null;
+
+    console.log(`  RSS feed didn't have it yet — found via blog homepage instead: "${found.title}"`);
+    const postHtml = await fetchPsPlusPostPage(found.link);
+
+    return {
+      title: found.title,
+      link: found.link,
+      content: postHtml,
+      pubDate: null, // not available from a homepage scrape
+    };
+  } catch (err) {
+    console.warn(`  Homepage fallback failed for offset ${offset}:`, err.message);
+    return null;
+  }
 }
 
 /**
@@ -102,7 +199,12 @@ function findPsPlusPostForOffset(rssXml, offset) {
  *
  * We find every H2 that matches the "Title | Platforms" pattern, then
  * look backward for the nearest tachyon image and forward for the first <p>.
- * A fallback title-from-post-title pass catches anything the heading scan misses.
+ * A fallback title-from-post-title pass catches anything the heading scan missed.
+ *
+ * Works the same whether `postHtml` is just the RSS content:encoded body
+ * or a full fetched page — the "Title | PS5, PS4" heading pattern is
+ * specific enough that surrounding page chrome (nav, footer, etc.) won't
+ * false-positive against it.
  */
 function parseGamesFromPost(postTitle, postHtml) {
   // ── Find all game heading positions ────────────────────────────────────────
@@ -314,11 +416,11 @@ export async function fetchPSPlus() {
   try {
     const rssXml = await fetchPSBlogRSS();
 
-    const currentPost = findPsPlusPostForOffset(rssXml, 0);
-    const nextPost = findPsPlusPostForOffset(rssXml, 1);
+    const currentPost = await findPsPlusPost(rssXml, 0);
+    const nextPost = await findPsPlusPost(rssXml, 1);
 
     if (!currentPost && !nextPost) {
-      console.warn("  Could not find any PS Plus monthly games post in the RSS feed.");
+      console.warn("  Could not find any PS Plus monthly games post (RSS or homepage).");
       return [];
     }
 
@@ -352,7 +454,7 @@ export async function fetchPSPlus() {
         console.warn("  Could not parse any games from the current month's post.");
       }
     } else {
-      console.warn("  Could not find this month's PS Plus post in the RSS feed.");
+      console.warn("  Could not find this month's PS Plus post.");
     }
 
     if (nextPost) {
@@ -372,10 +474,11 @@ export async function fetchPSPlus() {
             })
           )
         );
+      } else {
+        console.warn("  Could not parse any games from next month's post.");
       }
-    }
-    else {
-      console.log("  No next month's PS Plus post found yet — will retry next run.");
+    } else {
+      console.log("  No next month's PS Plus post found yet (RSS or homepage) — will retry next run.");
     }
 
     console.log(
