@@ -246,6 +246,29 @@ function findTitleBlocks(postHtml, blockRe) {
   }
   return entries;
 }
+
+// A real game cover image always comes from the tachyon CDN path and is
+// never the site header/PS logo. Page furniture (nav logo, author
+// avatars, "Latest News" placeholders, etc.) can slip past a simple
+// "skip pslogo" check — e.g. the header logo file is named
+// "sonylogo-2x.jpg", not "pslogo", so it wasn't being filtered at all.
+function isLikelyGameCoverImage(url) {
+  if (!/^https:\/\/blog\.playstation\.com\/tachyon\//i.test(url)) return false;
+  if (/pslogo|sonylogo/i.test(url)) return false;
+  // Small square crops are always avatars/icons/logos, never cover art.
+  // Real game covers consistently use ?fit=1024,1024 in this data.
+  if (/[?&]fit=(?:40|180|200|270|280|281|300|400|401|512|640)(?:[,%]|$)/i.test(url)) return false;
+  return true;
+}
+
+// "-scaled.jpg" images are WordPress's full-resolution upload — prefer
+// them when present. Must allow a trailing query string (?fit=...),
+// since the anchored-to-end-of-string version of this check never
+// matched any real URL and silently always failed.
+function isScaledImage(url) {
+  return /-scaled\.(?:jpg|jpeg|png|webp)(?:[?&]|$)/i.test(url);
+}
+
 function parseGamesFromPost(postTitle, postHtml) {
   // ── Find all game title block positions ────────────────────────────────
   // Try real headings first...
@@ -297,13 +320,6 @@ function parseGamesFromPost(postTitle, postHtml) {
     const sectionStart = i > 0 ? entries[i - 1].headingEnd : 0;
     const section = postHtml.slice(sectionStart, entry.headingIndex);
 
-    // Find the LAST tachyon image in this section (closest to the entry).
-    // The game cover art uses ?fit=1024%2C1024 (encoded comma).
-    // Skip:
-    //   - pslogo.png (PS logo)
-    //   - ?fit=40 / ?fit=40%2C40 (tiny author avatars/icons)
-    //   - ?fit=512 / ?fit=640 (small sidebar images)
-    //   - ?resize= (hero/banner images at the very top of posts — wide crops)
     let coverImage = "";
 
     const images = [
@@ -312,27 +328,39 @@ function parseGamesFromPost(postTitle, postHtml) {
       )
     ];
 
-    // Prefer scaled images if present
+    // Prefer scaled (full-resolution) images if present
     for (const img of images) {
       const url = img[1];
-
-      if (/pslogo/i.test(url)) continue;
-
-      if (/-scaled\.(jpg|jpeg|png|webp)$/i.test(url)) {
+      if (!isLikelyGameCoverImage(url)) continue;
+      if (isScaledImage(url)) {
         coverImage = url;
         break;
       }
     }
 
-    // Fallback to first non-logo image
+    // Fallback to first real (non-furniture) image in the section
     if (!coverImage) {
       for (const img of images) {
         const url = img[1];
-
-        if (/pslogo/i.test(url)) continue;
-
+        if (!isLikelyGameCoverImage(url)) continue;
         coverImage = url;
         break;
+      }
+    }
+
+    // Fallback image lookup if none found before entry
+    if (!coverImage) {
+      const afterEntry = postHtml.slice(
+        entry.headingEnd,
+        entry.headingEnd + 4000
+      );
+
+      const fallbackImgMatch = afterEntry.match(
+        /<img[^>]+src="(https:\/\/blog\.playstation\.com\/tachyon\/[^"]+)"/i
+      );
+
+      if (fallbackImgMatch && isLikelyGameCoverImage(fallbackImgMatch[1])) {
+        coverImage = fallbackImgMatch[1];
       }
     }
 
