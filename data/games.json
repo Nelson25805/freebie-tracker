@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-08-28T18:19:49.097Z",
+  "fetchedAt": "2026-08-28T18:36:40.164Z",
   "totalFree": 36,
-  "totalUpcoming": 6,
+  "totalUpcoming": 10,
   "games": [
     {
       "id": "8401414902e84f2cb9afa9142f051d32",
@@ -215,6 +215,88 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
+    },
+    {
+      "id": "psplus-skip-to-content-playstation-com-playstation-blog-menu-ps5-ps-vr2-ps4-ps-store-ps-plus-select-a-region-current-region-english-french-german-italian-japanese-korean-portuguese-br-spanish-latam-spanish-eu-traditional-chinese-login-search-search-playstation-blog-search-playstation-blog-categories-playstation-5-playstation-vr2-playstation-4-playstation-store-playstation-plus-login-to-comment-select-a-region-current-region-english-french-german-italian-japanese-korean-portuguese-br-spanish-latam-spanish-eu-traditional-chinese-august-26-2026august-26-2026-playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes-25-0-89-like-this-all-playable-from-tuesday-september-1-adam-michel-director-content-acquisition-operations-sony-interactive-entertainment-take-aim-in-sniper-elite-resistance-shape-a-diamond-dynasty-in-mlb-the-show-26-buddy-up-for-larks-and-adventures-in-wobbly-life-and-enjoy-some-classically-designed-jrpg-goodness-with-chained-echoes-together-the-four-games-form-the-playstation-plus-monthly-games-for-september-all-be-available-to-playstation-plus-members-from-tuesday-september-1-until-monday-october-5-let-s-take-a-closer-look-at-each-of-the-games-view-and-download-image-download-the-image-close-close-download-this-image-sniper-elite-resistance",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Skip to content playstation.com PlayStation.Blog Menu PS5 PS VR2 PS4 PS Store PS Plus Select a region Current region: English French German Italian Japanese Korean Portuguese (Br) Spanish (LatAm) Spanish (EU) Traditional Chinese Login Search Search PlayStation Blog Search PlayStation Blog Categories PlayStation 5 PlayStation VR2 PlayStation 4 PlayStation Store PlayStation Plus Login to Comment Select a region Current region: English French German Italian Japanese Korean Portuguese (Br) Spanish (LatAm) Spanish (EU) Traditional Chinese August 26, 2026August 26, 2026 PlayStation Plus Monthly Games for September - Sniper Elite: Resistance, MLB The Show 26, Wobbly Life, Chained Echoes 25 0 89 Like this All playable from Tuesday September 1. Adam Michel Director, Content Acquisition & Operations, Sony Interactive Entertainment Take aim in Sniper Elite: Resistance, shape a diamond dynasty in MLB The Show 26, buddy up for larks and adventures in Wobbly Life, and enjoy some classically - designed JRPG goodness with Chained Echoes. Together, the four games form the PlayStation Plus Monthly Games for September. All be available to PlayStation Plus members from Tuesday September 1 until Monday October 5. Let’s take a closer look at each of the games. View and download image Download the image close Close Download this image Sniper Elite: Resistance",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Offering unparalleled sniping mechanics, stealth and tactical third-person combat, Sniper Elite: Resistance turns the attention of the award-winning series towards a hidden war, far from the front lines, deep within the heart of occupied France, in a gripping new story that runs parallel with Sniper Elite 5. The full campaign can be experienced in co-op, and the fan-favourite Axis Invasion mode is back. invade another player’s Campaign as an Axis sniper and engage in a deadly game of cat and mouse. And when you’ve mastered your rifle,customize your character and loadout as you take the fight online in competitive 16-player battles to earn XP, medals and ribbons. If competition isn’t your style, you can also team up with up to 3 other players against waves of enemies in Survival mode.",
+      "image": "https://blog.playstation.com/tachyon/2026/08/6faacfda93308bbdfd32ca0947094f8be960c223-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-09-01T00:00:00.000Z",
+      "offerEnd": "2026-10-06T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "id": "psplus-view-and-download-image-download-the-image-close-close-download-this-image-mlb-the-show-26",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "View and download image Download the image close Close Download this image MLB The Show 26",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5",
+      "description": "Create your legacy from the first pitch to the final inning with the most immersive MLB The Show yet. Experience true-to-life gameplay across new and enhanced game modes with evolved features, new stadium effects, and much more. Earn a coveted spot at the MLB Draft Combine or catch the eye of one of 11 additional new college teams as you advance through your career in Road To The Show. Build your ultimate squad featuring MLB players from all eras of baseball, including the all-new Red Diamond rarity player cards, found across multiple card series including World Baseball Classic**, 2026 All-Star Game, and Pipeline Series in Diamond Dynasty**.&nbsp;",
+      "image": "https://blog.playstation.com/tachyon/2026/08/6faacfda93308bbdfd32ca0947094f8be960c223-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-09-01T00:00:00.000Z",
+      "offerEnd": "2026-10-06T00:00:00.000Z",
+      "platforms": [
+        "PS5"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "id": "psplus-view-and-download-image-download-the-image-close-close-download-this-image-wobbly-life",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "View and download image Download the image close Close Download this image Wobbly Life",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Play solo or with up to three other players online or local split-screen co-op as you explore an open-world sandbox where almost everything is interactive and is filled with mini-games, toys, and secrets.&nbsp; Embark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves and more. Want to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide &#038; Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
+      "image": "https://blog.playstation.com/tachyon/2026/08/87641b1e7a575bcd31d157f7930fe4d070d4cbb5-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-09-01T00:00:00.000Z",
+      "offerEnd": "2026-10-06T00:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "id": "psplus-view-and-download-image-download-the-image-close-close-download-this-image-chained-echoes",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "View and download image Download the image close Close Download this image Chained Echoes",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS4",
+      "description": "Chained Echoes is a story-driven single player JRPG where a group of heroes travel around the vast continent of Valandis to bring an end to the war between its three kingdoms. In the course of their journey, they will travel through a wide array of diverse landscapes spanning from wind-tanned plateaus and exotic archipelagos to sunken cities and forgotten dungeons. Take up your sword, channel your magic or board your Mech. Chained Echoes is a 16-bit Golden Era style RPG set in a fantasy world where dragons are as common as piloted mechanical suits.",
+      "image": "https://blog.playstation.com/tachyon/2026/08/2e8156f27a34caf66f3fb3bcef67cdb585693208-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-09-01T00:00:00.000Z",
+      "offerEnd": "2026-10-06T00:00:00.000Z",
+      "platforms": [
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
     },
     {
       "id": "prime-spray-paint-simulator",
@@ -471,7 +553,7 @@
       "slug": "play-assassin-s-creed-valhalla-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B08N3ZPQRB?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "BUILD YOUR OWN VIKING LEGENDBecome Eivor, a mighty Viking raider, and lead your clan. Advanced RPG mechanics allow you to influence the world around you. With every choice you make, from political alliances and combat strategy, to dialogue and gear progression, carve your path to glory!EXPLORE A DARK AGE WORLDSail from Norway’s icy coasts to England’s lush kingdoms. Roam a vast open world, hunt legendary beasts, and lay bare the secrets of a fractured land.EXPERIENCE VISCERAL COMBATUnleash the ruthless fighting style of a Viking warrior and dual wield axes, swords, or even shields against fierce, relentless foes. Choose your tactics and dismember opponents in close-quarters combat, riddle them with arrows, or assassinate them with your Hidden Blade.GROW YOUR SETTLEMENTConstruct and upgrade buildings that allow for deep customization, including a barracks, a smithy, a tattoo parlor, and more. Recruit new members to your clan and personalize your Viking experience.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1zNaxUezDL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -566,7 +648,7 @@
       "slug": "play-wobbly-life-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0G87D74S2?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Grandma has kicked you out into the big wide Wobbly world demanding you go and GET A JOB! She would be so proud if you could earn some money and get your own house one day! It's time to start earning and living your best Wobbly Life! 1-4 players Online and Local split-screen co-op Open-world sandbox filled with mini-games, toys, secrets+100 unique missions & jobs with exclusive rewards to unlock, alone or with friends +90 vehicles to ride around (and crash)+500 clothes items to show-off in your wobbly look FUN, FRIENDS & PHYSICS!Let's start exploring! Almost everything is interactive – grab, play, and experiment in a world filled with props, mini-games, and surprises. Experience the joy solo or share your adventures with up to 4 players in online or local co-op, all in one big Wobbly world. MYSTERIES AND MISSIONSEmbark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves... The Wobbly Museum has lost all its artifacts! Maybe you can help? Buy treasure maps and solve clues to find all the Museums' lost treasures and unlock exciting rewards. GO GET A JOB!Make grandma happy and go get that job! Earn money by choosing from +40 exciting jobs, each bringing their new unique challenges. From pizza delivery to firefighting, taxi driver to disco dancer… your Wobbly dream job is waiting for you. GO TO SPACE! The Wobbly Space Programme is looking for new recruits. Space is a whole new open world, with new jobs, missions, and secrets to uncover. You'll even get to fly your own spaceships too, so what are you waiting for!LIVE THE HIGH WOBBLY LIFE! Once you’ve fattened up your bank account why not go on a shopping spree? Visit the Pet Shop to buy a faithful companion, buy and unlock +500 clothes items and choose from +90 different vehicles. When you’ve really made the big bucks, you can even buy a house: from a wooden cabin to a huge fancy mansion, Wobbly Island has a home for everyone! PLAY YOUR OWN WAY WITH ARCADE MODEWant to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide & Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -585,7 +667,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B09RYKCKQ8?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The eighth installment of the beloved Jackbox Party Pack franchise is here! Five hilarious new games will energize your next game night, holiday party, happy hour, or video call.No extra controllers needed – players use their phones or tablets to play along! Got a bigger group? Play with up to 10 players and up to 10,000 audience members.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/C1Pwa6Ij--L._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -661,7 +743,7 @@
       "slug": "use-phonesas-controllers",
       "storeUrl": "https://luna.amazon.com/detail/B0G4SQ18L7?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Pilgor’s baaack!Gather your herd and venture forth into Goat Simulator 3; a totally realistic, sandbox farmyard experience that puts you back in the hooves of no one's favourite female protagonist. That’s right – we’re doing this again. The baa has been raised, and Pilgor is joined by another goat too. You can invite a friend in local co-op, create carnage as a team, or compete in mini-games and then not be friends anymore.Get ready for another round of udder mayhem. Lick, headbutt, and ruin your way through a brand new open world in the biggest waste of your time since Goat Simulator! We won’t tell you how to play (except in the tutorial), but merely provide the means to be the goats of your dreams.KEY FEATURES:- You can be a goat- Your friends can be goats too, and join you in local co-op- No really, there are so many goats. If you want to be fancy you can wear the skins of tall goats, stripey goats, and many more. There’s a goat for everyone!- Or dress up your goat in all kinds of nonsense, from toilet rolls to tea trays. Put on a jetpack for all we care- This time we actually hired ‘game designers’ and we’re told they’ve added ‘an ok amount of content’; events, NPCs to mess with, physics, status effects, collectables, easter eggs, lies, betrayal, heartbreak- They’ve added mini-games too, lots of mini-games (seven is a lot, right?) - Who said anything about a musical? - You can be Keanu Ree... (jk, wanted to check you were still reading)- But you can be a goldfish (true story)DISCLAIMER:Since it launched in November 2022, Goat Simulator 3 has been a completely stupid game. It is still a completely stupid game today, except now it has more stuff! By this point if you're not sure what you're getting into, we can't help you.",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/D1MWXDZjtBL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
@@ -680,7 +762,7 @@
       "slug": "play-sonic-mania-plus-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Experience the award-winning ultimate celebration of past and future. Sonic Mania Plus is an all-new 2D Sonic adventure with blistering 60 fps and stunning HD retro-style graphics. Run explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. Race through all-new original Zones and updated Classics, all with unique twists to keep you on your toes as you battle the evil Dr. Eggman. Go head to-head with up to four players in Competition Mode, or play with a friend in Co-Op Mode. Now with new playable characters Mighty and Ray, all new Encore mode, and more, Sonic Mania Plus is the definitive Sonic experience!By using this product, you hereby agree to the End User License Agreement found here: https://games.sega.com/eula",
+      "description": "Free with Prime Gaming via Amazon Luna.",
       "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
