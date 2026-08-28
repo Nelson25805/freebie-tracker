@@ -217,6 +217,12 @@ function findTitleBlocks(postHtml, blockRe) {
       .replace(/\s+/g, " ")
       .trim();
 
+    // Defense in depth: a real "Title | Platforms" line is always short.
+    // Anything this long is page furniture that slipped through (nav,
+    // search widgets, etc.) rather than a genuine game entry — reject it
+    // outright instead of trying to parse a title out of it.
+    if (plainText.length > 150) continue;
+
     if (!plainText.includes("|")) continue; // not a "Title | Platforms" block
 
     // Split on the LAST pipe, in case a title ever legitimately contains one.
@@ -240,22 +246,29 @@ function findTitleBlocks(postHtml, blockRe) {
   }
   return entries;
 }
-
 function parseGamesFromPost(postTitle, postHtml) {
   // ── Find all game title block positions ────────────────────────────────
   // Try real headings first...
-  let entries = findTitleBlocks(postHtml, /<h[23][^>]*>([\s\S]*?)<\/h[23]>/gi);
+  //
+  // NOTE: the inner-content quantifier is BOUNDED ({1,300}?), not the
+  // unbounded [\s\S]*? it used to be. Live PS Blog pages sometimes contain
+  // an earlier, unrelated <strong>/<h2> tag (nav labels, a11y text, etc.)
+  // whose real closing tag is much further down the page than intended.
+  // With an unbounded non-greedy match, the regex still walks all the way
+  // to that far-off closing tag, swallowing the entire page in between
+  // into one "title" (this is exactly what produced the "Skip to
+  // content... Sniper Elite: Resistance" garbage title). Bounding the
+  // match length makes that attempt fail fast, so the regex engine moves
+  // on and re-syncs on the next — correctly short and properly closed —
+  // <strong>/<h2> tag instead.
+  let entries = findTitleBlocks(postHtml, /<h[23][^>]*>([\s\S]{1,300}?)<\/h[23]>/gi);
 
   // ...and if that comes up empty, fall back to plain bold text
   // (<strong>/<b>), which is what live post pages often use instead.
-  // NOTE: we deliberately only fall back when heading matching found
-  // NOTHING, rather than merging both — a post that uses real <h2>
-  // headings will also have those same headings' inner <strong> text
-  // match the bold-tag pattern, which would double-count every game and
-  // corrupt the section-boundary math the image/description lookup below
-  // relies on.
+  // Same bounded-length reasoning applies here — in fact this is the
+  // path that actually hit the runaway-match bug in practice.
   if (entries.length === 0) {
-    entries = findTitleBlocks(postHtml, /<(?:strong|b)[^>]*>([\s\S]*?)<\/(?:strong|b)>/gi);
+    entries = findTitleBlocks(postHtml, /<(?:strong|b)[^>]*>([\s\S]{1,300}?)<\/(?:strong|b)>/gi);
   }
 
   // ── For each entry: extract cover image and description from its own section ──
