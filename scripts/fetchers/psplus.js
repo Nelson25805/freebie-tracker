@@ -3,8 +3,12 @@
  *
  * Sony has no public unauthenticated API for PS Plus monthly games.
  * The most reliable no-auth source is the PlayStation Blog RSS feed.
- * We fetch the RSS, find the current month's PS Plus announcement post,
- * then parse structured game data directly out of the post body's HTML.
+ * We fetch the RSS, find BOTH this month's PS Plus post and (once Sony
+ * has published it, usually in the last week of the prior month) next
+ * month's post, then parse structured game data directly out of each
+ * post body's HTML. This month's games become "free" entries; next
+ * month's become "upcoming" entries — same as Epic's current/upcoming
+ * split.
  *
  * This is the most "reverse-engineered markup structure" of all the
  * fetchers — if Sony changes their blog post template, this file (and
@@ -33,51 +37,50 @@ async function fetchPSBlogRSS() {
   return await res.text();
 }
 
-function findPsPlusPost(rssXml) {
+// PS Plus monthly games always go live/expire on the first Tuesday of a
+// month. Used both for "when does this month's lineup close" and "when
+// does next month's lineup open/close".
+function firstTuesdayOfMonth(year, monthIndex) {
+  const d = new Date(year, monthIndex, 1);
+  while (d.getDay() !== 2) {
+    d.setDate(d.getDate() + 1);
+  }
+  d.setHours(0, 0, 0, 0);
+  return d;
+}
+
+/**
+ * Finds the best "PlayStation Plus Monthly Games" post in the RSS feed
+ * whose title mentions the month at `offset` months from now (0 = this
+ * month, 1 = next month). Returns null if Sony hasn't posted it yet —
+ * which is expected/normal for the "next month" case most of the month.
+ */
+function findPsPlusPostForOffset(rssXml, offset) {
   const items = splitItems(rssXml);
   const now = new Date();
-
-  // Sony posts the NEXT month's games in the last week of the prior month.
-  // Check both current month and next month in the title.
-  const monthsToCheck = [0, 1].map((offset) => {
-    const d = new Date(now.getFullYear(), now.getMonth() + offset, 1);
-    return d.toLocaleString("en-US", { month: "long" });
-  });
-
-  console.log(`  Looking for PS Plus post mentioning: ${monthsToCheck.join(" or ")}`);
-
-  let bestItem = null;
-  let bestScore = 0;
+  const targetMonthName = new Date(now.getFullYear(), now.getMonth() + offset, 1)
+    .toLocaleString("en-US", { month: "long" })
+    .toLowerCase();
 
   for (const item of items) {
     const title = stripHtml(extractTag(item, "title"));
     const titleLower = title.toLowerCase();
 
-    // Must be a monthly games post
     if (!/(monthly\s+games|monthly\s+free)/i.test(titleLower)) continue;
     if (!/playstation\s*plus|ps\s*plus/i.test(titleLower)) continue;
+    if (!titleLower.includes(targetMonthName)) continue;
 
-    let score = 0;
-    for (let i = 0; i < monthsToCheck.length; i++) {
-      if (titleLower.includes(monthsToCheck[i].toLowerCase())) {
-        score = Math.max(score, 2 - i); // current month scores higher
-      }
-    }
-
-    if (score > bestScore) {
-      bestScore = score;
-      bestItem = item;
-    }
+    // RSS items are newest-first, so the first title match is the
+    // right one — no need to score multiple candidates.
+    return {
+      title: stripHtml(extractTag(item, "title")),
+      link: stripHtml(extractTag(item, "link")),
+      content: extractTag(item, "content:encoded") || extractTag(item, "description"),
+      pubDate: stripHtml(extractTag(item, "pubDate")),
+    };
   }
 
-  if (!bestItem) return null;
-
-  return {
-    title: stripHtml(extractTag(bestItem, "title")),
-    link: stripHtml(extractTag(bestItem, "link")),
-    content: extractTag(bestItem, "content:encoded") || extractTag(bestItem, "description"),
-    pubDate: stripHtml(extractTag(bestItem, "pubDate")),
-  };
+  return null;
 }
 
 /**
@@ -181,14 +184,6 @@ function parseGamesFromPost(postTitle, postHtml) {
       )
     ];
 
-    console.log(
-      `----- ${entry.title} -----`
-    );
-
-    for (const img of images) {
-      console.log(img[1]);
-    }
-
     // Prefer scaled images if present
     for (const img of images) {
       const url = img[1];
@@ -255,9 +250,6 @@ function parseGamesFromPost(postTitle, postHtml) {
         }
       }
     }
-    console.log(
-      `${entry.title}: ${coverImage}`
-    );
 
     games.push({
       title: entry.title,
@@ -288,68 +280,97 @@ function parseGamesFromPost(postTitle, postHtml) {
   return games;
 }
 
+function buildPsPlusGame(item, { status, offerStart, offerEnd, sourcePost }) {
+  return {
+    id: `psplus-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+    store: "psplus",
+    storeName: "PlayStation Plus",
+    title: normalizeTitle(item.title),
+    slug: "",
+    storeUrl: "https://store.playstation.com",
+    seller: item.platforms.length ? item.platforms.join(" / ") : "PS5 / PS4",
+    description: item.description || "",
+    image: item.image || "",
+    originalPrice: null,
+    discountPrice: 0,
+    status,
+    offerStart,
+    offerEnd,
+    platforms: item.platforms,
+    sourcePost,
+  };
+}
+
 export async function fetchPSPlus() {
   console.log("Fetching PlayStation Plus data via PS Blog RSS…");
 
   try {
     const rssXml = await fetchPSBlogRSS();
-    const post = findPsPlusPost(rssXml);
 
-    if (!post) {
-      console.warn("  Could not find this month's PS Plus post in the RSS feed.");
+    const currentPost = findPsPlusPostForOffset(rssXml, 0);
+    const nextPost = findPsPlusPostForOffset(rssXml, 1);
+
+    if (!currentPost && !nextPost) {
+      console.warn("  Could not find any PS Plus monthly games post in the RSS feed.");
       return [];
     }
-
-    console.log(`  Found post: "${post.title}"`);
-
-    const postHtml = post.content || "";
-    const parsed = parseGamesFromPost(post.title, postHtml);
-    console.log(`  Parsed ${parsed.length} game heading(s) from post body: ${parsed.map((g) => g.title).join(", ")}`);
-
-    if (parsed.length === 0) {
-      console.warn("  Could not parse any games from the post.");
-      return [];
-    }
-
-    // PS Plus monthly games always expire on the first Tuesday of next month.
 
     const now = new Date();
+    // First Tuesday of next month: when this month's free lineup closes,
+    // and (once announced) next month's lineup becomes claimable.
+    const nextMonthFirstTuesday = firstTuesdayOfMonth(now.getFullYear(), now.getMonth() + 1);
+    // First Tuesday of the month after that: when next month's lineup
+    // would, in turn, close.
+    const monthAfterNextFirstTuesday = firstTuesdayOfMonth(now.getFullYear(), now.getMonth() + 2);
 
-    const nextMonth = new Date(
-      now.getFullYear(),
-      now.getMonth() + 1,
-      1
-    );
+    let games = [];
 
-    // Find first Tuesday
-    while (nextMonth.getDay() !== 2) {
-      nextMonth.setDate(nextMonth.getDate() + 1);
+    if (currentPost) {
+      console.log(`  Found current month's post: "${currentPost.title}"`);
+      const parsed = parseGamesFromPost(currentPost.title, currentPost.content || "");
+      console.log(`  Parsed ${parsed.length} game heading(s): ${parsed.map((g) => g.title).join(", ")}`);
+
+      if (parsed.length) {
+        games = games.concat(
+          parsed.map((item) =>
+            buildPsPlusGame(item, {
+              status: "free",
+              offerStart: currentPost.pubDate ? new Date(currentPost.pubDate).toISOString() : null,
+              offerEnd: nextMonthFirstTuesday.toISOString(),
+              sourcePost: currentPost.link,
+            })
+          )
+        );
+      } else {
+        console.warn("  Could not parse any games from the current month's post.");
+      }
+    } else {
+      console.warn("  Could not find this month's PS Plus post in the RSS feed.");
     }
 
-    nextMonth.setHours(0, 0, 0, 0);
+    if (nextPost) {
+      console.log(`  Found next month's post: "${nextPost.title}"`);
+      const parsedNext = parseGamesFromPost(nextPost.title, nextPost.content || "");
+      console.log(`  Parsed ${parsedNext.length} upcoming game heading(s): ${parsedNext.map((g) => g.title).join(", ")}`);
 
-    const offerEnd = nextMonth.toISOString();
+      if (parsedNext.length) {
+        games = games.concat(
+          parsedNext.map((item) =>
+            buildPsPlusGame(item, {
+              status: "upcoming",
+              // Becomes claimable once this month's lineup rotates out.
+              offerStart: nextMonthFirstTuesday.toISOString(),
+              offerEnd: monthAfterNextFirstTuesday.toISOString(),
+              sourcePost: nextPost.link,
+            })
+          )
+        );
+      }
+    }
 
-    const games = parsed.map((item) => ({
-      id: `psplus-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-      store: "psplus",
-      storeName: "PlayStation Plus",
-      title: normalizeTitle(item.title),
-      slug: "",
-      storeUrl: "https://store.playstation.com",
-      seller: item.platforms.length ? item.platforms.join(" / ") : "PS5 / PS4",
-      description: item.description || "",
-      image: item.image || "",
-      originalPrice: null,
-      discountPrice: 0,
-      status: "free",
-      offerStart: post.pubDate ? new Date(post.pubDate).toISOString() : null,
-      offerEnd,
-      platforms: item.platforms,
-      sourcePost: post.link,
-    }));
-
-    console.log(`  → ${games.length} PS Plus game(s) found`);
+    console.log(
+      `  → ${games.filter((g) => g.status === "free").length} free, ${games.filter((g) => g.status === "upcoming").length} upcoming PS Plus game(s) found`
+    );
     return games;
   } catch (err) {
     console.error("PS Plus fetch failed:");
