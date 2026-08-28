@@ -56,7 +56,6 @@ function firstTuesdayOfMonth(year, monthIndex) {
  * month, 1 = next month). Returns null if Sony hasn't posted it yet —
  * which is expected/normal for the "next month" case most of the month.
  */
-import { stripHtml, normalizeTitle, extractTag, splitItems, decodeHtmlEntities } from "../utils/html.js";
 
 function findPsPlusPostForOffset(rssXml, offset) {
   const items = splitItems(rssXml);
