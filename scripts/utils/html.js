@@ -17,6 +17,7 @@ export function decodeHtmlEntities(text) {
     .replace(/&#x([0-9a-f]+);/gi, (_, code) =>
       String.fromCharCode(parseInt(code, 16))
     )
+    .replace(/&nbsp;/gi, " ")
     .replace(/&amp;/gi, "&")
     .replace(/&quot;/gi, '"')
     .replace(/&#39;/g, "'")

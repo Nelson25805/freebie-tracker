@@ -16,7 +16,8 @@
  */
 
 import fetch from "node-fetch";
-import { stripHtml, normalizeTitle, extractTag, splitItems } from "../utils/html.js";
+import { stripHtml, normalizeTitle, extractTag, splitItems, decodeHtmlEntities } from "../utils/html.js";
+
 
 // Use the PS Plus category feed — far fewer irrelevant posts than the main feed.
 // Sony posts next month's games in the last week of the prior month,
@@ -55,6 +56,8 @@ function firstTuesdayOfMonth(year, monthIndex) {
  * month, 1 = next month). Returns null if Sony hasn't posted it yet —
  * which is expected/normal for the "next month" case most of the month.
  */
+import { stripHtml, normalizeTitle, extractTag, splitItems, decodeHtmlEntities } from "../utils/html.js";
+
 function findPsPlusPostForOffset(rssXml, offset) {
   const items = splitItems(rssXml);
   const now = new Date();
@@ -62,23 +65,28 @@ function findPsPlusPostForOffset(rssXml, offset) {
     .toLocaleString("en-US", { month: "long" })
     .toLowerCase();
 
+  const seenTitles = [];
+
   for (const item of items) {
-    const title = stripHtml(extractTag(item, "title"));
+    const rawTitle = stripHtml(extractTag(item, "title"));
+    const title = decodeHtmlEntities(rawTitle).replace(/\s+/g, " ").trim();
     const titleLower = title.toLowerCase();
+    seenTitles.push(title);
 
     if (!/(monthly\s+games|monthly\s+free)/i.test(titleLower)) continue;
     if (!/playstation\s*plus|ps\s*plus/i.test(titleLower)) continue;
     if (!titleLower.includes(targetMonthName)) continue;
 
-    // RSS items are newest-first, so the first title match is the
-    // right one — no need to score multiple candidates.
     return {
-      title: stripHtml(extractTag(item, "title")),
+      title,
       link: stripHtml(extractTag(item, "link")),
       content: extractTag(item, "content:encoded") || extractTag(item, "description"),
       pubDate: stripHtml(extractTag(item, "pubDate")),
     };
   }
+
+  console.warn(`  PS Plus: no post matched "${targetMonthName}" (offset ${offset}). Recent feed titles:`);
+  for (const t of seenTitles.slice(0, 8)) console.warn(`    - ${t}`);
 
   return null;
 }
@@ -366,6 +374,9 @@ export async function fetchPSPlus() {
           )
         );
       }
+    }
+    else {
+      console.log("  No next month's PS Plus post found yet — will retry next run.");
     }
 
     console.log(
