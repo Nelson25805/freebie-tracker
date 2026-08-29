@@ -38,7 +38,116 @@ function detectPrimePlatformFromUrl(href) {
   return "Amazon Luna"; // genuine fallback, e.g. unrecognized suffix
 }
 
-export async function fetchPrimeGaming() {
+// Two known ways an individual Luna page scrape comes back "successful"
+// but wrong:
+//  - A shared "connect your phone as a controller" interstitial that
+//    apparently renders (with its own <h1>) before the real per-game
+//    content swaps in, if we happen to read the page too early.
+//  - Amazon's own "We're having technical difficulties" error page, if
+//    the real page failed to load at all.
+// Both produce a real, non-empty title string — just not the game's — so
+// a plain "did we get *a* title" check doesn't catch them. Check the text.
+const KNOWN_BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult/i;
+
+function looksLikeBadScrape(details) {
+  if (!details?.title) return true;
+  return KNOWN_BAD_TITLE_RE.test(details.title);
+}
+
+async function scrapeGameDetails(gamePage) {
+  return gamePage.evaluate(() => {
+    const BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult/i;
+
+    let title = document.querySelector("h1")?.textContent?.trim() || "";
+    const ogTitle =
+      document.querySelector('meta[property="og:title"]')?.content?.trim() || "";
+
+    // Prefer the visible <h1>, but if it's empty or matches one of the
+    // known placeholder/error strings, fall back to the SSR'd og:title
+    // meta tag — it's present in the initial HTML before client-side JS
+    // hydrates and swaps the real content in, so it's less likely to be
+    // caught mid-interstitial than the h1 is.
+    if (!title || BAD_TITLE_RE.test(title)) {
+      title = ogTitle || title || document.title;
+    }
+
+    let description = "";
+    let image = "";
+
+    // --------------------------------------------------
+    // STANDARD PRIME GAMING PAGE
+    // --------------------------------------------------
+
+    const standardDesc =
+      document.querySelector('[data-a-target="BodyText"]') ||
+      document.querySelector(".about-the-game__content p");
+
+    if (standardDesc) {
+      description = standardDesc.textContent.trim();
+    }
+
+    // Prefer actual game artwork
+    const standardImg =
+      document.querySelector("#background_media_image") ||
+      document.querySelector('[data-a-target="responsive-media-image"]') ||
+      document.querySelector('meta[property="og:image"]') ||
+      document.querySelector('meta[name="twitter:image"]') ||
+      document.querySelector('img[src*="media-amazon.com"]');
+
+    if (standardImg) {
+      image =
+        standardImg.content ||
+        standardImg.src ||
+        standardImg.getAttribute("src") ||
+        "";
+    }
+
+    // --------------------------------------------------
+    // AMAZON LUNA PAGE FALLBACK
+    // --------------------------------------------------
+
+    if (!description) {
+      const lunaDesc = document.querySelector(
+        '[data-test-id="item_game_description_body"]'
+      );
+
+      if (lunaDesc) {
+        description = lunaDesc.textContent.replace(/\s+/g, " ").trim();
+      }
+    }
+
+    if (!image) {
+      const candidates = [
+        document.querySelector('meta[property="og:image"]'),
+        document.querySelector('meta[name="twitter:image"]'),
+        document.querySelector("#background_media_image"),
+        document.querySelector('img[src*="media-amazon.com"]'),
+      ];
+
+      for (const el of candidates) {
+        if (!el) continue;
+
+        const src = el.content || el.src || el.getAttribute("src") || "";
+
+        if (src) {
+          image = src;
+          break;
+        }
+      }
+    }
+
+    return { title, description, image };
+  });
+}
+
+// previousGames lets a run that hits a known-bad scrape (interstitial or
+// error page) fall back to the last run's data for that same offer
+// instead of publishing junk — matched by storeUrl, since that's stable
+// across runs even when the scraped title isn't. Reusing the previous
+// entry wholesale also keeps its `id` unchanged, which is what stops
+// notify-newsletter.js from mistaking a bad re-scrape of an offer you
+// already know about for a brand-new free game (and re-emailing it).
+export async function fetchPrimeGaming(previousGames = []) {
   console.log("Fetching Prime Gaming data…");
 
   let browser;
@@ -106,8 +215,10 @@ export async function fetchPrimeGaming() {
     const games = [];
 
     for (const card of cards) {
+      let gamePage;
+
       try {
-        const gamePage = await browser.newPage();
+        gamePage = await browser.newPage();
 
         await gamePage.goto(card.href, {
           waitUntil: "domcontentloaded",
@@ -123,89 +234,48 @@ export async function fetchPrimeGaming() {
           await gamePage.waitForTimeout(3000);
         }
 
-        const details = await gamePage.evaluate(() => {
-          const title =
-            document.querySelector("h1")?.textContent?.trim() ||
-            document.title;
+        let details = await scrapeGameDetails(gamePage);
 
-          let description = "";
-          let image = "";
+        // Landed on a placeholder/error page on the first pass — give the
+        // real content one more chance to load before giving up on it.
+        if (looksLikeBadScrape(details)) {
+          console.warn(
+            `  Prime: got a placeholder/error page for "${card.title}" — retrying once…`
+          );
 
-          // --------------------------------------------------
-          // STANDARD PRIME GAMING PAGE
-          // --------------------------------------------------
+          await gamePage.reload({ waitUntil: "domcontentloaded", timeout: 60000 });
 
-          const standardDesc =
-            document.querySelector('[data-a-target="BodyText"]') ||
-            document.querySelector(".about-the-game__content p");
-
-          if (standardDesc) {
-            description = standardDesc.textContent.trim();
+          try {
+            await gamePage.waitForSelector(
+              '[data-test-id="item_game_description_body"], #background_media_image',
+              { timeout: 10000 }
+            );
+          } catch {
+            await gamePage.waitForTimeout(4000);
           }
 
-          // Prefer actual game artwork
-          const standardImg =
-            document.querySelector("#background_media_image") ||
-            document.querySelector('[data-a-target="responsive-media-image"]') ||
-            document.querySelector('meta[property="og:image"]') ||
-            document.querySelector('meta[name="twitter:image"]') ||
-            document.querySelector('img[src*="media-amazon.com"]');
+          details = await scrapeGameDetails(gamePage);
+        }
 
-          if (standardImg) {
-            image =
-              standardImg.content ||
-              standardImg.src ||
-              standardImg.getAttribute("src") ||
-              "";
+        if (looksLikeBadScrape(details)) {
+          const previous = previousGames.find(
+            (g) => g.store === "prime" && g.storeUrl === card.href
+          );
+
+          if (previous) {
+            console.warn(
+              `  Prime: still couldn't scrape "${card.title}" after retry — reusing last known-good data for it.`
+            );
+            games.push({ ...previous });
+          } else {
+            console.warn(
+              `  Prime: still couldn't scrape "${card.title}" after retry and there's no previous data to fall back on — skipping it this run.`
+            );
           }
 
-          // --------------------------------------------------
-          // AMAZON LUNA PAGE FALLBACK
-          // --------------------------------------------------
-
-          if (!description) {
-            const lunaDesc =
-              document.querySelector(
-                '[data-test-id="item_game_description_body"]'
-              );
-
-            if (lunaDesc) {
-              description = lunaDesc.textContent
-                .replace(/\s+/g, " ")
-                .trim();
-            }
-          }
-
-          if (!image) {
-            const candidates = [
-              document.querySelector('meta[property="og:image"]'),
-              document.querySelector('meta[name="twitter:image"]'),
-              document.querySelector("#background_media_image"),
-              document.querySelector('img[src*="media-amazon.com"]')
-            ];
-
-            for (const el of candidates) {
-              if (!el) continue;
-
-              const src =
-                el.content ||
-                el.src ||
-                el.getAttribute("src") ||
-                "";
-
-              if (src) {
-                image = src;
-                break;
-              }
-            }
-          }
-
-          return {
-            title,
-            description,
-            image,
-          };
-        });
+          await gamePage.close();
+          continue;
+        }
 
         const platform = detectPrimePlatformFromUrl(card.href);
 
@@ -250,6 +320,7 @@ export async function fetchPrimeGaming() {
 
       } catch (err) {
         console.warn(`Failed to scrape Prime game page: ${card.title}`);
+        if (gamePage) await gamePage.close().catch(() => { });
       }
     }
 
