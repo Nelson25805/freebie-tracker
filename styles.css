@@ -488,7 +488,7 @@ input {
 }
 
 .chip[data-platform="Epic Games"].active {
-    background: #050505;
+    background: linear-gradient(135deg, #3a3a3a, #000000);
     border-color: rgba(255, 255, 255, 0.55);
     color: #ffffff;
 }
@@ -499,9 +499,9 @@ input {
 }
 
 .chip[data-platform="GOG"].active {
-    background: #8543e2;
-    border-color: rgba(133, 67, 226, 0.85);
-    color: #14081f;
+    background: linear-gradient(135deg, #bb8bff, #4c1f91);
+    border-color: rgba(187, 139, 255, 0.9);
+    color: #ffffff;
 }
 
 .chip[data-platform="Legacy Games"] {
