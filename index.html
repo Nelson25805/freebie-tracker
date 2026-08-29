@@ -17,6 +17,29 @@
   <main class="wrap">
     <section class="hero">
       <div class="card hero-main">
+        <div class="hero-blob" aria-hidden="true">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <defs>
+              <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" class="blob-stop-a" />
+                <stop offset="100%" class="blob-stop-b" />
+              </linearGradient>
+            </defs>
+            <g class="blob-drift">
+              <path class="blob-shape" fill="url(#blobGradient)"
+                d="M300,120 C340,160 350,230 310,280 C270,330 190,340 140,300 C90,260 70,180 110,130 C150,80 260,80 300,120 Z" />
+            </g>
+            <g class="blob-orbit blob-orbit-1">
+              <circle cx="330" cy="90" r="10" class="blob-node blob-node-a" />
+            </g>
+            <g class="blob-orbit blob-orbit-2">
+              <circle cx="90" cy="310" r="7" class="blob-node blob-node-b" />
+            </g>
+            <g class="blob-orbit blob-orbit-3">
+              <circle cx="340" cy="300" r="5" class="blob-node blob-node-a" />
+            </g>
+          </svg>
+        </div>
         <div class="eyebrow">🎮 Free Game Tracker</div>
         <h1>Track current freebies, then mark the ones you already claimed.</h1>
         <p class="subtext">

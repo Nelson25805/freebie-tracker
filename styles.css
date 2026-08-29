@@ -63,6 +63,154 @@ body {
     padding: 26px;
 }
 
+/* ─── Hero focal illustration (decorative "claim network" blob) ─────────── */
+
+.hero-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-main>*:not(.hero-blob) {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-blob {
+    position: absolute;
+    top: -8%;
+    right: -6%;
+    width: min(46%, 360px);
+    aspect-ratio: 1 / 1;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.55;
+}
+
+.hero-blob svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.blob-stop-a {
+    stop-color: var(--accent);
+}
+
+.blob-stop-b {
+    stop-color: var(--accent-2);
+}
+
+.blob-drift {
+    transform-origin: 200px 200px;
+    animation: blob-drift 16s ease-in-out infinite alternate;
+}
+
+@keyframes blob-drift {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translate(-10px, 12px) rotate(8deg) scale(1.05);
+    }
+
+    100% {
+        transform: translate(6px, -8px) rotate(-6deg) scale(0.97);
+    }
+}
+
+.blob-node-a {
+    fill: var(--accent-2);
+}
+
+.blob-node-b {
+    fill: var(--accent);
+}
+
+.blob-node {
+    filter: drop-shadow(0 0 6px currentColor);
+}
+
+.blob-orbit-1 {
+    transform-origin: 200px 200px;
+    animation: blob-orbit-1 9s ease-in-out infinite;
+}
+
+.blob-orbit-2 {
+    transform-origin: 200px 200px;
+    animation: blob-orbit-2 12s ease-in-out infinite;
+}
+
+.blob-orbit-3 {
+    transform-origin: 200px 200px;
+    animation: blob-orbit-3 7.5s ease-in-out infinite;
+}
+
+@keyframes blob-orbit-1 {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translate(-14px, 10px) scale(1.25);
+        opacity: 0.5;
+    }
+}
+
+@keyframes blob-orbit-2 {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translate(10px, -14px) scale(1.3);
+        opacity: 0.35;
+    }
+}
+
+@keyframes blob-orbit-3 {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.85;
+    }
+
+    50% {
+        transform: translate(-8px, -10px) scale(1.4);
+        opacity: 0.4;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .blob-drift,
+    .blob-orbit-1,
+    .blob-orbit-2,
+    .blob-orbit-3 {
+        animation: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .hero-blob {
+        width: min(60%, 260px);
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 620px) {
+    .hero-blob {
+        display: none;
+    }
+}
+
 .eyebrow {
     display: inline-flex;
     align-items: center;
