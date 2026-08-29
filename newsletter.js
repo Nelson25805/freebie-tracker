@@ -22,9 +22,6 @@ function setNlStatus(text, isError = false) {
   nlStatus.style.color = isError ? "#ffb4b4" : "#b8ffcf";
 }
 
-// Keeps the chip highlighting in sync with nlSelectedStores. "All stores"
-// reads as active whenever every specific store happens to be selected —
-// clicking it is just a shortcut back to that state.
 function syncNlChips() {
   const allSelected = nlSelectedStores.size === nlSpecificChips.length;
   if (nlAllChip) nlAllChip.classList.toggle("active", allSelected);
@@ -71,9 +68,6 @@ if (nlForm) {
     setNlStatus("Submitting…");
 
     try {
-      // Apps Script web apps don't send CORS headers for simple requests,
-      // so this is sent as a "no-cors" fire-and-forget POST. We can't read
-      // the response, but the script still runs and stores/sends as normal.
       await fetch(NEWSLETTER_ENDPOINT, {
         method: "POST",
         mode: "no-cors",
@@ -83,15 +77,11 @@ if (nlForm) {
           email,
           frequency,
           stores,
-          // Honeypot field — real visitors never fill this in. If it's
-          // non-empty, Code.gs silently drops the request server-side.
+
           website: nlWebsite ? nlWebsite.value : "",
         }),
       });
 
-      // We're on "no-cors" so we can't actually read whether this
-      // succeeded — but with double opt-in, "submitted" no longer means
-      // "subscribed," so say that plainly rather than implying it's done.
       setNlStatus("Almost done! Check your inbox for a confirmation email and click the link inside it.");
       nlForm.reset();
       nlSelectedStores = new Set(nlSpecificChips.map((c) => c.dataset.store));

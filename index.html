@@ -4,17 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--
-    Content-Security-Policy — defense-in-depth in case a scraped field ever
-    slips an unexpected value into the DOM. GitHub Pages can't set real HTTP
-    headers, so this is delivered as a meta tag instead (works for all the
-    directives used here). Adjust if you add new external hosts:
-      - img-src allows any https image host, since store cover art comes
-        from several different CDNs (Epic, PlayStation, Amazon, GamerPower)
-      - connect-src allows the Apps Script newsletter endpoint (no-cors POST)
-      - style-src allows 'unsafe-inline' because render.js/format.js build
-        cards with inline style="" attributes rather than CSS classes
-  -->
+  <!-- Content-Security-Policy -->
   <meta http-equiv="Content-Security-Policy"
     content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https://script.google.com; base-uri 'self'; form-action 'self' https://script.google.com; frame-ancestors 'self';" />
   <title>Free Game Tracker</title>
@@ -170,11 +160,7 @@
       </div>
     </section>
 
-    <!--
-  Newsletter Section — this is a simple form that posts to a Google Apps Script Web App endpoint. The script
-  then adds the email address to a Google Sheet (pending double opt-in confirmation), and sends a confirm-your-email
-  message. The script only starts sending digests once that confirm link has been clicked.
--->
+    <!-- Newsletter Section -->
     <section class="card section" id="newsletterSection">
       <div class="section-head">
         <div>
@@ -209,21 +195,12 @@
 
         <button class="btn btn-primary" type="submit">Subscribe</button>
 
-        <!--
-          Honeypot field — invisible to real visitors (off-screen, not
-          type="hidden", so bots that only skip type="hidden" inputs still
-          fill it in) and never announced to assistive tech. If this comes
-          back non-empty, the backend silently drops the request instead
-          of creating a subscriber or sending mail. Leave it in the DOM;
-          don't remove or rename it without updating newsletter.js/Code.gs.
-        -->
+        <!--  Honeypot field  -->
         <input type="text" id="newsletterWebsite" name="website" autocomplete="off" tabindex="-1" aria-hidden="true"
           style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0; pointer-events:none;" />
       </form>
 
-      <!-- Spam/junk-folder tip — since a personal Gmail sender has no built-up
-       reputation yet, the single biggest thing a new subscriber can do is
-       mark the confirmation email "Not spam" the first time it arrives. -->
+      <!-- Spam/junk-folder  -->
       <div style="
       margin-top: 12px;
       padding: 12px 14px;

@@ -1,6 +1,5 @@
 /**
- * utils/history.js
- * (see previous version's header comment — unchanged)
+ * utils/history.jsn
  */
 
 import { writeFileSync, readFileSync, appendFileSync, mkdirSync, existsSync } from "fs";
@@ -39,8 +38,6 @@ function loadMonthlyArchive(monthKey) {
     }
 }
 
-// Keeps data/history/index.json — the manifest the browse page reads to
-// populate its month picker, since a static host can't list a directory.
 function updateMonthIndex(monthKey, fetchedAt) {
     let index = { months: [], updatedAt: null };
     if (existsSync(INDEX_PATH)) {
@@ -58,12 +55,6 @@ function updateMonthIndex(monthKey, fetchedAt) {
     writeFileSync(INDEX_PATH, JSON.stringify(index, null, 2), "utf-8");
 }
 
-/**
- * Merges this run's FREE games only (upcoming games are intentionally left
- * out of the archive) into the current month's file. Existing entries get
- * lastSeen bumped and their fields refreshed; new ones get
- * firstSeen === lastSeen === fetchedAt.
- */
 export function updateMonthlyArchive(games, fetchedAt) {
     ensureHistoryDir();
 
@@ -87,9 +78,6 @@ export function updateMonthlyArchive(games, fetchedAt) {
     console.log(`  History: ${monthKey}.json now has ${Object.keys(archive.games).length} game(s) archived.`);
 }
 
-// Drops any run-log line older than RUN_LOG_RETENTION_DAYS. Runs every
-// call — the file stays small (≈1,000 lines/year at 3 runs/day) so a
-// full read+rewrite each time is not worth optimizing away.
 function pruneRunLog(now) {
     if (!existsSync(RUN_LOG_PATH)) return;
 

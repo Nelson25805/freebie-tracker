@@ -14,8 +14,6 @@ import { updateMonthlyArchive, appendRunLog } from "./utils/history.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
 
-// Order here must match the order of fetchers passed to Promise.allSettled
-// below — used to label each settled result for the run log.
 const STORE_KEYS = ["epic", "gog", "psplus", "prime", "steam"];
 
 async function main() {
@@ -24,7 +22,6 @@ async function main() {
     const prevJson = JSON.parse(readFileSync(OUT_PATH, "utf-8"));
     previousGames = prevJson.games || [];
   } catch {
-    // no previous file yet (first run) — that's fine
   }
 
   const results = await Promise.allSettled([
@@ -65,8 +62,7 @@ async function main() {
   console.log(`\n✓ Wrote ${allGames.length} games to ${OUT_PATH}`);
   console.log(`  ${output.totalFree} free now, ${output.totalUpcoming} upcoming`);
 
-  // Archive + run log — never fatal if these have a hiccup, since the
-  // live games.json above already wrote successfully.
+  // Archive + run log 
   try {
     updateMonthlyArchive(allGames, output.fetchedAt);
     appendRunLog({ fetchedAt: output.fetchedAt, stores: storeLog });

@@ -3,10 +3,7 @@
  *
  * Compares this run's free games against the previous run and, if any
  * brand-new free games showed up, pings the Apps Script web app so it can
- * email "instant" subscribers. Costs nothing — it's just an HTTPS POST
- * to your own free Apps Script deployment. Silently no-ops if the two
- * required env vars aren't set, so it's safe to add before you've
- * finished the newsletter setup.
+ * email "instant" subscribers.
  */
 
 import fetch from "node-fetch";

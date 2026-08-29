@@ -1,29 +1,10 @@
 /**
  * fetchers/psplus.js
- *
- * Sony has no public unauthenticated API for PS Plus monthly games.
- * The primary source is the PlayStation Blog RSS feed. The RSS feed can
- * lag the live site by a day or more, though — Sony publishes next
- * month's "Monthly Games" post to blog.playstation.com well before the
- * category RSS feed picks it up. So when RSS doesn't have next month's
- * post yet, we fall back to scraping the blog HOMEPAGE for the same post
- * (it shows up there as a post-card almost immediately), grab its link,
- * fetch that post page directly, and parse it the same way.
- *
- * Either way, once we have the raw post HTML, we parse structured game
- * data directly out of it. This month's games become "free" entries;
- * next month's become "upcoming" entries — same as Epic's current/
- * upcoming split.
- *
- * This is the most "reverse-engineered markup structure" of all the
- * fetchers — if Sony changes their blog post/homepage template, this
- * file (and only this file) is what needs updating.
  */
 
 import fetch from "node-fetch";
 import { stripHtml, normalizeTitle, extractTag, splitItems, decodeHtmlEntities } from "../utils/html.js";
 
-// Use the PS Plus category feed — far fewer irrelevant posts than the main feed.
 const PS_BLOG_RSS = "https://blog.playstation.com/category/ps-plus/feed/";
 const PS_BLOG_HOMEPAGE = "https://blog.playstation.com/";
 
@@ -66,9 +47,6 @@ async function fetchPsPlusPostPage(link) {
   return await res.text();
 }
 
-// PS Plus monthly games always go live/expire on the first Tuesday of a
-// month. Used both for "when does this month's lineup close" and "when
-// does next month's lineup open/close".
 function firstTuesdayOfMonth(year, monthIndex) {
   const d = new Date(year, monthIndex, 1);
   while (d.getDay() !== 2) {
@@ -93,14 +71,6 @@ function isPsPlusMonthlyTitle(title, targetMonthName) {
   return true;
 }
 
-/**
- * Finds the best "PlayStation Plus Monthly Games" post in the RSS feed
- * whose title mentions the month at `offset` months from now (0 = this
- * month, 1 = next month). Returns null if the RSS feed doesn't have it
- * — either because Sony hasn't posted it yet, or (more often, for the
- * "next month" case) because the RSS feed just hasn't caught up to the
- * live site yet.
- */
 function findPsPlusPostViaRSS(rssXml, offset) {
   const items = splitItems(rssXml);
   const targetMonthName = targetMonthNameForOffset(offset);
@@ -128,17 +98,6 @@ function findPsPlusPostViaRSS(rssXml, offset) {
   return null;
 }
 
-/**
- * Scrapes the blog HOMEPAGE for a "Monthly Games" post-card matching the
- * target month, as a fallback for when the RSS feed hasn't caught up yet.
- * Homepage post-cards look like:
- *
- *   <h3 class="post-card__title">
- *     <a href="https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-.../"
- *        class="post-card__title-link">
- *        PlayStation Plus Monthly Games for September – ... </a>
- *   </h3>
- */
 function findPsPlusLinkOnHomepage(homepageHtml, offset) {
   const targetMonthName = targetMonthNameForOffset(offset);
   const titleBlockRe =
@@ -157,12 +116,7 @@ function findPsPlusLinkOnHomepage(homepageHtml, offset) {
   return null;
 }
 
-/**
- * Finds the PS Plus "Monthly Games" post for `offset` months from now.
- * Tries the RSS feed first (cheap, and gives us pubDate + content in one
- * request); if that comes up empty, falls back to scraping the blog
- * homepage for the post link and fetching that page directly.
- */
+
 async function findPsPlusPost(rssXml, offset) {
   const viaRss = findPsPlusPostViaRSS(rssXml, offset);
   if (viaRss) return viaRss;
@@ -187,25 +141,6 @@ async function findPsPlusPost(rssXml, offset) {
   }
 }
 
-/**
- * Parse PS Plus games directly from the blog post — no external API needed.
- *
- * Sony is inconsistent about whether the "Title | Platforms" line for each
- * game is wrapped in a heading tag or just a bold paragraph:
- *
- *   <h2><strong>Game Title | PS5, PS4</strong></h2>   ← heading style
- *   <p><strong>Game Title | PS5, PS4</strong></p>     ← bold-paragraph style (seen on live post pages)
- *
- * So we scan for heading tags first (cheap, and matches most RSS content
- * bodies); if that finds nothing, we fall back to scanning bold tags
- * (<strong>/<b>) directly — this is what live-fetched post pages (e.g.
- * the homepage fallback path) tend to use instead of real headings.
- *
- * Either way, once we have the candidate "Title | Platforms" blocks, the
- * rest of the parsing (image lookup, description lookup) works the same:
- * look backward for the nearest tachyon image and forward for the first
- * real <p>.
- */
 function findTitleBlocks(postHtml, blockRe) {
   const entries = [];
   let m;
@@ -217,15 +152,10 @@ function findTitleBlocks(postHtml, blockRe) {
       .replace(/\s+/g, " ")
       .trim();
 
-    // Defense in depth: a real "Title | Platforms" line is always short.
-    // Anything this long is page furniture that slipped through (nav,
-    // search widgets, etc.) rather than a genuine game entry — reject it
-    // outright instead of trying to parse a title out of it.
     if (plainText.length > 150) continue;
 
     if (!plainText.includes("|")) continue; // not a "Title | Platforms" block
 
-    // Split on the LAST pipe, in case a title ever legitimately contains one.
     const pipeIndex = plainText.lastIndexOf("|");
     const rawTitle = normalizeTitle(plainText.slice(0, pipeIndex).trim());
     const platformStr = plainText
@@ -247,66 +177,24 @@ function findTitleBlocks(postHtml, blockRe) {
   return entries;
 }
 
-// A real game cover image always comes from the tachyon CDN path and is
-// never the site header/PS logo. Page furniture (nav logo, author
-// avatars, "Latest News" placeholders, etc.) can slip past a simple
-// "skip pslogo" check — e.g. the header logo file is named
-// "sonylogo-2x.jpg", not "pslogo", so it wasn't being filtered at all.
 function isLikelyGameCoverImage(url) {
   if (!/^https:\/\/blog\.playstation\.com\/tachyon\//i.test(url)) return false;
   if (/pslogo|sonylogo/i.test(url)) return false;
-  // Small square crops are always avatars/icons/logos, never cover art.
-  // Real game covers consistently use ?fit=1024,1024 in this data.
   if (/[?&]fit=(?:40|180|200|270|280|281|300|400|401|512|640)(?:[,%]|$)/i.test(url)) return false;
   return true;
 }
 
-// "-scaled.jpg" images are WordPress's full-resolution upload — prefer
-// them when present. Must allow a trailing query string (?fit=...),
-// since the anchored-to-end-of-string version of this check never
-// matched any real URL and silently always failed.
 function isScaledImage(url) {
   return /-scaled\.(?:jpg|jpeg|png|webp)(?:[?&]|$)/i.test(url);
 }
 
 function parseGamesFromPost(postTitle, postHtml) {
-  // ── Find all game title block positions ────────────────────────────────
-  // Try real headings first...
-  //
-  // NOTE: the inner-content quantifier is BOUNDED ({1,300}?), not the
-  // unbounded [\s\S]*? it used to be. Live PS Blog pages sometimes contain
-  // an earlier, unrelated <strong>/<h2> tag (nav labels, a11y text, etc.)
-  // whose real closing tag is much further down the page than intended.
-  // With an unbounded non-greedy match, the regex still walks all the way
-  // to that far-off closing tag, swallowing the entire page in between
-  // into one "title" (this is exactly what produced the "Skip to
-  // content... Sniper Elite: Resistance" garbage title). Bounding the
-  // match length makes that attempt fail fast, so the regex engine moves
-  // on and re-syncs on the next — correctly short and properly closed —
-  // <strong>/<h2> tag instead.
+
   let entries = findTitleBlocks(postHtml, /<h[23][^>]*>([\s\S]{1,300}?)<\/h[23]>/gi);
 
-  // ...and if that comes up empty, fall back to plain bold text
-  // (<strong>/<b>), which is what live post pages often use instead.
-  // Same bounded-length reasoning applies here — in fact this is the
-  // path that actually hit the runaway-match bug in practice.
   if (entries.length === 0) {
     entries = findTitleBlocks(postHtml, /<(?:strong|b)[^>]*>([\s\S]{1,300}?)<\/(?:strong|b)>/gi);
   }
-
-  // ── For each entry: extract cover image and description from its own section ──
-  //
-  // The post structure per game is:
-  //   <img src="tachyon/...">          ← game cover art
-  //   <h2>Download the image</h2>      ← Sony download overlay (NOT a game heading)
-  //   <p>...</p>                       ← overlay junk
-  //   **Title | PS5**                  ← actual game title block (already in entries[])
-  //   <p>Description...</p>            ← game description
-  //
-  // Strategy: for each entry, its "section" runs from the previous entry's
-  // end (or start of HTML) to just before this entry. We look for a
-  // tachyon image within that section. Then description is the first real
-  // <p> after the entry.
 
   const games = [];
   const seen = new Set();

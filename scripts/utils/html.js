@@ -34,7 +34,6 @@ export function normalizeTitle(title) {
     .trim();
 }
 
-// Handles both plain tags and CDATA-wrapped content (WordPress-style RSS).
 export function extractTag(xml, tag) {
   const cdataOpen = `<${tag}><![CDATA[`;
   const cdataClose = `]]></${tag}>`;

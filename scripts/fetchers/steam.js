@@ -1,21 +1,5 @@
 /**
  * fetchers/steam.js
- *
- * SteamDB sits behind Cloudflare bot-management specifically to stop
- * scraping like this (confirmed by the "Just a moment..." challenge page
- * showing up in a prior Actions run even after UA/webdriver spoofing).
- *
- * Valve's own featuredcategories endpoint was tried next, but its "specials"
- * list is a curated "top deals" feed, not a complete list of every
- * discounted app — small free-to-keep promos (e.g. Breathedge, Moonlighter)
- * never make that curated cut even though the store page itself is priced
- * at $0. That endpoint returned 0 matches while real free-to-keep games
- * were live, confirming the gap.
- *
- * GamerPower (gamerpower.com) is a small, free, purpose-built API that
- * tracks exactly this — live giveaways across Steam/Epic/GOG/etc — without
- * scraping or a browser. Using it here instead of trying to reverse-engineer
- * Steam's internal (undocumented, frequently-changed) search HTML.
  */
 
 import fetch from "node-fetch";
@@ -42,9 +26,6 @@ export async function fetchSteam() {
 
     const body = await res.json();
 
-    // Docs and third-party mirrors disagree on whether this is a bare array
-    // or wrapped as { giveaways: [...] } — accept either so a format change
-    // doesn't silently zero us out.
     const items = Array.isArray(body) ? body : Array.isArray(body?.giveaways) ? body.giveaways : null;
 
     if (!items) {
@@ -57,8 +38,6 @@ export async function fetchSteam() {
 
     console.log(`  Found ${items.length} Steam giveaway(s) from GamerPower`);
     if (items[0]) {
-      // Sample one item so a field-name mismatch is obvious in the log
-      // rather than silently producing blank titles/images/links.
       console.log("  Sample item:", JSON.stringify(items[0]).slice(0, 800));
     }
 

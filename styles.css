@@ -715,11 +715,6 @@ a {
     color: var(--muted);
 }
 
-/* Icon badge variant: the store's real logo asset, letterboxed inside a
-   small light chip so darker/black-on-transparent logos (Epic, Amazon
-   Prime) stay legible over the dark cover art. Logos come in varied aspect
-   ratios (Amazon Prime's is a wide horizontal lockup) so we fix the box
-   and let object-fit: contain handle the rest rather than cropping. */
 .store-tag.store-icon {
     display: inline-flex;
     align-items: center;
@@ -938,8 +933,6 @@ a {
 
 /* ─── Claim micro-interaction ────────────────────────────────────────────── */
 
-/* Brief highlight pulse on the whole card when its collected state changes,
-   so the click reads as "something happened" even before the grid re-renders. */
 .game.is-collect-pulse {
     animation: claim-card-pulse 0.48s ease;
 }
@@ -960,9 +953,6 @@ a {
     }
 }
 
-/* Checkmark overlay shown briefly over the cover art when a game is
-   marked collected. Fades/scales in, holds, then fades out on its own —
-   removed from the DOM once the animation ends. */
 .claim-check {
     position: absolute;
     inset: 0;
