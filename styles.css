@@ -416,13 +416,24 @@ input {
 
 .chip[data-store="epic"] {
     color: #e8e8ea;
-    border-color: rgba(255, 255, 255, 0.28);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .chip[data-store="epic"].active {
-    background: #050505;
+    background: linear-gradient(135deg, #3a3a3a, #000000);
     border-color: rgba(255, 255, 255, 0.55);
     color: #ffffff;
+}
+
+.chip[data-store="all"] {
+    color: #86efac;
+    border-color: rgba(34, 197, 94, 0.32);
+}
+
+.chip[data-store="all"].active {
+    background: linear-gradient(135deg, #4ade80, #15803d);
+    border-color: rgba(74, 222, 128, 0.85);
+    color: #052e16;
 }
 
 .chip[data-store="gog"] {
@@ -431,9 +442,9 @@ input {
 }
 
 .chip[data-store="gog"].active {
-    background: #8543e2;
-    border-color: rgba(133, 67, 226, 0.85);
-    color: #14081f;
+    background: linear-gradient(135deg, #bb8bff, #4c1f91);
+    border-color: rgba(187, 139, 255, 0.9);
+    color: #ffffff;
 }
 
 .chip[data-store="psplus"] {
