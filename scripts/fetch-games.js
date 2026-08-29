@@ -28,7 +28,7 @@ async function main() {
     fetchEpic(),
     fetchGOG(previousGames),
     fetchPSPlus(),
-    fetchPrimeGaming(),
+    fetchPrimeGaming(previousGames),
     fetchSteam(),
   ]);
 
