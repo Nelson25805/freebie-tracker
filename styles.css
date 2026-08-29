@@ -989,6 +989,8 @@ a {
 .desc-text {
     margin: 0;
     line-height: 1.5;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .btn-expand {

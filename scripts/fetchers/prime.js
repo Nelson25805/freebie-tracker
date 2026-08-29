@@ -38,16 +38,60 @@ function detectPrimePlatformFromUrl(href) {
   return "Amazon Luna"; // genuine fallback, e.g. unrecognized suffix
 }
 
+// Clicks the first visible match for `selector` within `timeout` ms.
+// Returns true if something was clicked, false if it never became
+// visible in time (not an error — most offers won't hit every step).
+async function clickIfVisible(gamePage, selector, timeout) {
+  try {
+    const btn = gamePage.locator(selector).first();
+    await btn.waitFor({ state: "visible", timeout });
+    await btn.click({ timeout: 5000 });
+    await gamePage.waitForTimeout(1000);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Amazon Luna shows a first-time-visitor onboarding flow ON TOP OF the
+// real page: a "Welcome to Luna" video modal, then a "Luna Standard" info
+// panel — and the real game content underneath doesn't finish loading
+// until both are dismissed. A fresh Playwright context is a "new visitor"
+// every run, so this fires every time, which is why scrapes were coming
+// back with placeholder titles/descriptions instead of failing outright.
+//
+// Selectors below are the actual element ids from Luna's markup:
+//   modal 1 ("Welcome to Luna" video) -> #item_ftue_jumanji_continue_button, labeled "Skip"
+//   modal 2 ("Luna Standard" info)    -> #item_ftue_luna_standard, labeled "Close"
+// Text-based fallbacks are tried second in case Amazon renames these ids.
+async function dismissLunaOnboarding(gamePage) {
+  const skipSelectors = [
+    "#item_ftue_jumanji_continue_button",
+    'button:has-text("Skip")',
+  ];
+  const closeSelectors = [
+    "#item_ftue_luna_standard",
+    'button:has-text("Close")',
+  ];
+
+  for (const sel of skipSelectors) {
+    if (await clickIfVisible(gamePage, sel, 8000)) break;
+  }
+
+  for (const sel of closeSelectors) {
+    if (await clickIfVisible(gamePage, sel, 5000)) break;
+  }
+}
+
 // Two known ways an individual Luna page scrape comes back "successful"
-// but wrong:
-//  - A shared "connect your phone as a controller" interstitial that
-//    apparently renders (with its own <h1>) before the real per-game
-//    content swaps in, if we happen to read the page too early.
+// but wrong (e.g. if dismissLunaOnboarding above missed a step):
+//  - The onboarding interstitial itself, if we read the page while a
+//    modal is still up.
 //  - Amazon's own "We're having technical difficulties" error page, if
 //    the real page failed to load at all.
 // Both produce a real, non-empty title string — just not the game's — so
 // a plain "did we get *a* title" check doesn't catch them. Check the text.
-const KNOWN_BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult/i;
+const KNOWN_BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult|welcome\s+to\s+luna/i;
 
 function looksLikeBadScrape(details) {
   if (!details?.title) return true;
@@ -56,7 +100,7 @@ function looksLikeBadScrape(details) {
 
 async function scrapeGameDetails(gamePage) {
   return gamePage.evaluate(() => {
-    const BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult/i;
+    const BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult|welcome\s+to\s+luna/i;
 
     let title = document.querySelector("h1")?.textContent?.trim() || "";
     const ogTitle =
@@ -141,12 +185,13 @@ async function scrapeGameDetails(gamePage) {
 }
 
 // previousGames lets a run that hits a known-bad scrape (interstitial or
-// error page) fall back to the last run's data for that same offer
-// instead of publishing junk — matched by storeUrl, since that's stable
-// across runs even when the scraped title isn't. Reusing the previous
-// entry wholesale also keeps its `id` unchanged, which is what stops
-// notify-newsletter.js from mistaking a bad re-scrape of an offer you
-// already know about for a brand-new free game (and re-emailing it).
+// error page, if dismissal didn't work) fall back to the last run's data
+// for that same offer instead of publishing junk — matched by storeUrl,
+// since that's stable across runs even when the scraped title isn't.
+// Reusing the previous entry wholesale also keeps its `id` unchanged,
+// which is what stops notify-newsletter.js from mistaking a bad
+// re-scrape of an offer you already know about for a brand-new free
+// game (and re-emailing it).
 export async function fetchPrimeGaming(previousGames = []) {
   console.log("Fetching Prime Gaming data…");
 
@@ -225,6 +270,8 @@ export async function fetchPrimeGaming(previousGames = []) {
           timeout: 60000,
         });
 
+        await dismissLunaOnboarding(gamePage);
+
         try {
           await gamePage.waitForSelector(
             '[data-test-id="item_game_description_body"], #background_media_image',
@@ -236,14 +283,15 @@ export async function fetchPrimeGaming(previousGames = []) {
 
         let details = await scrapeGameDetails(gamePage);
 
-        // Landed on a placeholder/error page on the first pass — give the
-        // real content one more chance to load before giving up on it.
+        // Still landed on a placeholder/error page — give the onboarding
+        // dismissal and the real content one more chance before giving up.
         if (looksLikeBadScrape(details)) {
           console.warn(
             `  Prime: got a placeholder/error page for "${card.title}" — retrying once…`
           );
 
           await gamePage.reload({ waitUntil: "domcontentloaded", timeout: 60000 });
+          await dismissLunaOnboarding(gamePage);
 
           try {
             await gamePage.waitForSelector(
