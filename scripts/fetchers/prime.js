@@ -102,15 +102,30 @@ async function scrapeGameDetails(gamePage) {
   return gamePage.evaluate(() => {
     const BAD_TITLE_RE = /use\s+phones?\s+as\s+controllers?|technical\s+difficult|welcome\s+to\s+luna/i;
 
-    let title = document.querySelector("h1")?.textContent?.trim() || "";
+    const h1 = document.querySelector("h1");
+    let title = "";
+
+    // Some Luna pages render a cross-promo badge ("Use Phones As
+    // Controllers", etc.) as the h1's only *text*, with the real game
+    // name only present as the alt/title of the game's own logo image
+    // inside that same h1 (data-test-id="item_game_details"). When that
+    // image exists, its alt/title IS the real title — prefer it over
+    // whatever text happens to be in the h1.
+    const gameLogoImg = h1?.querySelector('img[data-test-id="item_game_details"]');
+    if (gameLogoImg) {
+      title = (gameLogoImg.alt || gameLogoImg.title || "").trim();
+    }
+
+    if (!title) {
+      title = h1?.textContent?.trim() || "";
+    }
+
     const ogTitle =
       document.querySelector('meta[property="og:title"]')?.content?.trim() || "";
 
-    // Prefer the visible <h1>, but if it's empty or matches one of the
-    // known placeholder/error strings, fall back to the SSR'd og:title
-    // meta tag — it's present in the initial HTML before client-side JS
-    // hydrates and swaps the real content in, so it's less likely to be
-    // caught mid-interstitial than the h1 is.
+    // Last resort: the SSR'd og:title meta tag — present in the initial
+    // HTML before client-side JS hydrates and swaps the real content in,
+    // so it's less likely to be caught mid-interstitial than the h1 is.
     if (!title || BAD_TITLE_RE.test(title)) {
       title = ogTitle || title || document.title;
     }
