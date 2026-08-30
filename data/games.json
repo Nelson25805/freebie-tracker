@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-08-29T22:42:56.235Z",
+  "fetchedAt": "2026-08-30T13:38:42.169Z",
   "totalFree": 36,
-  "totalUpcoming": 10,
+  "totalUpcoming": 9,
   "games": [
     {
       "id": "8401414902e84f2cb9afa9142f051d32",
@@ -40,25 +40,6 @@
       "status": "upcoming",
       "offerStart": "2026-09-10T17:00:00.000Z",
       "offerEnd": "2026-09-24T17:00:00.000Z"
-    },
-    {
-      "id": "4a88d0dc64114b20b67339c74543f859",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Lost Castle: The Old Ones Awaken",
-      "slug": "lost-castle-abb2e2",
-      "storeUrl": "https://store.epicgames.com/p/lost-castle-abb2e2",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "The Old Ones Awaken adds new levels to explore, new enemies to defeat, and new bosses to face along with a host exciting new weapons and equipment to wield and wear.",
-      "image": "https://cdn1.epicgames.com/spt-assets/a6d76157ad884f2c9aa470b30da9e2ff/lost-castle-r390n.png",
-      "originalPrice": 399,
-      "discountPrice": 399,
-      "status": "upcoming",
-      "offerStart": "2026-08-30T01:00:00.000Z",
-      "offerEnd": "2026-09-13T23:59:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
