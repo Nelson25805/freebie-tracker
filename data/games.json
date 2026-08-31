@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-08-30T22:45:59.833Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-08-31T20:03:32.059Z",
+  "totalFree": 35,
   "totalUpcoming": 9,
   "games": [
     {
@@ -479,25 +479,6 @@
       "seller": "Prime Gaming",
       "description": "Get ready for endless space missions where no two runs are the same! Space Grunts 2 smashes roguelike exploration with tactical deck-building.Your adventure starts with a unique, procedurally generated level. As you explore, every item you grab - be it a weapon, a shield, or a gadget - becomes a card in your deck. You build your strategy on the fly, deciding what gear to keep and what to leave behind.When an alien threat appears, it's time for a swift, turn-based card battle. Choose your best move and watch the action unfold. Every choice matters, because one wrong step could mean mission failure.Complete challenges to unlock powerful Trinkets and Buff cards, giving you a permanent edge in future runs. With new paths, random events, and endless variations, you'll never have a dull moment. Can you build the perfect deck to survive the alien hordes?",
       "image": "https://m.media-amazon.com/images/I/A1NREOTNw4L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-xcom-chimera-squad",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "XCOM: Chimera Squad",
-      "slug": "xcom-chimera-squad",
-      "storeUrl": "https://luna.amazon.com/claims/xcom-chimera-squad-gog/dp/amzn1.pg.item.aa22d9f6-a898-4be7-a6df-50c3561b41b9?g=s&ingress=amzn&ref_=SM_XCOMChimeraSquad_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "XCOM: Chimera Squad delivers an all-new story and turn-based tactical combat experience in the XCOM universe.After years of alien rule, humanity won the war for Earth. But when the Overlords fled the planet, they left their former soldiers behind. Now, five years after the events of XCOM 2, humans and aliens are working together to forge a civilization of cooperation and coexistence.Welcome to City 31, a model of peace in a post-invasion world. However, not all of Earth's inhabitants support interspecies alliance. Chimera Squad, an elite force of human and alien agents, must work together to destroy the underground threats driving the city toward chaos.Your agents are unique: each is equipped with special tactical abilities and driven by a different motivation for joining Chimera Squad. Deploy targeted team members to investigate and combat the dangers that pervade the districts of City 31. Lead Chimera Squad through a new experience that innovates on XCOM's turn-based legacy, utilizing strategy, teamwork, and new breach-and-clear gameplay to complete your mission objectives.The future of City 31 depends on you.",
-      "image": "https://m.media-amazon.com/images/I/91vvv3hcUmL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
