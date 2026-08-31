@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https://script.google.com; base-uri 'self'; form-action 'self' https://script.google.com; frame-ancestors 'self';" />
+  <title>Free Game Alerts · Free Game Tracker</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./newsletter.js" defer></script>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="card hero-main">
+        <div class="eyebrow">🔔 Free Game Alerts</div>
+        <h1>Get free games delivered, not discovered too late.</h1>
+        <p class="subtext">
+          Claim windows are limited — some close in under a week. Instead of remembering to check back, pick
+          a frequency and the stores you care about, and we'll email you before the window closes.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./index.html">← Back to freebies</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Pick how often you hear from us</h2>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card game">
+          <div class="content">
+            <h3 class="title">Whenever a new game appears</h3>
+            <p class="meta">The instant a fetch run picks up a brand-new freebie, you get an email — best for
+              fast-moving stores like Epic, where offers rotate weekly.</p>
+          </div>
+        </article>
+        <article class="card game">
+          <div class="content">
+            <h3 class="title">Weekly digest</h3>
+            <p class="meta">One email a week, rounding up everything currently free across your chosen
+              stores.</p>
+          </div>
+        </article>
+        <article class="card game">
+          <div class="content">
+            <h3 class="title">Monthly digest</h3>
+            <p class="meta">A single monthly roundup — best if you just want the highlights without the
+              noise.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">What you'll actually get</h2>
+          <p class="section-note">
+            Each email lists the free games matching your stores, with cover art, when the offer closes, and
+            a direct claim link — no digging required.
+          </p>
+        </div>
+      </div>
+      <article class="card game" style="max-width: 420px; margin: 0 auto;">
+        <div class="cover"
+          style="aspect-ratio: 16 / 6; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: .82rem;">
+          Example: one card per free game
+        </div>
+        <div class="content">
+          <div class="title-row">
+            <h3 class="title">Breathedge</h3>
+          </div>
+          <div class="meta">Epic Games Store</div>
+          <div class="prices">
+            <span class="pill">Free until <strong>Sep 3, 2026</strong></span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card section" id="newsletterSection">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Sign up</h2>
+          <p class="section-note">
+            Free to sign up. Choose how often you'd like an email, and which stores you care about.
+          </p>
+        </div>
+      </div>
+
+      <div class="store-chip-row">
+        <span class="chip-row-label">Stores to include</span>
+        <div class="chip-group" id="newsletterStoreFilter" role="group" aria-label="Choose newsletter stores">
+          <button type="button" class="chip active" data-store="all">All stores</button>
+          <button type="button" class="chip" data-store="epic">Epic</button>
+          <button type="button" class="chip" data-store="gog">GOG</button>
+          <button type="button" class="chip" data-store="psplus">PS Plus</button>
+          <button type="button" class="chip" data-store="prime">Prime</button>
+          <button type="button" class="chip" data-store="steam">Steam</button>
+        </div>
+      </div>
+
+      <form id="newsletterForm" class="toolbar"
+        style="grid-template-columns: 1.6fr 1fr auto !important; margin-top: 14px;">
+        <input class="field" id="newsletterEmail" type="email" placeholder="you@example.com" required />
+
+        <select class="select" id="newsletterFrequency" aria-label="How often">
+          <option value="instant">Whenever a new game appears</option>
+          <option value="weekly">Weekly digest</option>
+          <option value="monthly">Monthly digest</option>
+        </select>
+
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+
+        <!--  Honeypot field  -->
+        <input type="text" id="newsletterWebsite" name="website" autocomplete="off" tabindex="-1" aria-hidden="true"
+          style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0; pointer-events:none;" />
+      </form>
+
+      <!-- Spam/junk-folder note -->
+      <div style="
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    ">
+        📬 <strong style="color: var(--text);">Heads up:</strong> after you subscribe, we'll send a one-time
+        <strong>confirmation email</strong> — you'll need to click the link inside it before any digests start
+        (this is just to make sure it's really your inbox). That first email may land in Spam/Junk since
+        this is a new sender. Marking it <strong>"Not spam"</strong> (or adding the sender to your contacts)
+        tells your inbox to trust future emails from us — weekly digests, monthly digests, and new-game
+        alerts included.
+      </div>
+
+      <p class="section-note" id="newsletterStatus" aria-live="polite" style="margin-top: 10px;"></p>
+    </section>
+
+    <p class="footer">
+      You can unsubscribe any time using the link in the footer of any email — no need to come back here.
+    </p>
+  </main>
+</body>
+
+</html>

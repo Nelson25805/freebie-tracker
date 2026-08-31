@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Content-Security-Policy -->
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https://script.google.com; base-uri 'self'; form-action 'self' https://script.google.com; frame-ancestors 'self';" />
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';" />
   <title>Free Game Tracker</title>
   <link rel="stylesheet" href="./styles.css" />
   <script type="module" src="./js/main.js"></script>
-  <script src="./newsletter.js" defer></script>
 </head>
 
 <body>
@@ -50,14 +49,9 @@
         <div class="hero-actions">
           <button class="btn btn-primary" id="refreshBtn">Reload data</button>
           <button class="btn btn-secondary" id="resetBtn">Clear collected marks</button>
-          <button class="btn btn-secondary" id="exportBtn">⬇️ Export collected</button>
-          <button class="btn btn-secondary" id="importBtn">⬆️ Import collected</button>
-          <button class="btn btn-ghost" id="copyCodeBtn">📋 Copy backup code</button>
-          <button class="btn btn-ghost" id="pasteCodeBtn">📥 Paste backup code</button>
-          <input type="file" id="importFileInput" accept="application/json" hidden />
-
+          <a class="btn btn-ghost" href="./backup.html">💾 Backup &amp; Restore</a>
           <a class="btn btn-ghost" href="./history.html">🗂️ Browse past months</a>
-          <a class="btn btn-ghost btn-teaser" href="#newsletterSection">🔔 Get free game alerts</a>
+          <a class="btn btn-ghost btn-teaser" href="./newsletter.html">🔔 Get free game alerts</a>
         </div>
 
         <div class="status-line" aria-live="polite">
@@ -86,21 +80,8 @@
           <div class="stat-label">Already collected</div>
           <div class="stat-value" id="claimedCount">0</div>
           <small>Saved locally in this browser so your next visit remembers them.</small>
-          <div class="backup-status" id="backupStatus">Never backed up</div>
-        </div>
-
-        <div class="store-links-compact">
-          <div class="stat-label">Official store pages</div>
-          <div class="store-links-row">
-            <a href="https://store.epicgames.com/free-games" target="_blank" rel="noopener noreferrer">Epic free
-              games</a>
-            <a href="https://www.gog.com/en/games#discounted" target="_blank" rel="noopener noreferrer">GOG free
-              games</a>
-            <a href="https://gaming.amazon.com/home" target="_blank" rel="noopener noreferrer">Prime Gaming</a>
-            <a href="https://store.playstation.com/en-us/pages/latest" target="_blank" rel="noopener noreferrer">PS Plus
-              games</a>
-            <a href="https://steamdb.info/upcoming/free/" target="_blank" rel="noopener noreferrer">Steam free games</a>
-          </div>
+          <a class="backup-status" href="./backup.html" style="text-decoration: none; display: inline-block;">💾
+            Back up your progress →</a>
         </div>
       </aside>
     </section>
@@ -181,69 +162,6 @@
         <div class="empty" id="upcomingEmptyState" hidden>No upcoming games match your filters right now.</div>
       </div>
     </section>
-
-    <!-- Newsletter Section -->
-    <section class="card section" id="newsletterSection">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">Get notified about new freebies</h2>
-          <p class="section-note">
-            Free to sign up. Choose how often you'd like an email, and which stores you care about.
-          </p>
-        </div>
-      </div>
-
-      <div class="store-chip-row">
-        <span class="chip-row-label">Stores to include</span>
-        <div class="chip-group" id="newsletterStoreFilter" role="group" aria-label="Choose newsletter stores">
-          <button type="button" class="chip active" data-store="all">All stores</button>
-          <button type="button" class="chip" data-store="epic">Epic</button>
-          <button type="button" class="chip" data-store="gog">GOG</button>
-          <button type="button" class="chip" data-store="psplus">PS Plus</button>
-          <button type="button" class="chip" data-store="prime">Prime</button>
-          <button type="button" class="chip" data-store="steam">Steam</button>
-        </div>
-      </div>
-
-      <form id="newsletterForm" class="toolbar"
-        style="grid-template-columns: 1.6fr 1fr auto !important; margin-top: 14px;">
-        <input class="field" id="newsletterEmail" type="email" placeholder="you@example.com" required />
-
-        <select class="select" id="newsletterFrequency" aria-label="How often">
-          <option value="instant">Whenever a new game appears</option>
-          <option value="weekly">Weekly digest</option>
-          <option value="monthly">Monthly digest</option>
-        </select>
-
-        <button class="btn btn-primary" type="submit">Subscribe</button>
-
-        <!--  Honeypot field  -->
-        <input type="text" id="newsletterWebsite" name="website" autocomplete="off" tabindex="-1" aria-hidden="true"
-          style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0; pointer-events:none;" />
-      </form>
-
-      <!-- Spam/junk-folder  -->
-      <div style="
-      margin-top: 12px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      background: rgba(245, 158, 11, 0.08);
-      border: 1px solid rgba(245, 158, 11, 0.25);
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.5;
-    ">
-        📬 <strong style="color: var(--text);">Heads up:</strong> after you subscribe, we'll send a one-time
-        <strong>confirmation email</strong> — you'll need to click the link inside it before any digests start
-        (this is just to make sure it's really your inbox). That first email may land in Spam/Junk since
-        this is a new sender. Marking it <strong>"Not spam"</strong> (or adding the sender to your contacts)
-        tells your inbox to trust future emails from us — weekly digests, monthly digests, and new-game
-        alerts included.
-      </div>
-
-      <p class="section-note" id="newsletterStatus" aria-live="polite" style="margin-top: 10px;"></p>
-    </section>
-
 
     <p class="footer">
       Data is fetched automatically via GitHub Actions and stored as a static file — no API calls happen when you load

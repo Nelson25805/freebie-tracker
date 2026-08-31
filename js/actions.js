@@ -19,7 +19,6 @@ import {
 } from "./state.js";
 import { gameKey, getVisibleGames } from "./filters.js";
 import { render } from "./render.js";
-import { exportCollectedData, importCollectedData, setLastBackupAt } from "./state.js";
 
 // ─── Redeemed-via (Prime Gaming) chips ─────────────────────────────────────
 
@@ -174,48 +173,4 @@ export function clearCollected() {
   collected.clear();
   saveCollected();
   render();
-}
-
-// ─── Backup / restore ───────────────────────────────────────────────────────
-
-export function downloadCollectedBackup() {
-  const json = exportCollectedData();
-  const blob = new Blob([json], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const stamp = new Date().toISOString().slice(0, 10);
-
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `free-game-tracker-collected-${stamp}.json`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
-
-  setLastBackupAt(new Date().toISOString());
-}
-
-// Merge is the safe default — it just adds whatever's in the file to
-// whatever's already here, so re-importing an old backup can't lose marks.
-// A full "replace" is available via mergeMode for people who explicitly
-// want to overwrite (e.g. restoring onto a fresh browser).
-export async function uploadCollectedBackup(file, mergeMode = "merge") {
-  const text = await file.text();
-  const { count, imported } = importCollectedData(text, { mode: mergeMode });
-  render();
-  return { count, imported };
-}
-
-// Text-based alternative to the file — handy for quickly moving between
-// devices without dealing with a Downloads folder (paste into a chat/notes
-// app, etc). Same underlying data, just surfaced as a string.
-export async function copyCollectedBackupToClipboard() {
-  await navigator.clipboard.writeText(exportCollectedData());
-  setLastBackupAt(new Date().toISOString());
-}
-
-export async function importCollectedBackupFromText(text, mergeMode = "merge") {
-  const { count, imported } = importCollectedData(text, { mode: mergeMode });
-  render();
-  return { count, imported };
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';" />
+    <title>Backup &amp; Restore · Free Game Tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./js/backup-main.js"></script>
+</head>
+
+<body>
+    <main class="wrap">
+        <section class="hero">
+            <div class="card hero-main">
+                <div class="eyebrow">💾 Backup &amp; Restore</div>
+                <h1>Your collected marks live in this browser only.</h1>
+                <p class="subtext">
+                    "Already collected" marks are saved with your browser's local storage — tied to this
+                    specific browser, on this specific device. Clear your browser data, switch computers, or
+                    open the tracker in a different browser and those marks won't follow you unless you back
+                    them up first.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="./index.html">← Back to freebies</a>
+                </div>
+                <div class="status-line" aria-live="polite">
+                    <span class="dot ok"></span>
+                    <span>You have <strong id="collectedCount">0</strong> game(s) marked collected right now.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="card section">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Back up your collected marks</h2>
+                    <p class="section-note">
+                        Pick whichever's easiest — a downloaded file, or a text "backup code" you can paste
+                        somewhere safe (a notes app, a password manager, a chat with yourself).
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-actions" style="margin-bottom: 10px;">
+                <button class="btn btn-secondary" id="exportBtn">⬇️ Download backup file</button>
+                <button class="btn btn-ghost" id="copyCodeBtn">📋 Copy backup code</button>
+            </div>
+
+            <div class="backup-status" id="backupStatus">Never backed up</div>
+        </section>
+
+        <section class="card section">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Restore on this (or another) device</h2>
+                    <p class="section-note">
+                        Restoring adds the backup's entries to whatever's already marked here — nothing gets
+                        removed unless you turn on "Replace instead of merge" below.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-actions" style="margin-bottom: 12px;">
+                <button class="btn btn-ok" id="importBtn">⬆️ Import backup file</button>
+                <button class="btn btn-ghost" id="pasteCodeBtn">📥 Paste backup code</button>
+                <input type="file" id="importFileInput" accept="application/json" hidden />
+            </div>
+
+            <label class="btn btn-secondary check-wrap" style="display: inline-flex;">
+                <input type="checkbox" id="importModeReplace" />
+                Replace instead of merge (wipes existing marks first)
+            </label>
+
+            <p class="section-note" id="backupResultText" aria-live="polite" style="margin-top: 12px;"></p>
+        </section>
+
+        <section class="card section">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">What's actually in a backup?</h2>
+                </div>
+            </div>
+            <p class="section-note">
+                A backup is a small file — just the list of game IDs you've marked, plus when it was made.
+                Nothing sensitive, no account info, because there's no account:
+            </p>
+            <pre
+                style="background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; overflow-x: auto; font-size: 0.84rem; color: var(--muted); margin: 12px 0 0;"><code>{
+  "type": "fgt_collected_backup",
+  "version": 1,
+  "exportedAt": "2026-08-30T12:00:00.000Z",
+  "collected": [
+    "8401414902e84f2cb9afa9142f051d32",
+    "psplus-signalis",
+    "steam-3716"
+  ]
+}</code></pre>
+            <p class="section-note" style="margin-top: 12px;">
+                A backup code is exactly this, just as plain text instead of a downloaded file — handy for
+                pasting into a notes app or password manager instead of juggling a Downloads folder.
+            </p>
+        </section>
+
+        <section class="card section">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Common questions</h2>
+                </div>
+            </div>
+            <div class="desc-wrap">
+                <p class="meta desc-text"><strong style="color: var(--text);">Do I need an account?</strong>
+                    No — there isn't one. Everything lives in your browser's local storage, which is why
+                    backups are the only way to move marks between devices or browsers.</p>
+            </div>
+            <div class="desc-wrap" style="margin-top: 12px;">
+                <p class="meta desc-text"><strong style="color: var(--text);">Will I lose my marks if I clear
+                        my browser data?</strong> Yes, unless you've backed up first — clearing site data,
+                    using a private/incognito window, or reinstalling your browser all wipe local storage.</p>
+            </div>
+            <div class="desc-wrap" style="margin-top: 12px;">
+                <p class="meta desc-text"><strong style="color: var(--text);">What happens if I import the
+                        same backup twice?</strong> Nothing changes — merging is safe to repeat, since it just
+                    adds whatever's in the file to what's already here.</p>
+            </div>
+        </section>
+
+        <p class="footer">
+            Backups never leave your device unless you save or send the file yourself — nothing is uploaded
+            anywhere by this page.
+        </p>
+    </main>
+</body>
+
+</html>
