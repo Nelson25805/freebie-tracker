@@ -12,6 +12,19 @@ import { buildRedeemChips } from "./actions.js";
 // The page simply reads that static file — no live API calls at page load.
 const DATA_URL = "./data/games.json";
 
+const ENDING_SOON_MS = 48 * 60 * 60 * 1000; // 48 hours
+
+function countEndingSoon(games) {
+  const now = Date.now();
+  return games.filter((g) => {
+    if (g.status !== "free" || !g.offerEnd) return false;
+    const end = new Date(g.offerEnd).getTime();
+    if (Number.isNaN(end)) return false;
+    const diff = end - now;
+    return diff > 0 && diff <= ENDING_SOON_MS;
+  }).length;
+}
+
 function setStatus(text, mode = "idle") {
   els.statusText.textContent = text;
   els.statusDot.className =
@@ -43,10 +56,12 @@ export async function loadGames() {
 
     const freeCount = games.filter((g) => g.status === "free").length;
     const upcomingCount = games.filter((g) => g.status === "upcoming").length;
+    const endingSoonCount = countEndingSoon(games);
 
     els.currentCount.textContent = String(freeCount);
     els.upcomingCount.textContent = String(upcomingCount);
     els.claimedCount.textContent = String(collected.size);
+    els.endingSoonCount.textContent = String(endingSoonCount);
 
     if (payload.fetchedAt) {
       els.lastUpdated.textContent = `Data last fetched: ${new Intl.DateTimeFormat(undefined, {

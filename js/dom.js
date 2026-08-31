@@ -26,6 +26,7 @@ export const els = {
   resetBtn: document.getElementById("resetBtn"),
   markAllBtn: document.getElementById("markAllBtn"),
   currentCount: document.getElementById("currentCount"),
+  endingSoonCount: document.getElementById("endingSoonCount"),
   upcomingCount: document.getElementById("upcomingCount"),
   claimedCount: document.getElementById("claimedCount"),
   lastUpdated: document.getElementById("lastUpdated"),

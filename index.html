@@ -57,22 +57,8 @@
           <input type="file" id="importFileInput" accept="application/json" hidden />
 
           <a class="btn btn-ghost" href="./history.html">🗂️ Browse past months</a>
+          <a class="btn btn-ghost btn-teaser" href="#newsletterSection">🔔 Get free game alerts</a>
         </div>
-
-        <details class="store-links">
-          <summary>Official store pages ↗</summary>
-          <div class="store-links-row">
-            <a href="https://store.epicgames.com/free-games" target="_blank" rel="noopener noreferrer">Epic free
-              games</a>
-            <a href="https://www.gog.com/en/games#discounted" target="_blank" rel="noopener noreferrer">GOG free
-              games</a>
-            <a href="https://gaming.amazon.com/home" target="_blank" rel="noopener noreferrer">Prime Gaming</a>
-            <a href="https://store.playstation.com/en-us/pages/latest" target="_blank" rel="noopener noreferrer">PS Plus
-              games</a>
-            <a href="https://steamdb.info/upcoming/free/" target="_blank" rel="noopener noreferrer">Steam free games</a>
-          </div>
-        </details>
-
 
         <div class="status-line" aria-live="polite">
           <span class="dot" id="statusDot"></span>
@@ -87,6 +73,11 @@
           <small>Live promotions currently free to claim across all stores.</small>
         </div>
         <div class="stat">
+          <div class="stat-label">Ending soon</div>
+          <div class="stat-value" id="endingSoonCount">0</div>
+          <small>Free offers closing within the next 48 hours.</small>
+        </div>
+        <div class="stat">
           <div class="stat-label">Upcoming freebies</div>
           <div class="stat-value" id="upcomingCount">0</div>
           <small>Games announced but not yet claimable.</small>
@@ -96,6 +87,20 @@
           <div class="stat-value" id="claimedCount">0</div>
           <small>Saved locally in this browser so your next visit remembers them.</small>
           <div class="backup-status" id="backupStatus">Never backed up</div>
+        </div>
+
+        <div class="store-links-compact">
+          <div class="stat-label">Official store pages</div>
+          <div class="store-links-row">
+            <a href="https://store.epicgames.com/free-games" target="_blank" rel="noopener noreferrer">Epic free
+              games</a>
+            <a href="https://www.gog.com/en/games#discounted" target="_blank" rel="noopener noreferrer">GOG free
+              games</a>
+            <a href="https://gaming.amazon.com/home" target="_blank" rel="noopener noreferrer">Prime Gaming</a>
+            <a href="https://store.playstation.com/en-us/pages/latest" target="_blank" rel="noopener noreferrer">PS Plus
+              games</a>
+            <a href="https://steamdb.info/upcoming/free/" target="_blank" rel="noopener noreferrer">Steam free games</a>
+          </div>
         </div>
       </aside>
     </section>
