@@ -55,31 +55,25 @@
           <button class="btn btn-ghost" id="copyCodeBtn">📋 Copy backup code</button>
           <button class="btn btn-ghost" id="pasteCodeBtn">📥 Paste backup code</button>
           <input type="file" id="importFileInput" accept="application/json" hidden />
+
           <a class="btn btn-ghost" href="./history.html">🗂️ Browse past months</a>
-
-          <a class="btn btn-ghost" href="https://store.epicgames.com/free-games" target="_blank"
-            rel="noopener noreferrer">
-            Epic free games
-          </a>
-
-          <a class="btn btn-ghost" href="https://www.gog.com/en/games#discounted" target="_blank"
-            rel="noopener noreferrer">
-            GOG free games
-          </a>
-
-          <a class="btn btn-ghost" href="https://gaming.amazon.com/home" target="_blank" rel="noopener noreferrer">
-            Prime Gaming
-          </a>
-
-          <a class="btn btn-ghost" href="https://store.playstation.com/en-us/pages/latest" target="_blank"
-            rel="noopener noreferrer">
-            PS Plus games
-          </a>
-
-          <a class="btn btn-ghost" href="https://steamdb.info/upcoming/free/" target="_blank" rel="noopener noreferrer">
-            Steam free games
-          </a>
         </div>
+
+        <details class="store-links">
+          <summary>Official store pages ↗</summary>
+          <div class="store-links-row">
+            <a href="https://store.epicgames.com/free-games" target="_blank" rel="noopener noreferrer">Epic free
+              games</a>
+            <a href="https://www.gog.com/en/games#discounted" target="_blank" rel="noopener noreferrer">GOG free
+              games</a>
+            <a href="https://gaming.amazon.com/home" target="_blank" rel="noopener noreferrer">Prime Gaming</a>
+            <a href="https://store.playstation.com/en-us/pages/latest" target="_blank" rel="noopener noreferrer">PS Plus
+              games</a>
+            <a href="https://steamdb.info/upcoming/free/" target="_blank" rel="noopener noreferrer">Steam free games</a>
+          </div>
+        </details>
+
+
         <div class="status-line" aria-live="polite">
           <span class="dot" id="statusDot"></span>
           <span id="statusText">Ready.</span>
