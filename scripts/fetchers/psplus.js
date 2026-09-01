@@ -96,6 +96,18 @@ async function fetchPsPlusPostPage(link) {
   return await res.text();
 }
 
+// Determines which calendar month's lineup is ACTUALLY free right now,
+// as opposed to what the calendar happens to say. The lineup only flips
+// at noon-ish ET on the first Tuesday — so for the first several hours
+// of that day (before rollover time), last month's games are still the
+// ones that are live, even though the calendar has already flipped to
+// the new month. Returns an offset to apply to now.getMonth() so the
+// rest of the function can keep using the existing offset-based logic.
+function currentPsPlusMonthOffset(now) {
+  const thisMonthRollover = firstTuesdayOfMonth(now.getFullYear(), now.getMonth());
+  return now.getTime() < thisMonthRollover.getTime() ? -1 : 0;
+}
+
 function firstTuesdayOfMonth(year, monthIndex) {
   // Find the calendar day in UTC first (day-of-week math doesn't care
   // about timezone as long as it's consistent).
@@ -410,21 +422,23 @@ export async function fetchPSPlus() {
   try {
     const rssXml = await fetchPSBlogRSS();
 
-    const currentPost = await findPsPlusPost(rssXml, 0);
-    const nextPost = await findPsPlusPost(rssXml, 1);
+    const now = new Date();
+    const monthOffset = currentPsPlusMonthOffset(now);
+
+    const currentPost = await findPsPlusPost(rssXml, monthOffset);
+    const nextPost = await findPsPlusPost(rssXml, monthOffset + 1);
 
     if (!currentPost && !nextPost) {
       console.warn("  Could not find any PS Plus monthly games post (RSS or homepage).");
       return [];
     }
 
-    const now = new Date();
     // First Tuesday of next month: when this month's free lineup closes,
     // and (once announced) next month's lineup becomes claimable.
-    const nextMonthFirstTuesday = firstTuesdayOfMonth(now.getFullYear(), now.getMonth() + 1);
+    const nextMonthFirstTuesday = firstTuesdayOfMonth(now.getFullYear(), now.getMonth() + monthOffset + 1);
     // First Tuesday of the month after that: when next month's lineup
     // would, in turn, close.
-    const monthAfterNextFirstTuesday = firstTuesdayOfMonth(now.getFullYear(), now.getMonth() + 2);
+    const monthAfterNextFirstTuesday = firstTuesdayOfMonth(now.getFullYear(), now.getMonth() + monthOffset + 2);
 
     let games = [];
 
