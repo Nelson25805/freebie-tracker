@@ -1,9 +1,8 @@
 {
-  "fetchedAt": "2026-09-01T04:17:05.743Z",
-  "totalFree": 36,
-  "totalUpcoming": 5,
-  "games": [
-    {
+  "month": "2026-09",
+  "updatedAt": "2026-09-01T04:17:05.743Z",
+  "games": {
+    "8401414902e84f2cb9afa9142f051d32": {
       "id": "8401414902e84f2cb9afa9142f051d32",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -20,85 +19,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-08-27T15:00:00.000Z",
-      "offerEnd": "2026-09-03T15:00:00.000Z"
+      "offerEnd": "2026-09-03T15:00:00.000Z",
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
-      "id": "be5600439b434624802764f704755cde",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Ghostrunner 2",
-      "slug": "ghostrunner-2",
-      "storeUrl": "https://store.epicgames.com/p/ghostrunner-2",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Ghostrunner 2 is a hardcore FPP slasher set in a post-apocalyptic, cyberpunk world. Featuring everything fans loved about Ghostrunner plus incredible boss fights, new interactive story, thrilling motorbike levels, improved skills, and more cyber ninja action. ",
-      "image": "https://cdn1.epicgames.com/offer/708f57aaa04b42ef885be16c8288f0ac/EGS_Ghostrunner2_OneMoreLevel_S1_2560x1440-15845148fae1d0cfd7f3e98c9b3ba6ba",
-      "originalPrice": 3999,
-      "discountPrice": 3999,
-      "status": "upcoming",
-      "offerStart": "2026-09-10T17:00:00.000Z",
-      "offerEnd": "2026-09-24T17:00:00.000Z"
-    },
-    {
-      "id": "944b5b5d646d46bc92bc33edfe983d26",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "LISA: The Definitive Edition",
-      "slug": "lisa-the-definitive-edition",
-      "storeUrl": "https://store.epicgames.com/p/lisa-the-definitive-edition",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Explore Olathe and unmask its twisted secrets with LISA: The Definitive Edition, including the original narrative-driven RPG LISA: The Painful and its sequel LISA: The Joyful.",
-      "image": "https://cdn1.epicgames.com/offer/ca3a9d16d131478c97fd56c138a6511a/EGS_LISATheDefinitiveEdition_DingalingProductions_Bundles_S2_1200x1600-4a9b4fc6e06e8aff136c1a3cf18292ae",
-      "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
-      "offerStart": "2026-09-17T15:00:00.000Z",
-      "offerEnd": "2026-10-02T05:59:00.000Z"
-    },
-    {
-      "id": "8f80897c0b6e4e678fed08da169d44be",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Castlevania Anniversary Collection",
-      "slug": "castlevania-anniversary-collection-a61f94",
-      "storeUrl": "https://store.epicgames.com/p/castlevania-anniversary-collection-a61f94",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
-      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
-      "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
-      "id": "f967cff9761c4198b4e972cfd71e40d7",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Monument Valley",
-      "slug": "monument-valley-1d99d3",
-      "storeUrl": "https://store.epicgames.com/p/monument-valley-1d99d3",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Embark on a journey of forgiveness through impossible environments and illusionary puzzles. Experience this meditative and calming puzzle game by manipulating monuments and creating evolving paths to explore new, surreal, and mysterious worlds.",
-      "image": "https://cdn1.epicgames.com/spt-assets/e56a7411805046d3b5b7253a6e4e0faa/monument-valley-1gys5.jpg",
-      "originalPrice": 799,
-      "discountPrice": 799,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
+    "8f1fcf01e32e4fd4b2ae0a9737992760": {
       "id": "8f1fcf01e32e4fd4b2ae0a9737992760",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -115,28 +40,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-08-27T15:00:00.000Z",
-      "offerEnd": "2026-09-03T15:00:00.000Z"
+      "offerEnd": "2026-09-03T15:00:00.000Z",
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
-      "id": "b8cc76ce7d6645f0a282b843a072cc78",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Alone With You",
-      "slug": "alone-with-you-028a15",
-      "storeUrl": "https://store.epicgames.com/p/alone-with-you-028a15",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "ALONE WITH YOU is a sci-fi point-and-click adventure game that tells a rich story about relationships. You're the last survivor of a doomed space colony, trying to escape a planet before it implodes around you.",
-      "image": "https://cdn1.epicgames.com/spt-assets/04b7a1d78c904065b5c24f9e7816c99a/alone-with-you-cllc3.png",
-      "originalPrice": 999,
-      "discountPrice": 999,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-10T15:00:00.000Z"
-    },
-    {
+    "psplus-sniper-elite-resistance": {
       "id": "psplus-sniper-elite-resistance",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -155,9 +63,11 @@
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "psplus-mlb-the-show-26": {
       "id": "psplus-mlb-the-show-26",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -175,9 +85,11 @@
       "platforms": [
         "PS5"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "psplus-wobbly-life": {
       "id": "psplus-wobbly-life",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -196,9 +108,11 @@
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "psplus-chained-echoes": {
       "id": "psplus-chained-echoes",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -216,9 +130,11 @@
       "platforms": [
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-spray-paint-simulator": {
       "id": "prime-spray-paint-simulator",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -235,9 +151,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-pyramids-and-aliens-escape-room": {
       "id": "prime-pyramids-and-aliens-escape-room",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -254,9 +172,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-airship-kingdoms-adrift": {
       "id": "prime-airship-kingdoms-adrift",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -273,9 +193,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-steelrising": {
       "id": "prime-steelrising",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -292,9 +214,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-right-and-down": {
       "id": "prime-right-and-down",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -311,9 +235,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-hiveswap-friendsim": {
       "id": "prime-hiveswap-friendsim",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -330,9 +256,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-weakless": {
       "id": "prime-weakless",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -349,9 +277,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-zoria-age-of-shattering": {
       "id": "prime-zoria-age-of-shattering",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -368,9 +298,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-in-sound-mind": {
       "id": "prime-in-sound-mind",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -387,9 +319,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-space-grunts-chrono-shard": {
       "id": "prime-space-grunts-chrono-shard",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -406,9 +340,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-space-grunts-2": {
       "id": "prime-space-grunts-2",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -425,9 +361,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-assassin-s-creed-mirage": {
       "id": "prime-assassin-s-creed-mirage",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -444,9 +382,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-assassin-s-creed-valhalla": {
       "id": "prime-assassin-s-creed-valhalla",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -463,9 +403,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-batman-caped-crusader-chronicles": {
       "id": "prime-batman-caped-crusader-chronicles",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -482,9 +424,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-dispatch": {
       "id": "prime-dispatch",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -501,9 +445,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-ea-sports-fc-26": {
       "id": "prime-ea-sports-fc-26",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -520,9 +466,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-hogwarts-legacy": {
       "id": "prime-hogwarts-legacy",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -539,9 +487,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-wobbly-life": {
       "id": "prime-wobbly-life",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -558,9 +508,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-the-jackbox-party-pack-8": {
       "id": "prime-the-jackbox-party-pack-8",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -577,9 +529,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-masters-of-the-universe-legends-unite": {
       "id": "prime-masters-of-the-universe-legends-unite",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -596,9 +550,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-courtroom-chaos-starring-arnold-schwarzenegger": {
       "id": "prime-courtroom-chaos-starring-arnold-schwarzenegger",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -615,9 +571,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-marvel-s-guardians-of-the-galaxy": {
       "id": "prime-marvel-s-guardians-of-the-galaxy",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -634,9 +592,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-goat-simulator-3": {
       "id": "prime-goat-simulator-3",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -653,9 +613,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-sonic-mania-plus": {
       "id": "prime-sonic-mania-plus",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -672,9 +634,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-the-game-of-life-2": {
       "id": "prime-the-game-of-life-2",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -691,9 +655,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-disney-pixar-wall-e": {
       "id": "prime-disney-pixar-wall-e",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -710,9 +676,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-havendock": {
       "id": "prime-havendock",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -729,9 +697,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-clash-artifacts-of-chaos": {
       "id": "prime-clash-artifacts-of-chaos",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -748,9 +718,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "prime-royal-romances-forbidden-magic": {
       "id": "prime-royal-romances-forbidden-magic",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -767,9 +739,11 @@
       "offerEnd": null,
       "platforms": [
         "Legacy Games"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     },
-    {
+    "steam-3716": {
       "id": "steam-3716",
       "store": "steam",
       "storeName": "Steam",
@@ -786,7 +760,9 @@
       "offerEnd": null,
       "platforms": [
         "PC"
-      ]
+      ],
+      "firstSeen": "2026-09-01T04:17:05.743Z",
+      "lastSeen": "2026-09-01T04:17:05.743Z"
     }
-  ]
+  }
 }
