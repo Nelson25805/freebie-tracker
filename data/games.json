@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-01T13:07:52.623Z",
-  "totalFree": 35,
-  "totalUpcoming": 9,
+  "fetchedAt": "2026-09-01T17:53:06.713Z",
+  "totalFree": 36,
+  "totalUpcoming": 5,
   "games": [
     {
       "id": "8401414902e84f2cb9afa9142f051d32",
@@ -137,67 +137,6 @@
       "offerEnd": "2026-09-10T15:00:00.000Z"
     },
     {
-      "id": "psplus-dying-light-2-stay-human-reloaded-edition",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Dying Light 2 Stay Human: Reloaded Edition",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5 / PS4",
-      "description": "In Dying Light 2, survival meets action adventure as you attempt to endure a hostile, post-apocalyptic world. Rival factions across The City aren&#8217;t the only enemy &#8211; a virus has turned a vast majority of the human population into monsters. Take on the role of Aiden Caldwell, a wanderer with the power to change the fate of The City, but your exceptional abilities come at a price. Haunted by memories you cannot decipher, you set out to learn the truth &#8211; and find yourself in a combat zone. Hone your skills to defeat your enemies and make allies. Unravel the dark secrets behind those that wield power, choose sides and decide your destiny. Play in up to four-player co-op: host your own games or join others and see how their choices have played out differently than yours.&nbsp;",
-      "image": "https://blog.playstation.com/tachyon/2026/07/5cdc2119766ef3e9f79921f669ad0f5f4a4e5349.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-07-28T15:30:11.000Z",
-      "offerEnd": "2026-09-01T16:00:00.000Z",
-      "platforms": [
-        "PS5",
-        "PS4"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
-    },
-    {
-      "id": "psplus-big-walk",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Big Walk",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5",
-      "description": "Big Walk is a cooperative multiplayer adventure about teamwork and talking. Set out with your friends through a wide-open world full of challenges, puzzles, and discoveries. You’ll need to work together to find your way around, stay in contact using an assortment of tools and toys, and figure out new ways to communicate when you suddenly find yourself speechless. Adventuring aside, there’s plenty of time to just hang out. Sit and watch the sunset, or steal your friend’s binoculars and kick them into the ocean. Spending time with friends is the best part of a big walk.",
-      "image": "https://blog.playstation.com/tachyon/2026/07/62653875e39800fd0931ab582a4a082c767d64ab.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-07-28T15:30:11.000Z",
-      "offerEnd": "2026-09-01T16:00:00.000Z",
-      "platforms": [
-        "PS5"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
-    },
-    {
-      "id": "psplus-signalis",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Signalis",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS4",
-      "description": "Awaken from slumber and explore a surreal retrotech world as Elster, a technician Replika searching for her lost partner and her lost dreams. Discover terrifying secrets, challenging puzzles, and nightmarish creatures in a tense and melancholic experience of cosmic dread and classic psychological survival horror.",
-      "image": "https://blog.playstation.com/tachyon/2026/07/dca788f5daab1fb265812d328fa0bfe84b63db14.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-07-28T15:30:11.000Z",
-      "offerEnd": "2026-09-01T16:00:00.000Z",
-      "platforms": [
-        "PS4"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/07/28/playstation-plus-monthly-games-for-august-dying-light-2-stay-human-reloaded-edition-big-walk-signalis/"
-    },
-    {
       "id": "psplus-sniper-elite-resistance",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -209,8 +148,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/08/62bba1064c66b5973a2a30dd5d6586c323f9e504-scaled.jpg?fit=1024%2C1024",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-09-01T16:00:00.000Z",
+      "status": "free",
+      "offerStart": null,
       "offerEnd": "2026-10-06T16:00:00.000Z",
       "platforms": [
         "PS5",
@@ -230,8 +169,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/08/6faacfda93308bbdfd32ca0947094f8be960c223-scaled.jpg?fit=1024%2C1024",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-09-01T16:00:00.000Z",
+      "status": "free",
+      "offerStart": null,
       "offerEnd": "2026-10-06T16:00:00.000Z",
       "platforms": [
         "PS5"
@@ -250,8 +189,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/08/87641b1e7a575bcd31d157f7930fe4d070d4cbb5-scaled.jpg?fit=1024%2C1024",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-09-01T16:00:00.000Z",
+      "status": "free",
+      "offerStart": null,
       "offerEnd": "2026-10-06T16:00:00.000Z",
       "platforms": [
         "PS5",
@@ -271,8 +210,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/08/2e8156f27a34caf66f3fb3bcef67cdb585693208-scaled.jpg?fit=1024%2C1024",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-09-01T16:00:00.000Z",
+      "status": "free",
+      "offerStart": null,
       "offerEnd": "2026-10-06T16:00:00.000Z",
       "platforms": [
         "PS4"
