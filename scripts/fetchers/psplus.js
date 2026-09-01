@@ -14,6 +14,55 @@ const BROWSER_HEADERS = {
   "Referer": "https://blog.playstation.com/",
 };
 
+// ─── PS Plus rollover time ──────────────────────────────────────────────
+// PS Plus's monthly lineup rotates on the first Tuesday of each month,
+// around midday Eastern Time — adjust these two constants if you find
+// the real rollover is closer to 1:00 PM ET than noon.
+const ROLLOVER_HOUR_ET = 12; // 12 = noon ET
+const ROLLOVER_MINUTE_ET = 0;
+const ROLLOVER_TIMEZONE = "America/New_York";
+
+// UTC offset (in minutes) of `timeZone` at the instant `date` represents.
+// Negative for zones behind UTC (-300 for EST, -240 for EDT). Derived from
+// Intl's own tz database, so DST is handled automatically.
+function getTimeZoneOffsetMinutes(date, timeZone) {
+  const dtf = new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  const parts = dtf.formatToParts(date).reduce((acc, p) => {
+    if (p.type !== "literal") acc[p.type] = p.value;
+    return acc;
+  }, {});
+  const asUTC = Date.UTC(
+    Number(parts.year),
+    Number(parts.month) - 1,
+    Number(parts.day),
+    Number(parts.hour),
+    Number(parts.minute),
+    Number(parts.second)
+  );
+  return (asUTC - date.getTime()) / 60000;
+}
+
+// Converts a wall-clock date/time in `timeZone` into the equivalent UTC
+// instant. Two passes so a naive guess landing on the "wrong side" of a
+// DST transition still resolves correctly.
+function zonedTimeToUtc(year, monthIndex, day, hour, minute, timeZone) {
+  let utcMs = Date.UTC(year, monthIndex, day, hour, minute);
+  for (let i = 0; i < 2; i++) {
+    const offsetMinutes = getTimeZoneOffsetMinutes(new Date(utcMs), timeZone);
+    utcMs = Date.UTC(year, monthIndex, day, hour, minute) - offsetMinutes * 60000;
+  }
+  return new Date(utcMs);
+}
+
 async function fetchPSBlogRSS() {
   const res = await fetch(PS_BLOG_RSS, {
     headers: {
@@ -48,12 +97,22 @@ async function fetchPsPlusPostPage(link) {
 }
 
 function firstTuesdayOfMonth(year, monthIndex) {
-  const d = new Date(year, monthIndex, 1);
-  while (d.getDay() !== 2) {
-    d.setDate(d.getDate() + 1);
+  // Find the calendar day in UTC first (day-of-week math doesn't care
+  // about timezone as long as it's consistent).
+  const d = new Date(Date.UTC(year, monthIndex, 1));
+  while (d.getUTCDay() !== 2) {
+    d.setUTCDate(d.getUTCDate() + 1);
   }
-  d.setHours(0, 0, 0, 0);
-  return d;
+  // Then anchor that calendar day to noon ET, converted to the correct
+  // UTC instant.
+  return zonedTimeToUtc(
+    d.getUTCFullYear(),
+    d.getUTCMonth(),
+    d.getUTCDate(),
+    ROLLOVER_HOUR_ET,
+    ROLLOVER_MINUTE_ET,
+    ROLLOVER_TIMEZONE
+  );
 }
 
 function targetMonthNameForOffset(offset) {
