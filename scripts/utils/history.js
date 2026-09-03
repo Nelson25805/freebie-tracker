@@ -1,5 +1,7 @@
 /**
  * utils/history.jsn
+ * 
+ * This module provides functions to maintain a history of free games fetched from various stores.
  */
 
 import { writeFileSync, readFileSync, appendFileSync, mkdirSync, existsSync } from "fs";
