@@ -1,27 +1,8 @@
 {
-  "fetchedAt": "2026-09-02T22:39:48.340Z",
+  "fetchedAt": "2026-09-03T17:50:22.598Z",
   "totalFree": 36,
-  "totalUpcoming": 5,
+  "totalUpcoming": 4,
   "games": [
-    {
-      "id": "8401414902e84f2cb9afa9142f051d32",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Breathedge",
-      "slug": "breathedge",
-      "storeUrl": "https://store.epicgames.com/p/breathedge",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Survive in outer space! Together with your immortal chicken, discover the truth behind your sudden spaceship crash. Craft tools, pilot vehicles, and even control space stations to survive and explore the wreckage.",
-      "image": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/egs-breathedge-redruinssoftworks-s1-2560x1440-76fd08cd9c2d-2560x1440-783424f6d4a7f32a0e75fc074f2f928e.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-08-27T15:00:00.000Z",
-      "offerEnd": "2026-09-03T15:00:00.000Z"
-    },
     {
       "id": "be5600439b434624802764f704755cde",
       "store": "epic",
@@ -61,63 +42,6 @@
       "offerEnd": "2026-10-02T05:59:00.000Z"
     },
     {
-      "id": "8f80897c0b6e4e678fed08da169d44be",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Castlevania Anniversary Collection",
-      "slug": "castlevania-anniversary-collection-a61f94",
-      "storeUrl": "https://store.epicgames.com/p/castlevania-anniversary-collection-a61f94",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
-      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
-      "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
-      "id": "f967cff9761c4198b4e972cfd71e40d7",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Monument Valley",
-      "slug": "monument-valley-1d99d3",
-      "storeUrl": "https://store.epicgames.com/p/monument-valley-1d99d3",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Embark on a journey of forgiveness through impossible environments and illusionary puzzles. Experience this meditative and calming puzzle game by manipulating monuments and creating evolving paths to explore new, surreal, and mysterious worlds.",
-      "image": "https://cdn1.epicgames.com/spt-assets/e56a7411805046d3b5b7253a6e4e0faa/monument-valley-1gys5.jpg",
-      "originalPrice": 799,
-      "discountPrice": 799,
-      "status": "upcoming",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-17T15:00:00.000Z"
-    },
-    {
-      "id": "8f1fcf01e32e4fd4b2ae0a9737992760",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Rival Stars Horse Racing : Desktop Edition",
-      "slug": "rival-stars-horse-racing-dd09de",
-      "storeUrl": "https://store.epicgames.com/p/rival-stars-horse-racing-dd09de",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "With stunning, realistic horses, an in-depth breeding system, and a range of exciting game modes, Rival Stars Horse Racing offers horse fans the ultimate racing and riding experience. Take the reins and become an equestrian legend!",
-      "image": "https://cdn1.epicgames.com/spt-assets/3355791f5b4740618adac242cf0dd46c/rival-stars-horse-racing-scu1x.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-08-27T15:00:00.000Z",
-      "offerEnd": "2026-09-03T15:00:00.000Z"
-    },
-    {
       "id": "b8cc76ce7d6645f0a282b843a072cc78",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -131,10 +55,48 @@
       "description": "ALONE WITH YOU is a sci-fi point-and-click adventure game that tells a rich story about relationships. You're the last survivor of a doomed space colony, trying to escape a planet before it implodes around you.",
       "image": "https://cdn1.epicgames.com/spt-assets/04b7a1d78c904065b5c24f9e7816c99a/alone-with-you-cllc3.png",
       "originalPrice": 999,
-      "discountPrice": 999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-09-03T15:00:00.000Z",
       "offerEnd": "2026-09-10T15:00:00.000Z"
+    },
+    {
+      "id": "c76046dddcdb43619c33ce0395941033",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Luftrausers",
+      "slug": "luftrausers-51e5e9",
+      "storeUrl": "https://store.epicgames.com/p/luftrausers-51e5e9",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "The skies are aflame and the seas will overflow with wreckage in Vlambeer’s stylish arcade shooter LUFTRAUSERS! Take to the skies in customized fighter planes to battle battleships, submarines, and rival aces for glory, honor, and high scores.",
+      "image": "https://cdn1.epicgames.com/spt-assets/85ddeeec9d4243b3a2d78aab87bfae7f/luftrausers-1mxb1.png",
+      "originalPrice": 999,
+      "discountPrice": 999,
+      "status": "upcoming",
+      "offerStart": "2026-09-10T15:00:00.000Z",
+      "offerEnd": "2026-09-17T15:00:00.000Z"
+    },
+    {
+      "id": "e9bb092228f544c582e2c9395fae96f3",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Astral Ascent",
+      "slug": "astral-ascent-b33bc2",
+      "storeUrl": "https://store.epicgames.com/p/astral-ascent-b33bc2",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Choose one of four heroes and explore the Garden, an astral prison guarded by 12 powerful mystical bosses: the Zodiacs. Challenge them with dozens of unique spells and faithful friends by your side to unfold the story of this platform roguelite with lightning fast combat.",
+      "image": "https://cdn1.epicgames.com/spt-assets/974c8a587d714d8d9e0c3b0fefe61a35/astral-ascent-b0gcm.png",
+      "originalPrice": 2499,
+      "discountPrice": 2499,
+      "status": "upcoming",
+      "offerStart": "2026-09-10T15:00:00.000Z",
+      "offerEnd": "2026-09-17T15:00:00.000Z"
     },
     {
       "id": "psplus-sniper-elite-resistance",
@@ -217,6 +179,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "id": "prime-clash-artifacts-of-chaos",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Clash: Artifacts of Chaos",
+      "slug": "clash-artifacts-of-chaos",
+      "storeUrl": "https://luna.amazon.com/claims/clash-artifacts-of-chaos-epic/dp/amzn1.pg.item.f156cdf9-2d60-465f-9977-b0fac64e9fc3?g=s&ingress=amzn&ref_=SM_ClashArtifactsofChaos_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You play as Pseudo, a master of martial arts who lives as a recluse in the strange land of Zenozoik. When you cross paths with the Boy, a small creature whose mysterious powers have attracted the attention of Gemini, the Mistress of the Artifacts, you decide to protect him, unaware that much greater forces are involved.EXPLORE ZENOZOIKDrawing upon both surreal and punk fantasy influences, the world and civilisations of Zenozoik are brimming with fascinating characters, creatures and landscapes. Roam this intriguing land and discover its paths, inhabitants and ancient secrets.CRUSH YOUR OPPONENTSYour fists and speed are your greatest weapons. Attack, dodge, stun, block, counter a parry to land a special attack, switch to first-person view to perform unique techniques: each time, it's up to you to seize the occasion to achieve victory and avoid mistakes that could quickly prove fatal.CUSTOMISE YOUR COMBAT STYLELearn various martial arts during your adventure and alternate freely between them based on the situation, types of enemies and your preference. Victories will enable you to improve your characteristics and upgrade your attacks, so you can develop your own unique style.RISE TO THE CHALLENGE OF THE RITUALBefore fighting, you can challenge your opponent to a game of dice, with the winner defining the rules of the encounter – often to their advantage. Summoning a monster as an ally, covering the area in fog, having shackles limit movement...  far from determining the outcome of the combat, the Ritual represents an opportunity to exploit if you win it or a challenge to cleverly overcome if you lose.A RICH STORYLINEYour search for the Great Artifacts that will help you defeat Gemini will take you farther than you ever imagined. While taking on the mercenaries pursuing you and developing your friendship with the Boy, you must confront your past and delve into the sources of the chaotic society of Zenozoik.",
+      "image": "https://m.media-amazon.com/images/I/A1qm1hFsdbL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-royal-romances-forbidden-magic",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Royal Romances: Forbidden Magic",
+      "slug": "royal-romances-forbidden-magic",
+      "storeUrl": "https://luna.amazon.com/claims/royal-romances-forbidden-magic-legacy/dp/amzn1.pg.item.727672b5-8661-4f8f-b4ed-a6c40a1248ee?g=s&ingress=amzn&ref_=SM_RoyalRomancesForbiddenMagic_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "What can a human do in a desperate situation or for the chance for unfathomable power and love? The murky air becomes heavier and harder to breathe, monsters roam the forest, and dark magic taint smothers everything within its reach. Ida and Illeon are about to strike, fulfilling their devious plan.Face battles with your people, find love and endure loss as you get ready to defend the lands from mortal threat! Can a simple bard defeat a monstrous werewolf? Can a villain change its nature? Answers to these questions in this pulse-pounded new Hidden-Object Puzzle Adventure!",
+      "image": "https://m.media-amazon.com/images/I/B1Brs6jaz8L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Legacy Games"
+      ]
     },
     {
       "id": "prime-spray-paint-simulator",
@@ -406,25 +406,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-space-grunts-2",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Space Grunts 2",
-      "slug": "space-grunts-2",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-2-gog/dp/amzn1.pg.item.f92a0c83-29ce-4767-819b-e417b1f238f8?g=s&ingress=amzn&ref_=SM_SpaceGrunts2_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Get ready for endless space missions where no two runs are the same! Space Grunts 2 smashes roguelike exploration with tactical deck-building.Your adventure starts with a unique, procedurally generated level. As you explore, every item you grab - be it a weapon, a shield, or a gadget - becomes a card in your deck. You build your strategy on the fly, deciding what gear to keep and what to leave behind.When an alien threat appears, it's time for a swift, turn-based card battle. Choose your best move and watch the action unfold. Every choice matters, because one wrong step could mean mission failure.Complete challenges to unlock powerful Trinkets and Buff cards, giving you a permanent edge in future runs. With new paths, random events, and endless variations, you'll never have a dull moment. Can you build the perfect deck to survive the alien hordes?",
-      "image": "https://m.media-amazon.com/images/I/A1NREOTNw4L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
       ]
     },
     {
@@ -713,6 +694,44 @@
       ]
     },
     {
+      "id": "prime-just-die-already",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Just Die Already",
+      "slug": "just-die-already",
+      "storeUrl": "https://luna.amazon.com/claims/just-die-already-epic/dp/amzn1.pg.item.1197607b-4bcd-4aba-a43d-0103afdf7d76?g=s&ingress=amzn&ref_=SM_JustDieAlready_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You are an old retired person in a near future where people aren’t having any children. There isn’t anyone to pay for pensions due to those ungrateful millennials who prefer playing video games instead of doing actual work. With no one to cover your living costs, you - just like all other old people in this world - have no other choice but to survive on your own.How will you survive in a world that wants you to Just Die Already?To make things worse, you’ve just been kicked out of your retirement home, and your only option now is to perform dangerous challenges and explore the world for retirement tickets to qualify for free retirement care.So with society wishing you dead, isn’t it finally time to live a little?BE OLD, BE BOLDYou get to be an old person. Angry, fragile, poor and hating the world: the dream you didn’t know you had until now. Finally, you have found something in common with your grandparents.BREAK A LEG... BREAK A NECKDiscover the joys of being old and made of glass, anything can break you and you can break your everything.DON’T TRY THIS AT (RETIREMENT) HOMEComplete dangerous challenges that you will never ever try at home and answer existential questions like: can you launch yourself from a catapult and land on someone? Or, can you survive losing your head, grabbing it and whacking someone with it?ONE MISSION: RETIRE!Earn rewards by completing dangerous challenges, your goal? To qualify for a proper retirement home. That makes perfect sense. Word of advice: try and stay in one piece so you can enjoy it in the end...SANDBOX MULTIPLAYERPlay alone, or with up to 4 players in online multiplayer. Complete challenges together, or just cause mayhem and rip your friends’ limbs off!",
+      "image": "https://m.media-amazon.com/images/I/B1q+r2ZLzfL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-war-hospital",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "War Hospital",
+      "slug": "war-hospital",
+      "storeUrl": "https://luna.amazon.com/claims/war-hospital-epic/dp/amzn1.pg.item.77edd2b0-e0d7-41b2-87f7-8ef5541701e4?g=s&ingress=amzn&ref_=SM_WarHospital_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The year is 1918. You are major Henry Wells, a retired British combat medic, drafted back to take charge of a field hospital in the nightmare of World War I.Understaffed and undersupplied, the hospital is the last bastion of hope for countless soldiers on the Western Front.Your main aims are to keep up your team's morale, and support the war effort with the soldiers you have treated.To do so, you need to manage your hospital to take charge of the flood of injured soldiers brought in after every battle. Make sure to admit the patients in order of priority, before treating them, scheduling surgery or abandoning them to their fate...Resources are limited despite the ever-increasing needs... Learn to adapt to each new situation, taking sometimes morally tough decisions.Decide on improvements to make to your facilities, and use the latest technologies available to military medicine.A war-themed game that celebrates life, not death.Face the trials and challenges of one of the bloodiest wars in history.Manage your personnel, their missions and fatigue. Doctors, nurses, engineers, you make the recruitment decisions.You make the narrative choices, which have a real impact on how the game unfolds.Research options to introduce improvements, to better meet the changing requirementsGame developed with the support of the Imperial War Museum, for a more authentic immersion experience.",
+      "image": "https://m.media-amazon.com/images/I/A1650jnJurL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
       "id": "prime-havendock",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -729,44 +748,6 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-clash-artifacts-of-chaos",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Clash: Artifacts of Chaos",
-      "slug": "clash-artifacts-of-chaos",
-      "storeUrl": "https://luna.amazon.com/claims/clash-artifacts-of-chaos-epic/dp/amzn1.pg.item.f156cdf9-2d60-465f-9977-b0fac64e9fc3?g=s&ingress=amzn&ref_=SM_ClashArtifactsofChaos_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You play as Pseudo, a master of martial arts who lives as a recluse in the strange land of Zenozoik. When you cross paths with the Boy, a small creature whose mysterious powers have attracted the attention of Gemini, the Mistress of the Artifacts, you decide to protect him, unaware that much greater forces are involved.EXPLORE ZENOZOIKDrawing upon both surreal and punk fantasy influences, the world and civilisations of Zenozoik are brimming with fascinating characters, creatures and landscapes. Roam this intriguing land and discover its paths, inhabitants and ancient secrets.CRUSH YOUR OPPONENTSYour fists and speed are your greatest weapons. Attack, dodge, stun, block, counter a parry to land a special attack, switch to first-person view to perform unique techniques: each time, it's up to you to seize the occasion to achieve victory and avoid mistakes that could quickly prove fatal.CUSTOMISE YOUR COMBAT STYLELearn various martial arts during your adventure and alternate freely between them based on the situation, types of enemies and your preference. Victories will enable you to improve your characteristics and upgrade your attacks, so you can develop your own unique style.RISE TO THE CHALLENGE OF THE RITUALBefore fighting, you can challenge your opponent to a game of dice, with the winner defining the rules of the encounter – often to their advantage. Summoning a monster as an ally, covering the area in fog, having shackles limit movement...  far from determining the outcome of the combat, the Ritual represents an opportunity to exploit if you win it or a challenge to cleverly overcome if you lose.A RICH STORYLINEYour search for the Great Artifacts that will help you defeat Gemini will take you farther than you ever imagined. While taking on the mercenaries pursuing you and developing your friendship with the Boy, you must confront your past and delve into the sources of the chaotic society of Zenozoik.",
-      "image": "https://m.media-amazon.com/images/I/A1qm1hFsdbL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-royal-romances-forbidden-magic",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Royal Romances: Forbidden Magic",
-      "slug": "royal-romances-forbidden-magic",
-      "storeUrl": "https://luna.amazon.com/claims/royal-romances-forbidden-magic-legacy/dp/amzn1.pg.item.727672b5-8661-4f8f-b4ed-a6c40a1248ee?g=s&ingress=amzn&ref_=SM_RoyalRomancesForbiddenMagic_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "What can a human do in a desperate situation or for the chance for unfathomable power and love? The murky air becomes heavier and harder to breathe, monsters roam the forest, and dark magic taint smothers everything within its reach. Ida and Illeon are about to strike, fulfilling their devious plan.Face battles with your people, find love and endure loss as you get ready to defend the lands from mortal threat! Can a simple bard defeat a monstrous werewolf? Can a villain change its nature? Answers to these questions in this pulse-pounded new Hidden-Object Puzzle Adventure!",
-      "image": "https://m.media-amazon.com/images/I/B1Brs6jaz8L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Legacy Games"
       ]
     },
     {
