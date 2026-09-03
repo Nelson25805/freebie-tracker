@@ -1,3 +1,10 @@
+/**
+ * fetch-games.js
+ *
+ * Fetches free games from various stores and writes them to a JSON file.
+ * Also notifies about new games and updates the monthly archive and run log.
+ */
+
 import { writeFileSync, mkdirSync, readFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
