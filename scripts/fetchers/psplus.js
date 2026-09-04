@@ -1,5 +1,6 @@
 /**
  * fetchers/psplus.js
+ * Fetches the current and upcoming PlayStation Plus free games from the PS Blog RSS feed.
  */
 
 import fetch from "node-fetch";
