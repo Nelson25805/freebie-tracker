@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T16:50:06.960Z",
+  "fetchedAt": "2026-09-05T22:11:11.316Z",
   "totalFree": 36,
   "totalUpcoming": 4,
   "games": [
@@ -295,25 +295,6 @@
       ]
     },
     {
-      "id": "prime-right-and-down",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Right and Down",
-      "slug": "right-and-down",
-      "storeUrl": "https://luna.amazon.com/claims/right-and-down-gog/dp/amzn1.pg.item.8fe59485-dd11-4558-9a36-8a9d367b10e9?g=s&ingress=amzn&ref_=SM_RightandDown_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "A roguelike, dungeon crawler card game that is played using only two buttons: Right and Down! Choose your hero and explore randomly generated card dungeons, gather powerful artifacts to get new abilities, and fight against increasingly mighty enemies! Will you make it to level 50?Roguelike GameplayEach dungeon is randomly generated, so each game is unique! But randomness ends there, as all needed information is shown in-game. Your destiny is determined by your decisions!Each Decision MattersOn each turn, the only decision you can make is to go right or down. This decision, which at first seems trivial, hides a great tactical depth. Will you try to dodge that high-level monster or fight it to get the artifact it hides to its right? The new artifact you just got gives you 5 coins every turn, but only if you move down. Will you risk it?Unlockable Artifacts, Heroes and DungeonsUnlock 6 heroes with different starting artifacts and skills to create your custom run!More than 100 artifacts with a wide variety of effects that you can unlock with every game you play!9 different dungeons. Each one adds a new rule to the game and will increase its difficulty. will you be able to reach the final dungeon?",
-      "image": "https://m.media-amazon.com/images/I/A1e8j2eAevL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
       "id": "prime-hiveswap-friendsim",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -406,6 +387,25 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-space-grunts-2",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Space Grunts 2",
+      "slug": "space-grunts-2",
+      "storeUrl": "https://luna.amazon.com/claims/space-grunts-2-gog/dp/amzn1.pg.item.f92a0c83-29ce-4767-819b-e417b1f238f8?g=s&ingress=amzn&ref_=SM_SpaceGrunts2_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Get ready for endless space missions where no two runs are the same! Space Grunts 2 smashes roguelike exploration with tactical deck-building.Your adventure starts with a unique, procedurally generated level. As you explore, every item you grab - be it a weapon, a shield, or a gadget - becomes a card in your deck. You build your strategy on the fly, deciding what gear to keep and what to leave behind.When an alien threat appears, it's time for a swift, turn-based card battle. Choose your best move and watch the action unfold. Every choice matters, because one wrong step could mean mission failure.Complete challenges to unlock powerful Trinkets and Buff cards, giving you a permanent edge in future runs. With new paths, random events, and endless variations, you'll never have a dull moment. Can you build the perfect deck to survive the alien hordes?",
+      "image": "https://m.media-amazon.com/images/I/A1NREOTNw4L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
       ]
     },
     {
