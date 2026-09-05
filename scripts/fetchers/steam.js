@@ -1,5 +1,9 @@
 /**
  * fetchers/steam.js
+ * 
+ * Steam free-to-keep promotions are not available via a public API, so this fetcher
+ * uses the GamerPower API to get a list of Steam giveaways. GamerPower aggregates
+ * free game promotions from various sources, including Steam.
  */
 
 import fetch from "node-fetch";
