@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-06T16:57:21.319Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-09-07T18:50:06.065Z",
+  "totalFree": 37,
   "totalUpcoming": 4,
   "games": [
     {
@@ -97,6 +97,25 @@
       "status": "upcoming",
       "offerStart": "2026-09-10T15:00:00.000Z",
       "offerEnd": "2026-09-17T15:00:00.000Z"
+    },
+    {
+      "id": "gog-state-of-mind",
+      "store": "gog",
+      "storeName": "GOG",
+      "title": "State of Mind",
+      "slug": "state_of_mind",
+      "storeUrl": "https://www.gog.com/en/game/state_of_mind",
+      "seller": "GOG",
+      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get State of Mind. See our Privacy policy.",
+      "image": "https://images.gog-statics.com/948360d0e110622fdbdab367732dc1a3004fd51bad991bada0e95a1f9acb8ccf_giveaway_465w.webp",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-09-07T13:52:12.593Z",
+      "offerEnd": "2026-09-10T13:01:00.251Z",
+      "platforms": [
+        "PC"
+      ]
     },
     {
       "id": "psplus-sniper-elite-resistance",
