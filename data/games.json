@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-08T12:41:07.957Z",
-  "totalFree": 37,
+  "fetchedAt": "2026-09-08T18:00:45.480Z",
+  "totalFree": 40,
   "totalUpcoming": 4,
   "games": [
     {
@@ -112,7 +112,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-09-07T13:52:12.593Z",
-      "offerEnd": "2026-09-10T13:01:00.876Z",
+      "offerEnd": "2026-09-10T13:01:00.125Z",
       "platforms": [
         "PC"
       ]
@@ -767,6 +767,63 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
+      ]
+    },
+    {
+      "id": "steam-3770",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Frog Sqwad Steam Key Giveaway",
+      "slug": "3770",
+      "storeUrl": "https://www.gamerpower.com/open/frog-sqwad-steam-key-giveaway",
+      "seller": "Steam",
+      "description": "Claim free Steam keys for Frog Sqwad! Please note 25 ARP (Arena Reward Points) to claim a key. Fortunately, you can earn ARP for free every day simply by logging into the website.",
+      "image": "https://www.gamerpower.com/offers/1b/6aa040cf29bfa.jpg",
+      "originalPrice": 799,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-09-08T13:07:27.000Z",
+      "offerEnd": null,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "steam-3769",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "SWAPMEAT Steam Key Giveaway",
+      "slug": "3769",
+      "storeUrl": "https://www.gamerpower.com/open/swapmeat-steam-key-giveaway",
+      "seller": "Steam",
+      "description": "Claim free Steam keys for SWAPMEAT! Please note 25 ARP (Arena Reward Points) to claim a key. Fortunately, you can earn ARP for free every day simply by logging into the website.",
+      "image": "https://www.gamerpower.com/offers/1b/6aa04047b0497.jpg",
+      "originalPrice": 2499,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-09-08T13:05:11.000Z",
+      "offerEnd": null,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "steam-3768",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Doomspire Steam Key Giveaway",
+      "slug": "3768",
+      "storeUrl": "https://www.gamerpower.com/open/doomspire-steam-key-giveaway",
+      "seller": "Steam",
+      "description": "Claim free Steam keys for Doomspire! Please note 10 ARP (Arena Reward Points) to claim a key. Fortunately, you can earn ARP for free every day simply by logging into the website.",
+      "image": "https://www.gamerpower.com/offers/1b/6aa03d0696b15.jpg",
+      "originalPrice": 1499,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-09-08T12:51:18.000Z",
+      "offerEnd": null,
+      "platforms": [
+        "PC"
       ]
     },
     {
