@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-09T12:48:41.327Z",
-  "totalFree": 37,
+  "fetchedAt": "2026-09-09T21:14:22.715Z",
+  "totalFree": 36,
   "totalUpcoming": 5,
   "games": [
     {
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-09-17T15:00:00.000Z",
-      "offerEnd": "2026-10-02T05:59:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -131,7 +131,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-09-07T13:52:12.593Z",
-      "offerEnd": "2026-09-10T13:00:59.380Z",
+      "offerEnd": "2026-09-10T13:01:00.134Z",
       "platforms": [
         "PC"
       ]
@@ -330,25 +330,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-hiveswap-friendsim",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Hiveswap Friendsim",
-      "slug": "hiveswap-friendsim",
-      "storeUrl": "https://luna.amazon.com/claims/hiveswap-friendsim-gog/dp/amzn1.pg.item.8e0d3ee4-446f-435e-bfb4-33fe97d25af8?g=s&ingress=amzn&ref_=SM_HiveswapFriendsim_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You just crash-landed on Alternia, and you’re DESPERATE for friendship! Anyone will do...wait, who are those two trolls approaching you?The Hiveswap Friendsim is a quick, loosely-canonical visual novel adventure following the efforts of the unnamed protagonist (that’s you!) to survive and maybe even thrive on the harsh surface of ALTERNIA. Set in the time of Hiveswap: Act 1, this episodic visual novel, written by Homestuck creator Andrew Hussie, is sure to satisfy Homestuck and Hiveswap fans who are eager for a darker stroll across the Alternian landscape.",
-      "image": "https://m.media-amazon.com/images/I/B1aQAxxqDsL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
       ]
     },
     {
