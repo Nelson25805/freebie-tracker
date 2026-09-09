@@ -38,9 +38,15 @@ jobs:
         run: npm install
         working-directory: scripts
 
-      # NEW: Install Playwright Chromium browser
       - name: Install Playwright browsers
-        run: npx --yes playwright install --with-deps chromium
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/google-chrome.list
+
+          for attempt in 1 2 3; do
+            sudo apt-get update && npx --yes playwright install --with-deps chromium && break
+            echo "Attempt $attempt failed, retrying in 10s…"
+            sleep 10
+          done
         working-directory: scripts
 
       - name: Fetch free games data
