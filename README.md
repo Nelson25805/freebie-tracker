@@ -87,6 +87,7 @@ Features include:
 - Hide games you've already claimed
 - Automatically updated several times each day using GitHub Actions
 - Can sign up for newsletter to be emailed when new games come out
+- View website in offline mode
 
 Claimed games are stored locally in your browser, so your collection persists between visits without requiring an account.
 
