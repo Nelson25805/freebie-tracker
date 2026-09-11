@@ -49,6 +49,8 @@ const APP_SHELL = [
   "./js/history-data.js",
   "./js/history-render.js",
   "./js/register-sw.js",
+  "./js/theme-init.js",
+  "./js/theme.js",
   "./newsletter.js",
 
   "./assets/epicGamesLogo.svg",
