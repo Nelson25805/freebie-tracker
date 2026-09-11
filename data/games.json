@@ -1,27 +1,8 @@
 {
-  "fetchedAt": "2026-09-09T12:48:41.327Z",
+  "fetchedAt": "2026-09-10T22:34:09.726Z",
   "totalFree": 37,
-  "totalUpcoming": 5,
+  "totalUpcoming": 4,
   "games": [
-    {
-      "id": "be5600439b434624802764f704755cde",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Ghostrunner 2",
-      "slug": "ghostrunner-2",
-      "storeUrl": "https://store.epicgames.com/p/ghostrunner-2",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Ghostrunner 2 is a hardcore FPP slasher set in a post-apocalyptic, cyberpunk world. Featuring everything fans loved about Ghostrunner plus incredible boss fights, new interactive story, thrilling motorbike levels, improved skills, and more cyber ninja action. ",
-      "image": "https://cdn1.epicgames.com/offer/708f57aaa04b42ef885be16c8288f0ac/EGS_Ghostrunner2_OneMoreLevel_S1_2560x1440-15845148fae1d0cfd7f3e98c9b3ba6ba",
-      "originalPrice": 3999,
-      "discountPrice": 3999,
-      "status": "upcoming",
-      "offerStart": "2026-09-10T17:00:00.000Z",
-      "offerEnd": "2026-09-24T17:00:00.000Z"
-    },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
       "store": "epic",
@@ -38,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-09-17T15:00:00.000Z",
-      "offerEnd": "2026-10-02T05:59:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -61,25 +42,6 @@
       "offerEnd": "2026-09-17T15:00:00.000Z"
     },
     {
-      "id": "b8cc76ce7d6645f0a282b843a072cc78",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Alone With You",
-      "slug": "alone-with-you-028a15",
-      "storeUrl": "https://store.epicgames.com/p/alone-with-you-028a15",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "ALONE WITH YOU is a sci-fi point-and-click adventure game that tells a rich story about relationships. You're the last survivor of a doomed space colony, trying to escape a planet before it implodes around you.",
-      "image": "https://cdn1.epicgames.com/spt-assets/04b7a1d78c904065b5c24f9e7816c99a/alone-with-you-cllc3.png",
-      "originalPrice": 999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-03T15:00:00.000Z",
-      "offerEnd": "2026-09-10T15:00:00.000Z"
-    },
-    {
       "id": "c76046dddcdb43619c33ce0395941033",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -93,8 +55,8 @@
       "description": "The skies are aflame and the seas will overflow with wreckage in Vlambeer’s stylish arcade shooter LUFTRAUSERS! Take to the skies in customized fighter planes to battle battleships, submarines, and rival aces for glory, honor, and high scores.",
       "image": "https://cdn1.epicgames.com/spt-assets/85ddeeec9d4243b3a2d78aab87bfae7f/luftrausers-1mxb1.png",
       "originalPrice": 999,
-      "discountPrice": 999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-09-10T15:00:00.000Z",
       "offerEnd": "2026-09-17T15:00:00.000Z"
     },
@@ -112,29 +74,48 @@
       "description": "Choose one of four heroes and explore the Garden, an astral prison guarded by 12 powerful mystical bosses: the Zodiacs. Challenge them with dozens of unique spells and faithful friends by your side to unfold the story of this platform roguelite with lightning fast combat.",
       "image": "https://cdn1.epicgames.com/spt-assets/974c8a587d714d8d9e0c3b0fefe61a35/astral-ascent-b0gcm.png",
       "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-09-10T15:00:00.000Z",
       "offerEnd": "2026-09-17T15:00:00.000Z"
     },
     {
-      "id": "gog-state-of-mind",
-      "store": "gog",
-      "storeName": "GOG",
-      "title": "State of Mind",
-      "slug": "state_of_mind",
-      "storeUrl": "https://www.gog.com/en/game/state_of_mind",
-      "seller": "GOG",
-      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get State of Mind. See our Privacy policy.",
-      "image": "https://images.gog-statics.com/948360d0e110622fdbdab367732dc1a3004fd51bad991bada0e95a1f9acb8ccf_giveaway_465w.webp",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-07T13:52:12.593Z",
-      "offerEnd": "2026-09-10T13:00:59.380Z",
+      "id": "8a20c6c8d5b5417e800c687e9d72013e",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Mindcop",
+      "slug": "mindcop-78e6c1",
+      "storeUrl": "https://store.epicgames.com/p/mindcop-78e6c1",
+      "seller": "PC",
       "platforms": [
         "PC"
-      ]
+      ],
+      "description": "Mindcop is a non-linear „whodunnit“ detective game. It mixes a story driven adventure with real-time match-3 puzzle. As the infamous Mindcop, you can dive into the minds of your suspects to uncover their secrets and unravel their lies.​",
+      "image": "https://cdn1.epicgames.com/spt-assets/984cdc148ea6423e866ca6e04a1b429f/mindcop-kplp1.jpg",
+      "originalPrice": 1499,
+      "discountPrice": 1499,
+      "status": "upcoming",
+      "offerStart": "2026-09-17T15:00:00.000Z",
+      "offerEnd": "2026-09-24T15:00:00.000Z"
+    },
+    {
+      "id": "b9ff3f98367a45cdac289dff6683a2bc",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Shogun Showdown",
+      "slug": "shogun-showdown-61832d",
+      "storeUrl": "https://store.epicgames.com/p/shogun-showdown-61832d",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Shogun Showdown is a turn-based combat game with rogue-like and deck-building elements. Position yourself and attack at the right time, upgrade your tiles and combo them to get ready to face the Shogun!",
+      "image": "https://cdn1.epicgames.com/spt-assets/450bcfdb9c00453394d7ccc2948ba5db/shogun-showdown-hz1yh.jpg",
+      "originalPrice": 1499,
+      "discountPrice": 1499,
+      "status": "upcoming",
+      "offerStart": "2026-09-17T15:00:00.000Z",
+      "offerEnd": "2026-09-24T15:00:00.000Z"
     },
     {
       "id": "psplus-sniper-elite-resistance",
@@ -217,6 +198,63 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "id": "prime-just-die-already",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Just Die Already",
+      "slug": "just-die-already",
+      "storeUrl": "https://luna.amazon.com/claims/just-die-already-epic/dp/amzn1.pg.item.1197607b-4bcd-4aba-a43d-0103afdf7d76?g=s&ingress=amzn&ref_=SM_JustDieAlready_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You are an old retired person in a near future where people aren’t having any children. There isn’t anyone to pay for pensions due to those ungrateful millennials who prefer playing video games instead of doing actual work. With no one to cover your living costs, you - just like all other old people in this world - have no other choice but to survive on your own.How will you survive in a world that wants you to Just Die Already?To make things worse, you’ve just been kicked out of your retirement home, and your only option now is to perform dangerous challenges and explore the world for retirement tickets to qualify for free retirement care.So with society wishing you dead, isn’t it finally time to live a little?BE OLD, BE BOLDYou get to be an old person. Angry, fragile, poor and hating the world: the dream you didn’t know you had until now. Finally, you have found something in common with your grandparents.BREAK A LEG... BREAK A NECKDiscover the joys of being old and made of glass, anything can break you and you can break your everything.DON’T TRY THIS AT (RETIREMENT) HOMEComplete dangerous challenges that you will never ever try at home and answer existential questions like: can you launch yourself from a catapult and land on someone? Or, can you survive losing your head, grabbing it and whacking someone with it?ONE MISSION: RETIRE!Earn rewards by completing dangerous challenges, your goal? To qualify for a proper retirement home. That makes perfect sense. Word of advice: try and stay in one piece so you can enjoy it in the end...SANDBOX MULTIPLAYERPlay alone, or with up to 4 players in online multiplayer. Complete challenges together, or just cause mayhem and rip your friends’ limbs off!",
+      "image": "https://m.media-amazon.com/images/I/B1q+r2ZLzfL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-war-hospital",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "War Hospital",
+      "slug": "war-hospital",
+      "storeUrl": "https://luna.amazon.com/claims/war-hospital-epic/dp/amzn1.pg.item.77edd2b0-e0d7-41b2-87f7-8ef5541701e4?g=s&ingress=amzn&ref_=SM_WarHospital_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The year is 1918. You are major Henry Wells, a retired British combat medic, drafted back to take charge of a field hospital in the nightmare of World War I.Understaffed and undersupplied, the hospital is the last bastion of hope for countless soldiers on the Western Front.Your main aims are to keep up your team's morale, and support the war effort with the soldiers you have treated.To do so, you need to manage your hospital to take charge of the flood of injured soldiers brought in after every battle. Make sure to admit the patients in order of priority, before treating them, scheduling surgery or abandoning them to their fate...Resources are limited despite the ever-increasing needs... Learn to adapt to each new situation, taking sometimes morally tough decisions.Decide on improvements to make to your facilities, and use the latest technologies available to military medicine.A war-themed game that celebrates life, not death.Face the trials and challenges of one of the bloodiest wars in history.Manage your personnel, their missions and fatigue. Doctors, nurses, engineers, you make the recruitment decisions.You make the narrative choices, which have a real impact on how the game unfolds.Research options to introduce improvements, to better meet the changing requirementsGame developed with the support of the Imperial War Museum, for a more authentic immersion experience.",
+      "image": "https://m.media-amazon.com/images/I/A1650jnJurL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-havendock",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Havendock",
+      "slug": "havendock",
+      "storeUrl": "https://luna.amazon.com/claims/havendock-aga/dp/amzn1.pg.item.ef222081-3e6c-4949-9e87-aaf2c27b6bc6?g=s&ingress=amzn&ref_=SM_Havendock_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Havendock is a relaxing colony simulation and resource management game where you build a thriving settlement in the middle of the ocean. Starting from a small wooden platform, you’ll gather resources, expand your base, and attract new settlers to join you. Manage their needs, craft new technologies, and transform your floating raft into a bustling ocean town.Designed as a single-player experience, Havendock focuses on creativity, strategy, and building a vibrant community-all while surrounded by the calming waves of the sea.Features:Design Your Ideal Floating HavenDesign your ideal floating haven start with a small platform and turn it into a floating oasis! Build unique structures, shape your deck however you like, and create the most charming over-water community that your settlers will adore.Grow Quirky Crops and Feed the CrewFrom vegetables to, well, burgers-who says you can’t farm on water? Plant whatever floats your boat, keep everyone fed, and embrace the unexpected surprises that sprout from your quirky farm.Balance Food, Water, and HappinessJuggling food, water, and the occasional strange request, it’s up to you to keep your castaways content. Balance your resources smartly and keep your settlers smiling, one meal and water pump at a time!Tinker with Tech and GadgetsBuild, tinker, and experiment! Create advanced machines and gadgets that bring your floating world to life. No idea is too wild-so go ahead, craft that sea-to-table burger-making contraption!Unlock Hidden Secrets Across the SeaAdventure is just a deck away! Explore distant islands, meet oddball characters, and uncover treasures (or just plain weird stuff). Your curiosity will always be rewarded!",
+      "image": "https://m.media-amazon.com/images/I/B1NiLzIru-L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
     },
     {
       "id": "prime-clash-artifacts-of-chaos",
@@ -333,25 +371,6 @@
       ]
     },
     {
-      "id": "prime-hiveswap-friendsim",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Hiveswap Friendsim",
-      "slug": "hiveswap-friendsim",
-      "storeUrl": "https://luna.amazon.com/claims/hiveswap-friendsim-gog/dp/amzn1.pg.item.8e0d3ee4-446f-435e-bfb4-33fe97d25af8?g=s&ingress=amzn&ref_=SM_HiveswapFriendsim_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You just crash-landed on Alternia, and you’re DESPERATE for friendship! Anyone will do...wait, who are those two trolls approaching you?The Hiveswap Friendsim is a quick, loosely-canonical visual novel adventure following the efforts of the unnamed protagonist (that’s you!) to survive and maybe even thrive on the harsh surface of ALTERNIA. Set in the time of Hiveswap: Act 1, this episodic visual novel, written by Homestuck creator Andrew Hussie, is sure to satisfy Homestuck and Hiveswap fans who are eager for a darker stroll across the Alternian landscape.",
-      "image": "https://m.media-amazon.com/images/I/B1aQAxxqDsL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
       "id": "prime-weakless",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -409,41 +428,41 @@
       ]
     },
     {
-      "id": "prime-space-grunts-chrono-shard",
+      "id": "prime-star-wars-outlaws",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Space Grunts: Chrono Shard",
-      "slug": "space-grunts-chrono-shard",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-chrono-shard-epic/dp/amzn1.pg.item.dbfe54c6-6298-46ec-808d-49d3915b9734?g=s&ingress=amzn&ref_=SM_SpaceGruntsChronoShard_S01_FGWP_CRWN",
+      "title": "Star Wars Outlaws",
+      "slug": "star-wars-outlaws",
+      "storeUrl": "https://luna.amazon.com/detail/B0DDMXR2WZ?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Master time. Stop the Ooze. Outsmart a galactic infection in this high-speed, turn-based roguelike. Use your Chrono Shard to loop the timeline, leaving gear and upgrades for your future self. Craft your arsenal, evolve your skills into elite sub-classes, and turn every death into an advantage.Space Grunts: Chrono Shard is a high-octane blend of tactical depth and arcade energy. With the power of the Chrono Shard, you don’t just survive the void, you master it.The Chrono LoopUse your Shard to rewind the clock. Any items you’ve placed or changes you’ve made to the environment stay exactly where they are for your next attempt.Rapid-Fire StrategyFast-paced, turn-based combat rewards quick thinking and even quicker trigger fingers.Engaging Crafting SystemFind crafting stations to disassemble loot, scavenge resources, and upgrade your weapons into unstoppable tools of destruction.Evolutionary Skill TreesInvest in three core skill types to unlock specialized sub-classes. Whether you become a Sniper, Assassin, Hitman, Hardened, Elite, Engineer, Gadget, Gearhead, or Veteran, your build defines your edge.Deep Space HazardsDeploy into procedurally generated space stations and moon bases. Every mission is a new layout of mysterious sectors and deadly surprises.Secure the GatesA sentient Ooze is devouring the galaxy, jumping through a hijacked network of HyperGates. As part of the Space Grunts’ elite tactical unit, you are dropped into “time bubbles” to shut down the gates and contain the spread. Loop the timeline, evolve your grunt, and stop the Ooze - at any cost.Key features:Persistent Time-Loops: Carry over items and environmental changes between runs.Elite Sub-Classes: Level up your skills to unlock unique benefits.Advanced Crafting: Create, upgrade, and scrap gear at specialized stations.Signature Fast-Paced Gameplay: The classic Space Grunts arcade feel in a turn-based format.",
-      "image": "https://m.media-amazon.com/images/I/B1gmGe+iDGL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "Experience the first-ever open world Star Wars™ action-adventure game and explore distinct locations across the galaxy, both iconic and new. Risk it all as scoundrel Kay Vess, seeking freedom and the means to start a new life. Fight, steal, and outwit your way through the galaxy’s crime syndicates as you join the galaxy’s most wanted.If you’re willing to take the risk, the galaxy is full of opportunity.DISCOVER A GALAXY OF OPPORTUNITYExplore distinct locations with bustling cities and cantinas. Race across sprawling outdoor landscapes on your speeder. Each location brings new adventures, unique challenges, and enticing rewards if you’re willing to take the risk.EXPERIENCE AN ORIGINAL SCOUNDREL STORYLive the high-stakes lifestyle of an outlaw. Turn any situation to your advantage with Nix by your side: fight with your blaster, overcome enemies with stealth and gadgets, or find the right moments to distract enemies and gain the upper hand.EMBARK ON HIGH-STAKES MISSIONSTake on high-risk, high-reward missions from the galaxy’s crime syndicates. Steal valuable goods, infiltrate secret locations, and outwit enemies as one of the galaxy’s most wanted. Every choice you make influences your ever-changing reputation.JUMP INTO THE PILOT SEATPilot your ship, the Trailblazer, as you engage in thrilling dogfights with the Empire and other foes. Find the right opportunities to chase, evade, and attack to get the upper hand.Offer, content, and dates subject to change.",
+      "image": "https://m.media-amazon.com/images/I/D1zjA8h4SXL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Epic Games"
+        "Amazon Luna"
       ]
     },
     {
-      "id": "prime-space-grunts-2",
+      "id": "prime-avatar-frontiers-of-pandora",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Space Grunts 2",
-      "slug": "space-grunts-2",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-2-gog/dp/amzn1.pg.item.f92a0c83-29ce-4767-819b-e417b1f238f8?g=s&ingress=amzn&ref_=SM_SpaceGrunts2_S01_FGWP_CRWN",
+      "title": "Avatar: Frontiers of Pandora",
+      "slug": "avatar-frontiers-of-pandora",
+      "storeUrl": "https://luna.amazon.com/detail/B0CPB9QQBN?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Get ready for endless space missions where no two runs are the same! Space Grunts 2 smashes roguelike exploration with tactical deck-building.Your adventure starts with a unique, procedurally generated level. As you explore, every item you grab - be it a weapon, a shield, or a gadget - becomes a card in your deck. You build your strategy on the fly, deciding what gear to keep and what to leave behind.When an alien threat appears, it's time for a swift, turn-based card battle. Choose your best move and watch the action unfold. Every choice matters, because one wrong step could mean mission failure.Complete challenges to unlock powerful Trinkets and Buff cards, giving you a permanent edge in future runs. With new paths, random events, and endless variations, you'll never have a dull moment. Can you build the perfect deck to survive the alien hordes?",
-      "image": "https://m.media-amazon.com/images/I/A1NREOTNw4L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "Avatar: Frontiers of Pandora™ is a third and first-person action-adventure game set in the Western Frontier. Abducted by the RDA, you, a Na’vi, were molded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage and discover what it truly means to be Na'vi as you join other clans to protect Pandora.EXPLORE A WORLD OF WONDER AND DANGERExperience the epic wonders of the Western Frontier, a never-before-seen continent of Pandora. Journey through beautiful yet unpredictable open world regions, where lowering your guard can lead to deadly mistakes.BECOME NA’VIHarness your incredible strength and agility while customizing your character, crafting new gear, and upgrading skills and weapons to fit your playstyle.SOAR THE SKIESBond with your own personal banshee that will give you an edge in aerial combat and can be used for traveling across the vast Western Frontier.MASTER MULTIPLE COMBAT STYLESFight off the dangers of Pandora as you embrace the precision of traditional Na’vi weapons, including your bow and spear-thrower, or leverage your human training with more destructive weapons, such as an assault rifle or a shotgun.SHARE YOUR ADVENTURE IN FULL CAMPAIGN CO-OPPlay the full story campaign in single-player or with a friend online in two-player co-op.",
+      "image": "https://m.media-amazon.com/images/I/D19W9nab1ML._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "GOG"
+        "Amazon Luna"
       ]
     },
     {
@@ -485,25 +504,6 @@
       ]
     },
     {
-      "id": "prime-batman-caped-crusader-chronicles",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Batman Caped Crusader - Chronicles",
-      "slug": "batman-caped-crusader-chronicles",
-      "storeUrl": "https://luna.amazon.com/detail/B0H4Y4MWQ9?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Gotham's darkest crimes won't solve themselves. Go solo or gather your crew and dive into the noir-drenched 1940s Gotham City of the Batman: Caped Crusader animated series, where every alley hides a secret, and every case leads deeper into the shadowy depths of Gotham’s criminal minds.In this cooperative party game for 1 to 4 players, you'll join forces with Renee Montoya as part of Batman’s inner circle, uncovering evidence, chasing leads, and confronting iconic villains across 11 gripping episodes. Test your detective skills to surface clues in 11 detective minigames. Investigate, interrogate, deduce and decode your way through the crime webs woven by 10 of Gotham’s most devious criminals including Scarecrow, Babyface, Tweedledee and Tweedledum, Dollmaker, Lynx, Music Meister and of course, the Joker. Batman and the citizens of Gotham are counting on you!Crack the cases, Save the City.Play the Game, Watch the Series!• “PLAY” THE SERIES – Dive into the world of the Batman: Caped Crusader animated series. Play your part as a detective, taking directions from Renee Montoya and Batman himself. • VOICEOVER FROM SERIES ACTORS – Hamish Linklater as Batman, Michelle C. Bonilla as Montoya, Matthew Needham as The Joker and more...• CRACK THE CASES – Go solo or team up with friends as part of a GCPD task force to help Batman battle crime and solve mysteries to keep Gotham and its civilians safe.• 11 MYSTERIOUS EPISODES AWAIT – Experience original episodes inspired by the series that pull you into the art, story, characters and vibe of Gotham and its notorious criminal minds.• 11 CHALLENGING MINIGAMES – You’ll need your detective instinct and a keen eye to spot clues, complete objectives and solve puzzles in 3-5 minigames to complete each episode successfully.• HOURS OF GOTHAM SLEUTHING – Complete all 11 episodes to get the full story or play just your favorites. Completing episodes unlocks the minigames to play anytime you want. All of this, plus goal, objective, and clue variations in the minigames as you play, combine for 10+ hours of gameplay and repayable fun.• LUNA GAMENIGHT FUN – Your phone is your controller. No extra hardware. No downloads. No skill gap. Whether it's family or friends game night, everyone can jump in and play; from first-time players to seasoned detectives.ADDITIONAL DETAILS This game is available in the following languages; English, German, Spanish (LATAM), Italian, French, and Portuguese.Software © 2026 Amazon.com, Inc. or its affiliates. Amazon, Amazon Game Studios, and related marks are trademarks of Amazon.com, Inc. or its affiliates. Developed by Blazing Griffin and published by Amazon Game Studios. All rights reserved. BATMAN CAPED CRUSADER and all related characters and elements © & ™ DC and Warner Bros. Entertainment Inc. ™ & © 2026. All rights reserved. Used under license.• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Legal Notices - https://www.amazon.com/gp/help/customer/display.html?&nodeId=TNMI65bNBgTBPAzK9w• Support Page - https://help.chronicles.amazongamestudios.com",
-      "image": "https://m.media-amazon.com/images/I/D1eNP1lFLyL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
       "id": "prime-dispatch",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -513,25 +513,6 @@
       "seller": "Prime Gaming",
       "description": "Dispatch is an award-winning superhero workplace comedy set in modern day Los Angeles from the writers and directors of Tales from the Borderlands and The Wolf Among Us, and features an all-star cast including Aaron Paul, Laura Bailey, and Jeffrey Wright.You play as Robert Robertson, AKA Mecha Man, whose mech-suit is destroyed in a battle against his nemesis, forcing him to take a job at a superhero dispatch center: not as a hero, but a dispatcher.As their dispatcher, you take charge of a team of ex-supervillains given a shot at redemption. Manage and level up your roster, all while navigating office relationships and romances, and rebuilding your suit for a shot at revenge!SHAPE YOUR STORYIn Dispatch, every decision you make influences the unfolding narrative. From banter in the breakroom to life-or-death situations in the field, your choices affect your relationships with the heroes, their allegiances, and the path your own story takes.DEPLOY YOUR HEROESUse the strategy map to review ongoing emergencies and deploy the right (or wrong) heroes to deal with them. Balance the risks and rewards as you make tactical decisions, knowing that each choice can have lasting consequences for your team and the city.MANAGE YOUR ROSTERManaging heroes sometimes goes beyond their powers. Each hero comes with quirks, flaws, and baggage you’ll need to navigate to keep the team together. Upgrade their skills and unlock abilities to boost their effectiveness in the field.Blending narrative, strategy, and humor, Dispatch explores what it means to be a hero, whether you're wearing a cape or behind a desk.MEET THE MISFITSFeaturing an all-star cast from every corner of entertainment• Aaron Paul (Breaking Bad, Westworld, Black Mirror)• Laura Bailey (The Legend of Vox Machina, The Last of Us II, Marvel's Spider-Man)• Erin Yvette (Hades II, The Wolf Among Us, Armored Core VI: Fires of Rubicon)• MoistCr1TiKaL (Charles White)• Jacksepticeye (Sonic Prime, River City Girls 1 & 2, Bendy and the Ink Machine)• Travis Willingham (The Legend of Vox Machina, Critical Role, Lego Avengers)• Alanah Pearce (V/H/S Beyond, Cyberpunk 2077, Gears 5)• Lance Cantstopolis (Karate, Dancing, Actor)• Joel Haver (Filmmaker, Actor, YouTuber)• THOT SQUAD (Musician: Pound Cake, Hoes Depressed)• Yung Gravy (Musician: Betty (Get Money), oops!)• Matthew Mercer (Critical Role, Overwatch, Resident Evil 6)• and Jeffrey Wright (American Fiction, The Batman, Casino Royale)",
       "image": "https://m.media-amazon.com/images/I/C1kt2ZkbZZL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-ea-sports-fc-26",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "EA SPORTS FC™ 26",
-      "slug": "ea-sports-fc-26",
-      "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
-      "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -570,6 +551,25 @@
       "seller": "Prime Gaming",
       "description": "Grandma has kicked you out into the big wide Wobbly world demanding you go and GET A JOB! She would be so proud if you could earn some money and get your own house one day! It's time to start earning and living your best Wobbly Life! 1-4 players Online and Local split-screen co-op Open-world sandbox filled with mini-games, toys, secrets+100 unique missions & jobs with exclusive rewards to unlock, alone or with friends +90 vehicles to ride around (and crash)+500 clothes items to show-off in your wobbly look FUN, FRIENDS & PHYSICS!Let's start exploring! Almost everything is interactive – grab, play, and experiment in a world filled with props, mini-games, and surprises. Experience the joy solo or share your adventures with up to 4 players in online or local co-op, all in one big Wobbly world. MYSTERIES AND MISSIONSEmbark on story missions, each offering unique rewards through fun puzzles and challenges. Unveil the mysteries of the tropical island, uncover the mountain’s secrets, delve into hidden caves... The Wobbly Museum has lost all its artifacts! Maybe you can help? Buy treasure maps and solve clues to find all the Museums' lost treasures and unlock exciting rewards. GO GET A JOB!Make grandma happy and go get that job! Earn money by choosing from +40 exciting jobs, each bringing their new unique challenges. From pizza delivery to firefighting, taxi driver to disco dancer… your Wobbly dream job is waiting for you. GO TO SPACE! The Wobbly Space Programme is looking for new recruits. Space is a whole new open world, with new jobs, missions, and secrets to uncover. You'll even get to fly your own spaceships too, so what are you waiting for!LIVE THE HIGH WOBBLY LIFE! Once you’ve fattened up your bank account why not go on a shopping spree? Visit the Pet Shop to buy a faithful companion, buy and unlock +500 clothes items and choose from +90 different vehicles. When you’ve really made the big bucks, you can even buy a house: from a wooden cabin to a huge fancy mansion, Wobbly Island has a home for everyone! PLAY YOUR OWN WAY WITH ARCADE MODEWant to take a break from Wobbly Island? Try out Arcade mode! Discover new game modes: Trash Zone, Hide & Seek, Wobble Run and Sandbox. Each have customizable settings for you to play with, multiple mini-games and new areas to have fun in!",
       "image": "https://m.media-amazon.com/images/I/C1cARfsLJ2L._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-batman-caped-crusader-chronicles",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Batman Caped Crusader - Chronicles",
+      "slug": "batman-caped-crusader-chronicles",
+      "storeUrl": "https://luna.amazon.com/detail/B0H4Y4MWQ9?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Gotham's darkest crimes won't solve themselves. Go solo or gather your crew and dive into the noir-drenched 1940s Gotham City of the Batman: Caped Crusader animated series, where every alley hides a secret, and every case leads deeper into the shadowy depths of Gotham’s criminal minds.In this cooperative party game for 1 to 4 players, you'll join forces with Renee Montoya as part of Batman’s inner circle, uncovering evidence, chasing leads, and confronting iconic villains across 11 gripping episodes. Test your detective skills to surface clues in 11 detective minigames. Investigate, interrogate, deduce and decode your way through the crime webs woven by 10 of Gotham’s most devious criminals including Scarecrow, Babyface, Tweedledee and Tweedledum, Dollmaker, Lynx, Music Meister and of course, the Joker. Batman and the citizens of Gotham are counting on you!Crack the cases, Save the City.Play the Game, Watch the Series!• “PLAY” THE SERIES – Dive into the world of the Batman: Caped Crusader animated series. Play your part as a detective, taking directions from Renee Montoya and Batman himself. • VOICEOVER FROM SERIES ACTORS – Hamish Linklater as Batman, Michelle C. Bonilla as Montoya, Matthew Needham as The Joker and more...• CRACK THE CASES – Go solo or team up with friends as part of a GCPD task force to help Batman battle crime and solve mysteries to keep Gotham and its civilians safe.• 11 MYSTERIOUS EPISODES AWAIT – Experience original episodes inspired by the series that pull you into the art, story, characters and vibe of Gotham and its notorious criminal minds.• 11 CHALLENGING MINIGAMES – You’ll need your detective instinct and a keen eye to spot clues, complete objectives and solve puzzles in 3-5 minigames to complete each episode successfully.• HOURS OF GOTHAM SLEUTHING – Complete all 11 episodes to get the full story or play just your favorites. Completing episodes unlocks the minigames to play anytime you want. All of this, plus goal, objective, and clue variations in the minigames as you play, combine for 10+ hours of gameplay and repayable fun.• LUNA GAMENIGHT FUN – Your phone is your controller. No extra hardware. No downloads. No skill gap. Whether it's family or friends game night, everyone can jump in and play; from first-time players to seasoned detectives.ADDITIONAL DETAILS This game is available in the following languages; English, German, Spanish (LATAM), Italian, French, and Portuguese.Software © 2026 Amazon.com, Inc. or its affiliates. Amazon, Amazon Game Studios, and related marks are trademarks of Amazon.com, Inc. or its affiliates. Developed by Blazing Griffin and published by Amazon Game Studios. All rights reserved. BATMAN CAPED CRUSADER and all related characters and elements © & ™ DC and Warner Bros. Entertainment Inc. ™ & © 2026. All rights reserved. Used under license.• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Legal Notices - https://www.amazon.com/gp/help/customer/display.html?&nodeId=TNMI65bNBgTBPAzK9w• Support Page - https://help.chronicles.amazongamestudios.com",
+      "image": "https://m.media-amazon.com/images/I/D1eNP1lFLyL._SX1280_QL90_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -656,6 +656,25 @@
       ]
     },
     {
+      "id": "prime-ea-sports-fc-26",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "EA SPORTS FC™ 26",
+      "slug": "ea-sports-fc-26",
+      "storeUrl": "https://luna.amazon.com/detail/B0CW18YWZF?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The Club is Yours in EA SPORTS FC™ 26.Experience The World’s Game like never before in EA SPORTS FC™ 26. The latest update introduces a brand-new international tournament mode featuring 48 national teams, alongside new authentic stadiums to play in. Take on international-themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.Play your way with an overhauled gameplay experience shaped by community feedback, Manager Live Challenges that deliver fresh scenarios throughout the season, and new Archetypes inspired by greats of the game.Put your dream squad to the test in Football Ultimate Team™ with new Live Events and Tournament modes, as well as a refreshed Rivals and Champs experience.Experience The World’s Game like never before in EA SPORTS FC™ 26, with match data from the world’s top leagues powering 20,000+ authentic players.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal/legal-disclosures for details.Conditions & restrictions apply. See ea.com/games/ea-sports-fc/fc-26/game-disclaimers for details.FC Points purchase is not available in Belgium and South Korea.© 2025 Electronic Arts Inc. Electronic Arts, EA, EA SPORTS, the EA SPORTS logo, EA SPORTS FC, the EA SPORTS FC logo, Frostbite, the Frostbite logo, Football Ultimate Team, and Ultimate Team are trademarks of Electronic Arts Inc.",
+      "image": "https://m.media-amazon.com/images/I/D19Gp3BqBpL._SX1280_QL90_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-goat-simulator-3",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -694,53 +713,15 @@
       ]
     },
     {
-      "id": "prime-the-game-of-life-2",
+      "id": "prime-botany-manor",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "The Game of Life 2",
-      "slug": "the-game-of-life-2",
-      "storeUrl": "https://luna.amazon.com/detail/B0GFVWKZT8?ref=pghq&r=web&autoplay=1",
+      "title": "Botany Manor",
+      "slug": "botany-manor",
+      "storeUrl": "https://luna.amazon.com/claims/botany-manor-epic/dp/amzn1.pg.item.fe9fbd08-590e-4d6d-9a94-f22f4548c09d?g=s&ingress=amzn&ref_=SM_BotanyManor_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Prepare to live a thousand lives in The Game of Life 2, the award-winning official sequel to the classic board game played by millions around the world. Gather your friends and family and dive into a bright, fun 3D world bursting with adventure!The Game of Life 2 on Luna comes with all content unlocked from the start! Click play and get: 11 worlds, with unique visuals on each board66 x outfits unlocked66 x avatars unlocked44 x vehicles unlocked 3 x peg coloursSpin the iconic spinner and set off on your life journey. You’ll be presented with decisions at every turn, altering your life path. Will you go to college immediately or drive straight into a career? Will you get married or stay single? Have kids or adopt a pet? Buy a house? Make a career change? It’s up to you! Earn points for choices that bring you Knowledge, Wealth and Happiness. Win rich, maximise your Knowledge or Happiness, or go for a healthy mix of all three and come out on top!HOW TO PLAY THE GAME OF LIFE 2:When it’s your turn, spin the spinner to travel along your life path.Depending on the space you land on, you’ll experience different life events and choices, such as buying a house, collecting your salary, or drawing an Action card! At crossroads, you’ll have to make big life decisions, so choose wisely!Your turn ends; it’s the next player’s chance to spin the spinner!FEATURESCUSTOMISE YOUR CHARACTER – Choose between the pink, blue or the purple peg. Select an outfit and make your peg your own. Browse a selection of cars, bikes and scooters and find a ride to suit your style. NEW WORLDS – Live life in enchanted worlds! Every world features thematic outfits, vehicles, jobs, properties and more! LOCAL LEADERBOARDS – Keep score with your family and friends and see who is the ultimate Game of Life 2 player in the house! IN-GAME REACTIONS – Exclusive to the Luna version, use reaction buttons to let everyone know how you’re feeling during the game!Live every life you’ve ever dreamed of in The Game of Life 2 – play today!",
-      "image": "https://m.media-amazon.com/images/I/B1ZqIrQF0pL._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-disney-pixar-wall-e",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Disney/Pixar WALL-E",
-      "slug": "disney-pixar-wall-e",
-      "storeUrl": "https://luna.amazon.com/detail/B093NC7GX3?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "WALL-E follows the story of a small, sentient robot whose sole purpose is to clean up Earth's voluminous garbage. In the year 2700, mankind has left behind millions of tiny trash collectors to make the planet habitable again. Yet only WALL-E remains functional, dutifully performing his task while collecting an odd assortment of souvenirs. His uneventful life takes on new meaning when he encounters a sleek, shiny robot named EVE, sent by humans to monitor the clean-up progress. Based on the 2008 computer animated film from Pixar Animation Studios, the video game version of WALL-E involves playing as the lonely robot as he navigates a trash-tainted world and begins an unlikely trek across the cosmos. Gameplay consists of using WALL-E's distinct abilities to create \"\"cubes\"\" used to build platforms or to create distractions.Terms of Use: http://disneytermsofuse.com/",
-      "image": "https://m.media-amazon.com/images/I/D1ZppklfgBS._SX1280_QL90_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-just-die-already",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Just Die Already",
-      "slug": "just-die-already",
-      "storeUrl": "https://luna.amazon.com/claims/just-die-already-epic/dp/amzn1.pg.item.1197607b-4bcd-4aba-a43d-0103afdf7d76?g=s&ingress=amzn&ref_=SM_JustDieAlready_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You are an old retired person in a near future where people aren’t having any children. There isn’t anyone to pay for pensions due to those ungrateful millennials who prefer playing video games instead of doing actual work. With no one to cover your living costs, you - just like all other old people in this world - have no other choice but to survive on your own.How will you survive in a world that wants you to Just Die Already?To make things worse, you’ve just been kicked out of your retirement home, and your only option now is to perform dangerous challenges and explore the world for retirement tickets to qualify for free retirement care.So with society wishing you dead, isn’t it finally time to live a little?BE OLD, BE BOLDYou get to be an old person. Angry, fragile, poor and hating the world: the dream you didn’t know you had until now. Finally, you have found something in common with your grandparents.BREAK A LEG... BREAK A NECKDiscover the joys of being old and made of glass, anything can break you and you can break your everything.DON’T TRY THIS AT (RETIREMENT) HOMEComplete dangerous challenges that you will never ever try at home and answer existential questions like: can you launch yourself from a catapult and land on someone? Or, can you survive losing your head, grabbing it and whacking someone with it?ONE MISSION: RETIRE!Earn rewards by completing dangerous challenges, your goal? To qualify for a proper retirement home. That makes perfect sense. Word of advice: try and stay in one piece so you can enjoy it in the end...SANDBOX MULTIPLAYERPlay alone, or with up to 4 players in online multiplayer. Complete challenges together, or just cause mayhem and rip your friends’ limbs off!",
-      "image": "https://m.media-amazon.com/images/I/B1q+r2ZLzfL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "It's 1890, and you play as botanist Arabella Greene, who is working to finish her botanical research book 'Forgotten Flora'.\nExplore a complete historical English manor and its grounds, researching how to grow rare plant specimens from seed. There are many rooms and gardens to discover, all set inside a beautiful countryside surrounding.The manor is filled with mysterious clues for you to discover, including books, posters, letters and fascinating Victorian contraptions.\nThe plants you grow are fantastical, but still inspired by real phenomena in nature, so some of them require you to think outside the box.Using what's available to you in the manor, you must create the ideal conditions for each plant.\nRoom by room, you learn more about the life and career of Arabella, and the challenges she faced as a woman navigating her scientific career.\nBotany Manor offers a relaxing and peaceful environment, feel free to stop and smell the roses.",
+      "image": "https://m.media-amazon.com/images/I/B1sgXx3AdnL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -751,15 +732,34 @@
       ]
     },
     {
-      "id": "prime-war-hospital",
+      "id": "prime-doom-doom-ii",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "War Hospital",
-      "slug": "war-hospital",
-      "storeUrl": "https://luna.amazon.com/claims/war-hospital-epic/dp/amzn1.pg.item.77edd2b0-e0d7-41b2-87f7-8ef5541701e4?g=s&ingress=amzn&ref_=SM_WarHospital_S01_FGWP_CRWN",
+      "title": "DOOM + DOOM II",
+      "slug": "doom-doom-ii",
+      "storeUrl": "https://luna.amazon.com/claims/doom-doom-ii-gog/dp/amzn1.pg.item.db1d5024-9037-4d32-9543-37a9577e7d86?g=s&ingress=amzn&ref_=SM_DOOMDOOMII_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "The year is 1918. You are major Henry Wells, a retired British combat medic, drafted back to take charge of a field hospital in the nightmare of World War I.Understaffed and undersupplied, the hospital is the last bastion of hope for countless soldiers on the Western Front.Your main aims are to keep up your team's morale, and support the war effort with the soldiers you have treated.To do so, you need to manage your hospital to take charge of the flood of injured soldiers brought in after every battle. Make sure to admit the patients in order of priority, before treating them, scheduling surgery or abandoning them to their fate...Resources are limited despite the ever-increasing needs... Learn to adapt to each new situation, taking sometimes morally tough decisions.Decide on improvements to make to your facilities, and use the latest technologies available to military medicine.A war-themed game that celebrates life, not death.Face the trials and challenges of one of the bloodiest wars in history.Manage your personnel, their missions and fatigue. Doctors, nurses, engineers, you make the recruitment decisions.You make the narrative choices, which have a real impact on how the game unfolds.Research options to introduce improvements, to better meet the changing requirementsGame developed with the support of the Imperial War Museum, for a more authentic immersion experience.",
-      "image": "https://m.media-amazon.com/images/I/A1650jnJurL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "Developed by id Software, and originally released in 1993, DOOM pioneered and popularized the first-person shooter, setting a standard for all FPS games. The critically acclaimed sequel, DOOM II, followed in 1994. Now the definitive, newly enhanced versions of DOOM + DOOM II are available as a combined product.Owners Receive:DOOMDOOM IITNT: EvilutionThe Plutonia ExperimentMaster Levels for DOOM IINo Rest for the LivingSigilSigil IILegacy of Rust (a new episode created in collaboration by id Software, Nightdive Studios and MachineGames)A new Deathmatch map pack featuring 25 maps Altogether, there are a total of 187 mission maps and 43 deathmatch maps in DOOM + DOOM II.New EnhancementsOnline, cross-platform deathmatch and co-op for up to 16 playersCommunity-published mod support with an in-game mod browserChoose between the original midi DOOM and DOOM II soundtracks or the modern IDKFA versions by Andrew Hulshult (including brand-new DOOM II recordings)Improved performance with multithreaded rendering supporting up to 4K resolutionNow on the KEX engineBOOM source compatibility makes it possible for hundreds of community-created mods from the past 25 years to be published in-gameAccessibility options, such as a modern font to improve legibility, high contrast mode, text-to-speech, speech-to-text multiplayer chat and moreExisting EnhancementsUpgraded visualsModern controller supportImproved mouse and keyboard controlsLocal split-screen deathmatch and co-op for up to 4 playersFeatured community mods, including REKKR, Revolution!, Syringe, Double Impact, Arrival, and more! Expect an ever-expanding list of single player mods to be added by the community modders.60 FPS and native 16:9 support – up to 1080p",
+      "image": "https://m.media-amazon.com/images/I/B1aYxFwhoNL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-drop-duchy",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Drop Duchy",
+      "slug": "drop-duchy",
+      "storeUrl": "https://luna.amazon.com/claims/drop-duchy-epic/dp/amzn1.pg.item.2cb13abe-d709-4d5c-8d65-35bdc91d3b4d?g=s&ingress=amzn&ref_=SM_DropDuchy_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Drop Duchy takes on the iconic geometric puzzle gameplay we all know and love with a fresh perspective: instead of simply clearing lines, you'll be thoughtfully building a realm using pieces of various shapes and types to overcome enemy challenges.A mix of deck-building, puzzle and rogue-lite, the game offers a new gameplay designed to hone your appetite as a block-stacking tactician. Optimization is key to collecting precious resources, protecting your castle, and building your army.\nDefeat is not the end, though: use the experience gained in previous runs to unlock even more content!",
+      "image": "https://m.media-amazon.com/images/I/B1WB8Gqb7VL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -767,25 +767,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-havendock",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Havendock",
-      "slug": "havendock",
-      "storeUrl": "https://luna.amazon.com/claims/havendock-aga/dp/amzn1.pg.item.ef222081-3e6c-4949-9e87-aaf2c27b6bc6?g=s&ingress=amzn&ref_=SM_Havendock_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Havendock is a relaxing colony simulation and resource management game where you build a thriving settlement in the middle of the ocean. Starting from a small wooden platform, you’ll gather resources, expand your base, and attract new settlers to join you. Manage their needs, craft new technologies, and transform your floating raft into a bustling ocean town.Designed as a single-player experience, Havendock focuses on creativity, strategy, and building a vibrant community-all while surrounded by the calming waves of the sea.Features:Design Your Ideal Floating HavenDesign your ideal floating haven start with a small platform and turn it into a floating oasis! Build unique structures, shape your deck however you like, and create the most charming over-water community that your settlers will adore.Grow Quirky Crops and Feed the CrewFrom vegetables to, well, burgers-who says you can’t farm on water? Plant whatever floats your boat, keep everyone fed, and embrace the unexpected surprises that sprout from your quirky farm.Balance Food, Water, and HappinessJuggling food, water, and the occasional strange request, it’s up to you to keep your castaways content. Balance your resources smartly and keep your settlers smiling, one meal and water pump at a time!Tinker with Tech and GadgetsBuild, tinker, and experiment! Create advanced machines and gadgets that bring your floating world to life. No idea is too wild-so go ahead, craft that sea-to-table burger-making contraption!Unlock Hidden Secrets Across the SeaAdventure is just a deck away! Explore distant islands, meet oddball characters, and uncover treasures (or just plain weird stuff). Your curiosity will always be rewarded!",
-      "image": "https://m.media-amazon.com/images/I/B1NiLzIru-L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
       ]
     },
     {

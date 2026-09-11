@@ -52,3 +52,8 @@
 {"fetchedAt":"2026-09-08T18:00:45.480Z","stores":{"epic":{"count":5},"gog":{"count":1},"psplus":{"count":4},"prime":{"count":30},"steam":{"count":4}}}
 {"fetchedAt":"2026-09-08T22:40:28.433Z","stores":{"epic":{"count":5},"gog":{"count":1},"psplus":{"count":4},"prime":{"count":30},"steam":{"count":2}}}
 {"fetchedAt":"2026-09-09T12:48:41.327Z","stores":{"epic":{"count":6},"gog":{"count":1},"psplus":{"count":4},"prime":{"count":30},"steam":{"count":1}}}
+{"fetchedAt":"2026-09-09T21:14:22.715Z","stores":{"epic":{"count":6},"gog":{"count":1},"psplus":{"count":4},"prime":{"count":29},"steam":{"count":1}}}
+{"fetchedAt":"2026-09-09T22:34:12.783Z","stores":{"epic":{"count":6},"gog":{"count":1},"psplus":{"count":4},"prime":{"count":29},"steam":{"count":1}}}
+{"fetchedAt":"2026-09-10T12:46:19.876Z","stores":{"epic":{"count":6},"gog":{"count":1},"psplus":{"count":4},"prime":{"count":29},"steam":{"count":1}}}
+{"fetchedAt":"2026-09-10T17:45:10.050Z","stores":{"epic":{"count":6},"gog":{"count":0},"psplus":{"count":4},"prime":{"count":30},"steam":{"count":1}}}
+{"fetchedAt":"2026-09-10T22:34:09.726Z","stores":{"epic":{"count":6},"gog":{"count":0},"psplus":{"count":4},"prime":{"count":30},"steam":{"count":1}}}
