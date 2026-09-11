@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-11T12:40:32.182Z",
-  "totalFree": 37,
+  "fetchedAt": "2026-09-11T17:49:35.373Z",
+  "totalFree": 38,
   "totalUpcoming": 4,
   "games": [
     {
@@ -198,25 +198,6 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
-    },
-    {
-      "id": "prime-just-die-already",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Just Die Already",
-      "slug": "just-die-already",
-      "storeUrl": "https://luna.amazon.com/claims/just-die-already-epic/dp/amzn1.pg.item.1197607b-4bcd-4aba-a43d-0103afdf7d76?g=s&ingress=amzn&ref_=SM_JustDieAlready_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "You are an old retired person in a near future where people aren’t having any children. There isn’t anyone to pay for pensions due to those ungrateful millennials who prefer playing video games instead of doing actual work. With no one to cover your living costs, you - just like all other old people in this world - have no other choice but to survive on your own.How will you survive in a world that wants you to Just Die Already?To make things worse, you’ve just been kicked out of your retirement home, and your only option now is to perform dangerous challenges and explore the world for retirement tickets to qualify for free retirement care.So with society wishing you dead, isn’t it finally time to live a little?BE OLD, BE BOLDYou get to be an old person. Angry, fragile, poor and hating the world: the dream you didn’t know you had until now. Finally, you have found something in common with your grandparents.BREAK A LEG... BREAK A NECKDiscover the joys of being old and made of glass, anything can break you and you can break your everything.DON’T TRY THIS AT (RETIREMENT) HOMEComplete dangerous challenges that you will never ever try at home and answer existential questions like: can you launch yourself from a catapult and land on someone? Or, can you survive losing your head, grabbing it and whacking someone with it?ONE MISSION: RETIRE!Earn rewards by completing dangerous challenges, your goal? To qualify for a proper retirement home. That makes perfect sense. Word of advice: try and stay in one piece so you can enjoy it in the end...SANDBOX MULTIPLAYERPlay alone, or with up to 4 players in online multiplayer. Complete challenges together, or just cause mayhem and rip your friends’ limbs off!",
-      "image": "https://m.media-amazon.com/images/I/B1q+r2ZLzfL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
     },
     {
       "id": "prime-war-hospital",
@@ -425,6 +406,25 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-space-grunts-chrono-shard",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Space Grunts: Chrono Shard",
+      "slug": "space-grunts-chrono-shard",
+      "storeUrl": "https://luna.amazon.com/claims/space-grunts-chrono-shard-epic/dp/amzn1.pg.item.dbfe54c6-6298-46ec-808d-49d3915b9734?g=s&ingress=amzn&ref_=SM_SpaceGruntsChronoShard_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Master time. Stop the Ooze. Outsmart a galactic infection in this high-speed, turn-based roguelike. Use your Chrono Shard to loop the timeline, leaving gear and upgrades for your future self. Craft your arsenal, evolve your skills into elite sub-classes, and turn every death into an advantage.Space Grunts: Chrono Shard is a high-octane blend of tactical depth and arcade energy. With the power of the Chrono Shard, you don’t just survive the void, you master it.The Chrono LoopUse your Shard to rewind the clock. Any items you’ve placed or changes you’ve made to the environment stay exactly where they are for your next attempt.Rapid-Fire StrategyFast-paced, turn-based combat rewards quick thinking and even quicker trigger fingers.Engaging Crafting SystemFind crafting stations to disassemble loot, scavenge resources, and upgrade your weapons into unstoppable tools of destruction.Evolutionary Skill TreesInvest in three core skill types to unlock specialized sub-classes. Whether you become a Sniper, Assassin, Hitman, Hardened, Elite, Engineer, Gadget, Gearhead, or Veteran, your build defines your edge.Deep Space HazardsDeploy into procedurally generated space stations and moon bases. Every mission is a new layout of mysterious sectors and deadly surprises.Secure the GatesA sentient Ooze is devouring the galaxy, jumping through a hijacked network of HyperGates. As part of the Space Grunts’ elite tactical unit, you are dropped into “time bubbles” to shut down the gates and contain the spread. Loop the timeline, evolve your grunt, and stop the Ooze - at any cost.Key features:Persistent Time-Loops: Carry over items and environmental changes between runs.Elite Sub-Classes: Level up your skills to unlock unique benefits.Advanced Crafting: Create, upgrade, and scrap gear at specialized stations.Signature Fast-Paced Gameplay: The classic Space Grunts arcade feel in a turn-based format.",
+      "image": "https://m.media-amazon.com/images/I/B1gmGe+iDGL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
       ]
     },
     {
@@ -760,6 +760,25 @@
       "seller": "Prime Gaming",
       "description": "Drop Duchy takes on the iconic geometric puzzle gameplay we all know and love with a fresh perspective: instead of simply clearing lines, you'll be thoughtfully building a realm using pieces of various shapes and types to overcome enemy challenges.A mix of deck-building, puzzle and rogue-lite, the game offers a new gameplay designed to hone your appetite as a block-stacking tactician. Optimization is key to collecting precious resources, protecting your castle, and building your army.\nDefeat is not the end, though: use the experience gained in previous runs to unlock even more content!",
       "image": "https://m.media-amazon.com/images/I/B1WB8Gqb7VL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-just-die-already",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Just Die Already",
+      "slug": "just-die-already",
+      "storeUrl": "https://luna.amazon.com/claims/just-die-already-epic/dp/amzn1.pg.item.1197607b-4bcd-4aba-a43d-0103afdf7d76?g=s&ingress=amzn&ref_=SM_JustDieAlready_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "You are an old retired person in a near future where people aren’t having any children. There isn’t anyone to pay for pensions due to those ungrateful millennials who prefer playing video games instead of doing actual work. With no one to cover your living costs, you - just like all other old people in this world - have no other choice but to survive on your own.How will you survive in a world that wants you to Just Die Already?To make things worse, you’ve just been kicked out of your retirement home, and your only option now is to perform dangerous challenges and explore the world for retirement tickets to qualify for free retirement care.So with society wishing you dead, isn’t it finally time to live a little?BE OLD, BE BOLDYou get to be an old person. Angry, fragile, poor and hating the world: the dream you didn’t know you had until now. Finally, you have found something in common with your grandparents.BREAK A LEG... BREAK A NECKDiscover the joys of being old and made of glass, anything can break you and you can break your everything.DON’T TRY THIS AT (RETIREMENT) HOMEComplete dangerous challenges that you will never ever try at home and answer existential questions like: can you launch yourself from a catapult and land on someone? Or, can you survive losing your head, grabbing it and whacking someone with it?ONE MISSION: RETIRE!Earn rewards by completing dangerous challenges, your goal? To qualify for a proper retirement home. That makes perfect sense. Word of advice: try and stay in one piece so you can enjoy it in the end...SANDBOX MULTIPLAYERPlay alone, or with up to 4 players in online multiplayer. Complete challenges together, or just cause mayhem and rip your friends’ limbs off!",
+      "image": "https://m.media-amazon.com/images/I/B1q+r2ZLzfL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
