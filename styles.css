@@ -1481,59 +1481,57 @@ html {
 /* Same hues as dark mode, darkened so they read against the now-light
    chip background instead of the near-black one they were designed for. */
 
-:root[data-theme="light"] .chip[data-store="epic"] {
+:root[data-theme="light"] .chip[data-store="epic"]:not(.active) {
     color: #27272a;
     border-color: rgba(39, 39, 42, 0.25);
 }
 
-:root[data-theme="light"] .chip[data-store="all"] {
+:root[data-theme="light"] .chip[data-store="all"]:not(.active) {
     color: #15803d;
     border-color: rgba(21, 128, 61, 0.3);
 }
 
-:root[data-theme="light"] .chip[data-store="gog"] {
+:root[data-theme="light"] .chip[data-store="gog"]:not(.active) {
     color: #6d28d9;
     border-color: rgba(109, 40, 217, 0.32);
 }
 
-:root[data-theme="light"] .chip[data-store="psplus"] {
+:root[data-theme="light"] .chip[data-store="psplus"]:not(.active) {
     color: #1d4ed8;
     border-color: rgba(29, 78, 216, 0.3);
 }
 
-:root[data-theme="light"] .chip[data-store="prime"] {
+:root[data-theme="light"] .chip[data-store="prime"]:not(.active) {
     color: #b45309;
     border-color: rgba(180, 83, 9, 0.3);
 }
 
-:root[data-theme="light"] .chip[data-store="steam"] {
+:root[data-theme="light"] .chip[data-store="steam"]:not(.active) {
     color: #0e7490;
     border-color: rgba(14, 116, 144, 0.3);
 }
 
-/* ─── "Redeemed via" chips (Prime Gaming sub-filter, inactive state) ──── */
-
-:root[data-theme="light"] .chip[data-platform="Epic Games"] {
+:root[data-theme="light"] .chip[data-platform="Epic Games"]:not(.active) {
     color: #27272a;
     border-color: rgba(39, 39, 42, 0.25);
 }
 
-:root[data-theme="light"] .chip[data-platform="GOG"] {
+:root[data-theme="light"] .chip[data-platform="GOG"]:not(.active) {
     color: #6d28d9;
     border-color: rgba(109, 40, 217, 0.32);
 }
 
-:root[data-theme="light"] .chip[data-platform="Legacy Games"] {
+:root[data-theme="light"] .chip[data-platform="Legacy Games"]:not(.active) {
     color: #166534;
     border-color: rgba(22, 101, 52, 0.3);
 }
 
-:root[data-theme="light"] .chip[data-platform="Amazon Games App"] {
+:root[data-theme="light"] .chip[data-platform="Amazon Games App"]:not(.active) {
     color: #c2410c;
     border-color: rgba(194, 65, 12, 0.3);
 }
 
-:root[data-theme="light"] .chip[data-platform="Amazon Luna"] {
+:root[data-theme="light"] .chip[data-platform="Amazon Luna"]:not(.active) {
     color: #0e7490;
     border-color: rgba(14, 116, 144, 0.3);
 }
