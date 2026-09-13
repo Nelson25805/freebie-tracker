@@ -1374,7 +1374,11 @@ html {
     color: #7a8296;
 }
 
-:root[data-theme="light"] .chip {
+/* :root[data-theme="light"] .chip {
+    background: rgba(255, 255, 255, 0.82);
+} */
+
+:root[data-theme="light"] .chip:not(.active) {
     background: rgba(255, 255, 255, 0.82);
 }
 
