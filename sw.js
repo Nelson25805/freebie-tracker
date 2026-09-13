@@ -13,7 +13,7 @@
  * it for data/games.json changes — that's handled by the network-first
  * strategy below regardless of version.
  */
-const VERSION = "v1";
+const VERSION = "v1.1";
 const STATIC_CACHE = `fgt-static-${VERSION}`;
 const DATA_CACHE = `fgt-data-${VERSION}`;
 
