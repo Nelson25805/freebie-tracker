@@ -122,9 +122,6 @@ async function networkFirstData(request) {
   }
 }
 
-// Page navigations: try the network so visitors get the latest HTML, fall
-// back to a cached copy of that exact page, then to the generic offline
-// page if it's never been cached at all.
 async function networkFirstNavigation(request) {
   try {
     const response = await fetch(request);
