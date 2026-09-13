@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-11T22:34:26.352Z",
-  "totalFree": 38,
+  "fetchedAt": "2026-09-12T22:16:41.504Z",
+  "totalFree": 39,
   "totalUpcoming": 4,
   "games": [
     {
@@ -19,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-11-01T06:00:00.000Z",
-      "offerEnd": "2026-11-10T06:59:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -786,6 +786,25 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
+      ]
+    },
+    {
+      "id": "steam-3769",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "SWAPMEAT Steam Key Giveaway",
+      "slug": "3769",
+      "storeUrl": "https://www.gamerpower.com/open/swapmeat-steam-key-giveaway",
+      "seller": "Steam",
+      "description": "Claim free Steam keys for SWAPMEAT! Please note 25 ARP (Arena Reward Points) to claim a key. Fortunately, you can earn ARP for free every day simply by logging into the website.",
+      "image": "https://www.gamerpower.com/offers/1b/6aa04047b0497.jpg",
+      "originalPrice": 2499,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-09-08T13:05:11.000Z",
+      "offerEnd": "2026-09-11T19:02:45.000Z",
+      "platforms": [
+        "PC"
       ]
     },
     {
