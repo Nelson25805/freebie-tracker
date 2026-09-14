@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T22:27:41.558Z",
+  "fetchedAt": "2026-09-14T14:49:39.372Z",
   "totalFree": 39,
   "totalUpcoming": 4,
   "games": [
@@ -789,20 +789,20 @@
       ]
     },
     {
-      "id": "steam-3769",
+      "id": "steam-3776",
       "store": "steam",
       "storeName": "Steam",
-      "title": "SWAPMEAT Steam Key Giveaway",
-      "slug": "3769",
-      "storeUrl": "https://www.gamerpower.com/open/swapmeat-steam-key-giveaway",
+      "title": "Crystal Crisis (Steam) Giveaway",
+      "slug": "3776",
+      "storeUrl": "https://www.gamerpower.com/open/crystal-crisis-steam-giveaway",
       "seller": "Steam",
-      "description": "Claim free Steam keys for SWAPMEAT! Please note 25 ARP (Arena Reward Points) to claim a key. Fortunately, you can earn ARP for free every day simply by logging into the website.",
-      "image": "https://www.gamerpower.com/offers/1b/6aa04047b0497.jpg",
-      "originalPrice": 2499,
+      "description": "Score Crystal Crisis for free via Steam! Crystal Crisis is a fun puzzle game with an all-star cast of heroes! Don´t miss this amazing game!",
+      "image": "https://www.gamerpower.com/offers/1b/6aa7d795dadd3.jpg",
+      "originalPrice": 1999,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-09-08T13:05:11.000Z",
-      "offerEnd": "2026-09-11T19:02:45.000Z",
+      "offerStart": "2026-09-14T07:16:37.000Z",
+      "offerEnd": "2026-09-22T23:59:00.000Z",
       "platforms": [
         "PC"
       ]
