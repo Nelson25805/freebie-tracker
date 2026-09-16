@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-16T13:17:43.399Z",
-  "totalFree": 39,
-  "totalUpcoming": 4,
+  "fetchedAt": "2026-09-16T18:16:24.952Z",
+  "totalFree": 36,
+  "totalUpcoming": 5,
   "games": [
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
@@ -19,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -40,6 +40,25 @@
       "status": "upcoming",
       "offerStart": "2026-09-03T15:00:00.000Z",
       "offerEnd": "2026-09-17T15:00:00.000Z"
+    },
+    {
+      "id": "6d99eae44d724baf84d6261a7a0f05d2",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Mechabellum",
+      "slug": "mechabellum-88a843",
+      "storeUrl": "https://store.epicgames.com/p/mechabellum-88a843",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Command massive armies in this epic mech auto-battler. Draft your troops, customize your units, master your formations, and crush enemies in spectacular 3D battles. All strategy, no clickfest. Outsmart opponents in 1v1, 2v2, free-for-all, or Survival Mode.",
+      "image": "https://cdn1.epicgames.com/spt-assets/131adc2288294d74aaff6a2f02b51d59/mechabellum-95319.jpg",
+      "originalPrice": 1499,
+      "discountPrice": 1499,
+      "status": "upcoming",
+      "offerStart": "2026-09-24T15:00:00.000Z",
+      "offerEnd": "2026-10-01T15:00:00.000Z"
     },
     {
       "id": "c76046dddcdb43619c33ce0395941033",
@@ -292,63 +311,6 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-pyramids-and-aliens-escape-room",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Pyramids and Aliens: Escape Room",
-      "slug": "pyramids-and-aliens-escape-room",
-      "storeUrl": "https://luna.amazon.com/claims/pyramids-and-aliens-escape-room-gog/dp/amzn1.pg.item.ea4a762d-4616-4f5d-af80-61c76ea1abd3?g=s&ingress=amzn&ref_=SM_PyramidsandAliensEscapeRoom_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Your former mentor has disappeared inside an ancient Egyptian pyramid. Will you be able to find him?Pyramids and Aliens is an escape room game that will test your skills as an archaeologist. Solve puzzles, find clues, and reveal the secrets of the pyramid. Spoiler: it was not built by humans!Will you be able to find your mentor and come back alive?FeaturesThe game's puzzles have been designed by expert escape room game creators.Explore both an ancient Egyptian pyramid and a strange alien temple!Find out what really happened with your mentor. It seems that he was able to reach an alien world somehow...",
-      "image": "https://m.media-amazon.com/images/I/A1K2npqoDrL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-airship-kingdoms-adrift",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Airship: Kingdoms Adrift",
-      "slug": "airship-kingdoms-adrift",
-      "storeUrl": "https://luna.amazon.com/claims/airship-kingdoms-adrift-epic/dp/amzn1.pg.item.aa62d067-6b98-4929-bc49-3ccdd11d888a?g=s&ingress=amzn&ref_=SM_AirshipKingdomsAdrift_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Airship: Kingdoms Adrift  is an airship trading and combat simulator, set in the wake of a Great Sky War that ripped through the steampunk world of Spheara. An uneasy cease-fire holds between the Aecerlian Kingdom, the New Viridian Republic, and the Teutonic Confederation. As they lick their wounds, their suddenly jobless soldiers and sky-farers look for new opportunities among the desolation.Enter the Suthseg Archipelago. A far-flung frontier ruled by an aging king, it was spared from devastation of war and is a land full of riches and opportunity. It is here that fortunes will be made, loyalties tested, and sky faring captains will get the rare chance to carve out a future of their own.You are one of these captains, commissioned to establish a trading company in the Archipelago, and soon pulled into a game of grand politic... and grave danger.Airship Commander's DutiesExperience a story of politics and intrigue, as Suthseg becomes the flashpoint for another Sky War.Customize, upgrade, and pilot 25 various airships, from graceful sailing vessels to ironclad dreadnoughts.Assemble a crew of officers among 25 distinct personalities, each with their own abilities and personal stories to tell.Explore and trade across a vast archipelago with 70 locations and over 300 types of trade goodsSet up camps, mines, and factories, to create a mighty industrial empire producing goods and equipment and dominate the economy.Become the greatest of the sky-faring captains, controlling an entire fleet of airships and deciding the fate of the Kingdom.",
-      "image": "https://m.media-amazon.com/images/I/A1JlVg31YrL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-steelrising",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Steelrising",
-      "slug": "steelrising",
-      "storeUrl": "https://luna.amazon.com/claims/steelrising-epic/dp/amzn1.pg.item.2e34e997-a137-48b3-9b5c-ad2eb51c45f7?g=s&ingress=amzn&ref_=SM_Steelrising_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The city burns and bleeds as it suffers the madness of King Louis XVI and his violent legions of automatons. Aegis, a mechanical masterpiece created by the engineer Vaucanson to be the queen's bodyguard, must save the French Revolution in this challenging action-RPG.CHALLENGING COMBAT BETWEEN AUTOMATONSUp against the king's mechanical soldiers, deadly accuracy will be needed. String together dodges, parries, jumps and devastating attacks to fight your way through Paris. Every fight will test your nerve and requires excellent discipline, while the huge relentless machine bosses demand patience and skill.AEGIS: A CHARACTER WITH EXTRAORDINARY SKILLSDefine your own style and upgrade your abilities as you progress through the game. You can play as a ruthless warrior, a hard-hitting bodyguard, a deadly dancer or a virtuoso of the elemental arts. Take advantage of a wide variety of weapons and skills to approach each fight in your own unique way.REVOLUTIONARY PARIS IS YOUR PLAYGROUNDUsing carriages, grapples, secret passages, a detailed map, and other methods and tools you find along the way, explore a city experiencing its darkest days. Your grappling hook adds a new dimension to exploration and Paris's verticality. Combined with your dash ability, it will provide access to all the city's secrets across multiple levels you can explore over and over again.CHANGE THE COURSE OF HISTORYYou are one of the main characters of an alternative history where Paris is being choked by a tyrant king. Allies and enemies with unclear motives will cross your path, such as Marie-Antoinette, Lafayette and Robespierre. It's up to you to cut a path through all the plotting and put an end to one man's madness so that the French Revolution succeeds.",
-      "image": "https://m.media-amazon.com/images/I/B1t5+DfJb8L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
       ]
     },
     {
