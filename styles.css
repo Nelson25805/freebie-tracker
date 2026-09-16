@@ -412,7 +412,7 @@ input {
     color: white;
 }
 
-/* ─── Store-themed chip colors ────────────────────────────────────────────── */
+/* ─── Store themed chip colors ────────────────────────────────────────────── */
 
 .chip[data-store="epic"] {
     color: #e8e8ea;
