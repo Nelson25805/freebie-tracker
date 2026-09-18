@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-18T12:52:06.902Z",
-  "totalFree": 40,
+  "fetchedAt": "2026-09-18T17:52:38.033Z",
+  "totalFree": 41,
   "totalUpcoming": 4,
   "games": [
     {
@@ -19,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-09-24T15:00:00.000Z",
+      "offerEnd": "2026-10-01T15:00:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
@@ -786,6 +786,25 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
+      ]
+    },
+    {
+      "id": "steam-3784",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Deadshot (Steam) Giveaway",
+      "slug": "3784",
+      "storeUrl": "https://www.gamerpower.com/open/deadshot-steam-giveaway",
+      "seller": "Steam",
+      "description": "Score Deadshot for free via Steam! Deadshot is a 3d retro styled first-person shooter game inspired from classics like Doom and Quake.",
+      "image": "https://www.gamerpower.com/offers/1b/6aad6f3874eee.jpg",
+      "originalPrice": 499,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-09-18T13:04:56.000Z",
+      "offerEnd": "2026-09-23T23:59:00.000Z",
+      "platforms": [
+        "PC"
       ]
     },
     {
