@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-17T23:02:39.107Z",
+  "fetchedAt": "2026-09-18T12:52:06.902Z",
   "totalFree": 40,
   "totalUpcoming": 4,
   "games": [
@@ -17,10 +17,10 @@
       "description": "An all new dice-deck-building roguelike, Astrea, has you chart a path through the ruins of a lost civilization as one of six brave Oracles. Using an ever-changing deck of dice and enchanted Sentinels, Purify waves of Corrupted foes and a decayed goddess to save the Star System.",
       "image": "https://cdn1.epicgames.com/spt-assets/4515173972ae4444a2582bc690c150bd/astrea-six-sided-oracles-offer-bvy0n.png",
       "originalPrice": 2499,
-      "discountPrice": 1249,
+      "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-09-03T00:00:00.000Z",
-      "offerEnd": "2026-09-17T23:59:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
