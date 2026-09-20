@@ -1249,7 +1249,6 @@ h1 {
     font-size: 0.92rem;
 }
 
-/* Smooth-scroll for the newsletter teaser jump link */
 html {
     scroll-behavior: smooth;
 }
