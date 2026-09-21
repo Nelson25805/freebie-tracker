@@ -1272,7 +1272,7 @@ html {
     }
 }
 
-/* Horizontal, condensed stat row instead of a tall stacked sidebar */
+/* Horizontal, condensed stat row */
 .hero-side {
     display: flex;
     flex-direction: row;
