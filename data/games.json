@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-20T22:36:11.055Z",
+  "fetchedAt": "2026-09-21T15:02:41.578Z",
   "totalFree": 41,
   "totalUpcoming": 4,
   "games": [
@@ -19,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-09-24T15:00:00.000Z",
+      "offerEnd": "2026-10-01T15:00:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
@@ -57,8 +57,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "6d99eae44d724baf84d6261a7a0f05d2",
