@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-22T23:07:32.679Z",
-  "totalFree": 41,
+  "fetchedAt": "2026-09-23T13:30:41.721Z",
+  "totalFree": 40,
   "totalUpcoming": 4,
   "games": [
     {
@@ -19,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-09-24T15:00:00.000Z",
-      "offerEnd": "2026-10-01T15:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
@@ -786,25 +786,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "steam-3786",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Truck Town: Kids and Toddlers Driving Game (Steam) Key Giveaway",
-      "slug": "3786",
-      "storeUrl": "https://www.gamerpower.com/open/truck-town-kids-and-toddlers-driving-game-steam-key-giveaway",
-      "seller": "Steam",
-      "description": "Grab free Steam keys for Truck Town: Kids and Toddlers Driving Game via Alienware Arena. Please note that this Steam Key giveaway requires 10 ARP (Arena Reward Points) to unlock. Fortunately, you can earn ARP for free every day simply by logging into the website.",
-      "image": "https://www.gamerpower.com/offers/1b/6ab2babf233e6.jpg",
-      "originalPrice": 1499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-22T13:28:31.000Z",
-      "offerEnd": null,
-      "platforms": [
-        "PC"
       ]
     },
     {
