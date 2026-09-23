@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-23T13:30:41.721Z",
-  "totalFree": 40,
+  "fetchedAt": "2026-09-23T18:33:46.505Z",
+  "totalFree": 34,
   "totalUpcoming": 4,
   "games": [
     {
@@ -19,8 +19,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-09-24T15:00:00.000Z",
+      "offerEnd": "2026-10-01T15:00:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
@@ -314,44 +314,6 @@
       ]
     },
     {
-      "id": "prime-royal-romances-forbidden-magic",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Royal Romances: Forbidden Magic",
-      "slug": "royal-romances-forbidden-magic",
-      "storeUrl": "https://luna.amazon.com/claims/royal-romances-forbidden-magic-legacy/dp/amzn1.pg.item.727672b5-8661-4f8f-b4ed-a6c40a1248ee?g=s&ingress=amzn&ref_=SM_RoyalRomancesForbiddenMagic_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "What can a human do in a desperate situation or for the chance for unfathomable power and love? The murky air becomes heavier and harder to breathe, monsters roam the forest, and dark magic taint smothers everything within its reach. Ida and Illeon are about to strike, fulfilling their devious plan.Face battles with your people, find love and endure loss as you get ready to defend the lands from mortal threat! Can a simple bard defeat a monstrous werewolf? Can a villain change its nature? Answers to these questions in this pulse-pounded new Hidden-Object Puzzle Adventure!",
-      "image": "https://m.media-amazon.com/images/I/B1Brs6jaz8L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Legacy Games"
-      ]
-    },
-    {
-      "id": "prime-spray-paint-simulator",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Spray Paint Simulator",
-      "slug": "spray-paint-simulator",
-      "storeUrl": "https://luna.amazon.com/claims/spray-paint-simulator-aga/dp/amzn1.pg.item.cc221e3b-25ab-4e12-b3bd-8eb10ea25824?g=s&ingress=amzn&ref_=SM_SprayPaintSimulator_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The town of Splatterville is in dire need of a makeover, and they need you to help them! Spray Paint Simulator is a relaxing and totally satisfying painting simulator that invites you to start your own painting business, starting from the ground up!Embark on a whimsical adventure in Career Mode as you meet with an eclectic group of clients, each in dire need of your painting expertise. Take on each job right from the start by prepping your space to ensure you deliver the best results, selecting the right colors for the task, and unleashing your creativity as you paint to perfection and keep your customers happy!Upgrade your tools, vehicles, and equipment, and take advantage of an assortment of ladders and scaffolding to help you get to those hard-to-reach spots. Fill the world with rainbow hues, painting everything from rooms and homes, to cars, to bridges, and even giant robots! Unlock Free Spray mode to make the entire town your canvas and unlock the unlimited potential of your creative freedom!",
-      "image": "https://m.media-amazon.com/images/I/B1CbTMtHNjL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
       "id": "prime-weakless",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -387,44 +349,6 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
-    },
-    {
-      "id": "prime-in-sound-mind",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "In Sound Mind",
-      "slug": "in-sound-mind",
-      "storeUrl": "https://luna.amazon.com/claims/in-sound-mind-aga/dp/amzn1.pg.item.1a5c5cac-5445-48ba-89f6-91c4e0068399?g=s&ingress=amzn&ref_=SM_InSoundMind_S02_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "From the creators of the cult classic Nightmare House 2 comes In Sound Mind, an imaginative first-person psychological horror with frenetic puzzles and unique boss fights. Traverse a series of unsettling memories as you journey within the inner workings of the one place you can’t seem to escape - your own mind.",
-      "image": "https://m.media-amazon.com/images/I/C1iLPAEP64L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-space-grunts-chrono-shard",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Space Grunts: Chrono Shard",
-      "slug": "space-grunts-chrono-shard",
-      "storeUrl": "https://luna.amazon.com/claims/space-grunts-chrono-shard-epic/dp/amzn1.pg.item.dbfe54c6-6298-46ec-808d-49d3915b9734?g=s&ingress=amzn&ref_=SM_SpaceGruntsChronoShard_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Master time. Stop the Ooze. Outsmart a galactic infection in this high-speed, turn-based roguelike. Use your Chrono Shard to loop the timeline, leaving gear and upgrades for your future self. Craft your arsenal, evolve your skills into elite sub-classes, and turn every death into an advantage.Space Grunts: Chrono Shard is a high-octane blend of tactical depth and arcade energy. With the power of the Chrono Shard, you don’t just survive the void, you master it.The Chrono LoopUse your Shard to rewind the clock. Any items you’ve placed or changes you’ve made to the environment stay exactly where they are for your next attempt.Rapid-Fire StrategyFast-paced, turn-based combat rewards quick thinking and even quicker trigger fingers.Engaging Crafting SystemFind crafting stations to disassemble loot, scavenge resources, and upgrade your weapons into unstoppable tools of destruction.Evolutionary Skill TreesInvest in three core skill types to unlock specialized sub-classes. Whether you become a Sniper, Assassin, Hitman, Hardened, Elite, Engineer, Gadget, Gearhead, or Veteran, your build defines your edge.Deep Space HazardsDeploy into procedurally generated space stations and moon bases. Every mission is a new layout of mysterious sectors and deadly surprises.Secure the GatesA sentient Ooze is devouring the galaxy, jumping through a hijacked network of HyperGates. As part of the Space Grunts’ elite tactical unit, you are dropped into “time bubbles” to shut down the gates and contain the spread. Loop the timeline, evolve your grunt, and stop the Ooze - at any cost.Key features:Persistent Time-Loops: Carry over items and environmental changes between runs.Elite Sub-Classes: Level up your skills to unlock unique benefits.Advanced Crafting: Create, upgrade, and scrap gear at specialized stations.Signature Fast-Paced Gameplay: The classic Space Grunts arcade feel in a turn-based format.",
-      "image": "https://m.media-amazon.com/images/I/B1gmGe+iDGL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
       ]
     },
     {
@@ -786,44 +710,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "steam-3784",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Deadshot (Steam) Giveaway",
-      "slug": "3784",
-      "storeUrl": "https://www.gamerpower.com/open/deadshot-steam-giveaway",
-      "seller": "Steam",
-      "description": "Score Deadshot for free via Steam! Deadshot is a 3d retro styled first-person shooter game inspired from classics like Doom and Quake.",
-      "image": "https://www.gamerpower.com/offers/1b/bbb.jpg",
-      "originalPrice": 499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-18T13:04:56.000Z",
-      "offerEnd": "2026-09-23T23:59:00.000Z",
-      "platforms": [
-        "PC"
-      ]
-    },
-    {
-      "id": "steam-3779",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Space Menace (Steam) Giveaway",
-      "slug": "3779",
-      "storeUrl": "https://www.gamerpower.com/open/space-menace-steam-giveaway",
-      "seller": "Steam",
-      "description": "New Steam giveaway to improve your day! Claim Space Menace for FREE via Steam! Space Menace is a 2d Sci-Fi space RTS game with multiple paths to progress. Check it out!",
-      "image": "https://www.gamerpower.com/offers/1b/6aaad50c2b7d4.jpg",
-      "originalPrice": 699,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-16T13:42:36.000Z",
-      "offerEnd": "2026-09-23T23:59:00.000Z",
-      "platforms": [
-        "PC"
       ]
     },
     {
