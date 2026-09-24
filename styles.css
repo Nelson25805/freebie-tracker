@@ -1327,9 +1327,7 @@ html {
 }
 
 
-/* ═══════════════════════════════════════════════════════════════════════
-   Light/dark theme toggle
-   ═══════════════════════════════════════════════════════════════════════ */
+/* Light/dark theme toggle */
 
 /* ─── Light theme palette ─────────────────────────────────────────────── */
 /* Dark stays the default (the :root block already at the top of this
