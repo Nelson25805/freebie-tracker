@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-24T23:24:06.326Z",
+  "fetchedAt": "2026-09-25T13:26:50.617Z",
   "totalFree": 37,
   "totalUpcoming": 4,
   "games": [
@@ -76,8 +76,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "6d99eae44d724baf84d6261a7a0f05d2",
@@ -409,6 +409,101 @@
       ]
     },
     {
+      "id": "prime-star-wars-outlaws",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Star Wars Outlaws",
+      "slug": "star-wars-outlaws",
+      "storeUrl": "https://luna.amazon.com/detail/B0DDMXR2WZ?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Experience the first-ever open world Star Wars™ action-adventure game and explore distinct locations across the galaxy, both iconic and new. Risk it all as scoundrel Kay Vess, seeking freedom and the means to start a new life. Fight, steal, and outwit your way through the galaxy’s crime syndicates as you join the galaxy’s most wanted.If you’re willing to take the risk, the galaxy is full of opportunity.DISCOVER A GALAXY OF OPPORTUNITYExplore distinct locations with bustling cities and cantinas. Race across sprawling outdoor landscapes on your speeder. Each location brings new adventures, unique challenges, and enticing rewards if you’re willing to take the risk.EXPERIENCE AN ORIGINAL SCOUNDREL STORYLive the high-stakes lifestyle of an outlaw. Turn any situation to your advantage with Nix by your side: fight with your blaster, overcome enemies with stealth and gadgets, or find the right moments to distract enemies and gain the upper hand.EMBARK ON HIGH-STAKES MISSIONSTake on high-risk, high-reward missions from the galaxy’s crime syndicates. Steal valuable goods, infiltrate secret locations, and outwit enemies as one of the galaxy’s most wanted. Every choice you make influences your ever-changing reputation.JUMP INTO THE PILOT SEATPilot your ship, the Trailblazer, as you engage in thrilling dogfights with the Empire and other foes. Find the right opportunities to chase, evade, and attack to get the upper hand.Offer, content, and dates subject to change.",
+      "image": "https://m.media-amazon.com/images/I/D1zjA8h4SXL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-avatar-frontiers-of-pandora",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Avatar: Frontiers of Pandora",
+      "slug": "avatar-frontiers-of-pandora",
+      "storeUrl": "https://luna.amazon.com/detail/B0CPB9QQBN?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Avatar: Frontiers of Pandora™ is a third and first-person action-adventure game set in the Western Frontier. Abducted by the RDA, you, a Na’vi, were molded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage and discover what it truly means to be Na'vi as you join other clans to protect Pandora.EXPLORE A WORLD OF WONDER AND DANGERExperience the epic wonders of the Western Frontier, a never-before-seen continent of Pandora. Journey through beautiful yet unpredictable open world regions, where lowering your guard can lead to deadly mistakes.BECOME NA’VIHarness your incredible strength and agility while customizing your character, crafting new gear, and upgrading skills and weapons to fit your playstyle.SOAR THE SKIESBond with your own personal banshee that will give you an edge in aerial combat and can be used for traveling across the vast Western Frontier.MASTER MULTIPLE COMBAT STYLESFight off the dangers of Pandora as you embrace the precision of traditional Na’vi weapons, including your bow and spear-thrower, or leverage your human training with more destructive weapons, such as an assault rifle or a shotgun.SHARE YOUR ADVENTURE IN FULL CAMPAIGN CO-OPPlay the full story campaign in single-player or with a friend online in two-player co-op.",
+      "image": "https://m.media-amazon.com/images/I/D19W9nab1ML._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-assassin-s-creed-mirage",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Assassin’s Creed® Mirage",
+      "slug": "assassin-s-creed-mirage",
+      "storeUrl": "https://luna.amazon.com/detail/B0CK43NDNR?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "VALLEY OF MEMORYEnjoy 6 hours of new gameplay in Valley of Memory, a free major update that expands Basim’s story and introduces the breathtaking new region of AlUla, with gameplay improvements across the full game.THE ULTIMATE ASSASSINBecome the most versatile and resourceful Assassin in franchise history. Parkour seamlessly through the city and leverage the largest assortment of tools to date. Get contracts and upgrades at the Assassin’s bureaus, collect vital clues, and stealthily take down targets with more visceral assassinations than ever before.A TRIBUTE TO AN ORIGINALExperience a modern take on the iconic features and gameplay that have defined the franchise. Journey to Alamut, the legendary home of the Assassins who laid the foundations of the Creed, in this heartfelt homage to the game that started it all.AN IMMERSIVE, REACTIVE CITY Explore an incredibly dense and vibrant city whose inhabitants react to your every move. Uncover the secrets of four unique districts, from the industrial Karkh to the lush gardens of the Round City. Discover surprising world events and interact with historical figures that shaped the Golden Age of Baghdad.A POWERFUL COMING-OF-AGE STORYFollow Basim’s journey in this tightly crafted, narrative-driven action-adventure experience. Witness his transformation from a defiant young thief to a Master Assassin as he meets allies, mentors, and foes who shape his destiny.",
+      "image": "https://m.media-amazon.com/images/I/D1iYWIKGN1L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-assassin-s-creed-valhalla",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Assassin's Creed Valhalla",
+      "slug": "assassin-s-creed-valhalla",
+      "storeUrl": "https://luna.amazon.com/detail/B08N3ZPQRB?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "BUILD YOUR OWN VIKING LEGENDBecome Eivor, a mighty Viking raider, and lead your clan. Advanced RPG mechanics allow you to influence the world around you. With every choice you make, from political alliances and combat strategy, to dialogue and gear progression, carve your path to glory!EXPLORE A DARK AGE WORLDSail from Norway’s icy coasts to England’s lush kingdoms. Roam a vast open world, hunt legendary beasts, and lay bare the secrets of a fractured land.EXPERIENCE VISCERAL COMBATUnleash the ruthless fighting style of a Viking warrior and dual wield axes, swords, or even shields against fierce, relentless foes. Choose your tactics and dismember opponents in close-quarters combat, riddle them with arrows, or assassinate them with your Hidden Blade.GROW YOUR SETTLEMENTConstruct and upgrade buildings that allow for deep customization, including a barracks, a smithy, a tattoo parlor, and more. Recruit new members to your clan and personalize your Viking experience.",
+      "image": "https://m.media-amazon.com/images/I/D1zNaxUezDL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-space-metal-mania",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Space Metal Mania",
+      "slug": "space-metal-mania",
+      "storeUrl": "https://luna.amazon.com/detail/B0HD25WSB6?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The galaxy needs saving and only metal can do it.The Metal-Verse is a galaxy united by one truth: metal is life. Now The Silence, an ancient consuming force, is spreading across worlds and draining everything it touches. Lucky for us, heavy metal can destroy them. Grab the controls, crank it to eleven, and blast them back into the void.Space Metal Mania is a fast-paced, heavy metal-fueled, arcade space shooter where you blast through swarms of enemies, face down massive bosses, and fight to reclaim a galaxy decimated by the Silence. Play solo or team up with up to 3 friends in explosive co-op multiplayer that is all set to a face-melting soundtrack featuring legendary tracks from Megadeth, Iron Maiden, Mastodon, Avenged Sevenfold, and Pantera.Your commander? None other than Dave Mustaine, the iconic Megadeth frontman who is guiding you through every mission with his unmistakable voice. KEY FEATURES:• Heavy Metal Music Mayhem - Blast through levels powered by classic tracks from five of metal's greatest bands, with enemy boss music-synced combat that makes every attack feel like a power chord• Led by a legend, Dave Mustaine - The legendary rocker serves as your in-game Commander, delivering voice-over that sets the tone for every mission• Epic Boss Battles - Fight swarms of enemies during challenging levels, encounter large scale bosses leading up to the Mothership of them all.• Forged in Fire - Collect Credits mid-mission to upgrade your ship between levels. Bank Iridium across every run, win or lose and spend it at The Black Market for permanent upgrades that make each run deadlier than the last.• Solo Act or Play as a Band - Go it alone or rally your crew for chaotic, headbanging team action• Choose your Encore – Experience crazy chaotic combat, Elite fights, and planet liberation missions across three difficulty settings; Garage Band (easy), Metal Band (normal) and Legendary Band (hard).ADDITIONAL DETAILSThis game is available in the following languages; English, French, Italian, German, Spanish (SP).• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Code of Conduct: www.amazon.com/help/ags/coc• Legal Notices: https://www.amazon.com/gp/help/customer/display.html?nodeId=TWjw9dElY3TGroaT67• Support Page: http://help.spacemetal.amazongamestudios.com©/™ 2026, Amazon.com, Inc., its affiliates, and/or licensors. Developed by Handy Games and published by Amazon Games. All rights reserved.",
+      "image": "https://m.media-amazon.com/images/I/D1VaT1Wbe2L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-fortnite-og",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -589,101 +684,6 @@
       "seller": "Prime Gaming",
       "description": "Test your general knowledge and reasoning skills in “Who Wants to Be a Millionaire?”, the official video game of the show!Experience the suspense of the famous TV show in the official video game Who Wants to Be a Millionaire?Climb the prize ladder by answering 15 increasingly difficult questions. Is that your final answer?",
       "image": "https://m.media-amazon.com/images/I/C1o-UcWC+4L._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-ticket-to-ride-",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Ticket to Ride®",
-      "slug": "ticket-to-ride-",
-      "storeUrl": "https://luna.amazon.com/detail/B0CW183PV8?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Play the ultimate digital version of the multi-award-winning modern classic board game Ticket to Ride! Journey across various countries, connecting their vibrant cities and exploring their unique gameplay mechanics and bonuses on the way. Test out new strategies or keep it casual in single-player mode against state-of-the-art AI opponents. You can even make a game night of it with friends and family!Seven additional maps unlock immediately, along with a whole cast of characters from around the world. Get to know them all as they each bring their own tales to the table. Become a railway legend in the iconic, fan-favourite modern classic!HOW TO PLAY TICKET TO RIDE®:1. Players are dealt a number of tickets and must pick a certain number to keep (depending on the map). 2. Players are also dealt four train cards of various colours. This number can also vary depending on the map you’re playing on, but don’t worry – the AI takes care of this!3. Each turn, players can draw two train cards from the face-up pile, draw two train cards from the face-down pile, draw another ticket to complete, or use their train cards to claim a route! A claimed route is shown by placing train pieces along the route.4. When a player has three or fewer train pieces left, the last round starts. Whoever has the most points at the end of the game is the winner! FEATURES- A TRULY SOCIAL TAKE ON MULTIPLAYER – Take on friends and family sitting right next to you in couch play!- SINGLE-PLAYER MODE DRIVEN BY EXPERT AIs – Powered by an innovative adaptive AI system, single-player mode offers a challenge for new and experienced players alike. - AN IMMERSIVE EXPERIENCE – Every moment has been brought to life with beautiful graphics that will immerse you in the adventure. - STRATEGIC GAMEPLAY – Every game presents fresh challenges, and it’s your mission to work out the most efficient solutions. Collect points by completing tickets, linking destinations and building the longest route.Set off on your next adventure together in Ticket to Ride today!",
-      "image": "https://m.media-amazon.com/images/I/D1tvqMpB5FL._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-it-s-quiz-time-guinness-world-records-edition",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "It's Quiz Time: Guinness World Records Edition",
-      "slug": "it-s-quiz-time-guinness-world-records-edition",
-      "storeUrl": "https://luna.amazon.com/detail/B0HH148Q4Z?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Gather your friends and family for the ultimate test of trivia, based on the planet's most astonishing and unbelievable facts! From the team behind the hit party game It's Quiz Time, this edition is made in official collaboration with GUINNESS WORLD RECORDS. Get ready to show off your knowledge and discover mind-blowing records on your favorite device.BATTLE FRIENDS AND FAMILY IN THE ULTIMATE TRIVIA SHOWDOWNFace off with up to 8 players in a massive, accessible quiz for all ages. Anyone with a smartphone can join the fun in seconds!CONQUER THOUSANDS OF OFFICIAL GUINNESS WORLD RECORDS QUESTIONSGo beyond the book with thousands of fully vetted, official GUINNESS WORLD RECORDS questions. See these incredible feats come to life with stunning high-quality photos and video footage direct from the GUINNESS WORLD RECORDS archives. From the longest tongue to the heaviest pumpkin, you won't just read about the records: you'll actually see them.CRAFT YOUR PERFECT QUIZ NIGHTNo two games are ever the same! Take control of the action with 10 unique, high-energy round types, from the classic multiple-choice format to fast-paced sorting challenges and nail-biting elimination rounds.OUTSMART SALLI, YOUR PERSONAL HOSTSalli is back! Our witty and delightfully devious quiz host will guide your game, but don't be fooled: she's a formidable opponent. Salli learns about you and your group, remembering your names and tracking your performance to deliver a personalised experience that will challenge you, encourage you, and keep you on your toes through every question.Key FeaturesThe official party quiz game of GUINNESS WORLD RECORDS.Thousands of questions and mind-blowing photos and videos from the GUINNESS WORLD RECORDS™ archives.Play with up to 8 people locally.Use your smartphone as a controller.10 unique round types to test your knowledge in different ways.Hosted by Salli, the sassy and adaptive quiz host.",
-      "image": "https://m.media-amazon.com/images/I/B11Uhd2l16L._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-fallout-4-game-of-the-year-edition",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Fallout 4: Game of the Year Edition",
-      "slug": "fallout-4-game-of-the-year-edition",
-      "storeUrl": "https://luna.amazon.com/detail/B0G2254WF6?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Fallout 4: Game of the Year Edition includes the base game and all the following add-ons:Far Harbor - A new case from Valentine’s Detective Agency leads you on a search for a young woman and a secret colony of synths. Travel off the coast of Maine to the mysterious island of Far Harbor, where higher levels of radiation have created a more feral world.Automatron - The mysterious Mechanist has unleashed a horde of evil robots into the Commonwealth, including the devious Robobrain. Hunt them down and harvest their parts to build and mod your own custom robot companions.Nuka-World - Take a trip to Nuka-World, a vast amusement park now a lawless city of Raiders. Explore an all-new region with an open wasteland and park zones like Safari Adventure, Dry Rock Gulch, Kiddie Kingdom, and the Galactic Zone.Wasteland Workshop - With the Wasteland Workshop, design and set cages to capture live creatures – from raiders to Deathclaws! Tame them or have them face off in battle, even against your fellow settlers.Contraptions Workshop - Machines that sort! Machines that build! Machines that combine! With Fallout 4 Contraptions, use conveyer belts, scaffolding kits, track kits, even logic gates to construct crazy and complex gadgets to improve your Wasteland settlements.Vault-Tec Workshop - Build a brighter future underground with the all-new Vault-Tec Workshop. Create a massive Vault and attract new Dwellers using pre-war industrial kits complete with retro-nostalgic furniture, lighting, and art.Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming.As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the Wasteland. Welcome home.Key Features:Freedom and Liberty! Do whatever you want in a massive open world with hundreds of locations, characters, and quests. Join multiple factions vying for power or go it alone, the choices are all yours.You’re S.P.E.C.I.A.L! Be whoever you want with the S.P.E.C.I.A.L. character system. From a Power Armored soldier to the charismatic smooth talker, you can choose from hundreds of Perks and develop your own playstyle.Super Deluxe Pixels! An all-new next generation graphics and lighting engine brings to life the world of Fallout like never before. From the blasted forests of the Commonwealth to the ruins of Boston, every location is packed with dynamic detail.Violence and V.A.T.S.! Intense first or third person combat can also be slowed down with the new dynamic Vault-Tec Assisted Targeting System (V.A.T.S) that lets you choose your attacks and enjoy cinematic carnage.Collect and Build! Collect, upgrade, and build thousands of items in the most advanced crafting system ever. Weapons, armor, chemicals, and food are just the beginning - you can even build and manage entire settlements.",
-      "image": "https://m.media-amazon.com/images/I/B1vVpfgpgQL._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-sonic-mania-plus",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Sonic Mania Plus",
-      "slug": "sonic-mania-plus",
-      "storeUrl": "https://luna.amazon.com/detail/B08F9XDX1M?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Experience the award-winning ultimate celebration of past and future. Sonic Mania Plus is an all-new 2D Sonic adventure with blistering 60 fps and stunning HD retro-style graphics. Run explosively fast as Sonic, soar as Tails, or power through tough obstacles with Knuckles’ brute strength. Race through all-new original Zones and updated Classics, all with unique twists to keep you on your toes as you battle the evil Dr. Eggman. Go head to-head with up to four players in Competition Mode, or play with a friend in Co-Op Mode. Now with new playable characters Mighty and Ray, all new Encore mode, and more, Sonic Mania Plus is the definitive Sonic experience!By using this product, you hereby agree to the End User License Agreement found here: https://games.sega.com/eula",
-      "image": "https://m.media-amazon.com/images/I/B14cvcaSyfS._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-cranium-planet",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Cranium Planet",
-      "slug": "cranium-planet",
-      "storeUrl": "https://luna.amazon.com/detail/B0HJJRZXG5?ref=pghq&r=web&autoplay=1",
-      "seller": "Prime Gaming",
-      "description": "Sketch, solve, hum, and act it out! Cranium Planet blasts the classic party game onto your living room screen.Gather your favorite people on the couch, scan the QR code, and your phone becomes the controller. Split into Team Red and Team Blue and race your pawns around a vibrant alien world packed with more than 1,000 challenges. Roll the die, move across the planet, and take on activities that put a different talent to the test: doodle an ice cream cone in Cloodle, hum a familiar tune in Humdinger, untangle scrambled letters in Zelpuz, or put your random knowledge to work in Factoid. You might be drawing one turn, solving a puzzle the next, then acting something out while your teammates desperately try to guess what you're doing.And because this is Cranium, you don't have to be great at everything. Artists, performers, puzzle-solvers, trivia buffs, word nerds, and enthusiastic guessers all get their moment.HOW TO PLAY1. Gather your crew. Play with up to 8 players, or take on Cranium Planet solo.2. Grab your phones. Scan the on-screen QR code and your phone becomes your personal controller — no extra controllers required.3. Choose your team. Split into Team Red and Team Blue and get ready to race around the planet.4. Roll, move, and play. Roll the digital die and take on drawing, performing, word, puzzle, and trivia activities inspired by the classic Cranium experience.5. Mess with the competition. Fire off Distractions to rattle the other team at just the wrong moment.6. Race to the finish. Keep completing challenges and moving your pawn. First team around the planet wins!EVERYONE SHINESCranium has always been about more than knowing the right answer. Want to be center stage? Act and hum in the Star Performer category. Have artistic flair? Sketch masterpieces as a Creative Cat. Data Head is for players who know all sorts of facts, while clever wordsmiths show their stuff with Word Worm puzzles. One challenge might reward the friend who knows something obscure; the next belongs to the doodler, the word wizard, or the friend who's willing to make a complete fool of themselves for the team.YOUR PHONE IS THE CONTROLLERNo passing around a controller. Everyone joins with their own phone to draw, answer, choose, flick, and play while the action unfolds together on the big screen.PLAY TOGETHER OR GO SOLOBring the whole room together for a Team Red vs. Team Blue showdown with up to 8 players, or explore Cranium Planet on your own with solo play.A PLANET THAT KEEPS GROWINGWith more than 1,000 challenges available at launch, there's already plenty to discover — and the party keeps growing. New content arrives monthly, with fresh prompts and brand-new activities added throughout the year to keep game night fresh.Welcome to Cranium Planet. Everyone shines.CRANIUM and all related trademarks of Cranium, Inc. Licensed by Hasbro. ©2026 Cranium. All third party trademarks and proper names mentioned in this game are used without permission, and neither the trademark owners nor the named parties have endorsed, sponsored, or licensed such use in this game.HASBRO and the logo are trademarks of Hasbro and are used with permission. ©2026 Hasbro. All Rights Reserved.",
-      "image": "https://m.media-amazon.com/images/I/C1ZqPRyetdL._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
