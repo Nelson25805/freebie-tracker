@@ -1330,9 +1330,6 @@ html {
 /* Light/dark theme toggle */
 
 /* ─── Light theme palette ─────────────────────────────────────────────── */
-/* Dark stays the default (the :root block already at the top of this
-   file) — this block only overrides variables when data-theme="light" is
-   set on <html>, which theme-init.js does before first paint. */
 
 :root[data-theme="light"] {
     --bg: #f4f5fb;
