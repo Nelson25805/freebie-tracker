@@ -1350,9 +1350,6 @@ html {
     background-attachment: fixed;
 }
 
-/* ─── Overrides for colors that were hardcoded against a dark background
-   rather than driven by the CSS variables above ─────────────────────── */
-
 :root[data-theme="light"] .field,
 :root[data-theme="light"] .select,
 :root[data-theme="light"] .search {
