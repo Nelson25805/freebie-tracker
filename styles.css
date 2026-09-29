@@ -1415,8 +1415,6 @@ html {
 }
 
 /* ─── Floating theme toggle button ────────────────────────────────────── */
-/* Injected into the DOM by theme.js — one button per page, fixed to the
-   top-right corner so it's reachable without touching each page's markup. */
 
 .theme-toggle {
     position: fixed;
