@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-29T23:50:52.401Z",
+  "fetchedAt": "2026-09-30T14:47:03.151Z",
   "totalFree": 37,
-  "totalUpcoming": 4,
+  "totalUpcoming": 5,
   "games": [
     {
       "id": "7c14bf0cffdd43be968fdcf28e5af653",
@@ -40,6 +40,25 @@
       "status": "upcoming",
       "offerStart": "2026-09-17T15:00:00.000Z",
       "offerEnd": "2026-10-02T05:59:00.000Z"
+    },
+    {
+      "id": "8f80897c0b6e4e678fed08da169d44be",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Castlevania Anniversary Collection",
+      "slug": "castlevania-anniversary-collection-a61f94",
+      "storeUrl": "https://store.epicgames.com/p/castlevania-anniversary-collection-a61f94",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
+      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
+      "originalPrice": 1999,
+      "discountPrice": 1999,
+      "status": "upcoming",
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "7ae00c3e89174012b175cc73b4737723",
