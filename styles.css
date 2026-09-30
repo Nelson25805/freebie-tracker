@@ -1414,8 +1414,6 @@ html {
     color: #b45309;
 }
 
-/* ─── Floating theme toggle button ────────────────────────────────────── */
-
 .theme-toggle {
     position: fixed;
     top: 16px;
