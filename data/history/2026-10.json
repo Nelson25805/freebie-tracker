@@ -1,9 +1,8 @@
 {
-  "fetchedAt": "2026-10-01T15:15:25.125Z",
-  "totalFree": 36,
-  "totalUpcoming": 10,
-  "games": [
-    {
+  "month": "2026-10",
+  "updatedAt": "2026-10-01T15:15:25.125Z",
+  "games": {
+    "7c14bf0cffdd43be968fdcf28e5af653": {
       "id": "7c14bf0cffdd43be968fdcf28e5af653",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -20,104 +19,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-09-24T15:00:00.000Z",
-      "offerEnd": "2026-10-01T15:00:00.000Z"
+      "offerEnd": "2026-10-01T15:00:00.000Z",
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
-      "id": "944b5b5d646d46bc92bc33edfe983d26",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "LISA: The Definitive Edition",
-      "slug": "lisa-the-definitive-edition",
-      "storeUrl": "https://store.epicgames.com/p/lisa-the-definitive-edition",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Explore Olathe and unmask its twisted secrets with LISA: The Definitive Edition, including the original narrative-driven RPG LISA: The Painful and its sequel LISA: The Joyful.",
-      "image": "https://cdn1.epicgames.com/offer/ca3a9d16d131478c97fd56c138a6511a/EGS_LISATheDefinitiveEdition_DingalingProductions_Bundles_S2_1200x1600-4a9b4fc6e06e8aff136c1a3cf18292ae",
-      "originalPrice": 2499,
-      "discountPrice": 1249,
-      "status": "upcoming",
-      "offerStart": "2026-09-17T15:00:00.000Z",
-      "offerEnd": "2026-10-02T05:59:00.000Z"
-    },
-    {
-      "id": "8f80897c0b6e4e678fed08da169d44be",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Castlevania Anniversary Collection",
-      "slug": "castlevania-anniversary-collection-a61f94",
-      "storeUrl": "https://store.epicgames.com/p/castlevania-anniversary-collection-a61f94",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
-      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
-      "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
-    },
-    {
-      "id": "cb733f3432db46bca94965b422c33ede",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Out of Sight",
-      "slug": "out-of-sight-b96ca8",
-      "storeUrl": "https://store.epicgames.com/p/out-of-sight-b96ca8",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "You’re Sophie, a young blind girl who sees through her teddy bear’s eyes. Escape your captors and uncover the evil history of the dark mansion you desperately seek to escape in this unique, atmospheric horror puzzle/adventure game.",
-      "image": "https://cdn1.epicgames.com/spt-assets/6e1bf54cfa6344c89d41e4e7af036ac9/out-of-sight-1l12n.jpg",
-      "originalPrice": 1499,
-      "discountPrice": 1499,
-      "status": "upcoming",
-      "offerStart": "2026-10-08T15:00:00.000Z",
-      "offerEnd": "2026-10-15T15:00:00.000Z"
-    },
-    {
-      "id": "7ae00c3e89174012b175cc73b4737723",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "System Shock 2: 25th Anniversary Remaster",
-      "slug": "system-shock-2-25th-anniversary-remaster-cb94d9",
-      "storeUrl": "https://store.epicgames.com/p/system-shock-2-25th-anniversary-remaster-cb94d9",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "System Shock® 2: 25th Anniversary Remaster is a genre defining experience that established innovative game-play mechanics that are a staple of the FPS and RPG genre today. Survive the wretched corridors of the Von Braun. Your training has prepared you for this.",
-      "image": "https://cdn1.epicgames.com/spt-assets/690ff600d5134d9ab12c96862ed5257a/system-shock-2-25th-anniversary-remaster-1e28j.jpg",
-      "originalPrice": 2999,
-      "discountPrice": 2999,
-      "status": "upcoming",
-      "offerStart": "2026-10-01T15:00:00.000Z",
-      "offerEnd": "2026-10-08T15:00:00.000Z"
-    },
-    {
-      "id": "f967cff9761c4198b4e972cfd71e40d7",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Monument Valley",
-      "slug": "monument-valley-1d99d3",
-      "storeUrl": "https://store.epicgames.com/p/monument-valley-1d99d3",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Embark on a journey of forgiveness through impossible environments and illusionary puzzles. Experience this meditative and calming puzzle game by manipulating monuments and creating evolving paths to explore new, surreal, and mysterious worlds.",
-      "image": "https://cdn1.epicgames.com/spt-assets/e56a7411805046d3b5b7253a6e4e0faa/monument-valley-1gys5.jpg",
-      "originalPrice": 799,
-      "discountPrice": 799,
-      "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
-    },
-    {
+    "6d99eae44d724baf84d6261a7a0f05d2": {
       "id": "6d99eae44d724baf84d6261a7a0f05d2",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -134,47 +40,11 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-09-24T15:00:00.000Z",
-      "offerEnd": "2026-10-01T15:00:00.000Z"
+      "offerEnd": "2026-10-01T15:00:00.000Z",
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
-      "id": "af4c34934afe4db0870b8a1d82dceb94",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "BURIED STARS",
-      "slug": "buried-stars-d7c88c",
-      "storeUrl": "https://store.epicgames.com/p/buried-stars-d7c88c",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "A mystery adventure set at the collapse site of a live survival audition show.\nTrapped contestants communicate with each other—and the outside world through social media—as they wait for rescue. But trust begins to crack, and survival becomes far more complicated.",
-      "image": "https://cdn1.epicgames.com/spt-assets/e2dc55c2709641a18fc37ef7ce32cfdd/buried-stars-1j9of.jpg",
-      "originalPrice": 3999,
-      "discountPrice": 3999,
-      "status": "upcoming",
-      "offerStart": "2026-10-01T15:00:00.000Z",
-      "offerEnd": "2026-10-08T15:00:00.000Z"
-    },
-    {
-      "id": "af6b823b8698465f9aedc3bddf2e8686",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "TerraScape",
-      "slug": "terrascape-2b12b1",
-      "storeUrl": "https://store.epicgames.com/p/terrascape-2b12b1",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Build gorgeous kingdoms on floating islands by strategically placing buildings in this cozy, medieval City-Puzzler. Discover secret combinations, take on monthly challenges and explore randomly generated maps in various single- and multiplayer game modes.",
-      "image": "https://cdn1.epicgames.com/spt-assets/a740a2eed807469f88b9dff17e7cd3a3/terrascape-j7p8d.png",
-      "originalPrice": 1699,
-      "discountPrice": 1699,
-      "status": "upcoming",
-      "offerStart": "2026-10-08T15:00:00.000Z",
-      "offerEnd": "2026-10-15T15:00:00.000Z"
-    },
-    {
+    "psplus-sniper-elite-resistance": {
       "id": "psplus-sniper-elite-resistance",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -193,9 +63,11 @@
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "psplus-mlb-the-show-26": {
       "id": "psplus-mlb-the-show-26",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -213,9 +85,11 @@
       "platforms": [
         "PS5"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "psplus-wobbly-life": {
       "id": "psplus-wobbly-life",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -234,9 +108,11 @@
         "PS5",
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "psplus-chained-echoes": {
       "id": "psplus-chained-echoes",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -254,70 +130,11 @@
       "platforms": [
         "PS4"
       ],
-      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+      "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
-      "id": "psplus-f1-25",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "F1 25",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5",
-      "description": "Leave your mark on the world of racing in F1 25, the official video game of the 2025 FIA Formula One World Championship. Enjoy single player experiences such as Career and My Team 2.0, letting you create your own F1 stories as you take control as the Owner of a Formula 1 team. Then take the race online against other players, including a brand new multiplayer mode in F1 World, where you and your friends race as a squad against AI drivers.",
-      "image": "https://blog.playstation.com/tachyon/2026/09/eabab177555f0b80a7a6434c7241b6133b4a1dd4-scaled.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-10-06T16:00:00.000Z",
-      "offerEnd": "2026-11-03T17:00:00.000Z",
-      "platforms": [
-        "PS5"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
-      "id": "psplus-hunt-showdown-1896",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Hunt: Showdown 1896",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5",
-      "description": "Hunt: Showdown 1896 is a new era of the addictively unforgiving extraction shooter. In corrupted backwaters lost to history, fight back alone – or with friends – against timeless evil. Twisted monsters and other ruthless Hunters stand between you and your Bounty. Risk everything as Hunt consumes you. Race competing Hunters to track down bosses, send them to hell, claim their bounty, and fight your way to extract. If others only slow you down, go alone. If you find strength in numbers, take up to two teammates along.",
-      "image": "https://blog.playstation.com/tachyon/2026/09/9b238538c58885b73d206814598fb77dc33e08e0.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-10-06T16:00:00.000Z",
-      "offerEnd": "2026-11-03T17:00:00.000Z",
-      "platforms": [
-        "PS5"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
-      "id": "psplus-earth-defense-force-world-brothers-2",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Earth Defense Force: World Brothers 2",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5 / PS4",
-      "description": "The square Earth is under attack by giant enemies. Teammates scattered around the world are waiting to be rescued. Select 4 teammates from among those you have collected and create your own team. Design the team perfect for your play style, select your equipment, and then deploy to battle. In addition to soldiers from the mainline EDF series, this game also includes soldiers from the EDF spin-offs, and enemies who ravaged the planet in previous releases have also crossed over into this world to join the fight. Enjoy fighting numerous enemies, including redesigned voxel versions of old favorites, as well as new enemies unique to this release. Enjoy four player online co-op and two player local split screen on PS5 and PS4.&nbsp;",
-      "image": "https://blog.playstation.com/tachyon/2026/09/54ec8cea632c525dca9a512f265d33414b75040f.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-10-06T16:00:00.000Z",
-      "offerEnd": "2026-11-03T17:00:00.000Z",
-      "platforms": [
-        "PS5",
-        "PS4"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
+    "prime-wall-world-2": {
       "id": "prime-wall-world-2",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -334,9 +151,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-doom-eternal": {
       "id": "prime-doom-eternal",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -353,9 +172,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-botany-manor": {
       "id": "prime-botany-manor",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -372,9 +193,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-doom-doom-ii": {
       "id": "prime-doom-doom-ii",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -391,9 +214,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-drop-duchy": {
       "id": "prime-drop-duchy",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -410,9 +235,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-just-die-already": {
       "id": "prime-just-die-already",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -429,9 +256,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-war-hospital": {
       "id": "prime-war-hospital",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -448,9 +277,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-havendock": {
       "id": "prime-havendock",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -467,9 +298,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-weakless": {
       "id": "prime-weakless",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -486,9 +319,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-zoria-age-of-shattering": {
       "id": "prime-zoria-age-of-shattering",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -505,9 +340,11 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-star-wars-outlaws": {
       "id": "prime-star-wars-outlaws",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -524,9 +361,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-avatar-frontiers-of-pandora": {
       "id": "prime-avatar-frontiers-of-pandora",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -543,9 +382,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-assassin-s-creed-mirage": {
       "id": "prime-assassin-s-creed-mirage",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -562,9 +403,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-assassin-s-creed-valhalla": {
       "id": "prime-assassin-s-creed-valhalla",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -581,9 +424,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-space-metal-mania": {
       "id": "prime-space-metal-mania",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -600,9 +445,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-fortnite-og": {
       "id": "prime-fortnite-og",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -619,9 +466,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-fortnite": {
       "id": "prime-fortnite",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -638,9 +487,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-fortnite-battle-royale": {
       "id": "prime-fortnite-battle-royale",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -657,9 +508,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-lego-fortnite-brick-life": {
       "id": "prime-lego-fortnite-brick-life",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -676,9 +529,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-lego-fortnite-odyssey": {
       "id": "prime-lego-fortnite-odyssey",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -695,9 +550,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-fortnite-festival": {
       "id": "prime-fortnite-festival",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -714,9 +571,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-fortnite-save-the-world": {
       "id": "prime-fortnite-save-the-world",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -733,9 +592,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-garfield-kart-2-all-you-can-drift": {
       "id": "prime-garfield-kart-2-all-you-can-drift",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -752,9 +613,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-who-wants-to-be-a-millionaire-": {
       "id": "prime-who-wants-to-be-a-millionaire-",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -771,9 +634,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-ticket-to-ride-": {
       "id": "prime-ticket-to-ride-",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -790,9 +655,11 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-hue": {
       "id": "prime-hue",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -809,9 +676,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-high-on-life": {
       "id": "prime-high-on-life",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -828,9 +697,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-the-da-vinci-cryptex": {
       "id": "prime-the-da-vinci-cryptex",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -847,9 +718,11 @@
       "offerEnd": null,
       "platforms": [
         "Legacy Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "prime-rims-racing": {
       "id": "prime-rims-racing",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -866,9 +739,11 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     },
-    {
+    "steam-3716": {
       "id": "steam-3716",
       "store": "steam",
       "storeName": "Steam",
@@ -885,7 +760,9 @@
       "offerEnd": null,
       "platforms": [
         "PC"
-      ]
+      ],
+      "firstSeen": "2026-10-01T15:15:25.125Z",
+      "lastSeen": "2026-10-01T15:15:25.125Z"
     }
-  ]
+  }
 }
