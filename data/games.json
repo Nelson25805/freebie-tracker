@@ -1,26 +1,26 @@
 {
-  "fetchedAt": "2026-10-01T15:15:25.125Z",
-  "totalFree": 36,
-  "totalUpcoming": 10,
+  "fetchedAt": "2026-10-01T19:38:01.250Z",
+  "totalFree": 38,
+  "totalUpcoming": 9,
   "games": [
     {
-      "id": "7c14bf0cffdd43be968fdcf28e5af653",
+      "id": "be5600439b434624802764f704755cde",
       "store": "epic",
       "storeName": "Epic Games Store",
-      "title": "Astrea Six Sided Oracles",
-      "slug": "astrea-six-sided-oracles-33c949",
-      "storeUrl": "https://store.epicgames.com/p/astrea-six-sided-oracles-33c949",
+      "title": "Ghostrunner 2",
+      "slug": "ghostrunner-2",
+      "storeUrl": "https://store.epicgames.com/p/ghostrunner-2",
       "seller": "PC",
       "platforms": [
         "PC"
       ],
-      "description": "An all new dice-deck-building roguelike, Astrea, has you chart a path through the ruins of a lost civilization as one of six brave Oracles. Using an ever-changing deck of dice and enchanted Sentinels, Purify waves of Corrupted foes and a decayed goddess to save the Star System.",
-      "image": "https://cdn1.epicgames.com/spt-assets/4515173972ae4444a2582bc690c150bd/astrea-six-sided-oracles-offer-bvy0n.png",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-24T15:00:00.000Z",
-      "offerEnd": "2026-10-01T15:00:00.000Z"
+      "description": "Ghostrunner 2 is a hardcore FPP slasher set in a post-apocalyptic, cyberpunk world. Featuring everything fans loved about Ghostrunner plus incredible boss fights, new interactive story, thrilling motorbike levels, improved skills, and more cyber ninja action. ",
+      "image": "https://cdn1.epicgames.com/offer/708f57aaa04b42ef885be16c8288f0ac/EGS_Ghostrunner2_OneMoreLevel_S1_2560x1440-15845148fae1d0cfd7f3e98c9b3ba6ba",
+      "originalPrice": 3999,
+      "discountPrice": 3999,
+      "status": "upcoming",
+      "offerStart": "2026-12-10T17:00:00.000Z",
+      "offerEnd": "2027-01-07T23:59:00.000Z"
     },
     {
       "id": "944b5b5d646d46bc92bc33edfe983d26",
@@ -93,8 +93,8 @@
       "description": "System Shock® 2: 25th Anniversary Remaster is a genre defining experience that established innovative game-play mechanics that are a staple of the FPS and RPG genre today. Survive the wretched corridors of the Von Braun. Your training has prepared you for this.",
       "image": "https://cdn1.epicgames.com/spt-assets/690ff600d5134d9ab12c96862ed5257a/system-shock-2-25th-anniversary-remaster-1e28j.jpg",
       "originalPrice": 2999,
-      "discountPrice": 2999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-10-01T15:00:00.000Z",
       "offerEnd": "2026-10-08T15:00:00.000Z"
     },
@@ -114,27 +114,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
-    },
-    {
-      "id": "6d99eae44d724baf84d6261a7a0f05d2",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Mechabellum",
-      "slug": "mechabellum-88a843",
-      "storeUrl": "https://store.epicgames.com/p/mechabellum-88a843",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Command massive armies in this epic mech auto-battler. Draft your troops, customize your units, master your formations, and crush enemies in spectacular 3D battles. All strategy, no clickfest. Outsmart opponents in 1v1, 2v2, free-for-all, or Survival Mode.",
-      "image": "https://cdn1.epicgames.com/spt-assets/131adc2288294d74aaff6a2f02b51d59/mechabellum-95319.jpg",
-      "originalPrice": 1499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-24T15:00:00.000Z",
-      "offerEnd": "2026-10-01T15:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "af4c34934afe4db0870b8a1d82dceb94",
@@ -150,8 +131,8 @@
       "description": "A mystery adventure set at the collapse site of a live survival audition show.\nTrapped contestants communicate with each other—and the outside world through social media—as they wait for rescue. But trust begins to crack, and survival becomes far more complicated.",
       "image": "https://cdn1.epicgames.com/spt-assets/e2dc55c2709641a18fc37ef7ce32cfdd/buried-stars-1j9of.jpg",
       "originalPrice": 3999,
-      "discountPrice": 3999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-10-01T15:00:00.000Z",
       "offerEnd": "2026-10-08T15:00:00.000Z"
     },
@@ -316,6 +297,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+    },
+    {
+      "id": "prime-the-da-vinci-cryptex",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "The Da Vinci Cryptex",
+      "slug": "the-da-vinci-cryptex",
+      "storeUrl": "https://luna.amazon.com/claims/the-da-vinci-cryptex-legacy/dp/amzn1.pg.item.6cd3cd34-9ede-48df-bf9a-cc154ed97525?g=s&ingress=amzn&ref_=SM_TheDaVinciCryptex_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Trapped in a room of the Italian genial inventor, you need to think out of the box to solve logical enigmas written in a book and escape. Find the answers, unlock the Cryptex, and see what awaits you in the next room!Consisting of 50 unique riddles, the more you go on, the harder to solve the puzzles. So, how many enigmas can you actually crack? If you're a fan of puzzles, word games, mind games, logic riddles, and enigmas, The Da Vinci Cryptex series are the games for you!",
+      "image": "https://m.media-amazon.com/images/I/A1eQlb8Lw+L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Legacy Games"
+      ]
+    },
+    {
+      "id": "prime-rims-racing",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "RiMS Racing",
+      "slug": "rims-racing",
+      "storeUrl": "https://luna.amazon.com/claims/rims-racing-epic/dp/amzn1.pg.item.2cf2cac0-6b4d-4b5e-9064-2005dad4ede7?g=s&ingress=amzn&ref_=SM_RimsRacing_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A race is not won purely on the track, so you need to become more than a rider by understanding motorcycle behavior like a real engineer. Traction, angle, braking, torque, trajectory, speed... every factor must be considered before heading to the workshop to change certain components and configuring the optimal set-up.A DREAM GARAGEYour adventure starts by choosing your dream bike. In RiMS Racing, you can ride the world's 8 most powerful European and Japanese motorcycles: Ducati Panigale V4 R, MV Agusta F4 RC, Aprilia RSV4, BMW M 1000 RR, Suzuki GSX-R1000R, Honda CBR1000RR, Kawasaki Ninja ZX-10RR, Yamaha YZF-R1. Recreated with an unmatched level of detail thanks to close collaboration with each manufacturer, these bikes also provide a highly accurate and realistic riding experience. They are true rough diamonds that only need a few cuts to shine their brightest!OPTIMIZE YOUR BIKEWith a mechanics management system never before seen in a motorcycle simulation, you can dismantle all your bike's parts to maintain them after each race or to upgrade them and boost your performance. You will become familiar with every last screw in your bike. Browse a catalogue of over 500 official spare parts from the biggest names in the industry along with over 200 official equipment items to personalize your rider!ACCURATE AND REALISTIC PHYSICSThe level of accuracy and details provided by the mechanics management and MSC is matched by realistic motorcycle physics that will thrill the most demanding of track racers. But thanks to the various ride assist technologies, less experienced players can still learn the techniques that will take them to the top.",
+      "image": "https://m.media-amazon.com/images/I/A1S0pVV7WxL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
     },
     {
       "id": "prime-wall-world-2",
@@ -793,6 +812,44 @@
       ]
     },
     {
+      "id": "prime-five-nights-at-freddy-s-into-the-pit",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Five Nights at Freddy's: Into the Pit",
+      "slug": "five-nights-at-freddy-s-into-the-pit",
+      "storeUrl": "https://luna.amazon.com/claims/five-nights-at-freddys-into-the-pit-epic/dp/amzn1.pg.item.9d2ad65c-0963-4e2d-93e6-75ad2a4bfc87?g=s&ingress=amzn&ref_=SM_FiveNightsatFreddysIntothePit_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Survive five nights of terror in this chilling adventure game. Travel between time periods to solve puzzles, gather clues, and outrun the threat relentlessly pursuing you. Move swiftly and stay hidden, and you may just survive. But be careful - it's not just your own life that's on the line this time.",
+      "image": "https://m.media-amazon.com/images/I/81AstxZiaRL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-doom",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "DOOM",
+      "slug": "doom",
+      "storeUrl": "https://luna.amazon.com/claims/doom-gog/dp/amzn1.pg.item.b095156c-1207-49f0-801a-75ac03b74def?g=s&ingress=amzn&ref_=SM_DOOM_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.StoryYou’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.A Relentless CampaignThere is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.Please note: The DRM-Free version of DOOM (2016) is single-player only. Multiplayer and online functionality for SnapMap are not included. SnapMap content is unlocked by default.",
+      "image": "https://m.media-amazon.com/images/I/B1l-UjFh9mL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
       "id": "prime-hue",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -821,44 +878,6 @@
       "seller": "Prime Gaming",
       "description": "Fresh out of high school with no job and no ambition, you’ve really got nothing going for you until an alien cartel that wants to get high off humanity invades Earth. Now, you and a team of charismatic talking guns must answer the hero's call and become the deadliest intergalactic bounty hunter the cosmos has ever seen.Travel to a variety of biomes and locations across the cosmos, go up against the nefarious Garmantuous and his gang of goons, collect loot, meet unique characters, and more, in the latest comedy adventure from Squanch Games!",
       "image": "https://m.media-amazon.com/images/I/B1buzV9MhsL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-the-da-vinci-cryptex",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "The Da Vinci Cryptex",
-      "slug": "the-da-vinci-cryptex",
-      "storeUrl": "https://luna.amazon.com/claims/the-da-vinci-cryptex-legacy/dp/amzn1.pg.item.6cd3cd34-9ede-48df-bf9a-cc154ed97525?g=s&ingress=amzn&ref_=SM_TheDaVinciCryptex_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Trapped in a room of the Italian genial inventor, you need to think out of the box to solve logical enigmas written in a book and escape. Find the answers, unlock the Cryptex, and see what awaits you in the next room!Consisting of 50 unique riddles, the more you go on, the harder to solve the puzzles. So, how many enigmas can you actually crack? If you're a fan of puzzles, word games, mind games, logic riddles, and enigmas, The Da Vinci Cryptex series are the games for you!",
-      "image": "https://m.media-amazon.com/images/I/A1eQlb8Lw+L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Legacy Games"
-      ]
-    },
-    {
-      "id": "prime-rims-racing",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "RiMS Racing",
-      "slug": "rims-racing",
-      "storeUrl": "https://luna.amazon.com/claims/rims-racing-epic/dp/amzn1.pg.item.2cf2cac0-6b4d-4b5e-9064-2005dad4ede7?g=s&ingress=amzn&ref_=SM_RimsRacing_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "A race is not won purely on the track, so you need to become more than a rider by understanding motorcycle behavior like a real engineer. Traction, angle, braking, torque, trajectory, speed... every factor must be considered before heading to the workshop to change certain components and configuring the optimal set-up.A DREAM GARAGEYour adventure starts by choosing your dream bike. In RiMS Racing, you can ride the world's 8 most powerful European and Japanese motorcycles: Ducati Panigale V4 R, MV Agusta F4 RC, Aprilia RSV4, BMW M 1000 RR, Suzuki GSX-R1000R, Honda CBR1000RR, Kawasaki Ninja ZX-10RR, Yamaha YZF-R1. Recreated with an unmatched level of detail thanks to close collaboration with each manufacturer, these bikes also provide a highly accurate and realistic riding experience. They are true rough diamonds that only need a few cuts to shine their brightest!OPTIMIZE YOUR BIKEWith a mechanics management system never before seen in a motorcycle simulation, you can dismantle all your bike's parts to maintain them after each race or to upgrade them and boost your performance. You will become familiar with every last screw in your bike. Browse a catalogue of over 500 official spare parts from the biggest names in the industry along with over 200 official equipment items to personalize your rider!ACCURATE AND REALISTIC PHYSICSThe level of accuracy and details provided by the mechanics management and MSC is matched by realistic motorcycle physics that will thrill the most demanding of track racers. But thanks to the various ride assist technologies, less experienced players can still learn the techniques that will take them to the top.",
-      "image": "https://m.media-amazon.com/images/I/A1S0pVV7WxL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
