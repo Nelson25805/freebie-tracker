@@ -1460,10 +1460,6 @@ html {
    Light theme contrast fixes
    ═══════════════════════════════════════════════════════════════════════ */
 
-/* ─── Store-filter chips (inactive state) ─────────────────────────────── */
-/* Same hues as dark mode, darkened so they read against the now-light
-   chip background instead of the near-black one they were designed for. */
-
 :root[data-theme="light"] .chip[data-store="epic"]:not(.active) {
     color: #27272a;
     border-color: rgba(39, 39, 42, 0.25);
