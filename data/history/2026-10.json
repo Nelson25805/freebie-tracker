@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-03T13:13:42.857Z",
+  "updatedAt": "2026-10-03T17:52:43.891Z",
   "games": {
     "7c14bf0cffdd43be968fdcf28e5af653": {
       "id": "7c14bf0cffdd43be968fdcf28e5af653",
@@ -65,7 +65,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "psplus-mlb-the-show-26": {
       "id": "psplus-mlb-the-show-26",
@@ -87,7 +87,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "psplus-wobbly-life": {
       "id": "psplus-wobbly-life",
@@ -110,7 +110,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "psplus-chained-echoes": {
       "id": "psplus-chained-echoes",
@@ -132,7 +132,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/",
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "prime-wall-world-2": {
       "id": "prime-wall-world-2",
@@ -762,7 +762,7 @@
         "PC"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "7ae00c3e89174012b175cc73b4737723": {
       "id": "7ae00c3e89174012b175cc73b4737723",
@@ -783,7 +783,7 @@
       "offerStart": "2026-10-01T15:00:00.000Z",
       "offerEnd": "2026-10-08T15:00:00.000Z",
       "firstSeen": "2026-10-01T19:38:01.250Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "af4c34934afe4db0870b8a1d82dceb94": {
       "id": "af4c34934afe4db0870b8a1d82dceb94",
@@ -804,7 +804,7 @@
       "offerStart": "2026-10-01T15:00:00.000Z",
       "offerEnd": "2026-10-08T15:00:00.000Z",
       "firstSeen": "2026-10-01T19:38:01.250Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     },
     "prime-five-nights-at-freddy-s-into-the-pit": {
       "id": "prime-five-nights-at-freddy-s-into-the-pit",
@@ -862,12 +862,12 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-10-02T14:22:35.445Z",
-      "offerEnd": "2026-10-05T13:00:59.941Z",
+      "offerEnd": "2026-10-05T13:00:59.932Z",
       "platforms": [
         "PC"
       ],
       "firstSeen": "2026-10-02T14:39:43.602Z",
-      "lastSeen": "2026-10-03T13:13:42.857Z"
+      "lastSeen": "2026-10-03T17:52:43.891Z"
     }
   }
 }
