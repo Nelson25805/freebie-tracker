@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-04T23:12:39.214Z",
-  "totalFree": 39,
+  "fetchedAt": "2026-10-05T16:58:34.112Z",
+  "totalFree": 38,
   "totalUpcoming": 9,
   "games": [
     {
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "8f80897c0b6e4e678fed08da169d44be",
@@ -114,8 +114,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "af4c34934afe4db0870b8a1d82dceb94",
@@ -154,25 +154,6 @@
       "status": "upcoming",
       "offerStart": "2026-10-08T15:00:00.000Z",
       "offerEnd": "2026-10-15T15:00:00.000Z"
-    },
-    {
-      "id": "gog-bounty-train",
-      "store": "gog",
-      "storeName": "GOG",
-      "title": "Bounty Train",
-      "slug": "bounty_train",
-      "storeUrl": "https://www.gog.com/en/game/bounty_train",
-      "seller": "GOG",
-      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get Bounty Train. See our Privacy policy.",
-      "image": "https://images.gog-statics.com/415cc6938f3e0a0c38adf641bd3afd1f4890da0de08f56c80359d6e35ea415a6_giveaway_465w.webp",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-02T14:22:35.445Z",
-      "offerEnd": "2026-10-05T13:01:00.050Z",
-      "platforms": [
-        "PC"
-      ]
     },
     {
       "id": "psplus-sniper-elite-resistance",
