@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-05T21:42:27.333Z",
+  "fetchedAt": "2026-10-06T01:31:30.792Z",
   "totalFree": 38,
   "totalUpcoming": 9,
   "games": [
@@ -717,15 +717,15 @@
       ]
     },
     {
-      "id": "prime-fortnite-festival",
+      "id": "prime-play-fortnite-festival-amazon-luna-no-download-required",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Fortnite Festival",
-      "slug": "fortnite-festival",
+      "title": "Play Fortnite Festival | Amazon Luna - No Download Required",
+      "slug": "play-fortnite-festival-amazon-luna-no-download-required",
       "storeUrl": "https://luna.amazon.com/detail/B0CLKBMYPV?ref=pghq&r=web",
       "seller": "Prime Gaming",
-      "description": "Play in a band with friends or perform solo on stage with hit music by your favorite artists in Fortnite Festival!On the Main Stage, select your instrument and play a featured rotation of Jam Tracks. Explore the Festival Jam Stage to find friends and mix hit music together using the Jam Tracks in your locker.Keep the party going with an ever-expanding lineup of Jam Tracks, Music Icons, and more. Take your stage in Fortnite Festival!Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/D13Hu7OrK9L._SX960_QL65_FMwebp_.png",
+      "description": "Free with Prime Gaming via Amazon Luna.",
+      "image": "https://m.media-amazon.com/images/I/91yr3Z1fBwL.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
