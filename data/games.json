@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-06T19:38:22.707Z",
+  "fetchedAt": "2026-10-06T23:58:34.005Z",
   "totalFree": 37,
   "totalUpcoming": 6,
   "games": [
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-11-01T06:00:00.000Z",
-      "offerEnd": "2026-11-10T06:59:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "8f80897c0b6e4e678fed08da169d44be",
@@ -452,7 +452,7 @@
       "slug": "star-wars-galactic-racer-",
       "storeUrl": "https://luna.amazon.com/detail/B0HLN4GG5K?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "STAR WARS​​: Galactic Racer™ is a ​​runs-based​​, high-stakes reinvention of racing born in the lawless Outer Rim of the ​​STAR WARS​​™​​ galaxy.​​​​The Empire’s grip on the galaxy has finally broken, and with its fall comes a new obsession: speed. As the New Republic struggles to rebuild, gambling, entertainment, and glory fuel a booming underground. Out of this chaos, the Galactic League is born: an unsanctioned racing circuit where syndicates sponsor pilots, fortunes are won and lost in seconds, and only the bold survive. No Force. No prophecy. Just skill, strategy, and the will to rise.Single player only. Multiplayer not supported at this time. Immerse yourself in the full single-player STAR WARS: Galactic Racer experience spanning Campaign, Scenarios, and Arcade modes.COMPETE IN HIGH-STAKES RACES WHERE EVERY RUN IS UNIQUESlam, shunt, and takedown rivals across varied circuits where no two runs play the same. The greater the risk, the greater the reward.SURVIVE A DANGEROUS UNDERGROUND SPORTJoin the Galactic League - an unsanctioned racing circuit born in the lawless Outer Rim. Become Shade, a lone racer chasing revenge and glory.BUILD AND CUSTOMIZE YOUR CRAFTPilot different classes of repulsorcraft each with distinct physics and playstyles. Build a ride that showcases your style and gives you a competitive edge.",
+      "description": "STAR WARS​​: Galactic Racer™ is a ​​runs-based​​, high-stakes reinvention of racing born in the lawless Outer Rim of the ​​STAR WARS​​™​​ galaxy.​​​​The Empire’s grip on the galaxy has finally broken, and with its fall comes a new obsession: speed. As the New Republic struggles to rebuild, gambling, entertainment, and glory fuel a booming underground. Out of this chaos, the Galactic League is born: an unsanctioned racing circuit where syndicates sponsor pilots, fortunes are won and lost in seconds, and only the bold survive. No Force. No prophecy. Just skill, strategy, and the will to rise.Immerse yourself in the full single-player STAR WARS: Galactic Racer experience spanning Campaign, Scenarios, and Arcade modes. Cross-platform multiplayer coming soon.COMPETE IN HIGH-STAKES RACES WHERE EVERY RUN IS UNIQUESlam, shunt, and takedown rivals across varied circuits where no two runs play the same. The greater the risk, the greater the reward.SURVIVE A DANGEROUS UNDERGROUND SPORTJoin the Galactic League - an unsanctioned racing circuit born in the lawless Outer Rim. Become Shade, a lone racer chasing revenge and glory.BUILD AND CUSTOMIZE YOUR CRAFTPilot different classes of repulsorcraft each with distinct physics and playstyles. Build a ride that showcases your style and gives you a competitive edge.",
       "image": "https://m.media-amazon.com/images/I/D1q565GghGL._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
