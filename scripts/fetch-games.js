@@ -1,10 +1,3 @@
-/**
- * fetch-games.js
- *
- * Fetches free games from various stores and writes them to a JSON file.
- * Also notifies about new games and updates the monthly archive and run log.
- */
-
 import { writeFileSync, mkdirSync, readFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -15,11 +8,15 @@ import { fetchPSPlus } from "./fetchers/psplus.js";
 import { fetchPrimeGaming } from "./fetchers/prime.js";
 import { fetchSteam } from "./fetchers/steam.js";
 
-import { notifyNewGames } from "./notify-newsletter.js";
+import { findNewFreeGames } from "./notify-newsletter.js";
 import { updateMonthlyArchive, appendRunLog } from "./utils/history.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = resolve(__dirname, "../data/games.json");
+
+// Not committed (the workflow only `git add`s data/). Read by
+// send-pending-notify.js after a successful push.
+const PENDING_NOTIFY_PATH = resolve(__dirname, ".pending-notify.json");
 
 const STORE_KEYS = ["epic", "gog", "psplus", "prime", "steam"];
 
@@ -29,6 +26,7 @@ async function main() {
     const prevJson = JSON.parse(readFileSync(OUT_PATH, "utf-8"));
     previousGames = prevJson.games || [];
   } catch {
+    // first run, or unreadable file: treat as no previous data
   }
 
   const results = await Promise.allSettled([
@@ -62,14 +60,21 @@ async function main() {
     games: allGames,
   };
 
-  await notifyNewGames(previousGames, allGames);
+  // Record which games are new, but DON'T email yet. The workflow sends the
+  // emails only after games.json has been pushed successfully. Otherwise a
+  // failed push would leave the repo's games.json stale and the next run
+  // would re-announce the same games.
+  const newGames = findNewFreeGames(previousGames, allGames);
+  mkdirSync(dirname(PENDING_NOTIFY_PATH), { recursive: true });
+  writeFileSync(PENDING_NOTIFY_PATH, JSON.stringify(newGames, null, 2), "utf-8");
+  console.log(`  Newsletter: ${newGames.length} new free game(s) queued for notification after push.`);
 
   mkdirSync(dirname(OUT_PATH), { recursive: true });
   writeFileSync(OUT_PATH, JSON.stringify(output, null, 2), "utf-8");
   console.log(`\n✓ Wrote ${allGames.length} games to ${OUT_PATH}`);
   console.log(`  ${output.totalFree} free now, ${output.totalUpcoming} upcoming`);
 
-  // Archive + run log 
+  // Archive + run log
   try {
     updateMonthlyArchive(allGames, output.fetchedAt);
     appendRunLog({ fetchedAt: output.fetchedAt, stores: storeLog });

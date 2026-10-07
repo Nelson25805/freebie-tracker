@@ -3,7 +3,6 @@ name: Fetch Free Games Data
 on:
   schedule:
     # Runs at 08:00, 14:00, and 20:00 UTC daily
-    # This covers morning, afternoon, and evening refreshes
     - cron: "0 8 * * *"
     - cron: "0 14 * * *"
     - cron: "0 20 * * *"
@@ -13,10 +12,8 @@ on:
 permissions:
   contents: write
 
-# Two scheduled runs overlapping (or a manual run landing mid-schedule) can
-# each check out the same base commit and then race to push — whichever
-# loses gets the "fetch first" rejection. Queue runs instead of letting them
-# run concurrently, so each one always starts from the latest main.
+# Queue runs instead of letting them run concurrently, so each one always
+# starts from the latest main.
 concurrency:
   group: "fetch-free-games"
   cancel-in-progress: false
@@ -39,25 +36,27 @@ jobs:
         working-directory: scripts
 
       - name: Install Playwright browsers
-        run: |
-          sudo rm -f /etc/apt/sources.list.d/google-chrome.list
-
-          for attempt in 1 2 3; do
-            sudo apt-get update && npx --yes playwright install --with-deps chromium && break
-            echo "Attempt $attempt failed, retrying in 10s…"
-            sleep 10
-          done
+        run: npx --yes playwright install --with-deps chromium
         working-directory: scripts
 
+      # Fetches data and writes data/games.json + history. It does NOT email
+      # subscribers anymore; it only records which games are new in
+      # scripts/.pending-notify.json (never committed). Emails are sent in
+      # the "Notify subscribers" step below, after a successful push.
       - name: Fetch free games data
         run: node fetch-games.js
         working-directory: scripts
-        env:
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          FETCH_SECRET: ${{ secrets.FETCH_SECRET }}
 
-      - name: Commit updated data
+      - name: Commit and push updated data
+        id: commit
+        env:
+          # "false": a push that still fails after all retries becomes a
+          #          warning (the next scheduled run regenerates the data).
+          # "true":  a push that still fails fails the whole run.
+          STRICT_PUSH: "false"
         run: |
+          echo "pushed=false" >> "$GITHUB_OUTPUT"
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -71,18 +70,44 @@ jobs:
 
           git commit -m "chore: refresh free games data"
 
-          # main can move between checkout and push (a manual push, or an
-          # overlapping run slipping past the concurrency guard). Rebase
-          # our one data commit onto the latest main and retry a few times
-          # rather than failing the whole run over a push race.
+          # GitHub occasionally returns "Internal Server Error" on push, and
+          # main can also move between checkout and push. Retry with growing
+          # delays (10s, 40s, 90s, 160s = ~5 min total) so a server-side blip
+          # has time to clear, rebasing before each retry.
           attempt=1
           max_attempts=5
           until git push; do
             if [ "$attempt" -ge "$max_attempts" ]; then
-              echo "::error::Push still failing after $attempt attempts, giving up."
-              exit 1
+              if [ "$STRICT_PUSH" = "true" ]; then
+                echo "::error::Push still failing after $attempt attempts, giving up."
+                exit 1
+              fi
+              echo "::warning::Push still failing after $attempt attempts (likely a GitHub-side issue). Skipping; the next scheduled run will regenerate and retry."
+              exit 0
             fi
-            echo "Push rejected (attempt $attempt/$max_attempts) — pulling and rebasing, then retrying…"
-            git pull --rebase origin main
+
+            delay=$((attempt * attempt * 10))
+            echo "Push rejected (attempt $attempt/$max_attempts) — waiting ${delay}s, then rebasing and retrying…"
+            sleep "$delay"
+
+            if ! git pull --rebase origin main; then
+              echo "::warning::Rebase failed, aborting it and retrying the push as-is."
+              git rebase --abort || true
+            fi
+
             attempt=$((attempt + 1))
           done
+
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Only runs if the data was actually pushed. If the push failed, the
+      # repo's games.json is still the old version, so the next run will see
+      # these games as "new" again and notify then, with no duplicates.
+      - name: Notify subscribers
+        if: steps.commit.outputs.pushed == 'true'
+        continue-on-error: true
+        run: node send-pending-notify.js
+        working-directory: scripts
+        env:
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          FETCH_SECRET: ${{ secrets.FETCH_SECRET }}
