@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-08T15:23:57.989Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-10-08T20:00:44.402Z",
+  "totalFree": 39,
   "totalUpcoming": 6,
   "games": [
     {
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-11-01T06:00:00.000Z",
-      "offerEnd": "2026-11-10T06:59:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "8f80897c0b6e4e678fed08da169d44be",
@@ -215,6 +215,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+    },
+    {
+      "id": "prime-hue",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Hue",
+      "slug": "hue",
+      "storeUrl": "https://luna.amazon.com/claims/hue-epic/dp/amzn1.pg.item.d7de294d-c66d-4445-824d-ec9292fa1acb?g=s&ingress=amzn&ref_=SM_HUE_S03_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Hue is a vibrant, award-winning puzzle-adventure, where you alter the world by changing its background colour. You explore a dangerous grey land, unearthing coloured fragments on a journey to find your missing mother. As obstacles match the background, they disappear, creating new and exciting puzzles - full of peril, mystery... and colours unseen.Key FeaturesUnique colour-matching mechanic, offering a new twist on the classic adventure game.A heartfelt story that touches on themes of love, loss, existence and remorse.A world full of lively characters to talk to, each with their own personality and story.Stark silhouetted art style with bright, bold colours.Over 30 original music tracks, composed exclusively for Hue.Professionally voiced narration by Anna Acton and Matthew Wade, some of the UK’s best television talent.Full colourblind support, using symbols as a colour aid.Razer Chroma, Corsair RGB plus many more coloured LED devices supported on Windows.",
+      "image": "https://m.media-amazon.com/images/I/818FmqLMjKL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-high-on-life",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "High on Life",
+      "slug": "high-on-life",
+      "storeUrl": "https://luna.amazon.com/claims/high-on-life-epic/dp/amzn1.pg.item.351cbaa9-ac70-4e47-93b6-1a4cb7dd38c8?g=s&ingress=amzn&ref_=SM_HighonLife_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Fresh out of high school with no job and no ambition, you’ve really got nothing going for you until an alien cartel that wants to get high off humanity invades Earth. Now, you and a team of charismatic talking guns must answer the hero's call and become the deadliest intergalactic bounty hunter the cosmos has ever seen.Travel to a variety of biomes and locations across the cosmos, go up against the nefarious Garmantuous and his gang of goons, collect loot, meet unique characters, and more, in the latest comedy adventure from Squanch Games!",
+      "image": "https://m.media-amazon.com/images/I/B1buzV9MhsL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
     },
     {
       "id": "prime-the-da-vinci-cryptex",
@@ -692,6 +730,44 @@
       ]
     },
     {
+      "id": "prime-warbreeds",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "WarBreeds",
+      "slug": "warbreeds",
+      "storeUrl": "https://luna.amazon.com/claims/warbreeds-gog/dp/amzn1.pg.item.886d058d-6e68-4f53-8e58-3044de3e6bb4?g=s&ingress=amzn&ref_=SM_WarBreeds_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A NEW BREED IS ABOUT TO EVOLVEIn a far-off galaxy, the once Great Empire of Yedda has all but perished in a blight of famine, disease, and grisly war. In the aftermath, the four former slave clans have seized upon the Yedda genetic technology to alter their own DNA. As you command your own fierce clan, you are thrust into a power vacuum where you fight for survival and planetary domination.Defeat your enemies and steal their genetic material to expand your clan’s skills and firepower. Engineer and customize your army of warriors with a vast mixture of advanced bio-technological weaponry. Then use your shrewd strategies and brutal fighting skills to lead your clan to victory and become ruler of the fallen Empire... or fall to your enemies.Annihilate enemies. using four preset attack formations, or create your own.Optimized resource management allows players to focus on strategy and combat.Command your fiercely loyal clan as you fight for planetary domination.Play any of the four alien clans on huge, yet detailed battle maps. Clans have unique skills sets, attributes and advanced bio-technological weaponry.Over 35,000 unique warrior combinations are available with a variety of lethal weapons including lasers, missiles, heat rays and rapid-fire Ion guns.Customize and enhance your warriors fighting ability through genetic engineering of defeated enemies.",
+      "image": "https://m.media-amazon.com/images/I/A1RRpbgiXqL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-conarium",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Conarium",
+      "slug": "conarium",
+      "storeUrl": "https://luna.amazon.com/claims/conarium-gog/dp/amzn1.pg.item.82e258e7-827e-46e0-8228-25e9720b48b4?g=s&ingress=amzn&ref_=SM_Conarium_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
+      "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
       "id": "prime-five-nights-at-freddy-s-into-the-pit",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -730,41 +806,22 @@
       ]
     },
     {
-      "id": "prime-hue",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Hue",
-      "slug": "hue",
-      "storeUrl": "https://luna.amazon.com/claims/hue-epic/dp/amzn1.pg.item.d7de294d-c66d-4445-824d-ec9292fa1acb?g=s&ingress=amzn&ref_=SM_HUE_S03_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Hue is a vibrant, award-winning puzzle-adventure, where you alter the world by changing its background colour. You explore a dangerous grey land, unearthing coloured fragments on a journey to find your missing mother. As obstacles match the background, they disappear, creating new and exciting puzzles - full of peril, mystery... and colours unseen.Key FeaturesUnique colour-matching mechanic, offering a new twist on the classic adventure game.A heartfelt story that touches on themes of love, loss, existence and remorse.A world full of lively characters to talk to, each with their own personality and story.Stark silhouetted art style with bright, bold colours.Over 30 original music tracks, composed exclusively for Hue.Professionally voiced narration by Anna Acton and Matthew Wade, some of the UK’s best television talent.Full colourblind support, using symbols as a colour aid.Razer Chroma, Corsair RGB plus many more coloured LED devices supported on Windows.",
-      "image": "https://m.media-amazon.com/images/I/818FmqLMjKL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
+      "id": "steam-3809",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Pony Island (Steam) Giveaway",
+      "slug": "3809",
+      "storeUrl": "https://www.gamerpower.com/open/pony-island-steam-giveaway",
+      "seller": "Steam",
+      "description": "Yes, this is real! You can grab Pony Island for free on Steam! Pony Island is a suspenseful puzzle game disguised as something much more interesting. Definitely worth checking out",
+      "image": "https://www.gamerpower.com/offers/1b/6ac7d79b50528.jpg",
+      "originalPrice": 499,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
+      "offerStart": "2026-10-08T13:49:15.000Z",
+      "offerEnd": "2026-10-12T23:59:00.000Z",
       "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-high-on-life",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "High on Life",
-      "slug": "high-on-life",
-      "storeUrl": "https://luna.amazon.com/claims/high-on-life-epic/dp/amzn1.pg.item.351cbaa9-ac70-4e47-93b6-1a4cb7dd38c8?g=s&ingress=amzn&ref_=SM_HighonLife_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Fresh out of high school with no job and no ambition, you’ve really got nothing going for you until an alien cartel that wants to get high off humanity invades Earth. Now, you and a team of charismatic talking guns must answer the hero's call and become the deadliest intergalactic bounty hunter the cosmos has ever seen.Travel to a variety of biomes and locations across the cosmos, go up against the nefarious Garmantuous and his gang of goons, collect loot, meet unique characters, and more, in the latest comedy adventure from Squanch Games!",
-      "image": "https://m.media-amazon.com/images/I/B1buzV9MhsL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
+        "PC"
       ]
     },
     {
