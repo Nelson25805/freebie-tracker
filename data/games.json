@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-10T14:26:11.127Z",
+  "fetchedAt": "2026-10-10T18:36:11.155Z",
   "totalFree": 39,
   "totalUpcoming": 6,
   "games": [
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "8f80897c0b6e4e678fed08da169d44be",
@@ -95,8 +95,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "6a846880836044a2adad614ac771f487",
@@ -255,15 +255,15 @@
       ]
     },
     {
-      "id": "prime-the-da-vinci-cryptex",
+      "id": "prime-we-had-a-problem-processing-that-request-404-",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "The Da Vinci Cryptex",
-      "slug": "the-da-vinci-cryptex",
+      "title": "We had a problem processing that request (404).",
+      "slug": "we-had-a-problem-processing-that-request-404-",
       "storeUrl": "https://luna.amazon.com/claims/the-da-vinci-cryptex-legacy/dp/amzn1.pg.item.6cd3cd34-9ede-48df-bf9a-cc154ed97525?g=s&ingress=amzn&ref_=SM_TheDaVinciCryptex_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Trapped in a room of the Italian genial inventor, you need to think out of the box to solve logical enigmas written in a book and escape. Find the answers, unlock the Cryptex, and see what awaits you in the next room!Consisting of 50 unique riddles, the more you go on, the harder to solve the puzzles. So, how many enigmas can you actually crack? If you're a fan of puzzles, word games, mind games, logic riddles, and enigmas, The Da Vinci Cryptex series are the games for you!",
-      "image": "https://m.media-amazon.com/images/I/A1eQlb8Lw+L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "Free with Prime Gaming via Legacy Games.",
+      "image": "https://m.media-amazon.com/images/I/81ejuIFs-uL.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
