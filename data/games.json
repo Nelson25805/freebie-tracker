@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-10T00:12:01.721Z",
-  "totalFree": 40,
+  "fetchedAt": "2026-10-10T14:26:11.127Z",
+  "totalFree": 39,
   "totalUpcoming": 6,
   "games": [
     {
@@ -95,8 +95,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "6a846880836044a2adad614ac771f487",
@@ -839,25 +839,6 @@
       "status": "free",
       "offerStart": "2026-10-08T13:49:15.000Z",
       "offerEnd": "2026-10-12T23:59:00.000Z",
-      "platforms": [
-        "PC"
-      ]
-    },
-    {
-      "id": "steam-3804",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Spooky Cats Steam Key Giveaway",
-      "slug": "3804",
-      "storeUrl": "https://www.gamerpower.com/open/spooky-cats-steam-key-giveaway",
-      "seller": "Steam",
-      "description": "Fanatical is giving away Spooky Cats Steam keys for free! Grab your Steam key before it's too late!",
-      "image": "https://www.gamerpower.com/offers/1b/6ac6201af0cf6.jpg",
-      "originalPrice": 299,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-07T06:34:03.000Z",
-      "offerEnd": "2026-10-09T23:59:00.000Z",
       "platforms": [
         "PC"
       ]
