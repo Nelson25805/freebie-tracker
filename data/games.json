@@ -1,8 +1,27 @@
 {
-  "fetchedAt": "2026-10-13T02:12:38.067Z",
+  "fetchedAt": "2026-10-13T15:46:16.885Z",
   "totalFree": 37,
-  "totalUpcoming": 6,
+  "totalUpcoming": 7,
   "games": [
+    {
+      "id": "921e40c4c69f4d728914ca2a4f0aa407",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Eternal Threads",
+      "slug": "eternal-threads-197169",
+      "storeUrl": "https://store.epicgames.com/p/eternal-threads-197169",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Eternal Threads is a single-player, first-person story-driven puzzle game of time manipulation, choice and consequence.",
+      "image": "https://cdn1.epicgames.com/spt-assets/08813e055af64315b8a55b2e521f4e04/eternal-threads-1vm6i.jpg",
+      "originalPrice": 1999,
+      "discountPrice": 1999,
+      "status": "upcoming",
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
+    },
     {
       "id": "be5600439b434624802764f704755cde",
       "store": "epic",
@@ -38,8 +57,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "8f80897c0b6e4e678fed08da169d44be",
