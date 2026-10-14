@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-14T13:31:19.874Z",
-  "totalFree": 37,
+  "fetchedAt": "2026-10-14T18:38:48.858Z",
+  "totalFree": 34,
   "totalUpcoming": 7,
   "games": [
     {
@@ -114,8 +114,8 @@
       "originalPrice": 799,
       "discountPrice": 799,
       "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "6a846880836044a2adad614ac771f487",
@@ -347,63 +347,6 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-botany-manor",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Botany Manor",
-      "slug": "botany-manor",
-      "storeUrl": "https://luna.amazon.com/claims/botany-manor-epic/dp/amzn1.pg.item.fe9fbd08-590e-4d6d-9a94-f22f4548c09d?g=s&ingress=amzn&ref_=SM_BotanyManor_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "It's 1890, and you play as botanist Arabella Greene, who is working to finish her botanical research book 'Forgotten Flora'.\nExplore a complete historical English manor and its grounds, researching how to grow rare plant specimens from seed. There are many rooms and gardens to discover, all set inside a beautiful countryside surrounding.The manor is filled with mysterious clues for you to discover, including books, posters, letters and fascinating Victorian contraptions.\nThe plants you grow are fantastical, but still inspired by real phenomena in nature, so some of them require you to think outside the box.Using what's available to you in the manor, you must create the ideal conditions for each plant.\nRoom by room, you learn more about the life and career of Arabella, and the challenges she faced as a woman navigating her scientific career.\nBotany Manor offers a relaxing and peaceful environment, feel free to stop and smell the roses.",
-      "image": "https://m.media-amazon.com/images/I/B1sgXx3AdnL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-doom-doom-ii",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "DOOM + DOOM II",
-      "slug": "doom-doom-ii",
-      "storeUrl": "https://luna.amazon.com/claims/doom-doom-ii-gog/dp/amzn1.pg.item.db1d5024-9037-4d32-9543-37a9577e7d86?g=s&ingress=amzn&ref_=SM_DOOMDOOMII_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Developed by id Software, and originally released in 1993, DOOM pioneered and popularized the first-person shooter, setting a standard for all FPS games. The critically acclaimed sequel, DOOM II, followed in 1994. Now the definitive, newly enhanced versions of DOOM + DOOM II are available as a combined product.Owners Receive:DOOMDOOM IITNT: EvilutionThe Plutonia ExperimentMaster Levels for DOOM IINo Rest for the LivingSigilSigil IILegacy of Rust (a new episode created in collaboration by id Software, Nightdive Studios and MachineGames)A new Deathmatch map pack featuring 25 maps Altogether, there are a total of 187 mission maps and 43 deathmatch maps in DOOM + DOOM II.New EnhancementsOnline, cross-platform deathmatch and co-op for up to 16 playersCommunity-published mod support with an in-game mod browserChoose between the original midi DOOM and DOOM II soundtracks or the modern IDKFA versions by Andrew Hulshult (including brand-new DOOM II recordings)Improved performance with multithreaded rendering supporting up to 4K resolutionNow on the KEX engineBOOM source compatibility makes it possible for hundreds of community-created mods from the past 25 years to be published in-gameAccessibility options, such as a modern font to improve legibility, high contrast mode, text-to-speech, speech-to-text multiplayer chat and moreExisting EnhancementsUpgraded visualsModern controller supportImproved mouse and keyboard controlsLocal split-screen deathmatch and co-op for up to 4 playersFeatured community mods, including REKKR, Revolution!, Syringe, Double Impact, Arrival, and more! Expect an ever-expanding list of single player mods to be added by the community modders.60 FPS and native 16:9 support – up to 1080p",
-      "image": "https://m.media-amazon.com/images/I/B1aYxFwhoNL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-drop-duchy",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Drop Duchy",
-      "slug": "drop-duchy",
-      "storeUrl": "https://luna.amazon.com/claims/drop-duchy-epic/dp/amzn1.pg.item.2cb13abe-d709-4d5c-8d65-35bdc91d3b4d?g=s&ingress=amzn&ref_=SM_DropDuchy_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Drop Duchy takes on the iconic geometric puzzle gameplay we all know and love with a fresh perspective: instead of simply clearing lines, you'll be thoughtfully building a realm using pieces of various shapes and types to overcome enemy challenges.A mix of deck-building, puzzle and rogue-lite, the game offers a new gameplay designed to hone your appetite as a block-stacking tactician. Optimization is key to collecting precious resources, protecting your castle, and building your army.\nDefeat is not the end, though: use the experience gained in previous runs to unlock even more content!",
-      "image": "https://m.media-amazon.com/images/I/B1WB8Gqb7VL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
       ]
     },
     {
