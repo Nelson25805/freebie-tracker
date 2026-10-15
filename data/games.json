@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-15T13:15:32.573Z",
-  "totalFree": 34,
+  "fetchedAt": "2026-10-15T18:22:46.487Z",
+  "totalFree": 36,
   "totalUpcoming": 7,
   "games": [
     {
@@ -57,8 +57,27 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
+    },
+    {
+      "id": "6aab3ddef4f84fbc9dd81c60f9d8549c",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Sker Ritual",
+      "slug": "sker-ritual-aac702",
+      "storeUrl": "https://store.epicgames.com/p/sker-ritual-aac702",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "The round-based co-op survival FPS and spin-off to the award-winning British horror, Maid of Sker. Play solo or up to 4 players to survive the supernatural onslaught of the Quiet Ones.",
+      "image": "https://cdn1.epicgames.com/spt-assets/43d96f4437e34c87b7eff08831d1b1de/sker-ritual-1tuka.png",
+      "originalPrice": 2499,
+      "discountPrice": 2499,
+      "status": "upcoming",
+      "offerStart": "2026-10-22T15:00:00.000Z",
+      "offerEnd": "2026-10-29T15:00:00.000Z"
     },
     {
       "id": "8f80897c0b6e4e678fed08da169d44be",
@@ -78,25 +97,6 @@
       "status": "upcoming",
       "offerStart": "2026-10-19T15:00:00.000Z",
       "offerEnd": "2026-11-02T16:00:00.000Z"
-    },
-    {
-      "id": "cb733f3432db46bca94965b422c33ede",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Out of Sight",
-      "slug": "out-of-sight-b96ca8",
-      "storeUrl": "https://store.epicgames.com/p/out-of-sight-b96ca8",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "You’re Sophie, a young blind girl who sees through her teddy bear’s eyes. Escape your captors and uncover the evil history of the dark mansion you desperately seek to escape in this unique, atmospheric horror puzzle/adventure game.",
-      "image": "https://cdn1.epicgames.com/spt-assets/6e1bf54cfa6344c89d41e4e7af036ac9/out-of-sight-1l12n.jpg",
-      "originalPrice": 1499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-08T15:00:00.000Z",
-      "offerEnd": "2026-10-15T15:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -131,8 +131,8 @@
       "description": "Bad Cheese is a psychological horror inspired by the eerie charm of 1920s animation. \nStep into the tiny paws of a mouse spending the weekend at home with a dysfunctional Dad while Mom's away. \nBe on your best behavior and KEEP DADDY HAPPY.",
       "image": "https://cdn1.epicgames.com/spt-assets/6cbb0e3805c4436bafd028cafff48307/bad-cheese-16hj0.png",
       "originalPrice": 1299,
-      "discountPrice": 1299,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-10-15T15:00:00.000Z",
       "offerEnd": "2026-10-22T15:00:00.000Z"
     },
@@ -150,29 +150,29 @@
       "description": "A suave secret agent adventure game. Your mission (should you choose to accept) is to infiltrate enemy spy Ruby La Rouge’s secret hideaway and put a stop to her evil plans!",
       "image": "https://cdn1.epicgames.com/spt-assets/45db4fbe68fe43f4b025dec2014d42e7/agent-a-a-puzzle-in-disguise-3cppl.png",
       "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-10-15T15:00:00.000Z",
       "offerEnd": "2026-10-22T15:00:00.000Z"
     },
     {
-      "id": "af6b823b8698465f9aedc3bddf2e8686",
+      "id": "06190191cede42afb633fe89ef08c27e",
       "store": "epic",
       "storeName": "Epic Games Store",
-      "title": "TerraScape",
-      "slug": "terrascape-2b12b1",
-      "storeUrl": "https://store.epicgames.com/p/terrascape-2b12b1",
+      "title": "Home - A Unique Horror Adventure",
+      "slug": "home-19212a",
+      "storeUrl": "https://store.epicgames.com/p/home-19212a",
       "seller": "PC",
       "platforms": [
         "PC"
       ],
-      "description": "Build gorgeous kingdoms on floating islands by strategically placing buildings in this cozy, medieval City-Puzzler. Discover secret combinations, take on monthly challenges and explore randomly generated maps in various single- and multiplayer game modes.",
-      "image": "https://cdn1.epicgames.com/spt-assets/a740a2eed807469f88b9dff17e7cd3a3/terrascape-j7p8d.png",
-      "originalPrice": 1699,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-08T15:00:00.000Z",
-      "offerEnd": "2026-10-15T15:00:00.000Z"
+      "description": "Home is a unique horror adventure set in a beautifully-realized pixel world. It’s a murder mystery with a twist – because you decide what ultimately happens.",
+      "image": "https://cdn1.epicgames.com/spt-assets/46fc0cdb9f164a848e916249a8f68fc7/home-1f6qi.png",
+      "originalPrice": 499,
+      "discountPrice": 499,
+      "status": "upcoming",
+      "offerStart": "2026-10-22T15:00:00.000Z",
+      "offerEnd": "2026-10-29T15:00:00.000Z"
     },
     {
       "id": "psplus-f1-25",
@@ -234,6 +234,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+    },
+    {
+      "id": "prime-five-nights-at-freddy-s-into-the-pit",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Five Nights at Freddy's: Into the Pit",
+      "slug": "five-nights-at-freddy-s-into-the-pit",
+      "storeUrl": "https://luna.amazon.com/claims/five-nights-at-freddys-into-the-pit-epic/dp/amzn1.pg.item.9d2ad65c-0963-4e2d-93e6-75ad2a4bfc87?g=s&ingress=amzn&ref_=SM_FiveNightsatFreddysIntothePit_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Survive five nights of terror in this chilling adventure game. Travel between time periods to solve puzzles, gather clues, and outrun the threat relentlessly pursuing you. Move swiftly and stay hidden, and you may just survive. But be careful - it's not just your own life that's on the line this time.",
+      "image": "https://m.media-amazon.com/images/I/81AstxZiaRL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-doom",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "DOOM",
+      "slug": "doom",
+      "storeUrl": "https://luna.amazon.com/claims/doom-gog/dp/amzn1.pg.item.b095156c-1207-49f0-801a-75ac03b74def?g=s&ingress=amzn&ref_=SM_DOOM_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.StoryYou’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.A Relentless CampaignThere is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.Please note: The DRM-Free version of DOOM (2016) is single-player only. Multiplayer and online functionality for SnapMap are not included. SnapMap content is unlocked by default.",
+      "image": "https://m.media-amazon.com/images/I/B1l-UjFh9mL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
     },
     {
       "id": "prime-hue",
@@ -540,6 +578,25 @@
       ]
     },
     {
+      "id": "prime-kingdomino",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kingdomino",
+      "slug": "kingdomino",
+      "storeUrl": "https://luna.amazon.com/detail/B0HMJMGD9L?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The digital deluxe version of the award-winning board game, Kingdomino!Expand your realm by placing domino-style terrain tiles, collecting valuable crowns and making clever strategic decisions. Every tile shapes your kingdom, every draft presents a new challenge, and every decision brings you closer to victory.Winner of the prestigious Spiel des Jahres award and enjoyed by millions of players worldwide, Kingdomino combines simple rules with satisfying strategic depth. Whether you're playing your first game or playing competitively for the perfect score, every kingdom is unique.Connect forests, lakes, fields and more, watching your kingdom come to life with every turn. Collect crowns to multiply your score and carefully plan each draft, balancing powerful tiles against turn order.Will your kingdom reign supreme?",
+      "image": "https://m.media-amazon.com/images/I/D1DhEU+TB-L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-fortnite-og",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -673,22 +730,41 @@
       ]
     },
     {
-      "id": "prime-garfield-kart-2-all-you-can-drift",
+      "id": "prime-caravan-sandwitch",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Garfield Kart 2 - All You Can Drift",
-      "slug": "garfield-kart-2-all-you-can-drift",
-      "storeUrl": "https://luna.amazon.com/detail/B0FPTM87HH?ref=pghq&r=web&autoplay=1",
+      "title": "Caravan SandWitch",
+      "slug": "caravan-sandwitch",
+      "storeUrl": "https://luna.amazon.com/claims/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?g=s&ingress=amzn&ref_=SM_CaravanSandWitch_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Ready to race against a real heavyweight? Garfield, Odie, Nermal, and the whole crew are at the starting line, raring to go!Play as one of the eight cult characters from the Garfield universe, fill up your karts, customize your look, and race away at breakneck speeds.Take a wild ride through an unhinged universe, where there’s a surprise waiting around every turn. Pirate, western, or detective: Garfield speeds through brightly colored worlds to prove that, even in his dreams, he’s the king!Use shortcuts or bonus items to change the course of races and create unforgettable moments with friends through local and online multiplayer modes.Mysteries, Treasures, and Rodeos!Pit yourself against your friends on wacky circuits from three unique universes! Find your way through mysterious detective scenes, brave the pirate seas, or kick up dust along old cowboy trails.Meet Garfield and His GangPlay as Garfield, Odie, Jon, and many more iconic characters from the cartoon! Each driver has their own personality, making each race a unique and immersive experience.Lasagna-esque Races with Friends!Play against up to eight players online worldwide, or enjoy multiplayer mode for up to four players with split-screen mode! Perfect for frenzied competitions between friends or on family game nights.Customizable KartsPimp your ride and create a kart that is perfectly aligned with your driving style! Choose your own bumpers, wheels, and spoilers, as well as style and color for a unique touch. Strut your stuff on the track and show them who really is the king of the circuit!",
-      "image": "https://m.media-amazon.com/images/I/D1FibvoksSL._SX960_QL65_FMwebp_.png",
+      "description": "In Caravan SandWitch, embark on a journey across a Sci-Fi Provence-like world, driven by a mystery through your missing sister that unfolds with each step you take.\nInteract with the communities on Cigalo, help them with their tasks and meet new people along the way. Take your time to explore the world, whether in your van or on foot.\nLife is simple: no combat, no death, no timer, just you, your van, and the world.Explore a Provence-like WorldEquipped with your van and an array of essential tools, you set out on a quest to find your missing sister. Upgrade your van throughout your adventure and explorations to open up new passages and ruins. From navigating treacherous terrain to uncovering ancient ruins, every step of your journey brings you closer to unraveling the truth behind your sister's disappearance.A hopeful Post-ApocalypseFrom a green planet to a desertic one due to human activities and sur-exploitation; discover on Cigalo the impact of humans and its population through your road trip. Meet the Reinetos, an old aboriginal species, the Robots left behind after the planet exploitation, the humans who stayed after everyone left for another planet, and the mysterious SandWitch. All of them live peacefully in Cigalo and help each other in this unwelcome environment.Meet a diverse cast of charactersAs you interact with the diverse characters you meet along the way, you'll come to understand that your community is your home.\nHelp everyone and contribute your piece to the edifice, enabling everyone to live in harmony in an environment hostile to all civilizations due to over-exploitation.Accessibility options are available.",
+      "image": "https://m.media-amazon.com/images/I/B1+aUvP2gbL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-vampire-the-masquerade-swansong",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Vampire: The Masquerade - Swansong",
+      "slug": "vampire-the-masquerade-swansong",
+      "storeUrl": "https://luna.amazon.com/claims/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?g=s&ingress=amzn&ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Based on the cult role-playing game and developed by specialists in the genre, Vampire: The Masquerade – Swansong is a narrative RPG in which your every choice determines the fate of the three main characters and of the Boston Camarilla.WELCOME TO THE WORLD OF DARKNESSWhat if vampires were real? What if these bloodthirsty predators lived hidden among us in complex societies and had been hatching conspiracies for thousands of years? And what if you became one of them?\nIn Vampire: The Masquerade, you play as these alluring monsters in a sophisticated world where the lines between the real and supernatural are always blurred.A HEART-POUNDING THRILLERHazel Iversen, the Swan, is the new Prince of the Boston Camarilla. An iron hand in a velvet glove, she intends to assert her power and respect the Masquerade, the vampiric law designed to ensure humans never learn of the existence of these creatures of the night. But nothing works as planned. With rumors of plots, murders and power struggles, you must work in the shadows to protect your Sect in a pulsating investigation that plunges Boston into chaos.PLAY AS 3 ORIGINAL VAMPIRESPlay as 3 vampires who are over a hundred years old. Progress in the game through their intertwined destinies, deal with their different points of view and use their character sheets to try to separate the truth from the lies. Each character has their own vampiric abilities and disciplines that you can upgrade individually to suit your preferred approach. Will you choose intimidation, seduction or stealth? It's your decision, as long as you can sate your Hunger for blood.GAMEPLAY WITH CONSEQUENCESWith its unique gameplay, Swansong puts emphasis on the consequences of your actions in both the investigation and your social interactions with other characters.\nAnalyze each situation carefully because your decisions can have huge consequences on your heroes' lives and the fate of the Boston Camarilla.",
+      "image": "https://m.media-amazon.com/images/I/A1N5QVz0QAL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
       ]
     },
     {
@@ -720,44 +796,6 @@
       "seller": "Prime Gaming",
       "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
       "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-five-nights-at-freddy-s-into-the-pit",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Five Nights at Freddy's: Into the Pit",
-      "slug": "five-nights-at-freddy-s-into-the-pit",
-      "storeUrl": "https://luna.amazon.com/claims/five-nights-at-freddys-into-the-pit-epic/dp/amzn1.pg.item.9d2ad65c-0963-4e2d-93e6-75ad2a4bfc87?g=s&ingress=amzn&ref_=SM_FiveNightsatFreddysIntothePit_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Survive five nights of terror in this chilling adventure game. Travel between time periods to solve puzzles, gather clues, and outrun the threat relentlessly pursuing you. Move swiftly and stay hidden, and you may just survive. But be careful - it's not just your own life that's on the line this time.",
-      "image": "https://m.media-amazon.com/images/I/81AstxZiaRL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-doom",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "DOOM",
-      "slug": "doom",
-      "storeUrl": "https://luna.amazon.com/claims/doom-gog/dp/amzn1.pg.item.b095156c-1207-49f0-801a-75ac03b74def?g=s&ingress=amzn&ref_=SM_DOOM_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.StoryYou’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.A Relentless CampaignThere is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.Please note: The DRM-Free version of DOOM (2016) is single-player only. Multiplayer and online functionality for SnapMap are not included. SnapMap content is unlocked by default.",
-      "image": "https://m.media-amazon.com/images/I/B1l-UjFh9mL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",

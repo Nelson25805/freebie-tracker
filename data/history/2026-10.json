@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-15T13:15:32.573Z",
+  "updatedAt": "2026-10-15T18:22:46.487Z",
   "games": {
     "7c14bf0cffdd43be968fdcf28e5af653": {
       "id": "7c14bf0cffdd43be968fdcf28e5af653",
@@ -153,7 +153,7 @@
         "Amazon Games App"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-doom-eternal": {
       "id": "prime-doom-eternal",
@@ -174,7 +174,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-botany-manor": {
       "id": "prime-botany-manor",
@@ -300,7 +300,7 @@
         "Amazon Games App"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-weakless": {
       "id": "prime-weakless",
@@ -321,7 +321,7 @@
         "GOG"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-zoria-age-of-shattering": {
       "id": "prime-zoria-age-of-shattering",
@@ -342,7 +342,7 @@
         "GOG"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-star-wars-outlaws": {
       "id": "prime-star-wars-outlaws",
@@ -363,7 +363,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-avatar-frontiers-of-pandora": {
       "id": "prime-avatar-frontiers-of-pandora",
@@ -384,7 +384,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-assassin-s-creed-mirage": {
       "id": "prime-assassin-s-creed-mirage",
@@ -405,7 +405,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-assassin-s-creed-valhalla": {
       "id": "prime-assassin-s-creed-valhalla",
@@ -426,7 +426,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-space-metal-mania": {
       "id": "prime-space-metal-mania",
@@ -447,7 +447,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-fortnite-og": {
       "id": "prime-fortnite-og",
@@ -468,7 +468,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-fortnite": {
       "id": "prime-fortnite",
@@ -489,7 +489,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-fortnite-battle-royale": {
       "id": "prime-fortnite-battle-royale",
@@ -510,7 +510,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-lego-fortnite-brick-life": {
       "id": "prime-lego-fortnite-brick-life",
@@ -531,7 +531,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-lego-fortnite-odyssey": {
       "id": "prime-lego-fortnite-odyssey",
@@ -552,7 +552,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-fortnite-festival": {
       "id": "prime-fortnite-festival",
@@ -573,7 +573,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-fortnite-save-the-world": {
       "id": "prime-fortnite-save-the-world",
@@ -594,7 +594,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-garfield-kart-2-all-you-can-drift": {
       "id": "prime-garfield-kart-2-all-you-can-drift",
@@ -678,7 +678,7 @@
         "Epic Games"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-high-on-life": {
       "id": "prime-high-on-life",
@@ -699,7 +699,7 @@
         "Epic Games"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-the-da-vinci-cryptex": {
       "id": "prime-the-da-vinci-cryptex",
@@ -720,7 +720,7 @@
         "Legacy Games"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-rims-racing": {
       "id": "prime-rims-racing",
@@ -741,7 +741,7 @@
         "Epic Games"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "steam-3716": {
       "id": "steam-3716",
@@ -762,7 +762,7 @@
         "PC"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "7ae00c3e89174012b175cc73b4737723": {
       "id": "7ae00c3e89174012b175cc73b4737723",
@@ -825,7 +825,7 @@
         "Epic Games"
       ],
       "firstSeen": "2026-10-01T19:38:01.250Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-doom": {
       "id": "prime-doom",
@@ -846,7 +846,7 @@
         "GOG"
       ],
       "firstSeen": "2026-10-01T19:38:01.250Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "gog-bounty-train": {
       "id": "gog-bounty-train",
@@ -909,7 +909,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-06T14:56:11.614Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "psplus-f1-25": {
       "id": "psplus-f1-25",
@@ -931,7 +931,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "psplus-hunt-showdown-1896": {
       "id": "psplus-hunt-showdown-1896",
@@ -953,7 +953,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "psplus-earth-defense-force-world-brothers-2": {
       "id": "psplus-earth-defense-force-world-brothers-2",
@@ -976,7 +976,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-sonic-x-shadow-generations": {
       "id": "prime-sonic-x-shadow-generations",
@@ -997,7 +997,7 @@
         "Amazon Luna"
       ],
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "steam-3804": {
       "id": "steam-3804",
@@ -1081,7 +1081,7 @@
         "GOG"
       ],
       "firstSeen": "2026-10-08T20:00:44.402Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "prime-conarium": {
       "id": "prime-conarium",
@@ -1102,7 +1102,7 @@
         "GOG"
       ],
       "firstSeen": "2026-10-08T20:00:44.402Z",
-      "lastSeen": "2026-10-15T13:15:32.573Z"
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     },
     "steam-3809": {
       "id": "steam-3809",
@@ -1187,6 +1187,111 @@
       ],
       "firstSeen": "2026-10-10T18:36:11.155Z",
       "lastSeen": "2026-10-10T18:36:11.155Z"
+    },
+    "6a846880836044a2adad614ac771f487": {
+      "id": "6a846880836044a2adad614ac771f487",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Bad Cheese",
+      "slug": "bad-cheese-4256d9",
+      "storeUrl": "https://store.epicgames.com/p/bad-cheese-4256d9",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Bad Cheese is a psychological horror inspired by the eerie charm of 1920s animation. \nStep into the tiny paws of a mouse spending the weekend at home with a dysfunctional Dad while Mom's away. \nBe on your best behavior and KEEP DADDY HAPPY.",
+      "image": "https://cdn1.epicgames.com/spt-assets/6cbb0e3805c4436bafd028cafff48307/bad-cheese-16hj0.png",
+      "originalPrice": 1299,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-10-15T15:00:00.000Z",
+      "offerEnd": "2026-10-22T15:00:00.000Z",
+      "firstSeen": "2026-10-15T18:22:46.487Z",
+      "lastSeen": "2026-10-15T18:22:46.487Z"
+    },
+    "db1202a30c5541dd99cdf54c918a9348": {
+      "id": "db1202a30c5541dd99cdf54c918a9348",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Agent A: A puzzle in disguise",
+      "slug": "agent-a-a-puzzle-in-disguise-42fe5f",
+      "storeUrl": "https://store.epicgames.com/p/agent-a-a-puzzle-in-disguise-42fe5f",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "A suave secret agent adventure game. Your mission (should you choose to accept) is to infiltrate enemy spy Ruby La Rouge’s secret hideaway and put a stop to her evil plans!",
+      "image": "https://cdn1.epicgames.com/spt-assets/45db4fbe68fe43f4b025dec2014d42e7/agent-a-a-puzzle-in-disguise-3cppl.png",
+      "originalPrice": 1999,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-10-15T15:00:00.000Z",
+      "offerEnd": "2026-10-22T15:00:00.000Z",
+      "firstSeen": "2026-10-15T18:22:46.487Z",
+      "lastSeen": "2026-10-15T18:22:46.487Z"
+    },
+    "prime-kingdomino": {
+      "id": "prime-kingdomino",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kingdomino",
+      "slug": "kingdomino",
+      "storeUrl": "https://luna.amazon.com/detail/B0HMJMGD9L?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The digital deluxe version of the award-winning board game, Kingdomino!Expand your realm by placing domino-style terrain tiles, collecting valuable crowns and making clever strategic decisions. Every tile shapes your kingdom, every draft presents a new challenge, and every decision brings you closer to victory.Winner of the prestigious Spiel des Jahres award and enjoyed by millions of players worldwide, Kingdomino combines simple rules with satisfying strategic depth. Whether you're playing your first game or playing competitively for the perfect score, every kingdom is unique.Connect forests, lakes, fields and more, watching your kingdom come to life with every turn. Collect crowns to multiply your score and carefully plan each draft, balancing powerful tiles against turn order.Will your kingdom reign supreme?",
+      "image": "https://m.media-amazon.com/images/I/D1DhEU+TB-L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ],
+      "firstSeen": "2026-10-15T18:22:46.487Z",
+      "lastSeen": "2026-10-15T18:22:46.487Z"
+    },
+    "prime-caravan-sandwitch": {
+      "id": "prime-caravan-sandwitch",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Caravan SandWitch",
+      "slug": "caravan-sandwitch",
+      "storeUrl": "https://luna.amazon.com/claims/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?g=s&ingress=amzn&ref_=SM_CaravanSandWitch_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "In Caravan SandWitch, embark on a journey across a Sci-Fi Provence-like world, driven by a mystery through your missing sister that unfolds with each step you take.\nInteract with the communities on Cigalo, help them with their tasks and meet new people along the way. Take your time to explore the world, whether in your van or on foot.\nLife is simple: no combat, no death, no timer, just you, your van, and the world.Explore a Provence-like WorldEquipped with your van and an array of essential tools, you set out on a quest to find your missing sister. Upgrade your van throughout your adventure and explorations to open up new passages and ruins. From navigating treacherous terrain to uncovering ancient ruins, every step of your journey brings you closer to unraveling the truth behind your sister's disappearance.A hopeful Post-ApocalypseFrom a green planet to a desertic one due to human activities and sur-exploitation; discover on Cigalo the impact of humans and its population through your road trip. Meet the Reinetos, an old aboriginal species, the Robots left behind after the planet exploitation, the humans who stayed after everyone left for another planet, and the mysterious SandWitch. All of them live peacefully in Cigalo and help each other in this unwelcome environment.Meet a diverse cast of charactersAs you interact with the diverse characters you meet along the way, you'll come to understand that your community is your home.\nHelp everyone and contribute your piece to the edifice, enabling everyone to live in harmony in an environment hostile to all civilizations due to over-exploitation.Accessibility options are available.",
+      "image": "https://m.media-amazon.com/images/I/B1+aUvP2gbL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ],
+      "firstSeen": "2026-10-15T18:22:46.487Z",
+      "lastSeen": "2026-10-15T18:22:46.487Z"
+    },
+    "prime-vampire-the-masquerade-swansong": {
+      "id": "prime-vampire-the-masquerade-swansong",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Vampire: The Masquerade - Swansong",
+      "slug": "vampire-the-masquerade-swansong",
+      "storeUrl": "https://luna.amazon.com/claims/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?g=s&ingress=amzn&ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Based on the cult role-playing game and developed by specialists in the genre, Vampire: The Masquerade – Swansong is a narrative RPG in which your every choice determines the fate of the three main characters and of the Boston Camarilla.WELCOME TO THE WORLD OF DARKNESSWhat if vampires were real? What if these bloodthirsty predators lived hidden among us in complex societies and had been hatching conspiracies for thousands of years? And what if you became one of them?\nIn Vampire: The Masquerade, you play as these alluring monsters in a sophisticated world where the lines between the real and supernatural are always blurred.A HEART-POUNDING THRILLERHazel Iversen, the Swan, is the new Prince of the Boston Camarilla. An iron hand in a velvet glove, she intends to assert her power and respect the Masquerade, the vampiric law designed to ensure humans never learn of the existence of these creatures of the night. But nothing works as planned. With rumors of plots, murders and power struggles, you must work in the shadows to protect your Sect in a pulsating investigation that plunges Boston into chaos.PLAY AS 3 ORIGINAL VAMPIRESPlay as 3 vampires who are over a hundred years old. Progress in the game through their intertwined destinies, deal with their different points of view and use their character sheets to try to separate the truth from the lies. Each character has their own vampiric abilities and disciplines that you can upgrade individually to suit your preferred approach. Will you choose intimidation, seduction or stealth? It's your decision, as long as you can sate your Hunger for blood.GAMEPLAY WITH CONSEQUENCESWith its unique gameplay, Swansong puts emphasis on the consequences of your actions in both the investigation and your social interactions with other characters.\nAnalyze each situation carefully because your decisions can have huge consequences on your heroes' lives and the fate of the Boston Camarilla.",
+      "image": "https://m.media-amazon.com/images/I/A1N5QVz0QAL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ],
+      "firstSeen": "2026-10-15T18:22:46.487Z",
+      "lastSeen": "2026-10-15T18:22:46.487Z"
     }
   }
 }
