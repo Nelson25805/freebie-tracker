@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "updatedAt": "2026-10-19T15:28:05.050Z",
+  "updatedAt": "2026-10-19T19:44:49.108Z",
   "games": {
     "7c14bf0cffdd43be968fdcf28e5af653": {
       "id": "7c14bf0cffdd43be968fdcf28e5af653",
@@ -762,7 +762,7 @@
         "PC"
       ],
       "firstSeen": "2026-10-01T15:15:25.125Z",
-      "lastSeen": "2026-10-19T15:28:05.050Z"
+      "lastSeen": "2026-10-19T19:44:49.108Z"
     },
     "7ae00c3e89174012b175cc73b4737723": {
       "id": "7ae00c3e89174012b175cc73b4737723",
@@ -931,7 +931,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-19T15:28:05.050Z"
+      "lastSeen": "2026-10-19T19:44:49.108Z"
     },
     "psplus-hunt-showdown-1896": {
       "id": "psplus-hunt-showdown-1896",
@@ -953,7 +953,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-19T15:28:05.050Z"
+      "lastSeen": "2026-10-19T19:44:49.108Z"
     },
     "psplus-earth-defense-force-world-brothers-2": {
       "id": "psplus-earth-defense-force-world-brothers-2",
@@ -976,7 +976,7 @@
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "firstSeen": "2026-10-06T19:38:22.707Z",
-      "lastSeen": "2026-10-19T15:28:05.050Z"
+      "lastSeen": "2026-10-19T19:44:49.108Z"
     },
     "prime-sonic-x-shadow-generations": {
       "id": "prime-sonic-x-shadow-generations",
@@ -1207,7 +1207,7 @@
       "offerStart": "2026-10-15T15:00:00.000Z",
       "offerEnd": "2026-10-22T15:00:00.000Z",
       "firstSeen": "2026-10-15T18:22:46.487Z",
-      "lastSeen": "2026-10-19T15:28:05.050Z"
+      "lastSeen": "2026-10-19T19:44:49.108Z"
     },
     "db1202a30c5541dd99cdf54c918a9348": {
       "id": "db1202a30c5541dd99cdf54c918a9348",
@@ -1228,7 +1228,7 @@
       "offerStart": "2026-10-15T15:00:00.000Z",
       "offerEnd": "2026-10-22T15:00:00.000Z",
       "firstSeen": "2026-10-15T18:22:46.487Z",
-      "lastSeen": "2026-10-19T15:28:05.050Z"
+      "lastSeen": "2026-10-19T19:44:49.108Z"
     },
     "prime-kingdomino": {
       "id": "prime-kingdomino",
