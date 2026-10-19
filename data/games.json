@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-19T19:44:49.108Z",
-  "totalFree": 6,
+  "fetchedAt": "2026-10-19T23:46:15.711Z",
+  "totalFree": 36,
   "totalUpcoming": 5,
   "games": [
     {
@@ -196,6 +196,576 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+    },
+    {
+      "id": "prime-five-nights-at-freddy-s-into-the-pit",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Five Nights at Freddy's: Into the Pit",
+      "slug": "five-nights-at-freddy-s-into-the-pit",
+      "storeUrl": "https://luna.amazon.com/claims/five-nights-at-freddys-into-the-pit-epic/dp/amzn1.pg.item.9d2ad65c-0963-4e2d-93e6-75ad2a4bfc87?g=s&ingress=amzn&ref_=SM_FiveNightsatFreddysIntothePit_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Survive five nights of terror in this chilling adventure game. Travel between time periods to solve puzzles, gather clues, and outrun the threat relentlessly pursuing you. Move swiftly and stay hidden, and you may just survive. But be careful - it's not just your own life that's on the line this time.",
+      "image": "https://m.media-amazon.com/images/I/81AstxZiaRL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-doom",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "DOOM",
+      "slug": "doom",
+      "storeUrl": "https://luna.amazon.com/claims/doom-gog/dp/amzn1.pg.item.b095156c-1207-49f0-801a-75ac03b74def?g=s&ingress=amzn&ref_=SM_DOOM_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.StoryYou’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.A Relentless CampaignThere is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.Please note: The DRM-Free version of DOOM (2016) is single-player only. Multiplayer and online functionality for SnapMap are not included. SnapMap content is unlocked by default.",
+      "image": "https://m.media-amazon.com/images/I/B1l-UjFh9mL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-hue",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Hue",
+      "slug": "hue",
+      "storeUrl": "https://luna.amazon.com/claims/hue-epic/dp/amzn1.pg.item.d7de294d-c66d-4445-824d-ec9292fa1acb?g=s&ingress=amzn&ref_=SM_HUE_S03_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Hue is a vibrant, award-winning puzzle-adventure, where you alter the world by changing its background colour. You explore a dangerous grey land, unearthing coloured fragments on a journey to find your missing mother. As obstacles match the background, they disappear, creating new and exciting puzzles - full of peril, mystery... and colours unseen.Key FeaturesUnique colour-matching mechanic, offering a new twist on the classic adventure game.A heartfelt story that touches on themes of love, loss, existence and remorse.A world full of lively characters to talk to, each with their own personality and story.Stark silhouetted art style with bright, bold colours.Over 30 original music tracks, composed exclusively for Hue.Professionally voiced narration by Anna Acton and Matthew Wade, some of the UK’s best television talent.Full colourblind support, using symbols as a colour aid.Razer Chroma, Corsair RGB plus many more coloured LED devices supported on Windows.",
+      "image": "https://m.media-amazon.com/images/I/818FmqLMjKL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-high-on-life",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "High on Life",
+      "slug": "high-on-life",
+      "storeUrl": "https://luna.amazon.com/claims/high-on-life-epic/dp/amzn1.pg.item.351cbaa9-ac70-4e47-93b6-1a4cb7dd38c8?g=s&ingress=amzn&ref_=SM_HighonLife_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Fresh out of high school with no job and no ambition, you’ve really got nothing going for you until an alien cartel that wants to get high off humanity invades Earth. Now, you and a team of charismatic talking guns must answer the hero's call and become the deadliest intergalactic bounty hunter the cosmos has ever seen.Travel to a variety of biomes and locations across the cosmos, go up against the nefarious Garmantuous and his gang of goons, collect loot, meet unique characters, and more, in the latest comedy adventure from Squanch Games!",
+      "image": "https://m.media-amazon.com/images/I/B1buzV9MhsL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-the-da-vinci-cryptex",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "The Da Vinci Cryptex",
+      "slug": "the-da-vinci-cryptex",
+      "storeUrl": "https://luna.amazon.com/claims/the-da-vinci-cryptex-legacy/dp/amzn1.pg.item.6cd3cd34-9ede-48df-bf9a-cc154ed97525?g=s&ingress=amzn&ref_=SM_TheDaVinciCryptex_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Trapped in a room of the Italian genial inventor, you need to think out of the box to solve logical enigmas written in a book and escape. Find the answers, unlock the Cryptex, and see what awaits you in the next room!Consisting of 50 unique riddles, the more you go on, the harder to solve the puzzles. So, how many enigmas can you actually crack? If you're a fan of puzzles, word games, mind games, logic riddles, and enigmas, The Da Vinci Cryptex series are the games for you!",
+      "image": "https://m.media-amazon.com/images/I/A1eQlb8Lw+L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Legacy Games"
+      ]
+    },
+    {
+      "id": "prime-rims-racing",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "RiMS Racing",
+      "slug": "rims-racing",
+      "storeUrl": "https://luna.amazon.com/claims/rims-racing-epic/dp/amzn1.pg.item.2cf2cac0-6b4d-4b5e-9064-2005dad4ede7?g=s&ingress=amzn&ref_=SM_RimsRacing_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A race is not won purely on the track, so you need to become more than a rider by understanding motorcycle behavior like a real engineer. Traction, angle, braking, torque, trajectory, speed... every factor must be considered before heading to the workshop to change certain components and configuring the optimal set-up.A DREAM GARAGEYour adventure starts by choosing your dream bike. In RiMS Racing, you can ride the world's 8 most powerful European and Japanese motorcycles: Ducati Panigale V4 R, MV Agusta F4 RC, Aprilia RSV4, BMW M 1000 RR, Suzuki GSX-R1000R, Honda CBR1000RR, Kawasaki Ninja ZX-10RR, Yamaha YZF-R1. Recreated with an unmatched level of detail thanks to close collaboration with each manufacturer, these bikes also provide a highly accurate and realistic riding experience. They are true rough diamonds that only need a few cuts to shine their brightest!OPTIMIZE YOUR BIKEWith a mechanics management system never before seen in a motorcycle simulation, you can dismantle all your bike's parts to maintain them after each race or to upgrade them and boost your performance. You will become familiar with every last screw in your bike. Browse a catalogue of over 500 official spare parts from the biggest names in the industry along with over 200 official equipment items to personalize your rider!ACCURATE AND REALISTIC PHYSICSThe level of accuracy and details provided by the mechanics management and MSC is matched by realistic motorcycle physics that will thrill the most demanding of track racers. But thanks to the various ride assist technologies, less experienced players can still learn the techniques that will take them to the top.",
+      "image": "https://m.media-amazon.com/images/I/A1S0pVV7WxL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-wall-world-2",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Wall World 2",
+      "slug": "wall-world-2",
+      "storeUrl": "https://luna.amazon.com/claims/wall-world-2-aga/dp/amzn1.pg.item.11e467f2-b0e3-4a1e-9dee-4cd723e92ee9?g=s&ingress=amzn&ref_=SM_WallWorld2_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The world of the Wall awaits. Wall World 2 builds on the mining rogue-lite experience with expanded mechanics, new challenges, and deeper gameplay. Explore procedurally generated mines full of new discoveries and dangers. Extract valuable resources, harness lost technologies, and upgrade your robospider and exosuit to survive against hordes of raging monsters. Venture through incredible biomes and uncover the secrets entombed in the depths of the Wall.DELVE INTO THE MYSTERIES OF THE WALLVenture deep into the World Wall in your robospider. The mysterious Hole holds both deadly threats and long-lost answers. Risk everything to find out what lies on the other side of the unseen depths.BATTLE ON ALL FRONTSMonsters lurk everywhere, not only on the surface of the Wall, but also within its mines. Arm yourself with an arsenal of powerful weapons and abilities to fight off any threat that stands between you and the truth.ADAPT TO A LIVING WORLDThe endless Wall is ever-changing. Its depths contain not only resources and technologies, but also anomalies that can help or hinder your journey. Navigate incredible biomes, overcome obstacles and discover new wonders as you carve your path deeper inside.UPGRADE AND CUSTOMIZECustomize your robospider between expeditions and meet new characters in the sphere city. You'll have plenty of options to upgrade and enhance the equipment of both your exosuit and your mobile battle station. Each of them brings you one step closer to conquering the Wall.",
+      "image": "https://m.media-amazon.com/images/I/B1yoas-fUjL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-doom-eternal",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "DOOM Eternal",
+      "slug": "doom-eternal",
+      "storeUrl": "https://luna.amazon.com/claims/doom-eternal-microsoft/dp/amzn1.pg.item.1c490f2e-c698-4077-94a6-6a69c98945e2?g=s&ingress=amzn&ref_=SM_DOOMEternal_S02_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Hell's armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity.The only thing they fear... is you.Experience the ultimate combination of speed and power in DOOM Eternal - the next leap in push-forward, first-person combat.Slayer Threat Level At MaximumArmed with a shoulder-mounted flamethrower, retractable wrist-mounted blade, upgraded guns and mods, and abilities, you're faster, stronger, and more versatile than ever.Unholy TrinityTake what you need from your enemies: Glory kill for extra health, incinerate for armor, and chainsaw demons to stock up on ammo to become the ultimate demon-slayer.Enter BattlemodeA new 2 versus 1 multiplayer experience. A fully-armed DOOM Slayer faces off against two player-controlled demons, fighting it out in a best-of-five round match of intense first-person combat.",
+      "image": "https://m.media-amazon.com/images/I/B1QMdGtr2FL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-havendock",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Havendock",
+      "slug": "havendock",
+      "storeUrl": "https://luna.amazon.com/claims/havendock-aga/dp/amzn1.pg.item.ef222081-3e6c-4949-9e87-aaf2c27b6bc6?g=s&ingress=amzn&ref_=SM_Havendock_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Havendock is a relaxing colony simulation and resource management game where you build a thriving settlement in the middle of the ocean. Starting from a small wooden platform, you’ll gather resources, expand your base, and attract new settlers to join you. Manage their needs, craft new technologies, and transform your floating raft into a bustling ocean town.Designed as a single-player experience, Havendock focuses on creativity, strategy, and building a vibrant community-all while surrounded by the calming waves of the sea.Features:Design Your Ideal Floating HavenDesign your ideal floating haven start with a small platform and turn it into a floating oasis! Build unique structures, shape your deck however you like, and create the most charming over-water community that your settlers will adore.Grow Quirky Crops and Feed the CrewFrom vegetables to, well, burgers-who says you can’t farm on water? Plant whatever floats your boat, keep everyone fed, and embrace the unexpected surprises that sprout from your quirky farm.Balance Food, Water, and HappinessJuggling food, water, and the occasional strange request, it’s up to you to keep your castaways content. Balance your resources smartly and keep your settlers smiling, one meal and water pump at a time!Tinker with Tech and GadgetsBuild, tinker, and experiment! Create advanced machines and gadgets that bring your floating world to life. No idea is too wild-so go ahead, craft that sea-to-table burger-making contraption!Unlock Hidden Secrets Across the SeaAdventure is just a deck away! Explore distant islands, meet oddball characters, and uncover treasures (or just plain weird stuff). Your curiosity will always be rewarded!",
+      "image": "https://m.media-amazon.com/images/I/B1NiLzIru-L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-weakless",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Weakless",
+      "slug": "weakless",
+      "storeUrl": "https://luna.amazon.com/claims/weakless-gog/dp/amzn1.pg.item.35aae84a-f566-4890-8fd3-492318a39036?g=s&ingress=amzn&ref_=SM_Weakless_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "The beauty of a true friendship.In Weakless you can control only one character at a time, which means you can’t use the senses of both of them simultaneously. Because of this, you get a unique perspective on how differently they perceive the world around them and at the same time how the two support and complement each other. Deaf being his usual “whizz in a pinny” brings joy to the slightly defensive and introverted Blind. While Blind on the other hand, with the power of his calmness, takes care of the ubiquitous Deaf.Find strengths in your weaknesses.In our world, people with no vision or hearing often have other, sharper, senses. The same is true for Weavelings. Discover the extraordinary set of skills your heroes have, and prove to the world that what’s always been considered a weakness can, in fact, be a mighty advantage.Fairytale-like world.The game takes place in a world full of wonderful, distinctive landscapes. Your path will lead through caves full of glowing fungi, natural basins, forgotten ruins and more.In Weakless you will:Follow the story of an unlikely friendship that develops wordlessly between the stoic Blind One and the energetic Deaf One;Peek into the Deaf One’s sketchbook and gain a unique insight to what he thinks about this whole ordealEnter the beautiful, organic, bioluminescent world of Weavelings, filled with the curious life forms and mysteries of a bygone civilization waiting to be uncoveredGet a glimpse of the artistic vision of how visually impaired and hearing-impaired people perceive the worldBecome a part of non-trivial narratives and satisfying exploration enriched with arcade puzzle elementsExperience stunning music composed on instruments from all around the world, such as the marimba, rav vast or udu.",
+      "image": "https://m.media-amazon.com/images/I/913GIWHzr2L._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-zoria-age-of-shattering",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Zoria: Age of Shattering",
+      "slug": "zoria-age-of-shattering",
+      "storeUrl": "https://luna.amazon.com/claims/zoria-age-of-shattering-gog/dp/amzn1.pg.item.ec074069-a977-4885-b5b0-6f972d17abb7?g=s&ingress=amzn&ref_=SM_ZoriaAgeofShattering_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Zoria: Age of Shattering is a classic tactical RPG with fluid turn-based combat, outpost, and followers management.You will lead a diverse team through the various lands of a Uram continent and against challenges countless groups of monsters and bosses.Zoria has now fallen prey to the sheer brutality of the hellspawn that roams its land. Its lush forests, mysterious caves, and majestic buildings have transformed into haunting and dreadful locations. Take your time and explore unknown areas, as each holds a mystery.Combat is bread and butter, and you will engage in it easily. Use the unique skills of all of your party members:Attack from close range or distance with different attack patterns and directions,Heal or shield allies with various spells and commands,Inflict status aliments like damage over time, stun, immobilize, and other elemental effects,Use your surroundings to use to your advantage or create new ones to separate you from the enemiesKeep a keen eye on your equipment and vitality as they both deteriorate over time. A bonfire in Zoria's provides a safe spot to restock your resources and prepare for the next battle.Take care of each of your warriors' skill development, and it will repay you on the battlefield. Remember that having an individual with the right skills can get you into previously inaccessible places and quests. It may turn out that interacting with a specific character with various objects in the world of Zoria may lead you to discover hidden treasures or make your travel easier.In your outpost, you can plan and assign tasks to your companions. Send selected party members on an autonomic mission, in which you won't participate but will receive what they find along the way. You will also get some of the experience they gain. Never forget that their lives are in your hands!",
+      "image": "https://m.media-amazon.com/images/I/B1afPCHqskL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-star-wars-galactic-racer-",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "STAR WARS: Galactic Racer™",
+      "slug": "star-wars-galactic-racer-",
+      "storeUrl": "https://luna.amazon.com/detail/B0HLN4GG5K?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "STAR WARS​​: Galactic Racer™ is a ​​runs-based​​, high-stakes reinvention of racing born in the lawless Outer Rim of the ​​STAR WARS​​™​​ galaxy.​​​​The Empire’s grip on the galaxy has finally broken, and with its fall comes a new obsession: speed. As the New Republic struggles to rebuild, gambling, entertainment, and glory fuel a booming underground. Out of this chaos, the Galactic League is born: an unsanctioned racing circuit where syndicates sponsor pilots, fortunes are won and lost in seconds, and only the bold survive. No Force. No prophecy. Just skill, strategy, and the will to rise.Immerse yourself in the full single-player STAR WARS: Galactic Racer experience spanning Campaign, Scenarios, and Arcade modes. Cross-platform multiplayer coming soon.COMPETE IN HIGH-STAKES RACES WHERE EVERY RUN IS UNIQUESlam, shunt, and takedown rivals across varied circuits where no two runs play the same. The greater the risk, the greater the reward.SURVIVE A DANGEROUS UNDERGROUND SPORTJoin the Galactic League - an unsanctioned racing circuit born in the lawless Outer Rim. Become Shade, a lone racer chasing revenge and glory.BUILD AND CUSTOMIZE YOUR CRAFTPilot different classes of repulsorcraft each with distinct physics and playstyles. Build a ride that showcases your style and gives you a competitive edge.",
+      "image": "https://m.media-amazon.com/images/I/D1q565GghGL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-sonic-x-shadow-generations",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "SONIC X SHADOW GENERATIONS",
+      "slug": "sonic-x-shadow-generations",
+      "storeUrl": "https://luna.amazon.com/detail/B0HLNB1ZCJ?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Shadow the Hedgehog is back with Classic and Modern Sonic in SONIC X SHADOW GENERATIONS,an all-new collection featuring two unique experiences!When a mysterious creature creates time holes in their universe,Sonic and Shadow each set out on a high-speed action adventure!By using this product, you agree to this EULA: https://games.sega.com/eula/",
+      "image": "https://m.media-amazon.com/images/I/D1NsbAs41+L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-assassin-s-creed-mirage",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Assassin’s Creed® Mirage",
+      "slug": "assassin-s-creed-mirage",
+      "storeUrl": "https://luna.amazon.com/detail/B0CK43NDNR?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "VALLEY OF MEMORYEnjoy 6 hours of new gameplay in Valley of Memory, a free major update that expands Basim’s story and introduces the breathtaking new region of AlUla, with gameplay improvements across the full game.THE ULTIMATE ASSASSINBecome the most versatile and resourceful Assassin in franchise history. Parkour seamlessly through the city and leverage the largest assortment of tools to date. Get contracts and upgrades at the Assassin’s bureaus, collect vital clues, and stealthily take down targets with more visceral assassinations than ever before.A TRIBUTE TO AN ORIGINALExperience a modern take on the iconic features and gameplay that have defined the franchise. Journey to Alamut, the legendary home of the Assassins who laid the foundations of the Creed, in this heartfelt homage to the game that started it all.AN IMMERSIVE, REACTIVE CITY Explore an incredibly dense and vibrant city whose inhabitants react to your every move. Uncover the secrets of four unique districts, from the industrial Karkh to the lush gardens of the Round City. Discover surprising world events and interact with historical figures that shaped the Golden Age of Baghdad.A POWERFUL COMING-OF-AGE STORYFollow Basim’s journey in this tightly crafted, narrative-driven action-adventure experience. Witness his transformation from a defiant young thief to a Master Assassin as he meets allies, mentors, and foes who shape his destiny.",
+      "image": "https://m.media-amazon.com/images/I/D1iYWIKGN1L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-star-wars-outlaws",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Star Wars Outlaws",
+      "slug": "star-wars-outlaws",
+      "storeUrl": "https://luna.amazon.com/detail/B0DDMXR2WZ?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Experience the first-ever open world Star Wars™ action-adventure game and explore distinct locations across the galaxy, both iconic and new. Risk it all as scoundrel Kay Vess, seeking freedom and the means to start a new life. Fight, steal, and outwit your way through the galaxy’s crime syndicates as you join the galaxy’s most wanted.If you’re willing to take the risk, the galaxy is full of opportunity.DISCOVER A GALAXY OF OPPORTUNITYExplore distinct locations with bustling cities and cantinas. Race across sprawling outdoor landscapes on your speeder. Each location brings new adventures, unique challenges, and enticing rewards if you’re willing to take the risk.EXPERIENCE AN ORIGINAL SCOUNDREL STORYLive the high-stakes lifestyle of an outlaw. Turn any situation to your advantage with Nix by your side: fight with your blaster, overcome enemies with stealth and gadgets, or find the right moments to distract enemies and gain the upper hand.EMBARK ON HIGH-STAKES MISSIONSTake on high-risk, high-reward missions from the galaxy’s crime syndicates. Steal valuable goods, infiltrate secret locations, and outwit enemies as one of the galaxy’s most wanted. Every choice you make influences your ever-changing reputation.JUMP INTO THE PILOT SEATPilot your ship, the Trailblazer, as you engage in thrilling dogfights with the Empire and other foes. Find the right opportunities to chase, evade, and attack to get the upper hand.Offer, content, and dates subject to change.",
+      "image": "https://m.media-amazon.com/images/I/D1zjA8h4SXL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-avatar-frontiers-of-pandora",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Avatar: Frontiers of Pandora",
+      "slug": "avatar-frontiers-of-pandora",
+      "storeUrl": "https://luna.amazon.com/detail/B0CPB9QQBN?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Avatar: Frontiers of Pandora™ is a third and first-person action-adventure game set in the Western Frontier. Abducted by the RDA, you, a Na’vi, were molded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage and discover what it truly means to be Na'vi as you join other clans to protect Pandora.EXPLORE A WORLD OF WONDER AND DANGERExperience the epic wonders of the Western Frontier, a never-before-seen continent of Pandora. Journey through beautiful yet unpredictable open world regions, where lowering your guard can lead to deadly mistakes.BECOME NA’VIHarness your incredible strength and agility while customizing your character, crafting new gear, and upgrading skills and weapons to fit your playstyle.SOAR THE SKIESBond with your own personal banshee that will give you an edge in aerial combat and can be used for traveling across the vast Western Frontier.MASTER MULTIPLE COMBAT STYLESFight off the dangers of Pandora as you embrace the precision of traditional Na’vi weapons, including your bow and spear-thrower, or leverage your human training with more destructive weapons, such as an assault rifle or a shotgun.SHARE YOUR ADVENTURE IN FULL CAMPAIGN CO-OPPlay the full story campaign in single-player or with a friend online in two-player co-op.",
+      "image": "https://m.media-amazon.com/images/I/D19W9nab1ML._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-assassin-s-creed-valhalla",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Assassin's Creed Valhalla",
+      "slug": "assassin-s-creed-valhalla",
+      "storeUrl": "https://luna.amazon.com/detail/B08N3ZPQRB?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "BUILD YOUR OWN VIKING LEGENDBecome Eivor, a mighty Viking raider, and lead your clan. Advanced RPG mechanics allow you to influence the world around you. With every choice you make, from political alliances and combat strategy, to dialogue and gear progression, carve your path to glory!EXPLORE A DARK AGE WORLDSail from Norway’s icy coasts to England’s lush kingdoms. Roam a vast open world, hunt legendary beasts, and lay bare the secrets of a fractured land.EXPERIENCE VISCERAL COMBATUnleash the ruthless fighting style of a Viking warrior and dual wield axes, swords, or even shields against fierce, relentless foes. Choose your tactics and dismember opponents in close-quarters combat, riddle them with arrows, or assassinate them with your Hidden Blade.GROW YOUR SETTLEMENTConstruct and upgrade buildings that allow for deep customization, including a barracks, a smithy, a tattoo parlor, and more. Recruit new members to your clan and personalize your Viking experience.",
+      "image": "https://m.media-amazon.com/images/I/D1zNaxUezDL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-space-metal-mania",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Space Metal Mania",
+      "slug": "space-metal-mania",
+      "storeUrl": "https://luna.amazon.com/detail/B0HD25WSB6?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The galaxy needs saving and only metal can do it.The Metal-Verse is a galaxy united by one truth: metal is life. Now The Silence, an ancient consuming force, is spreading across worlds and draining everything it touches. Lucky for us, heavy metal can destroy them. Grab the controls, crank it to eleven, and blast them back into the void.Space Metal Mania is a fast-paced, heavy metal-fueled, arcade space shooter where you blast through swarms of enemies, face down massive bosses, and fight to reclaim a galaxy decimated by the Silence. Play solo or team up with up to 3 friends in explosive co-op multiplayer that is all set to a face-melting soundtrack featuring legendary tracks from Megadeth, Iron Maiden, Mastodon, Avenged Sevenfold, and Pantera.Your commander? None other than Dave Mustaine, the iconic Megadeth frontman who is guiding you through every mission with his unmistakable voice. KEY FEATURES:• Heavy Metal Music Mayhem - Blast through levels powered by classic tracks from five of metal's greatest bands, with enemy boss music-synced combat that makes every attack feel like a power chord• Led by a legend, Dave Mustaine - The legendary rocker serves as your in-game Commander, delivering voice-over that sets the tone for every mission• Epic Boss Battles - Fight swarms of enemies during challenging levels, encounter large scale bosses leading up to the Mothership of them all.• Forged in Fire - Collect Credits mid-mission to upgrade your ship between levels. Bank Iridium across every run, win or lose and spend it at The Black Market for permanent upgrades that make each run deadlier than the last.• Solo Act or Play as a Band - Go it alone or rally your crew for chaotic, headbanging team action• Choose your Encore – Experience crazy chaotic combat, Elite fights, and planet liberation missions across three difficulty settings; Garage Band (easy), Metal Band (normal) and Legendary Band (hard).ADDITIONAL DETAILSThis game is available in the following languages; English, French, Italian, German, Spanish (Spain), Portuguese (Brazil), Spanish (Latin America).• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Code of Conduct: www.amazon.com/help/ags/coc• Legal Notices: https://www.amazon.com/gp/help/customer/display.html?nodeId=TWjw9dElY3TGroaT67• Support Page: http://help.spacemetal.amazongamestudios.com©/™ 2026, Amazon.com, Inc., its affiliates, and/or licensors. Developed by Handy Games and published by Amazon Games. All rights reserved.",
+      "image": "https://m.media-amazon.com/images/I/D1VaT1Wbe2L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-kingdomino",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kingdomino",
+      "slug": "kingdomino",
+      "storeUrl": "https://luna.amazon.com/detail/B0HMJMGD9L?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The digital deluxe version of the award-winning board game, Kingdomino!Expand your realm by placing domino-style terrain tiles, collecting valuable crowns and making clever strategic decisions. Every tile shapes your kingdom, every draft presents a new challenge, and every decision brings you closer to victory.Winner of the prestigious Spiel des Jahres award and enjoyed by millions of players worldwide, Kingdomino combines simple rules with satisfying strategic depth. Whether you're playing your first game or playing competitively for the perfect score, every kingdom is unique.Connect forests, lakes, fields and more, watching your kingdom come to life with every turn. Collect crowns to multiply your score and carefully plan each draft, balancing powerful tiles against turn order.Will your kingdom reign supreme?",
+      "image": "https://m.media-amazon.com/images/I/D1DhEU+TB-L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-fortnite-og",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Fortnite OG",
+      "slug": "fortnite-og",
+      "storeUrl": "https://luna.amazon.com/detail/B0DPJK5H8T?ref=pghq&r=web",
+      "seller": "Prime Gaming",
+      "description": "FORTNITE OG is BACK and here to stay. Drop into Chapter 1 and explore the OG map, collect OG loot, and relive OG gameplay. THE OG OG RETURNS Solos or Squads, drop into battle with Fortnite OG: Chapter 1. Build your way to pure victory in Battle Royale or dominate the Island in a new way with Zero Build. Each Fortnite OG season runs approximately two months, bringing back the legendary loot and features from back in the day. CLASSIC COOL IN THE OG PASS The Fortnite OG Pass features 45 tiers of retro rewards with a modern twist on items and Outfits. A new OG Pass will be available every OG season for 950 V-Bucks or in Fortnite Crew including the OG Pass, new Battle Royale, Music and LEGO Passes in Fortnite Crew for 1,400 V-Bucks. Getting this add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/D1vos-jtFgL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-fortnite",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Fortnite",
+      "slug": "fortnite",
+      "storeUrl": "https://luna.amazon.com/detail/B0BTRVRN6M?ref=pghq&r=web",
+      "seller": "Prime Gaming",
+      "description": "Everything you love, all in Fortnite. Drop into the action you love or discover something new with your squad. Be the last player standing in Battle Royale. Get nostalgic in Fortnite OG. Go tactical in Reload. Headline Fortnite Festival. Explore the worlds of LEGO Fortnite. There is always something new for you and your friends.Play thousands of games made by developers like deathruns, tycoons, racing, zombie survival and more! Or, build your own games with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools for everyone to play. Each game has an individual age rating so you can find what’s right for you.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/C1z+f8UaRRL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-fortnite-battle-royale",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Fortnite Battle Royale",
+      "slug": "fortnite-battle-royale",
+      "storeUrl": "https://luna.amazon.com/detail/B0CXG1X89Z?ref=pghq&r=web",
+      "seller": "Prime Gaming",
+      "description": "Break the rules. Change the game. This Season, team up with gaming legends, best baddies with new weapons, and catch a whole new generation of Sprites in new locations around the Island. Hack Chest loot, punch in Cheat Codes, hunt down Lobby Hacks for bonus rewards and more in Fortnite Battle Royale Chapter 7 Season 4: Override!Be the last player standing in Battle Royale and Zero Build, solo or with up to three squadmates. Compete for Leaderboard positions in Ranked play, or experience large scale team battles with Team Rumble.Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/C1z+f8UaRRL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-lego-fortnite-brick-life",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "LEGO® Fortnite Brick Life",
+      "slug": "lego-fortnite-brick-life",
+      "storeUrl": "https://luna.amazon.com/detail/B0DBPKQ68Y?ref=pghq&r=web",
+      "seller": "Prime Gaming",
+      "description": "Build your new life in an ever-evolving LEGO® city.Experience a highly social destination for up to 52 players where you can explore all the city has to offer!Be the ultimate socialite and hang out in restaurants, house parties or rooftop clubs. Chat with friends or make new ones, activities in LEGO® Fortnite Brick Life are better together. Host a band practice down the beach, grab a bite to eat with others or race through the streets on hover boards.Take on a job, complete tasks to earn some spending money and start living the life in Brick Bay with vehicles, housing and more. Customize your home with furnishings from the local store or invite your friends over to hang out.Getting this add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/C1kmFsUvj6L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-lego-fortnite-odyssey",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "LEGO® Fortnite Odyssey",
+      "slug": "lego-fortnite-odyssey",
+      "storeUrl": "https://luna.amazon.com/detail/B0CM951F5D?ref=pghq&r=web",
+      "seller": "Prime Gaming",
+      "description": "Be the hero of your own world in LEGO® Fortnite Odyssey!Hop on the Battle Bus to explore the diverse ecosystems of your world from the relaxing oasis of the Dry Valley and the snowy peaks of the Frostlands to the enchanted jungle of Lost Isles. But beware of what or who you may encounter along the way… some dark forces may be roaming the lands!Build homesteads across the world and recruit villagers to help you collect resources, tame animals, craft powerful items and defend the grounds. Push the limits of physics building surreal contraptions and find your own way to survive the challenges coming your way!Play the ultimate LEGO® adventure in Fortnite, solo or with up to 7 friends! Getting this add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/C1WK9HqD1pL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-fortnite-festival",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Fortnite Festival",
+      "slug": "fortnite-festival",
+      "storeUrl": "https://luna.amazon.com/detail/B0CLKBMYPV?ref=pghq&r=web",
+      "seller": "Prime Gaming",
+      "description": "Play in a band with friends or perform solo on stage with hit music by your favorite artists in Fortnite Festival!On the Main Stage, select your instrument and play a featured rotation of Jam Tracks. Explore the Festival Jam Stage to find friends and mix hit music together using the Jam Tracks in your locker.Keep the party going with an ever-expanding lineup of Jam Tracks, Music Icons, and more. Take your stage in Fortnite Festival!Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/D13Hu7OrK9L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-fortnite-save-the-world",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Fortnite Save the World",
+      "slug": "fortnite-save-the-world",
+      "storeUrl": "https://luna.amazon.com/detail/B0GFW2CQHT?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Discover the epic PvE action-building co-op campaign. Take on the monster hordes either solo or with up to three friends as you explore a vast, destructible world, with dynamically created maps where no two games are ever the same. Build & Defend: Construct elaborate trap tunnels and towering fortresses to protect your objectives from relentless waves of monsters.Loot & Craft: Scavenge the environment for materials to craft legendary weapons, from neon scythes to heavy-duty rocket launchers.Level Up: Rescue, recruit and customize a massive roster of Heroes from one of four classes - Soldiers, Ninjas, Outlanders, and Constructors - to suit your playstyle.The fight is on. Gather your squad, find your favorite gear, and Save the World.Play Save the World on PC, Mac, and more through Amazon Luna. Save the World is unavailable on smartphones and tablets.",
+      "image": "https://m.media-amazon.com/images/I/C1gUPaUVCzL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-caravan-sandwitch",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Caravan SandWitch",
+      "slug": "caravan-sandwitch",
+      "storeUrl": "https://luna.amazon.com/claims/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?g=s&ingress=amzn&ref_=SM_CaravanSandWitch_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "In Caravan SandWitch, embark on a journey across a Sci-Fi Provence-like world, driven by a mystery through your missing sister that unfolds with each step you take.\nInteract with the communities on Cigalo, help them with their tasks and meet new people along the way. Take your time to explore the world, whether in your van or on foot.\nLife is simple: no combat, no death, no timer, just you, your van, and the world.Explore a Provence-like WorldEquipped with your van and an array of essential tools, you set out on a quest to find your missing sister. Upgrade your van throughout your adventure and explorations to open up new passages and ruins. From navigating treacherous terrain to uncovering ancient ruins, every step of your journey brings you closer to unraveling the truth behind your sister's disappearance.A hopeful Post-ApocalypseFrom a green planet to a desertic one due to human activities and sur-exploitation; discover on Cigalo the impact of humans and its population through your road trip. Meet the Reinetos, an old aboriginal species, the Robots left behind after the planet exploitation, the humans who stayed after everyone left for another planet, and the mysterious SandWitch. All of them live peacefully in Cigalo and help each other in this unwelcome environment.Meet a diverse cast of charactersAs you interact with the diverse characters you meet along the way, you'll come to understand that your community is your home.\nHelp everyone and contribute your piece to the edifice, enabling everyone to live in harmony in an environment hostile to all civilizations due to over-exploitation.Accessibility options are available.",
+      "image": "https://m.media-amazon.com/images/I/B1+aUvP2gbL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-vampire-the-masquerade-swansong",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Vampire: The Masquerade - Swansong",
+      "slug": "vampire-the-masquerade-swansong",
+      "storeUrl": "https://luna.amazon.com/claims/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?g=s&ingress=amzn&ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Based on the cult role-playing game and developed by specialists in the genre, Vampire: The Masquerade – Swansong is a narrative RPG in which your every choice determines the fate of the three main characters and of the Boston Camarilla.WELCOME TO THE WORLD OF DARKNESSWhat if vampires were real? What if these bloodthirsty predators lived hidden among us in complex societies and had been hatching conspiracies for thousands of years? And what if you became one of them?\nIn Vampire: The Masquerade, you play as these alluring monsters in a sophisticated world where the lines between the real and supernatural are always blurred.A HEART-POUNDING THRILLERHazel Iversen, the Swan, is the new Prince of the Boston Camarilla. An iron hand in a velvet glove, she intends to assert her power and respect the Masquerade, the vampiric law designed to ensure humans never learn of the existence of these creatures of the night. But nothing works as planned. With rumors of plots, murders and power struggles, you must work in the shadows to protect your Sect in a pulsating investigation that plunges Boston into chaos.PLAY AS 3 ORIGINAL VAMPIRESPlay as 3 vampires who are over a hundred years old. Progress in the game through their intertwined destinies, deal with their different points of view and use their character sheets to try to separate the truth from the lies. Each character has their own vampiric abilities and disciplines that you can upgrade individually to suit your preferred approach. Will you choose intimidation, seduction or stealth? It's your decision, as long as you can sate your Hunger for blood.GAMEPLAY WITH CONSEQUENCESWith its unique gameplay, Swansong puts emphasis on the consequences of your actions in both the investigation and your social interactions with other characters.\nAnalyze each situation carefully because your decisions can have huge consequences on your heroes' lives and the fate of the Boston Camarilla.",
+      "image": "https://m.media-amazon.com/images/I/A1N5QVz0QAL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-warbreeds",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "WarBreeds",
+      "slug": "warbreeds",
+      "storeUrl": "https://luna.amazon.com/claims/warbreeds-gog/dp/amzn1.pg.item.886d058d-6e68-4f53-8e58-3044de3e6bb4?g=s&ingress=amzn&ref_=SM_WarBreeds_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A NEW BREED IS ABOUT TO EVOLVEIn a far-off galaxy, the once Great Empire of Yedda has all but perished in a blight of famine, disease, and grisly war. In the aftermath, the four former slave clans have seized upon the Yedda genetic technology to alter their own DNA. As you command your own fierce clan, you are thrust into a power vacuum where you fight for survival and planetary domination.Defeat your enemies and steal their genetic material to expand your clan’s skills and firepower. Engineer and customize your army of warriors with a vast mixture of advanced bio-technological weaponry. Then use your shrewd strategies and brutal fighting skills to lead your clan to victory and become ruler of the fallen Empire... or fall to your enemies.Annihilate enemies. using four preset attack formations, or create your own.Optimized resource management allows players to focus on strategy and combat.Command your fiercely loyal clan as you fight for planetary domination.Play any of the four alien clans on huge, yet detailed battle maps. Clans have unique skills sets, attributes and advanced bio-technological weaponry.Over 35,000 unique warrior combinations are available with a variety of lethal weapons including lasers, missiles, heat rays and rapid-fire Ion guns.Customize and enhance your warriors fighting ability through genetic engineering of defeated enemies.",
+      "image": "https://m.media-amazon.com/images/I/A1RRpbgiXqL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-conarium",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Conarium",
+      "slug": "conarium",
+      "storeUrl": "https://luna.amazon.com/claims/conarium-gog/dp/amzn1.pg.item.82e258e7-827e-46e0-8228-25e9720b48b4?g=s&ingress=amzn&ref_=SM_Conarium_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
+      "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
     },
     {
       "id": "steam-3716",
