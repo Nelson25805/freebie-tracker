@@ -1,27 +1,8 @@
 {
-  "fetchedAt": "2026-10-18T22:35:50.446Z",
+  "fetchedAt": "2026-10-19T15:28:05.050Z",
   "totalFree": 36,
-  "totalUpcoming": 7,
+  "totalUpcoming": 5,
   "games": [
-    {
-      "id": "921e40c4c69f4d728914ca2a4f0aa407",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Eternal Threads",
-      "slug": "eternal-threads-197169",
-      "storeUrl": "https://store.epicgames.com/p/eternal-threads-197169",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Eternal Threads is a single-player, first-person story-driven puzzle game of time manipulation, choice and consequence.",
-      "image": "https://cdn1.epicgames.com/spt-assets/08813e055af64315b8a55b2e521f4e04/eternal-threads-1vm6i.jpg",
-      "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
-    },
     {
       "id": "be5600439b434624802764f704755cde",
       "store": "epic",
@@ -80,25 +61,6 @@
       "offerEnd": "2026-10-29T15:00:00.000Z"
     },
     {
-      "id": "8f80897c0b6e4e678fed08da169d44be",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Castlevania Anniversary Collection",
-      "slug": "castlevania-anniversary-collection-a61f94",
-      "storeUrl": "https://store.epicgames.com/p/castlevania-anniversary-collection-a61f94",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Konami's Castlevania Anniversary Collection traces the origins of the historic vampire franchise. Included is a unique eBook with details provided by developers, artists and others inspired by the Castlevania legacy which sheds a fresh light into the world of Castlevania.",
-      "image": "https://cdn1.epicgames.com/spt-assets/1ff2f74ba0ef4019b6905d8abe268819/castlevania-anniversary-collection-yex6f.jpg",
-      "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
-    },
-    {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -112,10 +74,10 @@
       "description": "Embark on a journey of forgiveness through impossible environments and illusionary puzzles. Experience this meditative and calming puzzle game by manipulating monuments and creating evolving paths to explore new, surreal, and mysterious worlds.",
       "image": "https://cdn1.epicgames.com/spt-assets/e56a7411805046d3b5b7253a6e4e0faa/monument-valley-1gys5.jpg",
       "originalPrice": 799,
-      "discountPrice": 799,
+      "discountPrice": 279,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "6a846880836044a2adad614ac771f487",
