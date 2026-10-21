@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-21T13:38:00.924Z",
-  "totalFree": 36,
+  "fetchedAt": "2026-10-21T18:44:13.115Z",
+  "totalFree": 33,
   "totalUpcoming": 5,
   "games": [
     {
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-11-01T06:00:00.000Z",
-      "offerEnd": "2026-11-10T06:59:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "6aab3ddef4f84fbc9dd81c60f9d8549c",
@@ -290,63 +290,6 @@
       "offerEnd": null,
       "platforms": [
         "Legacy Games"
-      ]
-    },
-    {
-      "id": "prime-rims-racing",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "RiMS Racing",
-      "slug": "rims-racing",
-      "storeUrl": "https://luna.amazon.com/claims/rims-racing-epic/dp/amzn1.pg.item.2cf2cac0-6b4d-4b5e-9064-2005dad4ede7?g=s&ingress=amzn&ref_=SM_RimsRacing_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "A race is not won purely on the track, so you need to become more than a rider by understanding motorcycle behavior like a real engineer. Traction, angle, braking, torque, trajectory, speed... every factor must be considered before heading to the workshop to change certain components and configuring the optimal set-up.A DREAM GARAGEYour adventure starts by choosing your dream bike. In RiMS Racing, you can ride the world's 8 most powerful European and Japanese motorcycles: Ducati Panigale V4 R, MV Agusta F4 RC, Aprilia RSV4, BMW M 1000 RR, Suzuki GSX-R1000R, Honda CBR1000RR, Kawasaki Ninja ZX-10RR, Yamaha YZF-R1. Recreated with an unmatched level of detail thanks to close collaboration with each manufacturer, these bikes also provide a highly accurate and realistic riding experience. They are true rough diamonds that only need a few cuts to shine their brightest!OPTIMIZE YOUR BIKEWith a mechanics management system never before seen in a motorcycle simulation, you can dismantle all your bike's parts to maintain them after each race or to upgrade them and boost your performance. You will become familiar with every last screw in your bike. Browse a catalogue of over 500 official spare parts from the biggest names in the industry along with over 200 official equipment items to personalize your rider!ACCURATE AND REALISTIC PHYSICSThe level of accuracy and details provided by the mechanics management and MSC is matched by realistic motorcycle physics that will thrill the most demanding of track racers. But thanks to the various ride assist technologies, less experienced players can still learn the techniques that will take them to the top.",
-      "image": "https://m.media-amazon.com/images/I/A1S0pVV7WxL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-wall-world-2",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Wall World 2",
-      "slug": "wall-world-2",
-      "storeUrl": "https://luna.amazon.com/claims/wall-world-2-aga/dp/amzn1.pg.item.11e467f2-b0e3-4a1e-9dee-4cd723e92ee9?g=s&ingress=amzn&ref_=SM_WallWorld2_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The world of the Wall awaits. Wall World 2 builds on the mining rogue-lite experience with expanded mechanics, new challenges, and deeper gameplay. Explore procedurally generated mines full of new discoveries and dangers. Extract valuable resources, harness lost technologies, and upgrade your robospider and exosuit to survive against hordes of raging monsters. Venture through incredible biomes and uncover the secrets entombed in the depths of the Wall.DELVE INTO THE MYSTERIES OF THE WALLVenture deep into the World Wall in your robospider. The mysterious Hole holds both deadly threats and long-lost answers. Risk everything to find out what lies on the other side of the unseen depths.BATTLE ON ALL FRONTSMonsters lurk everywhere, not only on the surface of the Wall, but also within its mines. Arm yourself with an arsenal of powerful weapons and abilities to fight off any threat that stands between you and the truth.ADAPT TO A LIVING WORLDThe endless Wall is ever-changing. Its depths contain not only resources and technologies, but also anomalies that can help or hinder your journey. Navigate incredible biomes, overcome obstacles and discover new wonders as you carve your path deeper inside.UPGRADE AND CUSTOMIZECustomize your robospider between expeditions and meet new characters in the sphere city. You'll have plenty of options to upgrade and enhance the equipment of both your exosuit and your mobile battle station. Each of them brings you one step closer to conquering the Wall.",
-      "image": "https://m.media-amazon.com/images/I/B1yoas-fUjL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-doom-eternal",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "DOOM Eternal",
-      "slug": "doom-eternal",
-      "storeUrl": "https://luna.amazon.com/claims/doom-eternal-microsoft/dp/amzn1.pg.item.1c490f2e-c698-4077-94a6-6a69c98945e2?g=s&ingress=amzn&ref_=SM_DOOMEternal_S02_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Hell's armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity.The only thing they fear... is you.Experience the ultimate combination of speed and power in DOOM Eternal - the next leap in push-forward, first-person combat.Slayer Threat Level At MaximumArmed with a shoulder-mounted flamethrower, retractable wrist-mounted blade, upgraded guns and mods, and abilities, you're faster, stronger, and more versatile than ever.Unholy TrinityTake what you need from your enemies: Glory kill for extra health, incinerate for armor, and chainsaw demons to stock up on ammo to become the ultimate demon-slayer.Enter BattlemodeA new 2 versus 1 multiplayer experience. A fully-armed DOOM Slayer faces off against two player-controlled demons, fighting it out in a best-of-five round match of intense first-person combat.",
-      "image": "https://m.media-amazon.com/images/I/B1QMdGtr2FL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
       ]
     },
     {
