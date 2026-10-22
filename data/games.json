@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-22T13:48:01.200Z",
-  "totalFree": 33,
-  "totalUpcoming": 5,
+  "fetchedAt": "2026-10-22T18:48:04.773Z",
+  "totalFree": 35,
+  "totalUpcoming": 4,
   "games": [
     {
       "id": "be5600439b434624802764f704755cde",
@@ -55,10 +55,29 @@
       "description": "The round-based co-op survival FPS and spin-off to the award-winning British horror, Maid of Sker. Play solo or up to 4 players to survive the supernatural onslaught of the Quiet Ones.",
       "image": "https://cdn1.epicgames.com/spt-assets/43d96f4437e34c87b7eff08831d1b1de/sker-ritual-1tuka.png",
       "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-10-22T15:00:00.000Z",
       "offerEnd": "2026-10-29T15:00:00.000Z"
+    },
+    {
+      "id": "4e469c7d8bbf49bcabc2c07127d3d946",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Sorry We're Closed",
+      "slug": "sorry-were-closed-724c86",
+      "storeUrl": "https://store.epicgames.com/p/sorry-were-closed-724c86",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Sorry We're Closed is a story-driven survival horror game about demons, angels and what happens when both sides collide. A mix of fixed-camera exploration and arcade-style shooting where Michelle must use her Third Eye to see between worlds, uncover secrets and solve puzzles.",
+      "image": "https://cdn1.epicgames.com/spt-assets/9ab7eaaeb2f041969b350955b789f0f7/sorry-were-closed-1orqh.png",
+      "originalPrice": 2499,
+      "discountPrice": 1749,
+      "status": "upcoming",
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -80,44 +99,6 @@
       "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
-      "id": "6a846880836044a2adad614ac771f487",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Bad Cheese",
-      "slug": "bad-cheese-4256d9",
-      "storeUrl": "https://store.epicgames.com/p/bad-cheese-4256d9",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Bad Cheese is a psychological horror inspired by the eerie charm of 1920s animation. \nStep into the tiny paws of a mouse spending the weekend at home with a dysfunctional Dad while Mom's away. \nBe on your best behavior and KEEP DADDY HAPPY.",
-      "image": "https://cdn1.epicgames.com/spt-assets/6cbb0e3805c4436bafd028cafff48307/bad-cheese-16hj0.png",
-      "originalPrice": 1299,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-15T15:00:00.000Z",
-      "offerEnd": "2026-10-22T15:00:00.000Z"
-    },
-    {
-      "id": "db1202a30c5541dd99cdf54c918a9348",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Agent A: A puzzle in disguise",
-      "slug": "agent-a-a-puzzle-in-disguise-42fe5f",
-      "storeUrl": "https://store.epicgames.com/p/agent-a-a-puzzle-in-disguise-42fe5f",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "A suave secret agent adventure game. Your mission (should you choose to accept) is to infiltrate enemy spy Ruby La Rouge’s secret hideaway and put a stop to her evil plans!",
-      "image": "https://cdn1.epicgames.com/spt-assets/45db4fbe68fe43f4b025dec2014d42e7/agent-a-a-puzzle-in-disguise-3cppl.png",
-      "originalPrice": 1999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-15T15:00:00.000Z",
-      "offerEnd": "2026-10-22T15:00:00.000Z"
-    },
-    {
       "id": "06190191cede42afb633fe89ef08c27e",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -131,8 +112,8 @@
       "description": "Home is a unique horror adventure set in a beautifully-realized pixel world. It’s a murder mystery with a twist – because you decide what ultimately happens.",
       "image": "https://cdn1.epicgames.com/spt-assets/46fc0cdb9f164a848e916249a8f68fc7/home-1f6qi.png",
       "originalPrice": 499,
-      "discountPrice": 499,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-10-22T15:00:00.000Z",
       "offerEnd": "2026-10-29T15:00:00.000Z"
     },
@@ -196,6 +177,44 @@
         "PS4"
       ],
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+    },
+    {
+      "id": "prime-warbreeds",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "WarBreeds",
+      "slug": "warbreeds",
+      "storeUrl": "https://luna.amazon.com/claims/warbreeds-gog/dp/amzn1.pg.item.886d058d-6e68-4f53-8e58-3044de3e6bb4?g=s&ingress=amzn&ref_=SM_WarBreeds_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A NEW BREED IS ABOUT TO EVOLVEIn a far-off galaxy, the once Great Empire of Yedda has all but perished in a blight of famine, disease, and grisly war. In the aftermath, the four former slave clans have seized upon the Yedda genetic technology to alter their own DNA. As you command your own fierce clan, you are thrust into a power vacuum where you fight for survival and planetary domination.Defeat your enemies and steal their genetic material to expand your clan’s skills and firepower. Engineer and customize your army of warriors with a vast mixture of advanced bio-technological weaponry. Then use your shrewd strategies and brutal fighting skills to lead your clan to victory and become ruler of the fallen Empire... or fall to your enemies.Annihilate enemies. using four preset attack formations, or create your own.Optimized resource management allows players to focus on strategy and combat.Command your fiercely loyal clan as you fight for planetary domination.Play any of the four alien clans on huge, yet detailed battle maps. Clans have unique skills sets, attributes and advanced bio-technological weaponry.Over 35,000 unique warrior combinations are available with a variety of lethal weapons including lasers, missiles, heat rays and rapid-fire Ion guns.Customize and enhance your warriors fighting ability through genetic engineering of defeated enemies.",
+      "image": "https://m.media-amazon.com/images/I/A1RRpbgiXqL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
+    },
+    {
+      "id": "prime-conarium",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Conarium",
+      "slug": "conarium",
+      "storeUrl": "https://luna.amazon.com/claims/conarium-gog/dp/amzn1.pg.item.82e258e7-827e-46e0-8228-25e9720b48b4?g=s&ingress=amzn&ref_=SM_Conarium_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
+      "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "GOG"
+      ]
     },
     {
       "id": "prime-five-nights-at-freddy-s-into-the-pit",
@@ -502,6 +521,25 @@
       ]
     },
     {
+      "id": "prime-a-quiet-place-the-road-ahead",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "A Quiet Place: The Road Ahead",
+      "slug": "a-quiet-place-the-road-ahead",
+      "storeUrl": "https://luna.amazon.com/detail/B0HN8HNG2Z?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "A Quiet Place: The Road Ahead is a single-player horror adventure game inspired by the critically acclaimed blockbuster movie franchise that highlights a unique survivor story after an invasion of deadly creatures. In this exclusive spin-off, experience the journey of a young woman who must endure a treacherous apocalypse in the midst of interpersonal family conflicts, all while coming to terms with her own inner fears.Unnerving Atmosphere -- Experience absolute terror as you strive for silence when hiding from, and sneaking by, horrific creatures who hunt using only sound.Untold Story -- Embark on a dramatic adventure inspired by the A Quiet Place movie franchise as a young survivor trying to navigate the new, eerily tranquil, post-apocalyptic landscape.Uncanny Ingenuity -- Discover your own path through the world by observing your environment and leveraging the tools in your surroundings.A Quiet Place: The Road Ahead features an optional \"Microphone Noise Detection\" setting where creatures will react to sounds that you make through a connected microphone or headset. Stay silent to survive!",
+      "image": "https://m.media-amazon.com/images/I/C1tQH6Y4nzL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-fortnite-og",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -616,22 +654,41 @@
       ]
     },
     {
-      "id": "prime-fortnite-save-the-world",
+      "id": "prime-time-travel-escape-room-game",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Fortnite Save the World",
-      "slug": "fortnite-save-the-world",
-      "storeUrl": "https://luna.amazon.com/detail/B0GFW2CQHT?ref=pghq&r=web&autoplay=1",
+      "title": "Time Travel: Escape Room Game",
+      "slug": "time-travel-escape-room-game",
+      "storeUrl": "https://luna.amazon.com/claims/time-travel-escape-room-game-legacy/dp/amzn1.pg.item.c3af790f-8ce0-42b2-8c16-ebecb97303f5?g=s&ingress=amzn&ref_=SM_TimeTravelEscapeRoomGame_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Discover the epic PvE action-building co-op campaign. Take on the monster hordes either solo or with up to three friends as you explore a vast, destructible world, with dynamically created maps where no two games are ever the same. Build & Defend: Construct elaborate trap tunnels and towering fortresses to protect your objectives from relentless waves of monsters.Loot & Craft: Scavenge the environment for materials to craft legendary weapons, from neon scythes to heavy-duty rocket launchers.Level Up: Rescue, recruit and customize a massive roster of Heroes from one of four classes - Soldiers, Ninjas, Outlanders, and Constructors - to suit your playstyle.The fight is on. Gather your squad, find your favorite gear, and Save the World.Play Save the World on PC, Mac, and more through Amazon Luna. Save the World is unavailable on smartphones and tablets.",
-      "image": "https://m.media-amazon.com/images/I/C1gUPaUVCzL._SX960_QL65_FMwebp_.png",
+      "description": "Your help is essential in this time travel machine game!Play Time Travel: Escape Room Game and unlock secrets of the past and the future with a crystal in your hand! Participate in this escape room game challenge with a twist. This 100 room escape puzzle game enables you to sneak peek through time thanks to its broken time machine. Absurd right? You too can feel the thrill, just solve escape puzzles and find the missing piece for the time machine in 100 world famous locations in different times.The heart of the time machine beats with the power of a rare crystal. Simply play Time Travel: Escape Room Game, find the crystal and see what it feels like to be a real time traveler!What’s the deal with Time Travel: Escape Room Game and its broken time machine?!A revolutionary time machine is developed by a genius doctor in his lab. The main part of the machine that makes travel through time possible is a rare shimmering crystal. As time traveling is a very complex thing, the time machine breaks all the time which makes his time travelings unpredictable. Whenever the time travel machine breaks, the crystal falls out and disappears somewhere in the scene.TIME TRAVEL: ESCAPE ROOM GAME CHARACTERISTICSExciting puzzles with hidden objects and conundrums to solveCool mechanics: move in time and space, combine objects, play brain gamesSkip the level if you get stuckVisit many world's famous locations in different times",
+      "image": "https://m.media-amazon.com/images/I/A1xT0boi8XL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "Legacy Games"
+      ]
+    },
+    {
+      "id": "prime-ad-infinitum",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Ad Infinitum",
+      "slug": "ad-infinitum",
+      "storeUrl": "https://luna.amazon.com/claims/ad-infinitum-epic/dp/amzn1.pg.item.69de011b-6575-41ab-9964-971e59cf7457?g=s&ingress=amzn&ref_=SM_AdInfinitum_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Trapped between two realities, you wander tormented within the walls of your family home and the trenches of World War I.BREAK THE CYCLEWill the nightmare of the war ever end? Will your mind be at peace one day? In Ad Infinitum, you play as a German soldier haunted by the horrors of the Great War. While your mind drifts between memories of your family home and of the trenches on the front, you try to break the endless cycle of suffering.BETWEEN A DREAM AND REALITYYou wake up in your bedroom, unchanged from your teenage years, in a run-down and deserted manor house. But then you suddenly find yourself in the trenches where the only beings around are horrific monsters. Unable to discern reality from nightmare, immerse yourself in the story of a man confronting his trauma and demons.NIGHTMARES THAT BECOME REALUnspeakable nightmares come to life in the recesses of your mind. To escape the death traps and terrifying creatures, you must understand each monster and solve the puzzles that stand in your way. From blind demons who can hear your softest footsteps or disjointed puppets who move in the dark, horror is around every corner.A FAMILY TORN APARTThe fallout of the war is felt far from the front. Peel back the shroud that hides the secrets of your family, torn apart by the Great War, and try to remember your past. Through exploration and by solving riddles and puzzles between the walls of your home and the barbed wire of No Man’s Land, you reveal a chapter in the story of a German family ravaged by war.",
+      "image": "https://m.media-amazon.com/images/I/B12JGMfwwBL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
       ]
     },
     {
@@ -670,44 +727,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-warbreeds",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "WarBreeds",
-      "slug": "warbreeds",
-      "storeUrl": "https://luna.amazon.com/claims/warbreeds-gog/dp/amzn1.pg.item.886d058d-6e68-4f53-8e58-3044de3e6bb4?g=s&ingress=amzn&ref_=SM_WarBreeds_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "A NEW BREED IS ABOUT TO EVOLVEIn a far-off galaxy, the once Great Empire of Yedda has all but perished in a blight of famine, disease, and grisly war. In the aftermath, the four former slave clans have seized upon the Yedda genetic technology to alter their own DNA. As you command your own fierce clan, you are thrust into a power vacuum where you fight for survival and planetary domination.Defeat your enemies and steal their genetic material to expand your clan’s skills and firepower. Engineer and customize your army of warriors with a vast mixture of advanced bio-technological weaponry. Then use your shrewd strategies and brutal fighting skills to lead your clan to victory and become ruler of the fallen Empire... or fall to your enemies.Annihilate enemies. using four preset attack formations, or create your own.Optimized resource management allows players to focus on strategy and combat.Command your fiercely loyal clan as you fight for planetary domination.Play any of the four alien clans on huge, yet detailed battle maps. Clans have unique skills sets, attributes and advanced bio-technological weaponry.Over 35,000 unique warrior combinations are available with a variety of lethal weapons including lasers, missiles, heat rays and rapid-fire Ion guns.Customize and enhance your warriors fighting ability through genetic engineering of defeated enemies.",
-      "image": "https://m.media-amazon.com/images/I/A1RRpbgiXqL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-conarium",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Conarium",
-      "slug": "conarium",
-      "storeUrl": "https://luna.amazon.com/claims/conarium-gog/dp/amzn1.pg.item.82e258e7-827e-46e0-8228-25e9720b48b4?g=s&ingress=amzn&ref_=SM_Conarium_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
-      "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
       ]
     },
     {
