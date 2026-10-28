@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-28T15:02:14.670Z",
-  "totalFree": 35,
-  "totalUpcoming": 4,
+  "fetchedAt": "2026-10-28T19:35:35.050Z",
+  "totalFree": 29,
+  "totalUpcoming": 7,
   "games": [
     {
       "id": "be5600439b434624802764f704755cde",
@@ -38,8 +38,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-11-01T06:00:00.000Z",
-      "offerEnd": "2026-11-10T06:59:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "6aab3ddef4f84fbc9dd81c60f9d8549c",
@@ -179,6 +179,68 @@
       "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
     },
     {
+      "id": "psplus-dead-island-2",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Dead Island 2",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Welcome to HELL-A. The City of Angels has been transformed into a hellish sprawl, its populace now mutated into disgusting zombies with an insatiable appetite for humans. In this extensive, visceral RPG experience you’ll journey to iconic LA locations, taking on quests, meeting eccentric survivors and enjoying a joyously pulpy narrative along the way. The game’s brutal melee combat gives you access to an expansive array of inventive zombie-slaying weaponry that lets you slice, smash and tear through the hordes before they get the chance to do the same to you. Explore the game’s expansive world alone, or practice strength in numbers in online three-player co-op to increase your chances of survival.",
+      "image": "https://blog.playstation.com/tachyon/2026/10/2c7339f1eb2120dc035b6cf966466b10eb243945-scaled.jpeg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-11-03T17:00:00.000Z",
+      "offerEnd": "2026-12-01T17:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "psplus-tomb-raider-iv-vi-remastered",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Tomb Raider IV - VI Remastered",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Play the next series of Tomb Raider adventures in this remastered collection of the Darkness Trilogy, which includes&nbsp;",
+      "image": "https://blog.playstation.com/tachyon/2026/10/e3fcf7e2648fbf2a9088abe339bbaf216adde4d6-scaled.jpeg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-11-03T17:00:00.000Z",
+      "offerEnd": "2026-12-01T17:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "psplus-monster-train-2",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Monster Train 2",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5",
+      "description": "This single player deckbuilding roguelite sees you command clans formed of a makeshift alliance between former angels and demons, as they work together to oust powerful beings known as Titans, who have seized control of Heaven. Now, you must command these clans aboard newly forged trains, and embark on your journey through Hell, Heaven, and the Abyss, to defeat the Titans before they destroy this world. Choose from a selection of five brand new clans, each with its own unique strengths and gameplay to forge strategies fitting your personal playstyle. With three vertical levels to defend against dangerous new enemies, you’ll need to recruit powerful new units, upgrade cards, and experiment to survive.&nbsp;",
+      "image": "https://blog.playstation.com/tachyon/2026/10/5142098b9fe908ee2068029a22023ae6650f04ce-scaled.jpeg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-11-03T17:00:00.000Z",
+      "offerEnd": "2026-12-01T17:00:00.000Z",
+      "platforms": [
+        "PS5"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
       "id": "prime-warbreeds",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -245,120 +307,6 @@
       "seller": "Prime Gaming",
       "description": "Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.StoryYou’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.A Relentless CampaignThere is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.Please note: The DRM-Free version of DOOM (2016) is single-player only. Multiplayer and online functionality for SnapMap are not included. SnapMap content is unlocked by default.",
       "image": "https://m.media-amazon.com/images/I/B1l-UjFh9mL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-hue",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Hue",
-      "slug": "hue",
-      "storeUrl": "https://luna.amazon.com/claims/hue-epic/dp/amzn1.pg.item.d7de294d-c66d-4445-824d-ec9292fa1acb?g=s&ingress=amzn&ref_=SM_HUE_S03_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Hue is a vibrant, award-winning puzzle-adventure, where you alter the world by changing its background colour. You explore a dangerous grey land, unearthing coloured fragments on a journey to find your missing mother. As obstacles match the background, they disappear, creating new and exciting puzzles - full of peril, mystery... and colours unseen.Key FeaturesUnique colour-matching mechanic, offering a new twist on the classic adventure game.A heartfelt story that touches on themes of love, loss, existence and remorse.A world full of lively characters to talk to, each with their own personality and story.Stark silhouetted art style with bright, bold colours.Over 30 original music tracks, composed exclusively for Hue.Professionally voiced narration by Anna Acton and Matthew Wade, some of the UK’s best television talent.Full colourblind support, using symbols as a colour aid.Razer Chroma, Corsair RGB plus many more coloured LED devices supported on Windows.",
-      "image": "https://m.media-amazon.com/images/I/818FmqLMjKL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-high-on-life",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "High on Life",
-      "slug": "high-on-life",
-      "storeUrl": "https://luna.amazon.com/claims/high-on-life-epic/dp/amzn1.pg.item.351cbaa9-ac70-4e47-93b6-1a4cb7dd38c8?g=s&ingress=amzn&ref_=SM_HighonLife_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Fresh out of high school with no job and no ambition, you’ve really got nothing going for you until an alien cartel that wants to get high off humanity invades Earth. Now, you and a team of charismatic talking guns must answer the hero's call and become the deadliest intergalactic bounty hunter the cosmos has ever seen.Travel to a variety of biomes and locations across the cosmos, go up against the nefarious Garmantuous and his gang of goons, collect loot, meet unique characters, and more, in the latest comedy adventure from Squanch Games!",
-      "image": "https://m.media-amazon.com/images/I/B1buzV9MhsL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-the-da-vinci-cryptex",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "The Da Vinci Cryptex",
-      "slug": "the-da-vinci-cryptex",
-      "storeUrl": "https://luna.amazon.com/claims/the-da-vinci-cryptex-legacy/dp/amzn1.pg.item.6cd3cd34-9ede-48df-bf9a-cc154ed97525?g=s&ingress=amzn&ref_=SM_TheDaVinciCryptex_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Trapped in a room of the Italian genial inventor, you need to think out of the box to solve logical enigmas written in a book and escape. Find the answers, unlock the Cryptex, and see what awaits you in the next room!Consisting of 50 unique riddles, the more you go on, the harder to solve the puzzles. So, how many enigmas can you actually crack? If you're a fan of puzzles, word games, mind games, logic riddles, and enigmas, The Da Vinci Cryptex series are the games for you!",
-      "image": "https://m.media-amazon.com/images/I/A1eQlb8Lw+L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Legacy Games"
-      ]
-    },
-    {
-      "id": "prime-havendock",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Havendock",
-      "slug": "havendock",
-      "storeUrl": "https://luna.amazon.com/claims/havendock-aga/dp/amzn1.pg.item.ef222081-3e6c-4949-9e87-aaf2c27b6bc6?g=s&ingress=amzn&ref_=SM_Havendock_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Havendock is a relaxing colony simulation and resource management game where you build a thriving settlement in the middle of the ocean. Starting from a small wooden platform, you’ll gather resources, expand your base, and attract new settlers to join you. Manage their needs, craft new technologies, and transform your floating raft into a bustling ocean town.Designed as a single-player experience, Havendock focuses on creativity, strategy, and building a vibrant community-all while surrounded by the calming waves of the sea.Features:Design Your Ideal Floating HavenDesign your ideal floating haven start with a small platform and turn it into a floating oasis! Build unique structures, shape your deck however you like, and create the most charming over-water community that your settlers will adore.Grow Quirky Crops and Feed the CrewFrom vegetables to, well, burgers-who says you can’t farm on water? Plant whatever floats your boat, keep everyone fed, and embrace the unexpected surprises that sprout from your quirky farm.Balance Food, Water, and HappinessJuggling food, water, and the occasional strange request, it’s up to you to keep your castaways content. Balance your resources smartly and keep your settlers smiling, one meal and water pump at a time!Tinker with Tech and GadgetsBuild, tinker, and experiment! Create advanced machines and gadgets that bring your floating world to life. No idea is too wild-so go ahead, craft that sea-to-table burger-making contraption!Unlock Hidden Secrets Across the SeaAdventure is just a deck away! Explore distant islands, meet oddball characters, and uncover treasures (or just plain weird stuff). Your curiosity will always be rewarded!",
-      "image": "https://m.media-amazon.com/images/I/B1NiLzIru-L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-weakless",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Weakless",
-      "slug": "weakless",
-      "storeUrl": "https://luna.amazon.com/claims/weakless-gog/dp/amzn1.pg.item.35aae84a-f566-4890-8fd3-492318a39036?g=s&ingress=amzn&ref_=SM_Weakless_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "The beauty of a true friendship.In Weakless you can control only one character at a time, which means you can’t use the senses of both of them simultaneously. Because of this, you get a unique perspective on how differently they perceive the world around them and at the same time how the two support and complement each other. Deaf being his usual “whizz in a pinny” brings joy to the slightly defensive and introverted Blind. While Blind on the other hand, with the power of his calmness, takes care of the ubiquitous Deaf.Find strengths in your weaknesses.In our world, people with no vision or hearing often have other, sharper, senses. The same is true for Weavelings. Discover the extraordinary set of skills your heroes have, and prove to the world that what’s always been considered a weakness can, in fact, be a mighty advantage.Fairytale-like world.The game takes place in a world full of wonderful, distinctive landscapes. Your path will lead through caves full of glowing fungi, natural basins, forgotten ruins and more.In Weakless you will:Follow the story of an unlikely friendship that develops wordlessly between the stoic Blind One and the energetic Deaf One;Peek into the Deaf One’s sketchbook and gain a unique insight to what he thinks about this whole ordealEnter the beautiful, organic, bioluminescent world of Weavelings, filled with the curious life forms and mysteries of a bygone civilization waiting to be uncoveredGet a glimpse of the artistic vision of how visually impaired and hearing-impaired people perceive the worldBecome a part of non-trivial narratives and satisfying exploration enriched with arcade puzzle elementsExperience stunning music composed on instruments from all around the world, such as the marimba, rav vast or udu.",
-      "image": "https://m.media-amazon.com/images/I/913GIWHzr2L._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-zoria-age-of-shattering",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Zoria: Age of Shattering",
-      "slug": "zoria-age-of-shattering",
-      "storeUrl": "https://luna.amazon.com/claims/zoria-age-of-shattering-gog/dp/amzn1.pg.item.ec074069-a977-4885-b5b0-6f972d17abb7?g=s&ingress=amzn&ref_=SM_ZoriaAgeofShattering_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Zoria: Age of Shattering is a classic tactical RPG with fluid turn-based combat, outpost, and followers management.You will lead a diverse team through the various lands of a Uram continent and against challenges countless groups of monsters and bosses.Zoria has now fallen prey to the sheer brutality of the hellspawn that roams its land. Its lush forests, mysterious caves, and majestic buildings have transformed into haunting and dreadful locations. Take your time and explore unknown areas, as each holds a mystery.Combat is bread and butter, and you will engage in it easily. Use the unique skills of all of your party members:Attack from close range or distance with different attack patterns and directions,Heal or shield allies with various spells and commands,Inflict status aliments like damage over time, stun, immobilize, and other elemental effects,Use your surroundings to use to your advantage or create new ones to separate you from the enemiesKeep a keen eye on your equipment and vitality as they both deteriorate over time. A bonfire in Zoria's provides a safe spot to restock your resources and prepare for the next battle.Take care of each of your warriors' skill development, and it will repay you on the battlefield. Remember that having an individual with the right skills can get you into previously inaccessible places and quests. It may turn out that interacting with a specific character with various objects in the world of Zoria may lead you to discover hidden treasures or make your travel easier.In your outpost, you can plan and assign tasks to your companions. Send selected party members on an autonomic mission, in which you won't participate but will receive what they find along the way. You will also get some of the experience they gain. Never forget that their lives are in your hands!",
-      "image": "https://m.media-amazon.com/images/I/B1afPCHqskL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
