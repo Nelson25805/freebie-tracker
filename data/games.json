@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-29T15:04:25.921Z",
-  "totalFree": 29,
+  "fetchedAt": "2026-10-29T19:40:57.067Z",
+  "totalFree": 31,
   "totalUpcoming": 8,
   "games": [
     {
@@ -61,25 +61,6 @@
       "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
-      "id": "6aab3ddef4f84fbc9dd81c60f9d8549c",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Sker Ritual",
-      "slug": "sker-ritual-aac702",
-      "storeUrl": "https://store.epicgames.com/p/sker-ritual-aac702",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "The round-based co-op survival FPS and spin-off to the award-winning British horror, Maid of Sker. Play solo or up to 4 players to survive the supernatural onslaught of the Quiet Ones.",
-      "image": "https://cdn1.epicgames.com/spt-assets/43d96f4437e34c87b7eff08831d1b1de/sker-ritual-14x61.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-22T15:00:00.000Z",
-      "offerEnd": "2026-10-29T15:00:00.000Z"
-    },
-    {
       "id": "4e469c7d8bbf49bcabc2c07127d3d946",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -93,10 +74,10 @@
       "description": "Sorry We're Closed is a story-driven survival horror game about demons, angels and what happens when both sides collide. A mix of fixed-camera exploration and arcade-style shooting where Michelle must use her Third Eye to see between worlds, uncover secrets and solve puzzles.",
       "image": "https://cdn1.epicgames.com/spt-assets/9ab7eaaeb2f041969b350955b789f0f7/sorry-were-closed-1orqh.png",
       "originalPrice": 2499,
-      "discountPrice": 1749,
-      "status": "upcoming",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-10-29T15:00:00.000Z",
+      "offerEnd": "2026-11-05T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -118,23 +99,23 @@
       "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
-      "id": "06190191cede42afb633fe89ef08c27e",
+      "id": "3be0a0d8479946d78f60d90c9442a0b4",
       "store": "epic",
       "storeName": "Epic Games Store",
-      "title": "Home - A Unique Horror Adventure",
-      "slug": "home-19212a",
-      "storeUrl": "https://store.epicgames.com/p/home-19212a",
+      "title": "Flotsam",
+      "slug": "flotsam-266287",
+      "storeUrl": "https://store.epicgames.com/p/flotsam-266287",
       "seller": "PC",
       "platforms": [
         "PC"
       ],
-      "description": "Home is a unique horror adventure set in a beautifully-realized pixel world. It’s a murder mystery with a twist – because you decide what ultimately happens.",
-      "image": "https://cdn1.epicgames.com/spt-assets/46fc0cdb9f164a848e916249a8f68fc7/home-1f6qi.png",
-      "originalPrice": 499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-22T15:00:00.000Z",
-      "offerEnd": "2026-10-29T15:00:00.000Z"
+      "description": "The floating garbage town survival game! Scavenge what precious garbage you can from the ocean's surface and grow your city while doing your best to survive in this colorful post-apocalyptic world.",
+      "image": "https://cdn1.epicgames.com/spt-assets/5c36b876e80d4285b9993947efeeaf2b/flotsam-1yczl.jpg",
+      "originalPrice": 2499,
+      "discountPrice": 2499,
+      "status": "upcoming",
+      "offerStart": "2026-11-05T16:00:00.000Z",
+      "offerEnd": "2026-11-12T16:00:00.000Z"
     },
     {
       "id": "psplus-f1-25",
@@ -258,6 +239,44 @@
         "PS5"
       ],
       "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "prime-caravan-sandwitch",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Caravan SandWitch",
+      "slug": "caravan-sandwitch",
+      "storeUrl": "https://luna.amazon.com/claims/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?g=s&ingress=amzn&ref_=SM_CaravanSandWitch_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "In Caravan SandWitch, embark on a journey across a Sci-Fi Provence-like world, driven by a mystery through your missing sister that unfolds with each step you take.\nInteract with the communities on Cigalo, help them with their tasks and meet new people along the way. Take your time to explore the world, whether in your van or on foot.\nLife is simple: no combat, no death, no timer, just you, your van, and the world.Explore a Provence-like WorldEquipped with your van and an array of essential tools, you set out on a quest to find your missing sister. Upgrade your van throughout your adventure and explorations to open up new passages and ruins. From navigating treacherous terrain to uncovering ancient ruins, every step of your journey brings you closer to unraveling the truth behind your sister's disappearance.A hopeful Post-ApocalypseFrom a green planet to a desertic one due to human activities and sur-exploitation; discover on Cigalo the impact of humans and its population through your road trip. Meet the Reinetos, an old aboriginal species, the Robots left behind after the planet exploitation, the humans who stayed after everyone left for another planet, and the mysterious SandWitch. All of them live peacefully in Cigalo and help each other in this unwelcome environment.Meet a diverse cast of charactersAs you interact with the diverse characters you meet along the way, you'll come to understand that your community is your home.\nHelp everyone and contribute your piece to the edifice, enabling everyone to live in harmony in an environment hostile to all civilizations due to over-exploitation.Accessibility options are available.",
+      "image": "https://m.media-amazon.com/images/I/B1+aUvP2gbL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-vampire-the-masquerade-swansong",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Vampire: The Masquerade - Swansong",
+      "slug": "vampire-the-masquerade-swansong",
+      "storeUrl": "https://luna.amazon.com/claims/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?g=s&ingress=amzn&ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Based on the cult role-playing game and developed by specialists in the genre, Vampire: The Masquerade – Swansong is a narrative RPG in which your every choice determines the fate of the three main characters and of the Boston Camarilla.WELCOME TO THE WORLD OF DARKNESSWhat if vampires were real? What if these bloodthirsty predators lived hidden among us in complex societies and had been hatching conspiracies for thousands of years? And what if you became one of them?\nIn Vampire: The Masquerade, you play as these alluring monsters in a sophisticated world where the lines between the real and supernatural are always blurred.A HEART-POUNDING THRILLERHazel Iversen, the Swan, is the new Prince of the Boston Camarilla. An iron hand in a velvet glove, she intends to assert her power and respect the Masquerade, the vampiric law designed to ensure humans never learn of the existence of these creatures of the night. But nothing works as planned. With rumors of plots, murders and power struggles, you must work in the shadows to protect your Sect in a pulsating investigation that plunges Boston into chaos.PLAY AS 3 ORIGINAL VAMPIRESPlay as 3 vampires who are over a hundred years old. Progress in the game through their intertwined destinies, deal with their different points of view and use their character sheets to try to separate the truth from the lies. Each character has their own vampiric abilities and disciplines that you can upgrade individually to suit your preferred approach. Will you choose intimidation, seduction or stealth? It's your decision, as long as you can sate your Hunger for blood.GAMEPLAY WITH CONSEQUENCESWith its unique gameplay, Swansong puts emphasis on the consequences of your actions in both the investigation and your social interactions with other characters.\nAnalyze each situation carefully because your decisions can have huge consequences on your heroes' lives and the fate of the Boston Camarilla.",
+      "image": "https://m.media-amazon.com/images/I/A1N5QVz0QAL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
     },
     {
       "id": "prime-warbreeds",
@@ -621,6 +640,44 @@
       ]
     },
     {
+      "id": "prime-kiborg",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kiborg",
+      "slug": "kiborg",
+      "storeUrl": "https://luna.amazon.com/claims/kiborg-aga/dp/amzn1.pg.item.6a6eac09-8806-4c39-95a2-c7cf131f89fc?g=s&ingress=amzn&ref_=SM_Kiborg_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "FIGHT FOR YOUR FREEDOMIn the future, even death can’t free you. If a criminal dies while serving their sentence, they are reconstructed to return to their suffering. And you’re serving a 1300-year sentence. The only way to shorten this sentence? Win on “The Last Ticket.” The rules are simple: there is a shuttle on the roof of the prison, and if you can fight your way through hordes of other inmates and reach it in time, you will be given your freedom.NO COMPROMISESKIBORG is a hybrid of old-school beat’em ups, shooters, and rogue-likes. The fights are fast, brutal, and deadly. Sever limbs, squash heads, and tear cybernetic cores apart from living foes. There are dozens of enemy types with unique abilities and tactics, and they are mixed and matched to create hundreds of challenging encounters. If you’re here for blood and gore, you’ve come to the right place.IMMENSE BUILD VARIETYReplace your body parts with an array of cybernetic implants, enabling a wide variety of playstyles.Experiment with hundreds of power-enhancing augmentations and apply dozens of mutations to create deadly synergies.Wield a variety of melee weapons and firearms of all types. Use combos and special attacks to devastate your foes.Unleash millions of possible combinations and countless potential viable builds to destroy those standing between you and freedom.",
+      "image": "https://m.media-amazon.com/images/I/B1y4qPtpHDL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
+    },
+    {
+      "id": "prime-trash-goblin",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Trash Goblin",
+      "slug": "trash-goblin",
+      "storeUrl": "https://luna.amazon.com/claims/trash-goblin-epic/dp/amzn1.pg.item.1892b601-09dc-470b-9d62-7feac63376a3?g=s&ingress=amzn&ref_=SM_TrashGoblin_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A CHILL SHOPKEEPING GAMETrash Goblin is a wholesome and cosy shopkeeping game where you uncover and clean trinkets for sale! Customize them by up-cycling and more to meet the eccentric requests of your endless colorful, customers. Spend your savings to upgrade your shop, buy new and better tools, and customize your space! There is no pressure, no risk, no right way to play - it is not a simulator - it's just good vibes and nice customers to serve.DISCOVER PECULIAR TRINKETSUnearth knick-knacks of all kinds by chipping away at the dirt and cruft they're embedded inside, wrestling with different types of dirt that yield in different ways.RESTORE FORGOTTEN CURIOS TO GLORYScrub all these strange items up nice and clean with your sponge to get them ready for sale!UPCYLE INTO IMAGINATIVE NEW FORMS!Customize these curios by combining Trinkets together, turning them into strange and wonderful new items!SELL TO A PARADE OF COLORFUL CUSTOMERSA wide range of intriguing, odd and charming customers will frequent your store, some with interesting stories to tell, others after a particular object, some just browsing...UPGRADE YOUR WORKSHOPSpend your savings to expand your tool set, and unlock more space to work in. Buy a display mat to tempt customers with specific wares, or a soak tub to clean up overnight, an honesty box for getting rid of unwanted trinkets, and more!TREAT YOURSELFCustomize your space, decorate your shelves however you like, get some nice plants, change up the wallpaper and bedclothes; make it your own!MAXIMUM CHILL, ZERO PRESSUREThere's a gentle limit to how much you can do in a given day but customers will return, you can potter as much as you like, and there are no fail states.",
+      "image": "https://m.media-amazon.com/images/I/91TkDA9qsYL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
       "id": "prime-time-travel-escape-room-game",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -659,41 +716,22 @@
       ]
     },
     {
-      "id": "prime-caravan-sandwitch",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Caravan SandWitch",
-      "slug": "caravan-sandwitch",
-      "storeUrl": "https://luna.amazon.com/claims/caravan-sandwitch-aga/dp/amzn1.pg.item.98d2b591-efd2-420f-928c-e7a9b409f67a?g=s&ingress=amzn&ref_=SM_CaravanSandWitch_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "In Caravan SandWitch, embark on a journey across a Sci-Fi Provence-like world, driven by a mystery through your missing sister that unfolds with each step you take.\nInteract with the communities on Cigalo, help them with their tasks and meet new people along the way. Take your time to explore the world, whether in your van or on foot.\nLife is simple: no combat, no death, no timer, just you, your van, and the world.Explore a Provence-like WorldEquipped with your van and an array of essential tools, you set out on a quest to find your missing sister. Upgrade your van throughout your adventure and explorations to open up new passages and ruins. From navigating treacherous terrain to uncovering ancient ruins, every step of your journey brings you closer to unraveling the truth behind your sister's disappearance.A hopeful Post-ApocalypseFrom a green planet to a desertic one due to human activities and sur-exploitation; discover on Cigalo the impact of humans and its population through your road trip. Meet the Reinetos, an old aboriginal species, the Robots left behind after the planet exploitation, the humans who stayed after everyone left for another planet, and the mysterious SandWitch. All of them live peacefully in Cigalo and help each other in this unwelcome environment.Meet a diverse cast of charactersAs you interact with the diverse characters you meet along the way, you'll come to understand that your community is your home.\nHelp everyone and contribute your piece to the edifice, enabling everyone to live in harmony in an environment hostile to all civilizations due to over-exploitation.Accessibility options are available.",
-      "image": "https://m.media-amazon.com/images/I/B1+aUvP2gbL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
+      "id": "steam-3834",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Hexologic (Steam) Giveaway",
+      "slug": "3834",
+      "storeUrl": "https://www.gamerpower.com/open/hexologic-steam-giveaway",
+      "seller": "Steam",
+      "description": "Fall in love in with Sudoku again! Grab Hexologic for free via Steam! Hexologic is a Sudoku-like puzzle game with nice visuals and relaxing music. Don´t miss it!",
+      "image": "https://www.gamerpower.com/offers/1b/6ae37c96c0b45.jpg",
+      "originalPrice": 499,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
+      "offerStart": "2026-10-29T13:04:22.000Z",
+      "offerEnd": "2026-10-31T23:59:00.000Z",
       "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-vampire-the-masquerade-swansong",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Vampire: The Masquerade - Swansong",
-      "slug": "vampire-the-masquerade-swansong",
-      "storeUrl": "https://luna.amazon.com/claims/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?g=s&ingress=amzn&ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Based on the cult role-playing game and developed by specialists in the genre, Vampire: The Masquerade – Swansong is a narrative RPG in which your every choice determines the fate of the three main characters and of the Boston Camarilla.WELCOME TO THE WORLD OF DARKNESSWhat if vampires were real? What if these bloodthirsty predators lived hidden among us in complex societies and had been hatching conspiracies for thousands of years? And what if you became one of them?\nIn Vampire: The Masquerade, you play as these alluring monsters in a sophisticated world where the lines between the real and supernatural are always blurred.A HEART-POUNDING THRILLERHazel Iversen, the Swan, is the new Prince of the Boston Camarilla. An iron hand in a velvet glove, she intends to assert her power and respect the Masquerade, the vampiric law designed to ensure humans never learn of the existence of these creatures of the night. But nothing works as planned. With rumors of plots, murders and power struggles, you must work in the shadows to protect your Sect in a pulsating investigation that plunges Boston into chaos.PLAY AS 3 ORIGINAL VAMPIRESPlay as 3 vampires who are over a hundred years old. Progress in the game through their intertwined destinies, deal with their different points of view and use their character sheets to try to separate the truth from the lies. Each character has their own vampiric abilities and disciplines that you can upgrade individually to suit your preferred approach. Will you choose intimidation, seduction or stealth? It's your decision, as long as you can sate your Hunger for blood.GAMEPLAY WITH CONSEQUENCESWith its unique gameplay, Swansong puts emphasis on the consequences of your actions in both the investigation and your social interactions with other characters.\nAnalyze each situation carefully because your decisions can have huge consequences on your heroes' lives and the fate of the Boston Camarilla.",
-      "image": "https://m.media-amazon.com/images/I/A1N5QVz0QAL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
+        "PC"
       ]
     },
     {
