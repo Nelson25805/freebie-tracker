@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-30T14:58:00.223Z",
-  "totalFree": 32,
+  "fetchedAt": "2026-10-30T19:16:27.010Z",
+  "totalFree": 33,
   "totalUpcoming": 8,
   "games": [
     {
@@ -57,8 +57,8 @@
       "originalPrice": 2499,
       "discountPrice": 2499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "4e469c7d8bbf49bcabc2c07127d3d946",
@@ -76,8 +76,8 @@
       "originalPrice": 2499,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-10-29T15:00:00.000Z",
+      "offerEnd": "2026-11-05T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -131,7 +131,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-10-30T14:44:49.740Z",
-      "offerEnd": "2026-11-02T14:00:59.740Z",
+      "offerEnd": "2026-11-02T14:01:00.129Z",
       "platforms": [
         "PC"
       ]
@@ -732,6 +732,25 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
+      ]
+    },
+    {
+      "id": "steam-3836",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Asleep: Act 1 (Steam) Giveaway",
+      "slug": "3836",
+      "storeUrl": "https://www.gamerpower.com/open/asleep-act-1-steam-giveaway",
+      "seller": "Steam",
+      "description": "Claim Asleep: Act 1 for free via Steam until 2 Nov! Asleep is a 2d adventure game with dark atmosphere and challenging puzzles.",
+      "image": "https://www.gamerpower.com/offers/1b/6ae4ceb2e38bb.jpg",
+      "originalPrice": 999,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-10-30T13:06:58.000Z",
+      "offerEnd": "2026-11-02T23:59:00.000Z",
+      "platforms": [
+        "PC"
       ]
     },
     {
