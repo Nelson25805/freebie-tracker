@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-30T00:05:23.794Z",
-  "totalFree": 31,
+  "fetchedAt": "2026-10-30T14:58:00.223Z",
+  "totalFree": 32,
   "totalUpcoming": 8,
   "games": [
     {
@@ -76,8 +76,8 @@
       "originalPrice": 2499,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-10-29T15:00:00.000Z",
-      "offerEnd": "2026-11-05T16:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -116,6 +116,25 @@
       "status": "upcoming",
       "offerStart": "2026-11-05T16:00:00.000Z",
       "offerEnd": "2026-11-12T16:00:00.000Z"
+    },
+    {
+      "id": "gog-a-new-beginning-final-cut",
+      "store": "gog",
+      "storeName": "GOG",
+      "title": "A New Beginning: Final Cut",
+      "slug": "a_new_beginning",
+      "storeUrl": "https://www.gog.com/en/game/a_new_beginning",
+      "seller": "GOG",
+      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get A New Beginning: Final Cut. See our Privacy policy.",
+      "image": "https://images.gog-statics.com/89b5917e554aa64633003fe9da2f8f9425a2cfdc9cb4972a61b4ee57ed09a8ed_giveaway_465w.webp",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-10-30T14:44:49.740Z",
+      "offerEnd": "2026-11-02T14:00:59.740Z",
+      "platforms": [
+        "PC"
+      ]
     },
     {
       "id": "psplus-f1-25",
