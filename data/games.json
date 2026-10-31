@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-10-31T18:34:25.575Z",
-  "totalFree": 33,
+  "fetchedAt": "2026-10-31T23:30:31.893Z",
+  "totalFree": 32,
   "totalUpcoming": 8,
   "games": [
     {
@@ -76,8 +76,8 @@
       "originalPrice": 2499,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-10-29T15:00:00.000Z",
-      "offerEnd": "2026-11-05T16:00:00.000Z"
+      "offerStart": "2026-10-19T15:00:00.000Z",
+      "offerEnd": "2026-11-02T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -131,7 +131,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-10-30T14:44:49.740Z",
-      "offerEnd": "2026-11-02T14:01:00.596Z",
+      "offerEnd": "2026-11-02T14:01:00.331Z",
       "platforms": [
         "PC"
       ]
@@ -749,25 +749,6 @@
       "status": "free",
       "offerStart": "2026-10-30T13:06:58.000Z",
       "offerEnd": "2026-11-02T23:59:00.000Z",
-      "platforms": [
-        "PC"
-      ]
-    },
-    {
-      "id": "steam-3834",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Hexologic (Steam) Giveaway",
-      "slug": "3834",
-      "storeUrl": "https://www.gamerpower.com/open/hexologic-steam-giveaway",
-      "seller": "Steam",
-      "description": "Fall in love in with Sudoku again! Grab Hexologic for free via Steam! Hexologic is a Sudoku-like puzzle game with nice visuals and relaxing music. Don´t miss it!",
-      "image": "https://www.gamerpower.com/offers/1b/6ae37c96c0b45.jpg",
-      "originalPrice": 499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-29T13:04:22.000Z",
-      "offerEnd": "2026-10-31T23:59:00.000Z",
       "platforms": [
         "PC"
       ]
