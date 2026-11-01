@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T23:30:31.893Z",
+  "fetchedAt": "2026-11-01T14:53:21.162Z",
   "totalFree": 32,
   "totalUpcoming": 8,
   "games": [
@@ -55,10 +55,10 @@
       "description": "Explore Olathe and unmask its twisted secrets with LISA: The Definitive Edition, including the original narrative-driven RPG LISA: The Painful and its sequel LISA: The Joyful.",
       "image": "https://cdn1.epicgames.com/offer/ca3a9d16d131478c97fd56c138a6511a/EGS_LISATheDefinitiveEdition_DingalingProductions_Bundles_S2_1200x1600-4a9b4fc6e06e8aff136c1a3cf18292ae",
       "originalPrice": 2499,
-      "discountPrice": 2499,
+      "discountPrice": 1499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-01T06:00:00.000Z",
+      "offerEnd": "2026-11-10T06:59:00.000Z"
     },
     {
       "id": "4e469c7d8bbf49bcabc2c07127d3d946",
@@ -76,8 +76,8 @@
       "originalPrice": 2499,
       "discountPrice": 0,
       "status": "free",
-      "offerStart": "2026-10-19T15:00:00.000Z",
-      "offerEnd": "2026-11-02T16:00:00.000Z"
+      "offerStart": "2026-10-29T15:00:00.000Z",
+      "offerEnd": "2026-11-05T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -131,7 +131,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-10-30T14:44:49.740Z",
-      "offerEnd": "2026-11-02T14:01:00.331Z",
+      "offerEnd": "2026-11-02T14:00:59.715Z",
       "platforms": [
         "PC"
       ]
@@ -572,7 +572,7 @@
       "storeUrl": "https://luna.amazon.com/detail/B0BTRVRN6M?ref=pghq&r=web",
       "seller": "Prime Gaming",
       "description": "Everything you love, all in Fortnite. Drop into the action you love or discover something new with your squad. Be the last player standing in Battle Royale. Get nostalgic in Fortnite OG. Go tactical in Reload. Headline Fortnite Festival. Explore the worlds of LEGO Fortnite. There is always something new for you and your friends.Play thousands of games made by developers like deathruns, tycoons, racing, zombie survival and more! Or, build your own games with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools for everyone to play. Each game has an individual age rating so you can find what’s right for you.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/C1z+f8UaRRL._SX960_QL65_FMwebp_.png",
+      "image": "https://m.media-amazon.com/images/I/D1APZutsn7L._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -590,8 +590,8 @@
       "slug": "fortnite-battle-royale",
       "storeUrl": "https://luna.amazon.com/detail/B0CXG1X89Z?ref=pghq&r=web",
       "seller": "Prime Gaming",
-      "description": "Break the rules. Change the game. This Season, team up with gaming legends, best baddies with new weapons, and catch a whole new generation of Sprites in new locations around the Island. Hack Chest loot, punch in Cheat Codes, hunt down Lobby Hacks for bonus rewards and more in Fortnite Battle Royale Chapter 7 Season 4: Override!Be the last player standing in Battle Royale and Zero Build, solo or with up to three squadmates. Compete for Leaderboard positions in Ranked play, or experience large scale team battles with Team Rumble.Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/C1z+f8UaRRL._SX960_QL65_FMwebp_.png",
+      "description": "A mysterious skull-shaped island. A legendary treasure. New secrets waiting to be found. See where the hunt takes you each week.Be the last player standing in Battle Royale and Zero Build, solo or with up to three squadmates. Compete for Leaderboard positions in Ranked play, or experience large scale team battles with Team Rumble.Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
+      "image": "https://m.media-amazon.com/images/I/D1APZutsn7L._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
