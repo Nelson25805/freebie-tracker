@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T19:00:55.113Z",
+  "fetchedAt": "2026-11-01T23:39:53.152Z",
   "totalFree": 32,
   "totalUpcoming": 8,
   "games": [
@@ -131,7 +131,7 @@
       "discountPrice": 0,
       "status": "free",
       "offerStart": "2026-10-30T14:44:49.740Z",
-      "offerEnd": "2026-11-02T14:01:00.607Z",
+      "offerEnd": "2026-11-02T14:00:59.653Z",
       "platforms": [
         "PC"
       ]
