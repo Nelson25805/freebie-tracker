@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-03T15:55:18.022Z",
+  "fetchedAt": "2026-11-03T20:40:23.092Z",
   "totalFree": 30,
-  "totalUpcoming": 8,
+  "totalUpcoming": 5,
   "games": [
     {
       "id": "a9748abde1c94b66aae5250bb9fc5503",
@@ -118,67 +118,6 @@
       "offerEnd": "2026-11-12T16:00:00.000Z"
     },
     {
-      "id": "psplus-f1-25",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "F1 25",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5",
-      "description": "Leave your mark on the world of racing in F1 25, the official video game of the 2025 FIA Formula One World Championship. Enjoy single player experiences such as Career and My Team 2.0, letting you create your own F1 stories as you take control as the Owner of a Formula 1 team. Then take the race online against other players, including a brand new multiplayer mode in F1 World, where you and your friends race as a squad against AI drivers.",
-      "image": "https://blog.playstation.com/tachyon/2026/09/eabab177555f0b80a7a6434c7241b6133b4a1dd4-scaled.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-30T15:30:30.000Z",
-      "offerEnd": "2026-11-03T17:00:00.000Z",
-      "platforms": [
-        "PS5"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
-      "id": "psplus-hunt-showdown-1896",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Hunt: Showdown 1896",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5",
-      "description": "Hunt: Showdown 1896 is a new era of the addictively unforgiving extraction shooter. In corrupted backwaters lost to history, fight back alone – or with friends – against timeless evil. Twisted monsters and other ruthless Hunters stand between you and your Bounty. Risk everything as Hunt consumes you. Race competing Hunters to track down bosses, send them to hell, claim their bounty, and fight your way to extract. If others only slow you down, go alone. If you find strength in numbers, take up to two teammates along.",
-      "image": "https://blog.playstation.com/tachyon/2026/09/9b238538c58885b73d206814598fb77dc33e08e0.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-30T15:30:30.000Z",
-      "offerEnd": "2026-11-03T17:00:00.000Z",
-      "platforms": [
-        "PS5"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
-      "id": "psplus-earth-defense-force-world-brothers-2",
-      "store": "psplus",
-      "storeName": "PlayStation Plus",
-      "title": "Earth Defense Force: World Brothers 2",
-      "slug": "",
-      "storeUrl": "https://store.playstation.com",
-      "seller": "PS5 / PS4",
-      "description": "The square Earth is under attack by giant enemies. Teammates scattered around the world are waiting to be rescued. Select 4 teammates from among those you have collected and create your own team. Design the team perfect for your play style, select your equipment, and then deploy to battle. In addition to soldiers from the mainline EDF series, this game also includes soldiers from the EDF spin-offs, and enemies who ravaged the planet in previous releases have also crossed over into this world to join the fight. Enjoy fighting numerous enemies, including redesigned voxel versions of old favorites, as well as new enemies unique to this release. Enjoy four player online co-op and two player local split screen on PS5 and PS4.&nbsp;",
-      "image": "https://blog.playstation.com/tachyon/2026/09/54ec8cea632c525dca9a512f265d33414b75040f.jpg?fit=1024%2C1024",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-09-30T15:30:30.000Z",
-      "offerEnd": "2026-11-03T17:00:00.000Z",
-      "platforms": [
-        "PS5",
-        "PS4"
-      ],
-      "sourcePost": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
       "id": "psplus-dead-island-2",
       "store": "psplus",
       "storeName": "PlayStation Plus",
@@ -190,8 +129,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/10/2c7339f1eb2120dc035b6cf966466b10eb243945-scaled.jpeg",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-11-03T17:00:00.000Z",
+      "status": "free",
+      "offerStart": "2026-10-28T15:31:43.000Z",
       "offerEnd": "2026-12-01T17:00:00.000Z",
       "platforms": [
         "PS5",
@@ -211,8 +150,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/10/e3fcf7e2648fbf2a9088abe339bbaf216adde4d6-scaled.jpeg",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-11-03T17:00:00.000Z",
+      "status": "free",
+      "offerStart": "2026-10-28T15:31:43.000Z",
       "offerEnd": "2026-12-01T17:00:00.000Z",
       "platforms": [
         "PS5",
@@ -232,8 +171,8 @@
       "image": "https://blog.playstation.com/tachyon/2026/10/5142098b9fe908ee2068029a22023ae6650f04ce-scaled.jpeg",
       "originalPrice": null,
       "discountPrice": 0,
-      "status": "upcoming",
-      "offerStart": "2026-11-03T17:00:00.000Z",
+      "status": "free",
+      "offerStart": "2026-10-28T15:31:43.000Z",
       "offerEnd": "2026-12-01T17:00:00.000Z",
       "platforms": [
         "PS5"
