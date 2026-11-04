@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-11-04T00:43:28.210Z",
-  "totalFree": 30,
+  "fetchedAt": "2026-11-04T19:37:02.333Z",
+  "totalFree": 29,
   "totalUpcoming": 5,
   "games": [
     {
@@ -246,44 +246,6 @@
       "seller": "Prime Gaming",
       "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
       "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-five-nights-at-freddy-s-into-the-pit",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Five Nights at Freddy's: Into the Pit",
-      "slug": "five-nights-at-freddy-s-into-the-pit",
-      "storeUrl": "https://luna.amazon.com/claims/five-nights-at-freddys-into-the-pit-epic/dp/amzn1.pg.item.9d2ad65c-0963-4e2d-93e6-75ad2a4bfc87?g=s&ingress=amzn&ref_=SM_FiveNightsatFreddysIntothePit_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Survive five nights of terror in this chilling adventure game. Travel between time periods to solve puzzles, gather clues, and outrun the threat relentlessly pursuing you. Move swiftly and stay hidden, and you may just survive. But be careful - it's not just your own life that's on the line this time.",
-      "image": "https://m.media-amazon.com/images/I/81AstxZiaRL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-doom",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "DOOM",
-      "slug": "doom",
-      "storeUrl": "https://luna.amazon.com/claims/doom-gog/dp/amzn1.pg.item.b095156c-1207-49f0-801a-75ac03b74def?g=s&ingress=amzn&ref_=SM_DOOM_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Developed by id Software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.StoryYou’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.A Relentless CampaignThere is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.Please note: The DRM-Free version of DOOM (2016) is single-player only. Multiplayer and online functionality for SnapMap are not included. SnapMap content is unlocked by default.",
-      "image": "https://m.media-amazon.com/images/I/B1l-UjFh9mL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -652,6 +614,25 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
+      ]
+    },
+    {
+      "id": "steam-3843",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Letter Quest: Grimm's Journey Remastered Steam Key Giveaway",
+      "slug": "3843",
+      "storeUrl": "https://www.gamerpower.com/open/letter-quest-grimm-s-journey-remastered-steam-key-giveaway",
+      "seller": "Steam",
+      "description": "Grab free Steam keys for Letter Quest: Grimm's Journey Remastered via Fanatical! Letter Quest: Grimm's Journey Remastered is a 2d turn-based RPG with clever wordplay. Don´t miss it!",
+      "image": "https://www.gamerpower.com/offers/1b/6aeb27dbc0e38.jpg",
+      "originalPrice": 699,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-11-04T07:40:59.000Z",
+      "offerEnd": "2026-11-06T23:59:00.000Z",
+      "platforms": [
+        "PC"
       ]
     },
     {
