@@ -7,11 +7,12 @@ on:
     types: [completed]
   workflow_dispatch:
 
-# Avoid overlapping deployments — a new push cancels any in-flight deploy
-# instead of queuing behind it (this was one of the causes of hangs).
+# Queue deployments instead of cancelling an in-flight one. Cancelling a
+# deploy while Pages is mid-"updating_pages" can leave the deployment stuck,
+# which makes later runs hang until they time out.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -24,7 +25,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,7 +33,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Change this if your site files (index.html, app.js, styles.css,
+          # Change this if your site files (index.html, styles.css,
           # data/games.json) live in a subfolder instead of the repo root.
           path: .
 
@@ -40,8 +41,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
         with:
-          # The default timeout can cancel a deployment moments before
-          # GitHub's backend confirms it succeeded, marking it "Failed to
-          # deploy (completed)" even though the artifact is already live.
-          # Give it more headroom.
-          timeout: 1200000 # 20 minutes, in ms
+          # 600000 ms (10 minutes) is the maximum the action accepts; larger
+          # values are silently reduced to this.
+          timeout: 600000
