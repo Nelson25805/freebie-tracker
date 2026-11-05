@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-05T16:11:16.622Z",
-  "totalFree": 29,
-  "totalUpcoming": 6,
+  "fetchedAt": "2026-11-05T21:11:05.896Z",
+  "totalFree": 32,
+  "totalUpcoming": 5,
   "games": [
     {
       "id": "a9748abde1c94b66aae5250bb9fc5503",
@@ -18,7 +18,7 @@
       "image": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-1cv5z.jpg",
       "originalPrice": 0,
       "discountPrice": 0,
-      "status": "upcoming",
+      "status": "free",
       "offerStart": "2026-11-05T16:00:00.000Z",
       "offerEnd": "2026-11-12T16:00:00.000Z"
     },
@@ -59,25 +59,6 @@
       "status": "upcoming",
       "offerStart": "2026-11-01T06:00:00.000Z",
       "offerEnd": "2026-11-10T06:59:00.000Z"
-    },
-    {
-      "id": "4e469c7d8bbf49bcabc2c07127d3d946",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Sorry We're Closed",
-      "slug": "sorry-were-closed-724c86",
-      "storeUrl": "https://store.epicgames.com/p/sorry-were-closed-724c86",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Sorry We're Closed is a story-driven survival horror game about demons, angels and what happens when both sides collide. A mix of fixed-camera exploration and arcade-style shooting where Michelle must use her Third Eye to see between worlds, uncover secrets and solve puzzles.",
-      "image": "https://cdn1.epicgames.com/spt-assets/9ab7eaaeb2f041969b350955b789f0f7/sorry-were-closed-1orqh.png",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-10-29T15:00:00.000Z",
-      "offerEnd": "2026-11-05T16:00:00.000Z"
     },
     {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
@@ -131,10 +112,29 @@
       "description": "The floating garbage town survival game! Scavenge what precious garbage you can from the ocean's surface and grow your city while doing your best to survive in this colorful post-apocalyptic world.",
       "image": "https://cdn1.epicgames.com/spt-assets/5c36b876e80d4285b9993947efeeaf2b/flotsam-1yczl.jpg",
       "originalPrice": 2499,
-      "discountPrice": 2499,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-11-05T16:00:00.000Z",
       "offerEnd": "2026-11-12T16:00:00.000Z"
+    },
+    {
+      "id": "9975548b6d404a94b8a9bdb34cad49e9",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Knightica",
+      "slug": "knightica-3be45c",
+      "storeUrl": "https://store.epicgames.com/p/knightica-3be45c",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Recruit units, place them strategically, and find the synergies in this Roguelike AutoBattler!\nKnightica lets you guide a warband through challenges to free the Kingdoms.\nDiscover combinations, weave powerful enchants, face dangerous monsters, and lead your army to victory!",
+      "image": "https://cdn1.epicgames.com/spt-assets/357100ca5613420e98208c5f14585e9d/knightica-1nuxm.png",
+      "originalPrice": 1499,
+      "discountPrice": 1499,
+      "status": "upcoming",
+      "offerStart": "2026-11-12T16:00:00.000Z",
+      "offerEnd": "2026-11-19T16:00:00.000Z"
     },
     {
       "id": "psplus-dead-island-2",
@@ -197,6 +197,63 @@
         "PS5"
       ],
       "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "prime-trash-goblin",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Trash Goblin",
+      "slug": "trash-goblin",
+      "storeUrl": "https://luna.amazon.com/claims/trash-goblin-epic/dp/amzn1.pg.item.1892b601-09dc-470b-9d62-7feac63376a3?g=s&ingress=amzn&ref_=SM_TrashGoblin_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A CHILL SHOPKEEPING GAMETrash Goblin is a wholesome and cosy shopkeeping game where you uncover and clean trinkets for sale! Customize them by up-cycling and more to meet the eccentric requests of your endless colorful, customers. Spend your savings to upgrade your shop, buy new and better tools, and customize your space! There is no pressure, no risk, no right way to play - it is not a simulator - it's just good vibes and nice customers to serve.DISCOVER PECULIAR TRINKETSUnearth knick-knacks of all kinds by chipping away at the dirt and cruft they're embedded inside, wrestling with different types of dirt that yield in different ways.RESTORE FORGOTTEN CURIOS TO GLORYScrub all these strange items up nice and clean with your sponge to get them ready for sale!UPCYLE INTO IMAGINATIVE NEW FORMS!Customize these curios by combining Trinkets together, turning them into strange and wonderful new items!SELL TO A PARADE OF COLORFUL CUSTOMERSA wide range of intriguing, odd and charming customers will frequent your store, some with interesting stories to tell, others after a particular object, some just browsing...UPGRADE YOUR WORKSHOPSpend your savings to expand your tool set, and unlock more space to work in. Buy a display mat to tempt customers with specific wares, or a soak tub to clean up overnight, an honesty box for getting rid of unwanted trinkets, and more!TREAT YOURSELFCustomize your space, decorate your shelves however you like, get some nice plants, change up the wallpaper and bedclothes; make it your own!MAXIMUM CHILL, ZERO PRESSUREThere's a gentle limit to how much you can do in a given day but customers will return, you can potter as much as you like, and there are no fail states.",
+      "image": "https://m.media-amazon.com/images/I/91TkDA9qsYL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-time-travel-escape-room-game",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Time Travel: Escape Room Game",
+      "slug": "time-travel-escape-room-game",
+      "storeUrl": "https://luna.amazon.com/claims/time-travel-escape-room-game-legacy/dp/amzn1.pg.item.c3af790f-8ce0-42b2-8c16-ebecb97303f5?g=s&ingress=amzn&ref_=SM_TimeTravelEscapeRoomGame_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Your help is essential in this time travel machine game!Play Time Travel: Escape Room Game and unlock secrets of the past and the future with a crystal in your hand! Participate in this escape room game challenge with a twist. This 100 room escape puzzle game enables you to sneak peek through time thanks to its broken time machine. Absurd right? You too can feel the thrill, just solve escape puzzles and find the missing piece for the time machine in 100 world famous locations in different times.The heart of the time machine beats with the power of a rare crystal. Simply play Time Travel: Escape Room Game, find the crystal and see what it feels like to be a real time traveler!What’s the deal with Time Travel: Escape Room Game and its broken time machine?!A revolutionary time machine is developed by a genius doctor in his lab. The main part of the machine that makes travel through time possible is a rare shimmering crystal. As time traveling is a very complex thing, the time machine breaks all the time which makes his time travelings unpredictable. Whenever the time travel machine breaks, the crystal falls out and disappears somewhere in the scene.TIME TRAVEL: ESCAPE ROOM GAME CHARACTERISTICSExciting puzzles with hidden objects and conundrums to solveCool mechanics: move in time and space, combine objects, play brain gamesSkip the level if you get stuckVisit many world's famous locations in different times",
+      "image": "https://m.media-amazon.com/images/I/A1xT0boi8XL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Legacy Games"
+      ]
+    },
+    {
+      "id": "prime-ad-infinitum",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Ad Infinitum",
+      "slug": "ad-infinitum",
+      "storeUrl": "https://luna.amazon.com/claims/ad-infinitum-epic/dp/amzn1.pg.item.69de011b-6575-41ab-9964-971e59cf7457?g=s&ingress=amzn&ref_=SM_AdInfinitum_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Trapped between two realities, you wander tormented within the walls of your family home and the trenches of World War I.BREAK THE CYCLEWill the nightmare of the war ever end? Will your mind be at peace one day? In Ad Infinitum, you play as a German soldier haunted by the horrors of the Great War. While your mind drifts between memories of your family home and of the trenches on the front, you try to break the endless cycle of suffering.BETWEEN A DREAM AND REALITYYou wake up in your bedroom, unchanged from your teenage years, in a run-down and deserted manor house. But then you suddenly find yourself in the trenches where the only beings around are horrific monsters. Unable to discern reality from nightmare, immerse yourself in the story of a man confronting his trauma and demons.NIGHTMARES THAT BECOME REALUnspeakable nightmares come to life in the recesses of your mind. To escape the death traps and terrifying creatures, you must understand each monster and solve the puzzles that stand in your way. From blind demons who can hear your softest footsteps or disjointed puppets who move in the dark, horror is around every corner.A FAMILY TORN APARTThe fallout of the war is felt far from the front. Peel back the shroud that hides the secrets of your family, torn apart by the Great War, and try to remember your past. Through exploration and by solving riddles and puzzles between the walls of your home and the barbed wire of No Man’s Land, you reveal a chapter in the story of a German family ravaged by war.",
+      "image": "https://m.media-amazon.com/images/I/B12JGMfwwBL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
     },
     {
       "id": "prime-caravan-sandwitch",
@@ -389,6 +446,101 @@
       ]
     },
     {
+      "id": "prime-nba-the-run",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "NBA THE RUN",
+      "slug": "nba-the-run",
+      "storeUrl": "https://luna.amazon.com/detail/B0HQ5N3DWK?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "We’re taking it back to the streets. NBA THE RUN is a fast-paced, online 3v3 street basketball game, played above-the-rim and packed with posterizing moments, ankle-breaking tricks and a unique, signature style. Take your favorite NBA stars to iconic streetball courts around the world and stack wins, earn cred and become the GOAT of THE RUN.DON'T GET KNOCKED OUTPlay Solos or Squads, the choice is yours. Face off against the best of the best in online multiplayer Knockout Tournaments spanning the globe on legendary streetball courts from Venice Beach, to The Tenement in the Philippines, and more. Lock in, win, advance, repeat.BECOME THE GOATGameplay is fast, fluid and responsive. Powered by true rollback netcode, your moves on the sticks will sync instantaneously – cross up an aggressive defender, pull down a towering block, or throw up a lob out of a spin move for a game winning alley-oop.DEFENSE WINS CHIPSIt’s not only about the high flying dunks, stepback logo 3s and ankle breakers – in NBA THE RUN, defense is just as fun, and powerful, as offense. Thunderous blocks, diving for loose balls, huge steals, and all-out physicality on D can lead to a W and will get you just as hyped.STREETBALL WITH STYLEEverything about NBA THE RUN is handcrafted and stylized to deliver a completely unique look and feel. Authentic to the sport of basketball and visually in a lane of its own - there isn’t another basketball game on the market that looks, feels or plays like NBA THE RUN.",
+      "image": "https://m.media-amazon.com/images/I/D17d2f48gdL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-ea-sports-madden-nfl-27",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "EA SPORTS™ Madden NFL 27",
+      "slug": "ea-sports-madden-nfl-27",
+      "storeUrl": "https://luna.amazon.com/detail/B0HQ5JBS3K?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Run the league one decision at a time. EA SPORTS™ Madden NFL 27, powered by the all-new Persona Engine, transforms Franchise into a reactive, always-evolving league where every NFL athlete has a distinct, realistic personality that informs their motivations, demands and reactions. Gameplay gets physical with more precise control from authentic WR/DB battles, new short-yardage mechanics, defensive coverage improvements and new strategic pre-play settings and controls. Build your NFL legacy on a deeper progression path in the new Superstar G.O.A.T. Career Journey and control your roster with more customization with Ultimate Team Captains.FRANCHISEThe all-new Persona Engine gives every NFL athlete a distinct personality that informs their motivations, how they think and how they respond, transforming your Franchise into a reactive ever-evolving league shaped by every move you make.AUTHENTIC NFL PERSONALITYEvery snap is a battle for control. All-new WR/DB interactions bring true NFL physicality to every route, with realistic hand-fighting, jostling, and leverage that define separation and coverage. Win tight 50-50 moments with timing-based catching and refined contested interactions, or take command in critical situations with improved short-yardage mechanics and plays like the “Tush Push” that decide games when inches matter most.GAMEPLANNING & CUSTOMIZATIONOwn every decision before and after the snap. New gameplan adjustments let you preconfigure how your team aligns and reacts, while streamlined pre-play controls put every adjustment at your fingertips. Smarter receiver logic keeps plays alive, while advanced coverage systems and plaster logic help defenses adapt in real time giving you total control to execute your strategy on every snap.SUPERSTARBecome the greatest NFL Superstar of all time through an expanded G.O.A.T. Career Journey. Progress from high school to the Hall of Fame with deeper skill trees, new playable positions and unlock meaningful career choices as your legacy grows.ULTIMATE TEAMBuild your roster your way with the newly revamped upgrade system. Earn skill points by completing in-game objectives to upgrade your favorite players with new Evos items.PRESENTATIONThe sights and sounds of NFL Sundays bring expanded stadium traditions and broadcast moments to frame the storylines of every game day. From Denver’s pregame skydivers to Jaxson de Ville’s zip line in Jacksonville, new intros, drone shows, and holiday broadcast packages elevate every matchup to big-game energy.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal for details.",
+      "image": "https://m.media-amazon.com/images/I/D1p70L4uifL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-police-simulator-patrol-officers",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Police Simulator: Patrol Officers",
+      "slug": "police-simulator-patrol-officers",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPVN613X?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Welcome to Brighton! Join the police force of this fictitious American city and experience the day to day life of a Police Officer. Start with citing violations and giving out parking tickets, then work your way towards shouldering more responsibilities. Be part of the community of Brighton, get to know your neighborhood and handle daily police work to fight crime during your shift. Always be tough, but fair: respect the law and gain more experience to unlock more neighborhoods, districts and duties. POLICE SIMULATOR: PATROL OFFICERS includes a dynamic traffic system that organically creates the traffic flow and car accidents, as well as emergency situations that can randomly pop up during your shift. Be ready to react at a moment’s notice! In the Open World of Brighton you will be able to choose neighborhoods for your patrols and make sure to keep them safe. Patrol through three unique districts with several neighborhoods each. Every single one has a distinct flair, from the high rises of Downtown to the historical buildings of Brickston. With progression and unlocking new districts, additional duties will also be revealed. Start with ticketing duty and finding wrongfully parked cars, but be prepared to take care of accidents that may happen right in front of your eyes. In a living and breathing city, many different duties may be encountered. Stop drug deals taking place in the local park, or chase graffiti sprayers illegally tagging walls. Be prepared for anything - even if it is just a car blocking a bus stop. Every duty is your responsibility. With the Intuition System your police officer will be able to pick up important clues during witness interrogations that could lead you to resolve situations the right way, so make sure you pay attention to everything being said and done. POLICE SIMULATOR: PATROL OFFICERS offers a Simulation mode for experienced players looking for the most authentic experience, as well as a casual mode for those looking for a more relaxing patrol in the streets of Brighton. Traffic system that organically creates accidents, speeding vehicles, traffic jams and other traffic violations like crossing a red light and moreThree districts with several neighborhoods, each with their own unique flair Various duties ranging from car accidents, parking regulations, emergency callouts, to finding drug dealers or graffiti sprayers Progression to unlock districts, cars and modes (Standard and Open Patrol)Unlock and drive up-to 3 different cars: the Cruiser, Panther Z and Gladiator Police VehiclesCasual and Simulation game modesIntuition System",
+      "image": "https://m.media-amazon.com/images/I/D1YQlvOKGeL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-disney-epic-mickey-rebrushed",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Disney Epic Mickey: Rebrushed",
+      "slug": "disney-epic-mickey-rebrushed",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPLXB8Z9?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Disney Epic Mickey: Rebrushed brings the magic of Disney to life in a vibrant 3D platformer. This beautiful remake sends Mickey Mouse on an epic journey through Wasteland, a realm of forgotten Disney characters. As Mickey, you will dive into a fantastical world and, armed with paint and thinner, shape your adventure and the fate of this alternate world.Every stroke of your magic brush matters! Use paint to restore beauty and harmony or thinner to alter your environment and uncover hidden secrets. Your choices influence Mickey's destiny and change the outcome of this artistic odyssey. Will you become the epic hero Wasteland needs?Encounter various iconic characters like Oswald the Lucky Rabbit, Walt Disney’s first creation, as you travel between lands in Wasteland. Collect virtual Disney pins, tackle creative challenges, and uncover secrets, all while exploring classic platforming levels inspired by animated films and shorts.Originally envisioned by Warren Spector, reimagined by Purple Lamp, Disney Epic Mickey: Rebrushed employs state-of-the-art visuals and improved controls to breathe new life into a beloved classic. Experience new movement skills for Mickey, such as dash, ground pound and sprinting. The game’s compelling story makes it an unforgettable adventure for long-time fans and newcomers alike. Join Mickey Mouse and unravel the mysteries of Wasteland in this homage to Disney's legacy.",
+      "image": "https://m.media-amazon.com/images/I/D13p4TYBEfL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-mixtape",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Mixtape",
+      "slug": "mixtape",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPMC5MJX?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "On their last night together, three friends embark on one final adventure. Play through a mixtape of memories, set to the soundtrack of a generation.En route to their final party together, a perfectly curated playlist draws three friends into dreamlike reenactments of their formative memories. Experience a variety of narrative vignettes exploring the pivotal moments that shaped them. Players will immerse themselves in the teenage wasteland by playing through a mixtape of joyful gameplay, from skateboarding and flying to taking photos after hours at an abandoned theme park, hitting baseballs, and putting on a fireworks show from the backseat of a car. It's the greatest hits of the teenage experience, from the first kiss to the last dance.From Beethoven & Dinosaur, developers of BAFTA award-winning game The Artful Escape, Mixtape draws inspiration from classic coming-of-age movies, bringing together nostalgic aimlessness, mischief, music, the highs and lows of adolescence, and the bittersweet feelings brought about by growth, transformation, and moving on.Featuring music from DEVO, Roxy Music, Lush, The Smashing Pumpkins, Iggy Pop, Siouxsie and the Banshees, Joy Division, the Cure and many more.Skate. Party. Avoid the law.Hang out. Sneak out. Make out.",
+      "image": "https://m.media-amazon.com/images/I/C1UJkpjileL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-space-metal-mania",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -427,6 +579,25 @@
       ]
     },
     {
+      "id": "prime-kingdom-come-deliverance-ii",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kingdom Come: Deliverance II",
+      "slug": "kingdom-come-deliverance-ii",
+      "storeUrl": "https://luna.amazon.com/detail/B0FSTD4YHR?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Kingdom Come: Deliverance II is a thrilling Action RPG, set amid the chaos of a civil war in 15th Century Bohemia.You are Henry of Skalitz – an ordinary man doing extraordinary things – caught in a gripping tale of revenge, betrayal and discovery as he embarks on an epic journey, 'from a humble blacksmith's forge to the court of Kings', as he searches for purpose in this beautiful but brutal medieval world.From bustling city streets to lush forests, discover this open-world Medieval Europe through an unforgettable adventure filled with action, thrill and wonder.FEATURES A Tale of Love and RevengeLive life through the eyes and actions of Henry, a young man on a quest to avenge his murdered parents. His story – illustrated with over five hours of stunning cinematics – takes him from aspiring warrior to rebel, crossing paths with a charismatic cast of characters and an unforgettable set of adventures, as he goes up against the King of Hungary, Sigismund the Red Fox and his fearsome allies. A True RPG ExperienceYour actions shape Henry’s destiny and how the world will react to him. Customize freely his appearance, skills and equipment while taking a moral stance on the events around you. Travel round the land engaging in unique activities, such as blacksmithing and archery, to truly immerse yourself in this vibrant region of Europe that will remember your actions, forever.Live a Life MedievalThis stunningly authentic rendition of 15th Century Bohemia allows you to experience this fascinating setting like never before. Get lost in a sprawling city, engage with peasants and talk with nobles while exploring a vast and rich countryside with taverns, bath houses, castles and more. Authentic First-Person CombatFeel the clash of steel and visceral combat as you engage in thrilling real-time battles. There’s a range of authentic weapons and combat styles to suit every player. On foot, horse or by stealth, you can specialise in elegant sword mastery, brutal blunt weapons or deadly ranged attacks.",
+      "image": "https://m.media-amazon.com/images/I/D1X2ol-Wd4L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
       "id": "prime-a-quiet-place-the-road-ahead",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -446,117 +617,41 @@
       ]
     },
     {
-      "id": "prime-fortnite-og",
+      "id": "prime-squirrel-with-a-gun",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Fortnite OG",
-      "slug": "fortnite-og",
-      "storeUrl": "https://luna.amazon.com/detail/B0DPJK5H8T?ref=pghq&r=web",
+      "title": "Squirrel with a Gun",
+      "slug": "squirrel-with-a-gun",
+      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "FORTNITE OG is BACK and here to stay. Drop into Chapter 1 and explore the OG map, collect OG loot, and relive OG gameplay. THE OG OG RETURNS Solos or Squads, drop into battle with Fortnite OG: Chapter 1. Build your way to pure victory in Battle Royale or dominate the Island in a new way with Zero Build. Each Fortnite OG season runs approximately two months, bringing back the legendary loot and features from back in the day. CLASSIC COOL IN THE OG PASS The Fortnite OG Pass features 45 tiers of retro rewards with a modern twist on items and Outfits. A new OG Pass will be available every OG season for 950 V-Bucks or in Fortnite Crew including the OG Pass, new Battle Royale, Music and LEGO Passes in Fortnite Crew for 1,400 V-Bucks. Getting this add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/D1vos-jtFgL._SX960_QL65_FMwebp_.png",
+      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
+      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
+        "Amazon Games App"
       ]
     },
     {
-      "id": "prime-fortnite",
+      "id": "prime-wrc-generations",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Fortnite",
-      "slug": "fortnite",
-      "storeUrl": "https://luna.amazon.com/detail/B0BTRVRN6M?ref=pghq&r=web",
+      "title": "WRC Generations",
+      "slug": "wrc-generations",
+      "storeUrl": "https://luna.amazon.com/claims/wrc-generations-epic/dp/amzn1.pg.item.59a0703f-be28-476e-9160-8e56e257dee5?g=s&ingress=amzn&ref_=SM_WRCGenerations_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Everything you love, all in Fortnite. Drop into the action you love or discover something new with your squad. Be the last player standing in Battle Royale. Get nostalgic in Fortnite OG. Go tactical in Reload. Headline Fortnite Festival. Explore the worlds of LEGO Fortnite. There is always something new for you and your friends.Play thousands of games made by developers like deathruns, tycoons, racing, zombie survival and more! Or, build your own games with Unreal Editor for Fortnite (UEFN) or Fortnite Creative tools for everyone to play. Each game has an individual age rating so you can find what’s right for you.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/D1APZutsn7L._SX960_QL65_FMwebp_.png",
+      "description": "Drive into the thick of the action behind the wheel of the new 2022 WRC hybrids.2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt.In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in.As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted.For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category.WRC Generations includes more content than ever before in a rally game.750 km of unique special stages in 22 countries49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)37 legendary cars plus additional bonuses165 timed special stagesIn order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:The new hybrid vehiclesNew, even more realistic vehicle physicsA LEAGUES mode in which you can challenge other playersA new Rally Sweden environment with 6 brand-new special stagesShare livery and stickers with the communityIn-game team creation and management",
+      "image": "https://m.media-amazon.com/images/I/B19hyph1voL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
       "offerStart": null,
       "offerEnd": null,
       "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-fortnite-battle-royale",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Fortnite Battle Royale",
-      "slug": "fortnite-battle-royale",
-      "storeUrl": "https://luna.amazon.com/detail/B0CXG1X89Z?ref=pghq&r=web",
-      "seller": "Prime Gaming",
-      "description": "A mysterious skull-shaped island. A legendary treasure. New secrets waiting to be found. See where the hunt takes you each week.Be the last player standing in Battle Royale and Zero Build, solo or with up to three squadmates. Compete for Leaderboard positions in Ranked play, or experience large scale team battles with Team Rumble.Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/D1APZutsn7L._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-lego-fortnite-brick-life",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "LEGO® Fortnite Brick Life",
-      "slug": "lego-fortnite-brick-life",
-      "storeUrl": "https://luna.amazon.com/detail/B0DBPKQ68Y?ref=pghq&r=web",
-      "seller": "Prime Gaming",
-      "description": "Build your new life in an ever-evolving LEGO® city.Experience a highly social destination for up to 52 players where you can explore all the city has to offer!Be the ultimate socialite and hang out in restaurants, house parties or rooftop clubs. Chat with friends or make new ones, activities in LEGO® Fortnite Brick Life are better together. Host a band practice down the beach, grab a bite to eat with others or race through the streets on hover boards.Take on a job, complete tasks to earn some spending money and start living the life in Brick Bay with vehicles, housing and more. Customize your home with furnishings from the local store or invite your friends over to hang out.Getting this add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/C1kmFsUvj6L._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-lego-fortnite-odyssey",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "LEGO® Fortnite Odyssey",
-      "slug": "lego-fortnite-odyssey",
-      "storeUrl": "https://luna.amazon.com/detail/B0CM951F5D?ref=pghq&r=web",
-      "seller": "Prime Gaming",
-      "description": "Be the hero of your own world in LEGO® Fortnite Odyssey!Hop on the Battle Bus to explore the diverse ecosystems of your world from the relaxing oasis of the Dry Valley and the snowy peaks of the Frostlands to the enchanted jungle of Lost Isles. But beware of what or who you may encounter along the way… some dark forces may be roaming the lands!Build homesteads across the world and recruit villagers to help you collect resources, tame animals, craft powerful items and defend the grounds. Push the limits of physics building surreal contraptions and find your own way to survive the challenges coming your way!Play the ultimate LEGO® adventure in Fortnite, solo or with up to 7 friends! Getting this add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. LEGO and the LEGO logo are trademarks of the LEGO Group. ©2026 The LEGO Group. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/C1WK9HqD1pL._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
-      ]
-    },
-    {
-      "id": "prime-fortnite-festival",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Fortnite Festival",
-      "slug": "fortnite-festival",
-      "storeUrl": "https://luna.amazon.com/detail/B0CLKBMYPV?ref=pghq&r=web",
-      "seller": "Prime Gaming",
-      "description": "Play in a band with friends or perform solo on stage with hit music by your favorite artists in Fortnite Festival!On the Main Stage, select your instrument and play a featured rotation of Jam Tracks. Explore the Festival Jam Stage to find friends and mix hit music together using the Jam Tracks in your locker.Keep the party going with an ever-expanding lineup of Jam Tracks, Music Icons, and more. Take your stage in Fortnite Festival!Getting the bundle/add-on is not necessary to access this content.©2026 Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Unreal, Unreal Engine, UE5, the Unreal Engine logo, Fortnite, the Fortnite logo, Fortnite Festival, and Rocket Racing are trademarks or registered trademarks of Epic Games, Inc. in the USA and elsewhere. Rocket League ©2026 Psyonix LLC. All other trademarks are the property of their respective owners.",
-      "image": "https://m.media-amazon.com/images/I/D13Hu7OrK9L._SX960_QL65_FMwebp_.png",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Luna"
+        "Epic Games"
       ]
     },
     {
@@ -576,63 +671,6 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-trash-goblin",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Trash Goblin",
-      "slug": "trash-goblin",
-      "storeUrl": "https://luna.amazon.com/claims/trash-goblin-epic/dp/amzn1.pg.item.1892b601-09dc-470b-9d62-7feac63376a3?g=s&ingress=amzn&ref_=SM_TrashGoblin_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "A CHILL SHOPKEEPING GAMETrash Goblin is a wholesome and cosy shopkeeping game where you uncover and clean trinkets for sale! Customize them by up-cycling and more to meet the eccentric requests of your endless colorful, customers. Spend your savings to upgrade your shop, buy new and better tools, and customize your space! There is no pressure, no risk, no right way to play - it is not a simulator - it's just good vibes and nice customers to serve.DISCOVER PECULIAR TRINKETSUnearth knick-knacks of all kinds by chipping away at the dirt and cruft they're embedded inside, wrestling with different types of dirt that yield in different ways.RESTORE FORGOTTEN CURIOS TO GLORYScrub all these strange items up nice and clean with your sponge to get them ready for sale!UPCYLE INTO IMAGINATIVE NEW FORMS!Customize these curios by combining Trinkets together, turning them into strange and wonderful new items!SELL TO A PARADE OF COLORFUL CUSTOMERSA wide range of intriguing, odd and charming customers will frequent your store, some with interesting stories to tell, others after a particular object, some just browsing...UPGRADE YOUR WORKSHOPSpend your savings to expand your tool set, and unlock more space to work in. Buy a display mat to tempt customers with specific wares, or a soak tub to clean up overnight, an honesty box for getting rid of unwanted trinkets, and more!TREAT YOURSELFCustomize your space, decorate your shelves however you like, get some nice plants, change up the wallpaper and bedclothes; make it your own!MAXIMUM CHILL, ZERO PRESSUREThere's a gentle limit to how much you can do in a given day but customers will return, you can potter as much as you like, and there are no fail states.",
-      "image": "https://m.media-amazon.com/images/I/91TkDA9qsYL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-time-travel-escape-room-game",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Time Travel: Escape Room Game",
-      "slug": "time-travel-escape-room-game",
-      "storeUrl": "https://luna.amazon.com/claims/time-travel-escape-room-game-legacy/dp/amzn1.pg.item.c3af790f-8ce0-42b2-8c16-ebecb97303f5?g=s&ingress=amzn&ref_=SM_TimeTravelEscapeRoomGame_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Your help is essential in this time travel machine game!Play Time Travel: Escape Room Game and unlock secrets of the past and the future with a crystal in your hand! Participate in this escape room game challenge with a twist. This 100 room escape puzzle game enables you to sneak peek through time thanks to its broken time machine. Absurd right? You too can feel the thrill, just solve escape puzzles and find the missing piece for the time machine in 100 world famous locations in different times.The heart of the time machine beats with the power of a rare crystal. Simply play Time Travel: Escape Room Game, find the crystal and see what it feels like to be a real time traveler!What’s the deal with Time Travel: Escape Room Game and its broken time machine?!A revolutionary time machine is developed by a genius doctor in his lab. The main part of the machine that makes travel through time possible is a rare shimmering crystal. As time traveling is a very complex thing, the time machine breaks all the time which makes his time travelings unpredictable. Whenever the time travel machine breaks, the crystal falls out and disappears somewhere in the scene.TIME TRAVEL: ESCAPE ROOM GAME CHARACTERISTICSExciting puzzles with hidden objects and conundrums to solveCool mechanics: move in time and space, combine objects, play brain gamesSkip the level if you get stuckVisit many world's famous locations in different times",
-      "image": "https://m.media-amazon.com/images/I/A1xT0boi8XL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Legacy Games"
-      ]
-    },
-    {
-      "id": "prime-ad-infinitum",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Ad Infinitum",
-      "slug": "ad-infinitum",
-      "storeUrl": "https://luna.amazon.com/claims/ad-infinitum-epic/dp/amzn1.pg.item.69de011b-6575-41ab-9964-971e59cf7457?g=s&ingress=amzn&ref_=SM_AdInfinitum_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Trapped between two realities, you wander tormented within the walls of your family home and the trenches of World War I.BREAK THE CYCLEWill the nightmare of the war ever end? Will your mind be at peace one day? In Ad Infinitum, you play as a German soldier haunted by the horrors of the Great War. While your mind drifts between memories of your family home and of the trenches on the front, you try to break the endless cycle of suffering.BETWEEN A DREAM AND REALITYYou wake up in your bedroom, unchanged from your teenage years, in a run-down and deserted manor house. But then you suddenly find yourself in the trenches where the only beings around are horrific monsters. Unable to discern reality from nightmare, immerse yourself in the story of a man confronting his trauma and demons.NIGHTMARES THAT BECOME REALUnspeakable nightmares come to life in the recesses of your mind. To escape the death traps and terrifying creatures, you must understand each monster and solve the puzzles that stand in your way. From blind demons who can hear your softest footsteps or disjointed puppets who move in the dark, horror is around every corner.A FAMILY TORN APARTThe fallout of the war is felt far from the front. Peel back the shroud that hides the secrets of your family, torn apart by the Great War, and try to remember your past. Through exploration and by solving riddles and puzzles between the walls of your home and the barbed wire of No Man’s Land, you reveal a chapter in the story of a German family ravaged by war.",
-      "image": "https://m.media-amazon.com/images/I/B12JGMfwwBL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
       ]
     },
     {
