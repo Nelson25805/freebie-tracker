@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-11-07T00:14:00.816Z",
-  "totalFree": 32,
+  "fetchedAt": "2026-11-07T14:48:24.525Z",
+  "totalFree": 31,
   "totalUpcoming": 5,
   "games": [
     {
@@ -671,25 +671,6 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
-    },
-    {
-      "id": "steam-3843",
-      "store": "steam",
-      "storeName": "Steam",
-      "title": "Letter Quest: Grimm's Journey Remastered Steam Key Giveaway",
-      "slug": "3843",
-      "storeUrl": "https://www.gamerpower.com/open/letter-quest-grimm-s-journey-remastered-steam-key-giveaway",
-      "seller": "Steam",
-      "description": "Grab free Steam keys for Letter Quest: Grimm's Journey Remastered via Fanatical! Letter Quest: Grimm's Journey Remastered is a 2d turn-based RPG with clever wordplay. Don´t miss it!",
-      "image": "https://www.gamerpower.com/offers/1b/6aeb27dbc0e38.jpg",
-      "originalPrice": 699,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-11-04T07:40:59.000Z",
-      "offerEnd": "2026-11-06T23:59:00.000Z",
-      "platforms": [
-        "PC"
       ]
     },
     {
