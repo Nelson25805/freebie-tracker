@@ -38,8 +38,28 @@ jobs:
         run: npm install
         working-directory: scripts
 
+      # Installs only the Chromium binary (no --with-deps). The ubuntu-24.04
+      # runner image already ships the system libraries Chromium needs, and
+      # --with-deps was failing when the runner's apt mirror was unreachable
+      # (it only wanted extra fonts). Retries cover transient download
+      # failures, and the timeout stops a network blip from hanging the job
+      # for 10+ minutes.
+      #
+      # If Chromium ever fails to LAUNCH because of a missing system library,
+      # change `playwright install chromium` below to
+      # `playwright install --with-deps chromium`.
       - name: Install Playwright browsers
-        run: npx --yes playwright install --with-deps chromium
+        timeout-minutes: 5
+        run: |
+          for attempt in 1 2 3; do
+            if npx --yes playwright install chromium; then
+              exit 0
+            fi
+            echo "Playwright install failed (attempt $attempt/3), retrying in 30s…"
+            sleep 30
+          done
+          echo "::error::Playwright browser install failed after 3 attempts."
+          exit 1
         working-directory: scripts
 
       # Fetches data and writes data/games.json + history. It does NOT email
