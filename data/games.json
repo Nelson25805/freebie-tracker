@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-11-12T16:41:43.806Z",
-  "totalFree": 29,
+  "fetchedAt": "2026-11-12T21:35:06.118Z",
+  "totalFree": 31,
   "totalUpcoming": 6,
   "games": [
     {
@@ -197,6 +197,44 @@
         "PS5"
       ],
       "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "prime-wrc-generations",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "WRC Generations",
+      "slug": "wrc-generations",
+      "storeUrl": "https://luna.amazon.com/claims/wrc-generations-epic/dp/amzn1.pg.item.59a0703f-be28-476e-9160-8e56e257dee5?g=s&ingress=amzn&ref_=SM_WRCGenerations_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Drive into the thick of the action behind the wheel of the new 2022 WRC hybrids.2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt.In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in.As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted.For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category.WRC Generations includes more content than ever before in a rally game.750 km of unique special stages in 22 countries49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)37 legendary cars plus additional bonuses165 timed special stagesIn order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:The new hybrid vehiclesNew, even more realistic vehicle physicsA LEAGUES mode in which you can challenge other playersA new Rally Sweden environment with 6 brand-new special stagesShare livery and stickers with the communityIn-game team creation and management",
+      "image": "https://m.media-amazon.com/images/I/B19hyph1voL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-kiborg",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kiborg",
+      "slug": "kiborg",
+      "storeUrl": "https://luna.amazon.com/claims/kiborg-aga/dp/amzn1.pg.item.6a6eac09-8806-4c39-95a2-c7cf131f89fc?g=s&ingress=amzn&ref_=SM_Kiborg_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "FIGHT FOR YOUR FREEDOMIn the future, even death can’t free you. If a criminal dies while serving their sentence, they are reconstructed to return to their suffering. And you’re serving a 1300-year sentence. The only way to shorten this sentence? Win on “The Last Ticket.” The rules are simple: there is a shuttle on the roof of the prison, and if you can fight your way through hordes of other inmates and reach it in time, you will be given your freedom.NO COMPROMISESKIBORG is a hybrid of old-school beat’em ups, shooters, and rogue-likes. The fights are fast, brutal, and deadly. Sever limbs, squash heads, and tear cybernetic cores apart from living foes. There are dozens of enemy types with unique abilities and tactics, and they are mixed and matched to create hundreds of challenging encounters. If you’re here for blood and gore, you’ve come to the right place.IMMENSE BUILD VARIETYReplace your body parts with an array of cybernetic implants, enabling a wide variety of playstyles.Experiment with hundreds of power-enhancing augmentations and apply dozens of mutations to create deadly synergies.Wield a variety of melee weapons and firearms of all types. Use combos and special attacks to devastate your foes.Unleash millions of possible combinations and countless potential viable builds to destroy those standing between you and freedom.",
+      "image": "https://m.media-amazon.com/images/I/B1y4qPtpHDL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
     },
     {
       "id": "prime-trash-goblin",
@@ -598,34 +636,15 @@
       ]
     },
     {
-      "id": "prime-squirrel-with-a-gun",
+      "id": "prime-jurassic-world-evolution-2",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Squirrel with a Gun",
-      "slug": "squirrel-with-a-gun",
-      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
+      "title": "Jurassic World Evolution 2",
+      "slug": "jurassic-world-evolution-2",
+      "storeUrl": "https://luna.amazon.com/claims/jurassic-world-evolution-2-epic/dp/amzn1.pg.item.208bb96b-9ae6-4538-a1ff-c1831794f1b5?g=s&ingress=amzn&ref_=SM_JurassicWorldEvolution2_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
-      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-wrc-generations",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "WRC Generations",
-      "slug": "wrc-generations",
-      "storeUrl": "https://luna.amazon.com/claims/wrc-generations-epic/dp/amzn1.pg.item.59a0703f-be28-476e-9160-8e56e257dee5?g=s&ingress=amzn&ref_=SM_WRCGenerations_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Drive into the thick of the action behind the wheel of the new 2022 WRC hybrids.2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt.In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in.As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted.For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category.WRC Generations includes more content than ever before in a rally game.750 km of unique special stages in 22 countries49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)37 legendary cars plus additional bonuses165 timed special stagesIn order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:The new hybrid vehiclesNew, even more realistic vehicle physicsA LEAGUES mode in which you can challenge other playersA new Rally Sweden environment with 6 brand-new special stagesShare livery and stickers with the communityIn-game team creation and management",
-      "image": "https://m.media-amazon.com/images/I/B19hyph1voL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "Jurassic World Evolution 2 is the much-anticipated sequel to Frontier’s ground-breaking 2018 management simulation, Jurassic World Evolution, offering an all new narrative campaign voiced by cast members from across the Jurassic World film franchise, exciting new features, four engaging game modes, and an expanded roster of awe-inspiring dinosaurs.An Original Jurassic StoryLearn what it takes to be a park management master in Campaign mode, a compelling, original narrative that puts you at the heart of the action following the earth-shattering events of Jurassic World: Fallen Kingdom. Work alongside iconic characters from the films, including Dr. Ian Malcolm  and Claire Dearing, and lead the efforts to control, conserve, and contain wild dinosaurs now rampaging across the USA.Create your own Jurassic WorldTake control with deeper management tools and creative options. Construct a range of customizable new buildings and hire new Scientists, and shape your park to meet the needs of both your guests and dinosaurs. Unleash your creativity in Sandbox mode, or test your skills in Challenge mode as you deal with diverse locations and environmental calamities.Play with Chaos TheoryPlay through key moments of your favorite films - with a twist. Experience ‘what-if’ scenarios from iconic Jurassic World and Jurassic Park films, each level set across eras and locations from all five movies.Discover Awe-Inspiring DinosaursOver 75 different prehistoric species come to life in Jurassic World Evolution 2, including highly requested flying and marine reptiles. These animals feel more alive than ever as they preside over territory, fight for dominance, and react intelligently to the world around them. Use bioengineering to customize dinosaurs with bold new colors, and alter their genomes to unlock traits.",
+      "image": "https://m.media-amazon.com/images/I/A1x9MyirDwL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -636,15 +655,34 @@
       ]
     },
     {
-      "id": "prime-kiborg",
+      "id": "prime-radiolight",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Kiborg",
-      "slug": "kiborg",
-      "storeUrl": "https://luna.amazon.com/claims/kiborg-aga/dp/amzn1.pg.item.6a6eac09-8806-4c39-95a2-c7cf131f89fc?g=s&ingress=amzn&ref_=SM_Kiborg_S01_FGWP_CRWN",
+      "title": "Radiolight",
+      "slug": "radiolight",
+      "storeUrl": "https://luna.amazon.com/claims/radiolight-epic/dp/amzn1.pg.item.828a67e3-e1ec-4968-9719-afa81008da16?g=s&ingress=amzn&ref_=SM_Radiolight_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "FIGHT FOR YOUR FREEDOMIn the future, even death can’t free you. If a criminal dies while serving their sentence, they are reconstructed to return to their suffering. And you’re serving a 1300-year sentence. The only way to shorten this sentence? Win on “The Last Ticket.” The rules are simple: there is a shuttle on the roof of the prison, and if you can fight your way through hordes of other inmates and reach it in time, you will be given your freedom.NO COMPROMISESKIBORG is a hybrid of old-school beat’em ups, shooters, and rogue-likes. The fights are fast, brutal, and deadly. Sever limbs, squash heads, and tear cybernetic cores apart from living foes. There are dozens of enemy types with unique abilities and tactics, and they are mixed and matched to create hundreds of challenging encounters. If you’re here for blood and gore, you’ve come to the right place.IMMENSE BUILD VARIETYReplace your body parts with an array of cybernetic implants, enabling a wide variety of playstyles.Experiment with hundreds of power-enhancing augmentations and apply dozens of mutations to create deadly synergies.Wield a variety of melee weapons and firearms of all types. Use combos and special attacks to devastate your foes.Unleash millions of possible combinations and countless potential viable builds to destroy those standing between you and freedom.",
-      "image": "https://m.media-amazon.com/images/I/B1y4qPtpHDL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "WELCOME TO ASHWOOD CREEK, SEPTEMBER 1985Step into the shoes of Ethan, a police officer in the quaint town of Ashwood Creek - a place where the trees whisper, the mountains loom, and secrets hide just out of sight. What begins as a routine investigation, quickly spirals into a haunting journey through the unknown.Ashwood Creek feels frozen in time, untouched by the chaos of the outside world. But under the surface, something dark is stirring. A teenager has gone missing. A strange signal is cutting through the static of local radio stations. Lured deeper into Ashwood Creek National Park, you’ll need to tune in to every frequency and every echo of the past in the hopes of uncovering the truth.A MYSTERY YOU CAN’T IGNOREAs you explore the vast, eerie expanse of Ashwood Creek National Park, you’ll find that your radio is more than just a piece of electronics - it’s your key to survival. Pick up supernatural signals and tune into otherworldly transmissions. But not all signals will guide you to safety... some are meant to lead you astray, deeper into the shadows, where the past waits to confront you.WHO DO YOU TRUST WHEN DARKNESS FALLS?Guided by the voice of Robert, your childhood friend and the town’s chief of police, you’ll venture through dense forests, foggy valleys, and forgotten trails. Together, you’ll piece together clues, follow mysterious broadcasts, and uncover the secrets that Ashwood Creek would rather keep hidden. But the closer you get to the truth, the more you’ll realise that some things are better left buried.",
+      "image": "https://m.media-amazon.com/images/I/A1kjIWtYnVL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-squirrel-with-a-gun",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Squirrel with a Gun",
+      "slug": "squirrel-with-a-gun",
+      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
+      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
