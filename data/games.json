@@ -1,26 +1,26 @@
 {
-  "fetchedAt": "2026-11-11T00:43:21.174Z",
+  "fetchedAt": "2026-11-13T01:11:54.992Z",
   "totalFree": 31,
-  "totalUpcoming": 5,
+  "totalUpcoming": 6,
   "games": [
     {
-      "id": "a9748abde1c94b66aae5250bb9fc5503",
+      "id": "d37f3694e7a04edb8347f3cb6320f9d3",
       "store": "epic",
       "storeName": "Epic Games Store",
-      "title": "Idle Champions of the Forgotten Realms",
-      "slug": "idle-champions-of-the-forgotten-realms",
-      "storeUrl": "https://store.epicgames.com/p/idle-champions-of-the-forgotten-realms",
+      "title": "Alien: Isolation",
+      "slug": "alien-isolation",
+      "storeUrl": "https://store.epicgames.com/p/alien-isolation",
       "seller": "PC",
       "platforms": [
         "PC"
       ],
-      "description": "Idle Champions of the Forgotten Realms is a Dungeons & Dragons strategy management game uniting characters from throughout the D&D multiverse into a grand adventure.",
-      "image": "https://cdn1.epicgames.com/spt-assets/a53f91e55c6840018cb5de0b204f1ad9/idle-champions-of-the-forgotten-realms-1cv5z.jpg",
-      "originalPrice": 0,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-11-05T16:00:00.000Z",
-      "offerEnd": "2026-11-12T16:00:00.000Z"
+      "description": "Discover the true meaning of fear in Alien: Isolation, a survival horror set in an atmosphere of constant dread and mortal danger...   Created using the CATHODE™ engine.",
+      "image": "https://cdn1.epicgames.com/df37f065c3f14eadbf011177396e2966/offer/EGS_AlienIsolation_CreativeAssembly_S5-1920x1080-1cf3b9a86adcefeebf903451b1b3fb49.jpg",
+      "originalPrice": 3999,
+      "discountPrice": 3999,
+      "status": "upcoming",
+      "offerStart": "2026-11-19T16:00:00.000Z",
+      "offerEnd": "2026-11-26T16:00:00.000Z"
     },
     {
       "id": "be5600439b434624802764f704755cde",
@@ -61,6 +61,25 @@
       "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
+      "id": "1f9a12b06b4f437790b6913ad136a08c",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Mark of the Deep",
+      "slug": "mark-of-the-deep-f7dc08",
+      "storeUrl": "https://store.epicgames.com/p/mark-of-the-deep-f7dc08",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Mark of the Deep is an epic pirate-themed adventure with a strong narrative and a thrilling mix of Metroidvania and Souls-Like elements. Embark on this journey, explore the mysteries of a cursed island and find your missing pirate crew!",
+      "image": "https://cdn1.epicgames.com/spt-assets/83a240506a884c10ad8fb99694e57a0d/mark-of-the-deep-w1ygr.png",
+      "originalPrice": 1999,
+      "discountPrice": 1999,
+      "status": "upcoming",
+      "offerStart": "2026-11-19T16:00:00.000Z",
+      "offerEnd": "2026-11-26T16:00:00.000Z"
+    },
+    {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -99,25 +118,6 @@
       "offerEnd": "2026-12-21T16:00:00.000Z"
     },
     {
-      "id": "3be0a0d8479946d78f60d90c9442a0b4",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Flotsam",
-      "slug": "flotsam-266287",
-      "storeUrl": "https://store.epicgames.com/p/flotsam-266287",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "The floating garbage town survival game! Scavenge what precious garbage you can from the ocean's surface and grow your city while doing your best to survive in this colorful post-apocalyptic world.",
-      "image": "https://cdn1.epicgames.com/spt-assets/5c36b876e80d4285b9993947efeeaf2b/flotsam-1yczl.jpg",
-      "originalPrice": 2499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-11-05T16:00:00.000Z",
-      "offerEnd": "2026-11-12T16:00:00.000Z"
-    },
-    {
       "id": "9975548b6d404a94b8a9bdb34cad49e9",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -131,8 +131,8 @@
       "description": "Recruit units, place them strategically, and find the synergies in this Roguelike AutoBattler!\nKnightica lets you guide a warband through challenges to free the Kingdoms.\nDiscover combinations, weave powerful enchants, face dangerous monsters, and lead your army to victory!",
       "image": "https://cdn1.epicgames.com/spt-assets/357100ca5613420e98208c5f14585e9d/knightica-1nuxm.png",
       "originalPrice": 1499,
-      "discountPrice": 1499,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-11-12T16:00:00.000Z",
       "offerEnd": "2026-11-19T16:00:00.000Z"
     },
@@ -197,6 +197,44 @@
         "PS5"
       ],
       "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "prime-wrc-generations",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "WRC Generations",
+      "slug": "wrc-generations",
+      "storeUrl": "https://luna.amazon.com/claims/wrc-generations-epic/dp/amzn1.pg.item.59a0703f-be28-476e-9160-8e56e257dee5?g=s&ingress=amzn&ref_=SM_WRCGenerations_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Drive into the thick of the action behind the wheel of the new 2022 WRC hybrids.2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt.In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in.As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted.For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category.WRC Generations includes more content than ever before in a rally game.750 km of unique special stages in 22 countries49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)37 legendary cars plus additional bonuses165 timed special stagesIn order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:The new hybrid vehiclesNew, even more realistic vehicle physicsA LEAGUES mode in which you can challenge other playersA new Rally Sweden environment with 6 brand-new special stagesShare livery and stickers with the communityIn-game team creation and management",
+      "image": "https://m.media-amazon.com/images/I/B19hyph1voL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-kiborg",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kiborg",
+      "slug": "kiborg",
+      "storeUrl": "https://luna.amazon.com/claims/kiborg-aga/dp/amzn1.pg.item.6a6eac09-8806-4c39-95a2-c7cf131f89fc?g=s&ingress=amzn&ref_=SM_Kiborg_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "FIGHT FOR YOUR FREEDOMIn the future, even death can’t free you. If a criminal dies while serving their sentence, they are reconstructed to return to their suffering. And you’re serving a 1300-year sentence. The only way to shorten this sentence? Win on “The Last Ticket.” The rules are simple: there is a shuttle on the roof of the prison, and if you can fight your way through hordes of other inmates and reach it in time, you will be given your freedom.NO COMPROMISESKIBORG is a hybrid of old-school beat’em ups, shooters, and rogue-likes. The fights are fast, brutal, and deadly. Sever limbs, squash heads, and tear cybernetic cores apart from living foes. There are dozens of enemy types with unique abilities and tactics, and they are mixed and matched to create hundreds of challenging encounters. If you’re here for blood and gore, you’ve come to the right place.IMMENSE BUILD VARIETYReplace your body parts with an array of cybernetic implants, enabling a wide variety of playstyles.Experiment with hundreds of power-enhancing augmentations and apply dozens of mutations to create deadly synergies.Wield a variety of melee weapons and firearms of all types. Use combos and special attacks to devastate your foes.Unleash millions of possible combinations and countless potential viable builds to destroy those standing between you and freedom.",
+      "image": "https://m.media-amazon.com/images/I/B1y4qPtpHDL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
     },
     {
       "id": "prime-trash-goblin",
@@ -303,25 +341,6 @@
       "seller": "Prime Gaming",
       "description": "A NEW BREED IS ABOUT TO EVOLVEIn a far-off galaxy, the once Great Empire of Yedda has all but perished in a blight of famine, disease, and grisly war. In the aftermath, the four former slave clans have seized upon the Yedda genetic technology to alter their own DNA. As you command your own fierce clan, you are thrust into a power vacuum where you fight for survival and planetary domination.Defeat your enemies and steal their genetic material to expand your clan’s skills and firepower. Engineer and customize your army of warriors with a vast mixture of advanced bio-technological weaponry. Then use your shrewd strategies and brutal fighting skills to lead your clan to victory and become ruler of the fallen Empire... or fall to your enemies.Annihilate enemies. using four preset attack formations, or create your own.Optimized resource management allows players to focus on strategy and combat.Command your fiercely loyal clan as you fight for planetary domination.Play any of the four alien clans on huge, yet detailed battle maps. Clans have unique skills sets, attributes and advanced bio-technological weaponry.Over 35,000 unique warrior combinations are available with a variety of lethal weapons including lasers, missiles, heat rays and rapid-fire Ion guns.Customize and enhance your warriors fighting ability through genetic engineering of defeated enemies.",
       "image": "https://m.media-amazon.com/images/I/A1RRpbgiXqL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "GOG"
-      ]
-    },
-    {
-      "id": "prime-conarium",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Conarium",
-      "slug": "conarium",
-      "storeUrl": "https://luna.amazon.com/claims/conarium-gog/dp/amzn1.pg.item.82e258e7-827e-46e0-8228-25e9720b48b4?g=s&ingress=amzn&ref_=SM_Conarium_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Conarium is a chilling Lovecraftian game that follows the gripping story of four scientists and their endeavour to challenge what we normally consider to be the \"absolute\" limits of nature. Inspired by H.P. Lovecraft's novella At the Mountains of Madness, but largely set after the original story.You, as Frank Gilman, open your eyes inside a room filled with strange, pulsating noises. Patterns of lights executing a Danse Macabre on the walls is presented by a queer device on the table. Having recalled nothing other than that you’re in Upuaut, an Antarctic base located near the South Pole, you find the place deserted and have a distinct feeling of something being terribly wrong. Somehow knowing that your memories cannot guide you enforces a strange feeling of vulnerability, a familiar yet alien sensation of being a part of a peculiar whole... Soon you will discover that having used the device during the expedition, you have died but then returned subtly changed, speaking of strange memories and of strange places. You have lost something important or gained something sinister...Explore the Antarctic base, as well as dreams and visions. Study clues and unlock secrets, whilst avoiding macabre beings at all cost.Powered by Unreal Engine 4, Conarium aims to bring cutting-edge visuals for a more immersive storytelling and gaming experience.A deep and suspenseful homage to H P Lovecraft with many secrets and Easter eggs.Ominous but wonderful graphics created using the Unreal 4 engine.Multiple endings.A haunting and atmospheric soundtrack.",
-      "image": "https://m.media-amazon.com/images/I/A1fHdf40ORL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -617,34 +636,15 @@
       ]
     },
     {
-      "id": "prime-squirrel-with-a-gun",
+      "id": "prime-jurassic-world-evolution-2",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Squirrel with a Gun",
-      "slug": "squirrel-with-a-gun",
-      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
+      "title": "Jurassic World Evolution 2",
+      "slug": "jurassic-world-evolution-2",
+      "storeUrl": "https://luna.amazon.com/claims/jurassic-world-evolution-2-epic/dp/amzn1.pg.item.208bb96b-9ae6-4538-a1ff-c1831794f1b5?g=s&ingress=amzn&ref_=SM_JurassicWorldEvolution2_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
-      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-wrc-generations",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "WRC Generations",
-      "slug": "wrc-generations",
-      "storeUrl": "https://luna.amazon.com/claims/wrc-generations-epic/dp/amzn1.pg.item.59a0703f-be28-476e-9160-8e56e257dee5?g=s&ingress=amzn&ref_=SM_WRCGenerations_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Drive into the thick of the action behind the wheel of the new 2022 WRC hybrids.2022 will see the WRC transition to the hybrid era. This is a revolution for the rally world, significantly affecting performance, changing strategies and making drivers and teams adapt.In terms of gameplay, new mechanics have been integrated to represent the demands of the hybrid engines. In order to win, you have to carefully manage your battery by adapting your engine mapping throughout the special stages you take part in.As community satisfaction is always a priority , you can now share customised livery and stickers with other players. The best creations will be rewarded and highlighted.For fans of competition, the new Leagues mode lets players challenge opponents with a similar level online. Finish ahead of your competitors to move up the ladder in the Legends category.WRC Generations includes more content than ever before in a rally game.750 km of unique special stages in 22 countries49 teams from the 2022 season (Rally1 / Rally2 / Junior WRC)37 legendary cars plus additional bonuses165 timed special stagesIn order to make the representation of the championship even more realistic, a completely redesigned Rally Sweden environment has been added, with 6 brand-new special stages in the Umea region.New features:The new hybrid vehiclesNew, even more realistic vehicle physicsA LEAGUES mode in which you can challenge other playersA new Rally Sweden environment with 6 brand-new special stagesShare livery and stickers with the communityIn-game team creation and management",
-      "image": "https://m.media-amazon.com/images/I/B19hyph1voL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "Jurassic World Evolution 2 is the much-anticipated sequel to Frontier’s ground-breaking 2018 management simulation, Jurassic World Evolution, offering an all new narrative campaign voiced by cast members from across the Jurassic World film franchise, exciting new features, four engaging game modes, and an expanded roster of awe-inspiring dinosaurs.An Original Jurassic StoryLearn what it takes to be a park management master in Campaign mode, a compelling, original narrative that puts you at the heart of the action following the earth-shattering events of Jurassic World: Fallen Kingdom. Work alongside iconic characters from the films, including Dr. Ian Malcolm  and Claire Dearing, and lead the efforts to control, conserve, and contain wild dinosaurs now rampaging across the USA.Create your own Jurassic WorldTake control with deeper management tools and creative options. Construct a range of customizable new buildings and hire new Scientists, and shape your park to meet the needs of both your guests and dinosaurs. Unleash your creativity in Sandbox mode, or test your skills in Challenge mode as you deal with diverse locations and environmental calamities.Play with Chaos TheoryPlay through key moments of your favorite films - with a twist. Experience ‘what-if’ scenarios from iconic Jurassic World and Jurassic Park films, each level set across eras and locations from all five movies.Discover Awe-Inspiring DinosaursOver 75 different prehistoric species come to life in Jurassic World Evolution 2, including highly requested flying and marine reptiles. These animals feel more alive than ever as they preside over territory, fight for dominance, and react intelligently to the world around them. Use bioengineering to customize dinosaurs with bold new colors, and alter their genomes to unlock traits.",
+      "image": "https://m.media-amazon.com/images/I/A1x9MyirDwL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -655,15 +655,34 @@
       ]
     },
     {
-      "id": "prime-kiborg",
+      "id": "prime-radiolight",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Kiborg",
-      "slug": "kiborg",
-      "storeUrl": "https://luna.amazon.com/claims/kiborg-aga/dp/amzn1.pg.item.6a6eac09-8806-4c39-95a2-c7cf131f89fc?g=s&ingress=amzn&ref_=SM_Kiborg_S01_FGWP_CRWN",
+      "title": "Radiolight",
+      "slug": "radiolight",
+      "storeUrl": "https://luna.amazon.com/claims/radiolight-epic/dp/amzn1.pg.item.828a67e3-e1ec-4968-9719-afa81008da16?g=s&ingress=amzn&ref_=SM_Radiolight_S01_FGWP_CRWN",
       "seller": "Prime Gaming",
-      "description": "FIGHT FOR YOUR FREEDOMIn the future, even death can’t free you. If a criminal dies while serving their sentence, they are reconstructed to return to their suffering. And you’re serving a 1300-year sentence. The only way to shorten this sentence? Win on “The Last Ticket.” The rules are simple: there is a shuttle on the roof of the prison, and if you can fight your way through hordes of other inmates and reach it in time, you will be given your freedom.NO COMPROMISESKIBORG is a hybrid of old-school beat’em ups, shooters, and rogue-likes. The fights are fast, brutal, and deadly. Sever limbs, squash heads, and tear cybernetic cores apart from living foes. There are dozens of enemy types with unique abilities and tactics, and they are mixed and matched to create hundreds of challenging encounters. If you’re here for blood and gore, you’ve come to the right place.IMMENSE BUILD VARIETYReplace your body parts with an array of cybernetic implants, enabling a wide variety of playstyles.Experiment with hundreds of power-enhancing augmentations and apply dozens of mutations to create deadly synergies.Wield a variety of melee weapons and firearms of all types. Use combos and special attacks to devastate your foes.Unleash millions of possible combinations and countless potential viable builds to destroy those standing between you and freedom.",
-      "image": "https://m.media-amazon.com/images/I/B1y4qPtpHDL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "description": "WELCOME TO ASHWOOD CREEK, SEPTEMBER 1985Step into the shoes of Ethan, a police officer in the quaint town of Ashwood Creek - a place where the trees whisper, the mountains loom, and secrets hide just out of sight. What begins as a routine investigation, quickly spirals into a haunting journey through the unknown.Ashwood Creek feels frozen in time, untouched by the chaos of the outside world. But under the surface, something dark is stirring. A teenager has gone missing. A strange signal is cutting through the static of local radio stations. Lured deeper into Ashwood Creek National Park, you’ll need to tune in to every frequency and every echo of the past in the hopes of uncovering the truth.A MYSTERY YOU CAN’T IGNOREAs you explore the vast, eerie expanse of Ashwood Creek National Park, you’ll find that your radio is more than just a piece of electronics - it’s your key to survival. Pick up supernatural signals and tune into otherworldly transmissions. But not all signals will guide you to safety... some are meant to lead you astray, deeper into the shadows, where the past waits to confront you.WHO DO YOU TRUST WHEN DARKNESS FALLS?Guided by the voice of Robert, your childhood friend and the town’s chief of police, you’ll venture through dense forests, foggy valleys, and forgotten trails. Together, you’ll piece together clues, follow mysterious broadcasts, and uncover the secrets that Ashwood Creek would rather keep hidden. But the closer you get to the truth, the more you’ll realise that some things are better left buried.",
+      "image": "https://m.media-amazon.com/images/I/A1kjIWtYnVL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-squirrel-with-a-gun",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Squirrel with a Gun",
+      "slug": "squirrel-with-a-gun",
+      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
+      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
