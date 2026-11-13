@@ -14,10 +14,16 @@ import fetch from "node-fetch";
 const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL;
 const FETCH_SECRET = process.env.FETCH_SECRET;
 
-// Games that are free now and weren't in the previous run's data.
+// Games that are free now and were NOT already free in the previous run's data.
+// Comparing against previously-FREE ids (not all ids) matters: Epic and PS Plus
+// list games as "upcoming" before they go free, so their ids are already known
+// by the time they become claimable. Without this, upcoming -> free transitions
+// would never be announced.
 export function findNewFreeGames(previousGames, currentGames) {
-  const previousIds = new Set(previousGames.map((g) => g.id));
-  return currentGames.filter((g) => g.status === "free" && !previousIds.has(g.id));
+  const previousFreeIds = new Set(
+    previousGames.filter((g) => g.status === "free").map((g) => g.id)
+  );
+  return currentGames.filter((g) => g.status === "free" && !previousFreeIds.has(g.id));
 }
 
 export async function sendNewGamesNotification(newGames) {
@@ -32,6 +38,7 @@ export async function sendNewGamesNotification(newGames) {
   }
 
   console.log(`  Newsletter: ${newGames.length} new free game(s), notifying subscribers…`);
+  console.log(`  Newsletter: games → ${newGames.map((g) => g.title).join(", ")}`);
 
   try {
     const res = await fetch(APPS_SCRIPT_URL, {
@@ -52,7 +59,16 @@ export async function sendNewGamesNotification(newGames) {
         })),
       }),
     });
+
+    // Apps Script often answers 200 even when the script itself failed
+    // (bad secret, quota exceeded, exception), so log the body too.
+    const body = await res.text().catch(() => "");
     console.log(`  Newsletter: notify request sent (HTTP ${res.status}).`);
+    console.log(`  Newsletter: response body: ${body.slice(0, 500)}`);
+
+    if (!res.ok) {
+      console.warn("  Newsletter: non-OK response — subscribers may not have been emailed.");
+    }
   } catch (err) {
     console.warn("  Newsletter: notify request failed:", err.message);
   }
