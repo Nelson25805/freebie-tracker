@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-11-18T17:06:06.458Z",
-  "totalFree": 31,
+  "fetchedAt": "2026-11-18T21:57:34.796Z",
+  "totalFree": 30,
   "totalUpcoming": 6,
   "games": [
     {
@@ -310,25 +310,6 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Games App"
-      ]
-    },
-    {
-      "id": "prime-vampire-the-masquerade-swansong",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Vampire: The Masquerade - Swansong",
-      "slug": "vampire-the-masquerade-swansong",
-      "storeUrl": "https://luna.amazon.com/claims/vampire-the-masquerade-swansong-epic/dp/amzn1.pg.item.7885fee3-7dda-40c5-8642-596bb1f4a9b3?g=s&ingress=amzn&ref_=SM_VampireTheMasqueradeSwansong_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Based on the cult role-playing game and developed by specialists in the genre, Vampire: The Masquerade – Swansong is a narrative RPG in which your every choice determines the fate of the three main characters and of the Boston Camarilla.WELCOME TO THE WORLD OF DARKNESSWhat if vampires were real? What if these bloodthirsty predators lived hidden among us in complex societies and had been hatching conspiracies for thousands of years? And what if you became one of them?\nIn Vampire: The Masquerade, you play as these alluring monsters in a sophisticated world where the lines between the real and supernatural are always blurred.A HEART-POUNDING THRILLERHazel Iversen, the Swan, is the new Prince of the Boston Camarilla. An iron hand in a velvet glove, she intends to assert her power and respect the Masquerade, the vampiric law designed to ensure humans never learn of the existence of these creatures of the night. But nothing works as planned. With rumors of plots, murders and power struggles, you must work in the shadows to protect your Sect in a pulsating investigation that plunges Boston into chaos.PLAY AS 3 ORIGINAL VAMPIRESPlay as 3 vampires who are over a hundred years old. Progress in the game through their intertwined destinies, deal with their different points of view and use their character sheets to try to separate the truth from the lies. Each character has their own vampiric abilities and disciplines that you can upgrade individually to suit your preferred approach. Will you choose intimidation, seduction or stealth? It's your decision, as long as you can sate your Hunger for blood.GAMEPLAY WITH CONSEQUENCESWith its unique gameplay, Swansong puts emphasis on the consequences of your actions in both the investigation and your social interactions with other characters.\nAnalyze each situation carefully because your decisions can have huge consequences on your heroes' lives and the fate of the Boston Camarilla.",
-      "image": "https://m.media-amazon.com/images/I/A1N5QVz0QAL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
       ]
     },
     {
