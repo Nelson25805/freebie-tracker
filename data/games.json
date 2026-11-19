@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T02:00:52.014Z",
+  "fetchedAt": "2026-11-19T17:12:03.892Z",
   "totalFree": 30,
   "totalUpcoming": 6,
   "games": [
@@ -15,9 +15,28 @@
         "PC"
       ],
       "description": "Your heroes never stop fighting. Build an unstoppable team in a fantasy idle RPG with AFK progression and offline rewards. Collect heroes and powerful gear, master formations, defeat epic bosses, and return to bigger rewards and endless incremental growth.",
-      "image": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-i52vr.jpg",
+      "image": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-1inmf.jpg",
       "originalPrice": 0,
       "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-11-26T16:00:00.000Z",
+      "offerEnd": "2026-12-03T16:00:00.000Z"
+    },
+    {
+      "id": "f0a333114190492c84a9decd2bb43875",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Bread and Fred",
+      "slug": "bread-and-fred-1db362",
+      "storeUrl": "https://store.epicgames.com/p/bread-and-fred-1db362",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Grab your best bud for help in this new co-op challenge to help two adorable penguins, Bread and Fred, reach the top of the snowy summit. Time your jumps, cling to walls and swing across gaps to see how far you can make it before you tumble all the way back down the mountain.",
+      "image": "https://cdn1.epicgames.com/spt-assets/545b4dd8bb364c12b719268198a93ef3/bread-and-fred-3jnwn.jpg",
+      "originalPrice": 1499,
+      "discountPrice": 1499,
       "status": "upcoming",
       "offerStart": "2026-11-26T16:00:00.000Z",
       "offerEnd": "2026-12-03T16:00:00.000Z"
@@ -74,8 +93,8 @@
       "description": "Mark of the Deep is an epic pirate-themed adventure with a strong narrative and a thrilling mix of Metroidvania and Souls-Like elements. Embark on this journey, explore the mysteries of a cursed island and find your missing pirate crew!",
       "image": "https://cdn1.epicgames.com/spt-assets/83a240506a884c10ad8fb99694e57a0d/mark-of-the-deep-w1ygr.png",
       "originalPrice": 1999,
-      "discountPrice": 1999,
-      "status": "upcoming",
+      "discountPrice": 0,
+      "status": "free",
       "offerStart": "2026-11-19T16:00:00.000Z",
       "offerEnd": "2026-11-26T16:00:00.000Z"
     },
@@ -116,25 +135,6 @@
       "status": "upcoming",
       "offerStart": "2026-11-21T16:00:00.000Z",
       "offerEnd": "2026-12-21T16:00:00.000Z"
-    },
-    {
-      "id": "9975548b6d404a94b8a9bdb34cad49e9",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Knightica",
-      "slug": "knightica-3be45c",
-      "storeUrl": "https://store.epicgames.com/p/knightica-3be45c",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Recruit units, place them strategically, and find the synergies in this Roguelike AutoBattler!\nKnightica lets you guide a warband through challenges to free the Kingdoms.\nDiscover combinations, weave powerful enchants, face dangerous monsters, and lead your army to victory!",
-      "image": "https://cdn1.epicgames.com/spt-assets/357100ca5613420e98208c5f14585e9d/knightica-1nuxm.png",
-      "originalPrice": 1499,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-11-12T16:00:00.000Z",
-      "offerEnd": "2026-11-19T16:00:00.000Z"
     },
     {
       "id": "psplus-dead-island-2",
