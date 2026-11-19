@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-11-19T17:12:03.892Z",
-  "totalFree": 30,
+  "fetchedAt": "2026-11-19T22:14:52.431Z",
+  "totalFree": 32,
   "totalUpcoming": 6,
   "games": [
     {
@@ -38,8 +38,8 @@
       "originalPrice": 1499,
       "discountPrice": 1499,
       "status": "upcoming",
-      "offerStart": "2026-11-26T16:00:00.000Z",
-      "offerEnd": "2026-12-03T16:00:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "be5600439b434624802764f704755cde",
@@ -197,6 +197,44 @@
         "PS5"
       ],
       "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
+    },
+    {
+      "id": "prime-radiolight",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Radiolight",
+      "slug": "radiolight",
+      "storeUrl": "https://luna.amazon.com/claims/radiolight-epic/dp/amzn1.pg.item.828a67e3-e1ec-4968-9719-afa81008da16?g=s&ingress=amzn&ref_=SM_Radiolight_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "WELCOME TO ASHWOOD CREEK, SEPTEMBER 1985Step into the shoes of Ethan, a police officer in the quaint town of Ashwood Creek - a place where the trees whisper, the mountains loom, and secrets hide just out of sight. What begins as a routine investigation, quickly spirals into a haunting journey through the unknown.Ashwood Creek feels frozen in time, untouched by the chaos of the outside world. But under the surface, something dark is stirring. A teenager has gone missing. A strange signal is cutting through the static of local radio stations. Lured deeper into Ashwood Creek National Park, you’ll need to tune in to every frequency and every echo of the past in the hopes of uncovering the truth.A MYSTERY YOU CAN’T IGNOREAs you explore the vast, eerie expanse of Ashwood Creek National Park, you’ll find that your radio is more than just a piece of electronics - it’s your key to survival. Pick up supernatural signals and tune into otherworldly transmissions. But not all signals will guide you to safety... some are meant to lead you astray, deeper into the shadows, where the past waits to confront you.WHO DO YOU TRUST WHEN DARKNESS FALLS?Guided by the voice of Robert, your childhood friend and the town’s chief of police, you’ll venture through dense forests, foggy valleys, and forgotten trails. Together, you’ll piece together clues, follow mysterious broadcasts, and uncover the secrets that Ashwood Creek would rather keep hidden. But the closer you get to the truth, the more you’ll realise that some things are better left buried.",
+      "image": "https://m.media-amazon.com/images/I/A1kjIWtYnVL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-squirrel-with-a-gun",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Squirrel with a Gun",
+      "slug": "squirrel-with-a-gun",
+      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
+      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Games App"
+      ]
     },
     {
       "id": "prime-wrc-generations",
@@ -427,15 +465,15 @@
       ]
     },
     {
-      "id": "prime-marbles-on-stream",
+      "id": "prime-sushi-go-party-",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Marbles On Stream",
-      "slug": "marbles-on-stream",
-      "storeUrl": "https://luna.amazon.com/detail/B0HPX7NT7F?ref=pghq&r=web&autoplay=1",
+      "title": "Sushi Go Party!",
+      "slug": "sushi-go-party-",
+      "storeUrl": "https://luna.amazon.com/detail/B0HS5Q6ZR5?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Your marble. Your community. Your next adventure.Marbles on Stream brings physics-driven racing, chaotic battles, cooperative adventures, and creative challenges together in one free-to-play game.Host games with your viewers, join races through Twitch chat with !play, run your own simulations, or explore experiences built for solo play and friends. Whether you’re chasing a podium, surviving together, restoring a collection, or building the next community favorite, there’s always another reason to roll.- Race for the podium. Enjoy physics-driven races across studio-built and community-created tracks. Take on Laps or assemble a Grand Prix, where points across multiple races decide the champions.- Survive Marble Royale. Watch marbles clash in unpredictable battles filled with hazards, powerful attacks, and dramatic eliminations. Cheer yours on as the arena narrows toward a last-marble-standing showdown.- Face the horde in Wave Fighter — Beta. Bring your viewers together for cooperative survival against zombie waves and bosses. Build an army with different classes, strengthen it with upgrades and boons, and discover which combinations can carry your community through the fight.- Take control in Tilted. The host tilts the board to guide marbles through obstacles and increasingly difficult levels. Keep your community rolling, rescue a run from disaster, and see how far you can go.- Restore the Hall of Marbles — Alpha. Explore galleries and gardens in a first-person restoration adventure. Find scattered marbles, assemble evolving skins, and return collections to their displays. Play solo or team up with up to three friends through Steam co-op, earning progression and upgrading your curator’s skills.- Chase the high score in Bloop. Run community tournaments with configurable sessions, leaderboards, and a broadcast overlay. Save your competition and continue the action later.- Build and share your imagination. Create and upload race tracks with Map Builder. Design custom boards, tiles, and moving obstacles in Tilted Sandbox, then share your challenges and put your community to the test.- Make your marble yours. Collect and combine skins, shapes, accessories, effects, pins, and player cards. Explore evolving cosmetics, complete missions, and compete for seasonal rankings and rewards in supported modes.Make every session a show. Automatic race cameras and cinematic controls help you follow the action, while Render Studio lets you create images and videos of your favorite marble looks.Bring your viewers. Gather your friends. Let’s roll!",
-      "image": "https://m.media-amazon.com/images/I/B19Fl9WWBcL._SX960_QL65_FMwebp_.png",
+      "description": "The digital adaptation of the award-winning card game, Sushi Go Party!Order up! Grab your favourite dishes and collect delicious combinations to score points. From tempting Tempura to satisfying Sashimi, every card brings new possibilities. Choose carefully, though: the dishes you pass could be just what your restaurant rivals need!Mix up the menu with a variety of sushi, sides and desserts, each with unique rules and ways to score. Add spicy Wasabi to your Nigiri, load up on Uramaki rolls, and keep an eye on what everyone else is collecting! Changing the menu brings fresh combinations and new strategies to the table.With colourful characters, simple rules and plenty of clever choices, Sushi Go Party! serves up culinary competition for newcomers and seasoned strategists alike. Whether you're crafting a clever combo or saving room for dessert, you'll be coming back for seconds!Have you got the appetite for victory?",
+      "image": "https://m.media-amazon.com/images/I/A14p7pE9lsL._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -446,15 +484,15 @@
       ]
     },
     {
-      "id": "prime-police-simulator-patrol-officers",
+      "id": "prime-the-man-with-the-bag-naughty-or-nice",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Police Simulator: Patrol Officers",
-      "slug": "police-simulator-patrol-officers",
-      "storeUrl": "https://luna.amazon.com/detail/B0HPVN613X?ref=pghq&r=web&autoplay=1",
+      "title": "The Man with the Bag - Naughty or Nice",
+      "slug": "the-man-with-the-bag-naughty-or-nice",
+      "storeUrl": "https://luna.amazon.com/detail/B0HMTP59GQ?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "Welcome to Brighton! Join the police force of this fictitious American city and experience the day to day life of a Police Officer. Start with citing violations and giving out parking tickets, then work your way towards shouldering more responsibilities. Be part of the community of Brighton, get to know your neighborhood and handle daily police work to fight crime during your shift. Always be tough, but fair: respect the law and gain more experience to unlock more neighborhoods, districts and duties. POLICE SIMULATOR: PATROL OFFICERS includes a dynamic traffic system that organically creates the traffic flow and car accidents, as well as emergency situations that can randomly pop up during your shift. Be ready to react at a moment’s notice! In the Open World of Brighton you will be able to choose neighborhoods for your patrols and make sure to keep them safe. Patrol through three unique districts with several neighborhoods each. Every single one has a distinct flair, from the high rises of Downtown to the historical buildings of Brickston. With progression and unlocking new districts, additional duties will also be revealed. Start with ticketing duty and finding wrongfully parked cars, but be prepared to take care of accidents that may happen right in front of your eyes. In a living and breathing city, many different duties may be encountered. Stop drug deals taking place in the local park, or chase graffiti sprayers illegally tagging walls. Be prepared for anything - even if it is just a car blocking a bus stop. Every duty is your responsibility. With the Intuition System your police officer will be able to pick up important clues during witness interrogations that could lead you to resolve situations the right way, so make sure you pay attention to everything being said and done. POLICE SIMULATOR: PATROL OFFICERS offers a Simulation mode for experienced players looking for the most authentic experience, as well as a casual mode for those looking for a more relaxing patrol in the streets of Brighton. Traffic system that organically creates accidents, speeding vehicles, traffic jams and other traffic violations like crossing a red light and moreThree districts with several neighborhoods, each with their own unique flair Various duties ranging from car accidents, parking regulations, emergency callouts, to finding drug dealers or graffiti sprayers Progression to unlock districts, cars and modes (Standard and Open Patrol)Unlock and drive up-to 3 different cars: the Cruiser, Panther Z and Gladiator Police VehiclesCasual and Simulation game modesIntuition System",
-      "image": "https://m.media-amazon.com/images/I/D1YQlvOKGeL._SX960_QL65_FMwebp_.png",
+      "description": "You’ve never spoken to Santa like this before! Welcome to the new AI driven video game, The Man with the Bag – Naughty or Nice starring Arnold Schwarzenegger as Santa.Santa’s lost the Naughty or Nice list! You think that you belong on the Nice list? Prove it! You’re going to need to convince Santa that you are deserving, but that’s not going to be easy, he’s no push over. Come up with your most compelling stories, good deeds and acts of kindness and tell him yourself. Santa has a gift for you in his bag. However, you’re going to have to guess what it is. You only have 20 questions to figure it out. Ask good questions, listen closely and make good choices to find out what Santa has in store for you.Jump into a conversation directly with Santa via your phone’s mic as he responds to your comments and you respond to his questions. No two play sessions are ever the same.Hurry and get yourself on the nice list before it’s too late. Soon Santa will have to get to the sleigh! Play the Game, Watch the Movie!Game Available Now. Movie Available 12/2Gameplay Modes: • Naughty or Nice:Now’s your chance to convince Santa that you belong on the nice list and deserve that gift you’ve been dreaming about all year long. It won’t be easy though. This Santa is one tough customer when it comes to getting on the nice list. Get creative and support your argument with good deeds and solid facts or else Santa will see through it like tinsel on the tree. • What’s in the Bag: You’ll get to ask Santa-Arnold up to 20 questions that he will respond to by giving you hints and directions to help you in your quest to figure out what gift he has for you in that magic bag of his. With upwards of a thousand potential gifts, you’ll have to ask good questions and listen closely to the answers in order to guess right.Software © 2026 Amazon.com Services LLC. Amazon, Amazon Game Studios, and related marks are trademarks of Amazon.com Services LLC or its affiliates. All rights reserved. THE MAN WITH THE BAG and all related characters and elements, and all other elements of the game © 2026 Amazon Content Services LLC.• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Legal Notices - http://www.amazon.com/gp/help/customer/display.html?noded• Support Page - https://help.chronicles.amazongamestudios.com",
+      "image": "https://m.media-amazon.com/images/I/C1g7U4gHeQL._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -579,15 +617,15 @@
       ]
     },
     {
-      "id": "prime-space-metal-mania",
+      "id": "prime-marbles-on-stream",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Space Metal Mania",
-      "slug": "space-metal-mania",
-      "storeUrl": "https://luna.amazon.com/detail/B0HD25WSB6?ref=pghq&r=web&autoplay=1",
+      "title": "Marbles On Stream",
+      "slug": "marbles-on-stream",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPX7NT7F?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The galaxy needs saving and only metal can do it.The Metal-Verse is a galaxy united by one truth: metal is life. Now The Silence, an ancient consuming force, is spreading across worlds and draining everything it touches. Lucky for us, heavy metal can destroy them. Grab the controls, crank it to eleven, and blast them back into the void.Space Metal Mania is a fast-paced, heavy metal-fueled, arcade space shooter where you blast through swarms of enemies, face down massive bosses, and fight to reclaim a galaxy decimated by the Silence. Play solo or team up with up to 3 friends in explosive co-op multiplayer that is all set to a face-melting soundtrack featuring legendary tracks from Megadeth, Iron Maiden, Mastodon, Avenged Sevenfold, and Pantera.Your commander? None other than Dave Mustaine, the iconic Megadeth frontman who is guiding you through every mission with his unmistakable voice. KEY FEATURES:• Heavy Metal Music Mayhem - Blast through levels powered by classic tracks from five of metal's greatest bands, with enemy boss music-synced combat that makes every attack feel like a power chord• Led by a legend, Dave Mustaine - The legendary rocker serves as your in-game Commander, delivering voice-over that sets the tone for every mission• Epic Boss Battles - Fight swarms of enemies during challenging levels, encounter large scale bosses leading up to the Mothership of them all.• Forged in Fire - Collect Credits mid-mission to upgrade your ship between levels. Bank Iridium across every run, win or lose and spend it at The Black Market for permanent upgrades that make each run deadlier than the last.• Solo Act or Play as a Band - Go it alone or rally your crew for chaotic, headbanging team action• Choose your Encore – Experience crazy chaotic combat, Elite fights, and planet liberation missions across three difficulty settings; Garage Band (easy), Metal Band (normal) and Legendary Band (hard).ADDITIONAL DETAILSThis game is available in the following languages; English, French, Italian, German, Spanish (Spain), Portuguese (Brazil), Spanish (Latin America).• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Code of Conduct: www.amazon.com/help/ags/coc• Legal Notices: https://www.amazon.com/gp/help/customer/display.html?nodeId=TWjw9dElY3TGroaT67• Support Page: http://help.spacemetal.amazongamestudios.com©/™ 2026, Amazon.com, Inc., its affiliates, and/or licensors. Developed by Handy Games and published by Amazon Games. All rights reserved.",
-      "image": "https://m.media-amazon.com/images/I/D1VaT1Wbe2L._SX960_QL65_FMwebp_.png",
+      "description": "Your marble. Your community. Your next adventure.Marbles on Stream brings physics-driven racing, chaotic battles, cooperative adventures, and creative challenges together in one free-to-play game.Host games with your viewers, join races through Twitch chat with !play, run your own simulations, or explore experiences built for solo play and friends. Whether you’re chasing a podium, surviving together, restoring a collection, or building the next community favorite, there’s always another reason to roll.- Race for the podium. Enjoy physics-driven races across studio-built and community-created tracks. Take on Laps or assemble a Grand Prix, where points across multiple races decide the champions.- Survive Marble Royale. Watch marbles clash in unpredictable battles filled with hazards, powerful attacks, and dramatic eliminations. Cheer yours on as the arena narrows toward a last-marble-standing showdown.- Face the horde in Wave Fighter — Beta. Bring your viewers together for cooperative survival against zombie waves and bosses. Build an army with different classes, strengthen it with upgrades and boons, and discover which combinations can carry your community through the fight.- Take control in Tilted. The host tilts the board to guide marbles through obstacles and increasingly difficult levels. Keep your community rolling, rescue a run from disaster, and see how far you can go.- Restore the Hall of Marbles — Alpha. Explore galleries and gardens in a first-person restoration adventure. Find scattered marbles, assemble evolving skins, and return collections to their displays. Play solo or team up with up to three friends through Steam co-op, earning progression and upgrading your curator’s skills.- Chase the high score in Bloop. Run community tournaments with configurable sessions, leaderboards, and a broadcast overlay. Save your competition and continue the action later.- Build and share your imagination. Create and upload race tracks with Map Builder. Design custom boards, tiles, and moving obstacles in Tilted Sandbox, then share your challenges and put your community to the test.- Make your marble yours. Collect and combine skins, shapes, accessories, effects, pins, and player cards. Explore evolving cosmetics, complete missions, and compete for seasonal rankings and rewards in supported modes.Make every session a show. Automatic race cameras and cinematic controls help you follow the action, while Render Studio lets you create images and videos of your favorite marble looks.Bring your viewers. Gather your friends. Let’s roll!",
+      "image": "https://m.media-amazon.com/images/I/B19Fl9WWBcL._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -598,15 +636,15 @@
       ]
     },
     {
-      "id": "prime-kingdomino",
+      "id": "prime-police-simulator-patrol-officers",
       "store": "prime",
       "storeName": "Prime Gaming",
-      "title": "Kingdomino",
-      "slug": "kingdomino",
-      "storeUrl": "https://luna.amazon.com/detail/B0HMJMGD9L?ref=pghq&r=web&autoplay=1",
+      "title": "Police Simulator: Patrol Officers",
+      "slug": "police-simulator-patrol-officers",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPVN613X?ref=pghq&r=web&autoplay=1",
       "seller": "Prime Gaming",
-      "description": "The digital deluxe version of the award-winning board game, Kingdomino!Expand your realm by placing domino-style terrain tiles, collecting valuable crowns and making clever strategic decisions. Every tile shapes your kingdom, every draft presents a new challenge, and every decision brings you closer to victory.Winner of the prestigious Spiel des Jahres award and enjoyed by millions of players worldwide, Kingdomino combines simple rules with satisfying strategic depth. Whether you're playing your first game or playing competitively for the perfect score, every kingdom is unique.Connect forests, lakes, fields and more, watching your kingdom come to life with every turn. Collect crowns to multiply your score and carefully plan each draft, balancing powerful tiles against turn order.Will your kingdom reign supreme?",
-      "image": "https://m.media-amazon.com/images/I/D1DhEU+TB-L._SX960_QL65_FMwebp_.png",
+      "description": "Welcome to Brighton! Join the police force of this fictitious American city and experience the day to day life of a Police Officer. Start with citing violations and giving out parking tickets, then work your way towards shouldering more responsibilities. Be part of the community of Brighton, get to know your neighborhood and handle daily police work to fight crime during your shift. Always be tough, but fair: respect the law and gain more experience to unlock more neighborhoods, districts and duties. POLICE SIMULATOR: PATROL OFFICERS includes a dynamic traffic system that organically creates the traffic flow and car accidents, as well as emergency situations that can randomly pop up during your shift. Be ready to react at a moment’s notice! In the Open World of Brighton you will be able to choose neighborhoods for your patrols and make sure to keep them safe. Patrol through three unique districts with several neighborhoods each. Every single one has a distinct flair, from the high rises of Downtown to the historical buildings of Brickston. With progression and unlocking new districts, additional duties will also be revealed. Start with ticketing duty and finding wrongfully parked cars, but be prepared to take care of accidents that may happen right in front of your eyes. In a living and breathing city, many different duties may be encountered. Stop drug deals taking place in the local park, or chase graffiti sprayers illegally tagging walls. Be prepared for anything - even if it is just a car blocking a bus stop. Every duty is your responsibility. With the Intuition System your police officer will be able to pick up important clues during witness interrogations that could lead you to resolve situations the right way, so make sure you pay attention to everything being said and done. POLICE SIMULATOR: PATROL OFFICERS offers a Simulation mode for experienced players looking for the most authentic experience, as well as a casual mode for those looking for a more relaxing patrol in the streets of Brighton. Traffic system that organically creates accidents, speeding vehicles, traffic jams and other traffic violations like crossing a red light and moreThree districts with several neighborhoods, each with their own unique flair Various duties ranging from car accidents, parking regulations, emergency callouts, to finding drug dealers or graffiti sprayers Progression to unlock districts, cars and modes (Standard and Open Patrol)Unlock and drive up-to 3 different cars: the Cruiser, Panther Z and Gladiator Police VehiclesCasual and Simulation game modesIntuition System",
+      "image": "https://m.media-amazon.com/images/I/D1YQlvOKGeL._SX960_QL65_FMwebp_.png",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
@@ -614,6 +652,44 @@
       "offerEnd": null,
       "platforms": [
         "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-werewolf-the-apocalypse-earthblood",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Werewolf: The Apocalypse - Earthblood",
+      "slug": "werewolf-the-apocalypse-earthblood",
+      "storeUrl": "https://luna.amazon.com/claims/werewolf-the-apocalypse-earthblood-epic/dp/amzn1.pg.item.51cac85b-21fe-4e69-b048-3c70dfaf50d3?g=s&ingress=amzn&ref_=SM_WerewolfTheApocalypseEarthblood_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "A unique experience full of savage combat and mystical adventures, inspired by the famous role-playing game.You are Cahal, a powerful Garou who chose to go into exile after losing control of his destructive rage. You can transform into a wolf and a Crinos, a huge ferocious beast. You must master the three forms and powers of human, wolf and Crinos to punish those who defile Gaia, Mother Earth. But your worst enemy is yourself: if you don't contain your rage, it can destroy you once again...Each form has its advantages: the wolf can sneak around undetected, Cahal as a human can interact with other people, and the Werewolf can unleash its rage to tear enemies apart. This rage is your greatest asset but also your weakness...On his quest for redemption and blood, Cahal plays a crucial role in the great war between the Garou and Endron, a powerful oil company that serves the Wyrm, a destructive spirit ravaging the planet.",
+      "image": "https://m.media-amazon.com/images/I/B1mNZzOxLEL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-clem",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "CLeM",
+      "slug": "clem",
+      "storeUrl": "https://luna.amazon.com/claims/clem-epic/dp/amzn1.pg.item.a5c7d537-4c60-4940-86b8-0d1c13db9163?g=s&ingress=amzn&ref_=SM_CLeM_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Experience a dark adventure full of mysteryYou awaken in a cold, dimly lit room, your senses slowly adjusting to the surroundings that, oddly, feel familiar. A strange sensation lingers in you, reminding you that something is not quite right. As you find your bearings, your attention is drawn to a peculiar item on the ground. A notebook labeled \"CLeM\" lies before you. As you delve into its pages, covered with intricate sketches of insects accompanied by vague symbols, you find a note containing a cryptic message: “Bring me BEAUTY.” Lost in deciphering the contents, a voice interrupts your focus.Solve puzzles and find your wayPuzzles intertwine with exploration, weaving a unique narrative experience we call “Puzzlevania” with a shadowy story to unravel and countless challenges to overcome.Craft enchanted toys and uncover secretsCraft magic toys to unveil hidden secrets, access unreachable spots, and reclaim items from the past as you uncover new revelations in familiar spaces.Discover a cute and dark worldInvestigate a seemingly desolate house accompanied only by an obscure voice and a notebook full of annotations and drawings on alchemy, insects, and other creepy crawlies.Embrace your destiny\nChoose your fate in this dark story of manipulation, pride, forgiveness, and redemption.Features:A new genre, “Puzzlevania,” intertwines puzzles and exploration. Discover hidden secrets in each room as you delve deeper into the mysteries with every crafted magical toy.Unique and beautiful art style with hand-drawn elements.2D graphics with 3D environmental navigation.Challenging and diverse puzzles to solve.An enigmatic story with a dark turn.",
+      "image": "https://m.media-amazon.com/images/I/81KQJYEeUfL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
       ]
     },
     {
@@ -633,44 +709,6 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-radiolight",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Radiolight",
-      "slug": "radiolight",
-      "storeUrl": "https://luna.amazon.com/claims/radiolight-epic/dp/amzn1.pg.item.828a67e3-e1ec-4968-9719-afa81008da16?g=s&ingress=amzn&ref_=SM_Radiolight_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "WELCOME TO ASHWOOD CREEK, SEPTEMBER 1985Step into the shoes of Ethan, a police officer in the quaint town of Ashwood Creek - a place where the trees whisper, the mountains loom, and secrets hide just out of sight. What begins as a routine investigation, quickly spirals into a haunting journey through the unknown.Ashwood Creek feels frozen in time, untouched by the chaos of the outside world. But under the surface, something dark is stirring. A teenager has gone missing. A strange signal is cutting through the static of local radio stations. Lured deeper into Ashwood Creek National Park, you’ll need to tune in to every frequency and every echo of the past in the hopes of uncovering the truth.A MYSTERY YOU CAN’T IGNOREAs you explore the vast, eerie expanse of Ashwood Creek National Park, you’ll find that your radio is more than just a piece of electronics - it’s your key to survival. Pick up supernatural signals and tune into otherworldly transmissions. But not all signals will guide you to safety... some are meant to lead you astray, deeper into the shadows, where the past waits to confront you.WHO DO YOU TRUST WHEN DARKNESS FALLS?Guided by the voice of Robert, your childhood friend and the town’s chief of police, you’ll venture through dense forests, foggy valleys, and forgotten trails. Together, you’ll piece together clues, follow mysterious broadcasts, and uncover the secrets that Ashwood Creek would rather keep hidden. But the closer you get to the truth, the more you’ll realise that some things are better left buried.",
-      "image": "https://m.media-amazon.com/images/I/A1kjIWtYnVL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-squirrel-with-a-gun",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Squirrel with a Gun",
-      "slug": "squirrel-with-a-gun",
-      "storeUrl": "https://luna.amazon.com/claims/squirrel-with-a-gun-aga/dp/amzn1.pg.item.70eff815-88f4-47f9-83e0-8a8d2837c7ad?g=s&ingress=amzn&ref_=SM_SquirrelwithaGun_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Squirrel, meet gun. As the neighborhood's most obnoxious rodent, develop a knack (and a love?) for crime and mayhem in pursuit of golden acorns in this nutty sandbox shooter and puzzle platformer. Fight tooth, claw, and gun to escape a secret underground facility and defeat the Agents.Fight Tooth, Claw, and GunDiscover what an erratic squirrel is capable of with a gun in its paws (or just its paws) and how far how far this fuzzy fiend will go to collect its acorns. Escape a secret underground facility and defeat the Agents. Upgrade your weapons and locate the other secret bunkers to take down elite bosses; even blow up a tank! Swap out weapons to try your paw at all 12 types of enemy takedowns.Solve Intricate Puzzle Rooms to Collect Golden AcornsNavigate unique puzzle challenges to collect all the golden acorns by getting creative with how you use your arsenal of weapons, using weapon recoil to give yourself a boost. Collect enough golden acorns to unlock hidden sections of the game.Have Some Nutty Sandbox FunExplore the world from a squirrel's eye view or cruise around in your toy car. Harass the neighborhood or ask for nice pets from curious passersby. Help them out in exchange for goodies (or simply mug them) and unlock cosmetics to create your squirrely style.",
-      "image": "https://m.media-amazon.com/images/I/B1Plf97rmHL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Amazon Games App"
       ]
     },
     {
