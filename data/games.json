@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-23T19:57:44.535Z",
+  "fetchedAt": "2026-11-24T01:46:06.467Z",
   "totalFree": 32,
-  "totalUpcoming": 6,
+  "totalUpcoming": 7,
   "games": [
     {
       "id": "0623017cf9f341efbe07557f46beb4e8",
@@ -38,8 +38,8 @@
       "originalPrice": 1499,
       "discountPrice": 1499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-26T16:00:00.000Z",
+      "offerEnd": "2026-12-03T16:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -57,8 +57,8 @@
       "originalPrice": 1999,
       "discountPrice": 1999,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-27T16:00:00.000Z",
+      "offerEnd": "2026-12-01T15:00:00.000Z"
     },
     {
       "id": "be5600439b434624802764f704755cde",
@@ -135,6 +135,25 @@
       "status": "upcoming",
       "offerStart": "2026-12-10T16:00:00.000Z",
       "offerEnd": "2027-01-07T16:00:00.000Z"
+    },
+    {
+      "id": "c76046dddcdb43619c33ce0395941033",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Luftrausers",
+      "slug": "luftrausers-51e5e9",
+      "storeUrl": "https://store.epicgames.com/p/luftrausers-51e5e9",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "The skies are aflame and the seas will overflow with wreckage in Vlambeer’s stylish arcade shooter LUFTRAUSERS! Take to the skies in customized fighter planes to battle battleships, submarines, and rival aces for glory, honor, and high scores.",
+      "image": "https://cdn1.epicgames.com/spt-assets/85ddeeec9d4243b3a2d78aab87bfae7f/luftrausers-1mxb1.png",
+      "originalPrice": 999,
+      "discountPrice": 999,
+      "status": "upcoming",
+      "offerStart": "2026-11-27T16:00:00.000Z",
+      "offerEnd": "2026-12-01T15:00:00.000Z"
     },
     {
       "id": "psplus-dead-island-2",
