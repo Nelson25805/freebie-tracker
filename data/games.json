@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-25T03:36:04.657Z",
-  "totalFree": 18,
-  "totalUpcoming": 8,
+  "fetchedAt": "2026-11-25T18:33:57.278Z",
+  "totalFree": 31,
+  "totalUpcoming": 11,
   "games": [
     {
       "id": "0623017cf9f341efbe07557f46beb4e8",
@@ -38,8 +38,8 @@
       "originalPrice": 1499,
       "discountPrice": 1499,
       "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "offerStart": "2026-11-26T16:00:00.000Z",
+      "offerEnd": "2026-12-03T16:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -57,8 +57,8 @@
       "originalPrice": 1999,
       "discountPrice": 1999,
       "status": "upcoming",
-      "offerStart": "2026-11-27T16:00:00.000Z",
-      "offerEnd": "2026-12-01T15:00:00.000Z"
+      "offerStart": "2026-12-10T16:00:00.000Z",
+      "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
       "id": "be5600439b434624802764f704755cde",
@@ -237,6 +237,106 @@
       "sourcePost": "https://blog.playstation.com/2026/10/28/playstation-plus-monthly-games-for-november-dead-island-2-tomb-raider-iv-vi-remastered-monster-train-2/"
     },
     {
+      "id": "psplus-tony-hawk-s-pro-skater-3-4-cross-gen-edition",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Tony Hawk’s Pro Skater 3+4 - Cross - Gen Edition",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Alert the neighborhood watch and grab your skate buddies because the shred’s not dead: the legendary franchise returns with Tony Hawk’s Pro Skater 3 + 4. Everything you loved is back, revamped with more skaters, new parks, gnarlier tricks, eardrum-shattering music and much more. Drop-in to new parks or tear it up across timeless locations from both Tony Hawk’s Pro Skater 3 and Tony Hawk’s Pro Skater 4, authentically remade in jaw-dropping 4K** resolution with streamlined goals and the epic 2-minute format. Define your own experience in the expanded Create-A-Skater and Create-A-Park modes, including the ability to create custom goals to share with friends for the first time.",
+      "image": "https://blog.playstation.com/tachyon/2026/11/393a7151bd4ebdcfaec45d08f6598f81ccc842af-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-12-01T17:00:00.000Z",
+      "offerEnd": "2027-01-05T17:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/11/25/playstation-plus-monthly-games-for-december-tony-hawks-pro-skater-34-dragon-ball-xenoverse-2-amnesia-the-bunker/"
+    },
+    {
+      "id": "psplus-dragon-ball-xenoverse-2",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Dragon Ball Xenoverse 2",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS5 / PS4",
+      "description": "Dragon Ball Xenoverse 2 is the ultimate Dragon Ball gaming experience, packed with thrilling action, epic battles, and endless customization options. Create your own character, explore Conton City and team up with iconic characters from the series as a teacher to train and be ready to battle against formidable enemies to rescue the flow of History. Dragon Ball Xenoverse 2 also features online multiplayer modes, where you can battle against other players from around the world in epic showdowns or participate in Raid Battles to face gigantic foes with other players.",
+      "image": "https://blog.playstation.com/tachyon/2026/11/31b101a1fe6a6fcebcb2cb8afb3e7a50013465da-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-12-01T17:00:00.000Z",
+      "offerEnd": "2027-01-05T17:00:00.000Z",
+      "platforms": [
+        "PS5",
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/11/25/playstation-plus-monthly-games-for-december-tony-hawks-pro-skater-34-dragon-ball-xenoverse-2-amnesia-the-bunker/"
+    },
+    {
+      "id": "psplus-amnesia-the-bunker",
+      "store": "psplus",
+      "storeName": "PlayStation Plus",
+      "title": "Amnesia: The Bunker",
+      "slug": "",
+      "storeUrl": "https://store.playstation.com",
+      "seller": "PS4",
+      "description": "Amnesia: The Bunker is a first-person horror game from the makers of Soma and Amnesia. Left all alone in a desolate WW1 bunker with only one bullet remaining in the barrel, it’s up to you to face the oppressing terrors in the dark. Immerse yourself in the multiple ways of tackling survival. In the shoes of the French soldier Henri Clément, you are armed with a revolver gun, a noisy dynamo flashlight, and other scarce supplies to scavenge and craft along the way. With randomization and unpredictable behavior, no play-through is the same. Hunted by an ever-present threat reacting to your every move and sound, you must adapt your play-style to face hell. Every decision will change the outcome of how the game responds. Actions bear consequences.",
+      "image": "https://blog.playstation.com/tachyon/2026/11/2bb62e662b96a987bd43c0d685c1f7fb65109a19-scaled.jpg?fit=1024%2C1024",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "upcoming",
+      "offerStart": "2026-12-01T17:00:00.000Z",
+      "offerEnd": "2027-01-05T17:00:00.000Z",
+      "platforms": [
+        "PS4"
+      ],
+      "sourcePost": "https://blog.playstation.com/2026/11/25/playstation-plus-monthly-games-for-december-tony-hawks-pro-skater-34-dragon-ball-xenoverse-2-amnesia-the-bunker/"
+    },
+    {
+      "id": "prime-jurassic-world-evolution-2",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Jurassic World Evolution 2",
+      "slug": "jurassic-world-evolution-2",
+      "storeUrl": "https://luna.amazon.com/claims/jurassic-world-evolution-2-epic/dp/amzn1.pg.item.208bb96b-9ae6-4538-a1ff-c1831794f1b5?g=s&ingress=amzn&ref_=SM_JurassicWorldEvolution2_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "Jurassic World Evolution 2 is the much-anticipated sequel to Frontier’s ground-breaking 2018 management simulation, Jurassic World Evolution, offering an all new narrative campaign voiced by cast members from across the Jurassic World film franchise, exciting new features, four engaging game modes, and an expanded roster of awe-inspiring dinosaurs.An Original Jurassic StoryLearn what it takes to be a park management master in Campaign mode, a compelling, original narrative that puts you at the heart of the action following the earth-shattering events of Jurassic World: Fallen Kingdom. Work alongside iconic characters from the films, including Dr. Ian Malcolm  and Claire Dearing, and lead the efforts to control, conserve, and contain wild dinosaurs now rampaging across the USA.Create your own Jurassic WorldTake control with deeper management tools and creative options. Construct a range of customizable new buildings and hire new Scientists, and shape your park to meet the needs of both your guests and dinosaurs. Unleash your creativity in Sandbox mode, or test your skills in Challenge mode as you deal with diverse locations and environmental calamities.Play with Chaos TheoryPlay through key moments of your favorite films - with a twist. Experience ‘what-if’ scenarios from iconic Jurassic World and Jurassic Park films, each level set across eras and locations from all five movies.Discover Awe-Inspiring DinosaursOver 75 different prehistoric species come to life in Jurassic World Evolution 2, including highly requested flying and marine reptiles. These animals feel more alive than ever as they preside over territory, fight for dominance, and react intelligently to the world around them. Use bioengineering to customize dinosaurs with bold new colors, and alter their genomes to unlock traits.",
+      "image": "https://m.media-amazon.com/images/I/A1x9MyirDwL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
+      "id": "prime-radiolight",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Radiolight",
+      "slug": "radiolight",
+      "storeUrl": "https://luna.amazon.com/claims/radiolight-epic/dp/amzn1.pg.item.828a67e3-e1ec-4968-9719-afa81008da16?g=s&ingress=amzn&ref_=SM_Radiolight_S01_FGWP_CRWN",
+      "seller": "Prime Gaming",
+      "description": "WELCOME TO ASHWOOD CREEK, SEPTEMBER 1985Step into the shoes of Ethan, a police officer in the quaint town of Ashwood Creek - a place where the trees whisper, the mountains loom, and secrets hide just out of sight. What begins as a routine investigation, quickly spirals into a haunting journey through the unknown.Ashwood Creek feels frozen in time, untouched by the chaos of the outside world. But under the surface, something dark is stirring. A teenager has gone missing. A strange signal is cutting through the static of local radio stations. Lured deeper into Ashwood Creek National Park, you’ll need to tune in to every frequency and every echo of the past in the hopes of uncovering the truth.A MYSTERY YOU CAN’T IGNOREAs you explore the vast, eerie expanse of Ashwood Creek National Park, you’ll find that your radio is more than just a piece of electronics - it’s your key to survival. Pick up supernatural signals and tune into otherworldly transmissions. But not all signals will guide you to safety... some are meant to lead you astray, deeper into the shadows, where the past waits to confront you.WHO DO YOU TRUST WHEN DARKNESS FALLS?Guided by the voice of Robert, your childhood friend and the town’s chief of police, you’ll venture through dense forests, foggy valleys, and forgotten trails. Together, you’ll piece together clues, follow mysterious broadcasts, and uncover the secrets that Ashwood Creek would rather keep hidden. But the closer you get to the truth, the more you’ll realise that some things are better left buried.",
+      "image": "https://m.media-amazon.com/images/I/A1kjIWtYnVL._SX1600_._AGmerlin_._FMwebp_.jpg",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Epic Games"
+      ]
+    },
+    {
       "id": "prime-squirrel-with-a-gun",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -313,44 +413,6 @@
       ]
     },
     {
-      "id": "prime-time-travel-escape-room-game",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Time Travel: Escape Room Game",
-      "slug": "time-travel-escape-room-game",
-      "storeUrl": "https://luna.amazon.com/claims/time-travel-escape-room-game-legacy/dp/amzn1.pg.item.c3af790f-8ce0-42b2-8c16-ebecb97303f5?g=s&ingress=amzn&ref_=SM_TimeTravelEscapeRoomGame_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Your help is essential in this time travel machine game!Play Time Travel: Escape Room Game and unlock secrets of the past and the future with a crystal in your hand! Participate in this escape room game challenge with a twist. This 100 room escape puzzle game enables you to sneak peek through time thanks to its broken time machine. Absurd right? You too can feel the thrill, just solve escape puzzles and find the missing piece for the time machine in 100 world famous locations in different times.The heart of the time machine beats with the power of a rare crystal. Simply play Time Travel: Escape Room Game, find the crystal and see what it feels like to be a real time traveler!What’s the deal with Time Travel: Escape Room Game and its broken time machine?!A revolutionary time machine is developed by a genius doctor in his lab. The main part of the machine that makes travel through time possible is a rare shimmering crystal. As time traveling is a very complex thing, the time machine breaks all the time which makes his time travelings unpredictable. Whenever the time travel machine breaks, the crystal falls out and disappears somewhere in the scene.TIME TRAVEL: ESCAPE ROOM GAME CHARACTERISTICSExciting puzzles with hidden objects and conundrums to solveCool mechanics: move in time and space, combine objects, play brain gamesSkip the level if you get stuckVisit many world's famous locations in different times",
-      "image": "https://m.media-amazon.com/images/I/A1xT0boi8XL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Legacy Games"
-      ]
-    },
-    {
-      "id": "prime-ad-infinitum",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Ad Infinitum",
-      "slug": "ad-infinitum",
-      "storeUrl": "https://luna.amazon.com/claims/ad-infinitum-epic/dp/amzn1.pg.item.69de011b-6575-41ab-9964-971e59cf7457?g=s&ingress=amzn&ref_=SM_AdInfinitum_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Trapped between two realities, you wander tormented within the walls of your family home and the trenches of World War I.BREAK THE CYCLEWill the nightmare of the war ever end? Will your mind be at peace one day? In Ad Infinitum, you play as a German soldier haunted by the horrors of the Great War. While your mind drifts between memories of your family home and of the trenches on the front, you try to break the endless cycle of suffering.BETWEEN A DREAM AND REALITYYou wake up in your bedroom, unchanged from your teenage years, in a run-down and deserted manor house. But then you suddenly find yourself in the trenches where the only beings around are horrific monsters. Unable to discern reality from nightmare, immerse yourself in the story of a man confronting his trauma and demons.NIGHTMARES THAT BECOME REALUnspeakable nightmares come to life in the recesses of your mind. To escape the death traps and terrifying creatures, you must understand each monster and solve the puzzles that stand in your way. From blind demons who can hear your softest footsteps or disjointed puppets who move in the dark, horror is around every corner.A FAMILY TORN APARTThe fallout of the war is felt far from the front. Peel back the shroud that hides the secrets of your family, torn apart by the Great War, and try to remember your past. Through exploration and by solving riddles and puzzles between the walls of your home and the barbed wire of No Man’s Land, you reveal a chapter in the story of a German family ravaged by war.",
-      "image": "https://m.media-amazon.com/images/I/B12JGMfwwBL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
       "id": "prime-caravan-sandwitch",
       "store": "prime",
       "storeName": "Prime Gaming",
@@ -386,6 +448,291 @@
       "offerEnd": null,
       "platforms": [
         "GOG"
+      ]
+    },
+    {
+      "id": "prime-ea-sports-madden-nfl-27",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "EA SPORTS™ Madden NFL 27",
+      "slug": "ea-sports-madden-nfl-27",
+      "storeUrl": "https://luna.amazon.com/detail/B0HQ5JBS3K?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Run the league one decision at a time. EA SPORTS™ Madden NFL 27, powered by the all-new Persona Engine, transforms Franchise into a reactive, always-evolving league where every NFL athlete has a distinct, realistic personality that informs their motivations, demands and reactions. Gameplay gets physical with more precise control from authentic WR/DB battles, new short-yardage mechanics, defensive coverage improvements and new strategic pre-play settings and controls. Build your NFL legacy on a deeper progression path in the new Superstar G.O.A.T. Career Journey and control your roster with more customization with Ultimate Team Captains.FRANCHISEThe all-new Persona Engine gives every NFL athlete a distinct personality that informs their motivations, how they think and how they respond, transforming your Franchise into a reactive ever-evolving league shaped by every move you make.AUTHENTIC NFL PERSONALITYEvery snap is a battle for control. All-new WR/DB interactions bring true NFL physicality to every route, with realistic hand-fighting, jostling, and leverage that define separation and coverage. Win tight 50-50 moments with timing-based catching and refined contested interactions, or take command in critical situations with improved short-yardage mechanics and plays like the “Tush Push” that decide games when inches matter most.GAMEPLANNING & CUSTOMIZATIONOwn every decision before and after the snap. New gameplan adjustments let you preconfigure how your team aligns and reacts, while streamlined pre-play controls put every adjustment at your fingertips. Smarter receiver logic keeps plays alive, while advanced coverage systems and plaster logic help defenses adapt in real time giving you total control to execute your strategy on every snap.SUPERSTARBecome the greatest NFL Superstar of all time through an expanded G.O.A.T. Career Journey. Progress from high school to the Hall of Fame with deeper skill trees, new playable positions and unlock meaningful career choices as your legacy grows.ULTIMATE TEAMBuild your roster your way with the newly revamped upgrade system. Earn skill points by completing in-game objectives to upgrade your favorite players with new Evos items.PRESENTATIONThe sights and sounds of NFL Sundays bring expanded stadium traditions and broadcast moments to frame the storylines of every game day. From Denver’s pregame skydivers to Jaxson de Ville’s zip line in Jacksonville, new intros, drone shows, and holiday broadcast packages elevate every matchup to big-game energy.This game includes optional in-game purchases of virtual currency that can be used to acquire virtual in-game items, including a random selection of virtual in-game items.Conditions & restrictions apply. See ea.com/legal for details.",
+      "image": "https://m.media-amazon.com/images/I/D1WjJH6R4NL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-nba-the-run",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "NBA THE RUN",
+      "slug": "nba-the-run",
+      "storeUrl": "https://luna.amazon.com/detail/B0HQ5N3DWK?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "We’re taking it back to the streets. NBA THE RUN is a fast-paced, online 3v3 street basketball game, played above-the-rim and packed with posterizing moments, ankle-breaking tricks and a unique, signature style. Take your favorite NBA stars to iconic streetball courts around the world and stack wins, earn cred and become the GOAT of THE RUN.DON'T GET KNOCKED OUTPlay Solos or Squads, the choice is yours. Face off against the best of the best in online multiplayer Knockout Tournaments spanning the globe on legendary streetball courts from Venice Beach, to The Tenement in the Philippines, and more. Lock in, win, advance, repeat.BECOME THE GOATGameplay is fast, fluid and responsive. Powered by true rollback netcode, your moves on the sticks will sync instantaneously – cross up an aggressive defender, pull down a towering block, or throw up a lob out of a spin move for a game winning alley-oop.DEFENSE WINS CHIPSIt’s not only about the high flying dunks, stepback logo 3s and ankle breakers – in NBA THE RUN, defense is just as fun, and powerful, as offense. Thunderous blocks, diving for loose balls, huge steals, and all-out physicality on D can lead to a W and will get you just as hyped.STREETBALL WITH STYLEEverything about NBA THE RUN is handcrafted and stylized to deliver a completely unique look and feel. Authentic to the sport of basketball and visually in a lane of its own - there isn’t another basketball game on the market that looks, feels or plays like NBA THE RUN.",
+      "image": "https://m.media-amazon.com/images/I/D17d2f48gdL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-mixtape",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Mixtape",
+      "slug": "mixtape",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPMC5MJX?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "On their last night together, three friends embark on one final adventure. Play through a mixtape of memories, set to the soundtrack of a generation.En route to their final party together, a perfectly curated playlist draws three friends into dreamlike reenactments of their formative memories. Experience a variety of narrative vignettes exploring the pivotal moments that shaped them. Players will immerse themselves in the teenage wasteland by playing through a mixtape of joyful gameplay, from skateboarding and flying to taking photos after hours at an abandoned theme park, hitting baseballs, and putting on a fireworks show from the backseat of a car. It's the greatest hits of the teenage experience, from the first kiss to the last dance.From Beethoven & Dinosaur, developers of BAFTA award-winning game The Artful Escape, Mixtape draws inspiration from classic coming-of-age movies, bringing together nostalgic aimlessness, mischief, music, the highs and lows of adolescence, and the bittersweet feelings brought about by growth, transformation, and moving on.Featuring music from DEVO, Roxy Music, Lush, The Smashing Pumpkins, Iggy Pop, Siouxsie and the Banshees, Joy Division, the Cure and many more.Skate. Party. Avoid the law.Hang out. Sneak out. Make out.",
+      "image": "https://m.media-amazon.com/images/I/C1UJkpjileL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-kingdom-come-deliverance-ii",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Kingdom Come: Deliverance II",
+      "slug": "kingdom-come-deliverance-ii",
+      "storeUrl": "https://luna.amazon.com/detail/B0FSTD4YHR?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Kingdom Come: Deliverance II is a thrilling Action RPG, set amid the chaos of a civil war in 15th Century Bohemia.You are Henry of Skalitz – an ordinary man doing extraordinary things – caught in a gripping tale of revenge, betrayal and discovery as he embarks on an epic journey, 'from a humble blacksmith's forge to the court of Kings', as he searches for purpose in this beautiful but brutal medieval world.From bustling city streets to lush forests, discover this open-world Medieval Europe through an unforgettable adventure filled with action, thrill and wonder.FEATURES A Tale of Love and RevengeLive life through the eyes and actions of Henry, a young man on a quest to avenge his murdered parents. His story – illustrated with over five hours of stunning cinematics – takes him from aspiring warrior to rebel, crossing paths with a charismatic cast of characters and an unforgettable set of adventures, as he goes up against the King of Hungary, Sigismund the Red Fox and his fearsome allies. A True RPG ExperienceYour actions shape Henry’s destiny and how the world will react to him. Customize freely his appearance, skills and equipment while taking a moral stance on the events around you. Travel round the land engaging in unique activities, such as blacksmithing and archery, to truly immerse yourself in this vibrant region of Europe that will remember your actions, forever.Live a Life MedievalThis stunningly authentic rendition of 15th Century Bohemia allows you to experience this fascinating setting like never before. Get lost in a sprawling city, engage with peasants and talk with nobles while exploring a vast and rich countryside with taverns, bath houses, castles and more. Authentic First-Person CombatFeel the clash of steel and visceral combat as you engage in thrilling real-time battles. There’s a range of authentic weapons and combat styles to suit every player. On foot, horse or by stealth, you can specialise in elegant sword mastery, brutal blunt weapons or deadly ranged attacks.",
+      "image": "https://m.media-amazon.com/images/I/D1X2ol-Wd4L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-disney-epic-mickey-rebrushed",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Disney Epic Mickey: Rebrushed",
+      "slug": "disney-epic-mickey-rebrushed",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPLXB8Z9?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Disney Epic Mickey: Rebrushed brings the magic of Disney to life in a vibrant 3D platformer. This beautiful remake sends Mickey Mouse on an epic journey through Wasteland, a realm of forgotten Disney characters. As Mickey, you will dive into a fantastical world and, armed with paint and thinner, shape your adventure and the fate of this alternate world.Every stroke of your magic brush matters! Use paint to restore beauty and harmony or thinner to alter your environment and uncover hidden secrets. Your choices influence Mickey's destiny and change the outcome of this artistic odyssey. Will you become the epic hero Wasteland needs?Encounter various iconic characters like Oswald the Lucky Rabbit, Walt Disney’s first creation, as you travel between lands in Wasteland. Collect virtual Disney pins, tackle creative challenges, and uncover secrets, all while exploring classic platforming levels inspired by animated films and shorts.Originally envisioned by Warren Spector, reimagined by Purple Lamp, Disney Epic Mickey: Rebrushed employs state-of-the-art visuals and improved controls to breathe new life into a beloved classic. Experience new movement skills for Mickey, such as dash, ground pound and sprinting. The game’s compelling story makes it an unforgettable adventure for long-time fans and newcomers alike. Join Mickey Mouse and unravel the mysteries of Wasteland in this homage to Disney's legacy.",
+      "image": "https://m.media-amazon.com/images/I/D13p4TYBEfL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-sushi-go-party-",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Sushi Go Party!",
+      "slug": "sushi-go-party-",
+      "storeUrl": "https://luna.amazon.com/detail/B0HS5Q6ZR5?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "The digital adaptation of the award-winning card game, Sushi Go Party!Order up! Grab your favourite dishes and collect delicious combinations to score points. From tempting Tempura to satisfying Sashimi, every card brings new possibilities. Choose carefully, though: the dishes you pass could be just what your restaurant rivals need!Mix up the menu with a variety of sushi, sides and desserts, each with unique rules and ways to score. Add spicy Wasabi to your Nigiri, load up on Uramaki rolls, and keep an eye on what everyone else is collecting! Changing the menu brings fresh combinations and new strategies to the table.With colourful characters, simple rules and plenty of clever choices, Sushi Go Party! serves up culinary competition for newcomers and seasoned strategists alike. Whether you're crafting a clever combo or saving room for dessert, you'll be coming back for seconds!Have you got the appetite for victory?",
+      "image": "https://m.media-amazon.com/images/I/A14p7pE9lsL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-the-man-with-the-bag-naughty-or-nice",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "The Man with the Bag - Naughty or Nice",
+      "slug": "the-man-with-the-bag-naughty-or-nice",
+      "storeUrl": "https://luna.amazon.com/detail/B0HMTP59GQ?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "You’ve never spoken to Santa like this before! Welcome to the new AI driven video game, The Man with the Bag – Naughty or Nice starring Arnold Schwarzenegger as Santa.Santa’s lost the Naughty or Nice list! You think that you belong on the Nice list? Prove it! You’re going to need to convince Santa that you are deserving, but that’s not going to be easy, he’s no push over. Come up with your most compelling stories, good deeds and acts of kindness and tell him yourself. Santa has a gift for you in his bag. However, you’re going to have to guess what it is. You only have 20 questions to figure it out. Ask good questions, listen closely and make good choices to find out what Santa has in store for you.Jump into a conversation directly with Santa via your phone’s mic as he responds to your comments and you respond to his questions. No two play sessions are ever the same.Hurry and get yourself on the nice list before it’s too late. Soon Santa will have to get to the sleigh! Play the Game, Watch the Movie!Game Available Now. Movie Available 12/2Gameplay Modes: • Naughty or Nice:Now’s your chance to convince Santa that you belong on the nice list and deserve that gift you’ve been dreaming about all year long. It won’t be easy though. This Santa is one tough customer when it comes to getting on the nice list. Get creative and support your argument with good deeds and solid facts or else Santa will see through it like tinsel on the tree. • What’s in the Bag: You’ll get to ask Santa-Arnold up to 20 questions that he will respond to by giving you hints and directions to help you in your quest to figure out what gift he has for you in that magic bag of his. With upwards of a thousand potential gifts, you’ll have to ask good questions and listen closely to the answers in order to guess right.Software © 2026 Amazon.com Services LLC. Amazon, Amazon Game Studios, and related marks are trademarks of Amazon.com Services LLC or its affiliates. All rights reserved. THE MAN WITH THE BAG and all related characters and elements, and all other elements of the game © 2026 Amazon Content Services LLC.• Terms of Use: www.amazon.com/help/ags/terms• Privacy: www.amazon.com/help/ags/privacy• Legal Notices - http://www.amazon.com/gp/help/customer/display.html?noded• Support Page - https://help.chronicles.amazongamestudios.com",
+      "image": "https://m.media-amazon.com/images/I/C1g7U4gHeQL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-assassin-s-creed-mirage",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Assassin’s Creed® Mirage",
+      "slug": "assassin-s-creed-mirage",
+      "storeUrl": "https://luna.amazon.com/detail/B0CK43NDNR?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "VALLEY OF MEMORYEnjoy 6 hours of new gameplay in Valley of Memory, a free major update that expands Basim’s story and introduces the breathtaking new region of AlUla, with gameplay improvements across the full game.THE ULTIMATE ASSASSINBecome the most versatile and resourceful Assassin in franchise history. Parkour seamlessly through the city and leverage the largest assortment of tools to date. Get contracts and upgrades at the Assassin’s bureaus, collect vital clues, and stealthily take down targets with more visceral assassinations than ever before.A TRIBUTE TO AN ORIGINALExperience a modern take on the iconic features and gameplay that have defined the franchise. Journey to Alamut, the legendary home of the Assassins who laid the foundations of the Creed, in this heartfelt homage to the game that started it all.AN IMMERSIVE, REACTIVE CITY Explore an incredibly dense and vibrant city whose inhabitants react to your every move. Uncover the secrets of four unique districts, from the industrial Karkh to the lush gardens of the Round City. Discover surprising world events and interact with historical figures that shaped the Golden Age of Baghdad.A POWERFUL COMING-OF-AGE STORYFollow Basim’s journey in this tightly crafted, narrative-driven action-adventure experience. Witness his transformation from a defiant young thief to a Master Assassin as he meets allies, mentors, and foes who shape his destiny.",
+      "image": "https://m.media-amazon.com/images/I/D1iYWIKGN1L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-star-wars-outlaws",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Star Wars Outlaws",
+      "slug": "star-wars-outlaws",
+      "storeUrl": "https://luna.amazon.com/detail/B0DDMXR2WZ?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Experience the first-ever open world Star Wars™ action-adventure game and explore distinct locations across the galaxy, both iconic and new. Risk it all as scoundrel Kay Vess, seeking freedom and the means to start a new life. Fight, steal, and outwit your way through the galaxy’s crime syndicates as you join the galaxy’s most wanted.If you’re willing to take the risk, the galaxy is full of opportunity.DISCOVER A GALAXY OF OPPORTUNITYExplore distinct locations with bustling cities and cantinas. Race across sprawling outdoor landscapes on your speeder. Each location brings new adventures, unique challenges, and enticing rewards if you’re willing to take the risk.EXPERIENCE AN ORIGINAL SCOUNDREL STORYLive the high-stakes lifestyle of an outlaw. Turn any situation to your advantage with Nix by your side: fight with your blaster, overcome enemies with stealth and gadgets, or find the right moments to distract enemies and gain the upper hand.EMBARK ON HIGH-STAKES MISSIONSTake on high-risk, high-reward missions from the galaxy’s crime syndicates. Steal valuable goods, infiltrate secret locations, and outwit enemies as one of the galaxy’s most wanted. Every choice you make influences your ever-changing reputation.JUMP INTO THE PILOT SEATPilot your ship, the Trailblazer, as you engage in thrilling dogfights with the Empire and other foes. Find the right opportunities to chase, evade, and attack to get the upper hand.Offer, content, and dates subject to change.",
+      "image": "https://m.media-amazon.com/images/I/D1zjA8h4SXL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-assassin-s-creed-valhalla",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Assassin's Creed Valhalla",
+      "slug": "assassin-s-creed-valhalla",
+      "storeUrl": "https://luna.amazon.com/detail/B08N3ZPQRB?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "BUILD YOUR OWN VIKING LEGENDBecome Eivor, a mighty Viking raider, and lead your clan. Advanced RPG mechanics allow you to influence the world around you. With every choice you make, from political alliances and combat strategy, to dialogue and gear progression, carve your path to glory!EXPLORE A DARK AGE WORLDSail from Norway’s icy coasts to England’s lush kingdoms. Roam a vast open world, hunt legendary beasts, and lay bare the secrets of a fractured land.EXPERIENCE VISCERAL COMBATUnleash the ruthless fighting style of a Viking warrior and dual wield axes, swords, or even shields against fierce, relentless foes. Choose your tactics and dismember opponents in close-quarters combat, riddle them with arrows, or assassinate them with your Hidden Blade.GROW YOUR SETTLEMENTConstruct and upgrade buildings that allow for deep customization, including a barracks, a smithy, a tattoo parlor, and more. Recruit new members to your clan and personalize your Viking experience.",
+      "image": "https://m.media-amazon.com/images/I/D1zNaxUezDL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-avatar-frontiers-of-pandora",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Avatar: Frontiers of Pandora",
+      "slug": "avatar-frontiers-of-pandora",
+      "storeUrl": "https://luna.amazon.com/detail/B0CPB9QQBN?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Avatar: Frontiers of Pandora™ is a third and first-person action-adventure game set in the Western Frontier. Abducted by the RDA, you, a Na’vi, were molded to serve their purpose. Fifteen years later, you are free, but find yourself a stranger in your birthplace. Reconnect with your lost heritage and discover what it truly means to be Na'vi as you join other clans to protect Pandora.EXPLORE A WORLD OF WONDER AND DANGERExperience the epic wonders of the Western Frontier, a never-before-seen continent of Pandora. Journey through beautiful yet unpredictable open world regions, where lowering your guard can lead to deadly mistakes.BECOME NA’VIHarness your incredible strength and agility while customizing your character, crafting new gear, and upgrading skills and weapons to fit your playstyle.SOAR THE SKIESBond with your own personal banshee that will give you an edge in aerial combat and can be used for traveling across the vast Western Frontier.MASTER MULTIPLE COMBAT STYLESFight off the dangers of Pandora as you embrace the precision of traditional Na’vi weapons, including your bow and spear-thrower, or leverage your human training with more destructive weapons, such as an assault rifle or a shotgun.SHARE YOUR ADVENTURE IN FULL CAMPAIGN CO-OPPlay the full story campaign in single-player or with a friend online in two-player co-op.",
+      "image": "https://m.media-amazon.com/images/I/D19W9nab1ML._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-sonic-x-shadow-generations",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "SONIC X SHADOW GENERATIONS",
+      "slug": "sonic-x-shadow-generations",
+      "storeUrl": "https://luna.amazon.com/detail/B0HLNB1ZCJ?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Shadow the Hedgehog is back with Classic and Modern Sonic in SONIC X SHADOW GENERATIONS,an all-new collection featuring two unique experiences!When a mysterious creature creates time holes in their universe,Sonic and Shadow each set out on a high-speed action adventure!By using this product, you agree to this EULA: https://games.sega.com/eula/",
+      "image": "https://m.media-amazon.com/images/I/D1NsbAs41+L._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-star-wars-galactic-racer-",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "STAR WARS: Galactic Racer™",
+      "slug": "star-wars-galactic-racer-",
+      "storeUrl": "https://luna.amazon.com/detail/B0HLN4GG5K?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "STAR WARS​​: Galactic Racer™ is a ​​runs-based​​, high-stakes reinvention of racing born in the lawless Outer Rim of the ​​STAR WARS​​™​​ galaxy.​​​​The Empire’s grip on the galaxy has finally broken, and with its fall comes a new obsession: speed. As the New Republic struggles to rebuild, gambling, entertainment, and glory fuel a booming underground. Out of this chaos, the Galactic League is born: an unsanctioned racing circuit where syndicates sponsor pilots, fortunes are won and lost in seconds, and only the bold survive. No Force. No prophecy. Just skill, strategy, and the will to rise.Immerse yourself in the full single-player STAR WARS: Galactic Racer experience spanning Campaign, Scenarios, and Arcade modes. Cross-platform multiplayer coming soon.COMPETE IN HIGH-STAKES RACES WHERE EVERY RUN IS UNIQUESlam, shunt, and takedown rivals across varied circuits where no two runs play the same. The greater the risk, the greater the reward.SURVIVE A DANGEROUS UNDERGROUND SPORTJoin the Galactic League - an unsanctioned racing circuit born in the lawless Outer Rim. Become Shade, a lone racer chasing revenge and glory.BUILD AND CUSTOMIZE YOUR CRAFTPilot different classes of repulsorcraft each with distinct physics and playstyles. Build a ride that showcases your style and gives you a competitive edge.",
+      "image": "https://m.media-amazon.com/images/I/D1q565GghGL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-marbles-on-stream",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Marbles On Stream",
+      "slug": "marbles-on-stream",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPX7NT7F?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Your marble. Your community. Your next adventure.Marbles on Stream brings physics-driven racing, chaotic battles, cooperative adventures, and creative challenges together in one free-to-play game.Host games with your viewers, join races through Twitch chat with !play, run your own simulations, or explore experiences built for solo play and friends. Whether you’re chasing a podium, surviving together, restoring a collection, or building the next community favorite, there’s always another reason to roll.- Race for the podium. Enjoy physics-driven races across studio-built and community-created tracks. Take on Laps or assemble a Grand Prix, where points across multiple races decide the champions.- Survive Marble Royale. Watch marbles clash in unpredictable battles filled with hazards, powerful attacks, and dramatic eliminations. Cheer yours on as the arena narrows toward a last-marble-standing showdown.- Face the horde in Wave Fighter — Beta. Bring your viewers together for cooperative survival against zombie waves and bosses. Build an army with different classes, strengthen it with upgrades and boons, and discover which combinations can carry your community through the fight.- Take control in Tilted. The host tilts the board to guide marbles through obstacles and increasingly difficult levels. Keep your community rolling, rescue a run from disaster, and see how far you can go.- Restore the Hall of Marbles — Alpha. Explore galleries and gardens in a first-person restoration adventure. Find scattered marbles, assemble evolving skins, and return collections to their displays. Play solo or team up with up to three friends through Steam co-op, earning progression and upgrading your curator’s skills.- Chase the high score in Bloop. Run community tournaments with configurable sessions, leaderboards, and a broadcast overlay. Save your competition and continue the action later.- Build and share your imagination. Create and upload race tracks with Map Builder. Design custom boards, tiles, and moving obstacles in Tilted Sandbox, then share your challenges and put your community to the test.- Make your marble yours. Collect and combine skins, shapes, accessories, effects, pins, and player cards. Explore evolving cosmetics, complete missions, and compete for seasonal rankings and rewards in supported modes.Make every session a show. Automatic race cameras and cinematic controls help you follow the action, while Render Studio lets you create images and videos of your favorite marble looks.Bring your viewers. Gather your friends. Let’s roll!",
+      "image": "https://m.media-amazon.com/images/I/B19Fl9WWBcL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
+      ]
+    },
+    {
+      "id": "prime-police-simulator-patrol-officers",
+      "store": "prime",
+      "storeName": "Prime Gaming",
+      "title": "Police Simulator: Patrol Officers",
+      "slug": "police-simulator-patrol-officers",
+      "storeUrl": "https://luna.amazon.com/detail/B0HPVN613X?ref=pghq&r=web&autoplay=1",
+      "seller": "Prime Gaming",
+      "description": "Welcome to Brighton! Join the police force of this fictitious American city and experience the day to day life of a Police Officer. Start with citing violations and giving out parking tickets, then work your way towards shouldering more responsibilities. Be part of the community of Brighton, get to know your neighborhood and handle daily police work to fight crime during your shift. Always be tough, but fair: respect the law and gain more experience to unlock more neighborhoods, districts and duties. POLICE SIMULATOR: PATROL OFFICERS includes a dynamic traffic system that organically creates the traffic flow and car accidents, as well as emergency situations that can randomly pop up during your shift. Be ready to react at a moment’s notice! In the Open World of Brighton you will be able to choose neighborhoods for your patrols and make sure to keep them safe. Patrol through three unique districts with several neighborhoods each. Every single one has a distinct flair, from the high rises of Downtown to the historical buildings of Brickston. With progression and unlocking new districts, additional duties will also be revealed. Start with ticketing duty and finding wrongfully parked cars, but be prepared to take care of accidents that may happen right in front of your eyes. In a living and breathing city, many different duties may be encountered. Stop drug deals taking place in the local park, or chase graffiti sprayers illegally tagging walls. Be prepared for anything - even if it is just a car blocking a bus stop. Every duty is your responsibility. With the Intuition System your police officer will be able to pick up important clues during witness interrogations that could lead you to resolve situations the right way, so make sure you pay attention to everything being said and done. POLICE SIMULATOR: PATROL OFFICERS offers a Simulation mode for experienced players looking for the most authentic experience, as well as a casual mode for those looking for a more relaxing patrol in the streets of Brighton. Traffic system that organically creates accidents, speeding vehicles, traffic jams and other traffic violations like crossing a red light and moreThree districts with several neighborhoods, each with their own unique flair Various duties ranging from car accidents, parking regulations, emergency callouts, to finding drug dealers or graffiti sprayers Progression to unlock districts, cars and modes (Standard and Open Patrol)Unlock and drive up-to 3 different cars: the Cruiser, Panther Z and Gladiator Police VehiclesCasual and Simulation game modesIntuition System",
+      "image": "https://m.media-amazon.com/images/I/D1YQlvOKGeL._SX960_QL65_FMwebp_.png",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": null,
+      "offerEnd": null,
+      "platforms": [
+        "Amazon Luna"
       ]
     },
     {
@@ -436,44 +783,6 @@
       "seller": "Prime Gaming",
       "description": "Experience a dark adventure full of mysteryYou awaken in a cold, dimly lit room, your senses slowly adjusting to the surroundings that, oddly, feel familiar. A strange sensation lingers in you, reminding you that something is not quite right. As you find your bearings, your attention is drawn to a peculiar item on the ground. A notebook labeled \"CLeM\" lies before you. As you delve into its pages, covered with intricate sketches of insects accompanied by vague symbols, you find a note containing a cryptic message: “Bring me BEAUTY.” Lost in deciphering the contents, a voice interrupts your focus.Solve puzzles and find your wayPuzzles intertwine with exploration, weaving a unique narrative experience we call “Puzzlevania” with a shadowy story to unravel and countless challenges to overcome.Craft enchanted toys and uncover secretsCraft magic toys to unveil hidden secrets, access unreachable spots, and reclaim items from the past as you uncover new revelations in familiar spaces.Discover a cute and dark worldInvestigate a seemingly desolate house accompanied only by an obscure voice and a notebook full of annotations and drawings on alchemy, insects, and other creepy crawlies.Embrace your destiny\nChoose your fate in this dark story of manipulation, pride, forgiveness, and redemption.Features:A new genre, “Puzzlevania,” intertwines puzzles and exploration. Discover hidden secrets in each room as you delve deeper into the mysteries with every crafted magical toy.Unique and beautiful art style with hand-drawn elements.2D graphics with 3D environmental navigation.Challenging and diverse puzzles to solve.An enigmatic story with a dark turn.",
       "image": "https://m.media-amazon.com/images/I/81KQJYEeUfL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-jurassic-world-evolution-2",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Jurassic World Evolution 2",
-      "slug": "jurassic-world-evolution-2",
-      "storeUrl": "https://luna.amazon.com/claims/jurassic-world-evolution-2-epic/dp/amzn1.pg.item.208bb96b-9ae6-4538-a1ff-c1831794f1b5?g=s&ingress=amzn&ref_=SM_JurassicWorldEvolution2_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "Jurassic World Evolution 2 is the much-anticipated sequel to Frontier’s ground-breaking 2018 management simulation, Jurassic World Evolution, offering an all new narrative campaign voiced by cast members from across the Jurassic World film franchise, exciting new features, four engaging game modes, and an expanded roster of awe-inspiring dinosaurs.An Original Jurassic StoryLearn what it takes to be a park management master in Campaign mode, a compelling, original narrative that puts you at the heart of the action following the earth-shattering events of Jurassic World: Fallen Kingdom. Work alongside iconic characters from the films, including Dr. Ian Malcolm  and Claire Dearing, and lead the efforts to control, conserve, and contain wild dinosaurs now rampaging across the USA.Create your own Jurassic WorldTake control with deeper management tools and creative options. Construct a range of customizable new buildings and hire new Scientists, and shape your park to meet the needs of both your guests and dinosaurs. Unleash your creativity in Sandbox mode, or test your skills in Challenge mode as you deal with diverse locations and environmental calamities.Play with Chaos TheoryPlay through key moments of your favorite films - with a twist. Experience ‘what-if’ scenarios from iconic Jurassic World and Jurassic Park films, each level set across eras and locations from all five movies.Discover Awe-Inspiring DinosaursOver 75 different prehistoric species come to life in Jurassic World Evolution 2, including highly requested flying and marine reptiles. These animals feel more alive than ever as they preside over territory, fight for dominance, and react intelligently to the world around them. Use bioengineering to customize dinosaurs with bold new colors, and alter their genomes to unlock traits.",
-      "image": "https://m.media-amazon.com/images/I/A1x9MyirDwL._SX1600_._AGmerlin_._FMwebp_.jpg",
-      "originalPrice": null,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": null,
-      "offerEnd": null,
-      "platforms": [
-        "Epic Games"
-      ]
-    },
-    {
-      "id": "prime-radiolight",
-      "store": "prime",
-      "storeName": "Prime Gaming",
-      "title": "Radiolight",
-      "slug": "radiolight",
-      "storeUrl": "https://luna.amazon.com/claims/radiolight-epic/dp/amzn1.pg.item.828a67e3-e1ec-4968-9719-afa81008da16?g=s&ingress=amzn&ref_=SM_Radiolight_S01_FGWP_CRWN",
-      "seller": "Prime Gaming",
-      "description": "WELCOME TO ASHWOOD CREEK, SEPTEMBER 1985Step into the shoes of Ethan, a police officer in the quaint town of Ashwood Creek - a place where the trees whisper, the mountains loom, and secrets hide just out of sight. What begins as a routine investigation, quickly spirals into a haunting journey through the unknown.Ashwood Creek feels frozen in time, untouched by the chaos of the outside world. But under the surface, something dark is stirring. A teenager has gone missing. A strange signal is cutting through the static of local radio stations. Lured deeper into Ashwood Creek National Park, you’ll need to tune in to every frequency and every echo of the past in the hopes of uncovering the truth.A MYSTERY YOU CAN’T IGNOREAs you explore the vast, eerie expanse of Ashwood Creek National Park, you’ll find that your radio is more than just a piece of electronics - it’s your key to survival. Pick up supernatural signals and tune into otherworldly transmissions. But not all signals will guide you to safety... some are meant to lead you astray, deeper into the shadows, where the past waits to confront you.WHO DO YOU TRUST WHEN DARKNESS FALLS?Guided by the voice of Robert, your childhood friend and the town’s chief of police, you’ll venture through dense forests, foggy valleys, and forgotten trails. Together, you’ll piece together clues, follow mysterious broadcasts, and uncover the secrets that Ashwood Creek would rather keep hidden. But the closer you get to the truth, the more you’ll realise that some things are better left buried.",
-      "image": "https://m.media-amazon.com/images/I/A1kjIWtYnVL._SX1600_._AGmerlin_._FMwebp_.jpg",
       "originalPrice": null,
       "discountPrice": 0,
       "status": "free",
