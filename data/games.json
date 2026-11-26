@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-26T02:57:02.951Z",
-  "totalFree": 31,
-  "totalUpcoming": 11,
+  "fetchedAt": "2026-11-26T18:15:15.849Z",
+  "totalFree": 32,
+  "totalUpcoming": 10,
   "games": [
     {
       "id": "0623017cf9f341efbe07557f46beb4e8",
@@ -18,7 +18,7 @@
       "image": "https://cdn1.epicgames.com/spt-assets/69576a28f7154fe9a0dce97508da5163/firestone-online-idle-rpg-1inmf.jpg",
       "originalPrice": 0,
       "discountPrice": 0,
-      "status": "upcoming",
+      "status": "free",
       "offerStart": "2026-11-26T16:00:00.000Z",
       "offerEnd": "2026-12-03T16:00:00.000Z"
     },
@@ -36,10 +36,10 @@
       "description": "Grab your best bud for help in this new co-op challenge to help two adorable penguins, Bread and Fred, reach the top of the snowy summit. Time your jumps, cling to walls and swing across gaps to see how far you can make it before you tumble all the way back down the mountain.",
       "image": "https://cdn1.epicgames.com/spt-assets/545b4dd8bb364c12b719268198a93ef3/bread-and-fred-3jnwn.jpg",
       "originalPrice": 1499,
-      "discountPrice": 1499,
-      "status": "upcoming",
-      "offerStart": "2026-12-10T16:00:00.000Z",
-      "offerEnd": "2027-01-07T16:00:00.000Z"
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-11-26T16:00:00.000Z",
+      "offerEnd": "2026-12-03T16:00:00.000Z"
     },
     {
       "id": "921e40c4c69f4d728914ca2a4f0aa407",
@@ -118,25 +118,6 @@
       "offerEnd": "2027-01-07T16:00:00.000Z"
     },
     {
-      "id": "1f9a12b06b4f437790b6913ad136a08c",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Mark of the Deep",
-      "slug": "mark-of-the-deep-f7dc08",
-      "storeUrl": "https://store.epicgames.com/p/mark-of-the-deep-f7dc08",
-      "seller": "PC",
-      "platforms": [
-        "PC"
-      ],
-      "description": "Mark of the Deep is an epic pirate-themed adventure with a strong narrative and a thrilling mix of Metroidvania and Souls-Like elements. Embark on this journey, explore the mysteries of a cursed island and find your missing pirate crew!",
-      "image": "https://cdn1.epicgames.com/spt-assets/83a240506a884c10ad8fb99694e57a0d/mark-of-the-deep-w1ygr.png",
-      "originalPrice": 1999,
-      "discountPrice": 0,
-      "status": "free",
-      "offerStart": "2026-11-19T16:00:00.000Z",
-      "offerEnd": "2026-11-26T16:00:00.000Z"
-    },
-    {
       "id": "f967cff9761c4198b4e972cfd71e40d7",
       "store": "epic",
       "storeName": "Epic Games Store",
@@ -154,6 +135,25 @@
       "status": "upcoming",
       "offerStart": "2026-12-10T16:00:00.000Z",
       "offerEnd": "2027-01-07T16:00:00.000Z"
+    },
+    {
+      "id": "72bd05148adb4e2cacb8b2efaa4c0297",
+      "store": "epic",
+      "storeName": "Epic Games Store",
+      "title": "Strange Antiquities",
+      "slug": "strange-antiquities-e37660",
+      "storeUrl": "https://store.epicgames.com/p/strange-antiquities-e37660",
+      "seller": "PC",
+      "platforms": [
+        "PC"
+      ],
+      "description": "Strange Antiquities is a game set in Undermere, where you explore occult artifacts and solve dark mysteries. As an apprentice thaumaturge, you'll identify magical items and help townsfolk. A sequel to Strange Horticulture, it blends exploration to uncover strange secrets.",
+      "image": "https://cdn1.epicgames.com/spt-assets/d0e3b7c3690c485ca7a435d298262ab2/strange-antiquities-1kl5s.png",
+      "originalPrice": 1799,
+      "discountPrice": 1799,
+      "status": "upcoming",
+      "offerStart": "2026-12-03T16:00:00.000Z",
+      "offerEnd": "2026-12-10T16:00:00.000Z"
     },
     {
       "id": "c76046dddcdb43619c33ce0395941033",
