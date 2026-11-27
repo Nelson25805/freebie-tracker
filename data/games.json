@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-11-27T02:57:17.009Z",
-  "totalFree": 32,
-  "totalUpcoming": 10,
+  "fetchedAt": "2026-11-27T18:00:07.676Z",
+  "totalFree": 34,
+  "totalUpcoming": 9,
   "games": [
     {
       "id": "0623017cf9f341efbe07557f46beb4e8",
@@ -55,7 +55,7 @@
       "description": "Eternal Threads is a single-player, first-person story-driven puzzle game of time manipulation, choice and consequence.",
       "image": "https://cdn1.epicgames.com/spt-assets/08813e055af64315b8a55b2e521f4e04/eternal-threads-1vm6i.jpg",
       "originalPrice": 1999,
-      "discountPrice": 1999,
+      "discountPrice": 399,
       "status": "upcoming",
       "offerStart": "2026-11-27T16:00:00.000Z",
       "offerEnd": "2026-12-01T15:00:00.000Z"
@@ -156,23 +156,23 @@
       "offerEnd": "2026-12-10T16:00:00.000Z"
     },
     {
-      "id": "c76046dddcdb43619c33ce0395941033",
-      "store": "epic",
-      "storeName": "Epic Games Store",
-      "title": "Luftrausers",
-      "slug": "luftrausers-51e5e9",
-      "storeUrl": "https://store.epicgames.com/p/luftrausers-51e5e9",
-      "seller": "PC",
+      "id": "gog-dead-age-2",
+      "store": "gog",
+      "storeName": "GOG",
+      "title": "Dead Age 2",
+      "slug": "dead_age_2",
+      "storeUrl": "https://www.gog.com/en/game/dead_age_2",
+      "seller": "GOG",
+      "description": "By clicking the ‘Add to library’ button, I agree to receive marketing communications from GOG on my email address and through GOG services and GOG’s Trusted Partners’ services, to get Dead Age 2. See our Privacy policy.",
+      "image": "https://images.gog-statics.com/11df9d69f6815d8fdd74ab99f316ea31a3c9cb86e7d564eee661db1ce9a591e1_giveaway_465w.webp",
+      "originalPrice": null,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-11-27T17:46:16.221Z",
+      "offerEnd": "2026-11-30T14:01:00.221Z",
       "platforms": [
         "PC"
-      ],
-      "description": "The skies are aflame and the seas will overflow with wreckage in Vlambeer’s stylish arcade shooter LUFTRAUSERS! Take to the skies in customized fighter planes to battle battleships, submarines, and rival aces for glory, honor, and high scores.",
-      "image": "https://cdn1.epicgames.com/spt-assets/85ddeeec9d4243b3a2d78aab87bfae7f/luftrausers-1mxb1.png",
-      "originalPrice": 999,
-      "discountPrice": 999,
-      "status": "upcoming",
-      "offerStart": "2026-11-27T16:00:00.000Z",
-      "offerEnd": "2026-12-01T15:00:00.000Z"
+      ]
     },
     {
       "id": "psplus-dead-island-2",
@@ -790,6 +790,25 @@
       "offerEnd": null,
       "platforms": [
         "Epic Games"
+      ]
+    },
+    {
+      "id": "steam-3859",
+      "store": "steam",
+      "storeName": "Steam",
+      "title": "Vertical Drop Heroes HD Steam Key Giveaway",
+      "slug": "3859",
+      "storeUrl": "https://www.gamerpower.com/open/vertical-drop-heroes-hd-steam-key-giveaway",
+      "seller": "Steam",
+      "description": "Claim your free Vertical Drop Heroes HD Steam key via Fanatical and keep this Steam game forever! Vertical Drop Heroes is a 2d procedural platformer RPG with roguelike elements. Don´t miss it!",
+      "image": "https://www.gamerpower.com/offers/1b/6b0967296e680.jpg",
+      "originalPrice": 699,
+      "discountPrice": 0,
+      "status": "free",
+      "offerStart": "2026-11-27T06:19:05.000Z",
+      "offerEnd": "2026-11-28T23:59:00.000Z",
+      "platforms": [
+        "PC"
       ]
     },
     {
